@@ -28,3 +28,4 @@
 {"event_id": "7d3ced4ef3aa3b93:queued", "kind": "run.queued", "ticket_id": "1", "run_id": "7d3ced4ef3aa3b93", "task_id": "implement", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
 {"event_id": "91ea785016552690:implement-round-2:accepted", "kind": "handoff.accepted", "ticket_id": "1", "run_id": "91ea785016552690", "detail": "Fix iPadOS desktop mode detection in isIOSDevice \u2014 iPads in desktop mode report Mac user agent and need touch-based detection"}
 {"event_id": "91ea785016552690:succeeded", "kind": "run.succeeded", "ticket_id": "1", "run_id": "91ea785016552690", "state": "SUCCEEDED", "artifacts": ["specs/1/review.md"]}
+{"event_id": "7d3ced4ef3aa3b93:collected", "kind": "run.collected", "ticket_id": "1", "run_id": "7d3ced4ef3aa3b93", "tokens": 1307400, "cost_usd": 0.822}
