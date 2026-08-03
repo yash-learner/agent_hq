@@ -317,7 +317,7 @@
       "task_id": "finalize",
       "task_version": 1,
       "ticket_id": "1",
-      "state": "QUEUED",
+      "state": "RUNNING",
       "attempt": 0,
       "bindings": {
         "tracker": "github-issues",
@@ -337,7 +337,9 @@
         "specs/1/spec.md",
         "specs/1/review.md",
         "specs/1/qa.md"
-      ]
+      ],
+      "deadline": "2026-08-03T15:22:47Z",
+      "attempt_started_at": "2026-08-03T15:07:47Z"
     },
     {
       "run_id": "d8c4fc1357c01fa5",
