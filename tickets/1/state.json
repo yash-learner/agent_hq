@@ -339,7 +339,9 @@
         "specs/1/qa.md"
       ],
       "deadline": "2026-08-03T15:22:47Z",
-      "attempt_started_at": "2026-08-03T15:07:47Z"
+      "attempt_started_at": "2026-08-03T15:07:47Z",
+      "base_commit": "2c4f4eca806882bcd445d056602f24adb7cc7d21",
+      "input_from_run_id": "58ef9ed1e6456b13"
     },
     {
       "run_id": "d8c4fc1357c01fa5",
