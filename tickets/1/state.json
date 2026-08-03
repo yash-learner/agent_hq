@@ -107,7 +107,7 @@
       "task_id": "implement",
       "task_version": 1,
       "ticket_id": "1",
-      "state": "QUEUED",
+      "state": "RUNNING",
       "attempt": 0,
       "bindings": {
         "tracker": "github-issues",
@@ -126,7 +126,9 @@
       "repo": "yash-learner/care_fe_agent_hq",
       "input_artifacts": [
         "specs/1/spec.md"
-      ]
+      ],
+      "deadline": "2026-08-03T15:53:26Z",
+      "attempt_started_at": "2026-08-03T14:23:26Z"
     },
     {
       "run_id": "23c3991159ef1c9c",
