@@ -40,7 +40,7 @@
       "task_id": "implement",
       "task_version": 1,
       "ticket_id": "3",
-      "state": "RUNNING",
+      "state": "SUCCEEDED",
       "attempt": 0,
       "bindings": {
         "tracker": "github-issues",
@@ -62,7 +62,34 @@
       "deadline": "2026-08-03T15:42:54Z",
       "attempt_started_at": "2026-08-03T14:12:54Z",
       "base_commit": "dea49853619eaf2e5b7c18d6f89a1c1bf67567a0",
-      "input_from_run_id": "d4b3fca56168af3d"
+      "input_from_run_id": "d4b3fca56168af3d",
+      "output_commit": "cd0011b8aafbd81a0810a2109dcba8bc9e1108a8",
+      "pr_ref": "yash-learner/care_fe_agent_hq#1"
+    },
+    {
+      "run_id": "fcf0767eac5b0546",
+      "task_id": "review",
+      "task_version": 1,
+      "ticket_id": "3",
+      "state": "QUEUED",
+      "attempt": 0,
+      "bindings": {
+        "tracker": "github-issues",
+        "agent-session": "copilot-cli",
+        "messaging": "github-comment"
+      },
+      "cost_usd": null,
+      "tokens": null,
+      "usage_known": false,
+      "artifacts": [],
+      "chain_depth": 2,
+      "parent_run_id": "bc6e81db7ca8235b",
+      "queue_seq": 2,
+      "handoff_key": "review-ios-autofocus-fix",
+      "repo": "yash-learner/care_fe_agent_hq",
+      "input_artifacts": [
+        "specs/3/spec.md"
+      ]
     }
   ],
   "block_reason": null,
@@ -74,8 +101,8 @@
       "repo": "yash-learner/care_fe_agent_hq",
       "branch": "agent-hq/3",
       "base_branch": "develop",
-      "recorded_head": "dea49853619eaf2e5b7c18d6f89a1c1bf67567a0",
-      "pr_ref": null
+      "recorded_head": "cd0011b8aafbd81a0810a2109dcba8bc9e1108a8",
+      "pr_ref": "yash-learner/care_fe_agent_hq#1"
     }
   ]
 }
