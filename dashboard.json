@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-03T13:06:33Z",
+  "generated_at": "2026-08-03T13:06:44Z",
   "tickets": [
     {
       "ticket_id": "1",
@@ -1592,7 +1592,8 @@
       ],
       "block_reason": null,
       "block_source": null,
-      "interrupted_run_id": null
+      "interrupted_run_id": null,
+      "comments_polled_at": "2026-08-03T13:06:21Z"
     },
     {
       "ticket_id": "20",
