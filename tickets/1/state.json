@@ -406,6 +406,32 @@
       "attempt_started_at": "2026-08-03T15:20:07Z",
       "base_commit": "2c4f4eca806882bcd445d056602f24adb7cc7d21",
       "input_from_run_id": "c22f48d3f1cc12ad"
+    },
+    {
+      "run_id": "a2d83c6eadc9a9e1",
+      "task_id": "implement",
+      "task_version": 1,
+      "ticket_id": "1",
+      "state": "QUEUED",
+      "attempt": 2,
+      "bindings": {
+        "tracker": "github-issues",
+        "agent-session": "copilot-cli",
+        "messaging": "github-comment"
+      },
+      "cost_usd": null,
+      "tokens": null,
+      "usage_known": false,
+      "artifacts": [],
+      "chain_depth": 3,
+      "parent_run_id": "23c3991159ef1c9c",
+      "queue_seq": 10,
+      "handoff_key": "implement-care-fe",
+      "repo": "yash-learner/care_fe_agent_hq",
+      "input_artifacts": [
+        "specs/1/spec.md",
+        "specs/1/tasks.md"
+      ]
     }
   ],
   "block_reason": null,
