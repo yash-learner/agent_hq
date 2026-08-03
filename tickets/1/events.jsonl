@@ -34,3 +34,7 @@
 {"event_id": "7d3ced4ef3aa3b93:review-2:accepted", "kind": "handoff.accepted", "ticket_id": "1", "run_id": "7d3ced4ef3aa3b93", "detail": "Implementation complete, ready for review"}
 {"event_id": "7d3ced4ef3aa3b93:succeeded", "kind": "run.succeeded", "ticket_id": "1", "run_id": "7d3ced4ef3aa3b93", "state": "SUCCEEDED", "artifacts": []}
 {"event_id": "e3df961b3e1ad597:collected", "kind": "run.collected", "ticket_id": "1", "run_id": "e3df961b3e1ad597", "tokens": 531200, "cost_usd": 0.35}
+{"event_id": "e3df961b3e1ad597:qa-1:proposed", "kind": "handoff.proposed", "ticket_id": "1", "run_id": "e3df961b3e1ad597", "detail": "Implementation complete with no blockers. Ready for QA verification of iOS autofocus guards in running app."}
+{"event_id": "58ef9ed1e6456b13:queued", "kind": "run.queued", "ticket_id": "1", "run_id": "58ef9ed1e6456b13", "task_id": "qa", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
+{"event_id": "e3df961b3e1ad597:qa-1:accepted", "kind": "handoff.accepted", "ticket_id": "1", "run_id": "e3df961b3e1ad597", "detail": "Implementation complete with no blockers. Ready for QA verification of iOS autofocus guards in running app."}
+{"event_id": "e3df961b3e1ad597:succeeded", "kind": "run.succeeded", "ticket_id": "1", "run_id": "e3df961b3e1ad597", "state": "SUCCEEDED", "artifacts": ["specs/1/review.md"]}
