@@ -5,3 +5,4 @@
 {"event_id": "bc6e81db7ca8235b:queued", "kind": "run.queued", "ticket_id": "3", "run_id": "bc6e81db7ca8235b", "task_id": "implement", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment", "gate": "github-issue-comment"}}
 {"event_id": "d4b3fca56168af3d:impl-3-care-fe:accepted", "kind": "handoff.accepted", "ticket_id": "3", "run_id": "d4b3fca56168af3d", "detail": "Implement iOS autofocus regression fixes in care_fe autocomplete and drawer components"}
 {"event_id": "d4b3fca56168af3d:succeeded", "kind": "run.succeeded", "ticket_id": "3", "run_id": "d4b3fca56168af3d", "state": "SUCCEEDED", "artifacts": ["specs/3/spec.md"]}
+{"event_id": "bc6e81db7ca8235b:collected", "kind": "run.collected", "ticket_id": "3", "run_id": "bc6e81db7ca8235b", "tokens": 2429500, "cost_usd": 1.38}
