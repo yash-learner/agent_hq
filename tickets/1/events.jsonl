@@ -50,3 +50,4 @@
 {"event_id": "23c3991159ef1c9c:succeeded", "kind": "run.succeeded", "ticket_id": "1", "run_id": "23c3991159ef1c9c", "state": "SUCCEEDED", "artifacts": ["specs/1/tasks.md"]}
 {"event_id": "c22f48d3f1cc12ad:collected", "kind": "run.collected", "ticket_id": "1", "run_id": "c22f48d3f1cc12ad", "tokens": 111100, "cost_usd": 0.134}
 {"event_id": "c22f48d3f1cc12ad:succeeded", "kind": "run.succeeded", "ticket_id": "1", "run_id": "c22f48d3f1cc12ad", "state": "SUCCEEDED", "artifacts": ["specs/1/summary.md"]}
+{"event_id": "d8c4fc1357c01fa5:collected", "kind": "run.collected", "ticket_id": "1", "run_id": "d8c4fc1357c01fa5", "tokens": 1708000, "cost_usd": 0.91}
