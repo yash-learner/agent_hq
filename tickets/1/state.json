@@ -88,5 +88,6 @@
   ],
   "block_reason": "retries exhausted",
   "block_source": "engine",
-  "interrupted_run_id": "2d16999dfb20ce67"
+  "interrupted_run_id": "2d16999dfb20ce67",
+  "comments_polled_at": "2026-08-03T13:13:21Z"
 }
