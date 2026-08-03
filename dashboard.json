@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-03T14:28:14Z",
+  "generated_at": "2026-08-03T14:28:25Z",
   "tickets": [
     {
       "ticket_id": "1",
@@ -110,7 +110,7 @@
           "task_id": "implement",
           "task_version": 1,
           "ticket_id": "1",
-          "state": "RUNNING",
+          "state": "SUCCEEDED",
           "attempt": 0,
           "bindings": {
             "tracker": "github-issues",
@@ -132,7 +132,9 @@
           "deadline": "2026-08-03T15:53:26Z",
           "attempt_started_at": "2026-08-03T14:23:26Z",
           "base_commit": "dea49853619eaf2e5b7c18d6f89a1c1bf67567a0",
-          "input_from_run_id": "48db8e34d13382d3"
+          "input_from_run_id": "48db8e34d13382d3",
+          "output_commit": "d8b0e6c2673d893b345fe0fbc99d55e9b521ccbf",
+          "pr_ref": "yash-learner/care_fe_agent_hq#2"
         },
         {
           "run_id": "23c3991159ef1c9c",
@@ -160,6 +162,31 @@
             "specs/1/plan.md",
             "specs/1/classification.json"
           ]
+        },
+        {
+          "run_id": "91ea785016552690",
+          "task_id": "review",
+          "task_version": 1,
+          "ticket_id": "1",
+          "state": "QUEUED",
+          "attempt": 0,
+          "bindings": {
+            "tracker": "github-issues",
+            "agent-session": "copilot-cli",
+            "messaging": "github-comment"
+          },
+          "cost_usd": null,
+          "tokens": null,
+          "usage_known": false,
+          "artifacts": [],
+          "chain_depth": 2,
+          "parent_run_id": "7cf956a342c15f0c",
+          "queue_seq": 5,
+          "handoff_key": "review-1",
+          "repo": "yash-learner/care_fe_agent_hq",
+          "input_artifacts": [
+            "specs/1/spec.md"
+          ]
         }
       ],
       "block_reason": null,
@@ -171,8 +198,8 @@
           "repo": "yash-learner/care_fe_agent_hq",
           "branch": "agent-hq/1",
           "base_branch": "develop",
-          "recorded_head": "dea49853619eaf2e5b7c18d6f89a1c1bf67567a0",
-          "pr_ref": null
+          "recorded_head": "d8b0e6c2673d893b345fe0fbc99d55e9b521ccbf",
+          "pr_ref": "yash-learner/care_fe_agent_hq#2"
         }
       ]
     },

@@ -19,3 +19,7 @@
 {"event_id": "48db8e34d13382d3:breakdown-ios-autofocus-fix:accepted", "kind": "handoff.accepted", "ticket_id": "1", "run_id": "48db8e34d13382d3", "detail": "CRUD classification - proceeding directly to task breakdown"}
 {"event_id": "48db8e34d13382d3:succeeded", "kind": "run.succeeded", "ticket_id": "1", "run_id": "48db8e34d13382d3", "state": "SUCCEEDED", "artifacts": ["specs/1/plan.md", "specs/1/classification.json"]}
 {"event_id": "7cf956a342c15f0c:collected", "kind": "run.collected", "ticket_id": "1", "run_id": "7cf956a342c15f0c", "tokens": 1007200, "cost_usd": 0.638}
+{"event_id": "7cf956a342c15f0c:review-1:proposed", "kind": "handoff.proposed", "ticket_id": "1", "run_id": "7cf956a342c15f0c", "detail": "Implementation complete, needs review against spec"}
+{"event_id": "91ea785016552690:queued", "kind": "run.queued", "ticket_id": "1", "run_id": "91ea785016552690", "task_id": "review", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
+{"event_id": "7cf956a342c15f0c:review-1:accepted", "kind": "handoff.accepted", "ticket_id": "1", "run_id": "7cf956a342c15f0c", "detail": "Implementation complete, needs review against spec"}
+{"event_id": "7cf956a342c15f0c:succeeded", "kind": "run.succeeded", "ticket_id": "1", "run_id": "7cf956a342c15f0c", "state": "SUCCEEDED", "artifacts": []}
