@@ -38,3 +38,4 @@
 {"event_id": "58ef9ed1e6456b13:queued", "kind": "run.queued", "ticket_id": "1", "run_id": "58ef9ed1e6456b13", "task_id": "qa", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
 {"event_id": "e3df961b3e1ad597:qa-1:accepted", "kind": "handoff.accepted", "ticket_id": "1", "run_id": "e3df961b3e1ad597", "detail": "Implementation complete with no blockers. Ready for QA verification of iOS autofocus guards in running app."}
 {"event_id": "e3df961b3e1ad597:succeeded", "kind": "run.succeeded", "ticket_id": "1", "run_id": "e3df961b3e1ad597", "state": "SUCCEEDED", "artifacts": ["specs/1/review.md"]}
+{"event_id": "58ef9ed1e6456b13:collected", "kind": "run.collected", "ticket_id": "1", "run_id": "58ef9ed1e6456b13", "tokens": 1315300, "cost_usd": 0.812}
