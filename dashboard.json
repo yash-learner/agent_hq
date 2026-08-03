@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-03T13:10:01Z",
+  "generated_at": "2026-08-03T13:10:02Z",
   "tickets": [
     {
       "ticket_id": "1",
@@ -39,7 +39,7 @@
           "task_id": "spec",
           "task_version": 1,
           "ticket_id": "1",
-          "state": "RUNNING",
+          "state": "FAILED",
           "attempt": 1,
           "bindings": {
             "tracker": "github-issues",
