@@ -14,3 +14,7 @@
 {"event_id": "e4770c7540bcf568:implement-ios-autofocus-fix:accepted", "kind": "handoff.accepted", "ticket_id": "1", "run_id": "e4770c7540bcf568", "detail": "Spec approved. Ready to implement iOS autofocus guards across seven components affected by PR #15325."}
 {"event_id": "e4770c7540bcf568:succeeded", "kind": "run.succeeded", "ticket_id": "1", "run_id": "e4770c7540bcf568", "state": "SUCCEEDED", "artifacts": ["specs/1/spec.md"]}
 {"event_id": "48db8e34d13382d3:collected", "kind": "run.collected", "ticket_id": "1", "run_id": "48db8e34d13382d3", "tokens": 324000, "cost_usd": 0.287}
+{"event_id": "48db8e34d13382d3:breakdown-ios-autofocus-fix:proposed", "kind": "handoff.proposed", "ticket_id": "1", "run_id": "48db8e34d13382d3", "detail": "CRUD classification - proceeding directly to task breakdown"}
+{"event_id": "23c3991159ef1c9c:queued", "kind": "run.queued", "ticket_id": "1", "run_id": "23c3991159ef1c9c", "task_id": "breakdown", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
+{"event_id": "48db8e34d13382d3:breakdown-ios-autofocus-fix:accepted", "kind": "handoff.accepted", "ticket_id": "1", "run_id": "48db8e34d13382d3", "detail": "CRUD classification - proceeding directly to task breakdown"}
+{"event_id": "48db8e34d13382d3:succeeded", "kind": "run.succeeded", "ticket_id": "1", "run_id": "48db8e34d13382d3", "state": "SUCCEEDED", "artifacts": ["specs/1/plan.md", "specs/1/classification.json"]}

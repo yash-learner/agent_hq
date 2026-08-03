@@ -1,0 +1,4 @@
+{
+  "classification": "crud",
+  "reasoning": "This is a straightforward UI bug fix that does not involve any of the beyond-crud criteria. The changes are limited to adding conditional logic (iOS device detection) to existing autofocus and repositionInputs props in 7 components. No data models, migrations, services, workers, infrastructure, external integrations, authorization, FHIR/EMR models, or non-CRUD endpoints are affected. This is purely a frontend UI behavior fix affecting focus management on iOS devices."
+}
