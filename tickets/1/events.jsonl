@@ -1,3 +1,4 @@
 {"event_id": "9766eba02aa73ab5:queued", "kind": "run.queued", "ticket_id": "1", "run_id": "9766eba02aa73ab5", "task_id": "spec", "task_version": 1, "state": "QUEUED", "bindings": {}}
 {"event_id": "e4770c7540bcf568:queued", "kind": "run.queued", "ticket_id": "1", "run_id": "e4770c7540bcf568", "task_id": "spec", "task_version": 1, "state": "QUEUED", "bindings": {}}
 {"event_id": "e4770c7540bcf568:rework", "kind": "run.rework", "ticket_id": "1", "run_id": "e4770c7540bcf568", "detail": "@yash-learner: Retry I have updated the token permissions\n\n@yash-learner: Retry", "actor": "yash-learner", "source": "issue-comment:5167274743"}
+{"event_id": "9766eba02aa73ab5:collected", "kind": "run.collected", "ticket_id": "1", "run_id": "9766eba02aa73ab5", "tokens": 372900, "cost_usd": 0.334}
