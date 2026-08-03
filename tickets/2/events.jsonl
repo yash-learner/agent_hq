@@ -1,2 +1,3 @@
 {"event_id": "2c0f9d6d6bf1ce25:queued", "kind": "run.queued", "ticket_id": "2", "run_id": "2c0f9d6d6bf1ce25", "task_id": "spec", "task_version": 1, "state": "QUEUED", "bindings": {}}
 {"event_id": "2c0f9d6d6bf1ce25:collected", "kind": "run.collected", "ticket_id": "2", "run_id": "2c0f9d6d6bf1ce25", "cost_usd": 0.0}
+{"event_id": "2c0f9d6d6bf1ce25:failed", "kind": "run.failed", "ticket_id": "2", "run_id": "2c0f9d6d6bf1ce25", "state": "FAILED"}
