@@ -1,0 +1,15 @@
+{
+  "generated_at": "2026-08-03T14:07:11Z",
+  "tickets": [
+    {
+      "ticket_id": "1",
+      "pinned_comment_id": 5167435406,
+      "status": "ACTIVE",
+      "runs": [],
+      "block_reason": null,
+      "block_source": null,
+      "interrupted_run_id": null
+    }
+  ],
+  "health": {}
+}
