@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-03T14:12:12Z",
+  "generated_at": "2026-08-03T14:12:21Z",
   "tickets": [
     {
       "ticket_id": "1",
@@ -11,7 +11,7 @@
           "task_id": "spec",
           "task_version": 1,
           "ticket_id": "1",
-          "state": "RUNNING",
+          "state": "SUCCEEDED",
           "attempt": 0,
           "bindings": {
             "tracker": "github-issues",
@@ -22,7 +22,9 @@
           "cost_usd": 0.334,
           "tokens": 372900,
           "usage_known": true,
-          "artifacts": [],
+          "artifacts": [
+            "specs/1/spec.md"
+          ],
           "chain_depth": 0,
           "source_event_id": "1:labeled:2026-08-03T14:06:47Z",
           "enqueue_index": 0,
@@ -32,7 +34,9 @@
           "attempt_started_at": "2026-08-03T14:07:55Z",
           "base_commit": "dea49853619eaf2e5b7c18d6f89a1c1bf67567a0",
           "input_from_run_id": null,
-          "input_artifacts": []
+          "input_artifacts": [],
+          "output_commit": "dea49853619eaf2e5b7c18d6f89a1c1bf67567a0",
+          "pr_ref": null
         },
         {
           "run_id": "e4770c7540bcf568",
@@ -50,12 +54,47 @@
           "source_event_id": "issue-comment:5167274743",
           "enqueue_index": 0,
           "queue_seq": 0
+        },
+        {
+          "run_id": "48db8e34d13382d3",
+          "task_id": "arch-plan",
+          "task_version": 1,
+          "ticket_id": "1",
+          "state": "QUEUED",
+          "attempt": 0,
+          "bindings": {
+            "tracker": "github-issues",
+            "agent-session": "copilot-cli",
+            "messaging": "github-comment",
+            "gate": "github-issue-comment"
+          },
+          "cost_usd": null,
+          "tokens": null,
+          "usage_known": false,
+          "artifacts": [],
+          "chain_depth": 1,
+          "parent_run_id": "9766eba02aa73ab5",
+          "queue_seq": 2,
+          "handoff_key": "arch-plan-1",
+          "repo": "yash-learner/care_fe_agent_hq",
+          "input_artifacts": [
+            "specs/1/spec.md"
+          ]
         }
       ],
       "block_reason": null,
       "block_source": null,
       "interrupted_run_id": null,
-      "comments_polled_at": "2026-08-03T14:07:11Z"
+      "comments_polled_at": "2026-08-03T14:07:11Z",
+      "work_repos": [
+        {
+          "repo": "yash-learner/care_fe_agent_hq",
+          "branch": "agent-hq/1",
+          "base_branch": "develop",
+          "recorded_head": "dea49853619eaf2e5b7c18d6f89a1c1bf67567a0",
+          "pr_ref": null
+        }
+      ]
     },
     {
       "ticket_id": "3",
