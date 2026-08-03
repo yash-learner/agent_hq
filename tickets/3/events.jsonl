@@ -10,3 +10,4 @@
 {"event_id": "fcf0767eac5b0546:queued", "kind": "run.queued", "ticket_id": "3", "run_id": "fcf0767eac5b0546", "task_id": "review", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
 {"event_id": "bc6e81db7ca8235b:review-ios-autofocus-fix:accepted", "kind": "handoff.accepted", "ticket_id": "3", "run_id": "bc6e81db7ca8235b", "detail": "Review implementation against spec acceptance criteria"}
 {"event_id": "bc6e81db7ca8235b:succeeded", "kind": "run.succeeded", "ticket_id": "3", "run_id": "bc6e81db7ca8235b", "state": "SUCCEEDED", "artifacts": []}
+{"event_id": "fcf0767eac5b0546:collected", "kind": "run.collected", "ticket_id": "3", "run_id": "fcf0767eac5b0546", "tokens": 229200, "cost_usd": 0.232}
