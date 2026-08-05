@@ -1,7 +1,7 @@
 {
   "ticket_id": "6",
   "pinned_comment_id": 5190712516,
-  "status": "ACTIVE",
+  "status": "BLOCKED",
   "runs": [
     {
       "run_id": "bfe7b081bcad50a4",
@@ -414,9 +414,9 @@
       "pr_ref": "yash-learner/care_fe_agent_hq#3"
     }
   ],
-  "block_reason": null,
-  "block_source": null,
-  "interrupted_run_id": null,
+  "block_reason": "queue ran dry after `implement` without reaching `finalize`",
+  "block_source": "engine",
+  "interrupted_run_id": "3342061238d4e8f7",
   "comments_polled_at": "2026-08-05T13:25:23Z",
   "work_repos": [
     {
