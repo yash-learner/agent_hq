@@ -5,3 +5,4 @@
 {"event_id": "7697666fb3737856:failed", "kind": "run.failed", "ticket_id": "8", "run_id": "7697666fb3737856", "state": "FAILED"}
 {"event_id": "7697666fb3737856:handoff_rejected", "kind": "handoff.rejected", "ticket_id": "8", "run_id": "7697666fb3737856", "detail": "control.json schema violation: <root>: 'outcome' is a required property"}
 {"event_id": "3a026aa593c1a8e3:queued", "kind": "run.queued", "ticket_id": "8", "run_id": "3a026aa593c1a8e3", "task_id": "triage", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
+{"event_id": "3a026aa593c1a8e3:collected", "kind": "run.collected", "ticket_id": "8", "run_id": "3a026aa593c1a8e3", "tokens": 1324900, "cost_usd": 0.924}
