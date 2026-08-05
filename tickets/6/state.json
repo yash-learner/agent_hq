@@ -359,7 +359,7 @@
       "task_id": "implement",
       "task_version": 1,
       "ticket_id": "6",
-      "state": "QUEUED",
+      "state": "RUNNING",
       "attempt": 0,
       "bindings": {},
       "cost_usd": null,
@@ -369,7 +369,9 @@
       "chain_depth": 0,
       "source_event_id": "issue-comment:5192295746",
       "enqueue_index": 0,
-      "queue_seq": 12
+      "queue_seq": 12,
+      "deadline": "2026-08-05T15:04:47Z",
+      "attempt_started_at": "2026-08-05T13:34:47Z"
     },
     {
       "run_id": "91e43447b7d6d627",
