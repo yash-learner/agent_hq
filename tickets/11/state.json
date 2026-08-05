@@ -253,7 +253,7 @@
       "task_id": "triage",
       "task_version": 1,
       "ticket_id": "11",
-      "state": "QUEUED",
+      "state": "RUNNING",
       "attempt": 1,
       "bindings": {
         "tracker": "github-issues",
@@ -267,7 +267,9 @@
       "chain_depth": 0,
       "source_event_id": "issue-comment:5197067562",
       "enqueue_index": 0,
-      "queue_seq": 7
+      "queue_seq": 7,
+      "deadline": "2026-08-05T21:00:16Z",
+      "attempt_started_at": "2026-08-05T20:45:16Z"
     }
   ],
   "block_reason": null,
