@@ -225,7 +225,7 @@
       "task_id": "triage",
       "task_version": 1,
       "ticket_id": "11",
-      "state": "QUEUED",
+      "state": "RUNNING",
       "attempt": 0,
       "bindings": {},
       "cost_usd": null,
@@ -235,7 +235,9 @@
       "chain_depth": 0,
       "source_event_id": "issue-comment:5197067562",
       "enqueue_index": 0,
-      "queue_seq": 6
+      "queue_seq": 6,
+      "deadline": "2026-08-05T20:54:19Z",
+      "attempt_started_at": "2026-08-05T20:39:19Z"
     }
   ],
   "block_reason": null,
