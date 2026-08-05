@@ -40,7 +40,7 @@
       "task_id": "arch-plan",
       "task_version": 1,
       "ticket_id": "9",
-      "state": "QUEUED",
+      "state": "RUNNING",
       "attempt": 0,
       "bindings": {
         "tracker": "github-issues",
@@ -59,7 +59,9 @@
       "repo": "yash-learner/care_fe_agent_hq",
       "input_artifacts": [
         "specs/9/spec.md"
-      ]
+      ],
+      "deadline": "2026-08-05T15:55:45Z",
+      "attempt_started_at": "2026-08-05T15:25:45Z"
     }
   ],
   "block_reason": null,
