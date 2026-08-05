@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T16:04:48Z",
+  "generated_at": "2026-08-05T16:05:14Z",
   "tickets": [
     {
       "ticket_id": "1",
@@ -1400,7 +1400,7 @@
           "task_id": "qa",
           "task_version": 1,
           "ticket_id": "9",
-          "state": "RUNNING",
+          "state": "SUCCEEDED",
           "attempt": 0,
           "bindings": {
             "tracker": "github-issues",
@@ -1410,7 +1410,14 @@
           "cost_usd": 0.604,
           "tokens": 852400,
           "usage_known": true,
-          "artifacts": [],
+          "artifacts": [
+            "specs/9/qa.md",
+            "specs/9/qa-report.json",
+            "specs/9/videos/list-view-toggle.webm",
+            "specs/9/videos/user-roles-card-view.webm",
+            "specs/9/screenshots/user-list-full-page.png",
+            "specs/9/screenshots/user-list-view.png"
+          ],
           "chain_depth": 5,
           "parent_run_id": "3ff438f1cbe763ec",
           "queue_seq": 5,
@@ -1424,7 +1431,36 @@
           "deadline": "2026-08-05T16:51:05Z",
           "attempt_started_at": "2026-08-05T15:51:05Z",
           "base_commit": "639a9a2d2270949207f5514d05e66fa83a725f4b",
-          "input_from_run_id": "3ff438f1cbe763ec"
+          "input_from_run_id": "3ff438f1cbe763ec",
+          "output_commit": "639a9a2d2270949207f5514d05e66fa83a725f4b",
+          "pr_ref": "yash-learner/care_fe_agent_hq#4"
+        },
+        {
+          "run_id": "7f5cff610ab3cb61",
+          "task_id": "finalize",
+          "task_version": 1,
+          "ticket_id": "9",
+          "state": "QUEUED",
+          "attempt": 0,
+          "bindings": {
+            "tracker": "github-issues",
+            "agent-session": "copilot-cli",
+            "messaging": "github-comment"
+          },
+          "cost_usd": null,
+          "tokens": null,
+          "usage_known": false,
+          "artifacts": [],
+          "chain_depth": 6,
+          "parent_run_id": "c0ec5760b3da5a9f",
+          "queue_seq": 6,
+          "handoff_key": "finalize-9",
+          "repo": "yash-learner/care_fe_agent_hq",
+          "input_artifacts": [
+            "specs/9/spec.md",
+            "specs/9/review.md",
+            "specs/9/qa.md"
+          ]
         }
       ],
       "block_reason": null,

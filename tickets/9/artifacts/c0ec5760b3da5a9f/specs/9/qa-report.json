@@ -1,0 +1,76 @@
+{
+  "criteria": [
+    {
+      "id": "ac1-role-visible-card-view",
+      "title": "Role visible in card view alongside name and username",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3", "4", "5"],
+      "videos": ["specs/9/videos/user-roles-card-view.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac2-doctor-role",
+      "title": "Doctor role displays correctly",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3"],
+      "videos": ["specs/9/videos/user-roles-card-view.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac3-nurse-role",
+      "title": "Nurse role displays correctly",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2"],
+      "videos": ["specs/9/videos/user-roles-card-view.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac4-administrator-role",
+      "title": "Administrator role displays correctly",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2"],
+      "videos": ["specs/9/videos/user-roles-card-view.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac5-all-cards-show-role",
+      "title": "All cards show role without opening details",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3"],
+      "videos": ["specs/9/videos/user-roles-card-view.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac6-list-view-role",
+      "title": "List view continues to display role correctly",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3", "4"],
+      "videos": ["specs/9/videos/list-view-toggle.webm"],
+      "screenshots": []
+    }
+  ],
+  "summary": {
+    "all_passed": true,
+    "pass": 6,
+    "fail": 0,
+    "not_exercised": 0
+  }
+}
