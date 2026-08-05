@@ -1,7 +1,7 @@
 {
   "ticket_id": "4",
   "pinned_comment_id": 5189556248,
-  "status": "ACTIVE",
+  "status": "BLOCKED",
   "runs": [
     {
       "run_id": "8647b83e977b6568",
@@ -56,8 +56,8 @@
       "input_artifacts": []
     }
   ],
-  "block_reason": null,
-  "block_source": null,
-  "interrupted_run_id": null,
+  "block_reason": "retries exhausted",
+  "block_source": "engine",
+  "interrupted_run_id": "e8765861d7e55b7d",
   "comments_polled_at": "2026-08-05T08:50:08Z"
 }
