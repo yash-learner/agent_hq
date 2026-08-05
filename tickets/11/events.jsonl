@@ -33,3 +33,5 @@
 {"event_id": "9fe6dd641f92bd8e:failed", "kind": "run.failed", "ticket_id": "11", "run_id": "9fe6dd641f92bd8e", "state": "FAILED"}
 {"event_id": "9fe6dd641f92bd8e:handoff_rejected", "kind": "handoff.rejected", "ticket_id": "11", "run_id": "9fe6dd641f92bd8e", "detail": "control.json schema violation: <root>: 'outcome' is a required property"}
 {"event_id": "9fe6dd641f92bd8e:blocked", "kind": "ticket.blocked", "ticket_id": "11", "run_id": "9fe6dd641f92bd8e", "detail": "retries exhausted"}
+{"event_id": "f31cfd972637a37c:queued", "kind": "run.queued", "ticket_id": "11", "run_id": "f31cfd972637a37c", "task_id": "triage", "task_version": 1, "state": "QUEUED", "bindings": {}}
+{"event_id": "f31cfd972637a37c:rework", "kind": "run.rework", "ticket_id": "11", "run_id": "f31cfd972637a37c", "detail": "@yash-learner: \u2026) and have triage emit a valid control,\n\n(ticket was blocked: retries exhausted)", "actor": "yash-learner", "source": "issue-comment:5197067562"}
