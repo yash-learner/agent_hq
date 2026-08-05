@@ -369,7 +369,7 @@
       "chain_depth": 0,
       "source_event_id": "issue-comment:5192295746",
       "enqueue_index": 0,
-      "queue_seq": 11
+      "queue_seq": 12
     },
     {
       "run_id": "91e43447b7d6d627",
@@ -414,7 +414,7 @@
       "base_branch": "develop",
       "recorded_head": "051be63eb1ee13ec2b100fc3c742dae3df10ec64",
       "pr_ref": "yash-learner/care_fe_agent_hq#3",
-      "comments_polled_at": "2026-08-05T13:24:35Z"
+      "comments_polled_at": "2026-08-05T13:25:26Z"
     }
   ]
 }
