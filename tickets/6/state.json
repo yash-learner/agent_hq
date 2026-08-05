@@ -170,7 +170,7 @@
       "task_id": "review",
       "task_version": 1,
       "ticket_id": "6",
-      "state": "QUEUED",
+      "state": "RUNNING",
       "attempt": 0,
       "bindings": {
         "tracker": "github-issues",
@@ -188,7 +188,9 @@
       "repo": "yash-learner/care_fe_agent_hq",
       "input_artifacts": [
         "specs/6/spec.md"
-      ]
+      ],
+      "deadline": "2026-08-05T11:41:54Z",
+      "attempt_started_at": "2026-08-05T11:11:54Z"
     }
   ],
   "block_reason": null,
