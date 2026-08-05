@@ -9,3 +9,4 @@
 {"event_id": "4dc391b84099a5a9:queued", "kind": "run.queued", "ticket_id": "6", "run_id": "4dc391b84099a5a9", "task_id": "arch-plan", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment", "gate": "github-issue-comment"}}
 {"event_id": "3f245ea04569b89e:arch-plan-6-care-fe:accepted", "kind": "handoff.accepted", "ticket_id": "6", "run_id": "3f245ea04569b89e", "detail": "Specification approved, proceeding to architecture planning for MultiFilter mobile responsiveness implementation."}
 {"event_id": "3f245ea04569b89e:succeeded", "kind": "run.succeeded", "ticket_id": "6", "run_id": "3f245ea04569b89e", "state": "SUCCEEDED", "artifacts": ["specs/6/spec.md"]}
+{"event_id": "4dc391b84099a5a9:collected", "kind": "run.collected", "ticket_id": "6", "run_id": "4dc391b84099a5a9", "tokens": 297700, "cost_usd": 0.23}
