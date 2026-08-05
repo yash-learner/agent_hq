@@ -34,7 +34,7 @@
       "task_id": "triage",
       "task_version": 1,
       "ticket_id": "8",
-      "state": "RUNNING",
+      "state": "FAILED",
       "attempt": 1,
       "bindings": {
         "tracker": "github-issues",
