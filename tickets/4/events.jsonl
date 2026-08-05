@@ -1,0 +1,1 @@
+{"event_id": "intake:4:opened:2026-08-05T08:39:31Z:blocked", "kind": "intake.blocked", "ticket_id": "4", "run_id": "", "detail": "description too short (needs >= 30 words); no product area matches a configured repo", "source": "intake:4:opened:2026-08-05T08:39:31Z"}

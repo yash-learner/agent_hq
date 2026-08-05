@@ -1,0 +1,9 @@
+{
+  "ticket_id": "4",
+  "pinned_comment_id": 5189556248,
+  "status": "BLOCKED",
+  "runs": [],
+  "block_reason": "description too short (needs >= 30 words); no product area matches a configured repo",
+  "block_source": "intake",
+  "interrupted_run_id": null
+}
