@@ -18,3 +18,4 @@
 {"event_id": "41f11468862ff994:collected", "kind": "run.collected", "ticket_id": "11", "run_id": "41f11468862ff994", "tokens": 1720900, "cost_usd": 1.13}
 {"event_id": "41f11468862ff994:failed", "kind": "run.failed", "ticket_id": "11", "run_id": "41f11468862ff994", "state": "FAILED"}
 {"event_id": "41f11468862ff994:artifact_rejected", "kind": "run.artifact_rejected", "ticket_id": "11", "run_id": "41f11468862ff994", "detail": "qa-report.json: criterion 'ac7-playwright-tests': pass requires evidence_kind live-flow, got code-inspection"}
+{"event_id": "7eb6a63bf6df8635:queued", "kind": "run.queued", "ticket_id": "11", "run_id": "7eb6a63bf6df8635", "task_id": "qa", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
