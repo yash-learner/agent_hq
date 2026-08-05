@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T10:54:14Z",
+  "generated_at": "2026-08-05T10:54:20Z",
   "tickets": [
     {
       "ticket_id": "1",
@@ -794,7 +794,7 @@
           "task_id": "arch-plan",
           "task_version": 1,
           "ticket_id": "6",
-          "state": "RUNNING",
+          "state": "SUCCEEDED",
           "attempt": 0,
           "bindings": {
             "tracker": "github-issues",
@@ -804,7 +804,10 @@
           "cost_usd": 0.23,
           "tokens": 297700,
           "usage_known": true,
-          "artifacts": [],
+          "artifacts": [
+            "specs/6/plan.md",
+            "specs/6/classification.json"
+          ],
           "chain_depth": 1,
           "parent_run_id": "3f245ea04569b89e",
           "queue_seq": 1,
@@ -816,7 +819,36 @@
           "deadline": "2026-08-05T11:20:42Z",
           "attempt_started_at": "2026-08-05T10:50:42Z",
           "base_commit": "dea49853619eaf2e5b7c18d6f89a1c1bf67567a0",
-          "input_from_run_id": "3f245ea04569b89e"
+          "input_from_run_id": "3f245ea04569b89e",
+          "output_commit": "dea49853619eaf2e5b7c18d6f89a1c1bf67567a0",
+          "pr_ref": null
+        },
+        {
+          "run_id": "038ad8e853f70aed",
+          "task_id": "breakdown",
+          "task_version": 1,
+          "ticket_id": "6",
+          "state": "QUEUED",
+          "attempt": 0,
+          "bindings": {
+            "tracker": "github-issues",
+            "agent-session": "copilot-cli",
+            "messaging": "github-comment"
+          },
+          "cost_usd": null,
+          "tokens": null,
+          "usage_known": false,
+          "artifacts": [],
+          "chain_depth": 2,
+          "parent_run_id": "4dc391b84099a5a9",
+          "queue_seq": 2,
+          "handoff_key": "breakdown-multifilter-responsive",
+          "repo": "yash-learner/care_fe_agent_hq",
+          "input_artifacts": [
+            "specs/6/spec.md",
+            "specs/6/plan.md",
+            "specs/6/classification.json"
+          ]
         }
       ],
       "block_reason": null,
