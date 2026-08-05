@@ -3,3 +3,4 @@
 {"event_id": "8647b83e977b6568:rework", "kind": "run.rework", "ticket_id": "4", "run_id": "8647b83e977b6568", "detail": "@yash-learner: retry\n\n@yash-learner: /agent-hq retry\n\n(ticket was blocked: description too short (needs >= 30 words); no product area matches a configured repo)", "actor": "yash-learner", "source": "issue-comment:5189643941"}
 {"event_id": "8647b83e977b6568:collected", "kind": "run.collected", "ticket_id": "4", "run_id": "8647b83e977b6568", "tokens": 1412200, "cost_usd": 0.758}
 {"event_id": "8647b83e977b6568:failed", "kind": "run.failed", "ticket_id": "4", "run_id": "8647b83e977b6568", "state": "FAILED"}
+{"event_id": "8647b83e977b6568:handoff_rejected", "kind": "handoff.rejected", "ticket_id": "4", "run_id": "8647b83e977b6568", "detail": "control.json schema violation: <root>: 'outcome' is a required property"}
