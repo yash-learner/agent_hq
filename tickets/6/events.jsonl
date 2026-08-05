@@ -24,3 +24,4 @@
 {"event_id": "c7b07ed955a7db08:queued", "kind": "run.queued", "ticket_id": "6", "run_id": "c7b07ed955a7db08", "task_id": "review", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
 {"event_id": "4a0318b260544e5b:review-6:accepted", "kind": "handoff.accepted", "ticket_id": "6", "run_id": "4a0318b260544e5b", "detail": "Review the mobile-responsive MultiFilter implementation against the spec"}
 {"event_id": "4a0318b260544e5b:succeeded", "kind": "run.succeeded", "ticket_id": "6", "run_id": "4a0318b260544e5b", "state": "SUCCEEDED", "artifacts": []}
+{"event_id": "c7b07ed955a7db08:collected", "kind": "run.collected", "ticket_id": "6", "run_id": "c7b07ed955a7db08", "tokens": 298600, "cost_usd": 0.26}
