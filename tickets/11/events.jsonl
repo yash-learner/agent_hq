@@ -1,2 +1,7 @@
 {"event_id": "8f559880cefbd525:queued", "kind": "run.queued", "ticket_id": "11", "run_id": "8f559880cefbd525", "task_id": "spec", "task_version": 1, "state": "QUEUED", "bindings": {}}
 {"event_id": "8f559880cefbd525:collected", "kind": "run.collected", "ticket_id": "11", "run_id": "8f559880cefbd525", "tokens": 497200, "cost_usd": 0.381}
+{"event_id": "8f559880cefbd525:auto_approval", "kind": "gate.decided", "ticket_id": "11", "run_id": "8f559880cefbd525", "detail": "auto-approved by task config (would have asked product-owners)", "actor": "engine"}
+{"event_id": "8f559880cefbd525:implement-11-care-fe:proposed", "kind": "handoff.proposed", "ticket_id": "11", "run_id": "8f559880cefbd525", "detail": "Frontend-only changes to restore role display from role_orgs on facility user list cards and table rows"}
+{"event_id": "1f4c2de6cb03d37a:queued", "kind": "run.queued", "ticket_id": "11", "run_id": "1f4c2de6cb03d37a", "task_id": "implement", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment", "gate": "github-issue-comment"}}
+{"event_id": "8f559880cefbd525:implement-11-care-fe:accepted", "kind": "handoff.accepted", "ticket_id": "11", "run_id": "8f559880cefbd525", "detail": "Frontend-only changes to restore role display from role_orgs on facility user list cards and table rows"}
+{"event_id": "8f559880cefbd525:succeeded", "kind": "run.succeeded", "ticket_id": "11", "run_id": "8f559880cefbd525", "state": "SUCCEEDED", "artifacts": ["specs/11/spec.md"]}
