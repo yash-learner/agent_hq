@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T11:11:01Z",
+  "generated_at": "2026-08-05T11:11:09Z",
   "tickets": [
     {
       "ticket_id": "1",
@@ -863,7 +863,7 @@
           "task_id": "implement",
           "task_version": 1,
           "ticket_id": "6",
-          "state": "RUNNING",
+          "state": "SUCCEEDED",
           "attempt": 0,
           "bindings": {
             "tracker": "github-issues",
@@ -888,7 +888,34 @@
           "deadline": "2026-08-05T12:29:47Z",
           "attempt_started_at": "2026-08-05T10:59:47Z",
           "base_commit": "dea49853619eaf2e5b7c18d6f89a1c1bf67567a0",
-          "input_from_run_id": "038ad8e853f70aed"
+          "input_from_run_id": "038ad8e853f70aed",
+          "output_commit": "a7aa4308a2376b234c51c7c38bf5e2b6d06540cb",
+          "pr_ref": "yash-learner/care_fe_agent_hq#3"
+        },
+        {
+          "run_id": "c7b07ed955a7db08",
+          "task_id": "review",
+          "task_version": 1,
+          "ticket_id": "6",
+          "state": "QUEUED",
+          "attempt": 0,
+          "bindings": {
+            "tracker": "github-issues",
+            "agent-session": "copilot-cli",
+            "messaging": "github-comment"
+          },
+          "cost_usd": null,
+          "tokens": null,
+          "usage_known": false,
+          "artifacts": [],
+          "chain_depth": 4,
+          "parent_run_id": "4a0318b260544e5b",
+          "queue_seq": 4,
+          "handoff_key": "review-6",
+          "repo": "yash-learner/care_fe_agent_hq",
+          "input_artifacts": [
+            "specs/6/spec.md"
+          ]
         }
       ],
       "block_reason": null,
@@ -900,8 +927,8 @@
           "repo": "yash-learner/care_fe_agent_hq",
           "branch": "agent-hq/6",
           "base_branch": "develop",
-          "recorded_head": "dea49853619eaf2e5b7c18d6f89a1c1bf67567a0",
-          "pr_ref": null
+          "recorded_head": "a7aa4308a2376b234c51c7c38bf5e2b6d06540cb",
+          "pr_ref": "yash-learner/care_fe_agent_hq#3"
         }
       ]
     }

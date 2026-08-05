@@ -20,3 +20,7 @@
 {"event_id": "038ad8e853f70aed:implement-multifilter-responsive:accepted", "kind": "handoff.accepted", "ticket_id": "6", "run_id": "038ad8e853f70aed", "detail": "Implement responsive MultiFilter component with Drawer on mobile and DropdownMenu on desktop"}
 {"event_id": "038ad8e853f70aed:succeeded", "kind": "run.succeeded", "ticket_id": "6", "run_id": "038ad8e853f70aed", "state": "SUCCEEDED", "artifacts": ["specs/6/tasks.md"]}
 {"event_id": "4a0318b260544e5b:collected", "kind": "run.collected", "ticket_id": "6", "run_id": "4a0318b260544e5b", "tokens": 1411800, "cost_usd": 0.842}
+{"event_id": "4a0318b260544e5b:review-6:proposed", "kind": "handoff.proposed", "ticket_id": "6", "run_id": "4a0318b260544e5b", "detail": "Review the mobile-responsive MultiFilter implementation against the spec"}
+{"event_id": "c7b07ed955a7db08:queued", "kind": "run.queued", "ticket_id": "6", "run_id": "c7b07ed955a7db08", "task_id": "review", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
+{"event_id": "4a0318b260544e5b:review-6:accepted", "kind": "handoff.accepted", "ticket_id": "6", "run_id": "4a0318b260544e5b", "detail": "Review the mobile-responsive MultiFilter implementation against the spec"}
+{"event_id": "4a0318b260544e5b:succeeded", "kind": "run.succeeded", "ticket_id": "6", "run_id": "4a0318b260544e5b", "state": "SUCCEEDED", "artifacts": []}
