@@ -269,7 +269,12 @@
       "enqueue_index": 0,
       "queue_seq": 7,
       "deadline": "2026-08-05T21:00:16Z",
-      "attempt_started_at": "2026-08-05T20:45:16Z"
+      "attempt_started_at": "2026-08-05T20:45:16Z",
+      "base_commit": "1928a438657db1fa9d7b5468662d5b4a47097501",
+      "input_from_run_id": "4ea3154d4a799054",
+      "input_artifacts": [
+        "specs/11/review.md"
+      ]
     }
   ],
   "block_reason": null,
