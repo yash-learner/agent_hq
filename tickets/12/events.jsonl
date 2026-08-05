@@ -6,3 +6,7 @@
 {"event_id": "ad7e4c54febcd048:implement-12-care-fe:accepted", "kind": "handoff.accepted", "ticket_id": "12", "run_id": "ad7e4c54febcd048", "detail": "Update UserReadMinimal type to include role_orgs and modify UserListAndCard to display role organization names instead of deprecated user_type field."}
 {"event_id": "ad7e4c54febcd048:succeeded", "kind": "run.succeeded", "ticket_id": "12", "run_id": "ad7e4c54febcd048", "state": "SUCCEEDED", "artifacts": ["specs/12/spec.md"]}
 {"event_id": "8d3cbbc3399cc899:collected", "kind": "run.collected", "ticket_id": "12", "run_id": "8d3cbbc3399cc899", "tokens": 1813300, "cost_usd": 0.886}
+{"event_id": "8d3cbbc3399cc899:review-12-1:proposed", "kind": "handoff.proposed", "ticket_id": "12", "run_id": "8d3cbbc3399cc899", "detail": "Review implementation against spec acceptance criteria"}
+{"event_id": "a8d7f0d5e4b84206:queued", "kind": "run.queued", "ticket_id": "12", "run_id": "a8d7f0d5e4b84206", "task_id": "review", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
+{"event_id": "8d3cbbc3399cc899:review-12-1:accepted", "kind": "handoff.accepted", "ticket_id": "12", "run_id": "8d3cbbc3399cc899", "detail": "Review implementation against spec acceptance criteria"}
+{"event_id": "8d3cbbc3399cc899:succeeded", "kind": "run.succeeded", "ticket_id": "12", "run_id": "8d3cbbc3399cc899", "state": "SUCCEEDED", "artifacts": ["specs/12/qa-plan.md"]}
