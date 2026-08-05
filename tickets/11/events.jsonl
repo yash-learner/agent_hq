@@ -21,3 +21,4 @@
 {"event_id": "7eb6a63bf6df8635:queued", "kind": "run.queued", "ticket_id": "11", "run_id": "7eb6a63bf6df8635", "task_id": "qa", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
 {"event_id": "7eb6a63bf6df8635:collected", "kind": "run.collected", "ticket_id": "11", "run_id": "7eb6a63bf6df8635", "tokens": 2719900, "cost_usd": 1.37}
 {"event_id": "7eb6a63bf6df8635:failed", "kind": "run.failed", "ticket_id": "11", "run_id": "7eb6a63bf6df8635", "state": "FAILED"}
+{"event_id": "7eb6a63bf6df8635:artifact_rejected", "kind": "run.artifact_rejected", "ticket_id": "11", "run_id": "7eb6a63bf6df8635", "detail": "qa-report.json: criterion 'ac7-playwright-tests': pass requires \u22651 video when qa.video is true"}
