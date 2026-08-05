@@ -1,0 +1,4 @@
+{
+  "classification": "crud",
+  "reasoning": "None of the beyond-crud criteria apply. This is a frontend-only UI refactor that makes the MultiFilter component responsive by conditionally rendering a Drawer on mobile and a DropdownMenu on desktop. No data models, migrations, services, authorization, FHIR changes, or clinical-safety-relevant behavior are involved."
+}
