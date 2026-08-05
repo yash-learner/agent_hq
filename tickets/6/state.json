@@ -269,7 +269,7 @@
       "task_id": "qa",
       "task_version": 1,
       "ticket_id": "6",
-      "state": "RUNNING",
+      "state": "SUCCEEDED",
       "attempt": 0,
       "bindings": {
         "tracker": "github-issues",
@@ -279,7 +279,30 @@
       "cost_usd": 1.49,
       "tokens": 2432200,
       "usage_known": true,
-      "artifacts": [],
+      "artifacts": [
+        "specs/6/qa.md",
+        "specs/6/screenshots/ac1-mobile-drawer-open-v2.png",
+        "specs/6/screenshots/ac1-mobile-drawer-open.png",
+        "specs/6/screenshots/ac2-mobile-filter-interaction-v2.png",
+        "specs/6/screenshots/ac2-mobile-filter-interaction.png",
+        "specs/6/screenshots/ac3-desktop-dropdown-open-v2.png",
+        "specs/6/screenshots/ac3-desktop-dropdown-open.png",
+        "specs/6/screenshots/ac4-drawer-structure.png",
+        "specs/6/screenshots/ac4-drawer-title-check-v2.png",
+        "specs/6/screenshots/ac4-drawer-title-check.png",
+        "specs/6/screenshots/ac5-safe-area-inset-v2.png",
+        "specs/6/screenshots/ac5-safe-area-inset.png",
+        "specs/6/screenshots/ac6-filter-open-before-selection.png",
+        "specs/6/screenshots/ac6-filter-selection.png",
+        "specs/6/screenshots/ac7-appointments-desktop-v2.png",
+        "specs/6/screenshots/ac7-appointments-desktop.png",
+        "specs/6/screenshots/ac7-appointments-mobile-v2.png",
+        "specs/6/screenshots/ac7-appointments-mobile.png",
+        "specs/6/screenshots/ac7-encounters-no-filter-desktop-desktop.png",
+        "specs/6/screenshots/ac7-encounters-no-filter-mobile.png",
+        "specs/6/screenshots/debug-desktop-clicked.png",
+        "specs/6/screenshots/home-page.png"
+      ],
       "chain_depth": 7,
       "parent_run_id": "160a8ed71bad9a72",
       "queue_seq": 7,
@@ -292,7 +315,36 @@
       "deadline": "2026-08-05T12:33:57Z",
       "attempt_started_at": "2026-08-05T11:33:57Z",
       "base_commit": "90b76369ff3c8bdcdcfc0fb9da887d9b10da20d8",
-      "input_from_run_id": "160a8ed71bad9a72"
+      "input_from_run_id": "160a8ed71bad9a72",
+      "output_commit": "90b76369ff3c8bdcdcfc0fb9da887d9b10da20d8",
+      "pr_ref": "yash-learner/care_fe_agent_hq#3"
+    },
+    {
+      "run_id": "ab1a0a4f077aadc0",
+      "task_id": "finalize",
+      "task_version": 1,
+      "ticket_id": "6",
+      "state": "QUEUED",
+      "attempt": 0,
+      "bindings": {
+        "tracker": "github-issues",
+        "agent-session": "copilot-cli",
+        "messaging": "github-comment"
+      },
+      "cost_usd": null,
+      "tokens": null,
+      "usage_known": false,
+      "artifacts": [],
+      "chain_depth": 8,
+      "parent_run_id": "3dcde6f8caaffae6",
+      "queue_seq": 8,
+      "handoff_key": "finalize-6",
+      "repo": "yash-learner/care_fe_agent_hq",
+      "input_artifacts": [
+        "specs/6/spec.md",
+        "specs/6/review.md",
+        "specs/6/qa.md"
+      ]
     }
   ],
   "block_reason": null,
