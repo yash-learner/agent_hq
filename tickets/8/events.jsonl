@@ -3,3 +3,4 @@
 {"event_id": "7697666fb3737856:rework", "kind": "run.rework", "ticket_id": "8", "run_id": "7697666fb3737856", "detail": "@yash-learner: /agent-hq try now\n\n(ticket was blocked: no product area matches a configured repo)", "actor": "yash-learner", "source": "issue-comment:5193399591"}
 {"event_id": "7697666fb3737856:collected", "kind": "run.collected", "ticket_id": "8", "run_id": "7697666fb3737856", "tokens": 544600, "cost_usd": 0.379}
 {"event_id": "7697666fb3737856:failed", "kind": "run.failed", "ticket_id": "8", "run_id": "7697666fb3737856", "state": "FAILED"}
+{"event_id": "7697666fb3737856:handoff_rejected", "kind": "handoff.rejected", "ticket_id": "8", "run_id": "7697666fb3737856", "detail": "control.json schema violation: <root>: 'outcome' is a required property"}
