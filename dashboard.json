@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T14:52:41Z",
+  "generated_at": "2026-08-05T14:56:59Z",
   "tickets": [
     {
       "ticket_id": "1",
@@ -1159,12 +1159,30 @@
     {
       "ticket_id": "8",
       "pinned_comment_id": 5193353805,
-      "status": "BLOCKED",
-      "runs": [],
-      "block_reason": "no product area matches a configured repo",
-      "block_source": "intake",
+      "status": "ACTIVE",
+      "runs": [
+        {
+          "run_id": "7697666fb3737856",
+          "task_id": "triage",
+          "task_version": 1,
+          "ticket_id": "8",
+          "state": "QUEUED",
+          "attempt": 0,
+          "bindings": {},
+          "cost_usd": null,
+          "tokens": null,
+          "usage_known": false,
+          "artifacts": [],
+          "chain_depth": 0,
+          "source_event_id": "issue-comment:5193399591",
+          "enqueue_index": 0,
+          "queue_seq": 0
+        }
+      ],
+      "block_reason": null,
+      "block_source": null,
       "interrupted_run_id": null,
-      "comments_polled_at": "2026-08-05T14:52:21Z"
+      "comments_polled_at": "2026-08-05T14:56:01Z"
     }
   ],
   "health": {

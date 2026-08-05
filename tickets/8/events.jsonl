@@ -1,1 +1,3 @@
 {"event_id": "intake:8:labeled:2026-08-05T14:52:04Z:blocked", "kind": "intake.blocked", "ticket_id": "8", "run_id": "", "detail": "no product area matches a configured repo", "source": "intake:8:labeled:2026-08-05T14:52:04Z"}
+{"event_id": "7697666fb3737856:queued", "kind": "run.queued", "ticket_id": "8", "run_id": "7697666fb3737856", "task_id": "triage", "task_version": 1, "state": "QUEUED", "bindings": {}}
+{"event_id": "7697666fb3737856:rework", "kind": "run.rework", "ticket_id": "8", "run_id": "7697666fb3737856", "detail": "@yash-learner: /agent-hq try now\n\n(ticket was blocked: no product area matches a configured repo)", "actor": "yash-learner", "source": "issue-comment:5193399591"}
