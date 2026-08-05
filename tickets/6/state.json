@@ -369,7 +369,7 @@
       "chain_depth": 0,
       "source_event_id": "issue-comment:5192295746",
       "enqueue_index": 0,
-      "queue_seq": 10
+      "queue_seq": 11
     },
     {
       "run_id": "91e43447b7d6d627",
@@ -406,7 +406,7 @@
   "block_reason": null,
   "block_source": null,
   "interrupted_run_id": null,
-  "comments_polled_at": "2026-08-05T13:24:04Z",
+  "comments_polled_at": "2026-08-05T13:25:23Z",
   "work_repos": [
     {
       "repo": "yash-learner/care_fe_agent_hq",
