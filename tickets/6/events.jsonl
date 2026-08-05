@@ -30,3 +30,7 @@
 {"event_id": "c7b07ed955a7db08:implement-r2:accepted", "kind": "handoff.accepted", "ticket_id": "6", "run_id": "c7b07ed955a7db08", "detail": "Fix blocker: restore newlines in PLAYWRIGHT_GUIDE.md URLs (lines 850-860) and address package-lock.json changes"}
 {"event_id": "c7b07ed955a7db08:succeeded", "kind": "run.succeeded", "ticket_id": "6", "run_id": "c7b07ed955a7db08", "state": "SUCCEEDED", "artifacts": ["specs/6/review.md"]}
 {"event_id": "3d4399136fe06eac:collected", "kind": "run.collected", "ticket_id": "6", "run_id": "3d4399136fe06eac", "tokens": 1507600, "cost_usd": 0.744}
+{"event_id": "3d4399136fe06eac:review-round-2:proposed", "kind": "handoff.proposed", "ticket_id": "6", "run_id": "3d4399136fe06eac", "detail": "Review the blocker fixes and verify the MultiFilter mobile responsiveness implementation meets all acceptance criteria"}
+{"event_id": "160a8ed71bad9a72:queued", "kind": "run.queued", "ticket_id": "6", "run_id": "160a8ed71bad9a72", "task_id": "review", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
+{"event_id": "3d4399136fe06eac:review-round-2:accepted", "kind": "handoff.accepted", "ticket_id": "6", "run_id": "3d4399136fe06eac", "detail": "Review the blocker fixes and verify the MultiFilter mobile responsiveness implementation meets all acceptance criteria"}
+{"event_id": "3d4399136fe06eac:succeeded", "kind": "run.succeeded", "ticket_id": "6", "run_id": "3d4399136fe06eac", "state": "SUCCEEDED", "artifacts": []}

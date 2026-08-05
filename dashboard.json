@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T11:25:42Z",
+  "generated_at": "2026-08-05T11:25:49Z",
   "tickets": [
     {
       "ticket_id": "1",
@@ -930,7 +930,7 @@
           "task_id": "implement",
           "task_version": 1,
           "ticket_id": "6",
-          "state": "RUNNING",
+          "state": "SUCCEEDED",
           "attempt": 0,
           "bindings": {
             "tracker": "github-issues",
@@ -953,7 +953,35 @@
           "deadline": "2026-08-05T12:45:59Z",
           "attempt_started_at": "2026-08-05T11:15:59Z",
           "base_commit": "a7aa4308a2376b234c51c7c38bf5e2b6d06540cb",
-          "input_from_run_id": "c7b07ed955a7db08"
+          "input_from_run_id": "c7b07ed955a7db08",
+          "output_commit": "90b76369ff3c8bdcdcfc0fb9da887d9b10da20d8",
+          "pr_ref": "yash-learner/care_fe_agent_hq#3"
+        },
+        {
+          "run_id": "160a8ed71bad9a72",
+          "task_id": "review",
+          "task_version": 1,
+          "ticket_id": "6",
+          "state": "QUEUED",
+          "attempt": 0,
+          "bindings": {
+            "tracker": "github-issues",
+            "agent-session": "copilot-cli",
+            "messaging": "github-comment"
+          },
+          "cost_usd": null,
+          "tokens": null,
+          "usage_known": false,
+          "artifacts": [],
+          "chain_depth": 6,
+          "parent_run_id": "3d4399136fe06eac",
+          "queue_seq": 6,
+          "handoff_key": "review-round-2",
+          "repo": "yash-learner/care_fe_agent_hq",
+          "input_artifacts": [
+            "specs/6/spec.md",
+            "specs/6/review.md"
+          ]
         }
       ],
       "block_reason": null,
@@ -965,7 +993,7 @@
           "repo": "yash-learner/care_fe_agent_hq",
           "branch": "agent-hq/6",
           "base_branch": "develop",
-          "recorded_head": "a7aa4308a2376b234c51c7c38bf5e2b6d06540cb",
+          "recorded_head": "90b76369ff3c8bdcdcfc0fb9da887d9b10da20d8",
           "pr_ref": "yash-learner/care_fe_agent_hq#3",
           "comments_polled_at": "2026-08-05T11:15:11Z"
         }
