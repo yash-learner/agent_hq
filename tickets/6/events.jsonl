@@ -51,3 +51,4 @@
 {"event_id": "91e43447b7d6d627:queued", "kind": "run.queued", "ticket_id": "6", "run_id": "91e43447b7d6d627", "task_id": "implement", "task_version": 1, "state": "QUEUED", "bindings": {}}
 {"event_id": "91e43447b7d6d627:rework", "kind": "run.rework", "ticket_id": "6", "run_id": "91e43447b7d6d627", "detail": "@yash-learner: https://github.com/yash-learner/care_fe_agent_hq/pull/3#discussion_r3720701146", "actor": "yash-learner", "source": "pr-comment:5192301232"}
 {"event_id": "91e43447b7d6d627:collected", "kind": "run.collected", "ticket_id": "6", "run_id": "91e43447b7d6d627", "tokens": 803800, "cost_usd": 0.499}
+{"event_id": "91e43447b7d6d627:succeeded", "kind": "run.succeeded", "ticket_id": "6", "run_id": "91e43447b7d6d627", "state": "SUCCEEDED", "artifacts": []}
