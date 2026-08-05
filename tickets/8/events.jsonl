@@ -8,3 +8,4 @@
 {"event_id": "3a026aa593c1a8e3:collected", "kind": "run.collected", "ticket_id": "8", "run_id": "3a026aa593c1a8e3", "tokens": 1324900, "cost_usd": 0.924}
 {"event_id": "3a026aa593c1a8e3:failed", "kind": "run.failed", "ticket_id": "8", "run_id": "3a026aa593c1a8e3", "state": "FAILED"}
 {"event_id": "3a026aa593c1a8e3:handoff_rejected", "kind": "handoff.rejected", "ticket_id": "8", "run_id": "3a026aa593c1a8e3", "detail": "control.json schema violation: <root>: 'outcome' is a required property"}
+{"event_id": "3a026aa593c1a8e3:blocked", "kind": "ticket.blocked", "ticket_id": "8", "run_id": "3a026aa593c1a8e3", "detail": "retries exhausted"}
