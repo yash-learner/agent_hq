@@ -1,0 +1,4 @@
+{
+  "classification": "crud",
+  "reasoning": "None of the beyond-crud criteria apply. This is a display-only change to existing UI logic: modifying a conditional rendering statement to show an already-fetched field (user_type) in card view. No data models, migrations, services, authorization, or API changes are involved."
+}
