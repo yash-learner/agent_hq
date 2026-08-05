@@ -6,3 +6,7 @@
 {"event_id": "8f559880cefbd525:implement-11-care-fe:accepted", "kind": "handoff.accepted", "ticket_id": "11", "run_id": "8f559880cefbd525", "detail": "Frontend-only changes to restore role display from role_orgs on facility user list cards and table rows"}
 {"event_id": "8f559880cefbd525:succeeded", "kind": "run.succeeded", "ticket_id": "11", "run_id": "8f559880cefbd525", "state": "SUCCEEDED", "artifacts": ["specs/11/spec.md"]}
 {"event_id": "1f4c2de6cb03d37a:collected", "kind": "run.collected", "ticket_id": "11", "run_id": "1f4c2de6cb03d37a", "tokens": 1113600, "cost_usd": 0.681}
+{"event_id": "1f4c2de6cb03d37a:review-11-implementation:proposed", "kind": "handoff.proposed", "ticket_id": "11", "run_id": "1f4c2de6cb03d37a", "detail": "Review implementation against spec acceptance criteria"}
+{"event_id": "4ea3154d4a799054:queued", "kind": "run.queued", "ticket_id": "11", "run_id": "4ea3154d4a799054", "task_id": "review", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
+{"event_id": "1f4c2de6cb03d37a:review-11-implementation:accepted", "kind": "handoff.accepted", "ticket_id": "11", "run_id": "1f4c2de6cb03d37a", "detail": "Review implementation against spec acceptance criteria"}
+{"event_id": "1f4c2de6cb03d37a:succeeded", "kind": "run.succeeded", "ticket_id": "11", "run_id": "1f4c2de6cb03d37a", "state": "SUCCEEDED", "artifacts": ["specs/11/qa-plan.md"]}
