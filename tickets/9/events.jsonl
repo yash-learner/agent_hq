@@ -5,3 +5,4 @@
 {"event_id": "eb8043ee1ace478d:queued", "kind": "run.queued", "ticket_id": "9", "run_id": "eb8043ee1ace478d", "task_id": "arch-plan", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment", "gate": "github-issue-comment"}}
 {"event_id": "8d1ffe7b5c67fe67:arch-plan-9:accepted", "kind": "handoff.accepted", "ticket_id": "9", "run_id": "8d1ffe7b5c67fe67", "detail": "Specification complete; architecture plan needed to classify as crud or beyond-crud"}
 {"event_id": "8d1ffe7b5c67fe67:succeeded", "kind": "run.succeeded", "ticket_id": "9", "run_id": "8d1ffe7b5c67fe67", "state": "SUCCEEDED", "artifacts": ["specs/9/spec.md"]}
+{"event_id": "eb8043ee1ace478d:collected", "kind": "run.collected", "ticket_id": "9", "run_id": "eb8043ee1ace478d", "tokens": 213300, "cost_usd": 0.179}
