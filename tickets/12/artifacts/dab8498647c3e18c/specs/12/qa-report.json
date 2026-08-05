@@ -1,0 +1,87 @@
+{
+  "criteria": [
+    {
+      "id": "ac1-role-org-card-view",
+      "title": "Display role org name in card view",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3"],
+      "videos": ["specs/12/videos/role-display-card-table.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac2-care-nurse-shows-nurse",
+      "title": "Fixture user care-nurse shows Nurse role",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3"],
+      "videos": ["specs/12/videos/role-display-card-table.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac3-multiple-roles-comma-separated",
+      "title": "Multiple role_orgs display comma-separated",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3"],
+      "videos": ["specs/12/videos/multiple-roles.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac4-non-member-designation",
+      "title": "Non-Member roles show designation with middle dot",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3"],
+      "videos": ["specs/12/videos/non-member-designation.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac5-empty-roles-no-crash",
+      "title": "Empty role_orgs shows em dash without crashing",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3"],
+      "videos": ["specs/12/videos/empty-roles.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac6-table-view-formatted-roles",
+      "title": "Table view displays formatted role_orgs",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3", "4"],
+      "videos": ["specs/12/videos/role-display-card-table.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac7-organization-users-no-regression",
+      "title": "No regression for organization user lists with explicit roleName prop",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Organization features are not accessible in the current test fixture environment. The authenticated test user does not have organization membership visible in the test setup. This criterion requires organization-scoped test data that is not present in the current fixtures.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": ["1"],
+      "videos": ["specs/12/videos/organization-users.webm"],
+      "screenshots": []
+    }
+  ],
+  "summary": {
+    "all_passed": false,
+    "pass": 6,
+    "fail": 0,
+    "not_exercised": 1
+  }
+}
