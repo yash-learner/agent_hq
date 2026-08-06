@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06T09:56:55Z",
+  "generated_at": "2026-08-06T10:59:02Z",
   "tickets": [
     {
       "ticket_id": "1",
@@ -1053,7 +1053,7 @@
     {
       "ticket_id": "13",
       "pinned_comment_id": 5202392802,
-      "status": "AWAITING_MERGE",
+      "status": "ACTIVE",
       "runs": [
         {
           "run_id": "50d129b1e4f0fc8e",
@@ -1376,12 +1376,29 @@
           "input_from_run_id": "cf838bfaed9506c2",
           "output_commit": "70cb1821ac61c801392a4abcc757217ed681d635",
           "pr_ref": "yash-learner/care_fe_agent_hq#7"
+        },
+        {
+          "run_id": "4e76e6dfc45dd9b9",
+          "task_id": "qa",
+          "task_version": 1,
+          "ticket_id": "13",
+          "state": "QUEUED",
+          "attempt": 0,
+          "bindings": {},
+          "cost_usd": null,
+          "tokens": null,
+          "usage_known": false,
+          "artifacts": [],
+          "chain_depth": 0,
+          "source_event_id": "issue-comment:5203744396",
+          "enqueue_index": 0,
+          "queue_seq": 9
         }
       ],
       "block_reason": null,
       "block_source": null,
       "interrupted_run_id": null,
-      "comments_polled_at": "2026-08-06T09:56:40Z",
+      "comments_polled_at": "2026-08-06T10:57:46Z",
       "work_repos": [
         {
           "repo": "yash-learner/care_fe_agent_hq",
