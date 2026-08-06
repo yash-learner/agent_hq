@@ -15,3 +15,4 @@
 {"event_id": "1c43baf2ddbf7a7f:queued", "kind": "run.queued", "ticket_id": "13", "run_id": "1c43baf2ddbf7a7f", "task_id": "implement", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
 {"event_id": "8878a49a3cc6fcd7:implement-round-2:accepted", "kind": "handoff.accepted", "ticket_id": "13", "run_id": "8878a49a3cc6fcd7", "detail": "Fix blocker: tests/PLAYWRIGHT_GUIDE.md has concatenated URLs on lines 90, 92, 94 that break markdown formatting"}
 {"event_id": "8878a49a3cc6fcd7:succeeded", "kind": "run.succeeded", "ticket_id": "13", "run_id": "8878a49a3cc6fcd7", "state": "SUCCEEDED", "artifacts": ["specs/13/review.md"]}
+{"event_id": "1c43baf2ddbf7a7f:collected", "kind": "run.collected", "ticket_id": "13", "run_id": "1c43baf2ddbf7a7f", "tokens": 768600, "cost_usd": 0.487}
