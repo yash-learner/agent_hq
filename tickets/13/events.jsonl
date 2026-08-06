@@ -5,3 +5,4 @@
 {"event_id": "70cb4be30de1ad3a:queued", "kind": "run.queued", "ticket_id": "13", "run_id": "70cb4be30de1ad3a", "task_id": "implement", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment", "gate": "github-issue-comment"}}
 {"event_id": "50d129b1e4f0fc8e:implement-care-fe-13:accepted", "kind": "handoff.accepted", "ticket_id": "13", "run_id": "50d129b1e4f0fc8e", "detail": "Add search functionality to facility healthcare services index page"}
 {"event_id": "50d129b1e4f0fc8e:succeeded", "kind": "run.succeeded", "ticket_id": "13", "run_id": "50d129b1e4f0fc8e", "state": "SUCCEEDED", "artifacts": ["specs/13/spec.md"]}
+{"event_id": "70cb4be30de1ad3a:collected", "kind": "run.collected", "ticket_id": "13", "run_id": "70cb4be30de1ad3a", "tokens": 1715100, "cost_usd": 0.985}
