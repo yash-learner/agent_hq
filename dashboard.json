@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06T11:47:44Z",
+  "generated_at": "2026-08-06T11:48:08Z",
   "tickets": [
     {
       "ticket_id": "1",
@@ -1573,7 +1573,7 @@
           "task_id": "finalize",
           "task_version": 1,
           "ticket_id": "13",
-          "state": "QUEUED",
+          "state": "RUNNING",
           "attempt": 0,
           "bindings": {
             "tracker": "github-issues",
@@ -1613,7 +1613,9 @@
             "specs/13/qa-logs/ac5-clear-restores-all.log",
             "specs/13/qa-logs/ac6-url-persistence-pagination.log",
             "specs/13/qa-logs/ac7-url-persistence-refresh.log"
-          ]
+          ],
+          "deadline": "2026-08-06T12:03:08Z",
+          "attempt_started_at": "2026-08-06T11:48:08Z"
         }
       ],
       "block_reason": null,
