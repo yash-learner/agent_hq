@@ -1,0 +1,87 @@
+{
+  "criteria": [
+    {
+      "id": "ac1-search-input-visible",
+      "title": "Search input field appears on page load",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["Navigate to services page", "Verify search input visible", "Verify search icon present"],
+      "videos": ["specs/13/videos/ac1-search-input-visible.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac2-api-filter-parameter",
+      "title": "API calls include 'name' query parameter for filtering",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["Navigate to services page", "Type search term", "Intercept API calls", "Verify 'name' parameter present"],
+      "videos": ["specs/13/videos/ac2-api-filter-parameter.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac3-matching-services-display",
+      "title": "Matching services are displayed in the list",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["Navigate to services page", "Type 'Pathology'", "Verify matching service displayed"],
+      "videos": ["specs/13/videos/ac3-matching-services-display.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac4-empty-state",
+      "title": "Empty state displays 'No services found' when no matches",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["Navigate to services page", "Type non-existent service name", "Verify empty state message"],
+      "videos": ["specs/13/videos/ac4-empty-state.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac5-clear-restores-all",
+      "title": "Clearing input displays all services again",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["Navigate to services page", "Type search term", "Clear input", "Verify all services restored"],
+      "videos": ["specs/13/videos/ac5-clear-restores-all.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac6-url-persistence-pagination",
+      "title": "Search term persists in URL with pagination",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["Navigate to services page", "Type search term", "Verify URL contains search parameter"],
+      "videos": ["specs/13/videos/ac6-url-persistence-pagination.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac7-url-persistence-refresh",
+      "title": "Search term persists on page refresh",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["Navigate to services page", "Type search term", "Refresh page", "Verify search term persisted in URL and input"],
+      "videos": ["specs/13/videos/ac7-url-persistence-refresh.webm"],
+      "screenshots": []
+    }
+  ],
+  "summary": {
+    "all_passed": true,
+    "pass": 7,
+    "fail": 0,
+    "not_exercised": 0
+  }
+}

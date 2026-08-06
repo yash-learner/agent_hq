@@ -1,0 +1,25 @@
+Navigating to homepage first to establish session...
+On login page? false
+Navigating to services page...
+Page loaded, waiting for React to hydrate...
+Screenshot saved
+Page text (first 800 chars): FACILITY WITH PATIENTS
+AU
+Command Palette
+
+Search for a command to run...
+
+Services
+
+Discover the comprehensive healthcare services we offer
+
+Main Pharmacy
+
+View Details
+Pathology Lab
+
+View Details
+Current URL: http://localhost:4000/facility/142f247c-fea7-451a-875f-4a6110a242f6/services
+Checking search input visibility...
+✅ AC1: Search input field appears on page load - PASS
+Recording complete
