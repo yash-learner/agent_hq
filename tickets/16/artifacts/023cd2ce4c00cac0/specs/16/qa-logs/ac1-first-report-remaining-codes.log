@@ -1,0 +1,29 @@
+=== AC1: Create first report with remaining codes available ===
+Step 1: Navigate to home page and find a facility
+Step 2: Navigate to patients page to find service requests
+Step 3: Navigate to a patient with service requests
+Step 4: Find service requests tab or link
+Trying to find service requests in current page
+Step 5: Click on a service request with multiple diagnostic codes
+Step 6: Locate the diagnostic report type dropdown in Test Results Entry section
+Step 7: Click the dropdown to see all codes
+Error during test: locator.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('[role="combobox"]').filter({ hasText: /diagnostic|report|type/i }).or(locator('button').filter({ hasText: /select.*diagnostic/i })).or(locator('[data-testid*="diagnostic"]').locator('button')).first()[22m
+
+    at main (/workspaces/agent_hq/_target/023cd2ce4c00cac0/specs/16/qa-drivers/ac1-first-report-remaining-codes.mjs:118:20) {
+  log: [
+    `  - waiting for locator('[role="combobox"]').filter({ hasText: /diagnostic|report|type/i }).or(locator('button').filter({ hasText: /select.*diagnostic/i })).or(locator('[data-testid*="diagnostic"]').locator('button')).first()`
+  ],
+  name: 'TimeoutError'
+}
+Test failed: locator.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('[role="combobox"]').filter({ hasText: /diagnostic|report|type/i }).or(locator('button').filter({ hasText: /select.*diagnostic/i })).or(locator('[data-testid*="diagnostic"]').locator('button')).first()[22m
+
+    at main (/workspaces/agent_hq/_target/023cd2ce4c00cac0/specs/16/qa-drivers/ac1-first-report-remaining-codes.mjs:118:20) {
+  log: [
+    `  - waiting for locator('[role="combobox"]').filter({ hasText: /diagnostic|report|type/i }).or(locator('button').filter({ hasText: /select.*diagnostic/i })).or(locator('[data-testid*="diagnostic"]').locator('button')).first()`
+  ],
+  name: 'TimeoutError'
+}

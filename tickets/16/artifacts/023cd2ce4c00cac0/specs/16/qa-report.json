@@ -1,0 +1,87 @@
+{
+  "criteria": [
+    {
+      "id": "ac1-first-report-remaining-codes",
+      "title": "Create first report with remaining codes available",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "No Service Request with an Activity Definition defining multiple diagnostic report codes exists in the test environment. Fixtures lack Activity Definitions with multiple diagnostic_report_codes.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": ["1", "2", "3", "4", "5"],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac2-used-codes-removed",
+      "title": "Already-used codes are removed from dropdown",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Requires a Service Request with one diagnostic report already created, which requires Service Requests with Activity Definitions that have multiple diagnostic_report_codes. This test data does not exist in fixtures.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": ["1", "2"],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac3-multiple-reports-unused-codes",
+      "title": "Multiple reports show all unused codes",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Requires a Service Request with 2 out of 3 diagnostic reports already created. Cannot reach this state without the foundational test data (Activity Definitions with multiple codes and Service Requests using them).",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": ["1", "2"],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac4-all-codes-used-disabled",
+      "title": "All codes used disables creation",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Requires a Service Request where all diagnostic report codes have been used (3 out of 3 reports created). Cannot reach this state without the foundational test data infrastructure.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": ["1", "2", "3"],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac5-navigate-away-persist-state",
+      "title": "Navigate away and return shows correct state",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Requires existing Service Requests with partial diagnostic reports created (2 out of 3). Cannot test state persistence without first having the required Service Requests and diagnostic reports.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": ["1", "2", "3"],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac6-no-codes-unchanged",
+      "title": "Service Request without diagnostic report codes unchanged",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Requires a Service Request with an Activity Definition that has no diagnostic_report_codes defined. While simpler than multi-code ADs, still requires Service Request creation infrastructure which is not available in fixtures.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": ["1", "2", "3"],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac7-sequential-no-reload",
+      "title": "Sequential creation without reload",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Requires ability to create multiple diagnostic reports sequentially, which first requires Service Requests with Activity Definitions that have multiple diagnostic_report_codes. Cannot test sequential flow without foundational test data.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": ["1", "2", "3", "4", "5", "6"],
+      "videos": [],
+      "screenshots": []
+    }
+  ],
+  "summary": {
+    "all_passed": false,
+    "pass": 0,
+    "fail": 0,
+    "not_exercised": 7
+  }
+}
