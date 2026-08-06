@@ -1,2 +1,7 @@
 {"event_id": "bfacad6f39f10d67:queued", "kind": "run.queued", "ticket_id": "16", "run_id": "bfacad6f39f10d67", "task_id": "spec", "task_version": 1, "state": "QUEUED", "bindings": {}}
 {"event_id": "bfacad6f39f10d67:collected", "kind": "run.collected", "ticket_id": "16", "run_id": "bfacad6f39f10d67", "tokens": 511500, "cost_usd": 0.422}
+{"event_id": "bfacad6f39f10d67:auto_approval", "kind": "gate.decided", "ticket_id": "16", "run_id": "bfacad6f39f10d67", "detail": "auto-approved by task config (would have asked product-owners)", "actor": "engine"}
+{"event_id": "bfacad6f39f10d67:implement-16-frontend:proposed", "kind": "handoff.proposed", "ticket_id": "16", "run_id": "bfacad6f39f10d67", "detail": "Implement filtering logic in DiagnosticReportForm to support multiple diagnostic reports per Service Request"}
+{"event_id": "81ed65b568a501e7:queued", "kind": "run.queued", "ticket_id": "16", "run_id": "81ed65b568a501e7", "task_id": "implement", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment", "gate": "github-issue-comment"}}
+{"event_id": "bfacad6f39f10d67:implement-16-frontend:accepted", "kind": "handoff.accepted", "ticket_id": "16", "run_id": "bfacad6f39f10d67", "detail": "Implement filtering logic in DiagnosticReportForm to support multiple diagnostic reports per Service Request"}
+{"event_id": "bfacad6f39f10d67:succeeded", "kind": "run.succeeded", "ticket_id": "16", "run_id": "bfacad6f39f10d67", "state": "SUCCEEDED", "artifacts": ["specs/16/spec.md"]}
