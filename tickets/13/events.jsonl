@@ -44,3 +44,5 @@
 {"event_id": "252162f89d25ebf7:succeeded", "kind": "run.succeeded", "ticket_id": "13", "run_id": "252162f89d25ebf7", "state": "SUCCEEDED", "artifacts": ["specs/13/summary.md"]}
 {"event_id": "4e76e6dfc45dd9b9:queued", "kind": "run.queued", "ticket_id": "13", "run_id": "4e76e6dfc45dd9b9", "task_id": "qa", "task_version": 1, "state": "QUEUED", "bindings": {}}
 {"event_id": "4e76e6dfc45dd9b9:rework", "kind": "run.rework", "ticket_id": "13", "run_id": "4e76e6dfc45dd9b9", "detail": "@yash-learner: Re-run live QA; score honestly; create missing localhost data via UI before not-exercised.", "actor": "yash-learner", "source": "issue-comment:5203744396"}
+{"event_id": "86e3a0121a388044:queued", "kind": "run.queued", "ticket_id": "13", "run_id": "86e3a0121a388044", "task_id": "qa", "task_version": 1, "state": "QUEUED", "bindings": {}}
+{"event_id": "86e3a0121a388044:rework", "kind": "run.rework", "ticket_id": "13", "run_id": "86e3a0121a388044", "detail": "@yash-learner: Re-run live QA; score honestly; create missing localhost data via UI before not-exercised.", "actor": "yash-learner", "source": "pr-comment:5203734646"}
