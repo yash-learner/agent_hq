@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06T14:18:19Z",
+  "generated_at": "2026-08-06T14:18:29Z",
   "tickets": [
     {
       "ticket_id": "1",
@@ -1681,7 +1681,7 @@
           "task_id": "implement",
           "task_version": 1,
           "ticket_id": "16",
-          "state": "RUNNING",
+          "state": "SUCCEEDED",
           "attempt": 0,
           "bindings": {
             "tracker": "github-issues",
@@ -1691,7 +1691,9 @@
           "cost_usd": 1.13,
           "tokens": 2114000,
           "usage_known": true,
-          "artifacts": [],
+          "artifacts": [
+            "specs/16/qa-plan.md"
+          ],
           "chain_depth": 1,
           "parent_run_id": "bfacad6f39f10d67",
           "queue_seq": 1,
@@ -1703,7 +1705,35 @@
           "deadline": "2026-08-06T15:38:33Z",
           "attempt_started_at": "2026-08-06T14:08:33Z",
           "base_commit": "dea49853619eaf2e5b7c18d6f89a1c1bf67567a0",
-          "input_from_run_id": "bfacad6f39f10d67"
+          "input_from_run_id": "bfacad6f39f10d67",
+          "output_commit": "292d229394d03f34462f6457044d5585773d568f",
+          "pr_ref": "yash-learner/care_fe_agent_hq#8"
+        },
+        {
+          "run_id": "e29c95c833216941",
+          "task_id": "review",
+          "task_version": 1,
+          "ticket_id": "16",
+          "state": "QUEUED",
+          "attempt": 0,
+          "bindings": {
+            "tracker": "github-issues",
+            "agent-session": "copilot-cli",
+            "messaging": "github-comment"
+          },
+          "cost_usd": null,
+          "tokens": null,
+          "usage_known": false,
+          "artifacts": [],
+          "chain_depth": 2,
+          "parent_run_id": "81ed65b568a501e7",
+          "queue_seq": 2,
+          "handoff_key": "review-1",
+          "repo": "yash-learner/care_fe_agent_hq",
+          "input_artifacts": [
+            "specs/16/spec.md",
+            "specs/16/qa-plan.md"
+          ]
         }
       ],
       "block_reason": null,
@@ -1715,8 +1745,8 @@
           "repo": "yash-learner/care_fe_agent_hq",
           "branch": "agent-hq/16",
           "base_branch": "develop",
-          "recorded_head": "dea49853619eaf2e5b7c18d6f89a1c1bf67567a0",
-          "pr_ref": null
+          "recorded_head": "292d229394d03f34462f6457044d5585773d568f",
+          "pr_ref": "yash-learner/care_fe_agent_hq#8"
         }
       ]
     },
