@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06T11:22:43Z",
+  "generated_at": "2026-08-06T11:23:07Z",
   "tickets": [
     {
       "ticket_id": "1",
@@ -1392,7 +1392,7 @@
           "chain_depth": 0,
           "source_event_id": "issue-comment:5203744396",
           "enqueue_index": 0,
-          "queue_seq": 10
+          "queue_seq": 11
         },
         {
           "run_id": "86e3a0121a388044",
@@ -1476,7 +1476,7 @@
           "artifacts": [],
           "chain_depth": 1,
           "parent_run_id": "86e3a0121a388044",
-          "queue_seq": 11,
+          "queue_seq": 12,
           "handoff_key": "finalize-13",
           "repo": "yash-learner/care_fe_agent_hq",
           "input_artifacts": [
@@ -1489,7 +1489,7 @@
       "block_reason": null,
       "block_source": null,
       "interrupted_run_id": null,
-      "comments_polled_at": "2026-08-06T10:57:46Z",
+      "comments_polled_at": "2026-08-06T10:59:06Z",
       "work_repos": [
         {
           "repo": "yash-learner/care_fe_agent_hq",
