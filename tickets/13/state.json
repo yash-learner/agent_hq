@@ -330,7 +330,7 @@
       "task_id": "qa",
       "task_version": 1,
       "ticket_id": "13",
-      "state": "QUEUED",
+      "state": "RUNNING",
       "attempt": 0,
       "bindings": {},
       "cost_usd": null,
@@ -340,7 +340,9 @@
       "chain_depth": 0,
       "source_event_id": "issue-comment:5203744396",
       "enqueue_index": 0,
-      "queue_seq": 12
+      "queue_seq": 12,
+      "deadline": "2026-08-06T12:27:50Z",
+      "attempt_started_at": "2026-08-06T11:27:50Z"
     },
     {
       "run_id": "86e3a0121a388044",
