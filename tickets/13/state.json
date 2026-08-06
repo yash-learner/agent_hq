@@ -245,7 +245,7 @@
       "task_id": "qa",
       "task_version": 1,
       "ticket_id": "13",
-      "state": "RUNNING",
+      "state": "SUCCEEDED",
       "attempt": 0,
       "bindings": {
         "tracker": "github-issues",
@@ -255,7 +255,24 @@
       "cost_usd": 1.26,
       "tokens": 2123300,
       "usage_known": true,
-      "artifacts": [],
+      "artifacts": [
+        "specs/13/qa.md",
+        "specs/13/qa-report.json",
+        "specs/13/videos/ac1-search-input-appears.webm",
+        "specs/13/videos/ac2-api-debounced-query.webm",
+        "specs/13/videos/ac3-matching-services.webm",
+        "specs/13/videos/ac4-empty-state.webm",
+        "specs/13/videos/ac5-clear-search.webm",
+        "specs/13/videos/ac6-pagination-persist.webm",
+        "specs/13/videos/ac7-refresh-persist.webm",
+        "specs/13/videos/ac6-pagination-persist.gif",
+        "specs/13/videos/ac5-clear-search.gif",
+        "specs/13/videos/ac2-api-debounced-query.gif",
+        "specs/13/videos/ac3-matching-services.gif",
+        "specs/13/videos/ac7-refresh-persist.gif",
+        "specs/13/videos/ac4-empty-state.gif",
+        "specs/13/videos/ac1-search-input-appears.gif"
+      ],
       "chain_depth": 7,
       "parent_run_id": "4edcb2e888d48c6c",
       "queue_seq": 7,
@@ -269,7 +286,36 @@
       "deadline": "2026-08-06T10:32:39Z",
       "attempt_started_at": "2026-08-06T09:32:39Z",
       "base_commit": "70cb1821ac61c801392a4abcc757217ed681d635",
-      "input_from_run_id": "4edcb2e888d48c6c"
+      "input_from_run_id": "4edcb2e888d48c6c",
+      "output_commit": "70cb1821ac61c801392a4abcc757217ed681d635",
+      "pr_ref": "yash-learner/care_fe_agent_hq#7"
+    },
+    {
+      "run_id": "252162f89d25ebf7",
+      "task_id": "finalize",
+      "task_version": 1,
+      "ticket_id": "13",
+      "state": "QUEUED",
+      "attempt": 0,
+      "bindings": {
+        "tracker": "github-issues",
+        "agent-session": "copilot-cli",
+        "messaging": "github-comment"
+      },
+      "cost_usd": null,
+      "tokens": null,
+      "usage_known": false,
+      "artifacts": [],
+      "chain_depth": 8,
+      "parent_run_id": "cf838bfaed9506c2",
+      "queue_seq": 8,
+      "handoff_key": "finalize-13",
+      "repo": "yash-learner/care_fe_agent_hq",
+      "input_artifacts": [
+        "specs/13/spec.md",
+        "specs/13/review.md",
+        "specs/13/qa.md"
+      ]
     }
   ],
   "block_reason": null,

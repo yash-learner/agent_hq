@@ -1,0 +1,87 @@
+{
+  "criteria": [
+    {
+      "id": "ac1-search-input-appears",
+      "title": "Search input field appears on page load",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1"],
+      "videos": ["specs/13/videos/ac1-search-input-appears.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac2-api-debounced-query",
+      "title": "API call includes name query parameter (debounced)",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1"],
+      "videos": ["specs/13/videos/ac2-api-debounced-query.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac3-matching-services",
+      "title": "Matching services are displayed in the list",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1"],
+      "videos": ["specs/13/videos/ac3-matching-services.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac4-empty-state",
+      "title": "Empty state shows 'no_services_found'",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1"],
+      "videos": ["specs/13/videos/ac4-empty-state.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac5-clear-search",
+      "title": "Clearing input displays all services again",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2"],
+      "videos": ["specs/13/videos/ac5-clear-search.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac6-pagination-persist",
+      "title": "Search term persists with pagination",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1"],
+      "videos": ["specs/13/videos/ac6-pagination-persist.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac7-refresh-persist",
+      "title": "Search term persists in URL on page refresh",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2"],
+      "videos": ["specs/13/videos/ac7-refresh-persist.webm"],
+      "screenshots": []
+    }
+  ],
+  "summary": {
+    "all_passed": true,
+    "pass": 7,
+    "fail": 0,
+    "not_exercised": 0
+  }
+}
