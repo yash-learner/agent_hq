@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06T14:31:05Z",
+  "generated_at": "2026-08-06T14:31:13Z",
   "tickets": [
     {
       "ticket_id": "1",
@@ -1714,7 +1714,7 @@
           "task_id": "review",
           "task_version": 1,
           "ticket_id": "16",
-          "state": "RUNNING",
+          "state": "SUCCEEDED",
           "attempt": 0,
           "bindings": {
             "tracker": "github-issues",
@@ -1724,7 +1724,9 @@
           "cost_usd": 0.171,
           "tokens": 222700,
           "usage_known": true,
-          "artifacts": [],
+          "artifacts": [
+            "specs/16/review.md"
+          ],
           "chain_depth": 2,
           "parent_run_id": "81ed65b568a501e7",
           "queue_seq": 2,
@@ -1737,7 +1739,36 @@
           "deadline": "2026-08-06T14:49:14Z",
           "attempt_started_at": "2026-08-06T14:19:14Z",
           "base_commit": "292d229394d03f34462f6457044d5585773d568f",
-          "input_from_run_id": "81ed65b568a501e7"
+          "input_from_run_id": "81ed65b568a501e7",
+          "output_commit": "292d229394d03f34462f6457044d5585773d568f",
+          "pr_ref": "yash-learner/care_fe_agent_hq#8"
+        },
+        {
+          "run_id": "023cd2ce4c00cac0",
+          "task_id": "qa",
+          "task_version": 1,
+          "ticket_id": "16",
+          "state": "QUEUED",
+          "attempt": 0,
+          "bindings": {
+            "tracker": "github-issues",
+            "agent-session": "copilot-cli",
+            "messaging": "github-comment"
+          },
+          "cost_usd": null,
+          "tokens": null,
+          "usage_known": false,
+          "artifacts": [],
+          "chain_depth": 3,
+          "parent_run_id": "e29c95c833216941",
+          "queue_seq": 3,
+          "handoff_key": "qa-16",
+          "repo": "yash-learner/care_fe_agent_hq",
+          "input_artifacts": [
+            "specs/16/spec.md",
+            "specs/16/review.md",
+            "specs/16/qa-plan.md"
+          ]
         }
       ],
       "block_reason": null,
