@@ -347,7 +347,7 @@
       "task_id": "qa",
       "task_version": 1,
       "ticket_id": "13",
-      "state": "QUEUED",
+      "state": "RUNNING",
       "attempt": 0,
       "bindings": {},
       "cost_usd": null,
@@ -358,7 +358,9 @@
       "source_event_id": "pr-comment:5203734646",
       "enqueue_index": 0,
       "queue_seq": 9,
-      "repo": "yash-learner/care_fe_agent_hq"
+      "repo": "yash-learner/care_fe_agent_hq",
+      "deadline": "2026-08-06T11:59:32Z",
+      "attempt_started_at": "2026-08-06T10:59:32Z"
     }
   ],
   "block_reason": null,
