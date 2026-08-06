@@ -31,3 +31,7 @@
 {"event_id": "73622269e12c8233:review-round-3:accepted", "kind": "handoff.accepted", "ticket_id": "13", "run_id": "73622269e12c8233", "detail": "Review fixes for Round 2 blockers"}
 {"event_id": "73622269e12c8233:succeeded", "kind": "run.succeeded", "ticket_id": "13", "run_id": "73622269e12c8233", "state": "SUCCEEDED", "artifacts": ["specs/13/qa-plan.md"]}
 {"event_id": "4edcb2e888d48c6c:collected", "kind": "run.collected", "ticket_id": "13", "run_id": "4edcb2e888d48c6c", "tokens": 426000, "cost_usd": 0.26}
+{"event_id": "4edcb2e888d48c6c:qa-13:proposed", "kind": "handoff.proposed", "ticket_id": "13", "run_id": "4edcb2e888d48c6c", "detail": "All acceptance criteria implemented and blockers resolved; ready for QA verification"}
+{"event_id": "cf838bfaed9506c2:queued", "kind": "run.queued", "ticket_id": "13", "run_id": "cf838bfaed9506c2", "task_id": "qa", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
+{"event_id": "4edcb2e888d48c6c:qa-13:accepted", "kind": "handoff.accepted", "ticket_id": "13", "run_id": "4edcb2e888d48c6c", "detail": "All acceptance criteria implemented and blockers resolved; ready for QA verification"}
+{"event_id": "4edcb2e888d48c6c:succeeded", "kind": "run.succeeded", "ticket_id": "13", "run_id": "4edcb2e888d48c6c", "state": "SUCCEEDED", "artifacts": ["specs/13/review.md"]}
