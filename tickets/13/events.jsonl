@@ -25,3 +25,4 @@
 {"event_id": "73622269e12c8233:queued", "kind": "run.queued", "ticket_id": "13", "run_id": "73622269e12c8233", "task_id": "implement", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
 {"event_id": "1bd69d5f396fd0df:implement-round-3:accepted", "kind": "handoff.accepted", "ticket_id": "13", "run_id": "1bd69d5f396fd0df", "detail": "Fix test blocker: serviceSearch.spec.ts:77 checks for i18n key instead of translated text"}
 {"event_id": "1bd69d5f396fd0df:succeeded", "kind": "run.succeeded", "ticket_id": "13", "run_id": "1bd69d5f396fd0df", "state": "SUCCEEDED", "artifacts": ["specs/13/review.md"]}
+{"event_id": "73622269e12c8233:collected", "kind": "run.collected", "ticket_id": "13", "run_id": "73622269e12c8233", "tokens": 752500, "cost_usd": 0.485}
