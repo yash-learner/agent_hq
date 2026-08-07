@@ -105,7 +105,8 @@
       "branch": "agent-hq/28",
       "base_branch": "develop",
       "recorded_head": "9cdc12df70e82db1d7096c1b5f79bc38e0471c6c",
-      "pr_ref": "yash-learner/care_fe_agent_hq#16"
+      "pr_ref": "yash-learner/care_fe_agent_hq#16",
+      "comments_polled_at": "2026-08-07T20:25:03Z"
     }
   ]
 }
