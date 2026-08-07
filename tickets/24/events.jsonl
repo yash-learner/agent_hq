@@ -32,3 +32,4 @@
 {"event_id": "c852596d193b3c92:rework", "kind": "run.rework", "ticket_id": "24", "run_id": "c852596d193b3c92", "detail": "Previous attempt rejected: qa-report.json schema violation: criteria/3: Additional properties are not allowed ('notes' was unexpected)", "actor": "engine", "source": "43af4c6416909359:artifact_rejected"}
 {"event_id": "c852596d193b3c92:collected", "kind": "run.collected", "ticket_id": "24", "run_id": "c852596d193b3c92", "tokens": 5339600, "cost_usd": 2.57}
 {"event_id": "c852596d193b3c92:failed", "kind": "run.failed", "ticket_id": "24", "run_id": "c852596d193b3c92", "state": "FAILED"}
+{"event_id": "c852596d193b3c92:artifact_rejected", "kind": "run.artifact_rejected", "ticket_id": "24", "run_id": "c852596d193b3c92", "detail": "qa-report.json: video specs/24/videos/ac1-env-links.webm is claimed by criteria 'ac1-env-links' and 'ac4-security-attributes'"}
