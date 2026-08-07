@@ -5,3 +5,4 @@
 {"event_id": "fa8c9c53f9edc5d3:queued", "kind": "run.queued", "ticket_id": "24", "run_id": "fa8c9c53f9edc5d3", "task_id": "arch-plan", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment", "gate": "github-issue-comment"}}
 {"event_id": "e9a7e9beac881dc0:arch-plan-24:accepted", "kind": "handoff.accepted", "ticket_id": "24", "run_id": "e9a7e9beac881dc0", "detail": "Spec approved. Need to create architecture plan for adding custom navbar links (env config + plugin support)."}
 {"event_id": "e9a7e9beac881dc0:succeeded", "kind": "run.succeeded", "ticket_id": "24", "run_id": "e9a7e9beac881dc0", "state": "SUCCEEDED", "artifacts": ["specs/24/spec.md"]}
+{"event_id": "fa8c9c53f9edc5d3:collected", "kind": "run.collected", "ticket_id": "24", "run_id": "fa8c9c53f9edc5d3", "tokens": 264999, "cost_usd": 0.262}
