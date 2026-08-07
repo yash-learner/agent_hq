@@ -1,0 +1,17 @@
+[2026-08-07T21:29:57.115Z] Starting AC1: Search input displays on page load
+[2026-08-07T21:29:57.225Z] Browser launched
+[2026-08-07T21:29:57.294Z] Context created with auth and video recording
+[2026-08-07T21:29:57.332Z] Page created
+[2026-08-07T21:29:57.333Z] Cursor overlay enabled
+[2026-08-07T21:29:57.333Z] Navigating to http://localhost:4000/facility/8f2bfd67-f731-435a-af51-e0f45ddce02e/services
+[2026-08-07T21:29:59.913Z] Navigation complete
+[2026-08-07T21:29:59.913Z] Waiting for auth shell readiness...
+[2026-08-07T21:29:59.944Z] Auth shell ready - sidebar visible
+[2026-08-07T21:29:59.958Z] No login form detected - auth success
+[2026-08-07T21:29:59.960Z] Page fully loaded
+[2026-08-07T21:29:59.960Z] Step 1: Verifying Services heading
+[2026-08-07T21:29:59.967Z] ✓ Services heading visible
+[2026-08-07T21:29:59.967Z] Step 2: Verifying search input field
+[2026-08-07T21:29:59.969Z] ✓ Search input visible with correct placeholder
+[2026-08-07T21:30:01.971Z] AC1: PASS - Search input displays on page load
+[2026-08-07T21:30:02.563Z] Browser cleanup complete

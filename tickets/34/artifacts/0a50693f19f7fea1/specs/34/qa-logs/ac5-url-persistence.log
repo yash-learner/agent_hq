@@ -1,0 +1,28 @@
+[2026-08-07T21:32:58.275Z] Starting AC5: Search term persists in URL and on page reload
+[2026-08-07T21:32:58.389Z] Browser launched
+[2026-08-07T21:32:58.481Z] Context created with auth and video recording
+[2026-08-07T21:32:58.521Z] Page created
+[2026-08-07T21:32:58.522Z] Cursor overlay enabled
+[2026-08-07T21:32:58.522Z] Navigating to http://localhost:4000/facility/8f2bfd67-f731-435a-af51-e0f45ddce02e/services
+[2026-08-07T21:33:00.436Z] Navigation complete
+[2026-08-07T21:33:00.436Z] Waiting for auth shell readiness...
+[2026-08-07T21:33:00.624Z] Auth shell ready - sidebar visible
+[2026-08-07T21:33:00.624Z] Step 1: Typing "Neurology" in search input
+[2026-08-07T21:33:01.218Z] Typed "Neurology"
+[2026-08-07T21:33:02.221Z] Waited for debounce and API response
+[2026-08-07T21:33:02.221Z] Verifying URL contains search=Neurology
+[2026-08-07T21:33:02.221Z] ✓ URL contains search=Neurology
+[2026-08-07T21:33:02.221Z] Verifying only Neurology service is visible
+[2026-08-07T21:33:02.231Z] ✓ Only Neurology service is visible
+[2026-08-07T21:33:02.231Z] Step 2: Reloading the page
+[2026-08-07T21:33:03.985Z] Page reloaded
+[2026-08-07T21:33:03.985Z] Waiting for auth shell readiness after reload...
+[2026-08-07T21:33:04.008Z] Auth shell ready after reload
+[2026-08-07T21:33:04.008Z] Step 3: Verifying search input is pre-filled
+[2026-08-07T21:33:04.016Z] ✓ Search input is pre-filled with "Neurology"
+[2026-08-07T21:33:04.016Z] Step 4: Verifying filtered results remain after reload
+[2026-08-07T21:33:04.020Z] ✓ Filtered results remain (only Neurology visible)
+[2026-08-07T21:33:04.020Z] Step 5: Verifying URL still contains search parameter
+[2026-08-07T21:33:04.020Z] ✓ URL still contains search=Neurology
+[2026-08-07T21:33:06.022Z] AC5: PASS - Search term persists in URL and on page reload
+[2026-08-07T21:33:06.598Z] Browser cleanup complete

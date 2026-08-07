@@ -1,0 +1,20 @@
+[2026-08-07T21:32:21.941Z] Starting AC4: Empty state for no matching results
+[2026-08-07T21:32:22.039Z] Browser launched
+[2026-08-07T21:32:22.122Z] Context created with auth and video recording
+[2026-08-07T21:32:22.159Z] Page created
+[2026-08-07T21:32:22.160Z] Cursor overlay enabled
+[2026-08-07T21:32:22.160Z] Navigating to http://localhost:4000/facility/8f2bfd67-f731-435a-af51-e0f45ddce02e/services
+[2026-08-07T21:32:24.759Z] Navigation complete
+[2026-08-07T21:32:24.759Z] Waiting for auth shell readiness...
+[2026-08-07T21:32:24.790Z] Auth shell ready - sidebar visible
+[2026-08-07T21:32:24.790Z] Step 1: Typing "NonexistentService12345" in search input
+[2026-08-07T21:32:25.331Z] Typed "NonexistentService12345"
+[2026-08-07T21:32:26.333Z] Waited for debounce and API response
+[2026-08-07T21:32:26.333Z] Step 2: Verifying empty state message
+[2026-08-07T21:32:26.338Z] ✓ Empty state message "No services found" is visible
+[2026-08-07T21:32:26.338Z] Step 3: Verifying no service cards are visible
+[2026-08-07T21:32:26.344Z] ✓ No service cards are visible
+[2026-08-07T21:32:26.344Z] Verifying URL contains search parameter
+[2026-08-07T21:32:26.345Z] ✓ URL contains search=NonexistentService12345
+[2026-08-07T21:32:28.346Z] AC4: PASS - Empty state for no matching results
+[2026-08-07T21:32:28.606Z] Browser cleanup complete

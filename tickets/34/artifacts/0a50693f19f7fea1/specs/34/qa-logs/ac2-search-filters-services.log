@@ -1,0 +1,45 @@
+[2026-08-07T21:30:50.216Z] Starting AC2: Search filters services by name
+[2026-08-07T21:30:50.325Z] Browser launched
+[2026-08-07T21:30:50.404Z] Context created with auth and video recording
+[2026-08-07T21:30:50.443Z] Page created
+[2026-08-07T21:30:50.445Z] Cursor overlay enabled
+[2026-08-07T21:30:50.445Z] === DATA SETUP START ===
+[2026-08-07T21:30:50.445Z] Creating healthcare service: Cardiology-1786138250215
+[2026-08-07T21:30:53.573Z] Clicked Add Healthcare Service button
+[2026-08-07T21:30:54.103Z] Filled service name: Cardiology-1786138250215
+[2026-08-07T21:30:55.470Z] Selected Pharmacy as internal type
+[2026-08-07T21:30:57.886Z] Selected location
+[2026-08-07T21:30:58.474Z] Clicked Create button
+[2026-08-07T21:30:59.308Z] ✓ Service Cardiology-1786138250215 created successfully
+[2026-08-07T21:30:59.308Z] Creating healthcare service: Neurology-1786138250215
+[2026-08-07T21:31:01.710Z] Clicked Add Healthcare Service button
+[2026-08-07T21:31:02.233Z] Filled service name: Neurology-1786138250215
+[2026-08-07T21:31:03.613Z] Selected Pharmacy as internal type
+[2026-08-07T21:31:06.030Z] Selected location
+[2026-08-07T21:31:06.591Z] Clicked Create button
+[2026-08-07T21:31:07.385Z] ✓ Service Neurology-1786138250215 created successfully
+[2026-08-07T21:31:07.385Z] Creating healthcare service: Orthopedics-1786138250215
+[2026-08-07T21:31:09.647Z] Clicked Add Healthcare Service button
+[2026-08-07T21:31:10.175Z] Filled service name: Orthopedics-1786138250215
+[2026-08-07T21:31:11.559Z] Selected Pharmacy as internal type
+[2026-08-07T21:31:14.011Z] Selected location
+[2026-08-07T21:31:14.580Z] Clicked Create button
+[2026-08-07T21:31:15.380Z] ✓ Service Orthopedics-1786138250215 created successfully
+[2026-08-07T21:31:15.380Z] === DATA SETUP COMPLETE ===
+[2026-08-07T21:31:15.380Z] Navigating to http://localhost:4000/facility/8f2bfd67-f731-435a-af51-e0f45ddce02e/services
+[2026-08-07T21:31:17.076Z] Navigation complete
+[2026-08-07T21:31:17.076Z] Waiting for auth shell readiness...
+[2026-08-07T21:31:17.093Z] Auth shell ready - sidebar visible
+[2026-08-07T21:31:17.093Z] Verifying all three services are visible
+[2026-08-07T21:31:17.103Z] ✓ Service Cardiology-1786138250215 visible
+[2026-08-07T21:31:17.106Z] ✓ Service Neurology-1786138250215 visible
+[2026-08-07T21:31:17.109Z] ✓ Service Orthopedics-1786138250215 visible
+[2026-08-07T21:31:17.109Z] Step 1: Typing "Cardiology" in search input
+[2026-08-07T21:31:17.629Z] Typed "Cardiology"
+[2026-08-07T21:31:18.631Z] Waited for debounce and API response
+[2026-08-07T21:31:18.631Z] Step 2: Verifying filtered results
+[2026-08-07T21:31:18.635Z] ✓ Only Cardiology service is visible
+[2026-08-07T21:31:18.635Z] Step 3: Verifying URL contains search parameter
+[2026-08-07T21:31:18.635Z] ✓ URL contains search=Cardiology
+[2026-08-07T21:31:20.636Z] AC2: PASS - Search filters services by name
+[2026-08-07T21:31:20.923Z] Browser cleanup complete

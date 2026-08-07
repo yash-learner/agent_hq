@@ -1,0 +1,21 @@
+[2026-08-07T21:31:49.911Z] Starting AC3: Clearing search shows all services
+[2026-08-07T21:31:50.011Z] Browser launched
+[2026-08-07T21:31:50.084Z] Context created with auth and video recording
+[2026-08-07T21:31:50.125Z] Page created
+[2026-08-07T21:31:50.126Z] Cursor overlay enabled
+[2026-08-07T21:31:50.126Z] Navigating to http://localhost:4000/facility/8f2bfd67-f731-435a-af51-e0f45ddce02e/services?search=Cardiology
+[2026-08-07T21:31:52.650Z] Navigation complete
+[2026-08-07T21:31:52.650Z] Waiting for auth shell readiness...
+[2026-08-07T21:31:52.681Z] Auth shell ready - sidebar visible
+[2026-08-07T21:31:52.696Z] Search input value: "Cardiology"
+[2026-08-07T21:31:52.697Z] Verifying filtered state (only Cardiology visible)
+[2026-08-07T21:31:52.700Z] Cardiology services visible: 1
+[2026-08-07T21:31:52.700Z] Step 1: Clearing search input
+[2026-08-07T21:31:53.232Z] Search input cleared
+[2026-08-07T21:31:54.234Z] Waited for debounce and API response
+[2026-08-07T21:31:54.234Z] Step 2: Verifying all services are visible
+[2026-08-07T21:31:54.242Z] ✓ All three services are visible
+[2026-08-07T21:31:54.242Z] Step 3: Verifying URL does not contain search parameter
+[2026-08-07T21:31:54.242Z] ✓ URL does not contain search parameter
+[2026-08-07T21:31:56.243Z] AC3: PASS - Clearing search shows all services
+[2026-08-07T21:31:56.524Z] Browser cleanup complete

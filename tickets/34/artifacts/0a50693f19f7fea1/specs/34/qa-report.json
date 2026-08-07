@@ -1,0 +1,65 @@
+{
+  "criteria": [
+    {
+      "id": "ac1-search-input-displays",
+      "title": "Search input displays on page load",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2"],
+      "videos": ["specs/34/videos/ac1-search-input-displays.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac2-search-filters-services",
+      "title": "Search filters services by name (debounced)",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["data-setup-1", "data-setup-2", "data-setup-3", "data-setup-4", "data-setup-5", "data-setup-6", "data-setup-7", "data-setup-8", "data-setup-9", "data-setup-10", "data-setup-11", "1", "2"],
+      "videos": ["specs/34/videos/ac2-search-filters-services.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac3-clearing-search",
+      "title": "Clearing search shows all services",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2"],
+      "videos": ["specs/34/videos/ac3-clearing-search.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac4-empty-state",
+      "title": "Empty state for no matching results",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2"],
+      "videos": ["specs/34/videos/ac4-empty-state.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac5-url-persistence",
+      "title": "Search term persists in URL and on page reload",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3"],
+      "videos": ["specs/34/videos/ac5-url-persistence.webm"],
+      "screenshots": []
+    }
+  ],
+  "summary": {
+    "all_passed": true,
+    "pass": 5,
+    "fail": 0,
+    "not_exercised": 0
+  }
+}
