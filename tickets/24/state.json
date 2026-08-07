@@ -274,7 +274,7 @@
       "task_id": "finalize",
       "task_version": 1,
       "ticket_id": "24",
-      "state": "RUNNING",
+      "state": "SUCCEEDED",
       "attempt": 0,
       "bindings": {
         "tracker": "github-issues",
@@ -284,7 +284,9 @@
       "cost_usd": 0.272,
       "tokens": 353900,
       "usage_known": true,
-      "artifacts": [],
+      "artifacts": [
+        "specs/24/summary.md"
+      ],
       "chain_depth": 1,
       "parent_run_id": "bba2b4ce19007c6e",
       "queue_seq": 8,
@@ -297,7 +299,9 @@
       "deadline": "2026-08-07T16:36:40Z",
       "attempt_started_at": "2026-08-07T16:21:40Z",
       "base_commit": "d351a3f6f0e6144a212840820822fca06defbba1",
-      "input_from_run_id": "bba2b4ce19007c6e"
+      "input_from_run_id": "bba2b4ce19007c6e",
+      "output_commit": "d351a3f6f0e6144a212840820822fca06defbba1",
+      "pr_ref": "yash-learner/care_fe_agent_hq#14"
     }
   ],
   "block_reason": null,
