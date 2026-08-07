@@ -40,3 +40,4 @@
 {"event_id": "a286275648aa2d83:queued", "kind": "run.queued", "ticket_id": "22", "run_id": "a286275648aa2d83", "task_id": "review", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
 {"event_id": "4b4371345ab8fd2c:review-round-3:accepted", "kind": "handoff.accepted", "ticket_id": "22", "run_id": "4b4371345ab8fd2c", "detail": "Review the implementation against the spec after fixing Round 2 blocker and creating comprehensive QA plan"}
 {"event_id": "4b4371345ab8fd2c:succeeded", "kind": "run.succeeded", "ticket_id": "22", "run_id": "4b4371345ab8fd2c", "state": "SUCCEEDED", "artifacts": ["specs/22/qa-plan.md"]}
+{"event_id": "a286275648aa2d83:collected", "kind": "run.collected", "ticket_id": "22", "run_id": "a286275648aa2d83", "tokens": 1006000, "cost_usd": 0.527}
