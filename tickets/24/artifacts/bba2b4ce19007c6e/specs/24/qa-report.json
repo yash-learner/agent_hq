@@ -1,0 +1,76 @@
+{
+  "criteria": [
+    {
+      "id": "env-config-links",
+      "title": "Custom links can be added via REACT_NAVBAR_LINKS environment variable",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "No qa-plan.md provided. Cannot execute planned acceptance criteria without specification for valid link format, rendering, count limits, JSON validation, or error handling.",
+      "blocker_category": "no-qa-plan",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "plugin-footer-links",
+      "title": "Plugins can insert links via footerNavItems in manifest",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "No qa-plan.md provided. Cannot verify plugin integration without specification of manifest structure, loading behavior, link ordering, or test plugin.",
+      "blocker_category": "no-qa-plan",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "sidebar-footer-rendering",
+      "title": "Links appear in sidebar footer before user menu",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "No qa-plan.md provided. Cannot verify placement without defined acceptance criteria for visual location, ordering, spacing, or responsive behavior.",
+      "blocker_category": "no-qa-plan",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "external-link-behavior",
+      "title": "Links open in new tab with security attributes",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "No qa-plan.md provided. Cannot verify link behavior without specification of target, security attributes, icon rendering, or click behavior.",
+      "blocker_category": "no-qa-plan",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "collapsed-sidebar-support",
+      "title": "Links support collapsed sidebar with tooltips",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "No qa-plan.md provided. Cannot test responsive behavior without sidebar collapse steps, tooltip criteria, or icon-only display requirements.",
+      "blocker_category": "no-qa-plan",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "no-links-null-render",
+      "title": "Component returns null when no links configured",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "No qa-plan.md provided. Cannot verify default behavior without baseline state definition or acceptance criteria for empty state.",
+      "blocker_category": "no-qa-plan",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    }
+  ],
+  "summary": {
+    "all_passed": false,
+    "pass": 0,
+    "fail": 0,
+    "not_exercised": 6
+  }
+}
