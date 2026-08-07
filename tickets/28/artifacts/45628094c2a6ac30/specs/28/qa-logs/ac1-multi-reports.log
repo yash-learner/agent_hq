@@ -1,0 +1,29 @@
+=== AC1: Create up to N diagnostic reports (simplified) ===
+Step: Verifying auth shell...
+✓ Auth shell verified
+
+Step: Navigating to encounters list...
+Step: Opening first encounter...
+✓ Opened encounter: http://localhost:4000/facility/386772e0-eb8b-4a16-8c42-12a2f0836afa/patient/32fc0d09-1db0-493d-867b-c2f36b54f22c/encounter/651dd2da-0f1d-48f0-aeb5-cb685a444bb6/updates
+
+Step: Opening Service Requests tab...
+Step: Creating Service Request...
+Step: Selecting Activity Definition with 3 codes...
+Step: Submitting Service Request...
+✓ Service Request created
+
+=== AC1 FAILED ===
+Error: page.waitForURL: Timeout 10000ms exceeded.
+=========================== logs ===========================
+waiting for navigation until "load"
+============================================================
+
+Video: specs/28/videos/ac1-multi-reports.webm
+Fatal: page.waitForURL: Timeout 10000ms exceeded.
+=========================== logs ===========================
+waiting for navigation until "load"
+============================================================
+    at main (/workspaces/agent_hq/_target/45628094c2a6ac30/specs/28/qa-drivers/ac1-simplified.mjs:99:16) {
+  log: [],
+  name: 'TimeoutError'
+}

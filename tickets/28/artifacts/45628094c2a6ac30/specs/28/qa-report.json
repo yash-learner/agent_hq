@@ -1,0 +1,91 @@
+{
+  "criteria": [
+    {
+      "id": "ac1-multi-reports",
+      "title": "Create up to N diagnostic reports for N diagnostic report codes",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Service Request created successfully via UI but page did not redirect to SR detail page. Expected URL pattern /service_request/{id} did not load. Page remained at encounter /updates route, preventing access to Test Results Entry section.",
+      "blocker_category": "navigation-mismatch",
+      "plan_steps_run": ["1", "2"],
+      "videos": ["specs/28/videos/ac1-multi-reports.webm"],
+      "screenshots": [],
+      "seed_attempt": {
+        "method": "ui",
+        "summary": "Fixture check: confirmed facility, encounter, patient from fixtures. Activity Definition: used existing AD with 3 diagnostic report codes from earlier UI creation (ID: c41089a0-03b4-492b-a5da-d407875dfd89). Service Request: created via UI following qa-plan steps 1-2. Form submission succeeded with toast 'Questionnaire submitted successfully', but page navigation failed - remained at encounter /updates route instead of redirecting to SR detail page."
+      }
+    },
+    {
+      "id": "ac2-remaining-codes",
+      "title": "Dropdown shows only remaining (unused) codes",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Blocked by AC1 prerequisites. Cannot reach diagnostic report creation UI without SR detail page access.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac3-form-hides",
+      "title": "Create form hides when all codes are used",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Blocked by AC1 prerequisites. Cannot reach diagnostic report creation UI to test form hiding behavior.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac4-draft-no-block",
+      "title": "Draft report doesn't block creating additional reports",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Blocked by AC1 prerequisites. Cannot reach diagnostic report creation UI to test draft report behavior.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac5-dropdown-updates",
+      "title": "Dropdown updates after each report creation",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Blocked by AC1 prerequisites. Cannot reach diagnostic report creation UI to test dropdown updates.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac6-no-codes-legacy",
+      "title": "Service Request with no diagnostic report codes works as before",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Time cap reached (45 minutes) while attempting AC1 prerequisites. Would require creating new AD without diagnostic report codes.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac7-state-persists",
+      "title": "State persists after page reload",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Blocked by AC1 prerequisites. Cannot test reload persistence without completing initial report creation flow.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    }
+  ],
+  "summary": {
+    "all_passed": false,
+    "pass": 0,
+    "fail": 0,
+    "not_exercised": 7
+  }
+}
