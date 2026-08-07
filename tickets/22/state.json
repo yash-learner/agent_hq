@@ -457,7 +457,7 @@
   "block_reason": "Cannot review: specs/22/spec.md does not exist and .agent-hq/diff.patch is empty. The implement task must first create the spec and implementation changes before review can proceed.",
   "block_source": "task",
   "interrupted_run_id": "18c33dd14e9f2f4c",
-  "comments_polled_at": "2026-08-07T17:53:37Z",
+  "comments_polled_at": "2026-08-07T18:06:21Z",
   "work_repos": [
     {
       "repo": "yash-learner/care_fe_agent_hq",
