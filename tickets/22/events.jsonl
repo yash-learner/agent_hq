@@ -41,3 +41,4 @@
 {"event_id": "4b4371345ab8fd2c:review-round-3:accepted", "kind": "handoff.accepted", "ticket_id": "22", "run_id": "4b4371345ab8fd2c", "detail": "Review the implementation against the spec after fixing Round 2 blocker and creating comprehensive QA plan"}
 {"event_id": "4b4371345ab8fd2c:succeeded", "kind": "run.succeeded", "ticket_id": "22", "run_id": "4b4371345ab8fd2c", "state": "SUCCEEDED", "artifacts": ["specs/22/qa-plan.md"]}
 {"event_id": "a286275648aa2d83:collected", "kind": "run.collected", "ticket_id": "22", "run_id": "a286275648aa2d83", "tokens": 1006000, "cost_usd": 0.527}
+{"event_id": "a286275648aa2d83:blocked", "kind": "run.blocked", "ticket_id": "22", "run_id": "a286275648aa2d83", "state": "BLOCKED", "detail": "Round 3 cap reached with unresolved blocker: tests/PLAYWRIGHT_GUIDE.md:90-94 URL templates remain concatenated without newlines, making code examples unreadable. The Round 2 fix attempt removed newlines instead of restoring them."}
