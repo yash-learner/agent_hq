@@ -1,0 +1,65 @@
+{
+  "criteria": [
+    {
+      "id": "ac1-env-links",
+      "title": "Environment-configured links appear in sidebar",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Requires build-time REACT_NAV_LINKS environment variable configuration; cannot be tested in pre-built environment",
+      "blocker_category": "other",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac2-plugin-items",
+      "title": "Plugin nav items are injected",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Test environment has no plugins enabled (REACT_ENABLED_APPS not configured)",
+      "blocker_category": "other",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac3-link-properties",
+      "title": "Links display with configured properties (name, url, icon, external)",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Requires build-time REACT_NAV_LINKS environment variable configuration; cannot be tested in pre-built environment",
+      "blocker_category": "other",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac4-ordering",
+      "title": "Link ordering: core → env → plugin",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3", "4", "5"],
+      "videos": ["specs/26/videos/ac4-ordering.webm"],
+      "screenshots": ["specs/26/screenshots/ac4-facility-sidebar.png", "specs/26/screenshots/ac4-admin-sidebar.png"]
+    },
+    {
+      "id": "ac5-invalid-json",
+      "title": "Invalid JSON logs console warning",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Requires build-time REACT_NAV_LINKS with invalid JSON; cannot be tested in pre-built environment",
+      "blocker_category": "other",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    }
+  ],
+  "summary": {
+    "all_passed": false,
+    "pass": 1,
+    "fail": 0,
+    "not_exercised": 4
+  }
+}

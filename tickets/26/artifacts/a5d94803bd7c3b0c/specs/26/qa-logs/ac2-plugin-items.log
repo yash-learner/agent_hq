@@ -1,0 +1,8 @@
+[AC2] Acceptance Criterion: Plugin nav items are injected
+[AC2] Blocker: No plugins enabled in test environment
+[AC2] Reason: REACT_ENABLED_APPS is not configured
+[AC2] The implementation exists in:
+[AC2]   - src/components/ui/sidebar/facility/facility-nav.tsx (lines 222-225): Retrieves plugin nav items via useCareApps()
+[AC2]   - src/components/ui/sidebar/admin-nav.tsx (lines 89-92): Retrieves plugin nav items
+[AC2]   - Plugin items are appended after env links in both components
+[AC2] Status: not-exercised (no plugins configured)

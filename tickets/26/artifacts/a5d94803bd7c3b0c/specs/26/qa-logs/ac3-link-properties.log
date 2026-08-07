@@ -1,0 +1,9 @@
+[AC3] Acceptance Criterion: Links display with configured properties
+[AC3] Blocker: Build-time configuration limitation
+[AC3] Reason: Requires REACT_NAV_LINKS environment variable set before build
+[AC3] The implementation exists in:
+[AC3]   - src/Utils/navLinks.tsx (processEnvNavLinks): Detects external links and adds icons
+[AC3]   - External links (http:// or https://) get external: true flag
+[AC3]   - Default icon: ExternalLink from lucide-react
+[AC3]   - src/components/ui/sidebar/nav-main.tsx handles external attribute for target="_blank"
+[AC3] Status: not-exercised (build-time configuration)

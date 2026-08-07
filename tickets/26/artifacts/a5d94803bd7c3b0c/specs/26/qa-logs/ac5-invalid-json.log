@@ -1,0 +1,9 @@
+[AC5] Acceptance Criterion: Invalid JSON logs console warning
+[AC5] Blocker: Build-time configuration limitation
+[AC5] Reason: Requires invalid REACT_NAV_LINKS environment variable set before build
+[AC5] The implementation exists in:
+[AC5]   - care.config.ts (lines 428-457): JSON parsing with error handling
+[AC5]   - Line 432-435: Warns if REACT_NAV_LINKS is not an array
+[AC5]   - Line 439-448: Warns if links are missing name or url properties
+[AC5]   - Line 451-457: Warns if JSON parse fails
+[AC5] Status: not-exercised (build-time configuration)

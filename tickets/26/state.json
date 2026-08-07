@@ -308,7 +308,7 @@
       "task_id": "qa",
       "task_version": 1,
       "ticket_id": "26",
-      "state": "RUNNING",
+      "state": "SUCCEEDED",
       "attempt": 1,
       "bindings": {
         "tracker": "github-issues",
@@ -318,7 +318,26 @@
       "cost_usd": 1.68,
       "tokens": 3230500,
       "usage_known": true,
-      "artifacts": [],
+      "artifacts": [
+        "specs/26/qa.md",
+        "specs/26/qa-report.json",
+        "specs/26/videos/ac4-ordering.webm",
+        "specs/26/screenshots/ac4-admin-sidebar.png",
+        "specs/26/screenshots/ac4-facility-sidebar.png",
+        "specs/26/qa-drivers/ac1-env-links.mjs",
+        "specs/26/qa-drivers/ac2-plugin-items.mjs",
+        "specs/26/qa-drivers/ac3-link-properties.mjs",
+        "specs/26/qa-drivers/ac4-ordering-v2.mjs",
+        "specs/26/qa-drivers/ac4-ordering.mjs",
+        "specs/26/qa-drivers/ac5-invalid-json.mjs",
+        "specs/26/qa-drivers/test-auth.mjs",
+        "specs/26/qa-logs/ac1-env-links.log",
+        "specs/26/qa-logs/ac2-plugin-items.log",
+        "specs/26/qa-logs/ac3-link-properties.log",
+        "specs/26/qa-logs/ac4-ordering.log",
+        "specs/26/qa-logs/ac5-invalid-json.log",
+        "specs/26/videos/ac4-ordering.gif"
+      ],
       "chain_depth": 7,
       "parent_run_id": "308bf3fd7c540453",
       "queue_seq": 7,
@@ -332,7 +351,36 @@
       "deadline": "2026-08-07T23:54:38Z",
       "attempt_started_at": "2026-08-07T22:54:38Z",
       "base_commit": "06287f13fe8e29afd316c3f9246a6a43f29609cd",
-      "input_from_run_id": "308bf3fd7c540453"
+      "input_from_run_id": "308bf3fd7c540453",
+      "output_commit": "06287f13fe8e29afd316c3f9246a6a43f29609cd",
+      "pr_ref": "yash-learner/care_fe_agent_hq#15"
+    },
+    {
+      "run_id": "7f5404f9f74db65b",
+      "task_id": "finalize",
+      "task_version": 1,
+      "ticket_id": "26",
+      "state": "QUEUED",
+      "attempt": 0,
+      "bindings": {
+        "tracker": "github-issues",
+        "agent-session": "copilot-cli",
+        "messaging": "github-comment"
+      },
+      "cost_usd": null,
+      "tokens": null,
+      "usage_known": false,
+      "artifacts": [],
+      "chain_depth": 8,
+      "parent_run_id": "a5d94803bd7c3b0c",
+      "queue_seq": 8,
+      "handoff_key": "finalize-26",
+      "repo": "yash-learner/care_fe_agent_hq",
+      "input_artifacts": [
+        "specs/26/spec.md",
+        "specs/26/review.md",
+        "specs/26/qa.md"
+      ]
     }
   ],
   "block_reason": null,

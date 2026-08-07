@@ -1,0 +1,9 @@
+[AC1] Acceptance Criterion: Environment-configured links appear in sidebar
+[AC1] Blocker: Build-time configuration limitation
+[AC1] Reason: Requires REACT_NAV_LINKS environment variable set before build
+[AC1] The implementation exists in:
+[AC1]   - care.config.ts (lines 425-458): Parses REACT_NAV_LINKS environment variable
+[AC1]   - src/Utils/navLinks.tsx: processEnvNavLinks() adds external link detection
+[AC1]   - src/components/ui/sidebar/facility/facility-nav.tsx (line 207): Processes env links
+[AC1]   - src/components/ui/sidebar/admin-nav.tsx (line 81): Processes env links
+[AC1] Status: not-exercised (build-time configuration)

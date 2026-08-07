@@ -1,0 +1,17 @@
+[AC4] Navigating to facility overview
+[AC4] Waiting for app to load...
+[AC4] Sidebar is visible
+[AC4] Screenshot saved
+[AC4] Navigation items: [ 'View Dashboard' ]
+[AC4] Navigating to admin page
+[AC4] Admin sidebar is visible
+[AC4] Admin screenshot saved
+[AC4] Admin navigation items: [
+  'View Dashboard',
+  'Questionnaire',
+  'Valuesets',
+  'Patient Identifier Config',
+  'Tag Config',
+  'Apps'
+]
+[AC4] Test completed successfully
