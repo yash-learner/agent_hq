@@ -33,3 +33,4 @@
 {"event_id": "14a55f3b68f895f8:succeeded", "kind": "run.succeeded", "ticket_id": "16", "run_id": "14a55f3b68f895f8", "state": "SUCCEEDED", "artifacts": ["specs/16/summary.md"]}
 {"event_id": "373ee556d327a2a6:queued", "kind": "run.queued", "ticket_id": "16", "run_id": "373ee556d327a2a6", "task_id": "implement", "task_version": 1, "state": "QUEUED", "bindings": {}}
 {"event_id": "373ee556d327a2a6:rework", "kind": "run.rework", "ticket_id": "16", "run_id": "373ee556d327a2a6", "detail": "@yash-learner: Rewrite qa-plan.md Data setup (fixtures + UI + facility-scoped *Api.ts paths); keep product code as-is unless broken. Then queue review \u2192 QA.", "actor": "yash-learner", "source": "issue-comment:5215165915"}
+{"event_id": "373ee556d327a2a6:collected", "kind": "run.collected", "ticket_id": "16", "run_id": "373ee556d327a2a6", "tokens": 1412300, "cost_usd": 0.824}
