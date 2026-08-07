@@ -1,0 +1,54 @@
+{
+  "criteria": [
+    {
+      "id": "ac1-facility-role-visible",
+      "title": "Role visible on card with role, regardless of edit action",
+      "verdict": "fail",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3", "4"],
+      "videos": ["specs/33/videos/ac1-facility-role-visible.webm"],
+      "screenshots": ["specs/33/screenshots/ac1-users-page.png", "specs/33/screenshots/ac1-roles-visible.png"]
+    },
+    {
+      "id": "ac3-doctor-role",
+      "title": "Facility users with doctor role display doctor on cards",
+      "verdict": "fail",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3"],
+      "videos": ["specs/33/videos/ac3-doctor-role.webm"],
+      "screenshots": ["specs/33/screenshots/ac3-doctor-role.png"]
+    },
+    {
+      "id": "ac2-ac4-org-roles",
+      "title": "Organization users display role names (AC2 and AC4 combined)",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Could not reach organization user cards. Navigation succeeded to users endpoint but card layout did not render. Timed out waiting for card elements after 10 seconds.",
+      "blocker_category": "navigation-mismatch",
+      "plan_steps_run": ["1", "2", "3"],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac5-facility-org-users",
+      "title": "Facility organization users display facility organization role names",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Organizations link not found in facility settings. Fixture data does not include a facility-organization relationship required to access this feature.",
+      "blocker_category": "missing-facility-context",
+      "plan_steps_run": ["1", "2"],
+      "videos": ["specs/33/videos/ac5-facility-org-users.webm"],
+      "screenshots": ["specs/33/screenshots/ac5-no-org-link.png"]
+    }
+  ],
+  "summary": {
+    "all_passed": false,
+    "pass": 0,
+    "fail": 2,
+    "not_exercised": 2
+  }
+}

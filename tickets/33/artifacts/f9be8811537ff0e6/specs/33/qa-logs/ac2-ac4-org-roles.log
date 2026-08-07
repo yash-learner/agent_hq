@@ -1,0 +1,27 @@
+=== AC2/AC4: Organization user role display ===
+✓ Browser context created with auth
+✓ Screencast cursor enabled
+Navigating to home page...
+Looking for Governance tab...
+✓ Governance tab found, clicking...
+Looking for Government organization...
+✓ Government organization found, clicking...
+Looking for Users link...
+✓ Users link found, clicking...
+Waiting for user cards...
+
+=== AC2/AC4 FAILED ===
+Error: page.waitForSelector: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('[class*="card"], [class*="Card"]') to be visible[22m
+
+Fatal error: page.waitForSelector: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('[class*="card"], [class*="Card"]') to be visible[22m
+
+    at main (/workspaces/agent_hq/_target/f9be8811537ff0e6/specs/33/qa-drivers/ac2-ac4-org-roles.mjs:84:22) {
+  log: [
+    `  - waiting for locator('[class*="card"], [class*="Card"]') to be visible`
+  ],
+  name: 'TimeoutError'
+}

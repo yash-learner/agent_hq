@@ -1,0 +1,22 @@
+=== AC1: Facility user role display ===
+Starting driver for facility users at facility d0416088-33e7-4542-88a0-fc4b5a620b5a
+✓ Browser context created with auth
+✓ Screencast cursor enabled
+Navigating to /facility/d0416088-33e7-4542-88a0-fc4b5a620b5a/users
+Waiting for page load...
+Checking for authenticated shell...
+✓ Sidebar visible - authenticated
+✓ No login form detected - auth confirmed
+✓ Screenshot saved: ac1-users-page.png
+Looking for user cards...
+Specific user-card selector not found, looking for generic cards...
+✓ User cards found
+Searching for role text on cards...
+✓ SUCCESS: Role text visible on user card
+  Role found: "care-fac-admin"
+✓ Final screenshot saved: ac1-roles-visible.png
+Closing page and context to flush video...
+✓ Video saved to .agent-hq/pw-videos/
+✓ Video moved to specs/33/videos/ac1-facility-role-visible.webm
+
+=== AC1 PASSED ===

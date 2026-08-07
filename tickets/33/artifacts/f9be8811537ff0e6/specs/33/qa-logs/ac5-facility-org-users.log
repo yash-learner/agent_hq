@@ -1,0 +1,10 @@
+=== AC5: Facility organization user role display ===
+✓ Screencast cursor enabled
+Navigating to /facility/d0416088-33e7-4542-88a0-fc4b5a620b5a/settings
+Looking for Organizations link...
+⚠ Organizations link not found in facility settings
+Current URL: http://localhost:4000/facility/d0416088-33e7-4542-88a0-fc4b5a620b5a/settings
+Closing page and context...
+✓ Video moved to specs/33/videos/ac5-facility-org-users.webm
+
+=== AC5 COMPLETED (blocked by missing facility-org link) ===
