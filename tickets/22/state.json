@@ -401,7 +401,7 @@
   "block_reason": "queue ran dry after `implement` without reaching `finalize`",
   "block_source": "engine",
   "interrupted_run_id": "a051f258a11bbe17",
-  "comments_polled_at": "2026-08-07T17:32:53Z",
+  "comments_polled_at": "2026-08-07T17:40:48Z",
   "work_repos": [
     {
       "repo": "yash-learner/care_fe_agent_hq",
