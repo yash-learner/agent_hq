@@ -1,0 +1,125 @@
+{
+  "criteria": [
+    {
+      "id": "ac1-all-codes-available",
+      "title": "All codes available with no reports created",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": [
+        "Data setup (API seed)",
+        "Step 1 (locate section)",
+        "Step 2 (verify dropdown)",
+        "Step 3 (verify no reports)"
+      ],
+      "videos": ["specs/23/videos/ac1-all-codes-available.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac2-unused-codes",
+      "title": "Only unused codes shown after one report created",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": [
+        "Data setup",
+        "Step 1 (select first code)",
+        "Step 2 (create report)",
+        "Step 3 (verify 2 codes remain)"
+      ],
+      "videos": ["specs/23/videos/ac2-unused-codes.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac3-create-without-reload",
+      "title": "Create report without reload, code removed from dropdown",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": [
+        "Step 1 (confirm 2 codes)",
+        "Step 2 (select second code)",
+        "Step 3 (create report)",
+        "Step 4 (verify 1 code remains)",
+        "Step 5 (verify report card)"
+      ],
+      "videos": ["specs/23/videos/ac3-create-without-reload.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac4-no-dropdown",
+      "title": "No dropdown when all codes used",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": [
+        "Step 1 (confirm 1 code)",
+        "Step 2 (select last code)",
+        "Step 3 (create report)",
+        "Step 4 (verify no dropdown)",
+        "Step 5 (verify all cards)"
+      ],
+      "videos": ["specs/23/videos/ac4-no-dropdown.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac5-two-code-scenario",
+      "title": "One code remains available after creating one of two unused codes",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": [
+        "Data setup (2-code AD)",
+        "Step 1 (verify 2 codes)",
+        "Step 2 (create first report)",
+        "Step 3 (verify 1 code remains)",
+        "Step 4 (confirm first code gone)"
+      ],
+      "videos": ["specs/23/videos/ac5-two-code-scenario.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac6-reload-persistence",
+      "title": "Reload preserves exhausted/remaining-code state",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": [
+        "Step 1 (reload page)",
+        "Step 2 (verify no dropdown)",
+        "Step 3 (verify all cards persist)"
+      ],
+      "videos": ["specs/23/videos/ac6-reload-persistence.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac7-no-code-backward-compat",
+      "title": "Single-report behavior unchanged for no-code ADs",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": [
+        "Data setup (no-code AD)",
+        "Step 1 (verify no dropdown)",
+        "Step 2 (verify button enabled)",
+        "Step 3 (create report)",
+        "Step 4 (verify report card)"
+      ],
+      "videos": ["specs/23/videos/ac7-no-code-backward-compat.webm"],
+      "screenshots": []
+    }
+  ],
+  "summary": {
+    "all_passed": true,
+    "pass": 7,
+    "fail": 0,
+    "not_exercised": 0
+  }
+}

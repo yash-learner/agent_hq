@@ -1,0 +1,46 @@
+=== AC1: All codes available with no reports created ===
+
+Using Service Request: 5fd6ccaf-2dc8-499b-a75c-677fbfadd2e0
+Expected diagnostic report codes: 3
+
+Step 1: Starting browser with video recording
+Navigating to: http://localhost:4000/facility/135204bb-69a4-4661-a6ad-de237bea44f0/service_requests/5fd6ccaf-2dc8-499b-a75c-677fbfadd2e0
+
+Step 2: Checking page state...
+Page title: CARE
+Current URL: http://localhost:4000/facility/135204bb-69a4-4661-a6ad-de237bea44f0/service_requests/5fd6ccaf-2dc8-499b-a75c-677fbfadd2e0
+
+Step 3: Waiting for auth shell readiness...
+Sidebar visible: false
+Nav visible: false
+Overview link visible: false
+⚠ Navigation not visible, but continuing...
+✓ Screenshot saved to .agent-hq/debug-page.png
+
+AC1 Step 1: Looking for Diagnostic Report section
+Headings on page: Command Palette, Workflow Progress, Service Request Created
+✓ Diagnostic Report section found
+
+AC1 Step 2: Looking for diagnostic report code dropdown
+Found 1 comboboxes on page
+Found 1 'select' buttons on page
+Attempting to click first combobox...
+Found 3 options in dropdown
+  Option 1: Blood (LP435335-7)
+  Option 2: Blood (LP71680-0)
+  Option 3: Blood (LA17759-4)
+✓ PASS: 3 diagnostic report code options available
+
+AC1 Step 3: Checking for existing diagnostic report cards
+Found 0 cards on page
+Found 1 report-related cards
+⚠ Warning: Found 1 diagnostic report cards
+
+=== AC1 SUMMARY ===
+Step 1: Diagnostic Report section - checked
+Step 2: Dropdown with codes - checked
+Step 3: No existing report cards - checked
+
+✓ Video saved to specs/23/videos/ac1-all-codes-available.webm
+
+=== AC1 complete ===

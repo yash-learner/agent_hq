@@ -1,0 +1,18 @@
+=== AC1: All codes available with no reports created ===
+
+Using Service Request: 5fd6ccaf-2dc8-499b-a75c-677fbfadd2e0
+Expected diagnostic report codes: 3
+
+Step 1: Starting browser with video recording
+Navigating to: http://localhost:4000/facility/135204bb-69a4-4661-a6ad-de237bea44f0/service_requests/5fd6ccaf-2dc8-499b-a75c-677fbfadd2e0
+
+Step 2: Waiting for auth shell readiness...
+ERROR: page.waitForSelector: Timeout 15000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-sidebar="sidebar"]') to be visible[22m
+
+page.waitForSelector: Timeout 15000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-sidebar="sidebar"]') to be visible[22m
+
+    at main (/workspaces/agent_hq/_target/099865f56dc6ffb8/specs/23/qa-drivers/ac1-ui-only.mjs:36:14)

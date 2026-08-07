@@ -1,0 +1,53 @@
+=== AC5: One code remains after creating one of two ===
+
+Facility ID: 135204bb-69a4-4661-a6ad-de237bea44f0
+Patient ID: be8dd512-d599-491a-836c-6636f36a642a
+Encounter ID: 5045b839-c1c8-4f38-b0ae-2b841c7eb5c8
+
+Fetching current user...
+Requester ID: 03181b21-0d79-4934-bf42-ffa400236f2f
+
+Step 1: Obtaining codes for 2-code Activity Definition
+Expanding valueset activity-definition-procedure-code with search: laboratory
+Procedure code: 15220000 (Laboratory test)
+Expanding valueset system-observation with search: glucose
+Diagnostic report codes (2):
+  1. LP14635-4 - Glucose
+  2. LP32534-7 - Glucose
+
+Step 2: Creating Activity Definition with 2 diagnostic report codes
+Activity Definition created: f-135204bb-69a4-4661-a6ad-de237bea44f0-qa-two-diagnostic-1786116776652
+
+Step 3: Creating Service Request
+Service Request created: 0e466063-6c59-4085-a7dc-2780feea16b2
+
+Step 4: Driving UI with video recording
+Navigating to: http://localhost:4000/facility/135204bb-69a4-4661-a6ad-de237bea44f0/service_requests/0e466063-6c59-4085-a7dc-2780feea16b2
+
+AC5 Step 1: Verifying dropdown shows 2 codes
+Found 2 initial options
+  Option 1: Glucose (LP14635-4)
+  Option 2: Glucose (LP32534-7)
+✓ PASS: 2 codes available initially
+
+AC5 Step 2: Selecting first code and creating report
+Selecting: Glucose (LP14635-4)
+Waiting for success toast...
+
+AC5 Step 3: Verifying only 1 code remains
+Found 1 remaining options
+  Option 1: Glucose (LP32534-7)
+✓ PASS: Only 1 code remains
+
+AC5 Step 4: Confirming first code is no longer available
+✓ PASS: First code is not in dropdown
+
+=== AC5 SUMMARY ===
+✓ Dropdown initially showed 2 codes
+✓ Created report using first code
+✓ Only 1 code remains in dropdown
+✓ First code no longer appears
+
+✓ Video saved to specs/23/videos/ac5-two-code-scenario.webm
+
+=== AC5 complete ===

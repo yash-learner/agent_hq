@@ -1,0 +1,53 @@
+=== AC7: Single-report behavior unchanged for no-code ADs ===
+
+Facility ID: 135204bb-69a4-4661-a6ad-de237bea44f0
+Patient ID: be8dd512-d599-491a-836c-6636f36a642a
+Encounter ID: 5045b839-c1c8-4f38-b0ae-2b841c7eb5c8
+
+Fetching current user...
+Requester ID: 03181b21-0d79-4934-bf42-ffa400236f2f
+
+Step 1: Obtaining procedure code (no diagnostic report codes)
+Expanding valueset activity-definition-procedure-code with search: laboratory
+Procedure code: 15220000 (Laboratory test)
+Diagnostic report codes: [] (empty - none defined)
+
+Step 2: Creating Activity Definition with NO diagnostic report codes
+Activity Definition created: f-135204bb-69a4-4661-a6ad-de237bea44f0-qa-no-code-diagnostic-1786116954909
+
+Step 3: Creating Service Request
+Service Request created: a7fed5e8-c920-4dbd-bb4b-d846092c4a69
+
+Step 4: Driving UI with video recording
+Navigating to: http://localhost:4000/facility/135204bb-69a4-4661-a6ad-de237bea44f0/service_requests/a7fed5e8-c920-4dbd-bb4b-d846092c4a69
+
+AC7 Step 1: Locating the Diagnostic Report section
+✓ Diagnostic Report section found
+
+AC7 Step 2: Observing the dropdown (should not exist)
+Dropdown visible: false
+✓ PASS: No dropdown visible (as expected for no-code AD)
+
+AC7 Step 3: Observing the Create Report button (should be enabled)
+Create Report button visible: true
+Create Report button disabled: false
+✓ PASS: Create Report button is visible and enabled
+
+AC7 Step 4: Clicking Create Report button
+Waiting for success toast...
+✓ PASS: Toast notification appeared
+
+AC7 Step 5: Verifying diagnostic report card appears
+Found 4 diagnostic report references
+✓ PASS: Diagnostic report card appeared
+
+=== AC7 SUMMARY ===
+✓ No dropdown visible for no-code AD
+✓ Create Report button is enabled
+✓ Toast confirms report creation
+✓ Report card appears without code selection
+✓ Backward compatibility maintained
+
+✓ Video saved to specs/23/videos/ac7-no-code-backward-compat.webm
+
+=== AC7 complete ===

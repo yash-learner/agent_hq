@@ -1,0 +1,73 @@
+=== AC2-AC4: Create reports and verify code removal ===
+
+Using Service Request: 472f1703-6c8f-404b-9f6d-f4cf653b8a2d
+Expected diagnostic report codes: 3
+
+Navigating to: http://localhost:4000/facility/135204bb-69a4-4661-a6ad-de237bea44f0/service_requests/472f1703-6c8f-404b-9f6d-f4cf653b8a2d
+
+=== AC2: Only unused codes shown after one report created ===
+
+AC2 Step 1: Opening dropdown and selecting first code
+Selecting first code: Blood (LP435335-7)
+
+AC2 Step 2: Clicking Create Report button
+Waiting for success toast...
+✓ PASS: Toast notification appeared
+
+AC2 Step 3: Verifying only 2 codes remain in dropdown
+Found 2 options after creating first report
+  Option 1: Blood (LP71680-0)
+  Option 2: Blood (LA17759-4)
+✓ PASS: Only 2 codes remain
+
+=== AC3: Create report without reload, code removed from dropdown ===
+
+AC3 Step 1: Confirming dropdown shows 2 codes
+✓ Already verified: 2 codes
+
+AC3 Step 2: Selecting second code
+Selecting: Blood (LP71680-0)
+
+AC3 Step 3: Clicking Create Report button
+Waiting for success toast...
+✓ PASS: Toast notification appeared
+
+AC3 Step 4: Verifying only 1 code remains in dropdown
+Found 1 options after creating second report
+  Option 1: Blood (LA17759-4)
+✓ PASS: Only 1 code remains
+
+AC3 Step 5: Checking for diagnostic report cards
+Found 8 diagnostic report references
+✓ PASS: Multiple diagnostic report cards visible
+
+=== AC4: No dropdown when all codes used ===
+
+AC4 Step 1: Confirming dropdown shows 1 code
+✓ Already verified: 1 code
+
+AC4 Step 2: Selecting last remaining code
+Selecting: Blood (LA17759-4)
+
+AC4 Step 3: Clicking Create Report button
+Waiting for success toast...
+✓ PASS: Toast notification appeared
+
+AC4 Step 4: Verifying dropdown is no longer visible or disabled
+Dropdown visible: false
+Dropdown disabled: true
+✓ PASS: Dropdown is hidden or disabled
+
+AC4 Step 5: Verifying all 3 diagnostic report cards are visible
+Found 10 diagnostic report references
+✓ PASS: All 3 diagnostic report cards visible
+
+=== SUMMARY ===
+AC2: ✓ Created first report, 2 codes remain
+AC3: ✓ Created second report, 1 code remains
+AC4: ✓ Created third report, no dropdown or disabled
+     ✓ All 3 diagnostic report cards visible
+
+✓ Video saved to specs/23/videos/ac2-ac4-flow.webm
+
+=== AC2-AC4 complete ===

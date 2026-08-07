@@ -1,0 +1,32 @@
+=== AC6: Reload preserves exhausted/remaining state ===
+
+Using Service Request from AC2-AC4: 472f1703-6c8f-404b-9f6d-f4cf653b8a2d
+This SR should have all 3 diagnostic reports already created
+
+AC6 Step 1: Loading page (initial)
+URL: http://localhost:4000/facility/135204bb-69a4-4661-a6ad-de237bea44f0/service_requests/472f1703-6c8f-404b-9f6d-f4cf653b8a2d
+
+AC6 Step 1: Reloading the browser page
+✓ Page reloaded
+
+AC6 Step 2: Observing the Diagnostic Report section
+Dropdown visible: false
+Dropdown disabled: true
+✓ PASS: No dropdown visible (or disabled)
+Create Report button visible: false
+Create Report button disabled: false
+✓ PASS: Create Report button is disabled or hidden
+
+AC6 Step 3: Verifying all 3 diagnostic report cards are still visible
+Found 10 diagnostic report references
+✓ PASS: All 3 diagnostic report cards persist after reload
+
+=== AC6 SUMMARY ===
+✓ Reloaded the page
+✓ No dropdown visible after reload
+✓ Create Report button is disabled
+✓ All 3 diagnostic report cards persist
+
+✓ Video saved to specs/23/videos/ac6-reload-persistence.webm
+
+=== AC6 complete ===
