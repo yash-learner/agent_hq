@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T14:50:07Z",
+  "generated_at": "2026-08-07T14:53:12Z",
   "tickets": [
     {
       "ticket_id": "1",
@@ -3408,7 +3408,7 @@
       "block_reason": "Round 3 cap reached with unresolved blocker: tests/PLAYWRIGHT_GUIDE.md:90-94 URL templates remain concatenated without newlines, making code examples unreadable. The Round 2 fix attempt removed newlines instead of restoring them.",
       "block_source": "task",
       "interrupted_run_id": "a286275648aa2d83",
-      "comments_polled_at": "2026-08-07T14:20:04Z",
+      "comments_polled_at": "2026-08-07T14:34:51Z",
       "work_repos": [
         {
           "repo": "yash-learner/care_fe_agent_hq",
