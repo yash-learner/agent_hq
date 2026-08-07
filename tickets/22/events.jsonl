@@ -60,3 +60,4 @@
 {"event_id": "a051f258a11bbe17:blocked", "kind": "ticket.blocked", "ticket_id": "22", "run_id": "a051f258a11bbe17", "detail": "queue ran dry after `implement` without reaching `finalize`"}
 {"event_id": "460a19467f3432a9:queued", "kind": "run.queued", "ticket_id": "22", "run_id": "460a19467f3432a9", "task_id": "review", "task_version": 1, "state": "QUEUED", "bindings": {}}
 {"event_id": "460a19467f3432a9:rework", "kind": "run.rework", "ticket_id": "22", "run_id": "460a19467f3432a9", "detail": "@yash-learner: verify PLAYWRIGHT_GUIDE newlines then queue qa\n\n(ticket was blocked: queue ran dry after `implement` without reaching `finalize`)", "actor": "yash-learner", "source": "issue-comment:5220343541"}
+{"event_id": "460a19467f3432a9:collected", "kind": "run.collected", "ticket_id": "22", "run_id": "460a19467f3432a9", "tokens": 825500, "cost_usd": 0.577}
