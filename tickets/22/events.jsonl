@@ -76,3 +76,4 @@
 {"event_id": "d689c18b8436fbdc:succeeded", "kind": "run.succeeded", "ticket_id": "22", "run_id": "d689c18b8436fbdc", "state": "SUCCEEDED", "artifacts": ["specs/22/review.md"]}
 {"event_id": "afede9f923fb4ae6:collected", "kind": "run.collected", "ticket_id": "22", "run_id": "afede9f923fb4ae6", "tokens": 1812100, "cost_usd": 1.01}
 {"event_id": "afede9f923fb4ae6:failed", "kind": "run.failed", "ticket_id": "22", "run_id": "afede9f923fb4ae6", "state": "FAILED"}
+{"event_id": "afede9f923fb4ae6:handoff_rejected", "kind": "handoff.rejected", "ticket_id": "22", "run_id": "afede9f923fb4ae6", "detail": "artifact not found in worktree: specs/22/spec.md"}
