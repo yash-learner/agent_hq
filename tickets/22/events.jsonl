@@ -35,3 +35,4 @@
 {"event_id": "4b4371345ab8fd2c:queued", "kind": "run.queued", "ticket_id": "22", "run_id": "4b4371345ab8fd2c", "task_id": "implement", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
 {"event_id": "40635fa161caedf3:implement-round3:accepted", "kind": "handoff.accepted", "ticket_id": "22", "run_id": "40635fa161caedf3", "detail": "Fix formatting blocker: restore newlines between URL templates in tests/PLAYWRIGHT_GUIDE.md lines 90-94"}
 {"event_id": "40635fa161caedf3:succeeded", "kind": "run.succeeded", "ticket_id": "22", "run_id": "40635fa161caedf3", "state": "SUCCEEDED", "artifacts": ["specs/22/review.md"]}
+{"event_id": "4b4371345ab8fd2c:collected", "kind": "run.collected", "ticket_id": "22", "run_id": "4b4371345ab8fd2c", "tokens": 2016300, "cost_usd": 1.05}
