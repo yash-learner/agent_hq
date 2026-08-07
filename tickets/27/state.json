@@ -98,7 +98,7 @@
       "task_id": "implement",
       "task_version": 1,
       "ticket_id": "27",
-      "state": "RUNNING",
+      "state": "FAILED",
       "attempt": 2,
       "bindings": {
         "tracker": "github-issues",
