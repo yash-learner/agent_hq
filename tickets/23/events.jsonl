@@ -15,3 +15,4 @@
 {"event_id": "a282dfbf3efe926f:queued", "kind": "run.queued", "ticket_id": "23", "run_id": "a282dfbf3efe926f", "task_id": "implement", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
 {"event_id": "c2b758d12b550dfb:implement-r2:accepted", "kind": "handoff.accepted", "ticket_id": "23", "run_id": "c2b758d12b550dfb", "detail": "Round 1 found 2 blockers: (1) AC 7 regression where button disable logic blocks report creation for no-code ADs at line 256-260, (2) same disable logic issue in additional report section at line 165-167"}
 {"event_id": "c2b758d12b550dfb:succeeded", "kind": "run.succeeded", "ticket_id": "23", "run_id": "c2b758d12b550dfb", "state": "SUCCEEDED", "artifacts": ["specs/23/review.md"]}
+{"event_id": "a282dfbf3efe926f:collected", "kind": "run.collected", "ticket_id": "23", "run_id": "a282dfbf3efe926f", "tokens": 1311200, "cost_usd": 0.747}
