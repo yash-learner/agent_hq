@@ -16,3 +16,4 @@
 {"event_id": "32da24db57ba57a0:qa-33:accepted", "kind": "handoff.accepted", "ticket_id": "33", "run_id": "32da24db57ba57a0", "detail": "No blockers found in implementation; ready for QA verification of role display on user list cards"}
 {"event_id": "32da24db57ba57a0:succeeded", "kind": "run.succeeded", "ticket_id": "33", "run_id": "32da24db57ba57a0", "state": "SUCCEEDED", "artifacts": ["specs/33/review.md"]}
 {"event_id": "f9be8811537ff0e6:collected", "kind": "run.collected", "ticket_id": "33", "run_id": "f9be8811537ff0e6", "tokens": 3425600, "cost_usd": 1.64}
+{"event_id": "f9be8811537ff0e6:failed", "kind": "run.failed", "ticket_id": "33", "run_id": "f9be8811537ff0e6", "state": "FAILED"}
