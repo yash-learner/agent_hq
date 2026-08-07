@@ -26,3 +26,7 @@
 {"event_id": "f95d0e7c066ce06e:implement-2:accepted", "kind": "handoff.accepted", "ticket_id": "20", "run_id": "f95d0e7c066ce06e", "detail": "Fix blocker: form rendering condition incorrectly checks diagnosticReports[0]?.status preventing multiple report creation after first report finalized"}
 {"event_id": "f95d0e7c066ce06e:succeeded", "kind": "run.succeeded", "ticket_id": "20", "run_id": "f95d0e7c066ce06e", "state": "SUCCEEDED", "artifacts": ["specs/20/review.md"]}
 {"event_id": "cbde7e5f9990b33b:collected", "kind": "run.collected", "ticket_id": "20", "run_id": "cbde7e5f9990b33b", "tokens": 1512900, "cost_usd": 0.795}
+{"event_id": "cbde7e5f9990b33b:review-round-2:proposed", "kind": "handoff.proposed", "ticket_id": "20", "run_id": "cbde7e5f9990b33b", "detail": "Review re-implementation fixing blocker from round 1"}
+{"event_id": "447e9ed6ab4e144d:queued", "kind": "run.queued", "ticket_id": "20", "run_id": "447e9ed6ab4e144d", "task_id": "review", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
+{"event_id": "cbde7e5f9990b33b:review-round-2:accepted", "kind": "handoff.accepted", "ticket_id": "20", "run_id": "cbde7e5f9990b33b", "detail": "Review re-implementation fixing blocker from round 1"}
+{"event_id": "cbde7e5f9990b33b:succeeded", "kind": "run.succeeded", "ticket_id": "20", "run_id": "cbde7e5f9990b33b", "state": "SUCCEEDED", "artifacts": ["specs/20/qa-plan.md"]}
