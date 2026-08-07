@@ -1,1 +1,2 @@
 {"event_id": "9a7ce79dfd9a5639:queued", "kind": "run.queued", "ticket_id": "30", "run_id": "9a7ce79dfd9a5639", "task_id": "spec", "task_version": 1, "state": "QUEUED", "bindings": {}}
+{"event_id": "9a7ce79dfd9a5639:failed", "kind": "run.failed", "ticket_id": "30", "run_id": "9a7ce79dfd9a5639", "state": "FAILED"}
