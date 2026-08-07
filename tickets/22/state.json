@@ -236,7 +236,9 @@
         "specs/22/review.md"
       ],
       "deadline": "2026-08-07T14:30:40Z",
-      "attempt_started_at": "2026-08-07T14:00:40Z"
+      "attempt_started_at": "2026-08-07T14:00:40Z",
+      "base_commit": "8820e30910201dbc1ee3d3c75f1ad87b1d81d6ee",
+      "input_from_run_id": "6262936b3b0f0292"
     }
   ],
   "block_reason": null,
