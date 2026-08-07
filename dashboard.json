@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T23:56:13Z",
+  "generated_at": "2026-08-07T23:56:20Z",
   "tickets": [
     {
       "ticket_id": "1",
@@ -5941,7 +5941,7 @@
           "task_id": "review",
           "task_version": 1,
           "ticket_id": "30",
-          "state": "RUNNING",
+          "state": "SUCCEEDED",
           "attempt": 0,
           "bindings": {
             "tracker": "github-issues",
@@ -5951,7 +5951,9 @@
           "cost_usd": 0.599,
           "tokens": 917400,
           "usage_known": true,
-          "artifacts": [],
+          "artifacts": [
+            "specs/30/review.md"
+          ],
           "chain_depth": 4,
           "parent_run_id": "60edf3d81edd5068",
           "queue_seq": 4,
@@ -5965,7 +5967,36 @@
           "deadline": "2026-08-08T00:19:41Z",
           "attempt_started_at": "2026-08-07T23:49:41Z",
           "base_commit": "7e947f13ac06de2ef0c4844535507b6a33d7993b",
-          "input_from_run_id": "60edf3d81edd5068"
+          "input_from_run_id": "60edf3d81edd5068",
+          "output_commit": "7e947f13ac06de2ef0c4844535507b6a33d7993b",
+          "pr_ref": "yash-learner/care_fe_agent_hq#21"
+        },
+        {
+          "run_id": "08e52252341cec02",
+          "task_id": "qa",
+          "task_version": 1,
+          "ticket_id": "30",
+          "state": "QUEUED",
+          "attempt": 0,
+          "bindings": {
+            "tracker": "github-issues",
+            "agent-session": "copilot-cli",
+            "messaging": "github-comment"
+          },
+          "cost_usd": null,
+          "tokens": null,
+          "usage_known": false,
+          "artifacts": [],
+          "chain_depth": 5,
+          "parent_run_id": "2d4a2c4bdd1da964",
+          "queue_seq": 5,
+          "handoff_key": "qa-30",
+          "repo": "yash-learner/care_fe_agent_hq",
+          "input_artifacts": [
+            "specs/30/spec.md",
+            "specs/30/review.md",
+            "specs/30/qa-plan.md"
+          ]
         }
       ],
       "block_reason": null,
