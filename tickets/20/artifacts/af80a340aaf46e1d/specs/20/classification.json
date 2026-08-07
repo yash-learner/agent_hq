@@ -1,0 +1,4 @@
+{
+  "classification": "crud",
+  "reasoning": "This ticket involves only frontend UI changes to filter and display diagnostic report codes based on existing data. No new data models, migrations, model field changes, new services, authorization changes, FHIR/EMR model changes, or non-CRUD endpoints are required. The backend already supports multiple diagnostic reports per Service Request. The changes are limited to filtering logic, conditional rendering, and state management in React components — all standard CRUD UI operations for displaying and creating resources using existing API endpoints."
+}
