@@ -20,3 +20,4 @@
 {"event_id": "250ce95a6a0ab4dc:queued", "kind": "run.queued", "ticket_id": "29", "run_id": "250ce95a6a0ab4dc", "task_id": "review", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
 {"event_id": "79047e6aaf053580:review-29-implement:accepted", "kind": "handoff.accepted", "ticket_id": "29", "run_id": "79047e6aaf053580", "detail": "Review the date range filter implementation against spec acceptance criteria"}
 {"event_id": "79047e6aaf053580:succeeded", "kind": "run.succeeded", "ticket_id": "29", "run_id": "79047e6aaf053580", "state": "SUCCEEDED", "artifacts": ["specs/29/qa-plan.md"]}
+{"event_id": "250ce95a6a0ab4dc:collected", "kind": "run.collected", "ticket_id": "29", "run_id": "250ce95a6a0ab4dc", "tokens": 630700, "cost_usd": 0.38}
