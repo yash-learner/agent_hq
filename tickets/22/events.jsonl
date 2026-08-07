@@ -81,3 +81,4 @@
 {"event_id": "8aefb4c18a10c46a:rework", "kind": "run.rework", "ticket_id": "22", "run_id": "8aefb4c18a10c46a", "detail": "Previous attempt rejected: artifact not found in worktree: specs/22/spec.md", "actor": "engine", "source": "afede9f923fb4ae6:handoff_rejected"}
 {"event_id": "8aefb4c18a10c46a:collected", "kind": "run.collected", "ticket_id": "22", "run_id": "8aefb4c18a10c46a", "tokens": 2213400, "cost_usd": 1.15}
 {"event_id": "8aefb4c18a10c46a:failed", "kind": "run.failed", "ticket_id": "22", "run_id": "8aefb4c18a10c46a", "state": "FAILED"}
+{"event_id": "8aefb4c18a10c46a:handoff_rejected", "kind": "handoff.rejected", "ticket_id": "22", "run_id": "8aefb4c18a10c46a", "detail": "artifact not found in worktree: specs/22/spec.md"}
