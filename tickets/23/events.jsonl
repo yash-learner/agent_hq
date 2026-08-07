@@ -21,3 +21,4 @@
 {"event_id": "a282dfbf3efe926f:23-review-2:accepted", "kind": "handoff.accepted", "ticket_id": "23", "run_id": "a282dfbf3efe926f", "detail": "Review the blocker fix and confirm the implementation matches the spec"}
 {"event_id": "a282dfbf3efe926f:succeeded", "kind": "run.succeeded", "ticket_id": "23", "run_id": "a282dfbf3efe926f", "state": "SUCCEEDED", "artifacts": ["specs/23/qa-plan.md"]}
 {"event_id": "500bf36883cef3df:failed", "kind": "run.failed", "ticket_id": "23", "run_id": "500bf36883cef3df", "state": "FAILED"}
+{"event_id": "8a05cff399bc151d:queued", "kind": "run.queued", "ticket_id": "23", "run_id": "8a05cff399bc151d", "task_id": "review", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
