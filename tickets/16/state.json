@@ -297,7 +297,7 @@
       "artifacts": [],
       "chain_depth": 1,
       "parent_run_id": "373ee556d327a2a6",
-      "queue_seq": 9,
+      "queue_seq": 10,
       "handoff_key": "review-16-after-qa-plan-rewrite",
       "repo": "yash-learner/care_fe_agent_hq",
       "input_artifacts": [
@@ -323,7 +323,7 @@
       "artifacts": [],
       "chain_depth": 1,
       "parent_run_id": "373ee556d327a2a6",
-      "queue_seq": 10,
+      "queue_seq": 11,
       "handoff_key": "qa-16-with-proper-data-setup",
       "repo": "yash-learner/care_fe_agent_hq",
       "input_artifacts": [
@@ -334,7 +334,7 @@
   "block_reason": null,
   "block_source": null,
   "interrupted_run_id": null,
-  "comments_polled_at": "2026-08-07T09:13:59Z",
+  "comments_polled_at": "2026-08-07T09:15:08Z",
   "work_repos": [
     {
       "repo": "yash-learner/care_fe_agent_hq",
