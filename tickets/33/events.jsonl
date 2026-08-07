@@ -1,2 +1,7 @@
 {"event_id": "9248b58cb14e8f8c:queued", "kind": "run.queued", "ticket_id": "33", "run_id": "9248b58cb14e8f8c", "task_id": "spec", "task_version": 1, "state": "QUEUED", "bindings": {}}
 {"event_id": "9248b58cb14e8f8c:collected", "kind": "run.collected", "ticket_id": "33", "run_id": "9248b58cb14e8f8c", "tokens": 758200, "cost_usd": 0.546}
+{"event_id": "9248b58cb14e8f8c:auto_approval", "kind": "gate.decided", "ticket_id": "33", "run_id": "9248b58cb14e8f8c", "detail": "auto-approved by task config (would have asked product-owners)", "actor": "engine"}
+{"event_id": "9248b58cb14e8f8c:implement-33-care-fe:proposed", "kind": "handoff.proposed", "ticket_id": "33", "run_id": "9248b58cb14e8f8c", "detail": "Implement user role display fix in UserCard component per spec"}
+{"event_id": "edcfa6968bbca2c0:queued", "kind": "run.queued", "ticket_id": "33", "run_id": "edcfa6968bbca2c0", "task_id": "implement", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment", "gate": "github-issue-comment"}}
+{"event_id": "9248b58cb14e8f8c:implement-33-care-fe:accepted", "kind": "handoff.accepted", "ticket_id": "33", "run_id": "9248b58cb14e8f8c", "detail": "Implement user role display fix in UserCard component per spec"}
+{"event_id": "9248b58cb14e8f8c:succeeded", "kind": "run.succeeded", "ticket_id": "33", "run_id": "9248b58cb14e8f8c", "state": "SUCCEEDED", "artifacts": ["specs/33/spec.md"]}
