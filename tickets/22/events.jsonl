@@ -16,3 +16,7 @@
 {"event_id": "a08a427f064dc493:implement-care-fe:accepted", "kind": "handoff.accepted", "ticket_id": "22", "run_id": "a08a427f064dc493", "detail": "Implement multi-report support in DiagnosticReportForm.tsx per tasks.md"}
 {"event_id": "a08a427f064dc493:succeeded", "kind": "run.succeeded", "ticket_id": "22", "run_id": "a08a427f064dc493", "state": "SUCCEEDED", "artifacts": ["specs/22/tasks.md"]}
 {"event_id": "bf5df67910a567a2:collected", "kind": "run.collected", "ticket_id": "22", "run_id": "bf5df67910a567a2", "tokens": 2116200, "cost_usd": 1.25}
+{"event_id": "bf5df67910a567a2:review-22:proposed", "kind": "handoff.proposed", "ticket_id": "22", "run_id": "bf5df67910a567a2", "detail": "Review implementation against spec and queue QA if passing"}
+{"event_id": "742375bf360576be:queued", "kind": "run.queued", "ticket_id": "22", "run_id": "742375bf360576be", "task_id": "review", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
+{"event_id": "bf5df67910a567a2:review-22:accepted", "kind": "handoff.accepted", "ticket_id": "22", "run_id": "bf5df67910a567a2", "detail": "Review implementation against spec and queue QA if passing"}
+{"event_id": "bf5df67910a567a2:succeeded", "kind": "run.succeeded", "ticket_id": "22", "run_id": "bf5df67910a567a2", "state": "SUCCEEDED", "artifacts": ["specs/22/qa-plan.md"]}
