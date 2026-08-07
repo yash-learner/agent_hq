@@ -12,3 +12,4 @@
 {"event_id": "f86c89aea146caeb:rework", "kind": "run.rework", "ticket_id": "27", "run_id": "f86c89aea146caeb", "detail": "Previous attempt rejected: queue entry repo 'care_fe' is not a configured repo", "actor": "engine", "source": "652148c0629d2990:handoff_rejected"}
 {"event_id": "f86c89aea146caeb:collected", "kind": "run.collected", "ticket_id": "27", "run_id": "f86c89aea146caeb", "tokens": 3230800, "cost_usd": 1.72}
 {"event_id": "f86c89aea146caeb:failed", "kind": "run.failed", "ticket_id": "27", "run_id": "f86c89aea146caeb", "state": "FAILED"}
+{"event_id": "f86c89aea146caeb:handoff_rejected", "kind": "handoff.rejected", "ticket_id": "27", "run_id": "f86c89aea146caeb", "detail": "queue entry repo 'care_fe' is not a configured repo"}
