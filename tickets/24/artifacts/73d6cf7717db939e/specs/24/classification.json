@@ -1,0 +1,4 @@
+{
+  "classification": "crud",
+  "reasoning": "No beyond-crud criteria apply. This ticket involves: (1) adding a new configuration property to parse an existing env var pattern (JSON array), (2) extending a TypeScript interface with an optional field, (3) creating a new React component and hook using existing UI primitives, and (4) integrating the component into an existing sidebar layout. No data models, migrations, backend changes, authorization changes, new services, or clinical-safety-relevant behavior. Pure frontend UI extension following established patterns."
+}
