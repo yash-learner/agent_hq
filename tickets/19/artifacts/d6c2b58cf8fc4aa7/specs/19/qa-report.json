@@ -1,0 +1,115 @@
+{
+  "criteria": [
+    {
+      "id": "ac1-custom-links-render",
+      "title": "Custom links render in navbar alongside existing navigation",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "The facility sidebar component did not render during test execution. While the page loaded with the correct URL (facility overview) and title, the sidebar element was not present in the DOM, making it impossible to verify that custom links from REACT_NAV_LINKS appeared in the navigation.",
+      "blocker_category": "auth-failure",
+      "plan_steps_run": ["1", "2"],
+      "videos": ["specs/19/videos/ac1-custom-links-render.webm"],
+      "screenshots": ["specs/19/screenshots/ac1-custom-links.png"],
+      "seed_attempt": {
+        "method": "ui",
+        "summary": "Environment variable REACT_NAV_LINKS set with two test links (Documentation and Internal Link). Application rebuilt with npm run build. Auth state loaded from tests/.auth/user.json. Navigation to facility overview successful but sidebar did not render."
+      }
+    },
+    {
+      "id": "ac2-target-blank",
+      "title": "Links with target='_blank' open in new tab",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Depends on AC1. Could not reach custom links to test target='_blank' behavior due to sidebar not rendering.",
+      "blocker_category": "auth-failure",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": [],
+      "seed_attempt": {
+        "method": "ui",
+        "summary": "Same environment variable configuration as AC1. Unable to interact with custom links due to sidebar rendering failure."
+      }
+    },
+    {
+      "id": "ac3-icon-display",
+      "title": "Links with icon display specified icon",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Depends on AC1. Could not verify icon rendering (CareIcon vs Lucide vs default Avatar) due to sidebar not rendering.",
+      "blocker_category": "auth-failure",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": [],
+      "seed_attempt": {
+        "method": "none",
+        "summary": "Planned to set REACT_NAV_LINKS with different icon types after resolving AC1 rendering issue."
+      }
+    },
+    {
+      "id": "ac4-visibility-filter",
+      "title": "Links with visibility: false do not appear",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Depends on AC1. Could not verify visibility filtering due to sidebar not rendering.",
+      "blocker_category": "auth-failure",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": [],
+      "seed_attempt": {
+        "method": "none",
+        "summary": "Planned to test with visibility: false configuration after resolving AC1 rendering issue."
+      }
+    },
+    {
+      "id": "ac5-plugin-coexistence",
+      "title": "Plugin and custom links render without conflicts",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Depends on AC1. Could not verify coexistence of built-in, plugin, and custom links due to sidebar not rendering.",
+      "blocker_category": "auth-failure",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": [],
+      "seed_attempt": {
+        "method": "none",
+        "summary": "Planned to test with both REACT_ENABLED_APPS and REACT_NAV_LINKS set after resolving AC1 rendering issue."
+      }
+    },
+    {
+      "id": "ac6-collapsed-tooltip",
+      "title": "Collapsed sidebar shows tooltip on hover",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Depends on AC1. Could not test sidebar collapse/tooltip behavior due to sidebar not rendering.",
+      "blocker_category": "auth-failure",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": [],
+      "seed_attempt": {
+        "method": "none",
+        "summary": "Planned to collapse sidebar and verify tooltips after resolving AC1 rendering issue."
+      }
+    },
+    {
+      "id": "ac7-invalid-json-handling",
+      "title": "Invalid JSON logs error, app continues without custom links",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "While this acceptance criterion tests error handling (not sidebar rendering), verification requires checking the sidebar to confirm no custom links appear after invalid configuration. Due to the sidebar not rendering in the automated context, could not definitively verify the absence of custom links.",
+      "blocker_category": "auth-failure",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": [],
+      "seed_attempt": {
+        "method": "none",
+        "summary": "Planned to test with invalid JSON configurations (malformed syntax, missing required fields, not an array) and verify console errors plus absence of custom links in sidebar."
+      }
+    }
+  ],
+  "summary": {
+    "all_passed": false,
+    "pass": 0,
+    "fail": 0,
+    "not_exercised": 7
+  }
+}
