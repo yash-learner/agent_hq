@@ -1,7 +1,7 @@
 {
   "ticket_id": "23",
   "pinned_comment_id": 5217524501,
-  "status": "ACTIVE",
+  "status": "AWAITING_MERGE",
   "runs": [
     {
       "run_id": "f15d98e868cc230d",
