@@ -132,7 +132,9 @@
         "specs/20/classification.json"
       ],
       "deadline": "2026-08-07T12:58:09Z",
-      "attempt_started_at": "2026-08-07T11:28:09Z"
+      "attempt_started_at": "2026-08-07T11:28:09Z",
+      "base_commit": "dea49853619eaf2e5b7c18d6f89a1c1bf67567a0",
+      "input_from_run_id": "af80a340aaf46e1d"
     }
   ],
   "block_reason": null,
