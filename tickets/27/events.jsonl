@@ -18,3 +18,4 @@
 {"event_id": "0bc726f67aa8512b:collected", "kind": "run.collected", "ticket_id": "27", "run_id": "0bc726f67aa8512b", "tokens": 1817300, "cost_usd": 0.987}
 {"event_id": "0bc726f67aa8512b:failed", "kind": "run.failed", "ticket_id": "27", "run_id": "0bc726f67aa8512b", "state": "FAILED"}
 {"event_id": "0bc726f67aa8512b:handoff_rejected", "kind": "handoff.rejected", "ticket_id": "27", "run_id": "0bc726f67aa8512b", "detail": "queue entry repo 'care_fe' is not a configured repo"}
+{"event_id": "0bc726f67aa8512b:blocked", "kind": "ticket.blocked", "ticket_id": "27", "run_id": "0bc726f67aa8512b", "detail": "retries exhausted"}
