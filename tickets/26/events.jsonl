@@ -37,3 +37,4 @@
 {"event_id": "1f070d6b5be3da6a:queued", "kind": "run.queued", "ticket_id": "26", "run_id": "1f070d6b5be3da6a", "task_id": "qa", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
 {"event_id": "308bf3fd7c540453:qa-26:accepted", "kind": "handoff.accepted", "ticket_id": "26", "run_id": "308bf3fd7c540453", "detail": "Implementation complete with no blockers. Test file updated to clarify scope and address Round 2 findings. Ready for QA verification of AC2/AC4 via code inspection per the QA plan."}
 {"event_id": "308bf3fd7c540453:succeeded", "kind": "run.succeeded", "ticket_id": "26", "run_id": "308bf3fd7c540453", "state": "SUCCEEDED", "artifacts": ["specs/26/review.md"]}
+{"event_id": "1f070d6b5be3da6a:collected", "kind": "run.collected", "ticket_id": "26", "run_id": "1f070d6b5be3da6a", "tokens": 2025200, "cost_usd": 1.23}
