@@ -1,0 +1,4 @@
+{
+  "classification": "crud",
+  "reasoning": "None of the beyond-crud criteria apply. This is a frontend-only change that enables existing backend CRUD functionality (creating multiple diagnostic reports) without: new data models/migrations, model field changes, new services/workers/infrastructure, external integrations, authorization changes, FHIR/EMR model changes, or non-CRUD endpoints. While diagnostic reports are clinically relevant, this change does not alter clinical behavior - it simply exposes existing backend capability through improved UI/UX, allowing users to call the existing create endpoint multiple times with different codes."
+}
