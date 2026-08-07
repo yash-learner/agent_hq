@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T09:47:53Z",
+  "generated_at": "2026-08-07T09:47:55Z",
   "tickets": [
     {
       "ticket_id": "1",
@@ -2311,7 +2311,9 @@
             "specs/19/classification.json"
           ],
           "deadline": "2026-08-07T11:17:53Z",
-          "attempt_started_at": "2026-08-07T09:47:53Z"
+          "attempt_started_at": "2026-08-07T09:47:53Z",
+          "base_commit": "dea49853619eaf2e5b7c18d6f89a1c1bf67567a0",
+          "input_from_run_id": "f4912d9e455c8714"
         }
       ],
       "block_reason": null,
