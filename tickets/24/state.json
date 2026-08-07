@@ -179,7 +179,7 @@
       "task_id": "qa",
       "task_version": 1,
       "ticket_id": "24",
-      "state": "RUNNING",
+      "state": "FAILED",
       "attempt": 0,
       "bindings": {
         "tracker": "github-issues",

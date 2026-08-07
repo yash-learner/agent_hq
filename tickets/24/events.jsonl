@@ -26,3 +26,4 @@
 {"event_id": "beb516648d7f4cf6:qa-navbar-links:accepted", "kind": "handoff.accepted", "ticket_id": "24", "run_id": "beb516648d7f4cf6", "detail": "Implementation reviewed with no blockers; proceeding to QA to verify acceptance criteria in running app"}
 {"event_id": "beb516648d7f4cf6:succeeded", "kind": "run.succeeded", "ticket_id": "24", "run_id": "beb516648d7f4cf6", "state": "SUCCEEDED", "artifacts": ["specs/24/review.md"]}
 {"event_id": "43af4c6416909359:collected", "kind": "run.collected", "ticket_id": "24", "run_id": "43af4c6416909359", "tokens": 4533600, "cost_usd": 2.82}
+{"event_id": "43af4c6416909359:failed", "kind": "run.failed", "ticket_id": "24", "run_id": "43af4c6416909359", "state": "FAILED"}
