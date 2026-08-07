@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T23:37:07Z",
+  "generated_at": "2026-08-07T23:37:09Z",
   "tickets": [
     {
       "ticket_id": "1",
@@ -5893,7 +5893,9 @@
             "specs/30/qa-plan.md"
           ],
           "deadline": "2026-08-08T00:07:06Z",
-          "attempt_started_at": "2026-08-07T23:37:06Z"
+          "attempt_started_at": "2026-08-07T23:37:06Z",
+          "base_commit": "2f59e43c0cef221cf4f18474614fd8a67c01e17a",
+          "input_from_run_id": "c2b96065f5963bb6"
         }
       ],
       "block_reason": null,
