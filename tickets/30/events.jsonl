@@ -12,3 +12,4 @@
 {"event_id": "f645d0cc031c3167:queued", "kind": "run.queued", "ticket_id": "30", "run_id": "f645d0cc031c3167", "task_id": "review", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
 {"event_id": "c2b96065f5963bb6:review-30:accepted", "kind": "handoff.accepted", "ticket_id": "30", "run_id": "c2b96065f5963bb6", "detail": "Review the date filter implementation against the spec"}
 {"event_id": "c2b96065f5963bb6:succeeded", "kind": "run.succeeded", "ticket_id": "30", "run_id": "c2b96065f5963bb6", "state": "SUCCEEDED", "artifacts": ["specs/30/qa-plan.md"]}
+{"event_id": "f645d0cc031c3167:collected", "kind": "run.collected", "ticket_id": "30", "run_id": "f645d0cc031c3167", "tokens": 333200, "cost_usd": 0.247}
