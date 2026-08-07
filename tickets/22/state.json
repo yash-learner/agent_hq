@@ -490,7 +490,7 @@
       "task_id": "implement",
       "task_version": 1,
       "ticket_id": "22",
-      "state": "QUEUED",
+      "state": "RUNNING",
       "attempt": 0,
       "bindings": {
         "tracker": "github-issues",
@@ -509,7 +509,9 @@
       "input_artifacts": [
         "specs/22/review.md",
         "specs/22/qa-plan.md"
-      ]
+      ],
+      "deadline": "2026-08-07T20:20:47Z",
+      "attempt_started_at": "2026-08-07T18:50:47Z"
     }
   ],
   "block_reason": null,
