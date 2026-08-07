@@ -40,3 +40,4 @@
 {"event_id": "1f070d6b5be3da6a:collected", "kind": "run.collected", "ticket_id": "26", "run_id": "1f070d6b5be3da6a", "tokens": 2025200, "cost_usd": 1.23}
 {"event_id": "1f070d6b5be3da6a:failed", "kind": "run.failed", "ticket_id": "26", "run_id": "1f070d6b5be3da6a", "state": "FAILED"}
 {"event_id": "1f070d6b5be3da6a:artifact_rejected", "kind": "run.artifact_rejected", "ticket_id": "26", "run_id": "1f070d6b5be3da6a", "detail": "qa-report.json: criterion 'ac1-env-links': missing-test-data seed_attempt.method must be ui, api, or both (got 'none'; none means no seed was attempted)"}
+{"event_id": "a5d94803bd7c3b0c:queued", "kind": "run.queued", "ticket_id": "26", "run_id": "a5d94803bd7c3b0c", "task_id": "qa", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
