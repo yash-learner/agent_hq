@@ -26,3 +26,4 @@
 {"event_id": "4ab8cb5286d21c00:rework", "kind": "run.rework", "ticket_id": "18", "run_id": "4ab8cb5286d21c00", "detail": "@yash-learner: with ## QA data setup", "actor": "yash-learner", "source": "issue-comment:5216717652"}
 {"event_id": "4ab8cb5286d21c00:runner_lost", "kind": "run.runner_lost", "ticket_id": "18", "run_id": "4ab8cb5286d21c00", "state": "FAILED"}
 {"event_id": "4d2100796151d3ca:queued", "kind": "run.queued", "ticket_id": "18", "run_id": "4d2100796151d3ca", "task_id": "qa", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
+{"event_id": "4d2100796151d3ca:collected", "kind": "run.collected", "ticket_id": "18", "run_id": "4d2100796151d3ca", "tokens": 3825100, "cost_usd": 1.9}
