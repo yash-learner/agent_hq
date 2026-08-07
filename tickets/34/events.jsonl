@@ -25,3 +25,4 @@
 {"event_id": "48456ee0d07f0ed3:queued", "kind": "run.queued", "ticket_id": "34", "run_id": "48456ee0d07f0ed3", "task_id": "implement", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
 {"event_id": "1f56268a5f95031f:implement-3:accepted", "kind": "handoff.accepted", "ticket_id": "34", "run_id": "1f56268a5f95031f", "detail": "Fix blockers: placeholder text mismatch (missing ellipsis in all 11 test selectors) and replace waitForTimeout with proper Playwright waiting strategies"}
 {"event_id": "1f56268a5f95031f:succeeded", "kind": "run.succeeded", "ticket_id": "34", "run_id": "1f56268a5f95031f", "state": "SUCCEEDED", "artifacts": ["specs/34/review.md"]}
+{"event_id": "48456ee0d07f0ed3:collected", "kind": "run.collected", "ticket_id": "34", "run_id": "48456ee0d07f0ed3", "tokens": 710500, "cost_usd": 0.508}
