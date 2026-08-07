@@ -7,3 +7,4 @@
 {"event_id": "bd4686640e007923:succeeded", "kind": "run.succeeded", "ticket_id": "27", "run_id": "bd4686640e007923", "state": "SUCCEEDED", "artifacts": ["specs/27/spec.md"]}
 {"event_id": "652148c0629d2990:collected", "kind": "run.collected", "ticket_id": "27", "run_id": "652148c0629d2990", "tokens": 3019800, "cost_usd": 1.62}
 {"event_id": "652148c0629d2990:failed", "kind": "run.failed", "ticket_id": "27", "run_id": "652148c0629d2990", "state": "FAILED"}
+{"event_id": "652148c0629d2990:handoff_rejected", "kind": "handoff.rejected", "ticket_id": "27", "run_id": "652148c0629d2990", "detail": "queue entry repo 'care_fe' is not a configured repo"}
