@@ -177,6 +177,27 @@
       "input_artifacts": [
         "specs/27/spec.md"
       ]
+    },
+    {
+      "run_id": "24b25f0e695ee1d6",
+      "task_id": "implement",
+      "task_version": 1,
+      "ticket_id": "27",
+      "state": "QUEUED",
+      "attempt": 2,
+      "bindings": {
+        "tracker": "github-issues",
+        "agent-session": "copilot-cli",
+        "messaging": "github-comment"
+      },
+      "cost_usd": null,
+      "tokens": null,
+      "usage_known": false,
+      "artifacts": [],
+      "chain_depth": 0,
+      "source_event_id": "issue-comment:5221414180",
+      "enqueue_index": 0,
+      "queue_seq": 3
     }
   ],
   "block_reason": null,
