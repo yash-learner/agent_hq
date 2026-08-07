@@ -1,0 +1,4 @@
+{
+  "classification": "crud",
+  "reasoning": "This ticket adds a date range filter to an existing list view using established patterns and existing API query parameters. It involves no new data models, migrations, services, infrastructure, external integrations, authorization changes, FHIR/EMR model changes, non-CRUD endpoints, or clinical-safety-relevant behavior. It is a straightforward UI enhancement that adds filtering capability to a read operation."
+}
