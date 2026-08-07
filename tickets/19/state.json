@@ -311,7 +311,9 @@
         "specs/19/summary.md"
       ],
       "deadline": "2026-08-07T12:19:25Z",
-      "attempt_started_at": "2026-08-07T12:04:25Z"
+      "attempt_started_at": "2026-08-07T12:04:25Z",
+      "base_commit": "b743fc57165288f912527fd4cd91967766bab57b",
+      "input_from_run_id": "bb1de4669e5f6685"
     }
   ],
   "block_reason": null,
