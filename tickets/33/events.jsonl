@@ -6,3 +6,7 @@
 {"event_id": "9248b58cb14e8f8c:implement-33-care-fe:accepted", "kind": "handoff.accepted", "ticket_id": "33", "run_id": "9248b58cb14e8f8c", "detail": "Implement user role display fix in UserCard component per spec"}
 {"event_id": "9248b58cb14e8f8c:succeeded", "kind": "run.succeeded", "ticket_id": "33", "run_id": "9248b58cb14e8f8c", "state": "SUCCEEDED", "artifacts": ["specs/33/spec.md"]}
 {"event_id": "edcfa6968bbca2c0:collected", "kind": "run.collected", "ticket_id": "33", "run_id": "edcfa6968bbca2c0", "tokens": 1716600, "cost_usd": 0.939}
+{"event_id": "edcfa6968bbca2c0:review-33-implementation:proposed", "kind": "handoff.proposed", "ticket_id": "33", "run_id": "edcfa6968bbca2c0", "detail": "Review implementation against spec and QA plan"}
+{"event_id": "32da24db57ba57a0:queued", "kind": "run.queued", "ticket_id": "33", "run_id": "32da24db57ba57a0", "task_id": "review", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
+{"event_id": "edcfa6968bbca2c0:review-33-implementation:accepted", "kind": "handoff.accepted", "ticket_id": "33", "run_id": "edcfa6968bbca2c0", "detail": "Review implementation against spec and QA plan"}
+{"event_id": "edcfa6968bbca2c0:succeeded", "kind": "run.succeeded", "ticket_id": "33", "run_id": "edcfa6968bbca2c0", "state": "SUCCEEDED", "artifacts": ["specs/33/qa-plan.md"]}
