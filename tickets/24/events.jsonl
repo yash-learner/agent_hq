@@ -27,3 +27,4 @@
 {"event_id": "beb516648d7f4cf6:succeeded", "kind": "run.succeeded", "ticket_id": "24", "run_id": "beb516648d7f4cf6", "state": "SUCCEEDED", "artifacts": ["specs/24/review.md"]}
 {"event_id": "43af4c6416909359:collected", "kind": "run.collected", "ticket_id": "24", "run_id": "43af4c6416909359", "tokens": 4533600, "cost_usd": 2.82}
 {"event_id": "43af4c6416909359:failed", "kind": "run.failed", "ticket_id": "24", "run_id": "43af4c6416909359", "state": "FAILED"}
+{"event_id": "43af4c6416909359:artifact_rejected", "kind": "run.artifact_rejected", "ticket_id": "24", "run_id": "43af4c6416909359", "detail": "qa-report.json schema violation: criteria/3: Additional properties are not allowed ('notes' was unexpected)"}
