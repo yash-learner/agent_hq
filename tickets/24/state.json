@@ -330,6 +330,27 @@
       "input_artifacts": [
         "specs/24/summary.md"
       ]
+    },
+    {
+      "run_id": "10c03137bc0f705f",
+      "task_id": "qa",
+      "task_version": 1,
+      "ticket_id": "24",
+      "state": "QUEUED",
+      "attempt": 1,
+      "bindings": {
+        "tracker": "github-issues",
+        "agent-session": "copilot-cli",
+        "messaging": "github-comment"
+      },
+      "cost_usd": null,
+      "tokens": null,
+      "usage_known": false,
+      "artifacts": [],
+      "chain_depth": 0,
+      "source_event_id": "issue-comment:5219886849",
+      "enqueue_index": 0,
+      "queue_seq": 9
     }
   ],
   "block_reason": null,
