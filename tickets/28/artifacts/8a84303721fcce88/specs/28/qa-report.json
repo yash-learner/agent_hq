@@ -1,0 +1,115 @@
+{
+  "criteria": [
+    {
+      "id": "ac1-multiple-reports",
+      "title": "Create up to N diagnostic reports for N diagnostic report codes",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Missing test data - Activity Definition with multiple diagnostic report codes could not be created via UI",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
+      "seed_attempt": {
+        "method": "ui",
+        "summary": "Attempted to create Activity Definition with 3 diagnostic report codes via UI. Successfully navigated to creation page, filled all required fields (title, description, usage, status=Active, category=Laboratory, kind=Service Request, code=Acyclovir via valueset), selected specimen requirement (CBC Blood Specimen via valueset), and selected first diagnostic report code 'Acyclovir [Susceptibility]' via valueset picker. Failed at step 11: clicking plus button to add the code. Error: locator.click timeout 30000ms - plus button element found but not visible/clickable in headless browser. Logged to specs/28/qa-logs/ac1-multiple-reports.log."
+      },
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac2-remaining-codes",
+      "title": "Dropdown shows only remaining (unused) codes",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Missing test data - requires Activity Definition with multiple diagnostic report codes (blocked by AC1) plus Service Request and specimen processing",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": [],
+      "seed_attempt": {
+        "method": "ui",
+        "summary": "Same dependency as AC1 - Activity Definition creation failed before reaching Service Request creation and diagnostic report testing phase. Cannot test dropdown filtering without base data structure."
+      },
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac3-form-hides",
+      "title": "Create form hides when all codes are used",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Missing test data - requires Activity Definition with multiple diagnostic report codes (blocked by AC1), Service Request, specimen processing, and multiple created diagnostic reports",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": [],
+      "seed_attempt": {
+        "method": "ui",
+        "summary": "Same dependency as AC1 - Activity Definition creation failed before reaching Service Request creation and diagnostic report testing phase. Cannot test form hiding without base data structure and multiple diagnostic reports created."
+      },
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac4-draft-report",
+      "title": "Draft report doesn't block creating additional reports",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Missing test data - requires Activity Definition with multiple diagnostic report codes (blocked by AC1) plus Service Request and specimen processing",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": [],
+      "seed_attempt": {
+        "method": "ui",
+        "summary": "Same dependency as AC1 - Activity Definition creation failed before reaching Service Request creation and diagnostic report testing phase. Cannot test draft report behavior without base data structure."
+      },
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac5-dropdown-updates",
+      "title": "Dropdown updates after each report creation",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Missing test data - requires Activity Definition with multiple diagnostic report codes (blocked by AC1) plus Service Request, specimen processing, and creating reports sequentially",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": [],
+      "seed_attempt": {
+        "method": "ui",
+        "summary": "Same dependency as AC1 - Activity Definition creation failed before reaching Service Request creation and diagnostic report testing phase. Cannot test dropdown update behavior without base data structure."
+      },
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac6-no-codes",
+      "title": "Service Request with no diagnostic report codes works as before",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Missing test data - requires Activity Definition WITHOUT diagnostic report codes, Service Request, and specimen processing. Same creation flow that failed in AC1, though simpler payload.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": [],
+      "seed_attempt": {
+        "method": "none",
+        "summary": "Not attempted - requires same Activity Definition + Service Request + specimen processing data flow that failed in AC1. While simpler (no diagnostic report codes array), still blocked by same UI creation issues."
+      },
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac7-state-persists",
+      "title": "State persists after page reload",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Missing test data - requires Activity Definition with multiple diagnostic report codes (blocked by AC1), Service Request, specimen processing, and at least one created diagnostic report",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": [],
+      "seed_attempt": {
+        "method": "ui",
+        "summary": "Same dependency as AC1 - Activity Definition creation failed before reaching Service Request creation and diagnostic report testing phase. Cannot test state persistence without base data structure and at least one diagnostic report."
+      },
+      "videos": [],
+      "screenshots": []
+    }
+  ],
+  "summary": {
+    "all_passed": false,
+    "pass": 0,
+    "fail": 0,
+    "not_exercised": 7
+  }
+}

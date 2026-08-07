@@ -22,3 +22,4 @@
 {"event_id": "8a84303721fcce88:rework", "kind": "run.rework", "ticket_id": "28", "run_id": "8a84303721fcce88", "detail": "Previous attempt rejected: qa-report.json: criterion 'ac2-remaining-codes': not-exercised with missing-test-data requires seed_attempt (method ui|api|both plus a non-empty summary of what was tried)", "actor": "engine", "source": "45628094c2a6ac30:artifact_rejected"}
 {"event_id": "8a84303721fcce88:collected", "kind": "run.collected", "ticket_id": "28", "run_id": "8a84303721fcce88", "tokens": 2939500, "cost_usd": 1.77}
 {"event_id": "8a84303721fcce88:failed", "kind": "run.failed", "ticket_id": "28", "run_id": "8a84303721fcce88", "state": "FAILED"}
+{"event_id": "8a84303721fcce88:artifact_rejected", "kind": "run.artifact_rejected", "ticket_id": "28", "run_id": "8a84303721fcce88", "detail": "qa-report.json: criterion 'ac2-remaining-codes': missing-test-data requires non-empty plan_steps_run"}

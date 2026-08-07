@@ -1,0 +1,88 @@
+[2026-08-07T21:07:36.608Z] Starting AC1 - Multiple diagnostic reports creation test
+[2026-08-07T21:07:36.772Z] Step 1: Navigating to Activity Definition creation page
+[2026-08-07T21:07:40.940Z] Step 2: Creating Activity Definition with 3 diagnostic report codes
+[2026-08-07T21:07:41.487Z]   - Filled title: Multi-Code Lab Test 1786136860940
+[2026-08-07T21:07:42.007Z]   - Filled description
+[2026-08-07T21:07:42.521Z]   - Filled usage
+[2026-08-07T21:07:43.875Z]   - Selected status: Active
+[2026-08-07T21:07:45.391Z]   - Selected category: Laboratory
+[2026-08-07T21:07:46.726Z]   - Selected kind: Service Request
+[2026-08-07T21:07:50.579Z]   - Selected code: Acyclovir
+[2026-08-07T21:07:55.289Z]   - Selected specimen: CBC Blood Specimen
+[2026-08-07T21:07:57.321Z]   - Adding diagnostic report code 1: Acyclovir [Susceptibility]
+[2026-08-07T21:08:32.128Z] ❌ ERROR: locator.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('button', { name: /plus/i }).or(locator('button:has-text("+")')).first()[22m
+[2m    - locator resolved to <button data-slot="button" class="items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-hidden focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 dark:focus-visible:ring-gray-300 aria-invalid:border-red-500 aria-invalid:ring-red-500/20 border border-gray-400 bg-white shadow-sm hover:bg-gray-100 hover:text-gray-900 dark:border-gr…>…</button>[22m
+[2m  - attempting click action[22m
+[2m    2 × waiting for element to be visible, enabled and stable[22m
+[2m      - element is not visible[22m
+[2m    - retrying click action[22m
+[2m    - waiting 20ms[22m
+[2m    2 × waiting for element to be visible, enabled and stable[22m
+[2m      - element is not visible[22m
+[2m    - retrying click action[22m
+[2m      - waiting 100ms[22m
+[2m    58 × waiting for element to be visible, enabled and stable[22m
+[2m       - element is not visible[22m
+[2m     - retrying click action[22m
+[2m       - waiting 500ms[22m
+
+[2026-08-07T21:08:32.129Z] Stack: locator.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('button', { name: /plus/i }).or(locator('button:has-text("+")')).first()[22m
+[2m    - locator resolved to <button data-slot="button" class="items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-hidden focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 dark:focus-visible:ring-gray-300 aria-invalid:border-red-500 aria-invalid:ring-red-500/20 border border-gray-400 bg-white shadow-sm hover:bg-gray-100 hover:text-gray-900 dark:border-gr…>…</button>[22m
+[2m  - attempting click action[22m
+[2m    2 × waiting for element to be visible, enabled and stable[22m
+[2m      - element is not visible[22m
+[2m    - retrying click action[22m
+[2m    - waiting 20ms[22m
+[2m    2 × waiting for element to be visible, enabled and stable[22m
+[2m      - element is not visible[22m
+[2m    - retrying click action[22m
+[2m      - waiting 100ms[22m
+[2m    58 × waiting for element to be visible, enabled and stable[22m
+[2m       - element is not visible[22m
+[2m     - retrying click action[22m
+[2m       - waiting 500ms[22m
+
+    at main (/workspaces/agent_hq/_target/8a84303721fcce88/specs/28/qa-drivers/ac1-multiple-reports.mjs:118:23)
+[2026-08-07T21:08:36.174Z] Browser closed
+Fatal error: locator.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('button', { name: /plus/i }).or(locator('button:has-text("+")')).first()[22m
+[2m    - locator resolved to <button data-slot="button" class="items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-hidden focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 dark:focus-visible:ring-gray-300 aria-invalid:border-red-500 aria-invalid:ring-red-500/20 border border-gray-400 bg-white shadow-sm hover:bg-gray-100 hover:text-gray-900 dark:border-gr…>…</button>[22m
+[2m  - attempting click action[22m
+[2m    2 × waiting for element to be visible, enabled and stable[22m
+[2m      - element is not visible[22m
+[2m    - retrying click action[22m
+[2m    - waiting 20ms[22m
+[2m    2 × waiting for element to be visible, enabled and stable[22m
+[2m      - element is not visible[22m
+[2m    - retrying click action[22m
+[2m      - waiting 100ms[22m
+[2m    58 × waiting for element to be visible, enabled and stable[22m
+[2m       - element is not visible[22m
+[2m     - retrying click action[22m
+[2m       - waiting 500ms[22m
+
+    at main (/workspaces/agent_hq/_target/8a84303721fcce88/specs/28/qa-drivers/ac1-multiple-reports.mjs:118:23) {
+  log: [
+    `  - waiting for getByRole('button', { name: /plus/i }).or(locator('button:has-text("+")')).first()`,
+    '    - locator resolved to <button data-slot="button" class="items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-hidden focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 dark:focus-visible:ring-gray-300 aria-invalid:border-red-500 aria-invalid:ring-red-500/20 border border-gray-400 bg-white shadow-sm hover:bg-gray-100 hover:text-gray-900 dark:border-gr…>…</button>',
+    '  - attempting click action',
+    '    2 × waiting for element to be visible, enabled and stable',
+    '      - element is not visible',
+    '    - retrying click action',
+    '    - waiting 20ms',
+    '    2 × waiting for element to be visible, enabled and stable',
+    '      - element is not visible',
+    '    - retrying click action',
+    '      - waiting 100ms',
+    '    58 × waiting for element to be visible, enabled and stable',
+    '       - element is not visible',
+    '     - retrying click action',
+    '       - waiting 500ms'
+  ],
+  name: 'TimeoutError'
+}
