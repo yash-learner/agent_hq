@@ -141,7 +141,7 @@
       "task_id": "review",
       "task_version": 1,
       "ticket_id": "23",
-      "state": "RUNNING",
+      "state": "FAILED",
       "attempt": 0,
       "bindings": {
         "tracker": "github-issues",
