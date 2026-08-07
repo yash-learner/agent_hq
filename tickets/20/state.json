@@ -145,7 +145,7 @@
       "task_id": "review",
       "task_version": 1,
       "ticket_id": "20",
-      "state": "RUNNING",
+      "state": "SUCCEEDED",
       "attempt": 0,
       "bindings": {
         "tracker": "github-issues",
@@ -155,7 +155,9 @@
       "cost_usd": 0.167,
       "tokens": 194500,
       "usage_known": true,
-      "artifacts": [],
+      "artifacts": [
+        "specs/20/review.md"
+      ],
       "chain_depth": 4,
       "parent_run_id": "68d1272afaf7501e",
       "queue_seq": 4,
@@ -168,7 +170,35 @@
       "deadline": "2026-08-07T12:05:38Z",
       "attempt_started_at": "2026-08-07T11:35:38Z",
       "base_commit": "ffedd7c5fa4bf928a974d30556e88b4ad7457499",
-      "input_from_run_id": "68d1272afaf7501e"
+      "input_from_run_id": "68d1272afaf7501e",
+      "output_commit": "ffedd7c5fa4bf928a974d30556e88b4ad7457499",
+      "pr_ref": "yash-learner/care_fe_agent_hq#11"
+    },
+    {
+      "run_id": "cbde7e5f9990b33b",
+      "task_id": "implement",
+      "task_version": 1,
+      "ticket_id": "20",
+      "state": "QUEUED",
+      "attempt": 0,
+      "bindings": {
+        "tracker": "github-issues",
+        "agent-session": "copilot-cli",
+        "messaging": "github-comment"
+      },
+      "cost_usd": null,
+      "tokens": null,
+      "usage_known": false,
+      "artifacts": [],
+      "chain_depth": 5,
+      "parent_run_id": "f95d0e7c066ce06e",
+      "queue_seq": 5,
+      "handoff_key": "implement-2",
+      "repo": "yash-learner/care_fe_agent_hq",
+      "input_artifacts": [
+        "specs/20/spec.md",
+        "specs/20/review.md"
+      ]
     }
   ],
   "block_reason": null,
