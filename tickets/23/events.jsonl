@@ -32,3 +32,4 @@
 {"event_id": "65a1d2b84f8e969a:queued", "kind": "run.queued", "ticket_id": "23", "run_id": "65a1d2b84f8e969a", "task_id": "review", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
 {"event_id": "eba7babe3909a3a6:review-r3:accepted", "kind": "handoff.accepted", "ticket_id": "23", "run_id": "eba7babe3909a3a6", "detail": "Verify QA plan includes API setup approach per Round 2 blocker"}
 {"event_id": "eba7babe3909a3a6:succeeded", "kind": "run.succeeded", "ticket_id": "23", "run_id": "eba7babe3909a3a6", "state": "SUCCEEDED", "artifacts": ["specs/23/qa-plan.md"]}
+{"event_id": "65a1d2b84f8e969a:collected", "kind": "run.collected", "ticket_id": "23", "run_id": "65a1d2b84f8e969a", "tokens": 711200, "cost_usd": 0.419}
