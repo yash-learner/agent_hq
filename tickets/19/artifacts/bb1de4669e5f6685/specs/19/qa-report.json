@@ -1,0 +1,111 @@
+{
+  "criteria": [
+    {
+      "id": "ac1-custom-links-render",
+      "title": "Custom links render in the left navbar",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Sidebar component does not render in automated Playwright browser context despite valid auth tokens and facility navigation. Auth tokens obtained from backend API and injected into localStorage, but application shows login form. Attempted direct navigation to /facility/1/overview with multiple selector strategies ([data-sidebar=sidebar], aside, nav[role=navigation]) - all failed.",
+      "blocker_category": "app-not-loading",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": [],
+      "seed_attempt": {
+        "method": "ui",
+        "summary": "Obtained fresh JWT tokens via POST /api/v1/auth/login/ with credentials (admin/admin). Created localStorage state with care_access_token and care_refresh_token. Attempted UI navigation to facility and direct URL navigation to /facility/{id}/overview. Sidebar component did not render in Playwright context."
+      }
+    },
+    {
+      "id": "ac2-target-blank",
+      "title": "Links with target=\"_blank\" open in new tab",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Sidebar not accessible due to rendering blocker (same as AC1). Cannot test target=\"_blank\" attribute behavior without visible sidebar links.",
+      "blocker_category": "app-not-loading",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": [],
+      "seed_attempt": {
+        "method": "ui",
+        "summary": "Same auth and navigation attempts as AC1. Documentation link configured with target=\"_blank\" in test environment variable, but sidebar did not render to verify behavior."
+      }
+    },
+    {
+      "id": "ac3-icon-types",
+      "title": "Icon types (care/lucide) display correctly",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Sidebar not accessible (same blocker as AC1 and AC2). Cannot verify icon rendering for CareIcon (l-award) or Lucide (BookOpen, Folder) without visible sidebar.",
+      "blocker_category": "app-not-loading",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": [],
+      "seed_attempt": {
+        "method": "ui",
+        "summary": "Same as AC1. Test configuration included both icon types (Lucide BookOpen, CareIcon l-award) but sidebar did not render to verify icon display."
+      }
+    },
+    {
+      "id": "ac4-visibility-filter",
+      "title": "Links with visibility: false are filtered out",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Sidebar not accessible (same blocker as AC1-3). Cannot verify that Hidden Link (visibility:false) is filtered without seeing rendered sidebar.",
+      "blocker_category": "app-not-loading",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": [],
+      "seed_attempt": {
+        "method": "ui",
+        "summary": "Same as AC1. Test configuration included Hidden Link with visibility:false, but sidebar did not render to verify filtering behavior."
+      }
+    },
+    {
+      "id": "ac5-plugin-coexistence",
+      "title": "Plugin and custom links coexist without conflicts",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Sidebar not accessible (same blocker as AC1-4). Cannot verify plugin links and custom links coexist without rendered sidebar showing both types.",
+      "blocker_category": "app-not-loading",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": [],
+      "seed_attempt": {
+        "method": "ui",
+        "summary": "Same as AC1. Code review confirms correct ordering (plugin links first, then custom links), but cannot verify in live app without sidebar rendering."
+      }
+    },
+    {
+      "id": "ac6-collapsed-tooltips",
+      "title": "Collapsed sidebar shows tooltips on hover",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Sidebar not accessible (same blocker as AC1-5). Cannot test sidebar collapse/expand states or tooltip behavior without rendered sidebar component.",
+      "blocker_category": "app-not-loading",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": [],
+      "seed_attempt": {
+        "method": "ui",
+        "summary": "Same as AC1. Tooltip behavior requires sidebar to be rendered and interactable - both conditions not met in automated environment."
+      }
+    },
+    {
+      "id": "ac7-error-handling",
+      "title": "Invalid JSON logs error, app continues gracefully",
+      "verdict": "not-exercised",
+      "evidence_kind": "code-inspection",
+      "blocker": "Testing error handling requires intentional configuration breakage (invalid JSON injection at build time). Cannot verify nominal case first due to sidebar rendering blocker. Error handling code is present and correct in care.config.ts (try-catch, console.error, returns empty array).",
+      "blocker_category": "app-not-loading",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    }
+  ],
+  "summary": {
+    "all_passed": false,
+    "pass": 0,
+    "fail": 0,
+    "not_exercised": 7
+  }
+}
