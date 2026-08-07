@@ -1,0 +1,13 @@
+{
+  "facilityId": "ce4220e8-a57d-4408-a157-06f10610db86",
+  "patientId": "980a4a53-b583-4594-a4ff-1e3c20eaf1f3",
+  "encounterId": "43eb1794-6885-4ebd-a803-5794ff4ca04b",
+  "multiCodesSR": {
+    "adSlug": "f-ce4220e8-a57d-4408-a157-06f10610db86-qa-multi-diag-1786106534297",
+    "srId": "671d6eee-0367-48bd-9f3c-2d23f8f7b649"
+  },
+  "noCodesSR": {
+    "adSlug": "f-ce4220e8-a57d-4408-a157-06f10610db86-qa-no-codes-1786106536662",
+    "srId": "22b500a9-2326-412d-a0d1-47511f895d0e"
+  }
+}

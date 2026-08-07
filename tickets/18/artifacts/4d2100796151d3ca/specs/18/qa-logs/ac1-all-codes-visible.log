@@ -1,0 +1,18 @@
+Navigating to service request show page...
+Finding the dropdown...
+node:internal/modules/run_main:123
+    triggerUncaughtException(
+    ^
+
+locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('combobox', { name: /select diagnostic report type/i }) to be visible[22m
+
+    at /workspaces/agent_hq/_target/4d2100796151d3ca/specs/18/qa-drivers/ac1-all-codes-visible.mjs:33:16 {
+  log: [
+    "  - waiting for getByRole('combobox', { name: /select diagnostic report type/i }) to be visible"
+  ],
+  name: 'TimeoutError'
+}
+
+Node.js v22.23.2

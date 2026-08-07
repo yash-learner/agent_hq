@@ -1,0 +1,100 @@
+{
+  "criteria": [
+    {
+      "id": "ac1-all-codes-visible",
+      "title": "All diagnostic report codes shown in dropdown when no reports exist",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Service Request show page did not render the diagnostic report creation form with the dropdown for selecting diagnostic report types",
+      "blocker_category": "navigation-mismatch",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": [],
+      "seed_attempt": {
+        "method": "api",
+        "summary": "Successfully created Activity Definition with 3 diagnostic report codes (58410-2, 57021-8, 57023-4) and Service Request via facility-scoped API routes. Service Request ID: 671d6eee-0367-48bd-9f3c-2d23f8f7b649. Navigation to /facility/{facilityId}/service_requests/{serviceRequestId} loaded page but did not render DiagnosticReportForm component or dropdown UI."
+      }
+    },
+    {
+      "id": "ac2-remaining-codes",
+      "title": "Dropdown shows only remaining codes after creating first report",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Could not create first diagnostic report due to inability to access the creation form UI",
+      "blocker_category": "navigation-mismatch",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": [],
+      "seed_attempt": {
+        "method": "api",
+        "summary": "Test data created successfully but UI form not accessible to create diagnostic reports"
+      }
+    },
+    {
+      "id": "ac3-button-disabled",
+      "title": "Create button disabled when all codes are used",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Could not reach state where all codes are used due to inability to access creation form",
+      "blocker_category": "navigation-mismatch",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": [],
+      "seed_attempt": {
+        "method": "api",
+        "summary": "Test data created successfully but UI form not accessible to create diagnostic reports"
+      }
+    },
+    {
+      "id": "ac4-all-reports-visible",
+      "title": "All created reports visible independently with observations and conclusion",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Could not create multiple reports to verify their independent display",
+      "blocker_category": "navigation-mismatch",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": [],
+      "seed_attempt": {
+        "method": "api",
+        "summary": "Test data created successfully but UI form not accessible to create diagnostic reports"
+      }
+    },
+    {
+      "id": "ac5-no-codes-behavior",
+      "title": "Behavior unchanged when Activity Definition has no diagnostic report codes",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Could not access diagnostic report UI for the no-codes Service Request scenario",
+      "blocker_category": "navigation-mismatch",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": [],
+      "seed_attempt": {
+        "method": "api",
+        "summary": "Created Activity Definition without diagnostic report codes and corresponding Service Request (ID: 22b500a9-2326-412d-a0d1-47511f895d0e) but UI form not accessible"
+      }
+    },
+    {
+      "id": "ac6-codes-persist-refresh",
+      "title": "Remaining codes persist after page refresh",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Could not create initial reports to verify persistence after page refresh",
+      "blocker_category": "navigation-mismatch",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": [],
+      "seed_attempt": {
+        "method": "api",
+        "summary": "Test data created successfully but UI form not accessible to create diagnostic reports"
+      }
+    }
+  ],
+  "summary": {
+    "all_passed": false,
+    "pass": 0,
+    "fail": 0,
+    "not_exercised": 6
+  }
+}
