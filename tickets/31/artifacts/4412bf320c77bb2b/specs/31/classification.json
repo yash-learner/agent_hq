@@ -1,0 +1,4 @@
+{
+  "classification": "crud",
+  "reasoning": "No criteria for beyond-crud classification apply. This ticket involves: (1) parsing JSON from environment variables in care.config.ts, (2) adding an optional 'external' field to an existing TypeScript interface, (3) rendering additional navigation links in React components that already merge plugin-provided links. There are no new data models, migrations, model field changes, services, workers, infrastructure, external integrations, authorization changes, FHIR/EMR model changes, or non-CRUD endpoints. The ticket is purely frontend presentation logic with no clinical-safety-relevant behavior."
+}

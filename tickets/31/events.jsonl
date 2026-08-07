@@ -11,3 +11,7 @@
 {"event_id": "4b23dd8c59def8e6:breakdown-31:accepted", "kind": "handoff.accepted", "ticket_id": "31", "run_id": "4b23dd8c59def8e6", "detail": "Plan classified as CRUD; ready for task breakdown"}
 {"event_id": "4b23dd8c59def8e6:succeeded", "kind": "run.succeeded", "ticket_id": "31", "run_id": "4b23dd8c59def8e6", "state": "SUCCEEDED", "artifacts": ["specs/31/plan.md", "specs/31/classification.json"]}
 {"event_id": "4412bf320c77bb2b:collected", "kind": "run.collected", "ticket_id": "31", "run_id": "4412bf320c77bb2b", "tokens": 271900, "cost_usd": 0.271}
+{"event_id": "4412bf320c77bb2b:implement-nav-links:proposed", "kind": "handoff.proposed", "ticket_id": "31", "run_id": "4412bf320c77bb2b", "detail": "Implement all 9 tasks for left-nav hyperlinks via env config + plugin hooks"}
+{"event_id": "69a14c52eeca9510:queued", "kind": "run.queued", "ticket_id": "31", "run_id": "69a14c52eeca9510", "task_id": "implement", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
+{"event_id": "4412bf320c77bb2b:implement-nav-links:accepted", "kind": "handoff.accepted", "ticket_id": "31", "run_id": "4412bf320c77bb2b", "detail": "Implement all 9 tasks for left-nav hyperlinks via env config + plugin hooks"}
+{"event_id": "4412bf320c77bb2b:succeeded", "kind": "run.succeeded", "ticket_id": "31", "run_id": "4412bf320c77bb2b", "state": "SUCCEEDED", "artifacts": ["specs/31/tasks.md"]}
