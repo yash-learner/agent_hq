@@ -15,3 +15,4 @@
 {"event_id": "16fa7c787a1c4210:queued", "kind": "run.queued", "ticket_id": "34", "run_id": "16fa7c787a1c4210", "task_id": "implement", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
 {"event_id": "9dc1d4f1935314b2:implement-tests:accepted", "kind": "handoff.accepted", "ticket_id": "34", "run_id": "9dc1d4f1935314b2", "detail": "Add missing Playwright E2E test coverage for search functionality (search input rendering, filtering by name, URL persistence, empty state, clearing search)"}
 {"event_id": "9dc1d4f1935314b2:succeeded", "kind": "run.succeeded", "ticket_id": "34", "run_id": "9dc1d4f1935314b2", "state": "SUCCEEDED", "artifacts": ["specs/34/review.md"]}
+{"event_id": "16fa7c787a1c4210:collected", "kind": "run.collected", "ticket_id": "34", "run_id": "16fa7c787a1c4210", "tokens": 942400, "cost_usd": 0.631}
