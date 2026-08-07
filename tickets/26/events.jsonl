@@ -32,3 +32,4 @@
 {"event_id": "308bf3fd7c540453:queued", "kind": "run.queued", "ticket_id": "26", "run_id": "308bf3fd7c540453", "task_id": "review", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
 {"event_id": "2cd24a7af326e600:review-round3:accepted", "kind": "handoff.accepted", "ticket_id": "26", "run_id": "2cd24a7af326e600", "detail": "Review Round 2 blockers have been resolved: PLAYWRIGHT_GUIDE.md formatting fixed, QA plan created with clear manual-only markings for build-time config criteria, test names clarified. Ready for review verification."}
 {"event_id": "2cd24a7af326e600:succeeded", "kind": "run.succeeded", "ticket_id": "26", "run_id": "2cd24a7af326e600", "state": "SUCCEEDED", "artifacts": ["specs/26/qa-plan.md"]}
+{"event_id": "308bf3fd7c540453:collected", "kind": "run.collected", "ticket_id": "26", "run_id": "308bf3fd7c540453", "tokens": 486800, "cost_usd": 0.317}
