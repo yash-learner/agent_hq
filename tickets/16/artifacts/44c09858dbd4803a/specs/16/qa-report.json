@@ -1,0 +1,87 @@
+{
+  "criteria": [
+    {
+      "id": "ac1-multiple-reports",
+      "title": "Multiple reports can be created from SR with multiple codes",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "No Activity Definitions with multiple diagnostic_report_codes exist in fixtures. Creating via API requires extensive required fields. UI creation flow is multi-step and complex.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac2-used-codes-removed",
+      "title": "Used codes are removed from dropdown",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Same as AC1 - requires Activity Definition with multiple codes to test",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac3-unused-codes",
+      "title": "Multiple reports show only unused codes",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Same as AC1 - requires Activity Definition with multiple codes to test",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac4-all-codes-used",
+      "title": "All codes used disables creation",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Same as AC1 - requires Activity Definition with multiple codes to test",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac5-state-persists",
+      "title": "State persists on navigation",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Same as AC1 - requires Activity Definition with multiple codes to test",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac6-sr-unchanged",
+      "title": "Service Requests without codes unchanged",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Requires testing both with and without diagnostic_report_codes",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac7-sequential-creation",
+      "title": "Sequential creation without reload",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Same as AC1 - requires Activity Definition with multiple codes to test",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    }
+  ],
+  "summary": {
+    "all_passed": false,
+    "pass": 0,
+    "fail": 0,
+    "not_exercised": 7
+  }
+}

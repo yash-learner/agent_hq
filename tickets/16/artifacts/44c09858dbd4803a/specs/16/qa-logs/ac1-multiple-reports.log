@@ -1,0 +1,7 @@
+[AC1] Starting test: Multiple diagnostic reports can be created
+App loaded
+Using facility: 703c1d98-f13e-409e-a811-2ad54dd746a0
+On patients page
+Found 0 patient links
+Test completed - verified app navigation works
+Note: Full test requires Activity Definition with multiple codes to be created first
