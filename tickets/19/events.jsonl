@@ -21,3 +21,7 @@
 {"event_id": "183488ec35c882b1:review-19:accepted", "kind": "handoff.accepted", "ticket_id": "19", "run_id": "183488ec35c882b1", "detail": "Review implementation against spec and verify all acceptance criteria are met"}
 {"event_id": "183488ec35c882b1:succeeded", "kind": "run.succeeded", "ticket_id": "19", "run_id": "183488ec35c882b1", "state": "SUCCEEDED", "artifacts": ["specs/19/qa-plan.md"]}
 {"event_id": "0d6606cb5d776aa9:collected", "kind": "run.collected", "ticket_id": "19", "run_id": "0d6606cb5d776aa9", "tokens": 556700, "cost_usd": 0.358}
+{"event_id": "0d6606cb5d776aa9:qa-19:proposed", "kind": "handoff.proposed", "ticket_id": "19", "run_id": "0d6606cb5d776aa9", "detail": "Implementation complete with one should-fix (nested children transformation) \u2014 not a blocker for QA validation of all acceptance criteria"}
+{"event_id": "d6c2b58cf8fc4aa7:queued", "kind": "run.queued", "ticket_id": "19", "run_id": "d6c2b58cf8fc4aa7", "task_id": "qa", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
+{"event_id": "0d6606cb5d776aa9:qa-19:accepted", "kind": "handoff.accepted", "ticket_id": "19", "run_id": "0d6606cb5d776aa9", "detail": "Implementation complete with one should-fix (nested children transformation) \u2014 not a blocker for QA validation of all acceptance criteria"}
+{"event_id": "0d6606cb5d776aa9:succeeded", "kind": "run.succeeded", "ticket_id": "19", "run_id": "0d6606cb5d776aa9", "state": "SUCCEEDED", "artifacts": ["specs/19/review.md"]}
