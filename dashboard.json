@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T13:20:23Z",
+  "generated_at": "2026-08-07T13:20:53Z",
   "tickets": [
     {
       "ticket_id": "1",
@@ -3135,7 +3135,7 @@
           "task_id": "arch-plan",
           "task_version": 1,
           "ticket_id": "22",
-          "state": "QUEUED",
+          "state": "RUNNING",
           "attempt": 0,
           "bindings": {
             "tracker": "github-issues",
@@ -3154,7 +3154,9 @@
           "repo": "yash-learner/care_fe_agent_hq",
           "input_artifacts": [
             "specs/22/spec.md"
-          ]
+          ],
+          "deadline": "2026-08-07T13:50:53Z",
+          "attempt_started_at": "2026-08-07T13:20:53Z"
         }
       ],
       "block_reason": null,
