@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T15:19:09Z",
+  "generated_at": "2026-08-07T15:19:10Z",
   "tickets": [
     {
       "ticket_id": "1",
@@ -3744,7 +3744,7 @@
     {
       "ticket_id": "24",
       "pinned_comment_id": 5217526527,
-      "status": "ACTIVE",
+      "status": "BLOCKED",
       "runs": [
         {
           "run_id": "e9a7e9beac881dc0",
@@ -3980,9 +3980,9 @@
           "input_from_run_id": "beb516648d7f4cf6"
         }
       ],
-      "block_reason": null,
-      "block_source": null,
-      "interrupted_run_id": null,
+      "block_reason": "retries exhausted",
+      "block_source": "engine",
+      "interrupted_run_id": "c852596d193b3c92",
       "comments_polled_at": "2026-08-07T13:45:58Z",
       "work_repos": [
         {

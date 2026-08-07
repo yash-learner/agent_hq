@@ -33,3 +33,4 @@
 {"event_id": "c852596d193b3c92:collected", "kind": "run.collected", "ticket_id": "24", "run_id": "c852596d193b3c92", "tokens": 5339600, "cost_usd": 2.57}
 {"event_id": "c852596d193b3c92:failed", "kind": "run.failed", "ticket_id": "24", "run_id": "c852596d193b3c92", "state": "FAILED"}
 {"event_id": "c852596d193b3c92:artifact_rejected", "kind": "run.artifact_rejected", "ticket_id": "24", "run_id": "c852596d193b3c92", "detail": "qa-report.json: video specs/24/videos/ac1-env-links.webm is claimed by criteria 'ac1-env-links' and 'ac4-security-attributes'"}
+{"event_id": "c852596d193b3c92:blocked", "kind": "ticket.blocked", "ticket_id": "24", "run_id": "c852596d193b3c92", "detail": "retries exhausted"}
