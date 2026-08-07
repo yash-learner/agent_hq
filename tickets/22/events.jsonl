@@ -77,3 +77,4 @@
 {"event_id": "afede9f923fb4ae6:collected", "kind": "run.collected", "ticket_id": "22", "run_id": "afede9f923fb4ae6", "tokens": 1812100, "cost_usd": 1.01}
 {"event_id": "afede9f923fb4ae6:failed", "kind": "run.failed", "ticket_id": "22", "run_id": "afede9f923fb4ae6", "state": "FAILED"}
 {"event_id": "afede9f923fb4ae6:handoff_rejected", "kind": "handoff.rejected", "ticket_id": "22", "run_id": "afede9f923fb4ae6", "detail": "artifact not found in worktree: specs/22/spec.md"}
+{"event_id": "8aefb4c18a10c46a:queued", "kind": "run.queued", "ticket_id": "22", "run_id": "8aefb4c18a10c46a", "task_id": "implement", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
