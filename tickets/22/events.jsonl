@@ -62,3 +62,4 @@
 {"event_id": "460a19467f3432a9:rework", "kind": "run.rework", "ticket_id": "22", "run_id": "460a19467f3432a9", "detail": "@yash-learner: verify PLAYWRIGHT_GUIDE newlines then queue qa\n\n(ticket was blocked: queue ran dry after `implement` without reaching `finalize`)", "actor": "yash-learner", "source": "issue-comment:5220343541"}
 {"event_id": "460a19467f3432a9:collected", "kind": "run.collected", "ticket_id": "22", "run_id": "460a19467f3432a9", "tokens": 825500, "cost_usd": 0.577}
 {"event_id": "460a19467f3432a9:failed", "kind": "run.failed", "ticket_id": "22", "run_id": "460a19467f3432a9", "state": "FAILED"}
+{"event_id": "460a19467f3432a9:handoff_rejected", "kind": "handoff.rejected", "ticket_id": "22", "run_id": "460a19467f3432a9", "detail": "artifact not found in worktree: specs/22/spec.md"}
