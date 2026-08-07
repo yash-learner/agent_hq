@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T21:57:10Z",
+  "generated_at": "2026-08-07T21:57:18Z",
   "tickets": [
     {
       "ticket_id": "1",
@@ -6074,7 +6074,7 @@
           "task_id": "spec",
           "task_version": 1,
           "ticket_id": "36",
-          "state": "RUNNING",
+          "state": "SUCCEEDED",
           "attempt": 0,
           "bindings": {
             "tracker": "github-issues",
@@ -6085,7 +6085,9 @@
           "cost_usd": 0.421,
           "tokens": 766400,
           "usage_known": true,
-          "artifacts": [],
+          "artifacts": [
+            "specs/36/spec.md"
+          ],
           "chain_depth": 0,
           "source_event_id": "36:opened:2026-08-07T20:34:10Z",
           "enqueue_index": 0,
@@ -6095,13 +6097,24 @@
           "attempt_started_at": "2026-08-07T21:52:24Z",
           "base_commit": "dea49853619eaf2e5b7c18d6f89a1c1bf67567a0",
           "input_from_run_id": null,
-          "input_artifacts": []
+          "input_artifacts": [],
+          "output_commit": "dea49853619eaf2e5b7c18d6f89a1c1bf67567a0",
+          "pr_ref": null
         }
       ],
       "block_reason": null,
       "block_source": null,
       "interrupted_run_id": null,
-      "comments_polled_at": "2026-08-07T20:34:33Z"
+      "comments_polled_at": "2026-08-07T20:34:33Z",
+      "work_repos": [
+        {
+          "repo": "yash-learner/care_fe_agent_hq",
+          "branch": "agent-hq/36",
+          "base_branch": "develop",
+          "recorded_head": "dea49853619eaf2e5b7c18d6f89a1c1bf67567a0",
+          "pr_ref": null
+        }
+      ]
     },
     {
       "ticket_id": "37",
