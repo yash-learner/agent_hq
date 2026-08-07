@@ -402,7 +402,7 @@
       "task_id": "review",
       "task_version": 1,
       "ticket_id": "22",
-      "state": "QUEUED",
+      "state": "RUNNING",
       "attempt": 0,
       "bindings": {},
       "cost_usd": null,
@@ -412,7 +412,9 @@
       "chain_depth": 0,
       "source_event_id": "issue-comment:5220343541",
       "enqueue_index": 0,
-      "queue_seq": 12
+      "queue_seq": 12,
+      "deadline": "2026-08-07T18:24:21Z",
+      "attempt_started_at": "2026-08-07T17:54:21Z"
     }
   ],
   "block_reason": null,
