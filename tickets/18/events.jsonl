@@ -22,3 +22,5 @@
 {"event_id": "e7614cb232a9c52e:succeeded", "kind": "run.succeeded", "ticket_id": "18", "run_id": "e7614cb232a9c52e", "state": "SUCCEEDED", "artifacts": ["specs/18/qa.md", "specs/18/qa-report.json"]}
 {"event_id": "d40f6827545fd450:collected", "kind": "run.collected", "ticket_id": "18", "run_id": "d40f6827545fd450", "tokens": 256400, "cost_usd": 0.181}
 {"event_id": "d40f6827545fd450:succeeded", "kind": "run.succeeded", "ticket_id": "18", "run_id": "d40f6827545fd450", "state": "SUCCEEDED", "artifacts": ["specs/18/summary.md"]}
+{"event_id": "4ab8cb5286d21c00:queued", "kind": "run.queued", "ticket_id": "18", "run_id": "4ab8cb5286d21c00", "task_id": "qa", "task_version": 1, "state": "QUEUED", "bindings": {}}
+{"event_id": "4ab8cb5286d21c00:rework", "kind": "run.rework", "ticket_id": "18", "run_id": "4ab8cb5286d21c00", "detail": "@yash-learner: with ## QA data setup", "actor": "yash-learner", "source": "issue-comment:5216717652"}
