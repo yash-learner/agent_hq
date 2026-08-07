@@ -1,2 +1,7 @@
 {"event_id": "f15d98e868cc230d:queued", "kind": "run.queued", "ticket_id": "23", "run_id": "f15d98e868cc230d", "task_id": "spec", "task_version": 1, "state": "QUEUED", "bindings": {}}
 {"event_id": "f15d98e868cc230d:collected", "kind": "run.collected", "ticket_id": "23", "run_id": "f15d98e868cc230d", "tokens": 416300, "cost_usd": 0.32}
+{"event_id": "f15d98e868cc230d:auto_approval", "kind": "gate.decided", "ticket_id": "23", "run_id": "f15d98e868cc230d", "detail": "auto-approved by task config (would have asked product-owners)", "actor": "engine"}
+{"event_id": "f15d98e868cc230d:implement-23-care-fe:proposed", "kind": "handoff.proposed", "ticket_id": "23", "run_id": "f15d98e868cc230d", "detail": "Implement multi-diagnostic-report support in care_fe frontend"}
+{"event_id": "390551a7d6c03cec:queued", "kind": "run.queued", "ticket_id": "23", "run_id": "390551a7d6c03cec", "task_id": "implement", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment", "gate": "github-issue-comment"}}
+{"event_id": "f15d98e868cc230d:implement-23-care-fe:accepted", "kind": "handoff.accepted", "ticket_id": "23", "run_id": "f15d98e868cc230d", "detail": "Implement multi-diagnostic-report support in care_fe frontend"}
+{"event_id": "f15d98e868cc230d:succeeded", "kind": "run.succeeded", "ticket_id": "23", "run_id": "f15d98e868cc230d", "state": "SUCCEEDED", "artifacts": ["specs/23/spec.md"]}
