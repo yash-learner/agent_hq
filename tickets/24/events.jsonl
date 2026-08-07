@@ -61,3 +61,4 @@
 {"event_id": "4ec2948316c9bd88:collected", "kind": "run.collected", "ticket_id": "24", "run_id": "4ec2948316c9bd88", "tokens": 5032000, "cost_usd": 2.37}
 {"event_id": "4ec2948316c9bd88:failed", "kind": "run.failed", "ticket_id": "24", "run_id": "4ec2948316c9bd88", "state": "FAILED"}
 {"event_id": "4ec2948316c9bd88:artifact_rejected", "kind": "run.artifact_rejected", "ticket_id": "24", "run_id": "4ec2948316c9bd88", "detail": "qa-report.json schema violation: criteria/1/verdict: 'not_exercised' is not one of ['pass', 'fail', 'not-exercised']"}
+{"event_id": "4ec2948316c9bd88:blocked", "kind": "ticket.blocked", "ticket_id": "24", "run_id": "4ec2948316c9bd88", "detail": "retries exhausted"}
