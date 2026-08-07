@@ -520,7 +520,7 @@
       "task_id": "implement",
       "task_version": 1,
       "ticket_id": "22",
-      "state": "RUNNING",
+      "state": "FAILED",
       "attempt": 1,
       "bindings": {
         "tracker": "github-issues",
