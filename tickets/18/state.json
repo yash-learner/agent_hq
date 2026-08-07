@@ -268,7 +268,9 @@
         "specs/18/qa-report.json"
       ],
       "deadline": "2026-08-07T13:04:51Z",
-      "attempt_started_at": "2026-08-07T12:49:51Z"
+      "attempt_started_at": "2026-08-07T12:49:51Z",
+      "base_commit": "03de544ed82abf54411c7eb9d2c760515ce17e2d",
+      "input_from_run_id": "4d2100796151d3ca"
     }
   ],
   "block_reason": null,
