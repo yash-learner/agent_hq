@@ -20,3 +20,4 @@
 {"event_id": "f95d0e7c066ce06e:queued", "kind": "run.queued", "ticket_id": "20", "run_id": "f95d0e7c066ce06e", "task_id": "review", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
 {"event_id": "68d1272afaf7501e:review-20-impl:accepted", "kind": "handoff.accepted", "ticket_id": "20", "run_id": "68d1272afaf7501e", "detail": "Review implementation against spec acceptance criteria"}
 {"event_id": "68d1272afaf7501e:succeeded", "kind": "run.succeeded", "ticket_id": "20", "run_id": "68d1272afaf7501e", "state": "SUCCEEDED", "artifacts": ["specs/20/qa-plan.md"]}
+{"event_id": "f95d0e7c066ce06e:collected", "kind": "run.collected", "ticket_id": "20", "run_id": "f95d0e7c066ce06e", "tokens": 194500, "cost_usd": 0.167}

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T11:35:40Z",
+  "generated_at": "2026-08-07T11:39:02Z",
   "tickets": [
     {
       "ticket_id": "1",
@@ -2761,9 +2761,9 @@
             "agent-session": "copilot-cli",
             "messaging": "github-comment"
           },
-          "cost_usd": null,
-          "tokens": null,
-          "usage_known": false,
+          "cost_usd": 0.167,
+          "tokens": 194500,
+          "usage_known": true,
           "artifacts": [],
           "chain_depth": 4,
           "parent_run_id": "68d1272afaf7501e",
@@ -3830,7 +3830,7 @@
     "agent-session/copilot-cli": {
       "ok": true,
       "detail": "collect",
-      "ts": "2026-08-07T11:34:49Z"
+      "ts": "2026-08-07T11:39:02Z"
     }
   }
 }
