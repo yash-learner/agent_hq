@@ -22,3 +22,4 @@
 {"event_id": "a2690b8ba4ed8f1a:rework", "kind": "run.rework", "ticket_id": "33", "run_id": "a2690b8ba4ed8f1a", "detail": "Previous attempt rejected: qa-report.json: criterion 'ac1-facility-role-visible': fail requires a non-empty blocker", "actor": "engine", "source": "f9be8811537ff0e6:artifact_rejected"}
 {"event_id": "a2690b8ba4ed8f1a:collected", "kind": "run.collected", "ticket_id": "33", "run_id": "a2690b8ba4ed8f1a", "tokens": 2627900, "cost_usd": 1.44}
 {"event_id": "a2690b8ba4ed8f1a:failed", "kind": "run.failed", "ticket_id": "33", "run_id": "a2690b8ba4ed8f1a", "state": "FAILED"}
+{"event_id": "a2690b8ba4ed8f1a:artifact_rejected", "kind": "run.artifact_rejected", "ticket_id": "33", "run_id": "a2690b8ba4ed8f1a", "detail": "qa-report.json: criterion 'ac2-no-role-edit-action': missing-test-data seed_attempt.method must be ui, api, or both (got 'none'; none means no seed was attempted)"}

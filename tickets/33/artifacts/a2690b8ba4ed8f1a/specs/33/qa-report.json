@@ -1,0 +1,85 @@
+{
+  "criteria": [
+    {
+      "id": "ac1-facility-role-visible",
+      "title": "Role visible on card with role, regardless of edit action",
+      "verdict": "not-exercised",
+      "evidence_kind": "live-flow",
+      "blocker": "Backend API does not return user_type field for facility users. Fixture users exist (care-doctor, care-nurse, care-staff) but API response shows user_type: undefined. Implementation is correct but cannot be verified without backend data.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": ["1", "2", "3", "4", "5", "6"],
+      "seed_attempt": {
+        "method": "both",
+        "summary": "Navigated to facility users page via UI using fixture facility ID. Page loads successfully with 5 user cards visible. Intercepted API response from /api/v1/facility/{facilityId}/users/ which returns user_type: undefined for all users. Investigated backend model (care/users/models.py) which contains user_type field, but serializer does not include it in response. Did not attempt UI/API creation as the issue is in backend serialization, not data absence."
+      },
+      "videos": ["specs/33/videos/ac1-facility-role-visible.webm"],
+      "screenshots": ["specs/33/screenshots/ac1-facility-users-card-view.png"]
+    },
+    {
+      "id": "ac2-no-role-edit-action",
+      "title": "Role section not rendered when no role, but edit action still appears",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Depends on AC1 data availability. Cannot test negative case (no role but edit action) without first having positive case (role with edit action) working. Backend does not provide user_type data.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": [],
+      "seed_attempt": {
+        "method": "none",
+        "summary": "Blocked by AC1 data issue. This criterion requires users with edit actions but varying role presence. Since backend provides neither user_type data nor a path to create such test users, cannot proceed."
+      },
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac3-doctor-role-display",
+      "title": "Facility users with 'doctor' role display 'doctor' on cards",
+      "verdict": "not-exercised",
+      "evidence_kind": "live-flow",
+      "blocker": "Same backend data blocker as AC1. Fixture user care-doctor exists and card renders, but backend API does not return user_type field. Cannot verify role text display without backend data.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": ["1", "2", "3"],
+      "seed_attempt": {
+        "method": "ui",
+        "summary": "Navigated to facility users page. Located care-doctor user card which renders successfully with username and status. No role text visible due to missing user_type field in API response (same root cause as AC1)."
+      },
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac4-org-role-visible",
+      "title": "Organization users display organization-specific role names",
+      "verdict": "not-exercised",
+      "evidence_kind": "live-flow",
+      "blocker": "No organization users exist in fixture data. Navigated to Governance → Government organization → Users page which loads successfully but displays empty state. API response confirms zero organization users. Would need to create users via complex multi-step form (username, password, email, phone, gender, organization, role) without specific plan-provided data steps.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": ["1", "2", "3", "4"],
+      "seed_attempt": {
+        "method": "ui",
+        "summary": "Navigated successfully to organization users page. Page renders with 'Add User' and 'Link User' buttons but zero user cards. Intercepted /api/v1/organization/{id}/users/ response showing empty results array. Fixtures include Government organization but no linked users. Did not attempt UI creation - multi-page form requires specific user data (email, phone, gender, role designation) not provided in plan Data setup steps."
+      },
+      "videos": ["specs/33/videos/ac4-org-role-visible.webm"],
+      "screenshots": ["specs/33/screenshots/ac4-org-users-card-view.png"]
+    },
+    {
+      "id": "ac5-facility-org-role",
+      "title": "Facility organization users display facility organization role names",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Depends on AC4 organization users existing. Facility-organization user relationships require organization users to be linked to facilities. Cannot proceed without organization users in fixtures.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": [],
+      "seed_attempt": {
+        "method": "none",
+        "summary": "Blocked by AC4 empty organization users state. This criterion requires navigating to facility settings → organizations → users, which presupposes organization users exist to display. Since fixtures contain zero organization users, cannot reach testable state."
+      },
+      "videos": [],
+      "screenshots": []
+    }
+  ],
+  "summary": {
+    "all_passed": false,
+    "pass": 0,
+    "fail": 0,
+    "not_exercised": 5
+  }
+}

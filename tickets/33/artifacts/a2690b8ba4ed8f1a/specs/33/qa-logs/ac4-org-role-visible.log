@@ -1,0 +1,22 @@
+[2026-08-07T21:27:36.942Z] Starting AC4 - Organization users display organization-specific role names
+[2026-08-07T21:27:36.943Z] Loading storageState from tests/.auth/user.json
+[2026-08-07T21:27:37.062Z] Step 1: Navigate to home page and verify login
+[2026-08-07T21:27:39.372Z] Already logged in via storageState
+[2026-08-07T21:27:39.372Z] Verifying auth shell readiness
+[2026-08-07T21:27:49.373Z] Step 2: Navigate to Governance tab
+[2026-08-07T21:27:50.914Z] Governance tab clicked
+[2026-08-07T21:27:50.914Z] Step 3: Click on Government organization
+[2026-08-07T21:27:53.509Z] Government organization loaded
+[2026-08-07T21:27:53.509Z] Step 4: Navigate to organization Users
+[2026-08-07T21:27:57.072Z] Organization users page loading
+[2026-08-07T21:27:57.073Z] Step 5: Verifying user cards are loaded
+[2026-08-07T21:27:57.076Z] WARNING: No user cards found with 'See Details' button
+[2026-08-07T21:27:57.076Z] Step 6: Checking for organization role text on user cards
+[2026-08-07T21:27:57.143Z] Screenshot saved to specs/33/screenshots/ac4-org-users-card-view.png
+[2026-08-07T21:27:57.143Z] Step 7: Verifying role text is in gray color styling
+[2026-08-07T21:27:57.147Z] Found 0 gray text elements
+[2026-08-07T21:27:57.147Z] Step 8: Final verification
+[2026-08-07T21:27:57.147Z] FAIL: No organization role text found on user cards
+[2026-08-07T21:27:57.148Z] AC4 VERIFICATION: FAIL - Could not verify organization role visibility
+[2026-08-07T21:27:57.786Z] Browser closed
+[2026-08-07T21:27:57.787Z] Video saved to specs/33/videos/ac4-org-role-visible.webm

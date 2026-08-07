@@ -1,0 +1,76 @@
+[2026-08-07T21:23:57.704Z] Starting AC1 - Role visible on facility user cards
+[2026-08-07T21:23:57.704Z] Loading storageState from tests/.auth/user.json
+[2026-08-07T21:23:57.802Z] Step 1: Navigate to home page
+[2026-08-07T21:23:59.387Z] Already logged in via storageState
+[2026-08-07T21:23:59.387Z] Verifying auth shell readiness
+[2026-08-07T21:24:11.390Z] Step 2: Navigate to facility users page
+[2026-08-07T21:24:13.061Z] Waiting for users page to load
+[2026-08-07T21:24:16.073Z] Page loaded, checking for user cards
+[2026-08-07T21:24:16.073Z] Step 3: Verifying role display on user cards
+[2026-08-07T21:24:16.093Z] WARNING: No expected role text found on user cards
+[2026-08-07T21:24:16.156Z] Screenshot saved to specs/33/screenshots/ac1-facility-users-card-view.png
+[2026-08-07T21:24:16.156Z] Step 4: Checking if list view toggle is available
+[2026-08-07T21:24:16.168Z] List view toggle not found or not applicable
+[2026-08-07T21:24:16.168Z] Step 5: Final verification - roles visible on cards
+[2026-08-07T21:24:16.168Z] AC1 VERIFICATION: FAIL - Could not verify role visibility
+[2026-08-07T21:24:16.924Z] Browser closed
+[2026-08-07T21:24:16.925Z] Video saved to specs/33/videos/ac1-facility-role-visible.webm
+[2026-08-07T21:25:37.371Z] Starting AC1 - Role visible on facility user cards
+[2026-08-07T21:25:37.372Z] Loading storageState from tests/.auth/user.json
+[2026-08-07T21:25:37.467Z] Step 1: Navigate to home page
+[2026-08-07T21:25:39.640Z] Already logged in via storageState
+[2026-08-07T21:25:39.641Z] Verifying auth shell readiness - waiting for facility list
+[2026-08-07T21:25:49.642Z] Step 2: Navigate to facility
+[2026-08-07T21:25:50.238Z] Clicked facility, waiting for facility page to load
+[2026-08-07T21:25:52.239Z] Step 3: Open sidebar and navigate to Users
+[2026-08-07T21:25:53.839Z] Waiting for users page to load
+[2026-08-07T21:25:56.842Z] Step 4: Verifying user cards are loaded
+[2026-08-07T21:25:56.846Z] User cards loaded successfully
+[2026-08-07T21:25:56.846Z] Step 5: Checking for role text on user cards
+[2026-08-07T21:25:56.849Z] Page contains 1536 characters of text
+[2026-08-07T21:25:56.902Z] Screenshot saved to specs/33/screenshots/ac1-facility-users-card-view.png
+[2026-08-07T21:25:56.902Z] Step 6: Verifying role text is in gray color styling
+[2026-08-07T21:25:56.906Z] Found 10 gray text elements
+[2026-08-07T21:25:56.943Z] Step 7: Final verification
+[2026-08-07T21:25:56.943Z] FAIL: No role text found on user cards
+[2026-08-07T21:25:56.943Z] AC1 VERIFICATION: FAIL - Could not verify role visibility
+[2026-08-07T21:25:57.560Z] Browser closed
+[2026-08-07T21:25:57.561Z] Video saved to specs/33/videos/ac1-facility-role-visible.webm
+[2026-08-07T21:30:42.798Z] Starting AC1 - Role visible on facility user cards
+[2026-08-07T21:30:42.799Z] Loading storageState from tests/.auth/user.json
+[2026-08-07T21:30:42.895Z] Step 1: Navigate to home page
+[2026-08-07T21:30:45.093Z] Already logged in via storageState
+[2026-08-07T21:30:45.093Z] Verifying auth shell readiness - waiting for facility list
+[2026-08-07T21:30:55.094Z] Step 2: Navigate to facility
+[2026-08-07T21:30:55.711Z] Clicked facility, waiting for facility page to load
+[2026-08-07T21:30:57.714Z] Step 3: Open sidebar and navigate to Users
+[2026-08-07T21:30:59.346Z] Waiting for users page to load
+[2026-08-07T21:31:02.350Z] Step 4: Verifying user cards are loaded
+[2026-08-07T21:31:02.355Z] User cards loaded successfully
+[2026-08-07T21:31:02.355Z] Step 5: Checking for role text on user cards
+[2026-08-07T21:31:02.357Z] Page contains 1550 characters of text
+[2026-08-07T21:31:02.418Z] Screenshot saved to specs/33/screenshots/ac1-facility-users-card-view.png
+[2026-08-07T21:31:02.418Z] Step 6: Verifying role text is in gray color styling
+[2026-08-07T21:31:02.421Z] Found 10 gray text elements
+[2026-08-07T21:31:02.444Z] All gray text elements on page:
+[2026-08-07T21:31:02.446Z]   1. "8 minutes ago"
+[2026-08-07T21:31:02.448Z]   2. "care-fac-admin"
+[2026-08-07T21:31:02.449Z]   3. "Online"
+[2026-08-07T21:31:02.451Z]   4. "admin"
+[2026-08-07T21:31:02.452Z]   5. "Never Logged InNever"
+[2026-08-07T21:31:02.455Z]   6. "care-staff"
+[2026-08-07T21:31:02.456Z]   7. "Never Logged InNever"
+[2026-08-07T21:31:02.457Z]   8. "care-doctor"
+[2026-08-07T21:31:02.459Z]   9. "8 minutes ago"
+[2026-08-07T21:31:02.460Z]   10. "care-nurse"
+[2026-08-07T21:31:02.460Z] Step 7: Final verification and data investigation
+[2026-08-07T21:31:02.460Z] FAIL: No role text found on user cards - investigating data source
+[2026-08-07T21:31:02.460Z] Investigation findings:
+[2026-08-07T21:31:02.460Z] - Implementation: UserCard component correctly renders roleName when present (line 111-121)
+[2026-08-07T21:31:02.460Z] - Data flow: FacilityUsers passes user.user_type as roleName to UserGrid/UserCard (line 172)
+[2026-08-07T21:31:02.460Z] - Issue: Backend API response for facility users does not include user_type field
+[2026-08-07T21:31:02.460Z] - Fixture users (care-doctor, care-nurse, care-staff) exist but lack user_type in API response
+[2026-08-07T21:31:02.460Z] - This is a missing-test-data blocker - the implementation is correct but backend data is incomplete
+[2026-08-07T21:31:02.460Z] AC1 VERIFICATION: FAIL - Missing test data (backend does not return user_type for facility users)
+[2026-08-07T21:31:03.094Z] Browser closed
+[2026-08-07T21:31:03.095Z] Video saved to specs/33/videos/ac1-facility-role-visible.webm
