@@ -39,3 +39,4 @@
 {"event_id": "308bf3fd7c540453:succeeded", "kind": "run.succeeded", "ticket_id": "26", "run_id": "308bf3fd7c540453", "state": "SUCCEEDED", "artifacts": ["specs/26/review.md"]}
 {"event_id": "1f070d6b5be3da6a:collected", "kind": "run.collected", "ticket_id": "26", "run_id": "1f070d6b5be3da6a", "tokens": 2025200, "cost_usd": 1.23}
 {"event_id": "1f070d6b5be3da6a:failed", "kind": "run.failed", "ticket_id": "26", "run_id": "1f070d6b5be3da6a", "state": "FAILED"}
+{"event_id": "1f070d6b5be3da6a:artifact_rejected", "kind": "run.artifact_rejected", "ticket_id": "26", "run_id": "1f070d6b5be3da6a", "detail": "qa-report.json: criterion 'ac1-env-links': missing-test-data seed_attempt.method must be ui, api, or both (got 'none'; none means no seed was attempted)"}

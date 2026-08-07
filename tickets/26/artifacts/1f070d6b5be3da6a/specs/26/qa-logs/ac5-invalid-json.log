@@ -1,0 +1,29 @@
+=== AC5: Invalid JSON warning (NOT EXERCISED) ===
+
+Blocker: missing-test-data
+Category: Build-time configuration
+
+Reason:
+  Same as AC1 - requires setting REACT_NAV_LINKS environment
+  variable with invalid JSON before building the application.
+
+Manual verification documented in qa-plan.md:
+  1. Set REACT_NAV_LINKS with invalid JSON
+  2. Rebuild application
+  3. Check browser console for warning
+  4. Verify sidebar renders without custom links
+
+Code review evidence:
+  - care.config.ts lines 425-458:
+    * Try-catch wraps JSON.parse()
+    * Validates Array.isArray(links)
+    * Filters links with missing name/url
+    * Logs console.warn() for invalid JSON
+    * Logs console.warn() for invalid link objects
+    * Returns [] on error, allowing app to continue
+
+Error handling:
+  - Invalid JSON: 'Invalid JSON format. Navigation links will not be rendered.'
+  - Not an array: 'must be a JSON array. Navigation links will not be rendered.'
+  - Missing fields: 'Each link must have name and url properties. Skipping...'
+

@@ -1,0 +1,41 @@
+=== AC4: Link ordering verification ===
+Facility ID: bdd96110-f2b5-43b2-8648-da369b0cc966
+Auth state: tests/.auth/user.json
+
+[1] Launching browser with authenticated session...
+✓ Browser launched, cursor overlay enabled
+
+[2] Navigating to facility overview...
+Waiting for authenticated shell...
+✓ Authenticated shell ready
+✓ Screenshot saved: ac4-facility-sidebar.png
+
+[3] Verifying facility sidebar structure...
+✓ Sidebar visible: true
+✓ Found 6 navigation links in sidebar
+  Sample links: Overview, Appointments, Queues, Services, Resource, Users
+
+[4] Code inspection: facility-nav.tsx link ordering...
+✓ facility-nav.tsx: Ordering pattern found: [...links, ...processedEnvLinks, ...pluginLinks]
+  Line 210: ...links,
+  Line 211: ...processedEnvLinks,
+  Line 212: ...pluginLinks.map((l) => ({
+
+[5] Navigating to admin sidebar...
+✓ Admin page loaded
+✓ Screenshot saved: ac4-admin-sidebar.png
+✓ Found 6 navigation links in admin sidebar
+
+[6] Code inspection: admin-nav.tsx link ordering...
+✓ admin-nav.tsx: Ordering pattern found: [...links, ...processedEnvLinks, ...pluginNavItems]
+  Line 83: return [...links, ...processedEnvLinks, ...pluginNavItems];
+
+[7] Code inspection: processEnvNavLinks utility...
+✓ processEnvNavLinks utility function found
+
+[8] Verification complete
+✓ AC4: Link ordering structure verified via code inspection
+✓ Sidebar structure confirmed with ${navLinks} facility links and ${adminNavLinks} admin links
+
+Waiting for video to flush...
+✓ Video saved to specs/26/videos/

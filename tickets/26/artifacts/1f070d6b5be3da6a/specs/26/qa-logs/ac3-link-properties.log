@@ -1,0 +1,24 @@
+=== AC3: Links display with configured properties (NOT EXERCISED) ===
+
+Blocker: missing-test-data
+Category: Build-time configuration
+
+Reason:
+  Same as AC1 - requires REACT_NAV_LINKS environment variable
+  before building the application.
+
+Manual verification documented in qa-plan.md:
+  1. Set REACT_NAV_LINKS with external URL
+  2. Rebuild application
+  3. Verify link has external icon and opens in new tab
+  4. Verify target='_blank' and rel='noopener noreferrer'
+
+Code review evidence:
+  - src/Utils/navLinks.tsx: processEnvNavLinks() detects external URLs
+  - Adds ExternalLink icon for external links
+  - Sets external: true for links starting with http:// or https://
+  - src/components/ui/sidebar/nav-main.tsx: NavLink handles external attribute
+
+Automated coverage:
+  - tests/sidebar/navLinks.spec.ts validates external link handling
+

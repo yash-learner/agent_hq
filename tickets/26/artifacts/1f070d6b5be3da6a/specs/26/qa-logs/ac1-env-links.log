@@ -1,0 +1,23 @@
+=== AC1: Environment-configured links (NOT EXERCISED) ===
+
+Blocker: missing-test-data
+Category: Build-time configuration
+
+Reason:
+  This AC requires setting REACT_NAV_LINKS environment variable
+  before building the application. The QA environment has a
+  pre-built app and cannot inject environment variables at runtime.
+
+Manual verification steps documented in qa-plan.md:
+  1. Set REACT_NAV_LINKS with custom JSON
+  2. Rebuild application (npm run build)
+  3. Verify custom links appear in sidebar
+
+Code review evidence:
+  - care.config.ts: Parses REACT_NAV_LINKS with validation
+  - facility-nav.tsx: Merges envLinks into navigation
+  - admin-nav.tsx: Merges envLinks into navigation
+
+Automated coverage:
+  - tests/sidebar/navLinks.spec.ts validates baseline structure
+

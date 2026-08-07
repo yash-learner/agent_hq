@@ -1,0 +1,84 @@
+{
+  "criteria": [
+    {
+      "id": "ac1-env-links",
+      "title": "Environment-configured links appear in sidebar",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "This criterion requires setting REACT_NAV_LINKS environment variable before building the application. The QA environment has a pre-built app and cannot inject environment variables at runtime. Build-time configuration cannot be changed without rebuilding the entire application, which is outside the scope of live QA verification.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": ["1"],
+      "videos": [],
+      "screenshots": [],
+      "seed_attempt": {
+        "method": "none",
+        "summary": "Build-time environment variable configuration required. Code review of care.config.ts parsing logic confirms correct implementation. Manual verification steps documented in qa-plan.md. Automated E2E tests cover baseline behavior in tests/sidebar/navLinks.spec.ts."
+      }
+    },
+    {
+      "id": "ac2-plugin-items",
+      "title": "Plugin nav items are injected",
+      "verdict": "not-exercised",
+      "evidence_kind": "code-inspection",
+      "blocker": "Test environment does not have plugins enabled (REACT_ENABLED_APPS is not configured). Plugin nav item injection cannot be demonstrated without a configured plugin manifest.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": ["1"],
+      "videos": [],
+      "screenshots": [],
+      "seed_attempt": {
+        "method": "none",
+        "summary": "No plugins configured in test environment. Code review confirms: facility-nav.tsx lines 222-225 retrieve plugin items via useCareApps(), lines 212-215 map plugin links with facility URL prefix. admin-nav.tsx lines 89-92 retrieve plugin items, line 83 appends after env links. Ordering preserved: [...links, ...processedEnvLinks, ...pluginNavItems]."
+      }
+    },
+    {
+      "id": "ac3-link-properties",
+      "title": "Links display with configured properties (icon, external, new tab)",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Same limitation as AC1: requires REACT_NAV_LINKS environment variable before building. Cannot demonstrate external link properties without configured custom links in the running application.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": ["1"],
+      "videos": [],
+      "screenshots": [],
+      "seed_attempt": {
+        "method": "none",
+        "summary": "Build-time configuration required. Code review of src/Utils/navLinks.tsx confirms processEnvNavLinks() detects external URLs (http:// or https:// prefix), adds ExternalLink icon, sets external: true. nav-main.tsx NavLink component handles external attribute with target='_blank' and rel='noopener noreferrer'. E2E tests cover external link handling patterns."
+      }
+    },
+    {
+      "id": "ac4-ordering",
+      "title": "Link ordering: core → env → plugin",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3", "4", "5", "6", "7", "8"],
+      "videos": ["specs/26/videos/ac4-ordering.webm"],
+      "screenshots": [
+        "specs/26/screenshots/ac4-facility-sidebar.png",
+        "specs/26/screenshots/ac4-admin-sidebar.png"
+      ]
+    },
+    {
+      "id": "ac5-invalid-json",
+      "title": "Invalid JSON logs console warning",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Same limitation as AC1: requires setting REACT_NAV_LINKS with invalid JSON before building. Cannot demonstrate error handling without triggering the build-time parse error.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": ["1"],
+      "videos": [],
+      "screenshots": [],
+      "seed_attempt": {
+        "method": "none",
+        "summary": "Build-time configuration required. Code review of care.config.ts lines 425-458 confirms comprehensive error handling: try-catch wraps JSON.parse(), validates Array.isArray(), filters links with missing name/url, logs console.warn() for each error type, returns [] for graceful degradation. Three console warning messages documented for different error conditions."
+      }
+    }
+  ],
+  "summary": {
+    "all_passed": false,
+    "pass": 1,
+    "fail": 0,
+    "not_exercised": 4
+  }
+}

@@ -1,0 +1,22 @@
+=== AC2: Plugin nav items (NOT EXERCISED) ===
+
+Blocker: missing-test-data
+Category: No plugins configured
+
+Reason:
+  Test environment does not have plugins enabled
+  (REACT_ENABLED_APPS is not configured).
+
+Code review evidence:
+  - facility-nav.tsx lines 222-225: useCareApps() retrieves plugin items
+  - facility-nav.tsx lines 212-215: Plugin links mapped with facility URL prefix
+  - admin-nav.tsx lines 89-92: useCareApps() retrieves plugin items
+  - admin-nav.tsx line 83: Plugin items appended after env links
+  - Ordering preserved: [...links, ...processedEnvLinks, ...pluginNavItems]
+
+When a plugin defines navItems in manifest:
+  1. useCareApps() hook parses plugin manifests
+  2. Nav components retrieve items via useCareApps()
+  3. Items are appended after environment links
+  4. Facility links prefixed with /facility/{facilityId}/
+
