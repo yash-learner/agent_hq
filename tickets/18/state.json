@@ -259,7 +259,7 @@
       "artifacts": [],
       "chain_depth": 1,
       "parent_run_id": "4d2100796151d3ca",
-      "queue_seq": 6,
+      "queue_seq": 7,
       "handoff_key": "finalize-18",
       "repo": "yash-learner/care_fe_agent_hq",
       "input_artifacts": [
@@ -272,7 +272,7 @@
   "block_reason": null,
   "block_source": null,
   "interrupted_run_id": null,
-  "comments_polled_at": "2026-08-07T11:51:25Z",
+  "comments_polled_at": "2026-08-07T11:53:18Z",
   "work_repos": [
     {
       "repo": "yash-learner/care_fe_agent_hq",
