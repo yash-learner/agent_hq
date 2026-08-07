@@ -78,3 +78,4 @@
 {"event_id": "afede9f923fb4ae6:failed", "kind": "run.failed", "ticket_id": "22", "run_id": "afede9f923fb4ae6", "state": "FAILED"}
 {"event_id": "afede9f923fb4ae6:handoff_rejected", "kind": "handoff.rejected", "ticket_id": "22", "run_id": "afede9f923fb4ae6", "detail": "artifact not found in worktree: specs/22/spec.md"}
 {"event_id": "8aefb4c18a10c46a:queued", "kind": "run.queued", "ticket_id": "22", "run_id": "8aefb4c18a10c46a", "task_id": "implement", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
+{"event_id": "8aefb4c18a10c46a:rework", "kind": "run.rework", "ticket_id": "22", "run_id": "8aefb4c18a10c46a", "detail": "Previous attempt rejected: artifact not found in worktree: specs/22/spec.md", "actor": "engine", "source": "afede9f923fb4ae6:handoff_rejected"}
