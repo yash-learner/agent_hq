@@ -1,0 +1,31 @@
+Starting QA test for multiple diagnostic report codes...
+Service Request ID: 95380317-058b-4b0b-bb88-b78151285599
+Navigating to: http://localhost:4000/facility/8a2f3dfa-7667-4a04-8964-eb75eb72ab81/service_requests/95380317-058b-4b0b-bb88-b78151285599
+Step 1: Verifying diagnostic reports section...
+Step 2: Creating first diagnostic report (CBC panel)...
+❌ Test failed: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('[role="combobox"]').first() to be visible[22m
+
+locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('[role="combobox"]').first() to be visible[22m
+
+    at /workspaces/agent_hq/_target/ef21bb04d3cac376/specs/16/qa-drivers/multi-code-diagnostic-reports.mjs:51:18
+Video saved to: specs/16/videos/multi-code-diagnostic-reports.webm
+node:internal/modules/run_main:123
+    triggerUncaughtException(
+    ^
+
+locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('[role="combobox"]').first() to be visible[22m
+
+    at /workspaces/agent_hq/_target/ef21bb04d3cac376/specs/16/qa-drivers/multi-code-diagnostic-reports.mjs:51:18 {
+  log: [
+    `  - waiting for locator('[role="combobox"]').first() to be visible`
+  ],
+  name: 'TimeoutError'
+}
+
+Node.js v22.23.2

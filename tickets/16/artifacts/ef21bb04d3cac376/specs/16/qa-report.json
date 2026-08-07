@@ -1,0 +1,70 @@
+{
+  "criteria": [
+    {
+      "id": "multi-code-creation",
+      "title": "From an SR whose AD has N diagnostic report codes, the user can create up to N diagnostic reports, one per code",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Auth token expiration prevented browser access to Service Request detail page. JWT token in tests/.auth/user.json expired during QA execution, causing 403 responses and redirects to login page.",
+      "blocker_category": "auth-failure",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": [],
+      "seed_attempt": {
+        "method": "api",
+        "summary": "Successfully created Activity Definition with 3 diagnostic_report_codes via POST /api/v1/facility/{facilityId}/activity_definition/ (ID: 27cef862-0915-4e7f-8fa7-584a9b53c6f0) and Service Request via POST /api/v1/facility/{facilityId}/service_request/apply_activity_definition/ (ID: 95380317-058b-4b0b-bb88-b78151285599). API responses confirmed correct data model. Browser access blocked by expired JWT token in tests/.auth/user.json storage state. Attempted direct navigation, facility-context path, and API validation - all confirmed token expiration."
+      }
+    },
+    {
+      "id": "dropdown-filters-used-codes",
+      "title": "The codes dropdown offers a remaining (not-yet-used) code for each new report",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Auth token expiration prevented browser access to Service Request detail page.",
+      "blocker_category": "auth-failure",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": [],
+      "seed_attempt": {
+        "method": "api",
+        "summary": "Same test data as AC1 - Activity Definition and Service Request created successfully via API, but browser testing blocked by expired authentication token."
+      }
+    },
+    {
+      "id": "no-reload-required",
+      "title": "Reports can be created one after another without a reload",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Auth token expiration prevented browser access to Service Request detail page.",
+      "blocker_category": "auth-failure",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": [],
+      "seed_attempt": {
+        "method": "api",
+        "summary": "Same test data as AC1 - Activity Definition and Service Request created successfully via API, but browser testing blocked by expired authentication token."
+      }
+    },
+    {
+      "id": "used-codes-hidden",
+      "title": "Already-used codes are no longer offered",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Auth token expiration prevented browser access to Service Request detail page.",
+      "blocker_category": "auth-failure",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": [],
+      "seed_attempt": {
+        "method": "api",
+        "summary": "Same test data as AC1 - Activity Definition and Service Request created successfully via API, but browser testing blocked by expired authentication token."
+      }
+    }
+  ],
+  "summary": {
+    "all_passed": false,
+    "pass": 0,
+    "fail": 0,
+    "not_exercised": 4
+  }
+}
