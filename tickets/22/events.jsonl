@@ -46,3 +46,4 @@
 {"event_id": "f6473045e2293257:rework", "kind": "run.rework", "ticket_id": "22", "run_id": "f6473045e2293257", "detail": "@yash-learner: /agent-hq try again\n\n(ticket was blocked: Round 3 cap reached with unresolved blocker: tests/PLAYWRIGHT_GUIDE.md:90-94 URL templates remain concatenated without newlines, making code examples unreadable. The Round 2 fix attempt removed newlines instead of restoring them.)", "actor": "yash-learner", "source": "issue-comment:5219298190"}
 {"event_id": "f6473045e2293257:collected", "kind": "run.collected", "ticket_id": "22", "run_id": "f6473045e2293257", "tokens": 818400, "cost_usd": 0.521}
 {"event_id": "f6473045e2293257:failed", "kind": "run.failed", "ticket_id": "22", "run_id": "f6473045e2293257", "state": "FAILED"}
+{"event_id": "f6473045e2293257:handoff_rejected", "kind": "handoff.rejected", "ticket_id": "22", "run_id": "f6473045e2293257", "detail": "control.json schema violation: <root>: 'outcome' is a required property"}
