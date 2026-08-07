@@ -34,3 +34,4 @@
 {"event_id": "24b25f0e695ee1d6:collected", "kind": "run.collected", "ticket_id": "27", "run_id": "24b25f0e695ee1d6", "tokens": 2418100, "cost_usd": 1.23}
 {"event_id": "24b25f0e695ee1d6:failed", "kind": "run.failed", "ticket_id": "27", "run_id": "24b25f0e695ee1d6", "state": "FAILED"}
 {"event_id": "24b25f0e695ee1d6:handoff_rejected", "kind": "handoff.rejected", "ticket_id": "27", "run_id": "24b25f0e695ee1d6", "detail": "queue entry repo 'care_fe_agent_hq' is not a configured repo"}
+{"event_id": "24b25f0e695ee1d6:blocked", "kind": "ticket.blocked", "ticket_id": "27", "run_id": "24b25f0e695ee1d6", "detail": "retries exhausted"}
