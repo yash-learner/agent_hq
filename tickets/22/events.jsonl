@@ -11,3 +11,7 @@
 {"event_id": "65d9dae07d104fa6:breakdown-1:accepted", "kind": "handoff.accepted", "ticket_id": "22", "run_id": "65d9dae07d104fa6", "detail": "Plan classified as CRUD - proceed directly to implementation breakdown"}
 {"event_id": "65d9dae07d104fa6:succeeded", "kind": "run.succeeded", "ticket_id": "22", "run_id": "65d9dae07d104fa6", "state": "SUCCEEDED", "artifacts": ["specs/22/plan.md", "specs/22/classification.json"]}
 {"event_id": "a08a427f064dc493:collected", "kind": "run.collected", "ticket_id": "22", "run_id": "a08a427f064dc493", "tokens": 262700, "cost_usd": 0.213}
+{"event_id": "a08a427f064dc493:implement-care-fe:proposed", "kind": "handoff.proposed", "ticket_id": "22", "run_id": "a08a427f064dc493", "detail": "Implement multi-report support in DiagnosticReportForm.tsx per tasks.md"}
+{"event_id": "bf5df67910a567a2:queued", "kind": "run.queued", "ticket_id": "22", "run_id": "bf5df67910a567a2", "task_id": "implement", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
+{"event_id": "a08a427f064dc493:implement-care-fe:accepted", "kind": "handoff.accepted", "ticket_id": "22", "run_id": "a08a427f064dc493", "detail": "Implement multi-report support in DiagnosticReportForm.tsx per tasks.md"}
+{"event_id": "a08a427f064dc493:succeeded", "kind": "run.succeeded", "ticket_id": "22", "run_id": "a08a427f064dc493", "state": "SUCCEEDED", "artifacts": ["specs/22/tasks.md"]}
