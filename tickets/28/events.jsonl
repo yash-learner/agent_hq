@@ -23,3 +23,4 @@
 {"event_id": "8a84303721fcce88:collected", "kind": "run.collected", "ticket_id": "28", "run_id": "8a84303721fcce88", "tokens": 2939500, "cost_usd": 1.77}
 {"event_id": "8a84303721fcce88:failed", "kind": "run.failed", "ticket_id": "28", "run_id": "8a84303721fcce88", "state": "FAILED"}
 {"event_id": "8a84303721fcce88:artifact_rejected", "kind": "run.artifact_rejected", "ticket_id": "28", "run_id": "8a84303721fcce88", "detail": "qa-report.json: criterion 'ac2-remaining-codes': missing-test-data requires non-empty plan_steps_run"}
+{"event_id": "8a84303721fcce88:blocked", "kind": "ticket.blocked", "ticket_id": "28", "run_id": "8a84303721fcce88", "detail": "retries exhausted"}
