@@ -41,3 +41,4 @@
 {"event_id": "17cf01f3be49d6dc:queued", "kind": "run.queued", "ticket_id": "16", "run_id": "17cf01f3be49d6dc", "task_id": "qa", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
 {"event_id": "373ee556d327a2a6:qa-16-with-proper-data-setup:accepted", "kind": "handoff.accepted", "ticket_id": "16", "run_id": "373ee556d327a2a6", "detail": "Execute live QA with comprehensive data setup instructions"}
 {"event_id": "373ee556d327a2a6:succeeded", "kind": "run.succeeded", "ticket_id": "16", "run_id": "373ee556d327a2a6", "state": "SUCCEEDED", "artifacts": ["specs/16/qa-plan.md"]}
+{"event_id": "117c1fec5a6e44a9:collected", "kind": "run.collected", "ticket_id": "16", "run_id": "117c1fec5a6e44a9", "tokens": 475400, "cost_usd": 0.333}
