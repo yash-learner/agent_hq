@@ -7,3 +7,4 @@
 {"event_id": "c2b96065f5963bb6:queued", "kind": "run.queued", "ticket_id": "30", "run_id": "c2b96065f5963bb6", "task_id": "implement", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment", "gate": "github-issue-comment"}}
 {"event_id": "f794389fd9e827a5:implement-30-date-filter:accepted", "kind": "handoff.accepted", "ticket_id": "30", "run_id": "f794389fd9e827a5", "detail": "Add date filtering to invoice list following the pattern used in account list"}
 {"event_id": "f794389fd9e827a5:succeeded", "kind": "run.succeeded", "ticket_id": "30", "run_id": "f794389fd9e827a5", "state": "SUCCEEDED", "artifacts": ["specs/30/spec.md"]}
+{"event_id": "c2b96065f5963bb6:collected", "kind": "run.collected", "ticket_id": "30", "run_id": "c2b96065f5963bb6", "tokens": 2920300, "cost_usd": 1.39}
