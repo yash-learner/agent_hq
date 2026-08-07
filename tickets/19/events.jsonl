@@ -25,3 +25,4 @@
 {"event_id": "d6c2b58cf8fc4aa7:queued", "kind": "run.queued", "ticket_id": "19", "run_id": "d6c2b58cf8fc4aa7", "task_id": "qa", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
 {"event_id": "0d6606cb5d776aa9:qa-19:accepted", "kind": "handoff.accepted", "ticket_id": "19", "run_id": "0d6606cb5d776aa9", "detail": "Implementation complete with one should-fix (nested children transformation) \u2014 not a blocker for QA validation of all acceptance criteria"}
 {"event_id": "0d6606cb5d776aa9:succeeded", "kind": "run.succeeded", "ticket_id": "19", "run_id": "0d6606cb5d776aa9", "state": "SUCCEEDED", "artifacts": ["specs/19/review.md"]}
+{"event_id": "d6c2b58cf8fc4aa7:collected", "kind": "run.collected", "ticket_id": "19", "run_id": "d6c2b58cf8fc4aa7", "tokens": 3122000, "cost_usd": 1.59}
