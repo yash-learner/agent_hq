@@ -1,2 +1,7 @@
 {"event_id": "a384cc100e8c79ef:queued", "kind": "run.queued", "ticket_id": "28", "run_id": "a384cc100e8c79ef", "task_id": "spec", "task_version": 1, "state": "QUEUED", "bindings": {}}
 {"event_id": "a384cc100e8c79ef:collected", "kind": "run.collected", "ticket_id": "28", "run_id": "a384cc100e8c79ef", "tokens": 706300, "cost_usd": 0.434}
+{"event_id": "a384cc100e8c79ef:auto_approval", "kind": "gate.decided", "ticket_id": "28", "run_id": "a384cc100e8c79ef", "detail": "auto-approved by task config (would have asked product-owners)", "actor": "engine"}
+{"event_id": "a384cc100e8c79ef:implement-28-frontend:proposed", "kind": "handoff.proposed", "ticket_id": "28", "run_id": "a384cc100e8c79ef", "detail": "Implement multiple diagnostic report creation per Service Request in the frontend"}
+{"event_id": "bc62f77bb450593d:queued", "kind": "run.queued", "ticket_id": "28", "run_id": "bc62f77bb450593d", "task_id": "implement", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment", "gate": "github-issue-comment"}}
+{"event_id": "a384cc100e8c79ef:implement-28-frontend:accepted", "kind": "handoff.accepted", "ticket_id": "28", "run_id": "a384cc100e8c79ef", "detail": "Implement multiple diagnostic report creation per Service Request in the frontend"}
+{"event_id": "a384cc100e8c79ef:succeeded", "kind": "run.succeeded", "ticket_id": "28", "run_id": "a384cc100e8c79ef", "state": "SUCCEEDED", "artifacts": ["specs/28/spec.md"]}
