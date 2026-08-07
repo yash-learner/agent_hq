@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T23:25:36Z",
+  "generated_at": "2026-08-07T23:26:03Z",
   "tickets": [
     {
       "ticket_id": "1",
@@ -5839,7 +5839,7 @@
           "task_id": "implement",
           "task_version": 1,
           "ticket_id": "30",
-          "state": "QUEUED",
+          "state": "RUNNING",
           "attempt": 0,
           "bindings": {
             "tracker": "github-issues",
@@ -5858,7 +5858,9 @@
           "repo": "yash-learner/care_fe_agent_hq",
           "input_artifacts": [
             "specs/30/spec.md"
-          ]
+          ],
+          "deadline": "2026-08-08T00:56:02Z",
+          "attempt_started_at": "2026-08-07T23:26:02Z"
         }
       ],
       "block_reason": null,
