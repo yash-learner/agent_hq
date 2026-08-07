@@ -370,7 +370,7 @@
       "task_id": "implement",
       "task_version": 1,
       "ticket_id": "22",
-      "state": "RUNNING",
+      "state": "SUCCEEDED",
       "attempt": 0,
       "bindings": {
         "tracker": "github-issues",
@@ -380,7 +380,9 @@
       "cost_usd": 0.392,
       "tokens": 710300,
       "usage_known": true,
-      "artifacts": [],
+      "artifacts": [
+        "specs/22/qa-plan.md"
+      ],
       "chain_depth": 0,
       "source_event_id": "issue-comment:5220162447",
       "enqueue_index": 0,
@@ -391,7 +393,9 @@
       "input_from_run_id": "4b4371345ab8fd2c",
       "input_artifacts": [
         "specs/22/qa-plan.md"
-      ]
+      ],
+      "output_commit": "8820e30910201dbc1ee3d3c75f1ad87b1d81d6ee",
+      "pr_ref": "yash-learner/care_fe_agent_hq#12"
     }
   ],
   "block_reason": null,

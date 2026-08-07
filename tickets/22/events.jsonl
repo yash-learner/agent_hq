@@ -56,3 +56,4 @@
 {"event_id": "a051f258a11bbe17:queued", "kind": "run.queued", "ticket_id": "22", "run_id": "a051f258a11bbe17", "task_id": "implement", "task_version": 1, "state": "QUEUED", "bindings": {}}
 {"event_id": "a051f258a11bbe17:rework", "kind": "run.rework", "ticket_id": "22", "run_id": "a051f258a11bbe17", "detail": "@yash-learner: restore newlines in PLAYWRIGHT_GUIDE.md.\n\n(ticket was blocked: retries exhausted)", "actor": "yash-learner", "source": "issue-comment:5220162447"}
 {"event_id": "a051f258a11bbe17:collected", "kind": "run.collected", "ticket_id": "22", "run_id": "a051f258a11bbe17", "tokens": 710300, "cost_usd": 0.392}
+{"event_id": "a051f258a11bbe17:succeeded", "kind": "run.succeeded", "ticket_id": "22", "run_id": "a051f258a11bbe17", "state": "SUCCEEDED", "artifacts": ["specs/22/qa-plan.md"]}
