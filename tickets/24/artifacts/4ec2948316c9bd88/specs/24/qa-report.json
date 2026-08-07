@@ -1,0 +1,102 @@
+{
+  "criteria": [
+    {
+      "id": "no-links-default",
+      "title": "Default behavior - No custom links configured",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": [
+        "Load authenticated session from tests/.auth/user.json",
+        "Navigate to facility overview page",
+        "Verify auth shell readiness (sidebar visible, no login UI)",
+        "Check for custom footer links with target='_blank'",
+        "Verify NavFooter returns null when no links configured",
+        "Confirm sidebar navigation and user menu intact"
+      ],
+      "videos": ["specs/24/videos/no-links-default.webm"],
+      "screenshots": ["specs/24/screenshots/no-links-default-sidebar.png"]
+    },
+    {
+      "id": "env-config-links",
+      "title": "Environment config links appear in sidebar footer",
+      "verdict": "not_exercised",
+      "evidence_kind": "code-inspection",
+      "blocker": "Application failed to load after rebuild with environment variable configured. Sidebar component never rendered despite successful build and verified configuration presence in bundled assets.",
+      "blocker_category": "app-not-loading",
+      "plan_steps_run": [
+        "Create .env.local with REACT_NAVBAR_LINKS configuration",
+        "Rebuild application with npm run build",
+        "Verify links present in build artifacts via grep",
+        "Start preview server",
+        "Attempt to load facility page with auth",
+        "Sidebar failed to render after 20+ seconds"
+      ],
+      "seed_attempt": {
+        "method": "ui",
+        "summary": "Created .env.local file with JSON array of links (Documentation, NABH Certification). Rebuilt app successfully in 14.01s. Verified configuration bundled in PublicRouter-q0Yv8IS1.js. Started preview server. Attempted to load authenticated facility page but sidebar never rendered, blocking verification of rendered links."
+      },
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "plugin-footer-nav",
+      "title": "Plugins can contribute footer nav items via manifest",
+      "verdict": "not_exercised",
+      "evidence_kind": "code-inspection",
+      "blocker": "No test plugin available with footerNavItems configured. Requires plugin developed, installed via REACT_ENABLED_APPS, and successfully loaded.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": [],
+      "seed_attempt": {
+        "method": "none",
+        "summary": "Plugin testing requires a plugin package with footerNavItems in its manifest, plugin installation configuration, and runtime loading. Code inspection confirms implementation: pluginTypes.ts defines footerNavItems type, useFooterNavLinks hook aggregates plugin links, app-sidebar integrates NavFooter component."
+      },
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "external-link-security",
+      "title": "Links open in new tab with security attributes",
+      "verdict": "not_exercised",
+      "evidence_kind": "code-inspection",
+      "blocker": "Could not verify in live application due to app-not-loading issue after rebuild with configured links.",
+      "blocker_category": "app-not-loading",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "collapsed-sidebar-tooltips",
+      "title": "Collapsed sidebar shows tooltips for footer links",
+      "verdict": "not_exercised",
+      "evidence_kind": "code-inspection",
+      "blocker": "Could not verify in live application due to app-not-loading issue after rebuild with configured links.",
+      "blocker_category": "app-not-loading",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "null-render-no-links",
+      "title": "NavFooter returns null when no links configured",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": [
+        "Verify zero custom footer links with target='_blank' in sidebar",
+        "Confirm NavFooter component did not render any SidebarGroup",
+        "Validated via count of target='_blank' links (0 found)"
+      ],
+      "videos": ["specs/24/videos/no-links-default.webm"],
+      "screenshots": ["specs/24/screenshots/no-links-default-sidebar.png"]
+    }
+  ],
+  "summary": {
+    "all_passed": false,
+    "pass": 2,
+    "fail": 0,
+    "not_exercised": 4
+  }
+}

@@ -1,0 +1,79 @@
+[2026-08-07T20:06:24.882Z] === QA Driver: no-links-default ===
+[2026-08-07T20:06:24.883Z] Purpose: Verify sidebar renders without custom footer links
+[2026-08-07T20:06:35.653Z] === QA Driver: no-links-default ===
+[2026-08-07T20:06:35.654Z] Purpose: Verify sidebar renders without custom footer links
+[2026-08-07T20:06:35.753Z] Loading authenticated session from tests/.auth/user.json
+[2026-08-07T20:06:35.865Z] Enabling screencast cursor overlay
+[2026-08-07T20:06:35.867Z] Navigating to facility overview
+[2026-08-07T20:06:36.076Z] Waiting for auth shell readiness...
+[2026-08-07T20:06:37.832Z] Auth shell ready: Sidebar visible
+[2026-08-07T20:06:37.835Z] Auth verified: No login UI present
+[2026-08-07T20:06:42.837Z] ✗ Error: locator.waitFor: Timeout 5000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-sidebar="sidebar-footer"]') to be visible[22m
+
+[2026-08-07T20:06:42.838Z] locator.waitFor: Timeout 5000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-sidebar="sidebar-footer"]') to be visible[22m
+
+    at main (/workspaces/agent_hq/_target/4ec2948316c9bd88/specs/24/qa-drivers/no-links-default.mjs:76:25)
+[2026-08-07T20:06:58.355Z] === QA Driver: no-links-default ===
+[2026-08-07T20:06:58.356Z] Purpose: Verify sidebar renders without custom footer links
+[2026-08-07T20:06:58.452Z] Loading authenticated session from tests/.auth/user.json
+[2026-08-07T20:06:58.568Z] Enabling screencast cursor overlay
+[2026-08-07T20:06:58.569Z] Navigating to facility overview
+[2026-08-07T20:06:58.778Z] Waiting for auth shell readiness...
+[2026-08-07T20:07:00.487Z] Auth shell ready: Sidebar visible
+[2026-08-07T20:07:00.490Z] Auth verified: No login UI present
+[2026-08-07T20:07:05.492Z] ✗ Error: locator.waitFor: Timeout 5000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-sidebar="sidebar"] footer, [data-sidebar="sidebar"] [class*="footer"]').first() to be visible[22m
+
+[2026-08-07T20:07:05.492Z] locator.waitFor: Timeout 5000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-sidebar="sidebar"] footer, [data-sidebar="sidebar"] [class*="footer"]').first() to be visible[22m
+
+    at main (/workspaces/agent_hq/_target/4ec2948316c9bd88/specs/24/qa-drivers/no-links-default.mjs:76:25)
+[2026-08-07T20:08:01.070Z] === QA Driver: no-links-default ===
+[2026-08-07T20:08:01.071Z] Purpose: Verify sidebar renders without custom footer links
+[2026-08-07T20:08:01.173Z] Loading authenticated session from tests/.auth/user.json
+[2026-08-07T20:08:01.307Z] Enabling screencast cursor overlay
+[2026-08-07T20:08:01.308Z] Navigating to facility overview
+[2026-08-07T20:08:01.545Z] Waiting for auth shell readiness...
+[2026-08-07T20:08:03.328Z] Auth shell ready: Sidebar visible
+[2026-08-07T20:08:03.332Z] Auth verified: No login UI present
+[2026-08-07T20:08:03.393Z] Debug screenshot saved
+[2026-08-07T20:08:03.400Z] Sidebar HTML saved
+[2026-08-07T20:08:03.403Z] Sidebar groups found: 0
+[2026-08-07T20:08:03.406Z] Custom footer links with target="_blank": 0
+[2026-08-07T20:08:03.412Z] Buttons in sidebar: 7
+[2026-08-07T20:08:03.981Z] Screenshot saved: no-links-default-sidebar.png
+[2026-08-07T20:08:03.981Z] Clicking on Patients navigation
+[2026-08-07T20:08:33.983Z] ✗ Error: locator.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('link', { name: 'Patients' })[22m
+
+[2026-08-07T20:08:33.983Z] locator.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('link', { name: 'Patients' })[22m
+
+    at main (/workspaces/agent_hq/_target/4ec2948316c9bd88/specs/24/qa-drivers/no-links-default.mjs:106:56)
+[2026-08-07T20:08:56.131Z] === QA Driver: no-links-default ===
+[2026-08-07T20:08:56.132Z] Purpose: Verify sidebar renders without custom footer links
+[2026-08-07T20:08:56.245Z] Loading authenticated session from tests/.auth/user.json
+[2026-08-07T20:08:56.367Z] Enabling screencast cursor overlay
+[2026-08-07T20:08:56.369Z] Navigating to facility overview
+[2026-08-07T20:08:56.614Z] Waiting for auth shell readiness...
+[2026-08-07T20:08:58.368Z] Auth shell ready: Sidebar visible
+[2026-08-07T20:08:58.371Z] Auth verified: No login UI present
+[2026-08-07T20:08:58.412Z] Debug screenshot saved
+[2026-08-07T20:08:58.417Z] Sidebar HTML saved
+[2026-08-07T20:08:58.420Z] Sidebar groups found: 0
+[2026-08-07T20:08:58.421Z] Custom footer links with target="_blank": 0
+[2026-08-07T20:08:58.425Z] Buttons in sidebar: 7
+[2026-08-07T20:08:58.996Z] Screenshot saved: no-links-default-sidebar.png
+[2026-08-07T20:08:58.996Z] Checking navigation links
+[2026-08-07T20:08:58.998Z] Total navigation links in sidebar: 6
+[2026-08-07T20:08:58.998Z] ✓ Criterion PASS: No custom footer links found
+[2026-08-07T20:08:58.999Z] ✓ NavFooter component returns null when no links configured
+[2026-08-07T20:09:00.000Z] Closing browser and flushing video

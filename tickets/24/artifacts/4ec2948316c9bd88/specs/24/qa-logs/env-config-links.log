@@ -1,0 +1,49 @@
+[2026-08-07T20:10:52.538Z] === QA Driver: env-config-links ===
+[2026-08-07T20:10:52.539Z] Purpose: Verify environment config links appear in sidebar
+[2026-08-07T20:10:52.539Z] Expected: Documentation and NABH Certification links
+[2026-08-07T20:10:52.643Z] Loading authenticated session from tests/.auth/user.json
+[2026-08-07T20:10:52.767Z] Enabling screencast cursor overlay
+[2026-08-07T20:10:52.768Z] Navigating to facility overview
+[2026-08-07T20:10:52.980Z] Waiting for auth shell readiness...
+[2026-08-07T20:11:03.231Z] ✗ Error: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-sidebar="sidebar"]') to be visible[22m
+
+[2026-08-07T20:11:03.232Z] locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-sidebar="sidebar"]') to be visible[22m
+
+    at main (/workspaces/agent_hq/_target/4ec2948316c9bd88/specs/24/qa-drivers/env-config-links.mjs:65:19)
+[2026-08-07T20:11:28.497Z] === QA Driver: env-config-links ===
+[2026-08-07T20:11:28.498Z] Purpose: Verify environment config links appear in sidebar
+[2026-08-07T20:11:28.498Z] Expected: Documentation and NABH Certification links
+[2026-08-07T20:11:28.596Z] Loading authenticated session from tests/.auth/user.json
+[2026-08-07T20:11:28.715Z] Enabling screencast cursor overlay
+[2026-08-07T20:11:28.717Z] Navigating to facility overview
+[2026-08-07T20:11:31.753Z] Debug screenshot saved
+[2026-08-07T20:11:31.754Z] Waiting for auth shell readiness...
+[2026-08-07T20:11:51.780Z] ✗ Error: locator.waitFor: Timeout 20000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-sidebar="sidebar"]') to be visible[22m
+
+[2026-08-07T20:11:51.783Z] locator.waitFor: Timeout 20000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-sidebar="sidebar"]') to be visible[22m
+
+    at main (/workspaces/agent_hq/_target/4ec2948316c9bd88/specs/24/qa-drivers/env-config-links.mjs:72:19)
+[2026-08-07T20:13:09.565Z] === QA Driver: env-config-links ===
+[2026-08-07T20:13:09.566Z] Purpose: Verify environment config links appear in sidebar
+[2026-08-07T20:13:09.566Z] Expected: Documentation and NABH Certification links
+[2026-08-07T20:13:09.668Z] Loading authenticated session from tests/.auth/user.json
+[2026-08-07T20:13:09.782Z] Enabling screencast cursor overlay
+[2026-08-07T20:13:09.783Z] Navigating to facility overview
+[2026-08-07T20:13:09.983Z] Waiting for auth shell readiness...
+[2026-08-07T20:13:20.135Z] ✗ Error: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-sidebar="sidebar"]') to be visible[22m
+
+[2026-08-07T20:13:20.135Z] locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-sidebar="sidebar"]') to be visible[22m
+
+    at main (/workspaces/agent_hq/_target/4ec2948316c9bd88/specs/24/qa-drivers/env-config-links.mjs:65:19)
