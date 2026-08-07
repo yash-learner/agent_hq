@@ -430,7 +430,7 @@
       "task_id": "review",
       "task_version": 1,
       "ticket_id": "22",
-      "state": "QUEUED",
+      "state": "RUNNING",
       "attempt": 1,
       "bindings": {
         "tracker": "github-issues",
@@ -444,7 +444,9 @@
       "chain_depth": 0,
       "source_event_id": "issue-comment:5220343541",
       "enqueue_index": 0,
-      "queue_seq": 13
+      "queue_seq": 13,
+      "deadline": "2026-08-07T18:32:12Z",
+      "attempt_started_at": "2026-08-07T18:02:12Z"
     }
   ],
   "block_reason": null,
