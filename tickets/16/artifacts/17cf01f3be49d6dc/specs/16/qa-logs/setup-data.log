@@ -1,0 +1,120 @@
+Setting up test data...
+Facility ID: a885ee22-5085-4585-96b8-0aeb2a313f37
+Patient ID: cd88da57-393d-4890-945d-c50fedbd8714
+Encounter ID: adbfd512-cecd-4d3e-983c-e679cfc0c25e
+Available categories: {
+  "count": 6,
+  "results": [
+    {
+      "id": "5d9ccbb2-d79f-44eb-b6bd-5bcc2e161b63",
+      "title": "Consumables",
+      "description": null,
+      "resource_type": "charge_item_definition",
+      "resource_sub_type": "other",
+      "parent": {},
+      "has_children": false,
+      "level_cache": 0,
+      "is_child": false,
+      "slug_config": {
+        "facility": "a885ee22-5085-4585-96b8-0aeb2a313f37",
+        "slug_value": "consumables-charge-item-definition"
+      },
+      "slug": "f-a885ee22-5085-4585-96b8-0aeb2a313f37-consumables-charge-item-definition",
+      "calculated_monetary_components": [],
+      "configured_monetary_components": []
+    },
+    {
+      "id": "5e17cdb0-d6b2-4a80-96ca-68d0aa2fea29",
+      "title": "Consumables",
+      "description": null,
+      "resource_type": "product_knowledge",
+      "resource_sub_type": "other",
+      "parent": {},
+      "has_children": false,
+      "level_cache": 0,
+      "is_child": false,
+      "slug_config": {
+        "facility": "a885ee22-5085-4585-96b8-0aeb2a313f37",
+        "slug_value": "consumables-product-knowledge"
+      },
+      "slug": "f-a885ee22-5085-4585-96b8-0aeb2a313f37-consumables-product-knowledge",
+      "calculated_monetary_components": [],
+      "configured_monetary_components": []
+    },
+    {
+      "id": "1c1c8907-9b85-437c-8f9b-532507daf28b",
+      "title": "Medications",
+      "description": null,
+      "resource_type": "charge_item_definition",
+      "resource_sub_type": "other",
+      "parent": {},
+      "has_children": false,
+      "level_cache": 0,
+      "is_child": false,
+      "slug_config": {
+        "facility": "a885ee22-5085-4585-96b8-0aeb2a313f37",
+        "slug_value": "medications-charge-item-definition"
+      },
+      "slug": "f-a885ee22-5085-4585-96b8-0aeb2a313f37-medications-charge-item-definition",
+      "calculated_monetary_components": [],
+      "configured_monetary_components": []
+    },
+    {
+      "id": "5b906fd0-9a48-48e6-9f20-c5e0228995f6",
+      "title": "Medications",
+      "description": null,
+      "resource_type": "product_knowledge",
+      "resource_sub_type": "other",
+      "parent": {},
+      "has_children": false,
+      "level_cache": 0,
+      "is_child": false,
+      "slug_config": {
+        "facility": "a885ee22-5085-4585-96b8-0aeb2a313f37",
+        "slug_value": "medications-product-knowledge"
+      },
+      "slug": "f-a885ee22-5085-4585-96b8-0aeb2a313f37-medications-product-knowledge",
+      "calculated_monetary_components": [],
+      "configured_monetary_components": []
+    },
+    {
+      "id": "c7c515f1-74a4-4aab-9a95-96d9a1aa421e",
+      "title": "Lab Tests",
+      "description": null,
+      "resource_type": "activity_definition",
+      "resource_sub_type": "other",
+      "parent": {},
+      "has_children": false,
+      "level_cache": 0,
+      "is_child": false,
+      "slug_config": {
+        "facility": "a885ee22-5085-4585-96b8-0aeb2a313f37",
+        "slug_value": "lab-tests-activity-definition"
+      },
+      "slug": "f-a885ee22-5085-4585-96b8-0aeb2a313f37-lab-tests-activity-definition",
+      "calculated_monetary_components": [],
+      "configured_monetary_components": []
+    },
+    {
+      "id": "93e857cb-ca73-4ef0-9d4b-0ee440de6634",
+      "title": "Lab Tests",
+      "description": null,
+      "resource_type": "charge_item_definition",
+      "resource_sub_type": "other",
+      "parent": {},
+      "has_children": false,
+      "level_cache": 0,
+      "is_child": false,
+      "slug_config": {
+        "facility": "a885ee22-5085-4585-96b8-0aeb2a313f37",
+        "slug_value": "lab-tests-charge-item-definition"
+      },
+      "slug": "f-a885ee22-5085-4585-96b8-0aeb2a313f37-lab-tests-charge-item-definition",
+      "calculated_monetary_components": [],
+      "configured_monetary_components": []
+    }
+  ]
+}
+Using category: undefined (ID: 5d9ccbb2-d79f-44eb-b6bd-5bcc2e161b63 )
+Creating Activity Definition...
+Failed to create Activity Definition: {"errors":[{"type":"value_error","loc":["code"],"msg":"Value error, Code does not exist in the valueset","input":{"system":"http://loinc.org","code":"2345-7","display":"Glucose [Mass/volume] in Serum or Plasma"},"ctx":{"error":"Code does not exist in the valueset"},"url":"https://errors.pydantic.dev/2.12/v/value_error"},{"type":"value_error","loc":["category"],"msg":"Value error, Invalid Slug","input":"5d9ccbb2-d79f-44eb-b6bd-5bcc2e161b63","ctx":{"error":"Invalid Slug"},"url":"https://errors.pydantic.dev/2.12/v/value_error"},{"type":"value_error","loc":["slug_value"],"msg":"Value error, Slug must contain only URL-safe characters (letters, numbers, hyphens, and underscores). It must start and end with alphanumeric characters.","input":"multi-code-diagnostic-qa-","ctx":{"error":"Slug must contain only URL-safe characters (letters, numbers, hyphens, and underscores). It must start and end with alphanumeric characters."},"url":"https://errors.pydantic.dev/2.12/v/value_error"}]}

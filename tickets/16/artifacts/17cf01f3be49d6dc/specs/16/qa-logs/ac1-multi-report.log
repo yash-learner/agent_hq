@@ -1,0 +1,13 @@
+=== AC1-4: Multiple diagnostic reports for SR ===
+
+Service Request ID: dd1f1bb9-f937-4aed-ba6b-61bb5e44ffc9
+1. Navigating to: http://localhost:4000/facility/a885ee22-5085-4585-96b8-0aeb2a313f37/service_requests/dd1f1bb9-f937-4aed-ba6b-61bb5e44ffc9
+2. Page loaded
+3. Specimen already collected or not required
+4. Locating diagnostic report dropdown...
+ERROR: Diagnostic report dropdown not found
+
+=== TEST FAILED ===
+Error: Dropdown not visible
+Fatal error: Error: Dropdown not visible
+    at main (file:///workspaces/agent_hq/_target/17cf01f3be49d6dc/specs/16/qa-drivers/ac1-multi-report.mjs:74:13)

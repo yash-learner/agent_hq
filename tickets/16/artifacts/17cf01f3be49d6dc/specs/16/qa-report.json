@@ -1,0 +1,70 @@
+{
+  "criteria": [
+    {
+      "id": "ac1-multi-report",
+      "title": "From an SR whose AD has N diagnostic report codes, the user can create up to N diagnostic reports, one per code",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Created Activity Definition with 3 diagnostic report codes and Service Request via facility-scoped API. Activity Definition verified in listing (ID: 7bbc671c-bfee-4e17-8110-1d83f9f820cc, slug: f-a885ee22-5085-4585-96b8-0aeb2a313f37-multicode-qa-178609590701). Service Request created (ID: dd1f1bb9-f937-4aed-ba6b-61bb5e44ffc9). However, when navigating to the Service Request detail page, the diagnostic reports dropdown/section was not visible. Unable to exercise AC1 steps 3-10 without accessible diagnostic report UI.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": ["1", "2"],
+      "videos": [],
+      "screenshots": ["specs/16/screenshots/ac1-no-dropdown.png"],
+      "seed_attempt": {
+        "method": "api",
+        "summary": "Created Activity Definition (7bbc671c-bfee-4e17-8110-1d83f9f820cc) with 3 diagnostic_report_codes (CBC panel, Lipid panel, Metabolic panel) via POST /api/v1/facility/{facilityId}/activity_definition/. Created Service Request (dd1f1bb9-f937-4aed-ba6b-61bb5e44ffc9) via POST /api/v1/facility/{facilityId}/service_request/apply_activity_definition/. Both API calls succeeded and resources verified in listing endpoints. Frontend navigation to Service Request detail page did not render diagnostic reports section/dropdown as expected by qa-plan."
+      }
+    },
+    {
+      "id": "ac2-remaining-codes",
+      "title": "The codes dropdown offers a remaining (not-yet-used) code for each new report",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Cannot access diagnostic report dropdown to verify filtering behavior. Depends on AC1 test data being accessible in UI.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": [],
+      "seed_attempt": {
+        "method": "api",
+        "summary": "Same as AC1 - created Activity Definition and Service Request via API, but diagnostic reports UI not rendered on Service Request detail page."
+      }
+    },
+    {
+      "id": "ac3-sequential-creation",
+      "title": "Reports can be created one after another without a reload",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Cannot create first diagnostic report to test sequential creation without reload. Depends on AC1 test data and UI being accessible.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": [],
+      "seed_attempt": {
+        "method": "api",
+        "summary": "Same as AC1 - created Activity Definition and Service Request via API, but diagnostic reports section not accessible in frontend."
+      }
+    },
+    {
+      "id": "ac4-used-codes-filtered",
+      "title": "Already-used codes are no longer offered",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Cannot create diagnostic reports to observe code filtering. Depends on AC1 test data and UI being accessible.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": [],
+      "seed_attempt": {
+        "method": "api",
+        "summary": "Same as AC1 - created Activity Definition and Service Request via API, but dropdown not rendered in UI."
+      }
+    }
+  ],
+  "summary": {
+    "all_passed": false,
+    "pass": 0,
+    "fail": 0,
+    "not_exercised": 4
+  }
+}

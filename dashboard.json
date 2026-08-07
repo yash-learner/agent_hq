@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T09:52:44Z",
+  "generated_at": "2026-08-07T09:52:52Z",
   "tickets": [
     {
       "ticket_id": "1",
@@ -1959,7 +1959,7 @@
           "task_id": "qa",
           "task_version": 1,
           "ticket_id": "16",
-          "state": "RUNNING",
+          "state": "SUCCEEDED",
           "attempt": 0,
           "bindings": {
             "tracker": "github-issues",
@@ -1969,7 +1969,16 @@
           "cost_usd": 2.07,
           "tokens": 3743900,
           "usage_known": true,
-          "artifacts": [],
+          "artifacts": [
+            "specs/16/qa.md",
+            "specs/16/qa-report.json",
+            "specs/16/screenshots/ac1-failure.png",
+            "specs/16/screenshots/ac1-no-dropdown.png",
+            "specs/16/qa-drivers/ac1-multi-report.mjs",
+            "specs/16/qa-drivers/setup-data.mjs",
+            "specs/16/qa-logs/ac1-multi-report.log",
+            "specs/16/qa-logs/setup-data.log"
+          ],
           "chain_depth": 1,
           "parent_run_id": "373ee556d327a2a6",
           "queue_seq": 11,
@@ -1981,7 +1990,9 @@
           "deadline": "2026-08-07T10:30:26Z",
           "attempt_started_at": "2026-08-07T09:30:26Z",
           "base_commit": "292d229394d03f34462f6457044d5585773d568f",
-          "input_from_run_id": "117c1fec5a6e44a9"
+          "input_from_run_id": "117c1fec5a6e44a9",
+          "output_commit": "292d229394d03f34462f6457044d5585773d568f",
+          "pr_ref": "yash-learner/care_fe_agent_hq#8"
         },
         {
           "run_id": "ef21bb04d3cac376",
@@ -2008,6 +2019,33 @@
             "specs/16/review.md",
             "specs/16/qa-plan.md",
             "specs/16/summary.md"
+          ]
+        },
+        {
+          "run_id": "659864c7d7639d8a",
+          "task_id": "finalize",
+          "task_version": 1,
+          "ticket_id": "16",
+          "state": "QUEUED",
+          "attempt": 0,
+          "bindings": {
+            "tracker": "github-issues",
+            "agent-session": "copilot-cli",
+            "messaging": "github-comment"
+          },
+          "cost_usd": null,
+          "tokens": null,
+          "usage_known": false,
+          "artifacts": [],
+          "chain_depth": 2,
+          "parent_run_id": "17cf01f3be49d6dc",
+          "queue_seq": 13,
+          "handoff_key": "finalize-16",
+          "repo": "yash-learner/care_fe_agent_hq",
+          "input_artifacts": [
+            "specs/16/qa-plan.md",
+            "specs/16/qa.md",
+            "specs/16/qa-report.json"
           ]
         }
       ],
