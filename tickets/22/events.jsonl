@@ -50,3 +50,4 @@
 {"event_id": "18540b654c7dd6c6:queued", "kind": "run.queued", "ticket_id": "22", "run_id": "18540b654c7dd6c6", "task_id": "triage", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
 {"event_id": "18540b654c7dd6c6:rework", "kind": "run.rework", "ticket_id": "22", "run_id": "18540b654c7dd6c6", "detail": "Previous attempt rejected: control.json schema violation: <root>: 'outcome' is a required property", "actor": "engine", "source": "f6473045e2293257:handoff_rejected"}
 {"event_id": "18540b654c7dd6c6:collected", "kind": "run.collected", "ticket_id": "22", "run_id": "18540b654c7dd6c6", "tokens": 849200, "cost_usd": 0.465}
+{"event_id": "18540b654c7dd6c6:failed", "kind": "run.failed", "ticket_id": "22", "run_id": "18540b654c7dd6c6", "state": "FAILED"}
