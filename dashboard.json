@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T23:11:14Z",
+  "generated_at": "2026-08-07T23:11:20Z",
   "tickets": [
     {
       "ticket_id": "1",
@@ -5419,7 +5419,7 @@
           "task_id": "review",
           "task_version": 1,
           "ticket_id": "29",
-          "state": "RUNNING",
+          "state": "SUCCEEDED",
           "attempt": 0,
           "bindings": {
             "tracker": "github-issues",
@@ -5429,7 +5429,9 @@
           "cost_usd": 0.38,
           "tokens": 630700,
           "usage_known": true,
-          "artifacts": [],
+          "artifacts": [
+            "specs/29/review.md"
+          ],
           "chain_depth": 4,
           "parent_run_id": "79047e6aaf053580",
           "queue_seq": 4,
@@ -5442,7 +5444,36 @@
           "deadline": "2026-08-07T23:36:54Z",
           "attempt_started_at": "2026-08-07T23:06:54Z",
           "base_commit": "11048d1c8502bbe08c7493cc7d6a66a2172307bd",
-          "input_from_run_id": "79047e6aaf053580"
+          "input_from_run_id": "79047e6aaf053580",
+          "output_commit": "11048d1c8502bbe08c7493cc7d6a66a2172307bd",
+          "pr_ref": "yash-learner/care_fe_agent_hq#20"
+        },
+        {
+          "run_id": "e1a5f42c1200f6a0",
+          "task_id": "implement",
+          "task_version": 1,
+          "ticket_id": "29",
+          "state": "QUEUED",
+          "attempt": 0,
+          "bindings": {
+            "tracker": "github-issues",
+            "agent-session": "copilot-cli",
+            "messaging": "github-comment"
+          },
+          "cost_usd": null,
+          "tokens": null,
+          "usage_known": false,
+          "artifacts": [],
+          "chain_depth": 5,
+          "parent_run_id": "250ce95a6a0ab4dc",
+          "queue_seq": 5,
+          "handoff_key": "implement-2",
+          "repo": "yash-learner/care_fe_agent_hq",
+          "input_artifacts": [
+            "specs/29/spec.md",
+            "specs/29/qa-plan.md",
+            "specs/29/review.md"
+          ]
         }
       ],
       "block_reason": null,
