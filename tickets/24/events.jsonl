@@ -53,3 +53,4 @@
 {"event_id": "10c03137bc0f705f:collected", "kind": "run.collected", "ticket_id": "24", "run_id": "10c03137bc0f705f", "tokens": 3726200, "cost_usd": 1.98}
 {"event_id": "10c03137bc0f705f:failed", "kind": "run.failed", "ticket_id": "24", "run_id": "10c03137bc0f705f", "state": "FAILED"}
 {"event_id": "10c03137bc0f705f:artifact_rejected", "kind": "run.artifact_rejected", "ticket_id": "24", "run_id": "10c03137bc0f705f", "detail": "qa-report.json schema violation: criteria/0/seed_attempt: None is not of type 'object'"}
+{"event_id": "10c03137bc0f705f:blocked", "kind": "ticket.blocked", "ticket_id": "24", "run_id": "10c03137bc0f705f", "detail": "retries exhausted"}
