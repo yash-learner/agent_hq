@@ -25,3 +25,4 @@
 {"event_id": "e1a5f42c1200f6a0:queued", "kind": "run.queued", "ticket_id": "29", "run_id": "e1a5f42c1200f6a0", "task_id": "implement", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
 {"event_id": "250ce95a6a0ab4dc:implement-2:accepted", "kind": "handoff.accepted", "ticket_id": "29", "run_id": "250ce95a6a0ab4dc", "detail": "Missing Playwright test file (tests/facility/billing/invoiceListDateFilter.spec.ts), QA plan Data setup lacks concrete provenance and fixture citations, invoice creation UI recipe incomplete"}
 {"event_id": "250ce95a6a0ab4dc:succeeded", "kind": "run.succeeded", "ticket_id": "29", "run_id": "250ce95a6a0ab4dc", "state": "SUCCEEDED", "artifacts": ["specs/29/review.md"]}
+{"event_id": "e1a5f42c1200f6a0:collected", "kind": "run.collected", "ticket_id": "29", "run_id": "e1a5f42c1200f6a0", "tokens": 1413000, "cost_usd": 0.831}
