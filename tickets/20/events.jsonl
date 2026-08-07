@@ -35,3 +35,4 @@
 {"event_id": "01112ccc46c49471:queued", "kind": "run.queued", "ticket_id": "20", "run_id": "01112ccc46c49471", "task_id": "qa", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
 {"event_id": "447e9ed6ab4e144d:qa-ticket-20:accepted", "kind": "handoff.accepted", "ticket_id": "20", "run_id": "447e9ed6ab4e144d", "detail": "Round 1 blocker resolved \u2014 form now renders based solely on hasUnusedCodes, allowing multiple reports. Ready for live-flow verification."}
 {"event_id": "447e9ed6ab4e144d:succeeded", "kind": "run.succeeded", "ticket_id": "20", "run_id": "447e9ed6ab4e144d", "state": "SUCCEEDED", "artifacts": ["specs/20/review.md"]}
+{"event_id": "01112ccc46c49471:collected", "kind": "run.collected", "ticket_id": "20", "run_id": "01112ccc46c49471", "tokens": 3929300, "cost_usd": 1.93}
