@@ -30,3 +30,4 @@
 {"event_id": "44c09858dbd4803a:finalize-16:accepted", "kind": "handoff.accepted", "ticket_id": "16", "run_id": "44c09858dbd4803a", "detail": "QA complete - all criteria documented as not-exercised due to missing test data (Activity Definitions with multiple diagnostic_report_codes). Code review confirms implementation is correct."}
 {"event_id": "44c09858dbd4803a:succeeded", "kind": "run.succeeded", "ticket_id": "16", "run_id": "44c09858dbd4803a", "state": "SUCCEEDED", "artifacts": ["specs/16/qa.md", "specs/16/qa-report.json", "specs/16/qa-drivers/ac1-multiple-reports.mjs", "specs/16/qa-logs/ac1-multiple-reports.log"]}
 {"event_id": "14a55f3b68f895f8:collected", "kind": "run.collected", "ticket_id": "16", "run_id": "14a55f3b68f895f8", "tokens": 175600, "cost_usd": 0.142}
+{"event_id": "14a55f3b68f895f8:succeeded", "kind": "run.succeeded", "ticket_id": "16", "run_id": "14a55f3b68f895f8", "state": "SUCCEEDED", "artifacts": ["specs/16/summary.md"]}
