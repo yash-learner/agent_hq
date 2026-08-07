@@ -16,3 +16,7 @@
 {"event_id": "73d6cf7717db939e:impl-care-fe:accepted", "kind": "handoff.accepted", "ticket_id": "24", "run_id": "73d6cf7717db939e", "detail": "Implement custom footer navigation links in frontend: config layer, plugin types, hook, component, and sidebar integration"}
 {"event_id": "73d6cf7717db939e:succeeded", "kind": "run.succeeded", "ticket_id": "24", "run_id": "73d6cf7717db939e", "state": "SUCCEEDED", "artifacts": ["specs/24/tasks.md"]}
 {"event_id": "11d0585dc703cab1:collected", "kind": "run.collected", "ticket_id": "24", "run_id": "11d0585dc703cab1", "tokens": 3117000, "cost_usd": 1.49}
+{"event_id": "11d0585dc703cab1:review-24:proposed", "kind": "handoff.proposed", "ticket_id": "24", "run_id": "11d0585dc703cab1", "detail": "Review implementation against spec and acceptance criteria"}
+{"event_id": "beb516648d7f4cf6:queued", "kind": "run.queued", "ticket_id": "24", "run_id": "beb516648d7f4cf6", "task_id": "review", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
+{"event_id": "11d0585dc703cab1:review-24:accepted", "kind": "handoff.accepted", "ticket_id": "24", "run_id": "11d0585dc703cab1", "detail": "Review implementation against spec and acceptance criteria"}
+{"event_id": "11d0585dc703cab1:succeeded", "kind": "run.succeeded", "ticket_id": "24", "run_id": "11d0585dc703cab1", "state": "SUCCEEDED", "artifacts": ["specs/24/qa-plan.md"]}
