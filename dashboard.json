@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T09:29:59Z",
+  "generated_at": "2026-08-07T09:30:26Z",
   "tickets": [
     {
       "ticket_id": "1",
@@ -1959,7 +1959,7 @@
           "task_id": "qa",
           "task_version": 1,
           "ticket_id": "16",
-          "state": "QUEUED",
+          "state": "RUNNING",
           "attempt": 0,
           "bindings": {
             "tracker": "github-issues",
@@ -1977,7 +1977,9 @@
           "repo": "yash-learner/care_fe_agent_hq",
           "input_artifacts": [
             "specs/16/qa-plan.md"
-          ]
+          ],
+          "deadline": "2026-08-07T10:30:26Z",
+          "attempt_started_at": "2026-08-07T09:30:26Z"
         },
         {
           "run_id": "ef21bb04d3cac376",
