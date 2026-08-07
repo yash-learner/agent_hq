@@ -10,3 +10,4 @@
 {"event_id": "9dc1d4f1935314b2:queued", "kind": "run.queued", "ticket_id": "34", "run_id": "9dc1d4f1935314b2", "task_id": "review", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
 {"event_id": "c1e40371720d768e:review-34:accepted", "kind": "handoff.accepted", "ticket_id": "34", "run_id": "c1e40371720d768e", "detail": "Review the search functionality implementation against the spec"}
 {"event_id": "c1e40371720d768e:succeeded", "kind": "run.succeeded", "ticket_id": "34", "run_id": "c1e40371720d768e", "state": "SUCCEEDED", "artifacts": ["specs/34/qa-plan.md"]}
+{"event_id": "9dc1d4f1935314b2:collected", "kind": "run.collected", "ticket_id": "34", "run_id": "9dc1d4f1935314b2", "tokens": 401300, "cost_usd": 0.27}
