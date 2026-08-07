@@ -1,0 +1,18 @@
+Criterion 1: All AD codes appear in dropdown initially
+Service Request ID: 8a40af81-c9ec-4262-a609-33668c0728e7
+Expected codes: 3
+
+Step 1: Navigate to SR detail page
+Navigated to: http://localhost:4000/facility/af11b4e8-01e5-442f-a39c-85c3c42ba66d/service_requests/8a40af81-c9ec-4262-a609-33668c0728e7
+
+Step 2: Click diagnostic report type dropdown
+
+Step 3: Verify all 3 codes are visible
+Found 3 options in dropdown
+  Option 1: Blood (LP435335-7)
+  Option 2: Blood (LP71680-0)
+  Option 3: Blood (LA17759-4)
+
+✅ Criterion 1 passed: All 3 AD codes appear in dropdown
+
+📹 Video saved to: specs/20/videos/criterion-1-all-codes-dropdown.webm

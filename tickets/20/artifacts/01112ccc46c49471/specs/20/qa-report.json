@@ -1,0 +1,111 @@
+{
+  "criteria": [
+    {
+      "id": "criterion-1-all-codes-dropdown",
+      "title": "All AD codes appear in dropdown initially",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2"],
+      "videos": ["specs/20/videos/criterion-1-all-codes-dropdown.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "criterion-2-first-report-removes-code",
+      "title": "Code removed from dropdown after first report creation",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Authentication token expired during testing session. Valueset expansion API calls required for creating additional test Service Requests failed with HTTP 403 'Token is expired' error.",
+      "blocker_category": "auth-failure",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": [],
+      "seed_attempt": {
+        "method": "api",
+        "summary": "Attempted to create second SR via seed script using facility-scoped apply_activity_definition endpoint. Valueset expansion API (POST /api/v1/valueset/{slug}/expand/) returned 403 Token is expired, blocking SR creation."
+      }
+    },
+    {
+      "id": "criterion-3-second-report-updates",
+      "title": "Second report creation updates dropdown again",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Depends on successful completion of Criterion 2. Authentication token expired before this flow could be tested.",
+      "blocker_category": "auth-failure",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": [],
+      "seed_attempt": {
+        "method": "api",
+        "summary": "Blocked by same token expiry as Criterion 2."
+      }
+    },
+    {
+      "id": "criterion-4-no-form-all-used",
+      "title": "No form displayed when all codes are used",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Depends on successful completion of Criteria 2-3. Authentication token expired before this flow could be tested.",
+      "blocker_category": "auth-failure",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": [],
+      "seed_attempt": {
+        "method": "api",
+        "summary": "Blocked by same token expiry as Criterion 2."
+      }
+    },
+    {
+      "id": "criterion-5-persist-after-reload",
+      "title": "State persists after page reload",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Depends on successful completion of Criterion 4. Authentication token expired before this flow could be tested.",
+      "blocker_category": "auth-failure",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": [],
+      "seed_attempt": {
+        "method": "api",
+        "summary": "Blocked by same token expiry as Criterion 2."
+      }
+    },
+    {
+      "id": "criterion-6-distinct-codes",
+      "title": "Each report has a distinct code",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Depends on successful completion of Criteria 2-5. Authentication token expired before this flow could be tested.",
+      "blocker_category": "auth-failure",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": [],
+      "seed_attempt": {
+        "method": "api",
+        "summary": "Blocked by same token expiry as Criterion 2."
+      }
+    },
+    {
+      "id": "criterion-7-partial-usage-reload",
+      "title": "Partial usage shows only remaining codes after reload",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Requires creating fresh SR with partial diagnostic report usage. Authentication token expired before this scenario could be set up.",
+      "blocker_category": "auth-failure",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": [],
+      "seed_attempt": {
+        "method": "api",
+        "summary": "Blocked by same token expiry. This criterion requires distinct setup (create SR, then API-create 1 of 3 reports) which was not reached due to earlier auth failures."
+      }
+    }
+  ],
+  "summary": {
+    "all_passed": false,
+    "pass": 1,
+    "fail": 0,
+    "not_exercised": 6
+  }
+}

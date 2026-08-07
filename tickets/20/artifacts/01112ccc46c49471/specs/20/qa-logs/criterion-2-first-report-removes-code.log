@@ -1,0 +1,29 @@
+Criterion 2: Code removed from dropdown after first report creation
+Service Request ID: 08ae33ed-9227-494f-976d-6793d5a22969
+
+Navigated to: http://localhost:4000/facility/af11b4e8-01e5-442f-a39c-85c3c42ba66d/service_requests/08ae33ed-9227-494f-976d-6793d5a22969
+
+Step 1: Select first diagnostic report code from dropdown
+
+❌ Criterion 2 failed: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for getByText('Select Diagnostic Report Type') to be visible[22m
+
+
+📹 Video saved to: specs/20/videos/criterion-2-first-report-removes-code.webm
+node:internal/modules/run_main:123
+    triggerUncaughtException(
+    ^
+
+locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for getByText('Select Diagnostic Report Type') to be visible[22m
+
+    at /workspaces/agent_hq/_target/01112ccc46c49471/specs/20/qa-drivers/criterion-2-first-report-removes-code.mjs:38:25 {
+  log: [
+    "  - waiting for getByText('Select Diagnostic Report Type') to be visible"
+  ],
+  name: 'TimeoutError'
+}
+
+Node.js v22.23.2

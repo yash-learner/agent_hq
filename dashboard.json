@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T12:13:41Z",
+  "generated_at": "2026-08-07T12:13:52Z",
   "tickets": [
     {
       "ticket_id": "1",
@@ -2926,7 +2926,7 @@
           "task_id": "qa",
           "task_version": 1,
           "ticket_id": "20",
-          "state": "RUNNING",
+          "state": "SUCCEEDED",
           "attempt": 0,
           "bindings": {
             "tracker": "github-issues",
@@ -2936,7 +2936,18 @@
           "cost_usd": 1.93,
           "tokens": 3929300,
           "usage_known": true,
-          "artifacts": [],
+          "artifacts": [
+            "specs/20/qa.md",
+            "specs/20/qa-report.json",
+            "specs/20/videos/criterion-1-all-codes-dropdown.webm",
+            "specs/20/videos/criterion-2-first-report-removes-code.webm",
+            "specs/20/qa-drivers/criterion-1-all-codes-dropdown.mjs",
+            "specs/20/qa-drivers/criterion-2-first-report-removes-code.mjs",
+            "specs/20/qa-logs/criterion-1-all-codes-dropdown.log",
+            "specs/20/qa-logs/criterion-2-first-report-removes-code.log",
+            "specs/20/videos/criterion-2-first-report-removes-code.gif",
+            "specs/20/videos/criterion-1-all-codes-dropdown.gif"
+          ],
           "chain_depth": 7,
           "parent_run_id": "447e9ed6ab4e144d",
           "queue_seq": 7,
@@ -2950,7 +2961,38 @@
           "deadline": "2026-08-07T12:52:40Z",
           "attempt_started_at": "2026-08-07T11:52:40Z",
           "base_commit": "36063f59ce719618ed924097b6fdad5b1d92a4bd",
-          "input_from_run_id": "447e9ed6ab4e144d"
+          "input_from_run_id": "447e9ed6ab4e144d",
+          "output_commit": "36063f59ce719618ed924097b6fdad5b1d92a4bd",
+          "pr_ref": "yash-learner/care_fe_agent_hq#11"
+        },
+        {
+          "run_id": "6bebae05fd194cda",
+          "task_id": "finalize",
+          "task_version": 1,
+          "ticket_id": "20",
+          "state": "QUEUED",
+          "attempt": 0,
+          "bindings": {
+            "tracker": "github-issues",
+            "agent-session": "copilot-cli",
+            "messaging": "github-comment"
+          },
+          "cost_usd": null,
+          "tokens": null,
+          "usage_known": false,
+          "artifacts": [],
+          "chain_depth": 8,
+          "parent_run_id": "01112ccc46c49471",
+          "queue_seq": 8,
+          "handoff_key": "finalize-20",
+          "repo": "yash-learner/care_fe_agent_hq",
+          "input_artifacts": [
+            "specs/20/spec.md",
+            "specs/20/review.md",
+            "specs/20/qa-plan.md",
+            "specs/20/qa.md",
+            "specs/20/qa-report.json"
+          ]
         }
       ],
       "block_reason": null,
