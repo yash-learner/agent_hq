@@ -24,3 +24,4 @@
 {"event_id": "5831fbf730bc3485:collected", "kind": "run.collected", "ticket_id": "27", "run_id": "5831fbf730bc3485", "tokens": 2417000, "cost_usd": 1.34}
 {"event_id": "5831fbf730bc3485:failed", "kind": "run.failed", "ticket_id": "27", "run_id": "5831fbf730bc3485", "state": "FAILED"}
 {"event_id": "5831fbf730bc3485:handoff_rejected", "kind": "handoff.rejected", "ticket_id": "27", "run_id": "5831fbf730bc3485", "detail": "queue entry repo 'care_fe_agent_hq' is not a configured repo"}
+{"event_id": "3631b11ed73b6153:queued", "kind": "run.queued", "ticket_id": "27", "run_id": "3631b11ed73b6153", "task_id": "implement", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
