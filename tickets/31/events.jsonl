@@ -6,3 +6,7 @@
 {"event_id": "a6ab7b10ea0534ac:arch-plan-31:accepted", "kind": "handoff.accepted", "ticket_id": "31", "run_id": "a6ab7b10ea0534ac", "detail": "Spec complete; need architecture plan for env config + plugin nav extension"}
 {"event_id": "a6ab7b10ea0534ac:succeeded", "kind": "run.succeeded", "ticket_id": "31", "run_id": "a6ab7b10ea0534ac", "state": "SUCCEEDED", "artifacts": ["specs/31/spec.md"]}
 {"event_id": "4b23dd8c59def8e6:collected", "kind": "run.collected", "ticket_id": "31", "run_id": "4b23dd8c59def8e6", "tokens": 228800, "cost_usd": 0.212}
+{"event_id": "4b23dd8c59def8e6:breakdown-31:proposed", "kind": "handoff.proposed", "ticket_id": "31", "run_id": "4b23dd8c59def8e6", "detail": "Plan classified as CRUD; ready for task breakdown"}
+{"event_id": "4412bf320c77bb2b:queued", "kind": "run.queued", "ticket_id": "31", "run_id": "4412bf320c77bb2b", "task_id": "breakdown", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
+{"event_id": "4b23dd8c59def8e6:breakdown-31:accepted", "kind": "handoff.accepted", "ticket_id": "31", "run_id": "4b23dd8c59def8e6", "detail": "Plan classified as CRUD; ready for task breakdown"}
+{"event_id": "4b23dd8c59def8e6:succeeded", "kind": "run.succeeded", "ticket_id": "31", "run_id": "4b23dd8c59def8e6", "state": "SUCCEEDED", "artifacts": ["specs/31/plan.md", "specs/31/classification.json"]}
