@@ -15,3 +15,4 @@
 {"event_id": "68d1272afaf7501e:queued", "kind": "run.queued", "ticket_id": "20", "run_id": "68d1272afaf7501e", "task_id": "implement", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
 {"event_id": "af80a340aaf46e1d:implement-care-fe-20:accepted", "kind": "handoff.accepted", "ticket_id": "20", "run_id": "af80a340aaf46e1d", "detail": "Implement frontend changes to support multiple diagnostic reports per Service Request"}
 {"event_id": "af80a340aaf46e1d:succeeded", "kind": "run.succeeded", "ticket_id": "20", "run_id": "af80a340aaf46e1d", "state": "SUCCEEDED", "artifacts": ["specs/20/tasks.md"]}
+{"event_id": "68d1272afaf7501e:collected", "kind": "run.collected", "ticket_id": "20", "run_id": "68d1272afaf7501e", "tokens": 1110900, "cost_usd": 0.635}
