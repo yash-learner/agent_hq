@@ -1,0 +1,4 @@
+{
+  "classification": "crud",
+  "reasoning": "None of the beyond-crud criteria apply. This is a frontend-only feature that adds environment-based configuration for custom navigation links. No data models, migrations, backend API changes, authorization changes, or clinical safety impacts. The implementation extends existing UI patterns (navigation rendering) with pure client-side configuration parsing."
+}
