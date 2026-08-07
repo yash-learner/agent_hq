@@ -380,7 +380,9 @@
         "specs/16/summary.md"
       ],
       "deadline": "2026-08-07T10:58:12Z",
-      "attempt_started_at": "2026-08-07T09:58:12Z"
+      "attempt_started_at": "2026-08-07T09:58:12Z",
+      "base_commit": "292d229394d03f34462f6457044d5585773d568f",
+      "input_from_run_id": "17cf01f3be49d6dc"
     },
     {
       "run_id": "659864c7d7639d8a",
