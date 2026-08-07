@@ -46,3 +46,4 @@
 {"event_id": "97f51592d5715cf5:queued", "kind": "run.queued", "ticket_id": "24", "run_id": "97f51592d5715cf5", "task_id": "qa", "task_version": 1, "state": "QUEUED", "bindings": {}}
 {"event_id": "97f51592d5715cf5:rework", "kind": "run.rework", "ticket_id": "24", "run_id": "97f51592d5715cf5", "detail": "@yash-learner: again it failed because of {\"event_id\": \"43af4c6416909359:failed\", \"kind\": \"run.failed\", \"ticket_id\": \"24\", \"run_id\": \"43af4c6416909359\", \"state\": \"FAILED\"}", "actor": "yash-learner", "source": "issue-comment:5219886849"}
 {"event_id": "97f51592d5715cf5:collected", "kind": "run.collected", "ticket_id": "24", "run_id": "97f51592d5715cf5", "tokens": 3122400, "cost_usd": 1.56}
+{"event_id": "97f51592d5715cf5:failed", "kind": "run.failed", "ticket_id": "24", "run_id": "97f51592d5715cf5", "state": "FAILED"}
