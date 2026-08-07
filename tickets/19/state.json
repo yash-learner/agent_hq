@@ -179,7 +179,7 @@
       "task_id": "qa",
       "task_version": 1,
       "ticket_id": "19",
-      "state": "QUEUED",
+      "state": "RUNNING",
       "attempt": 0,
       "bindings": {
         "tracker": "github-issues",
@@ -199,7 +199,9 @@
         "specs/19/spec.md",
         "specs/19/review.md",
         "specs/19/qa-plan.md"
-      ]
+      ],
+      "deadline": "2026-08-07T11:05:20Z",
+      "attempt_started_at": "2026-08-07T10:05:20Z"
     }
   ],
   "block_reason": null,
