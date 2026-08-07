@@ -16,3 +16,4 @@
 {"event_id": "4b5adff89f7c6670:qa-28:accepted", "kind": "handoff.accepted", "ticket_id": "28", "run_id": "4b5adff89f7c6670", "detail": "Implementation is clean with no blockers; ready for live-flow verification"}
 {"event_id": "4b5adff89f7c6670:succeeded", "kind": "run.succeeded", "ticket_id": "28", "run_id": "4b5adff89f7c6670", "state": "SUCCEEDED", "artifacts": ["specs/28/review.md"]}
 {"event_id": "45628094c2a6ac30:collected", "kind": "run.collected", "ticket_id": "28", "run_id": "45628094c2a6ac30", "tokens": 3436700, "cost_usd": 1.86}
+{"event_id": "45628094c2a6ac30:failed", "kind": "run.failed", "ticket_id": "28", "run_id": "45628094c2a6ac30", "state": "FAILED"}
