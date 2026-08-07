@@ -18,7 +18,8 @@
       "chain_depth": 0,
       "source_event_id": "36:opened:2026-08-07T20:34:10Z",
       "enqueue_index": 0,
-      "queue_seq": 0
+      "queue_seq": 0,
+      "repo": "yash-learner/care_fe_agent_hq"
     }
   ],
   "block_reason": null,
