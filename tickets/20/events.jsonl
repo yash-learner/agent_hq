@@ -6,3 +6,7 @@
 {"event_id": "78b7a3c8411d29b7:arch-plan-20-fe:accepted", "kind": "handoff.accepted", "ticket_id": "20", "run_id": "78b7a3c8411d29b7", "detail": "Plan implementation approach for supporting multiple diagnostic reports per Service Request in the frontend"}
 {"event_id": "78b7a3c8411d29b7:succeeded", "kind": "run.succeeded", "ticket_id": "20", "run_id": "78b7a3c8411d29b7", "state": "SUCCEEDED", "artifacts": ["specs/20/spec.md"]}
 {"event_id": "3099e1c7e9b4cee2:collected", "kind": "run.collected", "ticket_id": "20", "run_id": "3099e1c7e9b4cee2", "tokens": 362400, "cost_usd": 0.268}
+{"event_id": "3099e1c7e9b4cee2:breakdown-20:proposed", "kind": "handoff.proposed", "ticket_id": "20", "run_id": "3099e1c7e9b4cee2", "detail": "Plan classified as CRUD; proceeding directly to breakdown per constitution gates"}
+{"event_id": "af80a340aaf46e1d:queued", "kind": "run.queued", "ticket_id": "20", "run_id": "af80a340aaf46e1d", "task_id": "breakdown", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
+{"event_id": "3099e1c7e9b4cee2:breakdown-20:accepted", "kind": "handoff.accepted", "ticket_id": "20", "run_id": "3099e1c7e9b4cee2", "detail": "Plan classified as CRUD; proceeding directly to breakdown per constitution gates"}
+{"event_id": "3099e1c7e9b4cee2:succeeded", "kind": "run.succeeded", "ticket_id": "20", "run_id": "3099e1c7e9b4cee2", "state": "SUCCEEDED", "artifacts": ["specs/20/plan.md", "specs/20/classification.json"]}
