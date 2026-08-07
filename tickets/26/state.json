@@ -73,7 +73,7 @@
       "task_id": "review",
       "task_version": 1,
       "ticket_id": "26",
-      "state": "QUEUED",
+      "state": "RUNNING",
       "attempt": 0,
       "bindings": {
         "tracker": "github-issues",
@@ -92,7 +92,9 @@
       "input_artifacts": [
         "specs/26/spec.md",
         "specs/26/qa-plan.md"
-      ]
+      ],
+      "deadline": "2026-08-07T20:04:09Z",
+      "attempt_started_at": "2026-08-07T19:34:09Z"
     }
   ],
   "block_reason": null,
