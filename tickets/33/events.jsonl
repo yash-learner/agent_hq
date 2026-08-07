@@ -20,3 +20,4 @@
 {"event_id": "f9be8811537ff0e6:artifact_rejected", "kind": "run.artifact_rejected", "ticket_id": "33", "run_id": "f9be8811537ff0e6", "detail": "qa-report.json: criterion 'ac1-facility-role-visible': fail requires a non-empty blocker"}
 {"event_id": "a2690b8ba4ed8f1a:queued", "kind": "run.queued", "ticket_id": "33", "run_id": "a2690b8ba4ed8f1a", "task_id": "qa", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
 {"event_id": "a2690b8ba4ed8f1a:rework", "kind": "run.rework", "ticket_id": "33", "run_id": "a2690b8ba4ed8f1a", "detail": "Previous attempt rejected: qa-report.json: criterion 'ac1-facility-role-visible': fail requires a non-empty blocker", "actor": "engine", "source": "f9be8811537ff0e6:artifact_rejected"}
+{"event_id": "a2690b8ba4ed8f1a:collected", "kind": "run.collected", "ticket_id": "33", "run_id": "a2690b8ba4ed8f1a", "tokens": 2627900, "cost_usd": 1.44}
