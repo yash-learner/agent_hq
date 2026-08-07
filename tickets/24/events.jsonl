@@ -34,3 +34,5 @@
 {"event_id": "c852596d193b3c92:failed", "kind": "run.failed", "ticket_id": "24", "run_id": "c852596d193b3c92", "state": "FAILED"}
 {"event_id": "c852596d193b3c92:artifact_rejected", "kind": "run.artifact_rejected", "ticket_id": "24", "run_id": "c852596d193b3c92", "detail": "qa-report.json: video specs/24/videos/ac1-env-links.webm is claimed by criteria 'ac1-env-links' and 'ac4-security-attributes'"}
 {"event_id": "c852596d193b3c92:blocked", "kind": "ticket.blocked", "ticket_id": "24", "run_id": "c852596d193b3c92", "detail": "retries exhausted"}
+{"event_id": "bba2b4ce19007c6e:queued", "kind": "run.queued", "ticket_id": "24", "run_id": "bba2b4ce19007c6e", "task_id": "qa", "task_version": 1, "state": "QUEUED", "bindings": {}}
+{"event_id": "bba2b4ce19007c6e:rework", "kind": "run.rework", "ticket_id": "24", "run_id": "bba2b4ce19007c6e", "detail": "@yash-learner: again it failed because of {\"event_id\": \"43af4c6416909359:failed\", \"kind\": \"run.failed\", \"ticket_id\": \"24\", \"run_id\": \"43af4c6416909359\", \"state\": \"FAILED\"}\n\n(ticket was blocked: retries exhausted)", "actor": "yash-learner", "source": "issue-comment:5219321977"}
