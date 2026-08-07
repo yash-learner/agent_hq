@@ -16,3 +16,7 @@
 {"event_id": "f4912d9e455c8714:implement-nav-links:accepted", "kind": "handoff.accepted", "ticket_id": "19", "run_id": "f4912d9e455c8714", "detail": "Implement custom navigation links feature in care_fe frontend per specs/19/tasks.md"}
 {"event_id": "f4912d9e455c8714:succeeded", "kind": "run.succeeded", "ticket_id": "19", "run_id": "f4912d9e455c8714", "state": "SUCCEEDED", "artifacts": ["specs/19/tasks.md"]}
 {"event_id": "183488ec35c882b1:collected", "kind": "run.collected", "ticket_id": "19", "run_id": "183488ec35c882b1", "tokens": 3020100, "cost_usd": 1.59}
+{"event_id": "183488ec35c882b1:review-19:proposed", "kind": "handoff.proposed", "ticket_id": "19", "run_id": "183488ec35c882b1", "detail": "Review implementation against spec and verify all acceptance criteria are met"}
+{"event_id": "0d6606cb5d776aa9:queued", "kind": "run.queued", "ticket_id": "19", "run_id": "0d6606cb5d776aa9", "task_id": "review", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
+{"event_id": "183488ec35c882b1:review-19:accepted", "kind": "handoff.accepted", "ticket_id": "19", "run_id": "183488ec35c882b1", "detail": "Review implementation against spec and verify all acceptance criteria are met"}
+{"event_id": "183488ec35c882b1:succeeded", "kind": "run.succeeded", "ticket_id": "19", "run_id": "183488ec35c882b1", "state": "SUCCEEDED", "artifacts": ["specs/19/qa-plan.md"]}
