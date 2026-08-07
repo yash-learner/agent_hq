@@ -358,7 +358,12 @@
       "enqueue_index": 0,
       "queue_seq": 10,
       "deadline": "2026-08-07T16:28:36Z",
-      "attempt_started_at": "2026-08-07T16:13:36Z"
+      "attempt_started_at": "2026-08-07T16:13:36Z",
+      "base_commit": "8820e30910201dbc1ee3d3c75f1ad87b1d81d6ee",
+      "input_from_run_id": "4b4371345ab8fd2c",
+      "input_artifacts": [
+        "specs/22/qa-plan.md"
+      ]
     }
   ],
   "block_reason": null,
