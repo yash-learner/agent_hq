@@ -53,3 +53,4 @@
 {"event_id": "17cf01f3be49d6dc:succeeded", "kind": "run.succeeded", "ticket_id": "16", "run_id": "17cf01f3be49d6dc", "state": "SUCCEEDED", "artifacts": ["specs/16/qa.md", "specs/16/qa-report.json", "specs/16/screenshots/ac1-failure.png", "specs/16/screenshots/ac1-no-dropdown.png", "specs/16/qa-drivers/ac1-multi-report.mjs", "specs/16/qa-drivers/setup-data.mjs", "specs/16/qa-logs/ac1-multi-report.log", "specs/16/qa-logs/setup-data.log"]}
 {"event_id": "659864c7d7639d8a:collected", "kind": "run.collected", "ticket_id": "16", "run_id": "659864c7d7639d8a", "tokens": 300200, "cost_usd": 0.219}
 {"event_id": "659864c7d7639d8a:succeeded", "kind": "run.succeeded", "ticket_id": "16", "run_id": "659864c7d7639d8a", "state": "SUCCEEDED", "artifacts": ["specs/16/summary.md"]}
+{"event_id": "ef21bb04d3cac376:collected", "kind": "run.collected", "ticket_id": "16", "run_id": "ef21bb04d3cac376", "tokens": 4834500, "cost_usd": 2.46}
