@@ -5,3 +5,4 @@
 {"event_id": "4b23dd8c59def8e6:queued", "kind": "run.queued", "ticket_id": "31", "run_id": "4b23dd8c59def8e6", "task_id": "arch-plan", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment", "gate": "github-issue-comment"}}
 {"event_id": "a6ab7b10ea0534ac:arch-plan-31:accepted", "kind": "handoff.accepted", "ticket_id": "31", "run_id": "a6ab7b10ea0534ac", "detail": "Spec complete; need architecture plan for env config + plugin nav extension"}
 {"event_id": "a6ab7b10ea0534ac:succeeded", "kind": "run.succeeded", "ticket_id": "31", "run_id": "a6ab7b10ea0534ac", "state": "SUCCEEDED", "artifacts": ["specs/31/spec.md"]}
+{"event_id": "4b23dd8c59def8e6:collected", "kind": "run.collected", "ticket_id": "31", "run_id": "4b23dd8c59def8e6", "tokens": 228800, "cost_usd": 0.212}
