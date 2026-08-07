@@ -22,3 +22,4 @@
 {"event_id": "fa313312193800b4:succeeded", "kind": "run.succeeded", "ticket_id": "26", "run_id": "fa313312193800b4", "state": "SUCCEEDED", "artifacts": ["specs/26/qa-plan.md"]}
 {"event_id": "2afa1721de7c570b:runner_lost", "kind": "run.runner_lost", "ticket_id": "26", "run_id": "2afa1721de7c570b", "state": "FAILED"}
 {"event_id": "613d38210730d4d2:queued", "kind": "run.queued", "ticket_id": "26", "run_id": "613d38210730d4d2", "task_id": "review", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
+{"event_id": "613d38210730d4d2:collected", "kind": "run.collected", "ticket_id": "26", "run_id": "613d38210730d4d2", "tokens": 489400, "cost_usd": 0.367}
