@@ -183,7 +183,7 @@
       "task_id": "implement",
       "task_version": 1,
       "ticket_id": "27",
-      "state": "QUEUED",
+      "state": "RUNNING",
       "attempt": 2,
       "bindings": {
         "tracker": "github-issues",
@@ -197,7 +197,9 @@
       "chain_depth": 0,
       "source_event_id": "issue-comment:5221414180",
       "enqueue_index": 0,
-      "queue_seq": 3
+      "queue_seq": 3,
+      "deadline": "2026-08-07T21:46:53Z",
+      "attempt_started_at": "2026-08-07T20:16:53Z"
     }
   ],
   "block_reason": null,
