@@ -6,3 +6,7 @@
 {"event_id": "f15d98e868cc230d:implement-23-care-fe:accepted", "kind": "handoff.accepted", "ticket_id": "23", "run_id": "f15d98e868cc230d", "detail": "Implement multi-diagnostic-report support in care_fe frontend"}
 {"event_id": "f15d98e868cc230d:succeeded", "kind": "run.succeeded", "ticket_id": "23", "run_id": "f15d98e868cc230d", "state": "SUCCEEDED", "artifacts": ["specs/23/spec.md"]}
 {"event_id": "390551a7d6c03cec:collected", "kind": "run.collected", "ticket_id": "23", "run_id": "390551a7d6c03cec", "tokens": 3119100, "cost_usd": 1.58}
+{"event_id": "390551a7d6c03cec:review-23-impl:proposed", "kind": "handoff.proposed", "ticket_id": "23", "run_id": "390551a7d6c03cec", "detail": "Implementation complete for ticket 23, ready for review against spec"}
+{"event_id": "c2b758d12b550dfb:queued", "kind": "run.queued", "ticket_id": "23", "run_id": "c2b758d12b550dfb", "task_id": "review", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
+{"event_id": "390551a7d6c03cec:review-23-impl:accepted", "kind": "handoff.accepted", "ticket_id": "23", "run_id": "390551a7d6c03cec", "detail": "Implementation complete for ticket 23, ready for review against spec"}
+{"event_id": "390551a7d6c03cec:succeeded", "kind": "run.succeeded", "ticket_id": "23", "run_id": "390551a7d6c03cec", "state": "SUCCEEDED", "artifacts": ["specs/23/qa-plan.md"]}
