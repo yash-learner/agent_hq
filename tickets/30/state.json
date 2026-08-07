@@ -2,7 +2,25 @@
   "ticket_id": "30",
   "pinned_comment_id": 5221479239,
   "status": "ACTIVE",
-  "runs": [],
+  "runs": [
+    {
+      "run_id": "9a7ce79dfd9a5639",
+      "task_id": "spec",
+      "task_version": 1,
+      "ticket_id": "30",
+      "state": "QUEUED",
+      "attempt": 0,
+      "bindings": {},
+      "cost_usd": null,
+      "tokens": null,
+      "usage_known": false,
+      "artifacts": [],
+      "chain_depth": 0,
+      "source_event_id": "30:opened:2026-08-07T20:00:52Z",
+      "enqueue_index": 0,
+      "queue_seq": 0
+    }
+  ],
   "block_reason": null,
   "block_source": null,
   "interrupted_run_id": null
