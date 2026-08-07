@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T19:54:55Z",
+  "generated_at": "2026-08-07T19:55:17Z",
   "tickets": [
     {
       "ticket_id": "1",
@@ -4476,7 +4476,7 @@
           "task_id": "qa",
           "task_version": 1,
           "ticket_id": "24",
-          "state": "QUEUED",
+          "state": "RUNNING",
           "attempt": 1,
           "bindings": {
             "tracker": "github-issues",
@@ -4490,7 +4490,9 @@
           "chain_depth": 0,
           "source_event_id": "issue-comment:5220763074",
           "enqueue_index": 0,
-          "queue_seq": 11
+          "queue_seq": 11,
+          "deadline": "2026-08-07T20:55:16Z",
+          "attempt_started_at": "2026-08-07T19:55:16Z"
         }
       ],
       "block_reason": null,
