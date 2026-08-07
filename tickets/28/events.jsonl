@@ -10,3 +10,4 @@
 {"event_id": "4b5adff89f7c6670:queued", "kind": "run.queued", "ticket_id": "28", "run_id": "4b5adff89f7c6670", "task_id": "review", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
 {"event_id": "bc62f77bb450593d:review-28-fe:accepted", "kind": "handoff.accepted", "ticket_id": "28", "run_id": "bc62f77bb450593d", "detail": "Review frontend implementation against spec and verify all acceptance criteria are addressed"}
 {"event_id": "bc62f77bb450593d:succeeded", "kind": "run.succeeded", "ticket_id": "28", "run_id": "bc62f77bb450593d", "state": "SUCCEEDED", "artifacts": ["specs/28/qa-plan.md"]}
+{"event_id": "4b5adff89f7c6670:collected", "kind": "run.collected", "ticket_id": "28", "run_id": "4b5adff89f7c6670", "tokens": 534100, "cost_usd": 0.332}
