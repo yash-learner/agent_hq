@@ -2,3 +2,8 @@
 {"event_id": "9a7ce79dfd9a5639:failed", "kind": "run.failed", "ticket_id": "30", "run_id": "9a7ce79dfd9a5639", "state": "FAILED"}
 {"event_id": "f794389fd9e827a5:queued", "kind": "run.queued", "ticket_id": "30", "run_id": "f794389fd9e827a5", "task_id": "spec", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment", "gate": "github-issue-comment"}}
 {"event_id": "f794389fd9e827a5:collected", "kind": "run.collected", "ticket_id": "30", "run_id": "f794389fd9e827a5", "tokens": 679200, "cost_usd": 0.446}
+{"event_id": "f794389fd9e827a5:auto_approval", "kind": "gate.decided", "ticket_id": "30", "run_id": "f794389fd9e827a5", "detail": "auto-approved by task config (would have asked product-owners)", "actor": "engine"}
+{"event_id": "f794389fd9e827a5:implement-30-date-filter:proposed", "kind": "handoff.proposed", "ticket_id": "30", "run_id": "f794389fd9e827a5", "detail": "Add date filtering to invoice list following the pattern used in account list"}
+{"event_id": "c2b96065f5963bb6:queued", "kind": "run.queued", "ticket_id": "30", "run_id": "c2b96065f5963bb6", "task_id": "implement", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment", "gate": "github-issue-comment"}}
+{"event_id": "f794389fd9e827a5:implement-30-date-filter:accepted", "kind": "handoff.accepted", "ticket_id": "30", "run_id": "f794389fd9e827a5", "detail": "Add date filtering to invoice list following the pattern used in account list"}
+{"event_id": "f794389fd9e827a5:succeeded", "kind": "run.succeeded", "ticket_id": "30", "run_id": "f794389fd9e827a5", "state": "SUCCEEDED", "artifacts": ["specs/30/spec.md"]}
