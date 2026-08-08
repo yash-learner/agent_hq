@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-08T03:57:56Z",
+  "generated_at": "2026-08-08T03:57:57Z",
   "tickets": [
     {
       "ticket_id": "1",
@@ -7561,8 +7561,7 @@
           "bindings": {
             "tracker": "github-issues",
             "agent-session": "copilot-cli",
-            "messaging": "github-comment",
-            "gate": "github-issue-comment"
+            "messaging": "github-comment"
           },
           "cost_usd": null,
           "tokens": null,
@@ -7577,7 +7576,9 @@
             "specs/37/spec.md"
           ],
           "deadline": "2026-08-08T05:27:56Z",
-          "attempt_started_at": "2026-08-08T03:57:56Z"
+          "attempt_started_at": "2026-08-08T03:57:56Z",
+          "base_commit": "dea49853619eaf2e5b7c18d6f89a1c1bf67567a0",
+          "input_from_run_id": "92386b584ad25a7e"
         }
       ],
       "block_reason": null,
