@@ -6,3 +6,7 @@
 {"event_id": "92386b584ad25a7e:implement-37-care-fe:accepted", "kind": "handoff.accepted", "ticket_id": "37", "run_id": "92386b584ad25a7e", "detail": "Implement infinite scroll pagination for DispenseOrderListSelector per spec"}
 {"event_id": "92386b584ad25a7e:succeeded", "kind": "run.succeeded", "ticket_id": "37", "run_id": "92386b584ad25a7e", "state": "SUCCEEDED", "artifacts": ["specs/37/spec.md"]}
 {"event_id": "42afc1d3dd7c3353:collected", "kind": "run.collected", "ticket_id": "37", "run_id": "42afc1d3dd7c3353", "tokens": 1816500, "cost_usd": 1.2}
+{"event_id": "42afc1d3dd7c3353:review-37:proposed", "kind": "handoff.proposed", "ticket_id": "37", "run_id": "42afc1d3dd7c3353", "detail": "Verify infinite scroll implementation meets all acceptance criteria and follows care_fe patterns"}
+{"event_id": "ff53298c3ab13ae3:queued", "kind": "run.queued", "ticket_id": "37", "run_id": "ff53298c3ab13ae3", "task_id": "review", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
+{"event_id": "42afc1d3dd7c3353:review-37:accepted", "kind": "handoff.accepted", "ticket_id": "37", "run_id": "42afc1d3dd7c3353", "detail": "Verify infinite scroll implementation meets all acceptance criteria and follows care_fe patterns"}
+{"event_id": "42afc1d3dd7c3353:succeeded", "kind": "run.succeeded", "ticket_id": "37", "run_id": "42afc1d3dd7c3353", "state": "SUCCEEDED", "artifacts": ["specs/37/qa-plan.md"]}
