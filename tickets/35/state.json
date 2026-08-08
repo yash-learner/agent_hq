@@ -102,7 +102,7 @@
   "block_reason": "attempt failed with unknown spend",
   "block_source": "engine",
   "interrupted_run_id": "aeecc41c146b45bd",
-  "comments_polled_at": "2026-08-08T02:28:05Z",
+  "comments_polled_at": "2026-08-08T02:44:50Z",
   "work_repos": [
     {
       "repo": "yash-learner/care_fe_agent_hq",
