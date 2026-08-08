@@ -6,3 +6,7 @@
 {"event_id": "876c1089edb5aa7f:implement-35-frontend:accepted", "kind": "handoff.accepted", "ticket_id": "35", "run_id": "876c1089edb5aa7f", "detail": "Implement dosage highlighting in print/export views to match existing screen highlighting behavior"}
 {"event_id": "876c1089edb5aa7f:succeeded", "kind": "run.succeeded", "ticket_id": "35", "run_id": "876c1089edb5aa7f", "state": "SUCCEEDED", "artifacts": ["specs/35/spec.md"]}
 {"event_id": "9081dcb74a68a2d8:collected", "kind": "run.collected", "ticket_id": "35", "run_id": "9081dcb74a68a2d8", "tokens": 3524600, "cost_usd": 1.83}
+{"event_id": "9081dcb74a68a2d8:review-35:proposed", "kind": "handoff.proposed", "ticket_id": "35", "run_id": "9081dcb74a68a2d8", "detail": "Implementation complete, ready for review"}
+{"event_id": "aeecc41c146b45bd:queued", "kind": "run.queued", "ticket_id": "35", "run_id": "aeecc41c146b45bd", "task_id": "review", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
+{"event_id": "9081dcb74a68a2d8:review-35:accepted", "kind": "handoff.accepted", "ticket_id": "35", "run_id": "9081dcb74a68a2d8", "detail": "Implementation complete, ready for review"}
+{"event_id": "9081dcb74a68a2d8:succeeded", "kind": "run.succeeded", "ticket_id": "35", "run_id": "9081dcb74a68a2d8", "state": "SUCCEEDED", "artifacts": ["specs/35/qa-plan.md"]}
