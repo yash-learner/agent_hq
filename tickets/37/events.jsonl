@@ -33,3 +33,4 @@
 {"event_id": "10b3f3d050e30ec8:collected", "kind": "run.collected", "ticket_id": "37", "run_id": "10b3f3d050e30ec8", "tokens": 5533900, "cost_usd": 2.51}
 {"event_id": "10b3f3d050e30ec8:failed", "kind": "run.failed", "ticket_id": "37", "run_id": "10b3f3d050e30ec8", "state": "FAILED"}
 {"event_id": "10b3f3d050e30ec8:artifact_rejected", "kind": "run.artifact_rejected", "ticket_id": "37", "run_id": "10b3f3d050e30ec8", "detail": "qa-report.json: video specs/37/videos/scroll-loads.webm is claimed by criteria 'scroll-loads' and 'end-of-list'"}
+{"event_id": "10b3f3d050e30ec8:blocked", "kind": "ticket.blocked", "ticket_id": "37", "run_id": "10b3f3d050e30ec8", "detail": "retries exhausted"}
