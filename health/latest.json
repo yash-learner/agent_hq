@@ -1,7 +1,7 @@
 {
   "agent-session/copilot-cli": {
-    "ok": true,
+    "ok": false,
     "detail": "collect",
-    "ts": "2026-08-08T02:42:33Z"
+    "ts": "2026-08-08T02:44:43Z"
   }
 }
