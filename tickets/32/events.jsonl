@@ -16,3 +16,7 @@
 {"event_id": "045fd75a2bb42e93:implement-care-fe:accepted", "kind": "handoff.accepted", "ticket_id": "32", "run_id": "045fd75a2bb42e93", "detail": "Implement navbar documentation and NABH links with env config and plugin support"}
 {"event_id": "045fd75a2bb42e93:succeeded", "kind": "run.succeeded", "ticket_id": "32", "run_id": "045fd75a2bb42e93", "state": "SUCCEEDED", "artifacts": ["specs/32/tasks.md"]}
 {"event_id": "5f570f825ed41256:collected", "kind": "run.collected", "ticket_id": "32", "run_id": "5f570f825ed41256", "tokens": 2217500, "cost_usd": 1.22}
+{"event_id": "5f570f825ed41256:review-32:proposed", "kind": "handoff.proposed", "ticket_id": "32", "run_id": "5f570f825ed41256", "detail": "Review implementation against spec acceptance criteria"}
+{"event_id": "b31f777b8bac87c1:queued", "kind": "run.queued", "ticket_id": "32", "run_id": "b31f777b8bac87c1", "task_id": "review", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
+{"event_id": "5f570f825ed41256:review-32:accepted", "kind": "handoff.accepted", "ticket_id": "32", "run_id": "5f570f825ed41256", "detail": "Review implementation against spec acceptance criteria"}
+{"event_id": "5f570f825ed41256:succeeded", "kind": "run.succeeded", "ticket_id": "32", "run_id": "5f570f825ed41256", "state": "SUCCEEDED", "artifacts": ["specs/32/qa-plan.md"]}
