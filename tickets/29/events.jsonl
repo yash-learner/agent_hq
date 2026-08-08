@@ -45,3 +45,4 @@
 {"event_id": "204182c0fc60ba61:queued", "kind": "run.queued", "ticket_id": "29", "run_id": "204182c0fc60ba61", "task_id": "qa", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
 {"event_id": "e55ec33831b5f4aa:qa-29:accepted", "kind": "handoff.accepted", "ticket_id": "29", "run_id": "e55ec33831b5f4aa", "detail": "Implementation complete with no blockers; all acceptance criteria covered by Playwright tests validating UI behavior and URL param management; QA plan documents backend limitation and provides fixture-based verification path"}
 {"event_id": "e55ec33831b5f4aa:succeeded", "kind": "run.succeeded", "ticket_id": "29", "run_id": "e55ec33831b5f4aa", "state": "SUCCEEDED", "artifacts": ["specs/29/review.md"]}
+{"event_id": "204182c0fc60ba61:collected", "kind": "run.collected", "ticket_id": "29", "run_id": "204182c0fc60ba61", "tokens": 5238800, "cost_usd": 2.52}
