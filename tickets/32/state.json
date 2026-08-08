@@ -166,7 +166,9 @@
         "specs/32/qa-plan.md"
       ],
       "deadline": "2026-08-08T00:55:08Z",
-      "attempt_started_at": "2026-08-08T00:25:08Z"
+      "attempt_started_at": "2026-08-08T00:25:08Z",
+      "base_commit": "f777bc7fc0d280053425bb576ab717c1b1321899",
+      "input_from_run_id": "5f570f825ed41256"
     }
   ],
   "block_reason": null,
