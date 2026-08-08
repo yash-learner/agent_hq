@@ -25,3 +25,4 @@
 {"event_id": "e52015e7e5f60545:queued", "kind": "run.queued", "ticket_id": "32", "run_id": "e52015e7e5f60545", "task_id": "qa", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
 {"event_id": "b31f777b8bac87c1:qa-32:accepted", "kind": "handoff.accepted", "ticket_id": "32", "run_id": "b31f777b8bac87c1", "detail": "Implementation is clean with no blockers. Ready for QA verification of environment-configured navigation links."}
 {"event_id": "b31f777b8bac87c1:succeeded", "kind": "run.succeeded", "ticket_id": "32", "run_id": "b31f777b8bac87c1", "state": "SUCCEEDED", "artifacts": ["specs/32/review.md"]}
+{"event_id": "e52015e7e5f60545:collected", "kind": "run.collected", "ticket_id": "32", "run_id": "e52015e7e5f60545", "tokens": 4227300, "cost_usd": 2.08}
