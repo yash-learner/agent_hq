@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-08T00:06:34Z",
+  "generated_at": "2026-08-08T00:07:25Z",
   "tickets": [
     {
       "ticket_id": "1",
@@ -6355,7 +6355,7 @@
           "task_id": "breakdown",
           "task_version": 1,
           "ticket_id": "32",
-          "state": "QUEUED",
+          "state": "RUNNING",
           "attempt": 0,
           "bindings": {
             "tracker": "github-issues",
@@ -6375,7 +6375,9 @@
             "specs/32/spec.md",
             "specs/32/plan.md",
             "specs/32/classification.json"
-          ]
+          ],
+          "deadline": "2026-08-08T00:37:25Z",
+          "attempt_started_at": "2026-08-08T00:07:25Z"
         }
       ],
       "block_reason": null,
