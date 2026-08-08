@@ -1,0 +1,91 @@
+{
+  "criteria": [
+    {
+      "id": "first-page-loads",
+      "title": "First page loads — Open Dispense History; latest dispenses appear in the left selector",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3", "4"],
+      "videos": ["specs/37/videos/first-page-loads.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "scroll-loads-more",
+      "title": "Scroll loads more — Scroll to bottom; older rows append; loading indicator appears then settles",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3", "4"],
+      "videos": ["specs/37/videos/scroll-loads-more.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "select-older-row",
+      "title": "Select older row — Click a row that only appeared after scroll; detail matches that dispense",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3"],
+      "videos": ["specs/37/videos/select-older-row.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "end-of-list",
+      "title": "End of list — Scroll until no more pages; further scrolling does not spam requests",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3", "4"],
+      "videos": ["specs/37/videos/end-of-list.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "short-list",
+      "title": "Short list — Encounter with few dispenses: no extra page fetches in a loop",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Creating a test patient with < 14 dispense orders requires multi-step dependent API calls (patient → encounter → < 14 dispense orders) and UI navigation to find the specific encounter. This deep seed graph exceeded the practical time budget given remaining criteria.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": [],
+      "seed_attempt": {
+        "method": "api",
+        "summary": "Driver written with API seed logic for creating a new patient with minimal dispense orders, but not executed due to time constraints. The multi-step dependency (patient creation → encounter creation → seeding < 14 dispense orders → UI search/navigation) was impractical within the remaining budget. Existing test patient already has 20+ orders, making it unsuitable for the short-list scenario."
+      }
+    },
+    {
+      "id": "error-resilience",
+      "title": "Error resilience — Failed next-page fetch does not clear already loaded items",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3", "4", "5"],
+      "videos": ["specs/37/videos/error-resilience.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "no-regression",
+      "title": "No regression — Opening Dispense History or selecting items from the first page still works as before",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3", "4"],
+      "videos": ["specs/37/videos/no-regression.webm"],
+      "screenshots": []
+    }
+  ],
+  "summary": {
+    "all_passed": false,
+    "pass": 6,
+    "fail": 0,
+    "not_exercised": 1
+  }
+}

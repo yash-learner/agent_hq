@@ -27,3 +27,4 @@
 {"event_id": "5385f98ceec93836:succeeded", "kind": "run.succeeded", "ticket_id": "37", "run_id": "5385f98ceec93836", "state": "SUCCEEDED", "artifacts": ["specs/37/review.md"]}
 {"event_id": "4ca15405bd4424c3:collected", "kind": "run.collected", "ticket_id": "37", "run_id": "4ca15405bd4424c3", "tokens": 4834100, "cost_usd": 2.32}
 {"event_id": "4ca15405bd4424c3:failed", "kind": "run.failed", "ticket_id": "37", "run_id": "4ca15405bd4424c3", "state": "FAILED"}
+{"event_id": "4ca15405bd4424c3:artifact_rejected", "kind": "run.artifact_rejected", "ticket_id": "37", "run_id": "4ca15405bd4424c3", "detail": "qa-report.json: criterion 'short-list': missing-test-data requires non-empty plan_steps_run"}
