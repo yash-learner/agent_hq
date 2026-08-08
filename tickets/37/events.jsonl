@@ -26,3 +26,4 @@
 {"event_id": "5385f98ceec93836:qa-37:accepted", "kind": "handoff.accepted", "ticket_id": "37", "run_id": "5385f98ceec93836", "detail": "Implementation clean with all Round 1 blockers resolved. RESULTS_PER_PAGE_LIMIT constant now used throughout, qa-plan data setup complete with proper type citations and valid enum values. All acceptance criteria met: infinite scroll, loading indicators, end-of-list handling, error resilience via global QueryCache handler. Ready for live verification."}
 {"event_id": "5385f98ceec93836:succeeded", "kind": "run.succeeded", "ticket_id": "37", "run_id": "5385f98ceec93836", "state": "SUCCEEDED", "artifacts": ["specs/37/review.md"]}
 {"event_id": "4ca15405bd4424c3:collected", "kind": "run.collected", "ticket_id": "37", "run_id": "4ca15405bd4424c3", "tokens": 4834100, "cost_usd": 2.32}
+{"event_id": "4ca15405bd4424c3:failed", "kind": "run.failed", "ticket_id": "37", "run_id": "4ca15405bd4424c3", "state": "FAILED"}
