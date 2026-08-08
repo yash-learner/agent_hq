@@ -40,3 +40,4 @@
 {"event_id": "e55ec33831b5f4aa:queued", "kind": "run.queued", "ticket_id": "29", "run_id": "e55ec33831b5f4aa", "task_id": "review", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
 {"event_id": "f61044eb47174291:review-round-3:accepted", "kind": "handoff.accepted", "ticket_id": "29", "run_id": "f61044eb47174291", "detail": "Review the test strategy fix and updated QA plan"}
 {"event_id": "f61044eb47174291:succeeded", "kind": "run.succeeded", "ticket_id": "29", "run_id": "f61044eb47174291", "state": "SUCCEEDED", "artifacts": ["specs/29/qa-plan.md"]}
+{"event_id": "e55ec33831b5f4aa:collected", "kind": "run.collected", "ticket_id": "29", "run_id": "e55ec33831b5f4aa", "tokens": 668900, "cost_usd": 0.433}
