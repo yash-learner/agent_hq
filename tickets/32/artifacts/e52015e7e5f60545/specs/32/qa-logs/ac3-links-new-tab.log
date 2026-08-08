@@ -1,0 +1,37 @@
+=== AC3: Env-configured links open in new tab ===
+
+Loading authenticated session from tests/.auth/user.json
+Cursor overlay enabled for screencast
+
+Step 1: Navigating to http://localhost:4000/facility/6b3b3230-518f-45b1-82d4-484d9ecd62ce/overview
+Checking auth shell readiness...
+✓ Sidebar visible
+✓ No login UI present
+
+Step 2: Checking Documentation link has target="_blank" and rel="noopener noreferrer"
+Documentation link attributes:
+  href: https://care.ohc.network/docs
+  target: _blank
+  rel: noopener noreferrer
+✓ Documentation link has target="_blank"
+✓ Documentation link has rel="noopener noreferrer"
+
+Step 3: Checking NABH Certification link has target="_blank" and rel="noopener noreferrer"
+NABH Certification link attributes:
+  href: https://www.nabh.co/standards
+  target: _blank
+  rel: noopener noreferrer
+✓ NABH Certification link has target="_blank"
+✓ NABH Certification link has rel="noopener noreferrer"
+
+Step 4: Navigating to admin page to verify link attributes there
+Admin Documentation link: target="_blank" rel="noopener noreferrer"
+✓ Admin Documentation link has target="_blank"
+
+Step 5: Opening user dropdown to verify items are present
+✓ Dropdown Documentation item is visible
+  (Opens in new tab via window.open() with noopener,noreferrer)
+
+=== AC3 PASSED ===
+All environment-configured links have target="_blank" and rel="noopener noreferrer"
+Links will open in new tabs without navigating the current page

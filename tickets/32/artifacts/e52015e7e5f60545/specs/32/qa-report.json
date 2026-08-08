@@ -1,0 +1,87 @@
+{
+  "criteria": [
+    {
+      "id": "ac1-docs-link",
+      "title": "Documentation link appears when REACT_NAV_DOCS_LINK is set",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3", "4", "5", "6", "8"],
+      "videos": ["specs/32/videos/ac1-docs-link.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac2-nabh-link",
+      "title": "NABH Certification link appears when REACT_NAV_NABH_LINK is set",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3", "4", "5", "6", "7", "8"],
+      "videos": ["specs/32/videos/ac2-nabh-link.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac3-links-new-tab",
+      "title": "Env-configured links open in new tab",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
+      "videos": ["specs/32/videos/ac3-links-new-tab.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac4-plugin-nav-items",
+      "title": "Plugin navItems integrate with facility navigation",
+      "verdict": "not-exercised",
+      "evidence_kind": "emulator-limit",
+      "blocker": "Current QA environment does not load plugins per spec guidance. Implementation reuses existing useCareApps() hook pattern verified during code review. Full plugin testing deferred until plugin infrastructure is available in QA environment.",
+      "blocker_category": "emulator-limit",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac5-plugin-admin-nav-items",
+      "title": "Plugin adminNavItems integrate with admin navigation",
+      "verdict": "not-exercised",
+      "evidence_kind": "emulator-limit",
+      "blocker": "Current QA environment does not load plugins per spec guidance. Implementation reuses existing useCareApps() hook pattern verified during code review. Full plugin testing deferred until plugin infrastructure is available in QA environment.",
+      "blocker_category": "emulator-limit",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac6-plugin-user-nav-items",
+      "title": "Plugin userNavItems integrate with user dropdown",
+      "verdict": "not-exercised",
+      "evidence_kind": "emulator-limit",
+      "blocker": "Current QA environment does not load plugins per spec guidance. Implementation reuses existing useCareApps() hook pattern verified during code review. Full plugin testing deferred until plugin infrastructure is available in QA environment.",
+      "blocker_category": "emulator-limit",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac7-no-env-links",
+      "title": "No env vars configured means no extra links",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3", "4", "5", "6", "7"],
+      "videos": ["specs/32/videos/ac7-no-env-links.webm"],
+      "screenshots": []
+    }
+  ],
+  "summary": {
+    "all_passed": false,
+    "pass": 4,
+    "fail": 0,
+    "not_exercised": 3
+  }
+}

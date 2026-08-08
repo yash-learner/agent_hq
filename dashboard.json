@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-08T00:49:31Z",
+  "generated_at": "2026-08-08T00:49:46Z",
   "tickets": [
     {
       "ticket_id": "1",
@@ -6525,7 +6525,7 @@
           "task_id": "qa",
           "task_version": 1,
           "ticket_id": "32",
-          "state": "RUNNING",
+          "state": "SUCCEEDED",
           "attempt": 0,
           "bindings": {
             "tracker": "github-issues",
@@ -6535,7 +6535,26 @@
           "cost_usd": 2.08,
           "tokens": 4227300,
           "usage_known": true,
-          "artifacts": [],
+          "artifacts": [
+            "specs/32/qa.md",
+            "specs/32/qa-report.json",
+            "specs/32/videos/ac1-docs-link.webm",
+            "specs/32/videos/ac2-nabh-link.webm",
+            "specs/32/videos/ac3-links-new-tab.webm",
+            "specs/32/videos/ac7-no-env-links.webm",
+            "specs/32/qa-drivers/ac1-docs-link.mjs",
+            "specs/32/qa-drivers/ac2-nabh-link.mjs",
+            "specs/32/qa-drivers/ac3-links-new-tab.mjs",
+            "specs/32/qa-drivers/ac7-no-env-links.mjs",
+            "specs/32/qa-logs/ac1-docs-link.log",
+            "specs/32/qa-logs/ac2-nabh-link.log",
+            "specs/32/qa-logs/ac3-links-new-tab.log",
+            "specs/32/qa-logs/ac7-no-env-links.log",
+            "specs/32/videos/ac7-no-env-links.gif",
+            "specs/32/videos/ac1-docs-link.gif",
+            "specs/32/videos/ac3-links-new-tab.gif",
+            "specs/32/videos/ac2-nabh-link.gif"
+          ],
           "chain_depth": 5,
           "parent_run_id": "b31f777b8bac87c1",
           "queue_seq": 5,
@@ -6549,7 +6568,36 @@
           "deadline": "2026-08-08T01:30:19Z",
           "attempt_started_at": "2026-08-08T00:30:19Z",
           "base_commit": "f777bc7fc0d280053425bb576ab717c1b1321899",
-          "input_from_run_id": "b31f777b8bac87c1"
+          "input_from_run_id": "b31f777b8bac87c1",
+          "output_commit": "f777bc7fc0d280053425bb576ab717c1b1321899",
+          "pr_ref": "yash-learner/care_fe_agent_hq#22"
+        },
+        {
+          "run_id": "a77a4157edbd21b7",
+          "task_id": "finalize",
+          "task_version": 1,
+          "ticket_id": "32",
+          "state": "QUEUED",
+          "attempt": 0,
+          "bindings": {
+            "tracker": "github-issues",
+            "agent-session": "copilot-cli",
+            "messaging": "github-comment"
+          },
+          "cost_usd": null,
+          "tokens": null,
+          "usage_known": false,
+          "artifacts": [],
+          "chain_depth": 6,
+          "parent_run_id": "e52015e7e5f60545",
+          "queue_seq": 6,
+          "handoff_key": "finalize-32",
+          "repo": "yash-learner/care_fe_agent_hq",
+          "input_artifacts": [
+            "specs/32/spec.md",
+            "specs/32/review.md",
+            "specs/32/qa.md"
+          ]
         }
       ],
       "block_reason": null,

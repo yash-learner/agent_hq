@@ -1,0 +1,26 @@
+=== AC1: Documentation link appears when REACT_NAV_DOCS_LINK is set ===
+
+Loading authenticated session from tests/.auth/user.json
+Cursor overlay enabled for screencast
+
+Step 1: Navigating to http://localhost:4000/facility/6b3b3230-518f-45b1-82d4-484d9ecd62ce/overview
+Checking auth shell readiness...
+✓ Sidebar visible
+✓ No login UI present
+
+Step 2: Checking facility sidebar for Documentation link
+✓ Documentation link visible in facility sidebar
+✓ Documentation link has icon: true
+
+Step 3: Navigating to admin page
+
+Step 4: Checking admin sidebar for Documentation link
+✓ Documentation link visible in admin sidebar
+
+Step 5: Opening user dropdown menu
+
+Step 6: Checking user dropdown for Documentation link
+✓ Documentation link visible in user dropdown
+
+=== AC1 PASSED ===
+Documentation link appears in facility sidebar, admin sidebar, and user dropdown
