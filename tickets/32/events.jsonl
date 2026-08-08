@@ -6,3 +6,7 @@
 {"event_id": "3862f5b17bc76388:arch-plan-32:accepted", "kind": "handoff.accepted", "ticket_id": "32", "run_id": "3862f5b17bc76388", "detail": "Frontend ticket requires architecture plan for navbar link injection mechanism"}
 {"event_id": "3862f5b17bc76388:succeeded", "kind": "run.succeeded", "ticket_id": "32", "run_id": "3862f5b17bc76388", "state": "SUCCEEDED", "artifacts": ["specs/32/spec.md"]}
 {"event_id": "27bd2446f3d1d2ad:collected", "kind": "run.collected", "ticket_id": "32", "run_id": "27bd2446f3d1d2ad", "tokens": 376500, "cost_usd": 0.294}
+{"event_id": "27bd2446f3d1d2ad:breakdown-32:proposed", "kind": "handoff.proposed", "ticket_id": "32", "run_id": "27bd2446f3d1d2ad", "detail": "Classified as CRUD - proceeding to implementation breakdown"}
+{"event_id": "045fd75a2bb42e93:queued", "kind": "run.queued", "ticket_id": "32", "run_id": "045fd75a2bb42e93", "task_id": "breakdown", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
+{"event_id": "27bd2446f3d1d2ad:breakdown-32:accepted", "kind": "handoff.accepted", "ticket_id": "32", "run_id": "27bd2446f3d1d2ad", "detail": "Classified as CRUD - proceeding to implementation breakdown"}
+{"event_id": "27bd2446f3d1d2ad:succeeded", "kind": "run.succeeded", "ticket_id": "32", "run_id": "27bd2446f3d1d2ad", "state": "SUCCEEDED", "artifacts": ["specs/32/plan.md", "specs/32/classification.json"]}

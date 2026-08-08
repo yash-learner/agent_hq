@@ -1,0 +1,4 @@
+{
+  "classification": "crud",
+  "reasoning": "None of the beyond-crud criteria apply. This ticket only adds UI navigation links configured via environment variables and extends existing plugin integration patterns. No data models, migrations, new services, authorization changes, FHIR/EMR changes, or non-CRUD endpoints are involved. It is purely a frontend UI enhancement using existing navigation infrastructure."
+}
