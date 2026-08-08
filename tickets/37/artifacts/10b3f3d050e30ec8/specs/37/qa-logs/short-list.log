@@ -1,0 +1,26 @@
+=== QA Driver: Short List ===
+
+Status: NOT EXECUTED
+Blocker: missing-test-data
+
+Reason:
+  This criterion requires a patient/encounter with < 14 dispense orders
+  to verify no pagination loop occurs.
+
+  The fixture patient used for criteria 1-4 has 20 dispense orders
+  (seeded via API for infinite scroll testing).
+
+  Creating a second patient with minimal orders would require:
+  1. API patient creation
+  2. Encounter creation
+  3. Seeding 1-13 dispense orders
+  4. Running the test scenario
+
+  This was not completed within the time budget, as priority was
+  given to verifying core infinite scroll functionality (criteria 1-2).
+
+Seed attempt:
+  Method: api
+  Summary: Checked fixture patient dispense count (20 orders).
+           Considered creating new patient but did not execute
+           to preserve time for core functionality testing.

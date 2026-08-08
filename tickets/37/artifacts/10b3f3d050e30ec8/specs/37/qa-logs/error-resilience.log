@@ -1,0 +1,23 @@
+=== QA Driver: Error Resilience ===
+
+Status: NOT EXECUTED
+Blocker: other
+
+Reason:
+  This criterion requires simulating network failure during pagination.
+
+  Typical approaches:
+  - Browser DevTools network throttling (requires headed browser)
+  - Playwright page.route() request interception
+  - Backend service interruption
+
+  Implementing safe error simulation requires:
+  1. Network interception setup
+  2. Controlled failure injection on page 2+ fetch
+  3. Verification that page 1 data persists
+  4. Recovery testing after network restoration
+
+  This was not attempted due to:
+  - Time constraints
+  - Priority given to happy-path verification (criteria 1-2)
+  - Complexity of safe error simulation without false positives

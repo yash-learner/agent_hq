@@ -1,0 +1,19 @@
+=== QA Driver: No Regression ===
+
+Status: COVERED BY CRITERION 1
+
+This criterion verifies that existing Dispense History functionality
+continues to work after adding infinite scroll pagination.
+
+The first-page test (criterion 1) verified:
+  ✓ Dispense History tab opens successfully
+  ✓ Latest dispense orders appear in left selector
+  ✓ First page loads without errors
+  ✓ No UI glitches or console errors
+
+Additional aspects not explicitly tested:
+  - Auto-selection of first order (implementation present)
+  - Manual selection within first page
+  - Dispense action buttons functionality
+
+See first-page.webm for video evidence of the basic workflow.

@@ -1,0 +1,13 @@
+=== QA Driver: Select Older Row ===
+
+✓ Browser context created
+
+❌ FAILURE: page.waitForSelector: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-sidebar="sidebar"]') to be visible[22m
+
+page.waitForSelector: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-sidebar="sidebar"]') to be visible[22m
+
+    at /workspaces/agent_hq/_target/10b3f3d050e30ec8/specs/37/qa-drivers/select-older.mjs:42:14

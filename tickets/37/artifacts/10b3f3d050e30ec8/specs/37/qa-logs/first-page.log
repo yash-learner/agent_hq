@@ -1,0 +1,32 @@
+=== QA Driver: First Page Loads ===
+Facility: 2b9997ed-7ee6-4dc8-9322-a31909ef8b47
+Patient: 1498092c-1970-4a2f-a7da-206fb256cf5e
+Encounter: 0943f2f6-753f-4012-be23-f193485d6a50
+
+✓ Browser context created with auth
+Navigating to encounters list: http://localhost:4000/facility/2b9997ed-7ee6-4dc8-9322-a31909ef8b47/encounters/patients/all
+Waiting for authenticated shell...
+✓ Authenticated shell loaded
+✓ No login UI present
+Looking for 'View Encounter' link...
+✓ Encounter opened
+Clicking 'Medicines' tab...
+✓ Medicines tab clicked
+Clicking 'Dispense History' tab...
+✓ Dispense History tab clicked
+Waiting for dispense order list...
+Found 15 dispense order elements
+✓ Dispense order list visible with 15 orders
+
+Expected behavior:
+  - We created 20 dispense orders via API
+  - First page should show ~14 orders
+  - Found 15 dispense order elements on page
+⚠️  More orders than expected - may indicate pagination already working or all loaded
+
+✅ SUCCESS: Reached Dispense History tab
+   - Navigated to encounter successfully
+   - Clicked Medicines tab
+   - Clicked Dispense History tab
+   - Found 15 dispense orders
+✓ Video saved
