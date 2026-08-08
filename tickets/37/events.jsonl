@@ -15,3 +15,4 @@
 {"event_id": "3e41f3289479ecb0:queued", "kind": "run.queued", "ticket_id": "37", "run_id": "3e41f3289479ecb0", "task_id": "implement", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
 {"event_id": "ff53298c3ab13ae3:implement-37-round2:accepted", "kind": "handoff.accepted", "ticket_id": "37", "run_id": "ff53298c3ab13ae3", "detail": "Fix blockers: use RESULTS_PER_PAGE_LIMIT constant instead of hardcoded 14; update qa-plan.md Data setup with proven DispenseOrderCreate type fields and fixture provenance"}
 {"event_id": "ff53298c3ab13ae3:succeeded", "kind": "run.succeeded", "ticket_id": "37", "run_id": "ff53298c3ab13ae3", "state": "SUCCEEDED", "artifacts": ["specs/37/review.md"]}
+{"event_id": "3e41f3289479ecb0:collected", "kind": "run.collected", "ticket_id": "37", "run_id": "3e41f3289479ecb0", "tokens": 1610000, "cost_usd": 0.881}
