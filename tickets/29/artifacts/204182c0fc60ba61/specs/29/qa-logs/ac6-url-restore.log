@@ -1,0 +1,16 @@
+AC6: Restore date filter from URL on reload
+Step 1: Apply Last 7 Days filter
+ERROR: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('button', { name: /^filter$/i }) to be visible[22m
+
+FATAL: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('button', { name: /^filter$/i }) to be visible[22m
+
+    at main (/workspaces/agent_hq/_target/204182c0fc60ba61/specs/29/qa-drivers/ac6-url-restore.mjs:27:24) {
+  log: [
+    "  - waiting for getByRole('button', { name: /^filter$/i }) to be visible"
+  ],
+  name: 'TimeoutError'
+}

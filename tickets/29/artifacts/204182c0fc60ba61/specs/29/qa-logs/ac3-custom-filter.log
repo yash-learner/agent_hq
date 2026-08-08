@@ -1,0 +1,17 @@
+AC3: Custom date range filter
+Navigating to facility invoices...
+Step 1: Click Filter button
+Step 2: Select Period filter
+Step 3: Click Custom date range
+Custom date range clicked
+Step 4: Enter custom dates
+From date: 2026-07-29, To date: 2026-08-08
+From date filled
+To date filled
+Step 5: Click Confirm button
+Confirm button clicked
+Step 6: Check URL params
+Current URL: http://localhost:4000/facility/9770a57c-7932-4494-8fde-02d96e5b3e55/billing/invoices?page=1&limit=14&created_date_after=2026-07-29T00%3A00%3A00.000Z&created_date_before=2026-08-09T00%3A00%3A00.000Z
+created_date_after: 2026-07-29T00:00:00.000Z
+created_date_before: 2026-08-09T00:00:00.000Z
+SUCCESS: Custom date filter applied with correct URL params

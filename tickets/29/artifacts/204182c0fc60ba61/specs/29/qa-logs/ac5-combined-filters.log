@@ -1,0 +1,15 @@
+AC5: Combine date filter with status filter
+Navigate to invoices
+Step 1: Apply Last 7 Days date filter
+ERROR: locator.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('button', { name: /^filter$/i })[22m
+
+FATAL: locator.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('button', { name: /^filter$/i })[22m
+
+    at main (/workspaces/agent_hq/_target/204182c0fc60ba61/specs/29/qa-drivers/ac5-combined-filters.mjs:26:59) {
+  log: [ "  - waiting for getByRole('button', { name: /^filter$/i })" ],
+  name: 'TimeoutError'
+}

@@ -1,0 +1,43 @@
+AC1: Date filter visible in filter bar
+Starting browser...
+Loading auth state from tests/.auth/user.json
+Enabling screencast actions...
+Navigating to http://localhost:4000/facility/9770a57c-7932-4494-8fde-02d96e5b3e55/billing/invoices
+Waiting for auth shell...
+Checking for loading spinner...
+Checking for auth shell (sidebar or facility nav)...
+Sidebar visible: true
+Overview nav visible: false
+Patients nav visible: false
+Auth shell verified.
+Page title: Invoices | Care
+Current URL: http://localhost:4000/facility/9770a57c-7932-4494-8fde-02d96e5b3e55/billing/invoices
+All headings on page: [ 'Command Palette', 'Invoice Management' ]
+Waiting for Invoice heading...
+Invoice heading visible.
+Step 1: Looking for Filter button...
+All buttons on page: [
+  'FACILITY WITH PATIENTS',
+  '',
+  '',
+  '',
+  '⇧ + B',
+  'AU',
+  '',
+  '⇧ + ?',
+  '',
+  ' Scan Invoice QR',
+  'Scan',
+  'Filter by Patient',
+  'Filter'
+]
+Found 1 buttons matching 'filter'
+Filter button found and visible.
+Step 2: Clicking Filter button...
+Step 3: Checking for Period option in filter dropdown...
+Period option visible: true
+SUCCESS: Period filter option is visible in the filter dropdown.
+Screenshot saved: specs/29/screenshots/ac1-period-visible.png
+Browser closed.
+Moving video from /workspaces/agent_hq/_target/204182c0fc60ba61/.agent-hq/pw-videos/page@4ef237a7a3ba134193e8b78cc0d54946.webm to specs/29/videos/ac1-filter-visible.webm
+Video saved: specs/29/videos/ac1-filter-visible.webm

@@ -1,0 +1,14 @@
+AC4: Clear date filter
+Navigate and apply Last 7 Days filter first
+ERROR: locator.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('button', { name: /^filter$/i })[22m
+
+FATAL: locator.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('button', { name: /^filter$/i })[22m
+
+    at main (/workspaces/agent_hq/_target/204182c0fc60ba61/specs/29/qa-drivers/ac4-clear-filter.mjs:26:59) {
+  log: [ "  - waiting for getByRole('button', { name: /^filter$/i })" ],
+  name: 'TimeoutError'
+}
