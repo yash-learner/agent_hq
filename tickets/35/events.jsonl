@@ -12,3 +12,4 @@
 {"event_id": "9081dcb74a68a2d8:succeeded", "kind": "run.succeeded", "ticket_id": "35", "run_id": "9081dcb74a68a2d8", "state": "SUCCEEDED", "artifacts": ["specs/35/qa-plan.md"]}
 {"event_id": "aeecc41c146b45bd:collected", "kind": "run.collected", "ticket_id": "35", "run_id": "aeecc41c146b45bd"}
 {"event_id": "aeecc41c146b45bd:failed", "kind": "run.failed", "ticket_id": "35", "run_id": "aeecc41c146b45bd", "state": "FAILED"}
+{"event_id": "aeecc41c146b45bd:blocked", "kind": "ticket.blocked", "ticket_id": "35", "run_id": "aeecc41c146b45bd", "detail": "attempt failed with unknown spend"}
