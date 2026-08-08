@@ -221,9 +221,9 @@
         "agent-session": "copilot-cli",
         "messaging": "github-comment"
       },
-      "cost_usd": null,
-      "tokens": null,
-      "usage_known": false,
+      "cost_usd": 0.39,
+      "tokens": 474900,
+      "usage_known": true,
       "artifacts": [],
       "chain_depth": 6,
       "parent_run_id": "e1a5f42c1200f6a0",
