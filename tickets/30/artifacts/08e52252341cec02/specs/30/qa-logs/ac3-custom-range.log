@@ -1,0 +1,21 @@
+[AC3] Starting: Custom date range filtering works
+[AC3] Facility ID: 9e208db7-70b4-4cd9-9711-b474c1365e76
+[AC3] Navigating to invoice list...
+[AC3] Waiting for authenticated shell...
+[AC3] Authenticated
+[AC3] Invoice list loaded
+[AC3] URL before filter: http://localhost:4000/facility/9e208db7-70b4-4cd9-9711-b474c1365e76/billing/invoices
+[AC3] Step 1: Opening custom date range picker...
+[AC3] Looking for custom range option...
+[AC3] Clicked custom range option
+[AC3] Step 2: Selecting custom dates...
+[AC3] Found 2 date input(s)
+[AC3] Setting start date: 2026-08-01
+[AC3] Setting end date: 2026-08-08
+[AC3] Custom dates entered
+[AC3] Step 3: Applying custom date range...
+[AC3] No Apply button found - filter may auto-apply
+[AC3] URL after filter: http://localhost:4000/facility/9e208db7-70b4-4cd9-9711-b474c1365e76/billing/invoices
+[AC3] ⚠ WARNING: Date parameters may not be in URL as expected
+[AC3] This may indicate custom range UI differs from expected pattern
+[AC3] Driver completed

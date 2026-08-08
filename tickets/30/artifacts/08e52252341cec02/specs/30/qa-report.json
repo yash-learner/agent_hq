@@ -1,0 +1,76 @@
+{
+  "criteria": [
+    {
+      "id": "ac1-filter-visible",
+      "title": "Period filter option visible in filter menu",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2"],
+      "videos": ["specs/30/videos/ac1-filter-visible.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac2-preset-filter",
+      "title": "Preset date range filtering works",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3"],
+      "videos": ["specs/30/videos/ac2-preset-filter.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac3-custom-range",
+      "title": "Custom date range filtering works",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3"],
+      "videos": ["specs/30/videos/ac3-custom-range.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac4-badge-display",
+      "title": "Date range displayed as badge in selected filters bar",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2"],
+      "videos": ["specs/30/videos/ac4-badge-display.webm"],
+      "screenshots": ["specs/30/screenshots/ac4-filter-state.png"]
+    },
+    {
+      "id": "ac5-clear-filter",
+      "title": "Date filter can be cleared",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3"],
+      "videos": ["specs/30/videos/ac5-clear-filter.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac6-combined-filters",
+      "title": "Date filter combines with other filters",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3", "4"],
+      "videos": ["specs/30/videos/ac6-combined-filters.webm"],
+      "screenshots": []
+    }
+  ],
+  "summary": {
+    "all_passed": true,
+    "pass": 6,
+    "fail": 0,
+    "not_exercised": 0
+  }
+}

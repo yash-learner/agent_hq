@@ -1,0 +1,17 @@
+[AC2] Starting: Preset date range filtering works
+[AC2] Facility ID: 9e208db7-70b4-4cd9-9711-b474c1365e76
+[AC2] Navigating to invoice list...
+[AC2] Waiting for authenticated shell...
+[AC2] Authenticated
+[AC2] Invoice list loaded
+[AC2] URL before filter: http://localhost:4000/facility/9e208db7-70b4-4cd9-9711-b474c1365e76/billing/invoices
+[AC2] Step 1: Opening Period filter...
+[AC2] Period filter opened
+[AC2] Step 2: Selecting "Last 7 days" preset...
+[AC2] Clicked "Last 7 days" preset
+[AC2] URL after filter: http://localhost:4000/facility/9e208db7-70b4-4cd9-9711-b474c1365e76/billing/invoices?page=1&limit=14&created_date_after=2026-08-01T00%3A00%3A00.000Z&created_date_before=2026-08-09T00%3A00%3A00.000Z
+[AC2] ✓ SUCCESS: URL contains date filter parameters
+[AC2] Date parameters present in URL
+[AC2] Verifying invoice list updated...
+[AC2] ✓ Preset date range filter applied successfully
+[AC2] Driver completed successfully

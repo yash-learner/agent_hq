@@ -1,0 +1,13 @@
+[AC1] Starting: Period filter option visible in filter menu
+[AC1] Facility ID: 9e208db7-70b4-4cd9-9711-b474c1365e76
+[AC1] Navigating to invoice list...
+[AC1] Waiting for authenticated shell...
+[AC1] Sidebar visible - authenticated
+[AC1] Step 1: Invoice list page loaded
+[AC1] Invoice list content visible
+[AC1] Step 2: Clicking Filter button...
+[AC1] Filter menu opened
+[AC1] ✓ SUCCESS: Period filter option is visible in filter menu
+[AC1] Status filter visible: true
+[AC1] Created By filter visible: true
+[AC1] Driver completed successfully
