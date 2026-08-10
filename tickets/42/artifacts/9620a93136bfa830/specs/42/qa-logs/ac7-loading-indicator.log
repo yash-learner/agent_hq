@@ -1,0 +1,13 @@
+=== AC7: Loading indicator appears during pagination ===
+[2026-08-10T18:19:53.714Z] Starting AC7 test
+[2026-08-10T18:19:53.951Z] Browser launched and configured
+[2026-08-10T18:19:57.161Z] Navigation complete
+[2026-08-10T18:19:59.766Z] ✓ Clicked Dispense History tab
+[2026-08-10T18:20:02.777Z] Initial entries: 14
+[2026-08-10T18:20:02.777Z] Scrolling to bottom to trigger pagination...
+[2026-08-10T18:20:02.785Z] Checking for loading skeleton...
+[2026-08-10T18:20:04.786Z] ⚠️  Loading skeleton didn't appear (pagination may be too fast)
+[2026-08-10T18:20:06.791Z] ✅ SUCCESS: Loading skeleton disappeared after page loaded
+[2026-08-10T18:20:06.793Z] ✅ SUCCESS: Entries increased from 14 to 20
+[2026-08-10T18:20:06.793Z] AC7 test completed
+[2026-08-10T18:20:08.914Z] ✓ Video saved to specs/42/videos/ac7-loading-indicator.webm

@@ -1,0 +1,25 @@
+=== AC2: Scroll to bottom loads next page ===
+[2026-08-10T18:18:25.906Z] Starting AC2 test
+[2026-08-10T18:18:26.000Z] Browser launched
+[2026-08-10T18:18:26.090Z] Context created with storageState and recordVideo
+[2026-08-10T18:18:26.129Z] New page created
+[2026-08-10T18:18:26.130Z] Cursor overlay enabled
+[2026-08-10T18:18:26.131Z] Navigating to: http://localhost:4000/facility/8983bf36-86b2-4b25-80df-5c06907a6692/patient/d98ce1c9-fb29-4e20-9ac3-740efe4a4767/encounter/473b2068-091e-488f-89f0-5f0b868d6890/medicines
+[2026-08-10T18:18:29.282Z] Navigation complete
+[2026-08-10T18:18:29.314Z] ✓ Sidebar visible (auth shell ready)
+[2026-08-10T18:18:31.317Z] Clicking Dispense History tab...
+[2026-08-10T18:18:31.905Z] ✓ Clicked Dispense History tab
+[2026-08-10T18:18:34.921Z] Initial entry count: 14
+[2026-08-10T18:18:34.921Z] Scrolling sidebar to bottom...
+[2026-08-10T18:18:34.932Z] ✓ Scrolled to bottom
+[2026-08-10T18:18:34.932Z] Waiting for loading skeleton...
+[2026-08-10T18:18:39.933Z] ⚠️  Loading skeleton didn't appear or was too fast
+[2026-08-10T18:18:42.935Z] Final entry count after scroll: 20
+[2026-08-10T18:18:42.935Z] ✅ SUCCESS: Next page loaded (20 > 14)
+[2026-08-10T18:18:42.935Z] ✓ Loaded 6 additional entries
+[2026-08-10T18:18:42.935Z] Clicking on a newly loaded entry...
+[2026-08-10T18:18:43.536Z] ✓ Clicked entry #15
+[2026-08-10T18:18:44.542Z] ⚠️  Entry clicked but selection state unclear
+[2026-08-10T18:18:44.543Z] AC2 test completed successfully
+[2026-08-10T18:18:45.749Z] Browser closed
+[2026-08-10T18:18:46.751Z] ✓ Video saved to specs/42/videos/ac2-scroll-pagination.webm

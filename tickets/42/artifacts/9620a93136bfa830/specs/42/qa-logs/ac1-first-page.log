@@ -1,0 +1,20 @@
+=== AC1: First page loads on tab open ===
+[2026-08-10T18:17:38.410Z] Starting AC1 test
+[2026-08-10T18:17:38.514Z] Browser launched
+[2026-08-10T18:17:38.601Z] Context created with storageState and recordVideo
+[2026-08-10T18:17:38.643Z] New page created
+[2026-08-10T18:17:38.644Z] Cursor overlay enabled
+[2026-08-10T18:17:38.644Z] Navigating to: http://localhost:4000/facility/8983bf36-86b2-4b25-80df-5c06907a6692/patient/d98ce1c9-fb29-4e20-9ac3-740efe4a4767/encounter/473b2068-091e-488f-89f0-5f0b868d6890/medicines
+[2026-08-10T18:17:41.822Z] Navigation complete
+[2026-08-10T18:17:41.822Z] Checking auth shell readiness...
+[2026-08-10T18:17:41.859Z] ✓ Sidebar visible (auth shell ready)
+[2026-08-10T18:17:43.861Z] Looking for Dispense History tab...
+[2026-08-10T18:17:44.446Z] ✓ Clicked Dispense History tab
+[2026-08-10T18:17:47.448Z] Counting visible dispense order entries...
+[2026-08-10T18:17:47.458Z] Found 14 dispense order entries
+[2026-08-10T18:17:47.458Z] ✅ SUCCESS: First page loaded with exactly 14 entries
+[2026-08-10T18:17:47.460Z] ✓ First entry is auto-selected
+[2026-08-10T18:17:47.463Z] ✓ Detail view container is visible
+[2026-08-10T18:17:47.464Z] AC1 test completed successfully
+[2026-08-10T18:17:47.989Z] Browser closed
+[2026-08-10T18:17:48.991Z] ✓ Video saved to specs/42/videos/ac1-first-page.webm

@@ -1,0 +1,10 @@
+=== AC4: Selection works for paginated rows ===
+[2026-08-10T18:20:32.434Z] Starting AC4 test
+[2026-08-10T18:20:38.727Z] ✓ Clicked Dispense History tab
+[2026-08-10T18:20:44.765Z] Total entries: 20
+[2026-08-10T18:20:45.381Z] ✓ Clicked entry #15
+[2026-08-10T18:20:47.009Z] ✓ Clicked entry #1
+[2026-08-10T18:20:48.599Z] ✓ Clicked entry #18
+[2026-08-10T18:20:49.601Z] ✅ SUCCESS: Selection works across pages
+[2026-08-10T18:20:49.602Z] AC4 test completed
+[2026-08-10T18:20:50.921Z] ✓ Video saved to specs/42/videos/ac4-selection.webm

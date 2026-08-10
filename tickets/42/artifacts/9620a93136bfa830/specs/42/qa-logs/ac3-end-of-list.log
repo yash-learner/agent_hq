@@ -1,0 +1,14 @@
+=== AC3: End of list stops fetching ===
+[2026-08-10T18:19:12.164Z] Starting AC3 test
+[2026-08-10T18:19:12.389Z] Browser launched and configured
+[2026-08-10T18:19:15.656Z] Navigation complete
+[2026-08-10T18:19:18.257Z] ✓ Clicked Dispense History tab
+[2026-08-10T18:19:21.281Z] Loading all pages...
+[2026-08-10T18:19:24.298Z] Total entries loaded: 20
+[2026-08-10T18:19:24.298Z] ✓ All 20 entries loaded (2 pages)
+[2026-08-10T18:19:24.299Z] Scrolling to bottom again and waiting 5 seconds...
+[2026-08-10T18:19:29.308Z] ✅ SUCCESS: No loading skeleton appears at end of list
+[2026-08-10T18:19:29.309Z] ✅ SUCCESS: Entry count unchanged (20)
+[2026-08-10T18:19:29.309Z] ✅ SUCCESS: No additional API requests made
+[2026-08-10T18:19:29.309Z] AC3 test completed
+[2026-08-10T18:19:31.603Z] ✓ Video saved to specs/42/videos/ac3-end-of-list.webm
