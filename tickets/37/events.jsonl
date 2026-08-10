@@ -37,3 +37,4 @@
 {"event_id": "687752aa191cc4f3:queued", "kind": "run.queued", "ticket_id": "37", "run_id": "687752aa191cc4f3", "task_id": "qa", "task_version": 1, "state": "QUEUED", "bindings": {}}
 {"event_id": "687752aa191cc4f3:rework", "kind": "run.rework", "ticket_id": "37", "run_id": "687752aa191cc4f3", "detail": "@yash-learner: again\n\n(ticket was blocked: retries exhausted)", "actor": "yash-learner", "source": "issue-comment:5238884429"}
 {"event_id": "687752aa191cc4f3:collected", "kind": "run.collected", "ticket_id": "37", "run_id": "687752aa191cc4f3", "tokens": 4323400, "cost_usd": 1.94}
+{"event_id": "687752aa191cc4f3:failed", "kind": "run.failed", "ticket_id": "37", "run_id": "687752aa191cc4f3", "state": "FAILED"}
