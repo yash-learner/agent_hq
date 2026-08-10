@@ -5,3 +5,4 @@
 {"event_id": "3558acbc02ae80f8:queued", "kind": "run.queued", "ticket_id": "41", "run_id": "3558acbc02ae80f8", "task_id": "implement", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment", "gate": "github-issue-comment"}}
 {"event_id": "1e0ea0b286b692fa:implement-41-care-fe:accepted", "kind": "handoff.accepted", "ticket_id": "41", "run_id": "1e0ea0b286b692fa", "detail": "Spec approved; implement infinite scroll pagination for DispenseOrderListSelector following PrescriptionListSelector pattern"}
 {"event_id": "1e0ea0b286b692fa:succeeded", "kind": "run.succeeded", "ticket_id": "41", "run_id": "1e0ea0b286b692fa", "state": "SUCCEEDED", "artifacts": ["specs/41/spec.md"]}
+{"event_id": "3558acbc02ae80f8:collected", "kind": "run.collected", "ticket_id": "41", "run_id": "3558acbc02ae80f8", "tokens": 2116400, "cost_usd": 1.09}
