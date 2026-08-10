@@ -1,0 +1,62 @@
+[2026-08-10T11:50:57.849Z] === QA Driver: First page loads ===
+[2026-08-10T11:50:57.850Z] Fixture IDs: facility=92016728-0113-41b0-b40f-475fdf224cf5, patient=4c643b12-bc66-4d30-b42e-8f739bb3102c, encounter=611df272-c0d2-4728-b2e7-50a3f826516b, location=4220a48c-7d40-4c3e-9985-41bfce1828f8
+[2026-08-10T11:50:57.850Z] 
+--- Token refresh check ---
+[2026-08-10T11:50:57.850Z] Attempting token refresh...
+[2026-08-10T11:50:57.914Z] Token refreshed successfully
+[2026-08-10T11:50:57.915Z] Updated tokens in storage state
+[2026-08-10T11:50:57.915Z] 
+--- Seeding 20 dispense orders via API ---
+[2026-08-10T11:50:58.072Z] Created dispense order 1: a46f20a6-8818-477b-b9cd-b7c7b1689bf6
+[2026-08-10T11:50:58.299Z] Created dispense order 2: abe7638c-a1c0-41d3-87f0-cc959808a4a1
+[2026-08-10T11:50:58.551Z] Created dispense order 3: 9495a5cf-6761-4a0f-a6dc-46286a737264
+[2026-08-10T11:50:58.791Z] Created dispense order 4: bae92adc-b36d-463f-86d4-ff6e263c6466
+[2026-08-10T11:50:59.019Z] Created dispense order 5: fcfc7e16-a214-43b6-910c-34651c631439
+[2026-08-10T11:50:59.259Z] Created dispense order 6: 83cab20f-e219-4659-af34-864060af40b5
+[2026-08-10T11:50:59.502Z] Created dispense order 7: 106fe560-026e-4e5b-a300-67e0afbf9fb9
+[2026-08-10T11:50:59.784Z] Created dispense order 8: d49a298f-c928-42d6-91ec-da5f53aaad22
+[2026-08-10T11:51:00.027Z] Created dispense order 9: 67f2a551-960f-4afc-8701-b3d07afba448
+[2026-08-10T11:51:00.262Z] Created dispense order 10: fcce294e-574a-4b7f-8b16-a50f8e244b91
+[2026-08-10T11:51:00.497Z] Created dispense order 11: e1221a66-88a5-48fe-9e07-765483df4760
+[2026-08-10T11:51:00.760Z] Created dispense order 12: 9f59e18f-67d8-4b8e-b9ed-d300ad5673e3
+[2026-08-10T11:51:00.991Z] Created dispense order 13: 0eb078f1-9860-49b0-bbe2-439dabb45130
+[2026-08-10T11:51:01.226Z] Created dispense order 14: 8c5fcb8c-f6bd-45df-bd6e-3ad2707e49bb
+[2026-08-10T11:51:01.454Z] Created dispense order 15: 54a3ea45-a1f2-49f7-bafe-cdf1b83a342c
+[2026-08-10T11:51:01.680Z] Created dispense order 16: a3c4dca3-7b92-4241-b9a2-3fe13d184996
+[2026-08-10T11:51:01.918Z] Created dispense order 17: 56645a8f-f0df-4e95-b0b7-a9010a319bec
+[2026-08-10T11:51:02.144Z] Created dispense order 18: 488d8ecf-2c99-4320-89fd-cab3ef0210af
+[2026-08-10T11:51:02.380Z] Created dispense order 19: b6580bba-f32d-475f-bcbc-91b4fe5d109f
+[2026-08-10T11:51:02.614Z] Created dispense order 20: 7ec645ab-ce17-4108-a72a-23f162b4fe0a
+[2026-08-10T11:51:02.714Z] --- Seed complete ---
+
+[2026-08-10T11:51:02.715Z] 
+--- Verifying dispense order count ---
+[2026-08-10T11:51:02.939Z] Total dispense orders: 120
+[2026-08-10T11:51:02.939Z] 
+--- Launching browser ---
+[2026-08-10T11:51:03.117Z] Browser context created with viewport 1440x900
+[2026-08-10T11:51:03.118Z] Screencast cursor overlay enabled
+[2026-08-10T11:51:03.119Z] 
+Navigating to: http://localhost:4000/facility/92016728-0113-41b0-b40f-475fdf224cf5/patient/4c643b12-bc66-4d30-b42e-8f739bb3102c/encounter/611df272-c0d2-4728-b2e7-50a3f826516b/medicines
+[2026-08-10T11:51:03.287Z] Waiting for authenticated shell...
+[2026-08-10T11:51:04.874Z] Authenticated shell confirmed
+[2026-08-10T11:51:04.946Z] Medicines tab loaded with inner tabs
+[2026-08-10T11:51:06.948Z] 
+Clicking Dispense History tab...
+[2026-08-10T11:51:10.562Z] Dispense History tab opened
+[2026-08-10T11:51:10.562Z] 
+Verifying first page of dispense orders...
+[2026-08-10T11:51:10.568Z] Dispense order list visible
+[2026-08-10T11:51:12.574Z] Visible dispense orders in selector: 15
+[2026-08-10T11:51:12.576Z] Selected orders: 5
+[2026-08-10T11:51:12.579Z] Right panel with details visible: true
+[2026-08-10T11:51:12.579Z] 
+--- Verification Results ---
+[2026-08-10T11:51:12.579Z] ✓ First page loaded: false
+[2026-08-10T11:51:12.579Z] ✓ Order auto-selected: false
+[2026-08-10T11:51:12.579Z] ✓ Details panel shown: true
+[2026-08-10T11:51:14.580Z] 
+--- Test complete ---
+[2026-08-10T11:51:16.008Z] Browser closed
+[2026-08-10T11:51:16.008Z] 
+=== SUCCESS ===

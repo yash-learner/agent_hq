@@ -1,0 +1,31 @@
+[2026-08-10T11:52:26.006Z] === QA Driver: Scroll loads more ===
+[2026-08-10T11:52:26.006Z] Using existing 120+ dispense orders from previous test
+[2026-08-10T11:52:26.006Z] 
+--- Launching browser ---
+[2026-08-10T11:52:26.196Z] Browser context created
+[2026-08-10T11:52:26.197Z] Screencast cursor overlay enabled
+[2026-08-10T11:52:26.197Z] 
+Navigating to: http://localhost:4000/facility/92016728-0113-41b0-b40f-475fdf224cf5/patient/4c643b12-bc66-4d30-b42e-8f739bb3102c/encounter/611df272-c0d2-4728-b2e7-50a3f826516b/medicines
+[2026-08-10T11:52:28.043Z] Authenticated shell confirmed
+[2026-08-10T11:52:28.096Z] Medicines tab loaded
+[2026-08-10T11:52:30.098Z] 
+Clicking Dispense History tab...
+[2026-08-10T11:52:33.685Z] Dispense History tab opened
+[2026-08-10T11:52:33.685Z] 
+Verifying first page loaded...
+[2026-08-10T11:52:35.696Z] Initial dispense order count: 15
+[2026-08-10T11:52:35.696Z] 
+Finding scroll container...
+[2026-08-10T11:52:35.696Z] Scrolling to bottom of list...
+[2026-08-10T11:52:35.706Z] Waiting for loading indicator...
+[2026-08-10T11:52:36.706Z] Waiting for new dispense orders to appear...
+[2026-08-10T11:52:39.713Z] Dispense order count after scroll: 43
+[2026-08-10T11:52:39.713Z] 
+--- Verification Results ---
+[2026-08-10T11:52:39.713Z] ✓ More orders loaded after scroll: true (15 → 43)
+[2026-08-10T11:52:39.715Z] ✓ Loading skeleton visible during fetch: check manually in video
+[2026-08-10T11:52:41.717Z] 
+--- Test complete ---
+[2026-08-10T11:52:42.981Z] Browser closed
+[2026-08-10T11:52:42.981Z] 
+=== SUCCESS ===
