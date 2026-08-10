@@ -29,3 +29,4 @@
 {"event_id": "9620a93136bfa830:failed", "kind": "run.failed", "ticket_id": "42", "run_id": "9620a93136bfa830", "state": "FAILED"}
 {"event_id": "9620a93136bfa830:artifact_rejected", "kind": "run.artifact_rejected", "ticket_id": "42", "run_id": "9620a93136bfa830", "detail": "qa-report.json: criterion 'ac5-short-lists': missing-test-data requires non-empty plan_steps_run"}
 {"event_id": "6269282ab4672b9d:queued", "kind": "run.queued", "ticket_id": "42", "run_id": "6269282ab4672b9d", "task_id": "qa", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
+{"event_id": "6269282ab4672b9d:rework", "kind": "run.rework", "ticket_id": "42", "run_id": "6269282ab4672b9d", "detail": "Previous attempt rejected: qa-report.json: criterion 'ac5-short-lists': missing-test-data requires non-empty plan_steps_run", "actor": "engine", "source": "9620a93136bfa830:artifact_rejected"}
