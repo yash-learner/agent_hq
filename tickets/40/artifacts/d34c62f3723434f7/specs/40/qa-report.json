@@ -1,0 +1,91 @@
+{
+  "criteria": [
+    {
+      "id": "ac1-custom-links-appear",
+      "title": "Custom links from care.config.ts appear in SidebarFooter",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3", "4"],
+      "videos": ["specs/40/videos/ac1-custom-links-appear.webm"],
+      "screenshots": ["specs/40/screenshots/ac1-sidebar-footer.png"]
+    },
+    {
+      "id": "ac2-internal-route-icon",
+      "title": "Internal route links display internal link icon",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3", "4"],
+      "videos": ["specs/40/videos/ac2-internal-route-icon.webm"],
+      "screenshots": ["specs/40/screenshots/ac2-internal-icon.png"]
+    },
+    {
+      "id": "ac3-external-url-icon",
+      "title": "External URL links display external link icon",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1"],
+      "videos": ["specs/40/videos/ac3-external-url-icon.webm"],
+      "screenshots": ["specs/40/screenshots/ac3-external-url-icon.png"]
+    },
+    {
+      "id": "ac4-open-in-new-tab",
+      "title": "Links with openInNewTab: true open in new tab",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3", "4"],
+      "videos": ["specs/40/videos/ac4-open-in-new-tab.webm"],
+      "screenshots": ["specs/40/screenshots/ac4-new-tab.png"]
+    },
+    {
+      "id": "ac5-open-in-current-tab",
+      "title": "Links with openInNewTab: false open in current tab",
+      "verdict": "not-exercised",
+      "evidence_kind": "code-inspection",
+      "blocker": "Test environment navigation prevented reaching authenticated facility sidebar context. Multiple navigation approaches (direct URL, homepage + facility click) resulted in sidebar not loading. Implementation verified via code inspection: internal links use raviger Link without target attribute, correctly navigating in current tab.",
+      "blocker_category": "navigation-mismatch",
+      "plan_steps_run": ["1"],
+      "videos": ["specs/40/videos/ac5-open-in-current-tab.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac6-plugin-links",
+      "title": "Plugin custom footer links appear in sidebar",
+      "verdict": "not-exercised",
+      "evidence_kind": "code-inspection",
+      "blocker": "Cannot verify without deployed plugin application. Implementation is code-complete: PluginManifest.customFooterLinks property exists and app-sidebar.tsx merges plugin links with config links.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": [],
+      "seed_attempt": {
+        "method": "none",
+        "summary": "Not applicable - requires external plugin deployment. Implementation verified via code inspection of src/pluginTypes.ts line 211 and src/components/ui/sidebar/app-sidebar.tsx lines 116-127."
+      }
+    },
+    {
+      "id": "ac7-visibility-filtering",
+      "title": "Links filtered by showIn visibility config",
+      "verdict": "not-exercised",
+      "evidence_kind": "code-inspection",
+      "blocker": "Similar to AC5, test environment prevented reaching authenticated facility sidebar context. Filtering logic verified via code inspection: custom-footer-links.tsx lines 25-30 correctly filter links by showIn array matching sidebarFor context.",
+      "blocker_category": "navigation-mismatch",
+      "plan_steps_run": ["1"],
+      "videos": ["specs/40/videos/ac7-visibility-filtering.webm"],
+      "screenshots": []
+    }
+  ],
+  "summary": {
+    "all_passed": false,
+    "pass": 4,
+    "fail": 0,
+    "not_exercised": 3
+  }
+}
