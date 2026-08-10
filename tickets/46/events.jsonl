@@ -10,3 +10,4 @@
 {"event_id": "41164cdf84df5fa5:handoff_rejected", "kind": "handoff.rejected", "ticket_id": "46", "run_id": "41164cdf84df5fa5", "detail": "queue entry repo 'care_fe' is not a configured repo"}
 {"event_id": "5be7218d9a1ffc01:queued", "kind": "run.queued", "ticket_id": "46", "run_id": "5be7218d9a1ffc01", "task_id": "arch-plan", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
 {"event_id": "5be7218d9a1ffc01:rework", "kind": "run.rework", "ticket_id": "46", "run_id": "5be7218d9a1ffc01", "detail": "Previous attempt rejected: queue entry repo 'care_fe' is not a configured repo", "actor": "engine", "source": "41164cdf84df5fa5:handoff_rejected"}
+{"event_id": "5be7218d9a1ffc01:failed", "kind": "run.failed", "ticket_id": "46", "run_id": "5be7218d9a1ffc01", "state": "FAILED"}
