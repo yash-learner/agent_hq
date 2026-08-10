@@ -38,3 +38,7 @@
 {"event_id": "8a9e14301c1a4366:queued", "kind": "run.queued", "ticket_id": "27", "run_id": "8a9e14301c1a4366", "task_id": "implement", "task_version": 1, "state": "QUEUED", "bindings": {}}
 {"event_id": "8a9e14301c1a4366:rework", "kind": "run.rework", "ticket_id": "27", "run_id": "8a9e14301c1a4366", "detail": "@yash-learner: try again\n\n(ticket was blocked: retries exhausted)", "actor": "yash-learner", "source": "issue-comment:5240220618"}
 {"event_id": "8a9e14301c1a4366:collected", "kind": "run.collected", "ticket_id": "27", "run_id": "8a9e14301c1a4366", "tokens": 1916400, "cost_usd": 1.01}
+{"event_id": "8a9e14301c1a4366:review-27:proposed", "kind": "handoff.proposed", "ticket_id": "27", "run_id": "8a9e14301c1a4366", "detail": "Implementation complete, ready for review against spec"}
+{"event_id": "9f8a7a0eea777667:queued", "kind": "run.queued", "ticket_id": "27", "run_id": "9f8a7a0eea777667", "task_id": "review", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
+{"event_id": "8a9e14301c1a4366:review-27:accepted", "kind": "handoff.accepted", "ticket_id": "27", "run_id": "8a9e14301c1a4366", "detail": "Implementation complete, ready for review against spec"}
+{"event_id": "8a9e14301c1a4366:succeeded", "kind": "run.succeeded", "ticket_id": "27", "run_id": "8a9e14301c1a4366", "state": "SUCCEEDED", "artifacts": ["specs/27/qa-plan.md"]}
