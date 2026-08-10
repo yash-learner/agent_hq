@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-10T18:54:39Z",
+  "generated_at": "2026-08-10T18:54:42Z",
   "tickets": [
     {
       "ticket_id": "1",
@@ -8682,7 +8682,7 @@
     {
       "ticket_id": "42",
       "pinned_comment_id": 5239737332,
-      "status": "ACTIVE",
+      "status": "AWAITING_MERGE",
       "runs": [
         {
           "run_id": "782507695f43de84",
