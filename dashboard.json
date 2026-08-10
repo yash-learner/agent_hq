@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-10T16:47:15Z",
+  "generated_at": "2026-08-10T16:53:12Z",
   "tickets": [
     {
       "ticket_id": "1",
@@ -5263,7 +5263,7 @@
       "block_reason": "retries exhausted",
       "block_source": "engine",
       "interrupted_run_id": "e8cf043782f7eef7",
-      "comments_polled_at": "2026-08-10T12:34:06Z",
+      "comments_polled_at": "2026-08-10T16:47:18Z",
       "work_repos": [
         {
           "repo": "yash-learner/care_fe_agent_hq",
