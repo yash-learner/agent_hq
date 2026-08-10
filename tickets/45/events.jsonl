@@ -33,3 +33,4 @@
 {"event_id": "61bc7a013065c9d8:collected", "kind": "run.collected", "ticket_id": "45", "run_id": "61bc7a013065c9d8", "tokens": 4233000, "cost_usd": 2.1}
 {"event_id": "61bc7a013065c9d8:failed", "kind": "run.failed", "ticket_id": "45", "run_id": "61bc7a013065c9d8", "state": "FAILED"}
 {"event_id": "61bc7a013065c9d8:artifact_rejected", "kind": "run.artifact_rejected", "ticket_id": "45", "run_id": "61bc7a013065c9d8", "detail": "qa-report.json: criterion 'ac2-no-expiry': missing-test-data requires driver specs/45/qa-drivers/ac2-no-expiry.mjs in the ledger"}
+{"event_id": "61bc7a013065c9d8:blocked", "kind": "ticket.blocked", "ticket_id": "45", "run_id": "61bc7a013065c9d8", "detail": "retries exhausted"}
