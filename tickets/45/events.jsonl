@@ -25,3 +25,4 @@
 {"event_id": "60cad9296115106b:queued", "kind": "run.queued", "ticket_id": "45", "run_id": "60cad9296115106b", "task_id": "qa", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
 {"event_id": "156945c4925701ec:qa-45:accepted", "kind": "handoff.accepted", "ticket_id": "45", "run_id": "156945c4925701ec", "detail": "Implementation complete with no blockers; expiry date column added to SupplyDeliveryTable with correct positioning, formatting (dd/MM/yyyy), and support for both internal and external delivery flows."}
 {"event_id": "156945c4925701ec:succeeded", "kind": "run.succeeded", "ticket_id": "45", "run_id": "156945c4925701ec", "state": "SUCCEEDED", "artifacts": ["specs/45/review.md"]}
+{"event_id": "60cad9296115106b:collected", "kind": "run.collected", "ticket_id": "45", "run_id": "60cad9296115106b", "tokens": 5032000, "cost_usd": 2.31}
