@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-10T12:18:13Z",
+  "generated_at": "2026-08-10T12:18:14Z",
   "tickets": [
     {
       "ticket_id": "1",
@@ -8435,7 +8435,8 @@
           "chain_depth": 0,
           "source_event_id": "46:opened:2026-08-10T12:17:42Z",
           "enqueue_index": 0,
-          "queue_seq": 0
+          "queue_seq": 0,
+          "repo": "yash-learner/care_fe_agent_hq"
         }
       ],
       "block_reason": null,
