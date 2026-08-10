@@ -97,7 +97,7 @@
   "block_reason": "branch_conflict",
   "block_source": "task",
   "interrupted_run_id": "7f1b4aeb18049d39",
-  "comments_polled_at": "2026-08-10T12:12:10Z",
+  "comments_polled_at": "2026-08-10T15:13:04Z",
   "work_repos": [
     {
       "repo": "yash-learner/care_fe_agent_hq",
