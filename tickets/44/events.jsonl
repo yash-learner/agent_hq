@@ -6,3 +6,4 @@
 {"event_id": "4af8c0a28362043b:implement-care-fe-44:accepted", "kind": "handoff.accepted", "ticket_id": "44", "run_id": "4af8c0a28362043b", "detail": "Implement filtering of used diagnostic report codes and support creating multiple reports per Service Request"}
 {"event_id": "4af8c0a28362043b:succeeded", "kind": "run.succeeded", "ticket_id": "44", "run_id": "4af8c0a28362043b", "state": "SUCCEEDED", "artifacts": ["specs/44/spec.md"]}
 {"event_id": "ac57eccfd10b2e54:collected", "kind": "run.collected", "ticket_id": "44", "run_id": "ac57eccfd10b2e54", "tokens": 2017700, "cost_usd": 1.1}
+{"event_id": "ac57eccfd10b2e54:failed", "kind": "run.failed", "ticket_id": "44", "run_id": "ac57eccfd10b2e54", "state": "FAILED"}
