@@ -37,3 +37,4 @@
 {"event_id": "d34c62f3723434f7:rework", "kind": "run.rework", "ticket_id": "40", "run_id": "d34c62f3723434f7", "detail": "Previous attempt rejected: qa-report.json: video specs/40/videos/ac1-external-link.webm is claimed by criteria 'ac1-external-link' and 'ac3-external-icon'", "actor": "engine", "source": "dc643276c9bc588e:artifact_rejected"}
 {"event_id": "d34c62f3723434f7:collected", "kind": "run.collected", "ticket_id": "40", "run_id": "d34c62f3723434f7", "tokens": 6338000, "cost_usd": 2.91}
 {"event_id": "d34c62f3723434f7:failed", "kind": "run.failed", "ticket_id": "40", "run_id": "d34c62f3723434f7", "state": "FAILED"}
+{"event_id": "d34c62f3723434f7:artifact_rejected", "kind": "run.artifact_rejected", "ticket_id": "40", "run_id": "d34c62f3723434f7", "detail": "qa-report.json: criterion 'ac6-plugin-links': missing-test-data seed_attempt.method must be ui, api, or both (got 'none'; none means no seed was attempted)"}
