@@ -28,3 +28,4 @@
 {"event_id": "3b424f1de3897abf:collected", "kind": "run.collected", "ticket_id": "41", "run_id": "3b424f1de3897abf", "tokens": 5132200, "cost_usd": 2.35}
 {"event_id": "3b424f1de3897abf:failed", "kind": "run.failed", "ticket_id": "41", "run_id": "3b424f1de3897abf", "state": "FAILED"}
 {"event_id": "3b424f1de3897abf:artifact_rejected", "kind": "run.artifact_rejected", "ticket_id": "41", "run_id": "3b424f1de3897abf", "detail": "qa-report.json: criterion '05-first-page-mobile': attempted fail/not-exercised requires driver specs/41/qa-drivers/05-first-page-mobile.mjs in the ledger"}
+{"event_id": "1508b7ea6d6bddf6:queued", "kind": "run.queued", "ticket_id": "41", "run_id": "1508b7ea6d6bddf6", "task_id": "qa", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
