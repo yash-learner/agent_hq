@@ -32,3 +32,4 @@
 {"event_id": "82bcfa0a4b14c4c5:succeeded", "kind": "run.succeeded", "ticket_id": "40", "run_id": "82bcfa0a4b14c4c5", "state": "SUCCEEDED", "artifacts": ["specs/40/review.md"]}
 {"event_id": "dc643276c9bc588e:collected", "kind": "run.collected", "ticket_id": "40", "run_id": "dc643276c9bc588e", "tokens": 3028800, "cost_usd": 1.76}
 {"event_id": "dc643276c9bc588e:failed", "kind": "run.failed", "ticket_id": "40", "run_id": "dc643276c9bc588e", "state": "FAILED"}
+{"event_id": "dc643276c9bc588e:artifact_rejected", "kind": "run.artifact_rejected", "ticket_id": "40", "run_id": "dc643276c9bc588e", "detail": "qa-report.json: video specs/40/videos/ac1-external-link.webm is claimed by criteria 'ac1-external-link' and 'ac3-external-icon'"}
