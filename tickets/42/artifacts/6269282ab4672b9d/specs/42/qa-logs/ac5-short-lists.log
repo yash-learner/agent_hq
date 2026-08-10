@@ -1,0 +1,50 @@
+[2026-08-10T18:43:48.676Z] === AC5: Short lists do not trigger repeated fetches ===
+[2026-08-10T18:43:48.677Z] Facility: 6f63fb9b-14f1-4409-b66f-82fe5d69488f
+[2026-08-10T18:43:48.677Z] Patient: 87d156d7-f05a-462d-9af0-3760d2416d34
+[2026-08-10T18:43:48.677Z] Encounter: 904301f3-0449-4366-b3dd-4ef3d6ce9242
+[2026-08-10T18:43:48.677Z] Step 1: Seeding exactly 10 dispense orders via API
+[2026-08-10T18:43:48.677Z] Starting seed: creating 10 dispense orders
+[2026-08-10T18:43:48.677Z] Fetching facility locations...
+[2026-08-10T18:43:48.784Z] Fetched locations: count=8
+[2026-08-10T18:43:48.784Z] Using location ID: 1f760150-5295-488f-91b4-203d5b101c24
+[2026-08-10T18:43:48.784Z] Creating dispense order 1/10...
+[2026-08-10T18:43:48.936Z] Created dispense order 1/10: 39cb25c6-f7fa-4cc7-9f81-aec6052171d7
+[2026-08-10T18:43:48.936Z] Creating dispense order 2/10...
+[2026-08-10T18:43:49.096Z] Created dispense order 2/10: 1771677a-c265-4228-8fc4-db81a7cff713
+[2026-08-10T18:43:49.096Z] Creating dispense order 3/10...
+[2026-08-10T18:43:49.237Z] Created dispense order 3/10: 39e8619d-acdc-4f08-a33c-79cce6e56d89
+[2026-08-10T18:43:49.237Z] Creating dispense order 4/10...
+[2026-08-10T18:43:49.381Z] Created dispense order 4/10: 453f98a9-fe81-4142-a418-6b59dbffc7c9
+[2026-08-10T18:43:49.381Z] Creating dispense order 5/10...
+[2026-08-10T18:43:49.530Z] Created dispense order 5/10: beb862ac-50ad-4bbf-9e5b-e4071192a686
+[2026-08-10T18:43:49.530Z] Creating dispense order 6/10...
+[2026-08-10T18:43:49.678Z] Created dispense order 6/10: e382bf12-0b65-47b7-9857-678840897370
+[2026-08-10T18:43:49.678Z] Creating dispense order 7/10...
+[2026-08-10T18:43:49.817Z] Created dispense order 7/10: 9643071c-4210-4f7e-8c15-cdc0f4968ca9
+[2026-08-10T18:43:49.817Z] Creating dispense order 8/10...
+[2026-08-10T18:43:49.967Z] Created dispense order 8/10: f0db7615-9dd5-4b63-9e83-0f00ff60721b
+[2026-08-10T18:43:49.967Z] Creating dispense order 9/10...
+[2026-08-10T18:43:50.124Z] Created dispense order 9/10: 75cddc94-f456-4e06-a09d-77f30a681e82
+[2026-08-10T18:43:50.125Z] Creating dispense order 10/10...
+[2026-08-10T18:43:50.269Z] Created dispense order 10/10: a7cf3c05-7434-415b-a9d5-a165c44f3931
+[2026-08-10T18:43:50.269Z] Seed complete: created 10 dispense orders
+[2026-08-10T18:43:50.269Z] Seeded 10 dispense orders
+[2026-08-10T18:43:50.269Z] Step 2: Opening browser and navigating to Dispense History tab
+[2026-08-10T18:43:50.488Z] Enabled cursor overlay
+[2026-08-10T18:43:50.488Z] Navigating to: http://localhost:4000/facility/6f63fb9b-14f1-4409-b66f-82fe5d69488f/patient/87d156d7-f05a-462d-9af0-3760d2416d34/encounter/904301f3-0449-4366-b3dd-4ef3d6ce9242/medicines
+[2026-08-10T18:43:50.769Z] Waiting for auth shell readiness...
+[2026-08-10T18:43:54.051Z] Auth shell ready: sidebar visible
+[2026-08-10T18:43:54.051Z] Waiting for Dispense History tab
+[2026-08-10T18:43:54.069Z] Clicking Dispense History tab
+[2026-08-10T18:43:56.652Z] Step 3: Counting visible dispense order entries
+[2026-08-10T18:43:56.661Z] Visible dispense orders: 14
+[2026-08-10T18:43:56.661Z] Step 4: Checking for loading skeleton (should NOT be present)
+[2026-08-10T18:43:56.662Z] Loading skeleton count: 0
+[2026-08-10T18:43:56.662Z] Step 5: Scrolling to bottom and waiting 5 seconds
+[2026-08-10T18:44:01.668Z] Step 6: Verifying no loading skeleton appeared after scroll
+[2026-08-10T18:44:01.670Z] Loading skeleton count after scroll: 0
+[2026-08-10T18:44:01.671Z] Final dispense order count: 14 (should still be 14)
+[2026-08-10T18:44:01.671Z] ⚠️ UNEXPECTED: dispenseOrders=14 (expected 10), loadingSkeleton=0 (expected 0), loadingSkeletonAfter=0 (expected 0), finalCount=14 (expected 10)
+[2026-08-10T18:44:03.236Z] Waiting for video to be written...
+[2026-08-10T18:44:05.237Z] Video saved: specs/42/videos/ac5-short-lists.webm
+[2026-08-10T18:44:05.238Z] === AC5 Complete ===

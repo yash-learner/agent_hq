@@ -1,0 +1,99 @@
+{
+  "criteria": [
+    {
+      "id": "ac1-first-page",
+      "title": "First page loads on tab open",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Driver not attempted after AC5 video capture failure blocked QA continuation",
+      "blocker_category": "video-failure",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac2-scroll-loads-next",
+      "title": "Scroll to bottom loads next page",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Driver not attempted after AC5 video capture failure blocked QA continuation",
+      "blocker_category": "video-failure",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac3-end-stops-fetching",
+      "title": "End of list stops fetching",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Driver not attempted after AC5 video capture failure blocked QA continuation",
+      "blocker_category": "video-failure",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac4-selection-works",
+      "title": "Selection works for paginated rows",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Driver not attempted after AC5 video capture failure blocked QA continuation",
+      "blocker_category": "video-failure",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac5-short-lists",
+      "title": "Short lists do not trigger repeated fetches",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Video file created but is 0 bytes - Playwright recordVideo did not write content in headless mode in this environment",
+      "blocker_category": "video-failure",
+      "plan_steps_run": [
+        "1-seed-10-orders",
+        "2-navigate-to-medicines",
+        "3-click-dispense-history",
+        "4-count-entries",
+        "5-check-no-skeleton",
+        "6-scroll-to-bottom",
+        "7-verify-no-pagination"
+      ],
+      "seed_attempt": {
+        "method": "api",
+        "summary": "Successfully created 10 dispense orders via POST /api/v1/facility/{facilityId}/order/dispense/ with patient, location, status, name, and note fields. Location ID obtained from GET /api/v1/facility/{facilityId}/location/. All API calls returned 2xx status codes. Functional verification succeeded: no loading skeleton appeared and no pagination was triggered for the short list, matching AC5 requirements."
+      },
+      "videos": ["specs/42/videos/ac5-short-lists.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac6-desktop-mobile",
+      "title": "Pagination works on desktop and mobile",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Driver not attempted after AC5 video capture failure blocked QA continuation",
+      "blocker_category": "video-failure",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac7-loading-indicator",
+      "title": "Loading indicator appears during pagination",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Driver not attempted after AC5 video capture failure blocked QA continuation",
+      "blocker_category": "video-failure",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    }
+  ],
+  "summary": {
+    "all_passed": false,
+    "pass": 0,
+    "fail": 0,
+    "not_exercised": 7
+  }
+}
