@@ -1,0 +1,95 @@
+{
+  "criteria": [
+    {
+      "id": "first-page-loads",
+      "title": "First page loads — Open Dispense History; latest dispenses appear in the left selector",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "The dispense order list selector could not be identified in the DOM despite successful navigation to the Dispense History tab. API successfully created 15 test dispense orders, but UI components (DispenseOrderListSelector cards/items) were not locatable via standard Playwright selectors (data-testid, role-based, class patterns). Without reliable selectors for the list items, visual verification of the first page load was not possible.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": ["1", "2", "3", "4"],
+      "seed_attempt": {
+        "method": "api",
+        "summary": "Successfully created 15 dispense orders via POST /api/v1/facility/{facilityId}/order/dispense/ with valid patient, location, and status fields. API confirmed creation with 200 responses and returned dispense order IDs. However, the UI component structure for the Dispense History selector (left panel) could not be identified to verify the orders were displayed. Without reliable selectors for the dispense order cards or list items, visual verification of the first page load was not possible."
+      },
+      "videos": ["specs/37/videos/first-page-loads.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "scroll-loads-more",
+      "title": "Scroll loads more — Scroll to bottom; older rows append; loading indicator appears then settles",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Cannot verify scroll behavior without first identifying the dispense order list container and card elements from criterion 1. The DOM structure of the dispense order selector was not accessible.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "select-older-row",
+      "title": "Select older row — Click a row that only appeared after scroll; detail matches that dispense",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Selection testing requires visible and identifiable dispense order cards, which were blocked in criterion 1 due to missing UI selectors.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "end-of-list",
+      "title": "End of list — Scroll until no more pages; further scrolling does not spam requests",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Network request verification requires a functional scroll container with identifiable dispense order items, which was blocked in criterion 1.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "short-list",
+      "title": "Short list — Encounter with few dispenses: no extra page fetches in a loop",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Would require identifying an encounter with <14 dispense orders and verifying network behavior, but blocked by UI selector issues from criterion 1.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "error-resilience",
+      "title": "Error resilience — Failed next-page fetch does not clear already loaded items",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Network failure simulation requires a working dispense list view with identifiable items, which was blocked in criterion 1.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "no-regression",
+      "title": "No regression — Opening Dispense History or selecting items from the first page still works as before",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Navigation to the Dispense History tab succeeded, confirming the route is not broken. However, verification of auto-selection, manual selection, and detail panel updates requires identifying the dispense order cards and detail components, which were blocked due to missing selector information.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": ["1", "2", "3"],
+      "seed_attempt": {
+        "method": "api",
+        "summary": "Used the same 15 seeded dispense orders from criterion 1. Navigation to Dispense History succeeded, but could not verify selection behavior or right panel detail display due to missing selector information for individual dispense order cards."
+      },
+      "videos": [],
+      "screenshots": []
+    }
+  ],
+  "summary": {
+    "all_passed": false,
+    "pass": 0,
+    "fail": 0,
+    "not_exercised": 7
+  }
+}

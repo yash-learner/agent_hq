@@ -1,0 +1,20 @@
+Criterion 1: First page loads
+Facility: fe7483e3-5538-4b95-9f63-08c8692e11af
+Patient: c9f40078-f1e5-4ab2-907a-c63cbb7fcafe
+Encounter: 78722382-e2f3-4086-8233-f70b96a04ea2
+Step 1: Navigate to encounters page
+Waiting for authenticated shell...
+✓ Authenticated shell loaded
+Step 2: Opening encounter...
+✓ Encounter opened
+Step 3: Click Medicines tab
+✓ Medicines tab opened
+Step 4: Click Dispense History tab
+✓ Dispense History tab opened
+Step 5: Verify dispense orders loaded
+Found 0 dispense order cards visible
+✓ First page loaded successfully
+
+✓ PASS: First page loads with initial dispense orders
+
+✓ Video saved to specs/37/videos/first-page-loads.webm
