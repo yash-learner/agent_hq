@@ -10,3 +10,4 @@
 {"event_id": "61075d43fec5bcb5:queued", "kind": "run.queued", "ticket_id": "42", "run_id": "61075d43fec5bcb5", "task_id": "review", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
 {"event_id": "78bfcf87974fc32c:review-42-dispense-pagination:accepted", "kind": "handoff.accepted", "ticket_id": "42", "run_id": "78bfcf87974fc32c", "detail": "Review infinite scroll implementation against spec acceptance criteria"}
 {"event_id": "78bfcf87974fc32c:succeeded", "kind": "run.succeeded", "ticket_id": "42", "run_id": "78bfcf87974fc32c", "state": "SUCCEEDED", "artifacts": ["specs/42/qa-plan.md"]}
+{"event_id": "61075d43fec5bcb5:collected", "kind": "run.collected", "ticket_id": "42", "run_id": "61075d43fec5bcb5", "tokens": 800500, "cost_usd": 0.462}
