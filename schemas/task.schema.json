@@ -127,6 +127,13 @@
         "type": "string"
       }
     },
+    "mcp": {
+      "type": "array",
+      "description": "MCP server names enabled for this task's agent session. Each name must exist in config/mcp-servers.yml (engine.config.validate_task_bindings); the executor adapter materializes the resolved entries into the run worktree before spawning. Absent means no MCP servers -- the default for every task.",
+      "items": {
+        "type": "string"
+      }
+    },
     "budget": {
       "type": "object",
       "additionalProperties": false,

@@ -1,0 +1,46 @@
+# MCP-driven sibling of `qa`: same contract, different hands. Where `qa`
+# writes one Playwright driver script per criterion and runs it, this task
+# drives the running app live through the `playwright` MCP server's browser
+# tools (declared under `mcp`; resolved from config/mcp-servers.yml into the
+# session), recording one video per criterion with browser_start_video /
+# browser_stop_video, then codifies what worked into the same canonical
+# `qa-drivers/{id}.mjs` + `qa-logs/{id}.log` receipts. Nothing queues it by
+# default -- the script-based `qa` stays the pilot route; a run reaches this
+# task the way any registered task does (a queue entry or `/agent-hq do
+# agent-qa`). `videos/`, `screenshots/`, `qa-drivers/`, and `qa-logs/` are
+# DIRECTORY artifacts (trailing slash): their contents cannot be named in
+# advance, so the engine collects whatever is there, zero or more. They are
+# ledger artifacts like every other output -- kept out of the work repo,
+# which is for product code. `qa-report.json` is required; collect validates
+# honesty exactly as for `qa` (filename convention, no task-id special case):
+# pass needs canonical `videos/{id}.webm` plus matching `qa-drivers/{id}.mjs`
+# and non-empty `qa-logs/{id}.log`.
+id: agent-qa
+version: 1
+description: Verify the change in a running app by driving it live through MCP browser tools, with per-criterion video evidence reflected onto the PR.
+trigger: enqueued_by
+mcp:
+  - playwright
+context:
+  - constitution
+  - specs/{ticket}/*
+skills:
+  - prompts/agent-qa.md
+  - checklists/qa-coverage.md
+  - checklists/qa-report-contract.md
+# agent-qa verifies; it never edits the product. Everything it leaves in the
+# worktree is scratch, so the engine discards its work patch outright rather
+# than trusting the prompt's "put scratch in .agent-hq/" to hold.
+writes_code: false
+outputs:
+  artifacts:
+    - specs/{ticket}/qa.md
+    - specs/{ticket}/qa-report.json
+    - specs/{ticket}/videos/
+    - specs/{ticket}/screenshots/
+    - specs/{ticket}/qa-drivers/
+    - specs/{ticket}/qa-logs/
+budget:
+  max_cost_usd: 10
+  max_runtime_min: 60
+  retries: 1

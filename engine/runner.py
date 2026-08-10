@@ -10,7 +10,8 @@ credential. State crosses the job boundary as plain files transported by
 deterministic per-phase paths (`prepare_dir_for`/`execute_dir_for`):
 
   - **prepare** writes only the claim (`store.claim_run`) and binding, then
-    `bundle.json` (prompt, tools, deadline, repo, base_commit, output_paths,
+    `bundle.json` (prompt, tools, resolved mcp_servers, deadline, repo,
+    base_commit, output_paths,
     and -- for a task whose prompt needs the parent diff -- `diff_base`/
     `diff_head` commit ids) plus the restored `run.input_artifacts` content
     (read from the source run's ledger namespace). Prepare has no work-repo
@@ -62,7 +63,7 @@ from jsonschema import Draft202012Validator
 
 from engine import engine as eng
 from engine.adapters._github import GitHubClient
-from engine.config import Config, resolve_binding
+from engine.config import Config, resolve_binding, resolve_mcp_servers
 from engine.engine import (
     _complete_if_queue_empty,
     _escalate,
@@ -76,7 +77,7 @@ from engine.engine import (
     resolve_target_repo,
     subst,
 )
-from engine.handoff import _check_containment, validate_queue
+from engine.handoff import _check_containment, substitute_queue_targets, validate_queue
 from engine.models import Event, RunState, TaskRun
 from engine.qa_report import format_qa_summary_footer, resolve_qa_media, validate_qa_report
 from engine.state import _now_iso, artifact_ledger_path
@@ -825,6 +826,9 @@ def _prepare(config, taskdefs, store, adapter_fn, now_iso, ticket_id, run, taskd
             config=config,
         ),
         "tools": taskdef.get("tools", []),
+        # Resolved catalog entries, not just names: execute is a separate
+        # credential-free job that must not need config/ to act on them.
+        "mcp_servers": resolve_mcp_servers(config, taskdef),
         "deadline": run.get("deadline"),
         "repo": repo,
         "base_commit": base_commit,
@@ -946,7 +950,11 @@ def _execute(config, store, adapter_fn, run, taskdef) -> dict:
         return setup_failure
 
     result = agent.run(
-        {"prompt": bundle["prompt"], "worktree": str(worktree)},
+        {
+            "prompt": bundle["prompt"],
+            "worktree": str(worktree),
+            "mcp_servers": bundle.get("mcp_servers", {}),
+        },
         bundle.get("tools", []),
         bundle.get("deadline"),
     )
@@ -1256,6 +1264,22 @@ def _collect_success(
         config=config,
         worktree=staging_dir,
         run=TaskRun.from_dict(run),
+    )
+    if reason is not None:
+        _fail_control_invalid(store, config, taskdefs, taskdef, ticket_id, run, adapter_fn, reason)
+        return
+
+    # Per-ticket queue substitution (mirror of resolve_binding's label
+    # override): an allowlisted `hq:qa=<task>` ticket label swaps an accepted
+    # `qa` entry for the named task, so review's prompt keeps queueing `qa`
+    # and the engine reroutes it per ticket. Applied here, before anything
+    # consumes `accepted`, so a gated run stores the SUBSTITUTED entries in
+    # `pending_handoffs` and the later gate-approval apply needs no labels.
+    # Run identity is unaffected: the target task is deliberately not part of
+    # `compute_handoff_run_id`. An unknown substituted id rejects through the
+    # same invalid-control path as validate_queue's own unknown-task check.
+    accepted, reason = substitute_queue_targets(
+        accepted, config=config, taskdefs=taskdefs, ticket_labels=details.labels
     )
     if reason is not None:
         _fail_control_invalid(store, config, taskdefs, taskdef, ticket_id, run, adapter_fn, reason)

@@ -10,11 +10,12 @@ state and are enforced atomically in `apply_queue`, not here.
 from __future__ import annotations
 
 import json
+from dataclasses import replace
 from pathlib import Path
 
 from jsonschema import Draft202012Validator
 
-from engine.config import Config
+from engine.config import Config, resolve_task_substitution
 from engine.engine import subst
 from engine.models import Handoff, TaskRun
 
@@ -129,3 +130,38 @@ def validate_queue(
         )
 
     return accepted, None
+
+
+def substitute_queue_targets(
+    accepted: list[Handoff],
+    *,
+    config: Config,
+    taskdefs: dict[str, dict],
+    ticket_labels: list[str],
+) -> tuple[list[Handoff], str | None]:
+    """Apply per-ticket task substitution (`resolve_task_substitution`) to a
+    validated queue declaration. Returns (entries, rejection_reason) with the
+    same all-or-nothing contract as `validate_queue`.
+
+    Runs AFTER `validate_queue`, so a substituted id must be re-checked
+    against the loaded taskdefs here -- the entry passed the unknown-task
+    check under its DECLARED name, and the allowlist gates only the label
+    prefix, never the value. The substitution is appended to the entry's
+    `reason`, which is exactly what the handoff.proposed/accepted events carry
+    as their detail -- so the ledger records that the task was rerouted.
+    Without a matching allowlisted label every entry passes through untouched.
+    """
+    out: list[Handoff] = []
+    for h in accepted:
+        target = resolve_task_substitution(config, ticket_labels, h.target_task)
+        if target == h.target_task:
+            out.append(h)
+            continue
+        if target not in taskdefs:
+            return [], (
+                f"queue entry target '{h.target_task}' substituted with "
+                f"'{target}' via ticket label is not a known task"
+            )
+        note = f"task '{h.target_task}' substituted with '{target}' via ticket label"
+        out.append(replace(h, target_task=target, reason=f"{h.reason} [{note}]"))
+    return out, None

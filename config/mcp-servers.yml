@@ -1,0 +1,24 @@
+# MCP server catalog (§6). Maps a server name to the entry the executor
+# adapter writes verbatim into the run worktree's project-level `.mcp.json`
+# ({"mcpServers": {...}}) before spawning -- project-level config takes
+# runtime precedence in Copilot CLI, so no global state is touched and a task
+# with no `mcp` field gets no file and no servers (current behavior for every
+# other task). A taskdef `mcp` name with no entry here fails
+# `agent-hq tasks validate` (engine.config.validate_task_bindings).
+playwright:
+  type: local
+  command: npx
+  # -y is mandatory: without it npx prompts to install and the headless child
+  # hangs forever. --headless because the child has no display. --caps=devtools
+  # enables browser_start_video / browser_stop_video / browser_video_chapter;
+  # --output-dir keeps raw recordings under .agent-hq/ (never the work patch).
+  args:
+    - "-y"
+    - "@playwright/mcp@latest"
+    - "--headless"
+    - "--browser"
+    - "chromium"
+    - "--caps=devtools"
+    - "--output-dir"
+    - ".agent-hq/mcp-output"
+  tools: ["*"]

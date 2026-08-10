@@ -216,7 +216,10 @@ class ClaudeCodeHeadless:
         self._commit_if_dirty(worktree, "agent-hq: work")
         base = self._git("rev-parse", _BASE_TAG, cwd=worktree).strip()
         tip = self._git("rev-parse", "work", cwd=worktree).strip()
-        excludes = [f":!{p}" for p in exclude_paths] + [":!.agent-hq"]
+        # `.mcp.json` is engine-owned MCP session config written by the
+        # executor adapter at spawn -- never product code, so it is excluded
+        # here rather than trusting every MCP task to be writes_code: false.
+        excludes = [f":!{p}" for p in exclude_paths] + [":!.agent-hq", ":!.mcp.json"]
         # --binary: without it git emits "Binary files differ" and `git apply`
         # on the collect side rejects the patch -- any PNG/font/fixture the
         # agent adds (QA screenshots, notably) would fail the run.
