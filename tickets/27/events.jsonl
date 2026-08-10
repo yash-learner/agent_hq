@@ -43,3 +43,7 @@
 {"event_id": "8a9e14301c1a4366:review-27:accepted", "kind": "handoff.accepted", "ticket_id": "27", "run_id": "8a9e14301c1a4366", "detail": "Implementation complete, ready for review against spec"}
 {"event_id": "8a9e14301c1a4366:succeeded", "kind": "run.succeeded", "ticket_id": "27", "run_id": "8a9e14301c1a4366", "state": "SUCCEEDED", "artifacts": ["specs/27/qa-plan.md"]}
 {"event_id": "9f8a7a0eea777667:collected", "kind": "run.collected", "ticket_id": "27", "run_id": "9f8a7a0eea777667", "tokens": 348500, "cost_usd": 0.327}
+{"event_id": "9f8a7a0eea777667:qa-27:proposed", "kind": "handoff.proposed", "ticket_id": "27", "run_id": "9f8a7a0eea777667", "detail": "Implementation is clean with no blockers; ready for live-flow verification against acceptance criteria"}
+{"event_id": "9eb3c2fc58730e11:queued", "kind": "run.queued", "ticket_id": "27", "run_id": "9eb3c2fc58730e11", "task_id": "qa", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
+{"event_id": "9f8a7a0eea777667:qa-27:accepted", "kind": "handoff.accepted", "ticket_id": "27", "run_id": "9f8a7a0eea777667", "detail": "Implementation is clean with no blockers; ready for live-flow verification against acceptance criteria"}
+{"event_id": "9f8a7a0eea777667:succeeded", "kind": "run.succeeded", "ticket_id": "27", "run_id": "9f8a7a0eea777667", "state": "SUCCEEDED", "artifacts": ["specs/27/review.md"]}
