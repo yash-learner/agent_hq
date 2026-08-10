@@ -1,0 +1,98 @@
+{
+  "criteria": [
+    {
+      "id": "01-first-page-desktop",
+      "title": "First page loads immediately — Desktop",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Despite exhaustive mid-session token recovery (JWT refresh via /api/v1/auth/token/refresh/ with HTTP 200 success, followed by full UI login automation filling admin/admin credentials and clicking sign in), the CARE frontend consistently rendered login tabs on all facility-scoped routes including facility overview and encounter pages. The auth shell readiness gate (spinner gone + facility nav label or sidebar visible) was never achieved. The URL remained on the facility/encounter path throughout, but the React app showed 'Log in as Staff' / 'Log in as Patient' tabs instead of the Medicines tab. Created 25 dispense orders via API successfully (with facility-scoped auth working), but the browser context could not transition to an authenticated app shell. Attempted: token refresh (successful), UI login (button clicks successful), page reload, and alternate navigation to facility overview - all showed login UI.",
+      "blocker_category": "auth-failure",
+      "plan_steps_run": [
+        "Token refresh via /api/v1/auth/token/refresh/",
+        "Created 25 dispense orders via POST /api/v1/facility/{facilityId}/order/dispense/ (all successful)",
+        "UI login automation: navigated to encounter page, clicked 'Log in as Staff' tab, filled username/password, clicked sign in button",
+        "Page reload after login",
+        "Alternate navigation to facility overview to verify auth",
+        "Waited for auth shell readiness (spinner gone, facility nav label)"
+      ],
+      "seed_attempt": {
+        "method": "api",
+        "summary": "Successfully created 25 dispense orders via facility-scoped API endpoint POST /api/v1/facility/{facilityId}/order/dispense/ with body {patient, location, status: 'completed'}. All requests returned HTTP 200 with created dispense order objects. The API seed was successful; the blocker was purely auth-related (browser context could not achieve authenticated app shell despite token refresh and UI login)."
+      },
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "02-scroll-desktop",
+      "title": "Scroll loads additional older dispense orders — Desktop",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Could not reach the Dispense History list to test scrolling behavior due to auth-failure on criterion 01. The authenticated app shell was never achieved.",
+      "blocker_category": "auth-failure",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "03-select-desktop",
+      "title": "Select older row after loading — Desktop",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Could not reach the Dispense History list to test row selection due to auth-failure on criterion 01. The authenticated app shell was never achieved.",
+      "blocker_category": "auth-failure",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "04-short-list-desktop",
+      "title": "Short list does not trigger fetch loop — Desktop",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Could not reach the Dispense History tab to verify short-list behavior due to auth-failure on criterion 01. The authenticated app shell was never achieved.",
+      "blocker_category": "auth-failure",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "05-first-page-mobile",
+      "title": "First page loads immediately — Mobile",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Same auth-failure as desktop criteria - mobile viewport would face identical login UI blocking access to the encounter page. The authenticated app shell was never achieved.",
+      "blocker_category": "auth-failure",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "06-scroll-mobile",
+      "title": "Scroll loads additional older dispense orders — Mobile",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Could not reach mobile Dispense History drawer due to auth-failure on criterion 01. The authenticated app shell was never achieved.",
+      "blocker_category": "auth-failure",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "07-select-mobile",
+      "title": "Select older row after loading — Mobile",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Could not reach mobile Dispense History drawer to test selection due to auth-failure on criterion 01. The authenticated app shell was never achieved.",
+      "blocker_category": "auth-failure",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    }
+  ],
+  "summary": {
+    "all_passed": false,
+    "pass": 0,
+    "fail": 0,
+    "not_exercised": 7
+  }
+}

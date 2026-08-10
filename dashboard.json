@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-10T13:22:59Z",
+  "generated_at": "2026-08-10T13:23:08Z",
   "tickets": [
     {
       "ticket_id": "1",
@@ -8403,7 +8403,7 @@
           "task_id": "qa",
           "task_version": 1,
           "ticket_id": "41",
-          "state": "RUNNING",
+          "state": "SUCCEEDED",
           "attempt": 1,
           "bindings": {
             "tracker": "github-issues",
@@ -8413,7 +8413,24 @@
           "cost_usd": 2.1,
           "tokens": 4233800,
           "usage_known": true,
-          "artifacts": [],
+          "artifacts": [
+            "specs/41/qa.md",
+            "specs/41/qa-report.json",
+            "specs/41/qa-drivers/01-first-page-desktop.mjs",
+            "specs/41/qa-drivers/02-scroll-desktop.mjs",
+            "specs/41/qa-drivers/03-select-desktop.mjs",
+            "specs/41/qa-drivers/04-short-list-desktop.mjs",
+            "specs/41/qa-drivers/05-first-page-mobile.mjs",
+            "specs/41/qa-drivers/06-scroll-mobile.mjs",
+            "specs/41/qa-drivers/07-select-mobile.mjs",
+            "specs/41/qa-logs/01-first-page-desktop.log",
+            "specs/41/qa-logs/02-scroll-desktop.log",
+            "specs/41/qa-logs/03-select-desktop.log",
+            "specs/41/qa-logs/04-short-list-desktop.log",
+            "specs/41/qa-logs/05-first-page-mobile.log",
+            "specs/41/qa-logs/06-scroll-mobile.log",
+            "specs/41/qa-logs/07-select-mobile.log"
+          ],
           "chain_depth": 5,
           "parent_run_id": "69e80379b6cb98fc",
           "queue_seq": 5,
@@ -8427,7 +8444,36 @@
           "deadline": "2026-08-10T13:58:33Z",
           "attempt_started_at": "2026-08-10T12:58:33Z",
           "base_commit": "b7c19b879ef849dc17684e43d7656196e22f16b5",
-          "input_from_run_id": "69e80379b6cb98fc"
+          "input_from_run_id": "69e80379b6cb98fc",
+          "output_commit": "b7c19b879ef849dc17684e43d7656196e22f16b5",
+          "pr_ref": "yash-learner/care_fe_agent_hq#26"
+        },
+        {
+          "run_id": "f63b9f8235e7b29a",
+          "task_id": "finalize",
+          "task_version": 1,
+          "ticket_id": "41",
+          "state": "QUEUED",
+          "attempt": 0,
+          "bindings": {
+            "tracker": "github-issues",
+            "agent-session": "copilot-cli",
+            "messaging": "github-comment"
+          },
+          "cost_usd": null,
+          "tokens": null,
+          "usage_known": false,
+          "artifacts": [],
+          "chain_depth": 6,
+          "parent_run_id": "1508b7ea6d6bddf6",
+          "queue_seq": 6,
+          "handoff_key": "finalize-41",
+          "repo": "yash-learner/care_fe_agent_hq",
+          "input_artifacts": [
+            "specs/41/spec.md",
+            "specs/41/review.md",
+            "specs/41/qa.md"
+          ]
         }
       ],
       "block_reason": null,

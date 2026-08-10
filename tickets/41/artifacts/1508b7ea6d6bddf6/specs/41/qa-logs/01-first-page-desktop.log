@@ -1,0 +1,19 @@
+=== Criterion 01: First page loads immediately — Desktop ===
+Facility ID: 73bcee08-8748-4f2f-99a8-2278e78e5d5d
+Patient ID: 79a775df-b167-4256-a694-eb3c36e056d1
+Encounter ID: 4117f1f9-6935-40d0-8a71-a850e9381849
+Location ID: 8137c6f1-ed6e-4b43-a96e-696a3607e71c
+
+--- Attempting token refresh ---
+Token refresh successful
+Updated storage state saved
+
+--- Checking existing dispense orders ---
+Found 25 existing dispense orders
+Sufficient dispense orders already exist, skipping seed
+
+--- Starting UI test ---
+Navigating to facility overview first...
+Still on login page at facility overview - auth definitely failed
+Test failed: Error: Auth verification failed at facility overview
+    at runTest (file:///workspaces/agent_hq/_target/1508b7ea6d6bddf6/specs/41/qa-drivers/01-first-page-desktop.mjs:306:11)
