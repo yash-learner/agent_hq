@@ -32,3 +32,4 @@
 {"event_id": "61bc7a013065c9d8:rework", "kind": "run.rework", "ticket_id": "45", "run_id": "61bc7a013065c9d8", "detail": "Previous attempt rejected: qa-report.json: video specs/45/videos/ac1-expiry-format.webm is claimed by criteria 'ac1-expiry-format' and 'ac3-column-position'", "actor": "engine", "source": "60cad9296115106b:artifact_rejected"}
 {"event_id": "61bc7a013065c9d8:collected", "kind": "run.collected", "ticket_id": "45", "run_id": "61bc7a013065c9d8", "tokens": 4233000, "cost_usd": 2.1}
 {"event_id": "61bc7a013065c9d8:failed", "kind": "run.failed", "ticket_id": "45", "run_id": "61bc7a013065c9d8", "state": "FAILED"}
+{"event_id": "61bc7a013065c9d8:artifact_rejected", "kind": "run.artifact_rejected", "ticket_id": "45", "run_id": "61bc7a013065c9d8", "detail": "qa-report.json: criterion 'ac2-no-expiry': missing-test-data requires driver specs/45/qa-drivers/ac2-no-expiry.mjs in the ledger"}
