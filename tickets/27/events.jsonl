@@ -55,3 +55,4 @@
 {"event_id": "e8cf043782f7eef7:collected", "kind": "run.collected", "ticket_id": "27", "run_id": "e8cf043782f7eef7", "tokens": 2731700, "cost_usd": 1.67}
 {"event_id": "e8cf043782f7eef7:failed", "kind": "run.failed", "ticket_id": "27", "run_id": "e8cf043782f7eef7", "state": "FAILED"}
 {"event_id": "e8cf043782f7eef7:artifact_rejected", "kind": "run.artifact_rejected", "ticket_id": "27", "run_id": "e8cf043782f7eef7", "detail": "qa-report.json: criterion 'ac2-code-filtered-after-first': not-exercised with missing-test-data requires seed_attempt (method ui|api|both plus a non-empty summary of what was tried)"}
+{"event_id": "e8cf043782f7eef7:blocked", "kind": "ticket.blocked", "ticket_id": "27", "run_id": "e8cf043782f7eef7", "detail": "retries exhausted"}
