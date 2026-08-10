@@ -39,3 +39,4 @@
 {"event_id": "687752aa191cc4f3:collected", "kind": "run.collected", "ticket_id": "37", "run_id": "687752aa191cc4f3", "tokens": 4323400, "cost_usd": 1.94}
 {"event_id": "687752aa191cc4f3:failed", "kind": "run.failed", "ticket_id": "37", "run_id": "687752aa191cc4f3", "state": "FAILED"}
 {"event_id": "687752aa191cc4f3:artifact_rejected", "kind": "run.artifact_rejected", "ticket_id": "37", "run_id": "687752aa191cc4f3", "detail": "qa-report.json: criterion 'scroll-loads-more': not-exercised with missing-test-data requires seed_attempt (method ui|api|both plus a non-empty summary of what was tried)"}
+{"event_id": "3edef29a37d1023a:queued", "kind": "run.queued", "ticket_id": "37", "run_id": "3edef29a37d1023a", "task_id": "qa", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
