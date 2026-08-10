@@ -20,3 +20,4 @@
 {"event_id": "ecbb53d37219f853:queued", "kind": "run.queued", "ticket_id": "42", "run_id": "ecbb53d37219f853", "task_id": "review", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
 {"event_id": "11c1aee7e68daf93:review-round-2:accepted", "kind": "handoff.accepted", "ticket_id": "42", "run_id": "11c1aee7e68daf93", "detail": "Added Playwright E2E tests per review blocker; ready for re-review"}
 {"event_id": "11c1aee7e68daf93:succeeded", "kind": "run.succeeded", "ticket_id": "42", "run_id": "11c1aee7e68daf93", "state": "SUCCEEDED", "artifacts": ["specs/42/qa-plan.md"]}
+{"event_id": "ecbb53d37219f853:collected", "kind": "run.collected", "ticket_id": "42", "run_id": "ecbb53d37219f853", "tokens": 359400, "cost_usd": 0.27}
