@@ -1,7 +1,7 @@
 {
   "ticket_id": "47",
   "pinned_comment_id": 5240085113,
-  "status": "ACTIVE",
+  "status": "BLOCKED",
   "runs": [
     {
       "run_id": "c89bde9d9bde2dcc",
@@ -211,7 +211,7 @@
       "task_id": "review",
       "task_version": 1,
       "ticket_id": "47",
-      "state": "RUNNING",
+      "state": "BLOCKED",
       "attempt": 0,
       "bindings": {
         "tracker": "github-issues",
@@ -238,9 +238,9 @@
       "input_from_run_id": "ed945dfedc62161c"
     }
   ],
-  "block_reason": null,
-  "block_source": null,
-  "interrupted_run_id": null,
+  "block_reason": "Round 3 blockers remain: (1) Multi-report creation is architecturally blocked \u2014 DiagnosticReportForm shows only one report at a time (diagnosticReports[0]) and cannot render the creation dropdown when hasReport is true, preventing AC3 (create second report with remaining codes). The component needs restructuring to show all reports AND creation UI simultaneously. (2) QA plan data setup blockers from Round 2 unaddressed \u2014 LOINC codes and specimen slug lack provenance from fixtures or proven test seeds.",
+  "block_source": "task",
+  "interrupted_run_id": "8be923dd61b4e61a",
   "comments_polled_at": "2026-08-10T16:38:12Z",
   "work_repos": [
     {
