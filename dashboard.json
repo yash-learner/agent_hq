@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-10T11:52:02Z",
+  "generated_at": "2026-08-10T11:52:04Z",
   "tickets": [
     {
       "ticket_id": "1",
@@ -8044,7 +8044,7 @@
           "task_id": "spec",
           "task_version": 1,
           "ticket_id": "41",
-          "state": "QUEUED",
+          "state": "RUNNING",
           "attempt": 0,
           "bindings": {},
           "cost_usd": null,
@@ -8055,7 +8055,9 @@
           "source_event_id": "41:labeled:2026-08-10T11:50:38Z",
           "enqueue_index": 0,
           "queue_seq": 0,
-          "repo": "yash-learner/care_fe_agent_hq"
+          "repo": "yash-learner/care_fe_agent_hq",
+          "deadline": "2026-08-10T12:22:03Z",
+          "attempt_started_at": "2026-08-10T11:52:03Z"
         }
       ],
       "block_reason": null,
