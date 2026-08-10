@@ -1,2 +1,7 @@
 {"event_id": "7b8922309b5a29e7:queued", "kind": "run.queued", "ticket_id": "46", "run_id": "7b8922309b5a29e7", "task_id": "spec", "task_version": 1, "state": "QUEUED", "bindings": {}}
 {"event_id": "7b8922309b5a29e7:collected", "kind": "run.collected", "ticket_id": "46", "run_id": "7b8922309b5a29e7", "tokens": 719500, "cost_usd": 0.468}
+{"event_id": "7b8922309b5a29e7:auto_approval", "kind": "gate.decided", "ticket_id": "46", "run_id": "7b8922309b5a29e7", "detail": "auto-approved by task config (would have asked product-owners)", "actor": "engine"}
+{"event_id": "7b8922309b5a29e7:arch-plan-46:proposed", "kind": "handoff.proposed", "ticket_id": "46", "run_id": "7b8922309b5a29e7", "detail": "Spec approved. Need architecture plan and CRUD classification before implementation."}
+{"event_id": "41164cdf84df5fa5:queued", "kind": "run.queued", "ticket_id": "46", "run_id": "41164cdf84df5fa5", "task_id": "arch-plan", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment", "gate": "github-issue-comment"}}
+{"event_id": "7b8922309b5a29e7:arch-plan-46:accepted", "kind": "handoff.accepted", "ticket_id": "46", "run_id": "7b8922309b5a29e7", "detail": "Spec approved. Need architecture plan and CRUD classification before implementation."}
+{"event_id": "7b8922309b5a29e7:succeeded", "kind": "run.succeeded", "ticket_id": "46", "run_id": "7b8922309b5a29e7", "state": "SUCCEEDED", "artifacts": ["specs/46/spec.md"]}
