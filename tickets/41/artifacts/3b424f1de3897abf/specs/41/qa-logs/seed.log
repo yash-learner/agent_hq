@@ -1,0 +1,3043 @@
+🚀 Starting dispense order seed script
+📍 Facility: 0d73ab28-31ca-48cb-8c3f-a91552600be7
+🧑 Patient: f8dcfab4-5471-4c51-bf03-f51deefd2650
+🔍 Checking existing dispense orders...
+📦 Found 0 existing dispense orders
+📝 Need to create 25 more dispense orders to reach 25
+🔍 Fetching facility locations...
+✅ Using location: 0d6b0b71-2cb0-4972-8cc5-52525505a752
+✅ Created dispense order 1 (ID: bfd4bcc2-9603-41b0-ae4d-d78213f1e12f)
+✅ Created dispense order 2 (ID: 829a3bfd-72e5-41fe-ac11-4393f85b7a77)
+✅ Created dispense order 3 (ID: e88ec565-c49e-4052-b6ef-9106bb2f1de7)
+✅ Created dispense order 4 (ID: a9977daf-a518-45c3-a61e-58d5c748df5f)
+✅ Created dispense order 5 (ID: db2ed772-2c5f-479f-99af-019af42204fb)
+✅ Created dispense order 6 (ID: 70b2f9b5-1bf7-42ac-9f2d-a307daf85910)
+✅ Created dispense order 7 (ID: 25614f44-5a65-42ba-9277-3eb26343ea8a)
+✅ Created dispense order 8 (ID: 0db52769-eeab-44f4-b46d-6ebc6e0eb0c1)
+✅ Created dispense order 9 (ID: b29eddfa-1286-41d2-94bc-ba4055581cb6)
+✅ Created dispense order 10 (ID: 7376d9d2-f086-4138-93c5-d3d2960eafa8)
+✅ Created dispense order 11 (ID: f0339f5a-40ef-46a4-b69e-5cdd3ab4b5a0)
+✅ Created dispense order 12 (ID: 0cccec9f-351f-4f08-9031-58be1a7ef0b3)
+✅ Created dispense order 13 (ID: 0a221013-189d-4fa4-b23e-bef9fd358113)
+✅ Created dispense order 14 (ID: 87355dae-ac71-4490-bfe9-d8ee1fb83b51)
+✅ Created dispense order 15 (ID: 6264c6b4-4967-47ff-bc2d-2cf32cda682d)
+✅ Created dispense order 16 (ID: 08356595-65b8-4ff9-bcfc-931db07c77c3)
+✅ Created dispense order 17 (ID: 7f85602f-cb11-43a1-8d7c-dc3087140df2)
+✅ Created dispense order 18 (ID: 0bb5143e-5b4a-475e-a90d-299664838309)
+✅ Created dispense order 19 (ID: c32c431d-6dac-454c-9c89-a6554f209a57)
+✅ Created dispense order 20 (ID: 331833b2-30af-45e7-97ef-70f2a9661868)
+✅ Created dispense order 21 (ID: f4f4d7f5-50b2-4b81-93da-e387872300f9)
+✅ Created dispense order 22 (ID: 1ec5f2f7-6f37-4712-978c-dc846ae9248f)
+✅ Created dispense order 23 (ID: a2771ae7-bf85-4782-aeb1-2cf4123dcc05)
+✅ Created dispense order 24 (ID: 75136bfa-bbb1-45eb-9979-e2466593d221)
+✅ Created dispense order 25 (ID: a6792d26-5589-494e-9fd2-2a39cc516f78)
+🎉 Successfully created 25 dispense orders
+🔍 Checking existing dispense orders...
+📦 Found 25 existing dispense orders
+📊 Total dispense orders: 25
+🚀 Creating short list test data
+🏥 Creating a new encounter for short list test...
+❌ Error: Failed to create encounter: 404 - <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Page not found at /api/v1/facility/0d73ab28-31ca-48cb-8c3f-a91552600be7/encounter/</title>
+  <meta name="robots" content="NONE,NOARCHIVE">
+  <style>
+    html * { padding:0; margin:0; }
+    body * { padding:10px 20px; }
+    body * * { padding:0; }
+    body { font-family: sans-serif; background:#eee; color:#000; }
+    body > :where(header, main, footer) { border-bottom:1px solid #ddd; }
+    h1 { font-weight:normal; margin-bottom:.4em; }
+    h1 small { font-size:60%; color:#666; font-weight:normal; }
+    table { border:none; border-collapse: collapse; width:100%; }
+    td, th { vertical-align:top; padding:2px 3px; }
+    th { width:12em; text-align:right; color:#666; padding-right:.5em; }
+    #info { background:#f6f6f6; }
+    #info ol { margin: 0.5em 4em; }
+    #info ol li { font-family: monospace; }
+    #summary { background: #ffc; }
+    #explanation { background:#eee; border-bottom: 0px none; }
+    pre.exception_value { font-family: sans-serif; color: #575757; font-size: 1.5em; margin: 10px 0 10px 0; }
+  </style>
+</head>
+<body>
+  <header id="summary">
+    <h1>Page not found <small>(404)</small></h1>
+    
+    <table class="meta">
+      <tr>
+        <th scope="row">Request Method:</th>
+        <td>POST</td>
+      </tr>
+      <tr>
+        <th scope="row">Request URL:</th>
+        <td>http://localhost:9000/api/v1/facility/0d73ab28-31ca-48cb-8c3f-a91552600be7/encounter/</td>
+      </tr>
+      
+    </table>
+  </header>
+
+  <main id="info">
+    
+      <p>
+      Using the URLconf defined in <code>config.urls</code>,
+      Django tried these URL patterns, in this order:
+      </p>
+      <ol>
+        
+          <li>
+            
+              <code>
+                
+                [name='home']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                ping/
+                [name='ping']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                health/
+                
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                app_version/
+                [name='app_version']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                admin/
+                
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/auth/login/
+                [name='token_obtain_pair']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/auth/logout/
+                [name='token_obtain_pair']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/auth/token/refresh/
+                [name='token_refresh']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/auth/token/verify/
+                [name='token_verify']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/password_reset/
+                [name='password_reset_request']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/password_reset/confirm/
+                [name='password_reset_confirm']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/password_reset/check/
+                [name='password_reset_check']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/password_change/
+                [name='change_password_view']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^users/$
+                [name='users-list']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^users\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='users-list']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^users/getcurrentuser/$
+                [name='users-getcurrentuser']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^users/getcurrentuser\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='users-getcurrentuser']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^users/set_preferences/$
+                [name='users-set-preferences']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^users/set_preferences\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='users-set-preferences']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^users/upsert/$
+                [name='users-upsert']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^users/upsert\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='users-upsert']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^users/(?P&lt;username&gt;[^/.]+)/$
+                [name='users-detail']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^users/(?P&lt;username&gt;[^/.]+)\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='users-detail']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^users/(?P&lt;username&gt;[^/.]+)/check_availability/$
+                [name='users-check-availability']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^users/(?P&lt;username&gt;[^/.]+)/check_availability\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='users-check-availability']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^users/(?P&lt;username&gt;[^/.]+)/generate_service_account_token/$
+                [name='users-generate-service-account-token']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^users/(?P&lt;username&gt;[^/.]+)/generate_service_account_token\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='users-generate-service-account-token']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^users/(?P&lt;username&gt;[^/.]+)/pnconfig/$
+                [name='users-pnconfig']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^users/(?P&lt;username&gt;[^/.]+)/pnconfig\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='users-pnconfig']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^users/(?P&lt;username&gt;[^/.]+)/profile_picture/$
+                [name='users-profile-picture']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^users/(?P&lt;username&gt;[^/.]+)/profile_picture\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='users-profile-picture']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^users/(?P&lt;username&gt;[^/.]+)/revoke_service_account_token/$
+                [name='users-revoke-service-account-token']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^users/(?P&lt;username&gt;[^/.]+)/revoke_service_account_token\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='users-revoke-service-account-token']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^plug_config/$
+                [name='plug_configs-list']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^plug_config\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='plug_configs-list']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^plug_config/(?P&lt;slug&gt;[^/.]+)/$
+                [name='plug_configs-detail']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^plug_config/(?P&lt;slug&gt;[^/.]+)\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='plug_configs-detail']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^files/$
+                [name='files-list']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^files\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='files-list']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^files/upload-file/$
+                [name='files-upload-file']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^files/upload-file\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='files-upload-file']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^files/(?P&lt;external_id&gt;[^/.]+)/$
+                [name='files-detail']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^files/(?P&lt;external_id&gt;[^/.]+)\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='files-detail']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^files/(?P&lt;external_id&gt;[^/.]+)/archive/$
+                [name='files-archive']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^files/(?P&lt;external_id&gt;[^/.]+)/archive\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='files-archive']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^files/(?P&lt;external_id&gt;[^/.]+)/mark_upload_completed/$
+                [name='files-mark-upload-completed']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^files/(?P&lt;external_id&gt;[^/.]+)/mark_upload_completed\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='files-mark-upload-completed']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^meta_artifacts/$
+                [name='meta_artifacts-list']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^meta_artifacts\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='meta_artifacts-list']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^meta_artifacts/upsert/$
+                [name='meta_artifacts-upsert']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^meta_artifacts/upsert\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='meta_artifacts-upsert']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^meta_artifacts/(?P&lt;external_id&gt;[^/.]+)/$
+                [name='meta_artifacts-detail']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^meta_artifacts/(?P&lt;external_id&gt;[^/.]+)\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='meta_artifacts-detail']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^otp/login/$
+                [name='otp-login-login']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^otp/login\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='otp-login-login']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^otp/send/$
+                [name='otp-login-send']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^otp/send\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='otp-login-send']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^otp/password_reset/confirm/$
+                [name='otp-password-reset-confirm']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^otp/password_reset/confirm\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='otp-password-reset-confirm']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^otp/password_reset/send/$
+                [name='otp-password-reset-send']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^otp/password_reset/send\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='otp-password-reset-send']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^otp/patient/$
+                [name='otp-patient-list']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^otp/patient\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='otp-patient-list']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^otp/slots/cancel_appointment/$
+                [name='otp-slots-cancel-appointment']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^otp/slots/cancel_appointment\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='otp-slots-cancel-appointment']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^otp/slots/get_appointments/$
+                [name='otp-slots-get-appointments']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^otp/slots/get_appointments\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='otp-slots-get-appointments']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^otp/slots/get_slots_for_day/$
+                [name='otp-slots-get-slots-for-day']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^otp/slots/get_slots_for_day\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='otp-slots-get-slots-for-day']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^otp/slots/(?P&lt;external_id&gt;[^/.]+)/$
+                [name='otp-slots-detail']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^otp/slots/(?P&lt;external_id&gt;[^/.]+)\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='otp-slots-detail']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^otp/slots/(?P&lt;external_id&gt;[^/.]+)/create_appointment/$
+                [name='otp-slots-create-appointment']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^otp/slots/(?P&lt;external_id&gt;[^/.]+)/create_appointment\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='otp-slots-create-appointment']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^batch_requests/$
+                [name='batch-requests-list']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^batch_requests\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='batch-requests-list']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^valueset/$
+                [name='value-set-list']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^valueset\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='value-set-list']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^valueset/lookup_code/$
+                [name='value-set-lookup-code']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^valueset/lookup_code\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='value-set-lookup-code']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^valueset/preview_search/$
+                [name='value-set-preview-search']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^valueset/preview_search\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='value-set-preview-search']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^valueset/upsert/$
+                [name='value-set-upsert']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^valueset/upsert\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='value-set-upsert']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^valueset/(?P&lt;slug&gt;[^/.]+)/$
+                [name='value-set-detail']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^valueset/(?P&lt;slug&gt;[^/.]+)\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='value-set-detail']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^valueset/(?P&lt;slug&gt;[^/.]+)/add_favourite/$
+                [name='value-set-add-favourite']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^valueset/(?P&lt;slug&gt;[^/.]+)/add_favourite\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='value-set-add-favourite']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^valueset/(?P&lt;slug&gt;[^/.]+)/add_recent_view/$
+                [name='value-set-add-recent-view']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^valueset/(?P&lt;slug&gt;[^/.]+)/add_recent_view\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='value-set-add-recent-view']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^valueset/(?P&lt;slug&gt;[^/.]+)/clear_favourites/$
+                [name='value-set-clear-favourites']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^valueset/(?P&lt;slug&gt;[^/.]+)/clear_favourites\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='value-set-clear-favourites']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^valueset/(?P&lt;slug&gt;[^/.]+)/clear_recent_views/$
+                [name='value-set-clear-recent-views']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^valueset/(?P&lt;slug&gt;[^/.]+)/clear_recent_views\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='value-set-clear-recent-views']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^valueset/(?P&lt;slug&gt;[^/.]+)/expand/$
+                [name='value-set-expand']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^valueset/(?P&lt;slug&gt;[^/.]+)/expand\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='value-set-expand']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^valueset/(?P&lt;slug&gt;[^/.]+)/favourites/$
+                [name='value-set-favourites']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^valueset/(?P&lt;slug&gt;[^/.]+)/favourites\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='value-set-favourites']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^valueset/(?P&lt;slug&gt;[^/.]+)/recent_views/$
+                [name='value-set-recent-views']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^valueset/(?P&lt;slug&gt;[^/.]+)/recent_views\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='value-set-recent-views']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^valueset/(?P&lt;slug&gt;[^/.]+)/remove_favourite/$
+                [name='value-set-remove-favourite']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^valueset/(?P&lt;slug&gt;[^/.]+)/remove_favourite\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='value-set-remove-favourite']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^valueset/(?P&lt;slug&gt;[^/.]+)/remove_recent_view/$
+                [name='value-set-remove-recent-view']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^valueset/(?P&lt;slug&gt;[^/.]+)/remove_recent_view\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='value-set-remove-recent-view']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^valueset/(?P&lt;slug&gt;[^/.]+)/validate_code/$
+                [name='value-set-validate-code']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^valueset/(?P&lt;slug&gt;[^/.]+)/validate_code\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='value-set-validate-code']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^questionnaire/$
+                [name='questionnaire-list']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^questionnaire\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='questionnaire-list']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^questionnaire/favorite_lists/$
+                [name='questionnaire-favorite-lists']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^questionnaire/favorite_lists\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='questionnaire-favorite-lists']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^questionnaire/upsert/$
+                [name='questionnaire-upsert']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^questionnaire/upsert\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='questionnaire-upsert']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^questionnaire/(?P&lt;slug&gt;[^/.]+)/$
+                [name='questionnaire-detail']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^questionnaire/(?P&lt;slug&gt;[^/.]+)\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='questionnaire-detail']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^questionnaire/(?P&lt;slug&gt;[^/.]+)/add_favorite/$
+                [name='questionnaire-add-favorite']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^questionnaire/(?P&lt;slug&gt;[^/.]+)/add_favorite\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='questionnaire-add-favorite']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^questionnaire/(?P&lt;slug&gt;[^/.]+)/get_organizations/$
+                [name='questionnaire-get-organizations']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^questionnaire/(?P&lt;slug&gt;[^/.]+)/get_organizations\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='questionnaire-get-organizations']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^questionnaire/(?P&lt;slug&gt;[^/.]+)/remove_favorite/$
+                [name='questionnaire-remove-favorite']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^questionnaire/(?P&lt;slug&gt;[^/.]+)/remove_favorite\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='questionnaire-remove-favorite']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^questionnaire/(?P&lt;slug&gt;[^/.]+)/set_organizations/$
+                [name='questionnaire-set-organizations']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^questionnaire/(?P&lt;slug&gt;[^/.]+)/set_organizations\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='questionnaire-set-organizations']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^questionnaire/(?P&lt;slug&gt;[^/.]+)/submit/$
+                [name='questionnaire-submit']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^questionnaire/(?P&lt;slug&gt;[^/.]+)/submit\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='questionnaire-submit']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^form_submission/$
+                [name='form_submission-list']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^form_submission\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='form_submission-list']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^form_submission/(?P&lt;external_id&gt;[^/.]+)/$
+                [name='form_submission-detail']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^form_submission/(?P&lt;external_id&gt;[^/.]+)\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='form_submission-detail']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^supply_delivery/$
+                [name='supply_delivery-list']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^supply_delivery\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='supply_delivery-list']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^supply_delivery/delivery_orders/$
+                [name='supply_delivery-delivery-orders']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^supply_delivery/delivery_orders\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='supply_delivery-delivery-orders']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^supply_delivery/upsert/$
+                [name='supply_delivery-upsert']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^supply_delivery/upsert\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='supply_delivery-upsert']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^supply_delivery/(?P&lt;external_id&gt;[^/.]+)/$
+                [name='supply_delivery-detail']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^supply_delivery/(?P&lt;external_id&gt;[^/.]+)\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='supply_delivery-detail']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^supply_request/$
+                [name='supply_request-list']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^supply_request\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='supply_request-list']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^supply_request/request_orders/$
+                [name='supply_request-request-orders']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^supply_request/request_orders\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='supply_request-request-orders']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^supply_request/upsert/$
+                [name='supply_request-upsert']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^supply_request/upsert\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='supply_request-upsert']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^supply_request/(?P&lt;external_id&gt;[^/.]+)/$
+                [name='supply_request-detail']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^supply_request/(?P&lt;external_id&gt;[^/.]+)\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='supply_request-detail']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^tag_config/$
+                [name='tag_config-list']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^tag_config\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='tag_config-list']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^tag_config/(?P&lt;external_id&gt;[^/.]+)/$
+                [name='tag_config-detail']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^tag_config/(?P&lt;external_id&gt;[^/.]+)\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='tag_config-detail']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^questionnaire_response_template/$
+                [name='questionnaire_response_template-list']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^questionnaire_response_template\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='questionnaire_response_template-list']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^questionnaire_response_template/upsert/$
+                [name='questionnaire_response_template-upsert']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^questionnaire_response_template/upsert\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='questionnaire_response_template-upsert']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^questionnaire_response_template/(?P&lt;external_id&gt;[^/.]+)/$
+                [name='questionnaire_response_template-detail']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^questionnaire_response_template/(?P&lt;external_id&gt;[^/.]+)\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='questionnaire_response_template-detail']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^observation_definition/$
+                [name='observation_definition-list']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^observation_definition\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='observation_definition-list']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^observation_definition/metrics/$
+                [name='observation_definition-metrics']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^observation_definition/metrics\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='observation_definition-metrics']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^observation_definition/upsert/$
+                [name='observation_definition-upsert']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^observation_definition/upsert\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='observation_definition-upsert']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^observation_definition/(?P&lt;slug&gt;[^/.]+)/$
+                [name='observation_definition-detail']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^observation_definition/(?P&lt;slug&gt;[^/.]+)\.(?P&lt;format&gt;[a-z0-9]+)/?$
+                [name='observation_definition-detail']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+              </code>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^product_knowledge/$
+                [name='product_knowledge-list']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v1/
+                
+          

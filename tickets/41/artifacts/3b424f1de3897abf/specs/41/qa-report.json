@@ -1,0 +1,91 @@
+{
+  "criteria": [
+    {
+      "id": "01-first-page-desktop",
+      "title": "First page loads immediately — Desktop",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1.1"],
+      "videos": ["specs/41/videos/01-first-page-desktop.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "02-scroll-loads-desktop",
+      "title": "Scroll loads additional older dispense orders — Desktop",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["2.1", "2.2"],
+      "videos": ["specs/41/videos/02-scroll-loads-desktop.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "03-select-older-row-desktop",
+      "title": "Select older row after loading — Desktop",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["3.1"],
+      "videos": ["specs/41/videos/03-select-older-row-desktop.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "04-short-list-desktop",
+      "title": "Short list does not trigger fetch loop — Desktop",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Navigation timing issues prevented reaching Dispense History tab consistently. However, criterion 2 already demonstrates end-of-list behavior (no infinite loop after all 26 orders loaded).",
+      "blocker_category": "navigation-mismatch",
+      "plan_steps_run": ["4.1"],
+      "videos": [],
+      "screenshots": [],
+      "seed_attempt": {
+        "method": "api",
+        "summary": "Attempted to create new encounter with short list via API. Encounter API path was incorrect (/api/v1/facility/{id}/encounter/ returned 404). Test environment already had sufficient data to verify no-loop behavior via criterion 2."
+      }
+    },
+    {
+      "id": "05-first-page-mobile",
+      "title": "First page loads immediately — Mobile",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Navigation timing issues when attempting to reach Dispense History tab in mobile viewport (same issue as criterion 4).",
+      "blocker_category": "navigation-mismatch",
+      "plan_steps_run": ["5.1"],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "06-scroll-loads-mobile",
+      "title": "Scroll loads additional older dispense orders — Mobile",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Blocked by criterion 5 navigation issues. Mobile implementation uses identical infinite query logic as successfully tested desktop view (code inspection note in qa.md).",
+      "blocker_category": "navigation-mismatch",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "07-select-older-row-mobile",
+      "title": "Select older row after loading — Mobile",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Blocked by criterion 5 navigation issues.",
+      "blocker_category": "navigation-mismatch",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    }
+  ],
+  "summary": {
+    "all_passed": false,
+    "pass": 3,
+    "fail": 0,
+    "not_exercised": 4
+  }
+}

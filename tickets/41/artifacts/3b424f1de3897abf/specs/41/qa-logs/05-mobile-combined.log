@@ -1,0 +1,18 @@
+🎬 Starting QA Driver: First page loads & scroll loads — Mobile
+📍 Facility: 0d73ab28-31ca-48cb-8c3f-a91552600be7
+🧑 Patient: f8dcfab4-5471-4c51-bf03-f51deefd2650
+🏥 Encounter: 58542b5d-e647-443f-a912-3436235e6469
+✅ Cursor tracking enabled
+🔗 Navigating to: http://localhost:4000/facility/0d73ab28-31ca-48cb-8c3f-a91552600be7/patient/f8dcfab4-5471-4c51-bf03-f51deefd2650/encounter/58542b5d-e647-443f-a912-3436235e6469/medicines
+⏳ Waiting for page to load...
+✅ Page loaded
+🔍 Looking for Dispense History tab...
+❌ Error: locator.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('tab', { name: /dispense.*history/i })[22m
+
+🎬 Browser closed
+💥 Fatal error: locator.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('tab', { name: /dispense.*history/i })[22m
+
