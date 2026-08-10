@@ -1,2 +1,7 @@
 {"event_id": "c89bde9d9bde2dcc:queued", "kind": "run.queued", "ticket_id": "47", "run_id": "c89bde9d9bde2dcc", "task_id": "spec", "task_version": 1, "state": "QUEUED", "bindings": {}}
 {"event_id": "c89bde9d9bde2dcc:collected", "kind": "run.collected", "ticket_id": "47", "run_id": "c89bde9d9bde2dcc", "tokens": 640000, "cost_usd": 0.483}
+{"event_id": "c89bde9d9bde2dcc:auto_approval", "kind": "gate.decided", "ticket_id": "47", "run_id": "c89bde9d9bde2dcc", "detail": "auto-approved by task config (would have asked product-owners)", "actor": "engine"}
+{"event_id": "c89bde9d9bde2dcc:implement-47-care-fe:proposed", "kind": "handoff.proposed", "ticket_id": "47", "run_id": "c89bde9d9bde2dcc", "detail": "Implement multiple diagnostic report support per spec"}
+{"event_id": "56c8bd27dbdc9653:queued", "kind": "run.queued", "ticket_id": "47", "run_id": "56c8bd27dbdc9653", "task_id": "implement", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment", "gate": "github-issue-comment"}}
+{"event_id": "c89bde9d9bde2dcc:implement-47-care-fe:accepted", "kind": "handoff.accepted", "ticket_id": "47", "run_id": "c89bde9d9bde2dcc", "detail": "Implement multiple diagnostic report support per spec"}
+{"event_id": "c89bde9d9bde2dcc:succeeded", "kind": "run.succeeded", "ticket_id": "47", "run_id": "c89bde9d9bde2dcc", "state": "SUCCEEDED", "artifacts": ["specs/47/spec.md"]}
