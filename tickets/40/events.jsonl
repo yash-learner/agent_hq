@@ -4,3 +4,4 @@
 {"event_id": "c70ab85fe07d50a4:handoff_rejected", "kind": "handoff.rejected", "ticket_id": "40", "run_id": "c70ab85fe07d50a4", "detail": "queue entry repo 'care_fe_agent_hq' is not a configured repo"}
 {"event_id": "a742499562f57458:queued", "kind": "run.queued", "ticket_id": "40", "run_id": "a742499562f57458", "task_id": "spec", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment", "gate": "github-issue-comment"}}
 {"event_id": "a742499562f57458:rework", "kind": "run.rework", "ticket_id": "40", "run_id": "a742499562f57458", "detail": "Previous attempt rejected: queue entry repo 'care_fe_agent_hq' is not a configured repo", "actor": "engine", "source": "c70ab85fe07d50a4:handoff_rejected"}
+{"event_id": "a742499562f57458:collected", "kind": "run.collected", "ticket_id": "40", "run_id": "a742499562f57458", "tokens": 644400, "cost_usd": 0.404}
