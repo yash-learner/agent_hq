@@ -107,7 +107,7 @@
       "task_id": "implement",
       "task_version": 1,
       "ticket_id": "42",
-      "state": "RUNNING",
+      "state": "SUCCEEDED",
       "attempt": 0,
       "bindings": {
         "tracker": "github-issues",
@@ -117,7 +117,9 @@
       "cost_usd": 0.86,
       "tokens": 1309600,
       "usage_known": true,
-      "artifacts": [],
+      "artifacts": [
+        "specs/42/qa-plan.md"
+      ],
       "chain_depth": 3,
       "parent_run_id": "61075d43fec5bcb5",
       "queue_seq": 3,
@@ -131,7 +133,36 @@
       "deadline": "2026-08-10T19:11:01Z",
       "attempt_started_at": "2026-08-10T17:41:01Z",
       "base_commit": "480a7d1e65fe56cc797751305d0a8f7f648d9680",
-      "input_from_run_id": "61075d43fec5bcb5"
+      "input_from_run_id": "61075d43fec5bcb5",
+      "output_commit": "a16c31878da2bfe3c2396c64f800b6c3ebe64353",
+      "pr_ref": "yash-learner/care_fe_agent_hq#30"
+    },
+    {
+      "run_id": "ecbb53d37219f853",
+      "task_id": "review",
+      "task_version": 1,
+      "ticket_id": "42",
+      "state": "QUEUED",
+      "attempt": 0,
+      "bindings": {
+        "tracker": "github-issues",
+        "agent-session": "copilot-cli",
+        "messaging": "github-comment"
+      },
+      "cost_usd": null,
+      "tokens": null,
+      "usage_known": false,
+      "artifacts": [],
+      "chain_depth": 4,
+      "parent_run_id": "11c1aee7e68daf93",
+      "queue_seq": 4,
+      "handoff_key": "review-round-2",
+      "repo": "yash-learner/care_fe_agent_hq",
+      "input_artifacts": [
+        "specs/42/spec.md",
+        "specs/42/review.md",
+        "specs/42/qa-plan.md"
+      ]
     }
   ],
   "block_reason": null,
@@ -143,7 +174,7 @@
       "repo": "yash-learner/care_fe_agent_hq",
       "branch": "agent-hq/42",
       "base_branch": "develop",
-      "recorded_head": "480a7d1e65fe56cc797751305d0a8f7f648d9680",
+      "recorded_head": "a16c31878da2bfe3c2396c64f800b6c3ebe64353",
       "pr_ref": "yash-learner/care_fe_agent_hq#30",
       "comments_polled_at": "2026-08-10T17:39:54Z"
     }
