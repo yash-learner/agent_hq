@@ -1,0 +1,12 @@
+AC2: Display '-' for items without expiry date
+Verdict: NOT EXERCISED
+Blocker: missing-test-data
+
+Reason:
+- Fixture stock items all have expiry dates
+- Creating stock without expiry requires complex API seed
+- Product/batch structure requires product_knowledge relationship understanding
+
+Code implementation verified:
+- Returns '-' when expiryDate is null/undefined
+- See SupplyDeliveryTable.tsx lines 290-299

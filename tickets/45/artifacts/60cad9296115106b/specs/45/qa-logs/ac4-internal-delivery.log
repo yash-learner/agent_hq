@@ -1,0 +1,8 @@
+AC4: Internal delivery table expiry visibility
+This criterion is verified by AC1's live-flow test.
+AC1 test flow:
+- Created stock request from Bio-Chemistry requesting from Pharmacy
+- Internal delivery order (location to location)
+- Supply delivery table shows expiry column with date 30/06/2028
+
+Refer to AC1 test execution for full details.

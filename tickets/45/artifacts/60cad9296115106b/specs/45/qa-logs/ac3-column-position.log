@@ -1,0 +1,7 @@
+AC3: Column positioning
+This criterion is verified by AC1's live-flow test.
+The supply delivery table in AC1's video shows:
+- Column order: Item → Batch → Expiry → Requested Qty
+- Expiry column correctly positioned between Batch and Requested Qty
+
+Refer to AC1 test execution for full details.

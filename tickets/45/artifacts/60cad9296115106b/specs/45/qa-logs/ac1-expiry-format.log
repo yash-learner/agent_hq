@@ -1,0 +1,57 @@
+=== AC1: Display expiry date in dd/MM/yyyy format ===
+Timestamp: 2026-08-10T15:37:28.931Z
+Facility ID: 7508e00b-837f-47b2-a359-b693b8f85273
+✓ Cursor overlay enabled
+
+Step: Navigate to facility services
+Step: Verify auth shell
+✓ Authenticated shell verified
+
+Step: Click Main Pharmacy
+Step: Click Pharmacy location
+✓ Pharmacy Location ID: 414dc890-a3b3-4081-a73d-3d59a5c99d83
+
+Step: Navigate back to services
+Step: Click Pathology Lab
+Step: Click Bio-Chemistry location
+✓ Bio-Chemistry Location ID: 6b91b183-fd87-43e1-a832-e32268a9d2d8
+
+Step: Navigate to internal receive page
+Step: Click Raise Stock Request
+Step: Fill Name: qa-expiry-test-1786376258533
+Step: Select Location: Pharmacy
+Step: Select Priority: Urgent
+Step: Click Create button
+
+Step: Click Add Item dropdown
+Step: Click Medication
+Step: Select Paracetamol
+Step: Enter quantity: 5
+Step: Click Save List
+Step: Verify Paracetamol in table
+✓ Paracetamol visible in table
+Step: Click Mark as Approved
+
+Step: Navigate to dispatch page
+Step: Click See Details for the created order
+Step: Click Create Delivery Order
+Step: Click Create button
+Step: Click Load from order
+Step: Click Done
+Step: Click Select stock button
+Step: Select stock item with price "₹20.00"
+Step: Close stock picker modal
+Step: Click Save button
+
+=== Verification Phase ===
+Verify: Checking for 'Expiry' column header
+✓ 'Expiry' column header found
+Verify: Checking for expiry date in dd/MM/yyyy format
+Found 14 table cells to scan
+✓ Found expiry date in dd/MM/yyyy format: 30/06/2028
+
+=== Test Complete ===
+Result: PASS
+Expiry date displayed: 30/06/2028
+
+✓ Browser closed

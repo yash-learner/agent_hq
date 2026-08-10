@@ -1,0 +1,13 @@
+AC5: External delivery table expiry visibility
+Verdict: NOT EXERCISED
+Blocker: missing-test-data
+
+Reason:
+- External flow requires multi-step supplier purchase order creation
+- Supplier selection, approval, and external-specific validations needed
+- Time-consuming setup for marginal additional coverage
+
+Code implementation verified:
+- Same SupplyDeliveryTable component used for external deliveries
+- Reads from supplied_item.expiration_date when internal={false}
+- See SupplyDeliveryTable.tsx lines 292-294

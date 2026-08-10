@@ -1,0 +1,8 @@
+AC6: 'Expiry' label in table header
+This criterion is verified by AC1's live-flow test.
+AC1 test verification:
+- Explicitly checked for columnheader with name 'Expiry'
+- Header found and visible in supply delivery table
+- i18n key 't("expiry")' renders as 'Expiry' label
+
+Refer to AC1 test execution for full details.
