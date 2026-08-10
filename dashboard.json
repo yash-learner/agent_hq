@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-10T14:07:08Z",
+  "generated_at": "2026-08-10T14:59:32Z",
   "tickets": [
     {
       "ticket_id": "1",
@@ -7914,16 +7914,6 @@
       ]
     },
     {
-      "ticket_id": "38",
-      "pinned_comment_id": 5239523386,
-      "status": "BLOCKED",
-      "runs": [],
-      "block_reason": "no product area matches a configured repo",
-      "block_source": "intake",
-      "interrupted_run_id": null,
-      "comments_polled_at": "2026-08-10T11:29:00Z"
-    },
-    {
       "ticket_id": "4",
       "pinned_comment_id": 5189556248,
       "status": "BLOCKED",
@@ -8535,7 +8525,8 @@
       "runs": [],
       "block_reason": null,
       "block_source": null,
-      "interrupted_run_id": null
+      "interrupted_run_id": null,
+      "comments_polled_at": "2026-08-10T11:56:57Z"
     },
     {
       "ticket_id": "44",
