@@ -45,3 +45,5 @@
 {"event_id": "3edef29a37d1023a:failed", "kind": "run.failed", "ticket_id": "37", "run_id": "3edef29a37d1023a", "state": "FAILED"}
 {"event_id": "3edef29a37d1023a:artifact_rejected", "kind": "run.artifact_rejected", "ticket_id": "37", "run_id": "3edef29a37d1023a", "detail": "qa-report.json: criterion 'scroll-loads-more': missing-test-data requires driver specs/37/qa-drivers/scroll-loads-more.mjs in the ledger"}
 {"event_id": "3edef29a37d1023a:blocked", "kind": "ticket.blocked", "ticket_id": "37", "run_id": "3edef29a37d1023a", "detail": "retries exhausted"}
+{"event_id": "5b16c8659b4ff47b:queued", "kind": "run.queued", "ticket_id": "37", "run_id": "5b16c8659b4ff47b", "task_id": "qa", "task_version": 1, "state": "QUEUED", "bindings": {}}
+{"event_id": "5b16c8659b4ff47b:rework", "kind": "run.rework", "ticket_id": "37", "run_id": "5b16c8659b4ff47b", "detail": "@yash-learner: again\n\n(ticket was blocked: retries exhausted)", "actor": "yash-learner", "source": "issue-comment:5239538201"}
