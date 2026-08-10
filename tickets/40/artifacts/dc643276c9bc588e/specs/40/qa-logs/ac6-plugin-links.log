@@ -1,0 +1,4 @@
+[AC6] Code inspection only - no live test
+[AC6] Verifying PluginManifest.customFooterLinks property exists
+[AC6] Verifying app-sidebar.tsx merges plugin links with config links
+[AC6] See qa.md for details

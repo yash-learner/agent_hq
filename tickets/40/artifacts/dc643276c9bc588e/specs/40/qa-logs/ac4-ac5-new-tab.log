@@ -1,0 +1,17 @@
+[AC4/AC5] Starting test: openInNewTab behavior
+[AC4/AC5] Navigating to app...
+[AC4/AC5] Navigating to facility context...
+[AC4/AC5] Test failed: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-sidebar="sidebar"]') to be visible[22m
+
+[AC4/AC5] Fatal error: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-sidebar="sidebar"]') to be visible[22m
+
+    at runAC4_AC5 (/workspaces/agent_hq/_target/dc643276c9bc588e/specs/40/qa-drivers/ac4-ac5-new-tab.mjs:42:48) {
+  log: [
+    `  - waiting for locator('[data-sidebar="sidebar"]') to be visible`
+  ],
+  name: 'TimeoutError'
+}

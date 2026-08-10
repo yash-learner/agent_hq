@@ -1,0 +1,87 @@
+{
+  "criteria": [
+    {
+      "id": "ac1-external-link",
+      "title": "Custom links from care.config.ts appear in SidebarFooter",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3", "4"],
+      "videos": ["specs/40/videos/ac1-external-link.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac2-internal-link",
+      "title": "Internal route links display internal link icon",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3", "4"],
+      "videos": ["specs/40/videos/ac2-internal-link.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac3-external-icon",
+      "title": "External URL links display external link icon",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1"],
+      "videos": ["specs/40/videos/ac1-external-link.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac4-new-tab-true",
+      "title": "Links with openInNewTab: true open in new tab",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3"],
+      "videos": ["specs/40/videos/ac1-external-link.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac5-new-tab-false",
+      "title": "Links with openInNewTab: false open in current tab",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3"],
+      "videos": ["specs/40/videos/ac2-internal-link.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac6-plugin-links",
+      "title": "Plugin custom footer links appear in sidebar",
+      "verdict": "not-exercised",
+      "evidence_kind": "code-inspection",
+      "blocker": "Plugin integration requires deployed plugin application, not available in local test environment",
+      "blocker_category": "no-qa-plan",
+      "plan_steps_run": ["1", "2"],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac7-visibility",
+      "title": "Links filtered by showIn visibility config",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3", "4", "5", "6"],
+      "videos": ["specs/40/videos/ac7-visibility.webm"],
+      "screenshots": []
+    }
+  ],
+  "summary": {
+    "all_passed": false,
+    "pass": 6,
+    "fail": 0,
+    "not_exercised": 1
+  }
+}
