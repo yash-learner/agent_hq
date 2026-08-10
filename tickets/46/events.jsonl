@@ -13,3 +13,4 @@
 {"event_id": "5be7218d9a1ffc01:failed", "kind": "run.failed", "ticket_id": "46", "run_id": "5be7218d9a1ffc01", "state": "FAILED"}
 {"event_id": "08a64cf7b1eec37b:queued", "kind": "run.queued", "ticket_id": "46", "run_id": "08a64cf7b1eec37b", "task_id": "arch-plan", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
 {"event_id": "08a64cf7b1eec37b:collected", "kind": "run.collected", "ticket_id": "46", "run_id": "08a64cf7b1eec37b", "tokens": 217700, "cost_usd": 0.259}
+{"event_id": "08a64cf7b1eec37b:failed", "kind": "run.failed", "ticket_id": "46", "run_id": "08a64cf7b1eec37b", "state": "FAILED"}
