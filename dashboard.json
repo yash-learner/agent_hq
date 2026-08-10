@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-10T11:40:17Z",
+  "generated_at": "2026-08-10T11:40:18Z",
   "tickets": [
     {
       "ticket_id": "1",
@@ -7941,7 +7941,12 @@
           "ticket_id": "40",
           "state": "RUNNING",
           "attempt": 0,
-          "bindings": {},
+          "bindings": {
+            "tracker": "github-issues",
+            "agent-session": "copilot-cli",
+            "messaging": "github-comment",
+            "gate": "github-issue-comment"
+          },
           "cost_usd": null,
           "tokens": null,
           "usage_known": false,
@@ -7952,7 +7957,10 @@
           "queue_seq": 0,
           "repo": "yash-learner/care_fe_agent_hq",
           "deadline": "2026-08-10T12:10:16Z",
-          "attempt_started_at": "2026-08-10T11:40:16Z"
+          "attempt_started_at": "2026-08-10T11:40:16Z",
+          "base_commit": "dea49853619eaf2e5b7c18d6f89a1c1bf67567a0",
+          "input_from_run_id": null,
+          "input_artifacts": []
         }
       ],
       "block_reason": null,
