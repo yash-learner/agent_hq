@@ -25,3 +25,4 @@
 {"event_id": "3b424f1de3897abf:queued", "kind": "run.queued", "ticket_id": "41", "run_id": "3b424f1de3897abf", "task_id": "qa", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
 {"event_id": "69e80379b6cb98fc:qa-41:accepted", "kind": "handoff.accepted", "ticket_id": "41", "run_id": "69e80379b6cb98fc", "detail": "Implementation clean; ready for QA verification with live-flow testing per qa-plan.md"}
 {"event_id": "69e80379b6cb98fc:succeeded", "kind": "run.succeeded", "ticket_id": "41", "run_id": "69e80379b6cb98fc", "state": "SUCCEEDED", "artifacts": ["specs/41/review.md"]}
+{"event_id": "3b424f1de3897abf:collected", "kind": "run.collected", "ticket_id": "41", "run_id": "3b424f1de3897abf", "tokens": 5132200, "cost_usd": 2.35}
