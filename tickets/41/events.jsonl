@@ -15,3 +15,4 @@
 {"event_id": "54e7c778a40f36d5:queued", "kind": "run.queued", "ticket_id": "41", "run_id": "54e7c778a40f36d5", "task_id": "implement", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
 {"event_id": "95bbf0454c55f149:implement-fix-qa-plan:accepted", "kind": "handoff.accepted", "ticket_id": "41", "run_id": "95bbf0454c55f149", "detail": "Fix QA plan API seed body template \u2014 remove invalid fields (encounter, created_date) from DispenseOrderCreate body per src/types/emr/dispenseOrder/dispenseOrder.ts schema"}
 {"event_id": "95bbf0454c55f149:succeeded", "kind": "run.succeeded", "ticket_id": "41", "run_id": "95bbf0454c55f149", "state": "SUCCEEDED", "artifacts": ["specs/41/review.md"]}
+{"event_id": "54e7c778a40f36d5:collected", "kind": "run.collected", "ticket_id": "41", "run_id": "54e7c778a40f36d5", "tokens": 1411200, "cost_usd": 0.776}
