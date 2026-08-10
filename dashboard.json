@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-10T15:12:52Z",
+  "generated_at": "2026-08-10T15:13:00Z",
   "tickets": [
     {
       "ticket_id": "1",
@@ -8621,7 +8621,7 @@
     {
       "ticket_id": "44",
       "pinned_comment_id": 5239866223,
-      "status": "ACTIVE",
+      "status": "BLOCKED",
       "runs": [
         {
           "run_id": "4af8c0a28362043b",
@@ -8689,7 +8689,7 @@
           "task_id": "implement",
           "task_version": 1,
           "ticket_id": "44",
-          "state": "RUNNING",
+          "state": "BLOCKED",
           "attempt": 1,
           "bindings": {
             "tracker": "github-issues",
@@ -8714,9 +8714,9 @@
           "input_from_run_id": "4af8c0a28362043b"
         }
       ],
-      "block_reason": null,
-      "block_source": null,
-      "interrupted_run_id": null,
+      "block_reason": "branch_conflict",
+      "block_source": "task",
+      "interrupted_run_id": "7f1b4aeb18049d39",
       "comments_polled_at": "2026-08-10T12:12:10Z",
       "work_repos": [
         {
