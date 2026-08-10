@@ -16,3 +16,7 @@
 {"event_id": "ea7df07c92b3c26d:implement-round-2:accepted", "kind": "handoff.accepted", "ticket_id": "45", "run_id": "ea7df07c92b3c26d", "detail": "QA plan data setup blocker: stock selection at qa-plan.md:47 lacks fixture provenance or API seed recipe for reproducible expiry date verification"}
 {"event_id": "ea7df07c92b3c26d:succeeded", "kind": "run.succeeded", "ticket_id": "45", "run_id": "ea7df07c92b3c26d", "state": "SUCCEEDED", "artifacts": ["specs/45/review.md"]}
 {"event_id": "3374c3b05a399a5a:collected", "kind": "run.collected", "ticket_id": "45", "run_id": "3374c3b05a399a5a", "tokens": 1408800, "cost_usd": 0.703}
+{"event_id": "3374c3b05a399a5a:review-2:proposed", "kind": "handoff.proposed", "ticket_id": "45", "run_id": "3374c3b05a399a5a", "detail": "QA plan updated to address Round 1 blocker with specific fixture IDs, UI steps, and API paths"}
+{"event_id": "156945c4925701ec:queued", "kind": "run.queued", "ticket_id": "45", "run_id": "156945c4925701ec", "task_id": "review", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
+{"event_id": "3374c3b05a399a5a:review-2:accepted", "kind": "handoff.accepted", "ticket_id": "45", "run_id": "3374c3b05a399a5a", "detail": "QA plan updated to address Round 1 blocker with specific fixture IDs, UI steps, and API paths"}
+{"event_id": "3374c3b05a399a5a:succeeded", "kind": "run.succeeded", "ticket_id": "45", "run_id": "3374c3b05a399a5a", "state": "SUCCEEDED", "artifacts": ["specs/45/qa-plan.md"]}
