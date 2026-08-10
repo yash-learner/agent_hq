@@ -10,3 +10,4 @@
 {"event_id": "b91fe81916a4ec65:queued", "kind": "run.queued", "ticket_id": "40", "run_id": "b91fe81916a4ec65", "task_id": "implement", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment", "gate": "github-issue-comment"}}
 {"event_id": "a742499562f57458:impl-custom-sidebar-links:accepted", "kind": "handoff.accepted", "ticket_id": "40", "run_id": "a742499562f57458", "detail": "Implement custom links in sidebar footer per spec.md acceptance criteria"}
 {"event_id": "a742499562f57458:succeeded", "kind": "run.succeeded", "ticket_id": "40", "run_id": "a742499562f57458", "state": "SUCCEEDED", "artifacts": ["specs/40/spec.md"]}
+{"event_id": "b91fe81916a4ec65:collected", "kind": "run.collected", "ticket_id": "40", "run_id": "b91fe81916a4ec65", "tokens": 2319700, "cost_usd": 1.35}
