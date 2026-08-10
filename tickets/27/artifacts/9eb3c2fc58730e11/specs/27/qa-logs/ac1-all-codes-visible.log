@@ -1,0 +1,24 @@
+=== AC1: All codes visible in dropdown for new SR ===
+
+[AUTH] Verifying authenticated shell
+  ✓ Authenticated shell verified
+
+[SEED] Creating Activity Definition via UI
+  Filled basic AD fields
+  Adding 3 diagnostic report codes...
+    ✓ Added code 1/3
+    ✓ Added code 2/3
+    ✓ Added code 3/3
+  ✓ Activity Definition created
+
+[SEED] Creating Service Request via UI
+
+✗ AC1 FAILED: locator.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('button', { name: /lab tests/i })[22m
+
+locator.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('button', { name: /lab tests/i })[22m
+
+    at main (/workspaces/agent_hq/_target/9eb3c2fc58730e11/specs/27/qa-drivers/ac1-all-codes-visible.mjs:126:60)

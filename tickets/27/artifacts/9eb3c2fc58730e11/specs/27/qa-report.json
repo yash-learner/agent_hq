@@ -1,0 +1,115 @@
+{
+  "criteria": [
+    {
+      "id": "ac1-all-codes-visible",
+      "title": "All codes visible in dropdown for new SR",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Could not create required test data (Activity Definition with 3 diagnostic report codes + Service Request + collected specimens). UI seed: AD created successfully but SR creation failed at category picker navigation. API seed: Failed with 400 validation errors requiring many mandatory fields not in qa-plan.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": ["1-partial"],
+      "seed_attempt": {
+        "method": "both",
+        "summary": "UI: Created Activity Definition successfully with 3 diagnostic report codes (Acyclovir, Amdinocillin, Cefoperazone) but failed to create Service Request due to category picker UI pattern mismatch. API: Failed to create Activity Definition with 400 validation errors requiring mandatory fields (classification, locations, specimen_requirements, observation_result_requirements, healthcare_service, charge_item_definitions, slug_value) not documented in qa-plan."
+      },
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac2-code-filtered-after-first",
+      "title": "Code A filtered after first report created",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Dependent on AC1 seed data (Service Request). Could not create the required Service Request to test this criterion.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": [],
+      "seed_attempt": {
+        "method": "none",
+        "summary": "Could not reach this criterion due to missing Service Request from AC1."
+      },
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac3-code-filtered-after-second",
+      "title": "Code B filtered after second report created",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Dependent on AC2 (Service Request with 1 existing report). Could not create the required Service Request to test this criterion.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": [],
+      "seed_attempt": {
+        "method": "none",
+        "summary": "Could not reach this criterion due to missing Service Request from AC1."
+      },
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac4-all-codes-used",
+      "title": "All codes used, create button disabled",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Dependent on AC3 (Service Request with 2 existing reports). Could not create the required Service Request to test this criterion.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": [],
+      "seed_attempt": {
+        "method": "none",
+        "summary": "Could not reach this criterion due to missing Service Request from AC1."
+      },
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac5-create-third-after-reload",
+      "title": "Can create third report when 2 exist",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Requires independent Service Request with 2 existing reports. Could not create the required Service Request to test this criterion.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": [],
+      "seed_attempt": {
+        "method": "none",
+        "summary": "Could not reach this criterion due to missing Service Request with 2 existing reports."
+      },
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac6-all-reports-visible-editable",
+      "title": "All reports visible and editable",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Requires Service Request with 3 existing reports. Could not create the required Service Request to test this criterion.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": [],
+      "seed_attempt": {
+        "method": "none",
+        "summary": "Could not reach this criterion due to missing Service Request with 3 existing reports."
+      },
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac7-no-codes-in-ad",
+      "title": "No codes in AD, report created without code",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Requires Activity Definition with 0 diagnostic report codes + Service Request. Could not create the required test data to test this criterion.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": [],
+      "seed_attempt": {
+        "method": "none",
+        "summary": "Could not reach this criterion due to inability to create Activity Definition with 0 diagnostic report codes + Service Request."
+      },
+      "videos": [],
+      "screenshots": []
+    }
+  ],
+  "summary": {
+    "all_passed": false,
+    "pass": 0,
+    "fail": 0,
+    "not_exercised": 7
+  }
+}
