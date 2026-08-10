@@ -1,0 +1,99 @@
+{
+  "criteria": [
+    {
+      "id": "ac1-all-codes-visible",
+      "title": "All codes visible in dropdown for new SR",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Unable to seed Activity Definition with 3 diagnostic report codes. UI creation failed (valueset search timeout). API creation failed (backend validation rejected codes - not in valueset). Fixtures provide only ADs with 1 code each.",
+      "blocker_category": "validation-error",
+      "plan_steps_run": [
+        "Fixture investigation: Checked existing Activity Definitions",
+        "UI Data setup step 1: Navigate to AD creation form",
+        "UI Data setup step 2: Fill title and required fields",
+        "UI Data setup step 3: Attempt code selection from valueset picker",
+        "API fallback: Fetch facility, encounter, patient IDs",
+        "API fallback: Fetch resource category",
+        "API fallback: POST Activity Definition with constructed codes"
+      ],
+      "seed_attempt": {
+        "method": "both",
+        "summary": "UI: Attempted Activity Definition form. Filled title, description, status (Active), category (Laboratory), kind (Service Request). Code selection from valueset picker timed out after 30s searching for 'Fluoroscopic venography'. Unable to proceed. API: Constructed POST body with SNOMED code 442341001 and 3 LOINC codes (18860-2, 18865-1, 18895-8) from test constants. Backend returned 400 validation error: 'Code does not exist in the valueset' for all 4 codes. Backend validates against configured valuesets; test constants not in those valuesets. No known-working API payload found in tests/**. Fixtures checked: 4 ADs exist, all have exactly 1 diagnostic_report_code."
+      },
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac2-code-filtered-after-first",
+      "title": "Code A filtered after first report created",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Depends on AC1 seed data (Activity Definition + Service Request). Could not proceed without base setup.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac3-code-b-filtered-after-second",
+      "title": "Code B filtered after second report created",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Depends on AC2 completion (Service Request with 1 existing report). Seed chain blocked at AC1.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac4-all-codes-used-button-disabled",
+      "title": "All codes used, create button disabled",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Depends on AC3 completion (Service Request with 2 existing reports). Seed chain blocked at AC1.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac5-can-create-third-after-reload",
+      "title": "Can create third report when 2 exist",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Requires independent setup of Service Request with 2 existing reports; same Activity Definition seeding issue as AC1.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac6-all-reports-visible-editable",
+      "title": "All reports visible and editable",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Depends on AC5 completion (Service Request with 3 existing reports). Seed chain blocked at AC1.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac7-no-codes-report-without-code",
+      "title": "No codes in AD, report created without code",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Not attempted after seed wall on AC1-6 consumed time budget. Fixtures do provide ADs with 0 diagnostic_report_codes, but full verification flow not completed.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    }
+  ],
+  "summary": {
+    "all_passed": false,
+    "pass": 0,
+    "fail": 0,
+    "not_exercised": 7
+  }
+}

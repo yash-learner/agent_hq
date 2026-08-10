@@ -1,0 +1,23 @@
+QA AC1: All codes visible in dropdown
+============================================================
+[2026-08-10T16:42:27.951Z] === SEED ATTEMPT LOG ===
+[2026-08-10T16:42:27.952Z] Method: both (UI attempted first, failed; then API)
+[2026-08-10T16:42:27.952Z] UI Attempt: Valueset search for Activity Definition code timed out
+[2026-08-10T16:42:27.952Z] Falling back to API seed (facility-scoped paths from *Api.ts)
+[2026-08-10T16:42:27.952Z] 
+[2026-08-10T16:42:27.952Z] Fetching encounter to get patient ID
+[2026-08-10T16:42:28.155Z] Patient ID: b45baa8a-d5e6-49a7-a7f3-85ac15c9bd8e
+[2026-08-10T16:42:28.155Z] 
+--- API SETUP: Creating Activity Definition ---
+[2026-08-10T16:42:28.156Z] Fetching resource category for Lab Tests
+[2026-08-10T16:42:28.213Z] Lab Tests category ID: 162a37de-3a55-4dbe-972b-f87782b5e379
+[2026-08-10T16:42:28.214Z] Posting Activity Definition: qa-ad-27-multi-1786380148155
+[2026-08-10T16:42:30.244Z] API Error: 400 Bad Request
+[2026-08-10T16:42:30.244Z] Response: {"errors":[{"type":"value_error","loc":["code"],"msg":"Value error, Code does not exist in the valueset","input":{"system":"http://snomed.info/sct","code":"442341001","display":"Fluoroscopic venography of left limb with contrast"},"ctx":{"error":"Code does not exist in the valueset"},"url":"https://errors.pydantic.dev/2.12/v/value_error"},{"type":"value_error","loc":["diagnostic_report_codes",0],"msg":"Value error, Code does not exist in the valueset","input":{"system":"http://loinc.org","code":"18860-2","display":"Acyclovir [Susceptibility]"},"ctx":{"error":"Code does not exist in the valueset"},"url":"https://errors.pydantic.dev/2.12/v/value_error"},{"type":"value_error","loc":["diagnostic_report_codes",1],"msg":"Value error, Code does not exist in the valueset","input":{"system":"http://loinc.org","code":"18865-1","display":"Amdinocillin [Susceptibility] by Serum bactericidal titer"},"ctx":{"error":"Code does not exist in the valueset"},"url":"https://errors.pydantic.dev/2.12/v/value_error"},{"type":"value_error","loc":["diagnostic_report_codes",2],"msg":"Value error, Code does not exist in the valueset","input":{"system":"http://loinc.org","code":"18895-8","display":"Cefoperazone [Susceptibility] by Minimum inhibitory concentration (MIC)"},"ctx":{"error":"Code does not exist in the valueset"},"url":"https://errors.pydantic.dev/2.12/v/value_error"},{"type":"value_error","loc":["category"],"msg":"Value error, Invalid Slug","input":"162a37de-3a55-4dbe-972b-f87782b5e379","ctx":{"error":"Invalid Slug"},"url":"https://errors.pydantic.dev/2.12/v/value_error"}]}
+[2026-08-10T16:42:30.245Z] 
+✗ ERROR: Failed to create Activity Definition: 400
+[2026-08-10T16:42:30.245Z] Stack: Error: Failed to create Activity Definition: 400
+    at run (file:///workspaces/agent_hq/_target/e8cf043782f7eef7/specs/27/qa-drivers/ac1-all-codes-visible.mjs:153:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+[2026-08-10T16:42:30.271Z] 
+Fatal error: Failed to create Activity Definition: 400
