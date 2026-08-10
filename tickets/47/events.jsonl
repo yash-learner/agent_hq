@@ -26,3 +26,7 @@
 {"event_id": "23da68a1b8fdeb9b:implement-round3:accepted", "kind": "handoff.accepted", "ticket_id": "47", "run_id": "23da68a1b8fdeb9b", "detail": "Fix QA plan data setup blockers: unproven LOINC diagnostic report codes (10834-0, 10835-7, 10836-5) and unproven specimen slug (urinalysis-specimen) need to be replaced with proven codes/slugs from fixtures or existing working tests."}
 {"event_id": "23da68a1b8fdeb9b:succeeded", "kind": "run.succeeded", "ticket_id": "47", "run_id": "23da68a1b8fdeb9b", "state": "SUCCEEDED", "artifacts": ["specs/47/review.md"]}
 {"event_id": "ed945dfedc62161c:collected", "kind": "run.collected", "ticket_id": "47", "run_id": "ed945dfedc62161c", "tokens": 1918600, "cost_usd": 1.14}
+{"event_id": "ed945dfedc62161c:review-47-round3:proposed", "kind": "handoff.proposed", "ticket_id": "47", "run_id": "ed945dfedc62161c", "detail": "QA plan blockers fixed, ready for review"}
+{"event_id": "8be923dd61b4e61a:queued", "kind": "run.queued", "ticket_id": "47", "run_id": "8be923dd61b4e61a", "task_id": "review", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
+{"event_id": "ed945dfedc62161c:review-47-round3:accepted", "kind": "handoff.accepted", "ticket_id": "47", "run_id": "ed945dfedc62161c", "detail": "QA plan blockers fixed, ready for review"}
+{"event_id": "ed945dfedc62161c:succeeded", "kind": "run.succeeded", "ticket_id": "47", "run_id": "ed945dfedc62161c", "state": "SUCCEEDED", "artifacts": ["specs/47/qa-plan.md"]}
