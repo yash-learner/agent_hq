@@ -25,3 +25,4 @@
 {"event_id": "82bcfa0a4b14c4c5:queued", "kind": "run.queued", "ticket_id": "40", "run_id": "82bcfa0a4b14c4c5", "task_id": "review", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
 {"event_id": "8599135a7cf199df:review-round-2:accepted", "kind": "handoff.accepted", "ticket_id": "40", "run_id": "8599135a7cf199df", "detail": "Review implementation after fixing Round 1 blocker - custom links now positioned correctly after NavUser"}
 {"event_id": "8599135a7cf199df:succeeded", "kind": "run.succeeded", "ticket_id": "40", "run_id": "8599135a7cf199df", "state": "SUCCEEDED", "artifacts": ["specs/40/qa-plan.md"]}
+{"event_id": "82bcfa0a4b14c4c5:collected", "kind": "run.collected", "ticket_id": "40", "run_id": "82bcfa0a4b14c4c5", "tokens": 573000, "cost_usd": 0.409}
