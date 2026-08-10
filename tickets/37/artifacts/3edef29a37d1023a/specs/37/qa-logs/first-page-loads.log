@@ -1,0 +1,20 @@
+[2026-08-10T10:54:21.030Z] Starting criterion: first-page-loads
+[2026-08-10T10:54:21.031Z] Using facilityId: 2c810797-4001-407b-812f-0f0c0cdc24ab
+[2026-08-10T10:54:21.031Z] Using patientId: fb7bbfd9-f12e-4abe-8254-2dfeff172ac7
+[2026-08-10T10:54:21.031Z] Using encounterId: c434dca5-db85-487d-aa6d-ff558eb8533d
+[2026-08-10T10:54:21.248Z] Navigating to encounters list...
+[2026-08-10T10:54:24.005Z] Waiting for authenticated shell...
+[2026-08-10T10:54:24.036Z] Authenticated shell confirmed
+[2026-08-10T10:54:24.036Z] Looking for encounter c434dca5-db85-487d-aa6d-ff558eb8533d...
+[2026-08-10T10:54:24.050Z] Encounter row not found by ID, trying alternative navigation
+[2026-08-10T10:54:25.381Z] Encounter page loaded
+[2026-08-10T10:54:25.381Z] Looking for Medicines tab...
+[2026-08-10T10:54:35.382Z] ERROR: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('tab', { name: /medicines/i }) to be visible[22m
+
+[2026-08-10T10:54:37.518Z] Video saved to specs/37/videos/first-page-loads.webm
+[2026-08-10T10:54:37.518Z] FATAL: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('tab', { name: /medicines/i }) to be visible[22m
+

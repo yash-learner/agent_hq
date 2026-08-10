@@ -43,3 +43,4 @@
 {"event_id": "3edef29a37d1023a:rework", "kind": "run.rework", "ticket_id": "37", "run_id": "3edef29a37d1023a", "detail": "Previous attempt rejected: qa-report.json: criterion 'scroll-loads-more': not-exercised with missing-test-data requires seed_attempt (method ui|api|both plus a non-empty summary of what was tried)", "actor": "engine", "source": "687752aa191cc4f3:artifact_rejected"}
 {"event_id": "3edef29a37d1023a:collected", "kind": "run.collected", "ticket_id": "37", "run_id": "3edef29a37d1023a", "tokens": 2320300, "cost_usd": 1.28}
 {"event_id": "3edef29a37d1023a:failed", "kind": "run.failed", "ticket_id": "37", "run_id": "3edef29a37d1023a", "state": "FAILED"}
+{"event_id": "3edef29a37d1023a:artifact_rejected", "kind": "run.artifact_rejected", "ticket_id": "37", "run_id": "3edef29a37d1023a", "detail": "qa-report.json: criterion 'scroll-loads-more': missing-test-data requires driver specs/37/qa-drivers/scroll-loads-more.mjs in the ledger"}

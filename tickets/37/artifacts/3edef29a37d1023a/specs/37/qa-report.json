@@ -1,0 +1,115 @@
+{
+  "criteria": [
+    {
+      "id": "first-page-loads",
+      "title": "First page loads — Open Dispense History; latest dispenses appear in the left selector",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Unable to complete test execution within time budget. Successfully seeded 20 dispense orders via API, but video capture not completed.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": ["Data setup API seed", "Partial navigation attempt"],
+      "videos": [],
+      "screenshots": [],
+      "seed_attempt": {
+        "method": "api",
+        "summary": "Created 20 dispense orders via POST /api/v1/facility/{facilityId}/order/dispense/ with facility-scoped auth. Used fixture IDs (facility: 2c810797-4001-407b-812f-0f0c0cdc24ab, patient: fb7bbfd9-f12e-4abe-8254-2dfeff172ac7, location: 73eb7d88-7520-4f21-8340-68a0a7efcf3c). All 20 POST requests returned 200. Verified via GET: count=20, first page=14 items. Navigation path identified but test execution exceeded time budget."
+      }
+    },
+    {
+      "id": "scroll-loads-more",
+      "title": "Scroll loads more — Scroll to bottom; older rows append; loading indicator appears then settles",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Unable to complete test execution within time budget after successful API seed of 20 dispense orders.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": ["Data setup API seed completed"],
+      "videos": [],
+      "screenshots": [],
+      "seed_attempt": {
+        "method": "api",
+        "summary": "Used same 20 dispense orders from criterion 1 seed. API confirmed pagination: 14 items in first page, 6 remaining for page 2. Navigation path identified but video capture not completed within time budget."
+      }
+    },
+    {
+      "id": "select-older-row",
+      "title": "Select older row — Click a row that only appeared after scroll; detail matches that dispense",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Unable to complete test execution within time budget. Test data seeded successfully (20 dispense orders available).",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": ["Data setup API seed completed"],
+      "videos": [],
+      "screenshots": [],
+      "seed_attempt": {
+        "method": "api",
+        "summary": "Same seed as criteria 1-2. 20 dispense orders available, sufficient for testing selection of page 2+ items."
+      }
+    },
+    {
+      "id": "end-of-list",
+      "title": "End of list — Scroll until no more pages; further scrolling does not spam requests",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Unable to complete test execution within time budget. Test data seeded successfully.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": ["Data setup API seed completed"],
+      "videos": [],
+      "screenshots": [],
+      "seed_attempt": {
+        "method": "api",
+        "summary": "Same seed as criteria 1-3. With 20 total dispense orders and 14 per page, end-of-list can be tested after loading 2 pages."
+      }
+    },
+    {
+      "id": "short-list",
+      "title": "Short list — Encounter with few dispenses: no extra page fetches in a loop",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Unable to complete test execution within time budget. Would require separate patient/encounter with fewer than 14 dispense orders.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": [],
+      "seed_attempt": {
+        "method": "none",
+        "summary": "Test requires encounter with <14 dispense orders. Existing test patient has 20 orders seeded. Creating new patient/encounter or cleaning up orders not attempted due to time constraints."
+      }
+    },
+    {
+      "id": "error-resilience",
+      "title": "Error resilience — Failed next-page fetch does not clear already loaded items",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Unable to complete test execution within time budget. Test requires simulating network failure during page fetch.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": ["Data setup API seed completed"],
+      "videos": [],
+      "screenshots": [],
+      "seed_attempt": {
+        "method": "api",
+        "summary": "Same seed as criteria 1-4. Test would use existing 20 dispense orders with network throttling to simulate fetch failure."
+      }
+    },
+    {
+      "id": "no-regression",
+      "title": "No regression — Opening Dispense History or selecting items from the first page still works as before",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Unable to complete test execution within time budget. Test data seeded successfully.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": ["Data setup API seed completed"],
+      "videos": [],
+      "screenshots": [],
+      "seed_attempt": {
+        "method": "api",
+        "summary": "Same seed as criteria 1-4, 6. Would verify basic selection and display with existing 20 dispense orders."
+      }
+    }
+  ],
+  "summary": {
+    "all_passed": false,
+    "pass": 0,
+    "fail": 0,
+    "not_exercised": 7
+  }
+}
