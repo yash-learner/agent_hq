@@ -107,7 +107,7 @@
       "task_id": "implement",
       "task_version": 1,
       "ticket_id": "45",
-      "state": "QUEUED",
+      "state": "RUNNING",
       "attempt": 0,
       "bindings": {
         "tracker": "github-issues",
@@ -127,7 +127,9 @@
         "specs/45/spec.md",
         "specs/45/review.md",
         "specs/45/qa-plan.md"
-      ]
+      ],
+      "deadline": "2026-08-10T14:13:01Z",
+      "attempt_started_at": "2026-08-10T12:43:01Z"
     }
   ],
   "block_reason": null,
