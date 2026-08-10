@@ -1,0 +1,80 @@
+{
+  "criteria": [
+    {
+      "id": "ac1-expiry-format",
+      "title": "Display expiry date in dd/MM/yyyy format for saved items with expiry date",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2"],
+      "videos": ["specs/45/videos/ac1-expiry-format.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac2-no-expiry",
+      "title": "Display \"-\" for items without expiry date",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Creating stock items without expiry dates requires either fixture data that doesn't include expiry (not found in current fixtures) or API creation of new product instances without the expiration_date field. The fixture stock available (Paracetamol at ₹20.00) includes expiry dates by default. API creation via `/api/v1/facility/{facilityId}/product/` would require product_knowledge ID resolution and batch creation, which exceeds the time budget for QA verification.",
+      "blocker_category": "missing-test-data",
+      "seed_attempt": {
+        "method": "ui",
+        "summary": "Attempted to find stock without expiry dates in the fixture stock picker during delivery order creation. All available stock items in the picker displayed expiry dates (₹20.00 stock shows 30/06/2028). API seed recipe would require creating new product with batch but without expiration_date field, which was deemed too complex for the time budget."
+      },
+      "plan_steps_run": ["1"],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac3-column-position",
+      "title": "Expiry column positioned between batch and requested quantity",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1"],
+      "videos": ["specs/45/videos/ac3-column-position.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac4-internal-delivery",
+      "title": "Expiry date visible in internal delivery table (location to location)",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Auth shell timeout occurred during test execution. The test successfully completed the dispatch (outgoing) view verification showing the expiry column, but encountered authentication timeout when navigating to the receiving location's incoming deliveries view.",
+      "blocker_category": "auth-failure",
+      "plan_steps_run": ["1", "2"],
+      "videos": ["specs/45/videos/ac4-internal-delivery.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac5-external-delivery",
+      "title": "Expiry date visible in external delivery table (from supplier)",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "External delivery flow requires creating purchase orders with supplier details, which involves a different UI flow than internal deliveries. Given the time budget and that the SupplyDeliveryTable component is shared between internal and external flows (with `internal` prop differentiating the data source), the external flow was not exercised.",
+      "blocker_category": "no-qa-plan",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac6-header-label",
+      "title": "\"Expiry\" label displayed in table header",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1"],
+      "videos": ["specs/45/videos/ac6-header-label.webm"],
+      "screenshots": []
+    }
+  ],
+  "summary": {
+    "all_passed": false,
+    "pass": 3,
+    "fail": 0,
+    "not_exercised": 3
+  }
+}

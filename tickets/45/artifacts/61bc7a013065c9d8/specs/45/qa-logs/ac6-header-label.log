@@ -1,0 +1,23 @@
+[2026-08-10T16:10:59.299Z] Enabling cursor overlay
+[2026-08-10T16:10:59.300Z] Using facility ID: abe345eb-bc2f-438d-902a-b0cc58247b42
+[2026-08-10T16:10:59.300Z] Navigating to services page
+[2026-08-10T16:10:59.482Z] Waiting for authenticated shell
+[2026-08-10T16:11:00.532Z] Auth shell verified
+[2026-08-10T16:11:00.532Z] Getting Pharmacy location ID
+[2026-08-10T16:11:01.901Z] Pharmacy location ID: f62568dc-118b-47d6-bceb-1a236ebf12e4
+[2026-08-10T16:11:01.901Z] Getting Bio-Chemistry location ID
+[2026-08-10T16:11:04.302Z] Bio-Chemistry location ID: 49848303-a747-409a-8bbc-db6d7f1f94f8
+[2026-08-10T16:11:04.302Z] Creating stock request: qa-ac6-1786378264302
+[2026-08-10T16:11:09.050Z] Adding Paracetamol to order
+[2026-08-10T16:11:13.781Z] Verifying Paracetamol in table
+[2026-08-10T16:11:14.780Z] Stock request approved
+[2026-08-10T16:11:14.781Z] Navigating to dispatch page
+[2026-08-10T16:11:16.234Z] Order found in dispatch list
+[2026-08-10T16:11:16.821Z] Creating delivery order
+[2026-08-10T16:11:19.986Z] Selecting stock with expiry date
+[2026-08-10T16:11:22.539Z] Saving delivery item
+[2026-08-10T16:11:24.103Z] Verifying 'Expiry' header label
+[2026-08-10T16:11:24.107Z] Table headers: ["#","Item","Batch","Expiry","Requested Qty.","Dispatched Qty","Dispatched Date","Sale","Tax","Disc.","Status","Condition","Actions","Item Price","MRP"]
+[2026-08-10T16:11:24.108Z] ✓ "Expiry" header found: "Expiry"
+[2026-08-10T16:11:27.677Z] Test completed successfully
+[2026-08-10T16:11:28.353Z] Video saved to specs/45/videos/ac6-header-label.webm

@@ -1,0 +1,24 @@
+[2026-08-10T16:12:01.366Z] Enabling cursor overlay
+[2026-08-10T16:12:01.367Z] Using facility ID: abe345eb-bc2f-438d-902a-b0cc58247b42
+[2026-08-10T16:12:01.367Z] Navigating to services page
+[2026-08-10T16:12:01.515Z] Waiting for authenticated shell
+[2026-08-10T16:12:11.518Z] ERROR: page.waitForSelector: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-sidebar="sidebar"]') to be visible[22m
+
+[2026-08-10T16:12:11.518Z] page.waitForSelector: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-sidebar="sidebar"]') to be visible[22m
+
+    at main (/workspaces/agent_hq/_target/61bc7a013065c9d8/specs/45/qa-drivers/ac4-internal-delivery.mjs:43:16)
+[2026-08-10T16:12:12.081Z] Video saved to specs/45/videos/ac4-internal-delivery.webm
+Fatal error: page.waitForSelector: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-sidebar="sidebar"]') to be visible[22m
+
+    at main (/workspaces/agent_hq/_target/61bc7a013065c9d8/specs/45/qa-drivers/ac4-internal-delivery.mjs:43:16) {
+  log: [
+    `  - waiting for locator('[data-sidebar="sidebar"]') to be visible`
+  ],
+  name: 'TimeoutError'
+}
