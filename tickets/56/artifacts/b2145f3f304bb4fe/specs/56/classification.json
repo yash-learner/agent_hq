@@ -1,0 +1,4 @@
+{
+  "classification": "crud",
+  "reasoning": "This feature does not meet any beyond-crud criteria: no new data models or migrations, no model field changes, no new services/workers/infrastructure, no external integrations, no authorization/access-control changes, no FHIR/EMR model changes, and no non-CRUD endpoints. It is a pure UI enhancement adding configurable navigation links to the sidebar footer through config and plugin extension, with no backend changes required."
+}
