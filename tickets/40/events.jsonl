@@ -50,3 +50,4 @@
 {"event_id": "4e562f131df2b06a:collected", "kind": "run.collected", "ticket_id": "40", "run_id": "4e562f131df2b06a", "tokens": 7834500, "cost_usd": 3.42}
 {"event_id": "4e562f131df2b06a:failed", "kind": "run.failed", "ticket_id": "40", "run_id": "4e562f131df2b06a", "state": "FAILED"}
 {"event_id": "4e562f131df2b06a:artifact_rejected", "kind": "run.artifact_rejected", "ticket_id": "40", "run_id": "4e562f131df2b06a", "detail": "qa-report.json: criterion 'ac1-custom-links-appear': video path must be exactly specs/40/videos/ac1-custom-links-appear.webm, got specs/40/videos/custom-links-comprehensive.webm"}
+{"event_id": "4e562f131df2b06a:blocked", "kind": "ticket.blocked", "ticket_id": "40", "run_id": "4e562f131df2b06a", "detail": "retries exhausted"}
