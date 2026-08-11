@@ -16,9 +16,9 @@
         "messaging": "github-comment",
         "gate": "github-issue-comment"
       },
-      "cost_usd": null,
-      "tokens": null,
-      "usage_known": false,
+      "cost_usd": 0.495,
+      "tokens": 676100,
+      "usage_known": true,
       "artifacts": [],
       "chain_depth": 0,
       "source_event_id": "59:opened:2026-08-11T13:35:04Z",
