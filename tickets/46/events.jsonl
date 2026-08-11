@@ -56,3 +56,4 @@
 {"event_id": "e5d8ae037c173b9b:46-review-2:accepted", "kind": "handoff.accepted", "ticket_id": "46", "run_id": "e5d8ae037c173b9b", "detail": "Review the implementation fixes against spec and blockers"}
 {"event_id": "e5d8ae037c173b9b:succeeded", "kind": "run.succeeded", "ticket_id": "46", "run_id": "e5d8ae037c173b9b", "state": "SUCCEEDED", "artifacts": ["specs/46/qa-plan.md"]}
 {"event_id": "734f9bfe676b717b:collected", "kind": "run.collected", "ticket_id": "46", "run_id": "734f9bfe676b717b", "tokens": 559900, "cost_usd": 0.35}
+{"event_id": "734f9bfe676b717b:blocked", "kind": "run.blocked", "ticket_id": "46", "run_id": "734f9bfe676b717b", "state": "BLOCKED", "detail": "PLAYWRIGHT_GUIDE.md:90,92,94 \u2014 URL template literals remain concatenated without line breaks after 3 implement rounds. Requires manual fix."}

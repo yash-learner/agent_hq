@@ -1,7 +1,7 @@
 {
   "ticket_id": "46",
   "pinned_comment_id": 5240042694,
-  "status": "ACTIVE",
+  "status": "BLOCKED",
   "runs": [
     {
       "run_id": "7b8922309b5a29e7",
@@ -394,7 +394,7 @@
       "task_id": "review",
       "task_version": 1,
       "ticket_id": "46",
-      "state": "RUNNING",
+      "state": "BLOCKED",
       "attempt": 0,
       "bindings": {
         "tracker": "github-issues",
@@ -421,9 +421,9 @@
       "input_from_run_id": "e5d8ae037c173b9b"
     }
   ],
-  "block_reason": null,
-  "block_source": null,
-  "interrupted_run_id": null,
+  "block_reason": "PLAYWRIGHT_GUIDE.md:90,92,94 \u2014 URL template literals remain concatenated without line breaks after 3 implement rounds. Requires manual fix.",
+  "block_source": "task",
+  "interrupted_run_id": "734f9bfe676b717b",
   "comments_polled_at": "2026-08-11T10:59:50Z",
   "work_repos": [
     {
