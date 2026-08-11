@@ -1,0 +1,87 @@
+{
+  "criteria": [
+    {
+      "id": "ac1-enter-pack-quantity",
+      "title": "Enter in Pack Quantity field moves focus without submitting",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["Data setup: API seed draft delivery order", "Step 1: Click Add Item", "Step 2: Select Paracetamol product", "Step 3: Fill Pack Quantity and press Enter"],
+      "videos": ["specs/54/videos/ac1-enter-pack-quantity.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac2-enter-unit-price",
+      "title": "Enter in Unit Price field moves focus without submitting",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Time budget exceeded after AC1. Driver created but not executed.",
+      "blocker_category": "other",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac3-enter-informational-fields",
+      "title": "Enter in informational component fields (MRP) moves focus without submitting",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Time budget exceeded after AC1. Driver created but not executed.",
+      "blocker_category": "other",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac4-enter-total-price",
+      "title": "Enter in Total Purchase Price field moves focus without submitting",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Time budget exceeded after AC1. Driver created but not executed.",
+      "blocker_category": "other",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac5-shift-enter-submit",
+      "title": "Shift + Enter submits the form",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Time budget exceeded after AC1. Driver created but not executed.",
+      "blocker_category": "other",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac6-save-button-enter",
+      "title": "Save button submits on Enter press",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Time budget exceeded after AC1. Driver not created.",
+      "blocker_category": "other",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac7-save-button-click",
+      "title": "Save button click submits the form",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Time budget exceeded after AC1. Driver not created.",
+      "blocker_category": "other",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    }
+  ],
+  "summary": {
+    "all_passed": false,
+    "pass": 1,
+    "fail": 0,
+    "not_exercised": 6
+  }
+}

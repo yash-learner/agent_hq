@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-11T17:51:41Z",
+  "generated_at": "2026-08-11T17:51:51Z",
   "tickets": [
     {
       "ticket_id": "1",
@@ -12068,7 +12068,7 @@
           "task_id": "qa",
           "task_version": 1,
           "ticket_id": "54",
-          "state": "RUNNING",
+          "state": "SUCCEEDED",
           "attempt": 0,
           "bindings": {
             "tracker": "github-issues",
@@ -12078,7 +12078,15 @@
           "cost_usd": 2.16,
           "tokens": 4037700,
           "usage_known": true,
-          "artifacts": [],
+          "artifacts": [
+            "specs/54/qa.md",
+            "specs/54/qa-report.json",
+            "specs/54/videos/ac1-enter-pack-quantity.webm",
+            "specs/54/qa-drivers/ac1-enter-pack-quantity.mjs",
+            "specs/54/qa-drivers/ac2-5-combined.mjs",
+            "specs/54/qa-logs/ac1-enter-pack-quantity.log",
+            "specs/54/videos/ac1-enter-pack-quantity.gif"
+          ],
           "chain_depth": 5,
           "parent_run_id": "f1067e3c3eb942aa",
           "queue_seq": 5,
@@ -12092,7 +12100,36 @@
           "deadline": "2026-08-11T18:28:37Z",
           "attempt_started_at": "2026-08-11T17:28:37Z",
           "base_commit": "30f6bbb927eaad92af6d3b1ac05cfcac2005f425",
-          "input_from_run_id": "f1067e3c3eb942aa"
+          "input_from_run_id": "f1067e3c3eb942aa",
+          "output_commit": "30f6bbb927eaad92af6d3b1ac05cfcac2005f425",
+          "pr_ref": "yash-learner/care_fe_agent_hq#42"
+        },
+        {
+          "run_id": "aea882014a7a93de",
+          "task_id": "finalize",
+          "task_version": 1,
+          "ticket_id": "54",
+          "state": "QUEUED",
+          "attempt": 0,
+          "bindings": {
+            "tracker": "github-issues",
+            "agent-session": "copilot-cli",
+            "messaging": "github-comment"
+          },
+          "cost_usd": null,
+          "tokens": null,
+          "usage_known": false,
+          "artifacts": [],
+          "chain_depth": 6,
+          "parent_run_id": "366bf07578bdfbf4",
+          "queue_seq": 6,
+          "handoff_key": "finalize-54",
+          "repo": "yash-learner/care_fe_agent_hq",
+          "input_artifacts": [
+            "specs/54/spec.md",
+            "specs/54/review.md",
+            "specs/54/qa.md"
+          ]
         }
       ],
       "block_reason": null,
