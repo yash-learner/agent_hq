@@ -239,7 +239,7 @@
       "task_id": "agent-qa",
       "task_version": 1,
       "ticket_id": "45",
-      "state": "QUEUED",
+      "state": "RUNNING",
       "attempt": 0,
       "bindings": {},
       "cost_usd": null,
@@ -249,7 +249,9 @@
       "chain_depth": 0,
       "source_event_id": "issue-comment:5253190276",
       "enqueue_index": 0,
-      "queue_seq": 6
+      "queue_seq": 6,
+      "deadline": "2026-08-11T13:32:42Z",
+      "attempt_started_at": "2026-08-11T12:32:42Z"
     }
   ],
   "block_reason": null,
