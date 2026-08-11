@@ -20,3 +20,4 @@
 {"event_id": "d2c4e858a5ff9117:queued", "kind": "run.queued", "ticket_id": "53", "run_id": "d2c4e858a5ff9117", "task_id": "review", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
 {"event_id": "3ac85711d4c2c992:review-round-2:accepted", "kind": "handoff.accepted", "ticket_id": "53", "run_id": "3ac85711d4c2c992", "detail": "Review fixes for Round 1 blockers and verify all acceptance criteria"}
 {"event_id": "3ac85711d4c2c992:succeeded", "kind": "run.succeeded", "ticket_id": "53", "run_id": "3ac85711d4c2c992", "state": "SUCCEEDED", "artifacts": ["specs/53/qa-plan.md"]}
+{"event_id": "d2c4e858a5ff9117:collected", "kind": "run.collected", "ticket_id": "53", "run_id": "d2c4e858a5ff9117", "tokens": 980600, "cost_usd": 0.549}
