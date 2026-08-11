@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-11T12:11:57Z",
+  "generated_at": "2026-08-11T12:12:29Z",
   "tickets": [
     {
       "ticket_id": "1",
@@ -10197,7 +10197,8 @@
           "branch": "agent-hq/49",
           "base_branch": "develop",
           "recorded_head": "5d619b29ed893416abbf608f546e40184c4824a9",
-          "pr_ref": "yash-learner/care_fe_agent_hq#35"
+          "pr_ref": "yash-learner/care_fe_agent_hq#35",
+          "comments_polled_at": "2026-08-11T12:12:05Z"
         }
       ]
     },
