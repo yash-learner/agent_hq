@@ -306,7 +306,7 @@
   "block_reason": "Round 3 (cap reached): QA plan data setup blockers remain unresolved. specs/47/qa-plan.md lines 24-52 (AC1) and lines 277-291 (AC6) still lack concrete provenance for diagnostic report codes and specimen definitions \u2014 the cited test file constants are display names, not proven backend-accepted values or fixture references. Without proven data setup (fixture IDs, working test seeds, or validated API payloads), QA cannot execute the live acceptance criteria.",
   "block_source": "task",
   "interrupted_run_id": "fbef79548dc169f3",
-  "comments_polled_at": "2026-08-11T10:59:54Z",
+  "comments_polled_at": "2026-08-11T12:29:45Z",
   "work_repos": [
     {
       "repo": "yash-learner/care_fe_agent_hq",
