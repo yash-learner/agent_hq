@@ -31,3 +31,4 @@
 {"event_id": "293eb4aa42c74a0c:review-round-3:accepted", "kind": "handoff.accepted", "ticket_id": "53", "run_id": "293eb4aa42c74a0c", "detail": "Review implementation against spec after fixing Round 2 blockers"}
 {"event_id": "293eb4aa42c74a0c:succeeded", "kind": "run.succeeded", "ticket_id": "53", "run_id": "293eb4aa42c74a0c", "state": "SUCCEEDED", "artifacts": ["specs/53/qa-plan.md"]}
 {"event_id": "da70e6290053ef57:collected", "kind": "run.collected", "ticket_id": "53", "run_id": "da70e6290053ef57", "tokens": 918200, "cost_usd": 0.561}
+{"event_id": "da70e6290053ef57:blocked", "kind": "run.blocked", "ticket_id": "53", "run_id": "da70e6290053ef57", "state": "BLOCKED", "detail": "Round 3 - Unresolved blocker: tests/PLAYWRIGHT_GUIDE.md:90-94 formatting corruption persists. URL examples remain concatenated on single lines (lines 90, 92, 94) without proper newlines, breaking code readability. Each URL path must be on its own line within the code block."}
