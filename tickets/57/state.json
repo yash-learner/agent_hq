@@ -271,7 +271,7 @@
   "block_reason": "Round 3 cap reached with unresolved blocker: SupplyDeliveryTable.tsx:286-299 only reads batch/expiry from supplied_inventory_item.product (internal-only path); external deliveries (AC4) will always show '-' instead of actual data from supplied_item.",
   "block_source": "task",
   "interrupted_run_id": "64b1ca4c4d840993",
-  "comments_polled_at": "2026-08-11T13:38:00Z",
+  "comments_polled_at": "2026-08-11T18:28:08Z",
   "work_repos": [
     {
       "repo": "yash-learner/care_fe_agent_hq",
