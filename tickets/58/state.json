@@ -141,7 +141,7 @@
       "task_id": "review",
       "task_version": 1,
       "ticket_id": "58",
-      "state": "RUNNING",
+      "state": "SUCCEEDED",
       "attempt": 0,
       "bindings": {
         "tracker": "github-issues",
@@ -151,7 +151,9 @@
       "cost_usd": 0.581,
       "tokens": 1006500,
       "usage_known": true,
-      "artifacts": [],
+      "artifacts": [
+        "specs/58/review.md"
+      ],
       "chain_depth": 4,
       "parent_run_id": "80e1acfe2014ed0d",
       "queue_seq": 4,
@@ -165,7 +167,35 @@
       "deadline": "2026-08-11T14:43:52Z",
       "attempt_started_at": "2026-08-11T14:13:52Z",
       "base_commit": "19f5b8e9c30a7ba3a95102518f852d2665689e3f",
-      "input_from_run_id": "80e1acfe2014ed0d"
+      "input_from_run_id": "80e1acfe2014ed0d",
+      "output_commit": "19f5b8e9c30a7ba3a95102518f852d2665689e3f",
+      "pr_ref": "yash-learner/care_fe_agent_hq#38"
+    },
+    {
+      "run_id": "93a707f54b4a4b61",
+      "task_id": "implement",
+      "task_version": 1,
+      "ticket_id": "58",
+      "state": "QUEUED",
+      "attempt": 0,
+      "bindings": {
+        "tracker": "github-issues",
+        "agent-session": "copilot-cli",
+        "messaging": "github-comment"
+      },
+      "cost_usd": null,
+      "tokens": null,
+      "usage_known": false,
+      "artifacts": [],
+      "chain_depth": 5,
+      "parent_run_id": "9bf2f481a7072d2d",
+      "queue_seq": 5,
+      "handoff_key": "implement-fix-playwright-guide",
+      "repo": "yash-learner/care_fe_agent_hq",
+      "input_artifacts": [
+        "specs/58/spec.md",
+        "specs/58/review.md"
+      ]
     }
   ],
   "block_reason": null,
