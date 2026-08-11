@@ -38,3 +38,4 @@
 {"event_id": "e56bb8bf05a7c27f:rework", "kind": "run.rework", "ticket_id": "45", "run_id": "e56bb8bf05a7c27f", "detail": "@yash-learner: re-verify with MCP-driven QA\n\n(ticket was blocked: retries exhausted)", "actor": "yash-learner", "source": "issue-comment:5253190276"}
 {"event_id": "e56bb8bf05a7c27f:collected", "kind": "run.collected", "ticket_id": "45", "run_id": "e56bb8bf05a7c27f"}
 {"event_id": "e56bb8bf05a7c27f:failed", "kind": "run.failed", "ticket_id": "45", "run_id": "e56bb8bf05a7c27f", "state": "FAILED"}
+{"event_id": "e56bb8bf05a7c27f:blocked", "kind": "ticket.blocked", "ticket_id": "45", "run_id": "e56bb8bf05a7c27f", "detail": "attempt failed with unknown spend"}
