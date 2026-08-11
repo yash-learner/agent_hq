@@ -1,0 +1,87 @@
+{
+  "criteria": [
+    {
+      "id": "ac1-search-input-appears",
+      "title": "Search input appears above facility cards",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2"],
+      "videos": ["specs/52/videos/ac1-search-input-appears.webm"],
+      "screenshots": ["specs/52/screenshots/ac1-search-input.png"]
+    },
+    {
+      "id": "ac2-search-filters",
+      "title": "Typing in search filters facilities by name",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3"],
+      "videos": ["specs/52/videos/ac2-search-filters.webm"],
+      "screenshots": ["specs/52/screenshots/ac2-filtered.png"]
+    },
+    {
+      "id": "ac3-empty-state",
+      "title": "Empty state when no facilities match",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1"],
+      "videos": ["specs/52/videos/ac3-empty-state.webm"],
+      "screenshots": ["specs/52/screenshots/ac3-empty-state.png"]
+    },
+    {
+      "id": "ac4-clear-search",
+      "title": "Clearing search restores full list",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3"],
+      "videos": ["specs/52/videos/ac4-clear-search.webm"],
+      "screenshots": ["specs/52/screenshots/ac4-cleared.png"]
+    },
+    {
+      "id": "ac5-mobile-responsive",
+      "title": "Mobile responsiveness",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3"],
+      "videos": ["specs/52/videos/ac5-mobile-responsive.webm"],
+      "screenshots": ["specs/52/screenshots/ac5-mobile.png"]
+    },
+    {
+      "id": "ac6-accessibility",
+      "title": "Accessibility compliance",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3", "4"],
+      "videos": ["specs/52/videos/ac6-accessibility.webm"],
+      "screenshots": ["specs/52/screenshots/ac6-focused.png"]
+    },
+    {
+      "id": "ac7-debouncing",
+      "title": "Debouncing prevents excessive filter operations",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2"],
+      "videos": ["specs/52/videos/ac7-debouncing.webm"],
+      "screenshots": ["specs/52/screenshots/ac7-debounce.png"]
+    }
+  ],
+  "summary": {
+    "all_passed": true,
+    "pass": 7,
+    "fail": 0,
+    "not_exercised": 0
+  }
+}
