@@ -1,0 +1,19 @@
+[2026-08-11T11:19:00.962Z] AC2: Starting driver for administrator role badge (v2)
+[2026-08-11T11:19:01.076Z] Attempting UI login as care-fac-admin / Ohcn@123
+[2026-08-11T11:19:01.130Z] Navigating to /login
+[2026-08-11T11:19:01.339Z] Filling username: care-fac-admin
+[2026-08-11T11:19:02.688Z] Filling password
+[2026-08-11T11:19:03.280Z] Clicking login button
+[2026-08-11T11:19:03.909Z] Waiting for navigation away from login
+[2026-08-11T11:19:04.232Z] Waiting for authenticated shell
+[2026-08-11T11:19:05.094Z] Login successful - navigating to facility overview
+[2026-08-11T11:19:08.228Z] Looking for sidebar user dropdown trigger
+[2026-08-11T11:19:08.232Z] Selector 0 visible: false
+[2026-08-11T11:19:08.234Z] Selector 1 visible: true
+[2026-08-11T11:19:08.234Z] Found dropdown trigger, clicking to open menu
+[2026-08-11T11:19:10.351Z] Screenshot saved
+[2026-08-11T11:19:10.351Z] Verifying badge with 'Administrator' text is visible
+[2026-08-11T11:19:10.354Z] FAIL: Badge with 'Administrator' text is NOT visible in dropdown
+[2026-08-11T11:19:10.357Z] Page contains 'administrator': false
+[2026-08-11T11:19:12.359Z] Closing context to finalize video
+[2026-08-11T11:19:12.880Z] AC2: Driver completed

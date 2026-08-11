@@ -1,0 +1,61 @@
+[2026-08-11T11:13:54.241Z] AC1: Starting driver for doctor role badge
+[2026-08-11T11:13:54.351Z] Attempting UI login as care-doctor / Ohcn@123
+[2026-08-11T11:13:54.404Z] Navigating to /login
+[2026-08-11T11:13:54.625Z] Filling username: care-doctor
+[2026-08-11T11:13:55.980Z] Filling password
+[2026-08-11T11:13:56.559Z] Clicking login button
+[2026-08-11T11:13:57.243Z] Waiting for navigation away from login
+[2026-08-11T11:13:57.528Z] Waiting for authenticated shell
+[2026-08-11T11:13:58.394Z] Login successful - navigating to facility overview
+[2026-08-11T11:14:00.488Z] Looking for sidebar user dropdown trigger
+[2026-08-11T11:14:00.488Z] Clicking dropdown trigger to open menu
+[2026-08-11T11:14:30.490Z] ERROR: locator.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-sidebar="sidebar"]').getByRole('button').filter({ hasText: /care-doctor/i }).first()[22m
+
+[2026-08-11T11:14:30.490Z] Stack: locator.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-sidebar="sidebar"]').getByRole('button').filter({ hasText: /care-doctor/i }).first()[22m
+
+    at /workspaces/agent_hq/_target/8e23edc666584a37/specs/50/qa-drivers/ac1-doctor-badge.mjs:72:27
+[2026-08-11T11:15:04.008Z] AC1: Starting driver for doctor role badge
+[2026-08-11T11:15:04.120Z] Attempting UI login as care-doctor / Ohcn@123
+[2026-08-11T11:15:04.172Z] Navigating to /login
+[2026-08-11T11:15:04.357Z] Filling username: care-doctor
+[2026-08-11T11:15:05.662Z] Filling password
+[2026-08-11T11:15:06.319Z] Clicking login button
+[2026-08-11T11:15:06.928Z] Waiting for navigation away from login
+[2026-08-11T11:15:07.166Z] Waiting for authenticated shell
+[2026-08-11T11:15:08.004Z] Login successful - navigating to facility overview
+[2026-08-11T11:15:10.101Z] Looking for sidebar user dropdown trigger
+[2026-08-11T11:15:10.101Z] Waiting for dropdown trigger to be visible
+[2026-08-11T11:15:20.103Z] ERROR: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('button', { name: /care-doctor/i }) to be visible[22m
+
+[2026-08-11T11:15:20.103Z] Stack: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('button', { name: /care-doctor/i }) to be visible[22m
+
+    at /workspaces/agent_hq/_target/8e23edc666584a37/specs/50/qa-drivers/ac1-doctor-badge.mjs:72:27
+[2026-08-11T11:15:51.285Z] AC1: Starting driver for doctor role badge
+[2026-08-11T11:15:51.387Z] Attempting UI login as care-doctor / Ohcn@123
+[2026-08-11T11:15:51.449Z] Navigating to /login
+[2026-08-11T11:15:51.664Z] Filling username: care-doctor
+[2026-08-11T11:15:53.005Z] Filling password
+[2026-08-11T11:15:53.603Z] Clicking login button
+[2026-08-11T11:15:54.314Z] Waiting for navigation away from login
+[2026-08-11T11:15:54.541Z] Waiting for authenticated shell
+[2026-08-11T11:15:55.413Z] Login successful - navigating to facility overview
+[2026-08-11T11:15:57.557Z] Screenshot saved to specs/50/screenshots/ac1-debug-after-login.png
+[2026-08-11T11:15:57.558Z] Page title: Care
+[2026-08-11T11:15:57.558Z] Page URL: http://localhost:4000/facility/340932ac-66eb-45da-91d5-acdb4171b9d6/overview
+[2026-08-11T11:15:57.560Z] Sidebar visible: true
+[2026-08-11T11:15:57.560Z] Looking for sidebar user dropdown trigger
+[2026-08-11T11:15:57.565Z] Selector 0 visible: false
+[2026-08-11T11:15:57.568Z] Selector 1 visible: true
+[2026-08-11T11:15:57.568Z] Found dropdown trigger, clicking to open menu
+[2026-08-11T11:15:59.151Z] Verifying badge with 'Doctor' text is visible
+[2026-08-11T11:15:59.154Z] SUCCESS: Badge with 'Doctor' text is visible in dropdown
+[2026-08-11T11:16:01.156Z] Closing context to finalize video
+[2026-08-11T11:16:01.857Z] AC1: Driver completed

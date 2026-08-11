@@ -1,0 +1,18 @@
+[2026-08-11T11:22:18.747Z] AC4: Starting driver for logout with role badge
+[2026-08-11T11:22:18.845Z] Attempting UI login as care-staff / Ohcn@123
+[2026-08-11T11:22:18.899Z] Navigating to /login
+[2026-08-11T11:22:19.117Z] Filling username: care-staff
+[2026-08-11T11:22:20.354Z] Filling password
+[2026-08-11T11:22:20.899Z] Clicking login button
+[2026-08-11T11:22:21.530Z] Waiting for navigation away from login
+[2026-08-11T11:22:21.843Z] Waiting for authenticated shell
+[2026-08-11T11:22:23.348Z] Login successful - navigating to facility overview
+[2026-08-11T11:22:25.442Z] Opening dropdown to verify staff badge
+[2026-08-11T11:22:27.017Z] Verifying badge with 'Staff' text is visible
+[2026-08-11T11:22:27.021Z] Staff badge visible: true
+[2026-08-11T11:22:27.021Z] Looking for Logout menu item
+[2026-08-11T11:22:27.023Z] Logout selector 0 visible: false
+[2026-08-11T11:22:27.025Z] Logout selector 1 visible: false
+[2026-08-11T11:22:27.026Z] Logout selector 2 visible: false
+[2026-08-11T11:22:27.028Z] Logout selector 3 visible: false
+[2026-08-11T11:22:27.028Z] FAIL: Logout button not visible in dropdown

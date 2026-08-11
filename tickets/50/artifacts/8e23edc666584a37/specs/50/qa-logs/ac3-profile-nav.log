@@ -1,0 +1,52 @@
+[2026-08-11T11:20:15.078Z] AC3: Starting driver for profile navigation with role badge
+[2026-08-11T11:20:15.206Z] Attempting UI login as care-nurse / Ohcn@123
+[2026-08-11T11:20:15.267Z] Navigating to /login
+[2026-08-11T11:20:15.474Z] Filling username: care-nurse
+[2026-08-11T11:20:16.814Z] Filling password
+[2026-08-11T11:20:17.409Z] Clicking login button
+[2026-08-11T11:20:18.122Z] Waiting for navigation away from login
+[2026-08-11T11:20:18.299Z] Waiting for authenticated shell
+[2026-08-11T11:20:19.166Z] Login successful - navigating to facility overview
+[2026-08-11T11:20:21.262Z] Step 1: Opening dropdown to verify nurse badge
+[2026-08-11T11:20:22.838Z] Verifying badge with 'Nurse' text is visible
+[2026-08-11T11:20:22.842Z] Nurse badge visible: true
+[2026-08-11T11:20:22.842Z] Step 2: Clicking Profile menu item
+[2026-08-11T11:20:22.843Z] Profile link visible: false
+[2026-08-11T11:20:22.844Z] FAIL: Profile link not visible in dropdown
+[2026-08-11T11:20:37.557Z] AC3: Starting driver for profile navigation with role badge
+[2026-08-11T11:20:37.651Z] Attempting UI login as care-nurse / Ohcn@123
+[2026-08-11T11:20:37.717Z] Navigating to /login
+[2026-08-11T11:20:37.920Z] Filling username: care-nurse
+[2026-08-11T11:20:39.151Z] Filling password
+[2026-08-11T11:20:39.699Z] Clicking login button
+[2026-08-11T11:20:40.364Z] Waiting for navigation away from login
+[2026-08-11T11:20:40.604Z] Waiting for authenticated shell
+[2026-08-11T11:20:41.713Z] Login successful - navigating to facility overview
+[2026-08-11T11:20:43.830Z] Step 1: Opening dropdown to verify nurse badge
+[2026-08-11T11:20:45.404Z] Verifying badge with 'Nurse' text is visible
+[2026-08-11T11:20:45.408Z] Nurse badge visible: true
+[2026-08-11T11:20:45.408Z] Step 2: Looking for Profile menu item
+[2026-08-11T11:20:45.409Z] Profile selector 0 visible: false
+[2026-08-11T11:20:45.411Z] Profile selector 1 visible: false
+[2026-08-11T11:20:45.412Z] Profile selector 2 visible: false
+[2026-08-11T11:20:45.414Z] Profile selector 3 visible: false
+[2026-08-11T11:20:45.414Z] FAIL: Profile link not visible in dropdown
+[2026-08-11T11:20:57.738Z] AC3: Starting driver for profile navigation with role badge
+[2026-08-11T11:20:57.839Z] Attempting UI login as care-nurse / Ohcn@123
+[2026-08-11T11:20:57.899Z] Navigating to /login
+[2026-08-11T11:20:58.096Z] Filling username: care-nurse
+[2026-08-11T11:20:59.352Z] Filling password
+[2026-08-11T11:20:59.930Z] Clicking login button
+[2026-08-11T11:21:00.654Z] Waiting for navigation away from login
+[2026-08-11T11:21:00.780Z] Waiting for authenticated shell
+[2026-08-11T11:21:01.629Z] Login successful - navigating to facility overview
+[2026-08-11T11:21:03.741Z] Step 1: Opening dropdown to verify nurse badge
+[2026-08-11T11:21:05.387Z] Screenshot saved
+[2026-08-11T11:21:05.387Z] Verifying badge with 'Nurse' text is visible
+[2026-08-11T11:21:05.391Z] Nurse badge visible: true
+[2026-08-11T11:21:05.391Z] Step 2: Looking for Profile menu item
+[2026-08-11T11:21:05.393Z] Profile selector 0 visible: false
+[2026-08-11T11:21:05.396Z] Profile selector 1 visible: false
+[2026-08-11T11:21:05.398Z] Profile selector 2 visible: false
+[2026-08-11T11:21:05.400Z] Profile selector 3 visible: false
+[2026-08-11T11:21:05.400Z] FAIL: Profile link not visible in dropdown

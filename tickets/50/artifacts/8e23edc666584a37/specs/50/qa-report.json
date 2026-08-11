@@ -1,0 +1,77 @@
+{
+  "criteria": [
+    {
+      "id": "ac1-doctor-badge",
+      "title": "Doctor role badge displays for facility user",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2"],
+      "videos": ["specs/50/videos/ac1-doctor-badge.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac2-admin-badge",
+      "title": "Administrator badge shows for care-fac-admin",
+      "verdict": "not_exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Dropdown menu did not open reliably in automated tests despite multiple selector strategies and authentication approaches. Trigger located and clicked but dropdown content not accessible.",
+      "blocker_category": "navigation-mismatch",
+      "plan_steps_run": ["1", "2"],
+      "videos": [],
+      "screenshots": ["specs/50/screenshots/ac2-debug-dropdown.png", "specs/50/screenshots/ac2-dropdown-open.png"],
+      "seed_attempt": {
+        "method": "ui",
+        "summary": "Attempted UI login as care-fac-admin with Ohcn@123 password, navigated to facility overview, located dropdown trigger in sidebar, clicked trigger but dropdown menu with Administrator badge did not become visible to test selectors"
+      }
+    },
+    {
+      "id": "ac3-profile-nav",
+      "title": "Profile navigation works with role badge visible",
+      "verdict": "not_exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Dropdown menu interaction issue prevented access to Profile menu item. Nurse text detected but dropdown content not accessible.",
+      "blocker_category": "navigation-mismatch",
+      "plan_steps_run": ["1", "2"],
+      "videos": [],
+      "screenshots": ["specs/50/screenshots/ac3-dropdown-open.png"],
+      "seed_attempt": {
+        "method": "ui",
+        "summary": "UI login as care-nurse, navigated to facility overview, clicked dropdown trigger but menu items (Profile link) not accessible for navigation test"
+      }
+    },
+    {
+      "id": "ac4-logout",
+      "title": "Logout works with role badge present",
+      "verdict": "not_exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Dropdown menu did not open to reveal Logout menu item. Staff text found but logout interaction not accessible.",
+      "blocker_category": "navigation-mismatch",
+      "plan_steps_run": ["1", "2"],
+      "videos": ["specs/50/videos/ac4-logout.webm"],
+      "screenshots": [],
+      "seed_attempt": {
+        "method": "ui",
+        "summary": "UI login as care-staff, navigated to facility overview, clicked dropdown trigger but Logout menu item not visible for interaction test"
+      }
+    },
+    {
+      "id": "ac5-patient-no-badge",
+      "title": "Patient nav menu has no role badge",
+      "verdict": "not_exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Patient OTP login flow requires additional setup beyond fixture login. PatientNavUser component verified via code inspection to not include badge.",
+      "blocker_category": "no-qa-plan",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    }
+  ],
+  "summary": {
+    "all_passed": false,
+    "pass": 1,
+    "fail": 0,
+    "not_exercised": 4
+  }
+}

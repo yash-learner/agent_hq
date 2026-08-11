@@ -1,0 +1,13 @@
+[2026-08-11T11:23:06.616Z] AC2: Final attempt with openAuthedContext helper
+[2026-08-11T11:23:06.714Z] Using openAuthedContext with care-fac-admin credentials
+[2026-08-11T11:23:37.584Z] ERROR: locator.fill: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('textbox', { name: /username/i })[22m
+
+[2026-08-11T11:23:37.584Z] Stack: locator.fill: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('textbox', { name: /username/i })[22m
+
+    at uiLogin (/workspaces/agent_hq/_target/8e23edc666584a37/.agent-hq/qa-auth.mjs:88:58)
+    at async openAuthedContext (/workspaces/agent_hq/_target/8e23edc666584a37/.agent-hq/qa-auth.mjs:223:7)
+    at async file:///workspaces/agent_hq/_target/8e23edc666584a37/specs/50/qa-drivers/ac2-admin-final.mjs:24:37
