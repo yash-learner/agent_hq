@@ -47,3 +47,4 @@
 {"event_id": "4e562f131df2b06a:queued", "kind": "run.queued", "ticket_id": "40", "run_id": "4e562f131df2b06a", "task_id": "qa", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
 {"event_id": "4e562f131df2b06a:rework", "kind": "run.rework", "ticket_id": "40", "run_id": "4e562f131df2b06a", "detail": "Previous attempt rejected: qa-report.json schema violation: criteria/2: Additional properties are not allowed ('note' was unexpected)", "actor": "engine", "source": "d9cd0676db73f88e:artifact_rejected"}
 {"event_id": "d9cd0676db73f88e:runner_lost", "kind": "run.runner_lost", "ticket_id": "40", "run_id": "d9cd0676db73f88e", "state": "FAILED"}
+{"event_id": "4e562f131df2b06a:collected", "kind": "run.collected", "ticket_id": "40", "run_id": "4e562f131df2b06a", "tokens": 7834500, "cost_usd": 3.42}
