@@ -43,3 +43,4 @@
 {"event_id": "d9cd0676db73f88e:rework", "kind": "run.rework", "ticket_id": "40", "run_id": "d9cd0676db73f88e", "detail": "(ticket was blocked: retries exhausted)", "actor": "yash-learner", "source": "issue-comment:5251871473"}
 {"event_id": "d9cd0676db73f88e:collected", "kind": "run.collected", "ticket_id": "40", "run_id": "d9cd0676db73f88e", "tokens": 2931300, "cost_usd": 1.63}
 {"event_id": "d9cd0676db73f88e:failed", "kind": "run.failed", "ticket_id": "40", "run_id": "d9cd0676db73f88e", "state": "FAILED"}
+{"event_id": "d9cd0676db73f88e:artifact_rejected", "kind": "run.artifact_rejected", "ticket_id": "40", "run_id": "d9cd0676db73f88e", "detail": "qa-report.json schema violation: criteria/2: Additional properties are not allowed ('note' was unexpected)"}
