@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-11T14:41:47Z",
+  "generated_at": "2026-08-11T14:41:49Z",
   "tickets": [
     {
       "ticket_id": "1",
@@ -11640,7 +11640,7 @@
     {
       "ticket_id": "58",
       "pinned_comment_id": 5253859165,
-      "status": "ACTIVE",
+      "status": "BLOCKED",
       "runs": [
         {
           "run_id": "9ed2da444cee4db3",
@@ -11849,7 +11849,7 @@
           "task_id": "review",
           "task_version": 1,
           "ticket_id": "58",
-          "state": "RUNNING",
+          "state": "BLOCKED",
           "attempt": 0,
           "bindings": {
             "tracker": "github-issues",
@@ -11876,9 +11876,9 @@
           "input_from_run_id": "93a707f54b4a4b61"
         }
       ],
-      "block_reason": null,
-      "block_source": null,
-      "interrupted_run_id": null,
+      "block_reason": "Round 3 blocker: tests/PLAYWRIGHT_GUIDE.md:90-94 \u2014 Navigation URL paths were accidentally collapsed into concatenated strings without line breaks during this ticket's implementation (commit 19f5b8e9c). Each path must be on its own line with proper formatting, not `path1``path2` on the same line.",
+      "block_source": "task",
+      "interrupted_run_id": "9566c94fbe57c785",
       "comments_polled_at": "2026-08-11T13:39:59Z",
       "work_repos": [
         {
