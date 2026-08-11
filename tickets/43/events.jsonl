@@ -1,2 +1,7 @@
 {"event_id": "2731db1df9690228:queued", "kind": "run.queued", "ticket_id": "43", "run_id": "2731db1df9690228", "task_id": "spec", "task_version": 1, "state": "QUEUED", "bindings": {}}
 {"event_id": "2731db1df9690228:collected", "kind": "run.collected", "ticket_id": "43", "run_id": "2731db1df9690228", "tokens": 693800, "cost_usd": 0.48}
+{"event_id": "2731db1df9690228:auto_approval", "kind": "gate.decided", "ticket_id": "43", "run_id": "2731db1df9690228", "detail": "auto-approved by task config (would have asked product-owners)", "actor": "engine"}
+{"event_id": "2731db1df9690228:implement-43-frontend:proposed", "kind": "handoff.proposed", "ticket_id": "43", "run_id": "2731db1df9690228", "detail": "Add can_create_encounter permission gate to EncounterHistory empty-state button"}
+{"event_id": "1bec98e86801697b:queued", "kind": "run.queued", "ticket_id": "43", "run_id": "1bec98e86801697b", "task_id": "implement", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment", "gate": "github-issue-comment"}}
+{"event_id": "2731db1df9690228:implement-43-frontend:accepted", "kind": "handoff.accepted", "ticket_id": "43", "run_id": "2731db1df9690228", "detail": "Add can_create_encounter permission gate to EncounterHistory empty-state button"}
+{"event_id": "2731db1df9690228:succeeded", "kind": "run.succeeded", "ticket_id": "43", "run_id": "2731db1df9690228", "state": "SUCCEEDED", "artifacts": ["specs/43/spec.md"]}
