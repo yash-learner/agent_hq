@@ -32,3 +32,4 @@
 {"event_id": "64b1ca4c4d840993:queued", "kind": "run.queued", "ticket_id": "57", "run_id": "64b1ca4c4d840993", "task_id": "review", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
 {"event_id": "56ca23307dbd9124:review-57-round-3:accepted", "kind": "handoff.accepted", "ticket_id": "57", "run_id": "56ca23307dbd9124", "detail": "Review Round 2 blocker fix: corrected data extraction logic in PrintDeliveryOrder to use supplied_item.batch and supplied_item.expiration_date for external deliveries"}
 {"event_id": "56ca23307dbd9124:succeeded", "kind": "run.succeeded", "ticket_id": "57", "run_id": "56ca23307dbd9124", "state": "SUCCEEDED", "artifacts": ["specs/57/qa-plan.md"]}
+{"event_id": "64b1ca4c4d840993:collected", "kind": "run.collected", "ticket_id": "57", "run_id": "64b1ca4c4d840993", "tokens": 590700, "cost_usd": 0.341}
