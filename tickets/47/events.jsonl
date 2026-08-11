@@ -39,3 +39,4 @@
 {"event_id": "fbef79548dc169f3:queued", "kind": "run.queued", "ticket_id": "47", "run_id": "fbef79548dc169f3", "task_id": "review", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
 {"event_id": "0a08d77fb590b2fc:review-r3:accepted", "kind": "handoff.accepted", "ticket_id": "47", "run_id": "0a08d77fb590b2fc", "detail": "Review Round 3 implementation: restructured conditional rendering to always show creation UI when codes remain, fixed useEffect dependency, updated QA plan provenance"}
 {"event_id": "0a08d77fb590b2fc:succeeded", "kind": "run.succeeded", "ticket_id": "47", "run_id": "0a08d77fb590b2fc", "state": "SUCCEEDED", "artifacts": ["specs/47/qa-plan.md"]}
+{"event_id": "fbef79548dc169f3:collected", "kind": "run.collected", "ticket_id": "47", "run_id": "fbef79548dc169f3", "tokens": 468200, "cost_usd": 0.33}
