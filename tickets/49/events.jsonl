@@ -24,3 +24,4 @@
 {"event_id": "fddd588700d0006f:succeeded", "kind": "run.succeeded", "ticket_id": "49", "run_id": "fddd588700d0006f", "state": "SUCCEEDED", "artifacts": ["specs/49/summary.md"]}
 {"event_id": "d99f42e188368e94:queued", "kind": "run.queued", "ticket_id": "49", "run_id": "d99f42e188368e94", "task_id": "agent-qa", "task_version": 1, "state": "QUEUED", "bindings": {}}
 {"event_id": "d99f42e188368e94:rework", "kind": "run.rework", "ticket_id": "49", "run_id": "d99f42e188368e94", "detail": "@yash-learner: re-verify with MCP-driven QA", "actor": "yash-learner", "source": "issue-comment:5253778430"}
+{"event_id": "d99f42e188368e94:collected", "kind": "run.collected", "ticket_id": "49", "run_id": "d99f42e188368e94", "tokens": 4847800, "cost_usd": 2.78}
