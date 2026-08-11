@@ -1,0 +1,87 @@
+{
+  "criteria": [
+    {
+      "id": "ac1-custom-footer-links-appear",
+      "title": "Custom footer links configured in care.config.ts appear in sidebar footer",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "MCP browser tools (navigate, click, snapshot, browser_start_video, browser_stop_video) required by agent-qa task instructions were not available in this session. Instructions explicitly prohibit writing and running custom Playwright driver scripts for the interactive session.",
+      "blocker_category": "other",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac2-external-links-new-tab",
+      "title": "External links with target='_blank' open in new tab with external link icon",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "MCP browser tools (navigate, click, snapshot, browser_start_video, browser_stop_video) required by agent-qa task instructions were not available in this session. Instructions explicitly prohibit writing and running custom Playwright driver scripts for the interactive session.",
+      "blocker_category": "other",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac3-internal-links-same-tab",
+      "title": "Internal links with target='_self' (or no target) navigate in current tab with internal route icon",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "MCP browser tools (navigate, click, snapshot, browser_start_video, browser_stop_video) required by agent-qa task instructions were not available in this session. Instructions explicitly prohibit writing and running custom Playwright driver scripts for the interactive session.",
+      "blocker_category": "other",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac4-sidebar-for-filtering",
+      "title": "Links with sidebarFor filter only display in matching sidebar types",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "MCP browser tools (navigate, click, snapshot, browser_start_video, browser_stop_video) required by agent-qa task instructions were not available in this session. Instructions explicitly prohibit writing and running custom Playwright driver scripts for the interactive session.",
+      "blocker_category": "other",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac5-plugin-footer-links",
+      "title": "Plugin-provided footer links render alongside configured links",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Plugin testing documented as manual-only in qa-plan.md per ticket requirements. Cannot be tested in automated QA without an actual plugin installed with footerNavItems defined in its manifest.",
+      "blocker_category": "other",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac6-links-without-sidebar-for",
+      "title": "Links without sidebarFor appear in all sidebar types",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "MCP browser tools (navigate, click, snapshot, browser_start_video, browser_stop_video) required by agent-qa task instructions were not available in this session. Instructions explicitly prohibit writing and running custom Playwright driver scripts for the interactive session.",
+      "blocker_category": "other",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac7-multiple-links-order-spacing",
+      "title": "Multiple custom footer links render in configured order with proper spacing",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "MCP browser tools (navigate, click, snapshot, browser_start_video, browser_stop_video) required by agent-qa task instructions were not available in this session. Instructions explicitly prohibit writing and running custom Playwright driver scripts for the interactive session.",
+      "blocker_category": "other",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    }
+  ],
+  "summary": {
+    "all_passed": false,
+    "pass": 0,
+    "fail": 0,
+    "not_exercised": 7
+  }
+}
