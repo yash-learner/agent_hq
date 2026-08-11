@@ -32,3 +32,4 @@
 {"event_id": "59c81ad45f2edc14:rework", "kind": "run.rework", "ticket_id": "59", "run_id": "59c81ad45f2edc14", "detail": "Previous attempt rejected: queue entry repo 'care_fe' is not a configured repo", "actor": "engine", "source": "a2a0ba4accf10c8e:handoff_rejected"}
 {"event_id": "59c81ad45f2edc14:collected", "kind": "run.collected", "ticket_id": "59", "run_id": "59c81ad45f2edc14", "tokens": 4428300, "cost_usd": 2.01}
 {"event_id": "59c81ad45f2edc14:failed", "kind": "run.failed", "ticket_id": "59", "run_id": "59c81ad45f2edc14", "state": "FAILED"}
+{"event_id": "59c81ad45f2edc14:artifact_rejected", "kind": "run.artifact_rejected", "ticket_id": "59", "run_id": "59c81ad45f2edc14", "detail": "qa-report.json: criterion 'dropdown-filter': missing-test-data requires driver specs/59/qa-drivers/dropdown-filter.mjs in the ledger"}
