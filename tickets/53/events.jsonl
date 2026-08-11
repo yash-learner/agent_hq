@@ -6,3 +6,7 @@
 {"event_id": "945b7a552d5a7cda:implement-53-care-fe:accepted", "kind": "handoff.accepted", "ticket_id": "53", "run_id": "945b7a552d5a7cda", "detail": "Implement search functionality in FacilitySwitcher component per spec"}
 {"event_id": "945b7a552d5a7cda:succeeded", "kind": "run.succeeded", "ticket_id": "53", "run_id": "945b7a552d5a7cda", "state": "SUCCEEDED", "artifacts": ["specs/53/spec.md"]}
 {"event_id": "b08ef474e218d1cd:collected", "kind": "run.collected", "ticket_id": "53", "run_id": "b08ef474e218d1cd", "tokens": 2215800, "cost_usd": 1.18}
+{"event_id": "b08ef474e218d1cd:review-53:proposed", "kind": "handoff.proposed", "ticket_id": "53", "run_id": "b08ef474e218d1cd", "detail": "Review implementation against spec requirements"}
+{"event_id": "4d758f240de91f29:queued", "kind": "run.queued", "ticket_id": "53", "run_id": "4d758f240de91f29", "task_id": "review", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
+{"event_id": "b08ef474e218d1cd:review-53:accepted", "kind": "handoff.accepted", "ticket_id": "53", "run_id": "b08ef474e218d1cd", "detail": "Review implementation against spec requirements"}
+{"event_id": "b08ef474e218d1cd:succeeded", "kind": "run.succeeded", "ticket_id": "53", "run_id": "b08ef474e218d1cd", "state": "SUCCEEDED", "artifacts": ["specs/53/qa-plan.md"]}
