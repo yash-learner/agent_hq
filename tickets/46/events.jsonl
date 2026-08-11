@@ -51,3 +51,7 @@
 {"event_id": "294b0344b7f2e73c:implement-round-3:accepted", "kind": "handoff.accepted", "ticket_id": "46", "run_id": "294b0344b7f2e73c", "detail": "Fix Round 2 blocker: tests/PLAYWRIGHT_GUIDE.md URL examples still concatenated without line breaks (worsened from Round 1)"}
 {"event_id": "294b0344b7f2e73c:succeeded", "kind": "run.succeeded", "ticket_id": "46", "run_id": "294b0344b7f2e73c", "state": "SUCCEEDED", "artifacts": ["specs/46/review.md"]}
 {"event_id": "e5d8ae037c173b9b:collected", "kind": "run.collected", "ticket_id": "46", "run_id": "e5d8ae037c173b9b", "tokens": 2517600, "cost_usd": 1.23}
+{"event_id": "e5d8ae037c173b9b:46-review-2:proposed", "kind": "handoff.proposed", "ticket_id": "46", "run_id": "e5d8ae037c173b9b", "detail": "Review the implementation fixes against spec and blockers"}
+{"event_id": "734f9bfe676b717b:queued", "kind": "run.queued", "ticket_id": "46", "run_id": "734f9bfe676b717b", "task_id": "review", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
+{"event_id": "e5d8ae037c173b9b:46-review-2:accepted", "kind": "handoff.accepted", "ticket_id": "46", "run_id": "e5d8ae037c173b9b", "detail": "Review the implementation fixes against spec and blockers"}
+{"event_id": "e5d8ae037c173b9b:succeeded", "kind": "run.succeeded", "ticket_id": "46", "run_id": "e5d8ae037c173b9b", "state": "SUCCEEDED", "artifacts": ["specs/46/qa-plan.md"]}
