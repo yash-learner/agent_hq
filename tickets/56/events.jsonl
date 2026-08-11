@@ -35,3 +35,4 @@
 {"event_id": "8e3f0dcd5dd1af8b:queued", "kind": "run.queued", "ticket_id": "56", "run_id": "8e3f0dcd5dd1af8b", "task_id": "agent-qa", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
 {"event_id": "626df9711719e06d:qa-56:accepted", "kind": "handoff.accepted", "ticket_id": "56", "run_id": "626df9711719e06d", "detail": "All blockers resolved in Round 2. Tests now use .env.test for automatic configuration, proper data-testid selectors, error handling for JSON parsing, and namespaced i18n keys. Ready for live QA verification with video evidence."}
 {"event_id": "626df9711719e06d:succeeded", "kind": "run.succeeded", "ticket_id": "56", "run_id": "626df9711719e06d", "state": "SUCCEEDED", "artifacts": ["specs/56/review.md"]}
+{"event_id": "8e3f0dcd5dd1af8b:collected", "kind": "run.collected", "ticket_id": "56", "run_id": "8e3f0dcd5dd1af8b", "tokens": 2125800, "cost_usd": 1.32}
