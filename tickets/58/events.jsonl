@@ -6,3 +6,7 @@
 {"event_id": "9ed2da444cee4db3:implement-58:accepted", "kind": "handoff.accepted", "ticket_id": "58", "run_id": "9ed2da444cee4db3", "detail": "Spec approved; add date filter to invoice list matching accounts implementation pattern"}
 {"event_id": "9ed2da444cee4db3:succeeded", "kind": "run.succeeded", "ticket_id": "58", "run_id": "9ed2da444cee4db3", "state": "SUCCEEDED", "artifacts": ["specs/58/spec.md"]}
 {"event_id": "6afa136ed99e712a:collected", "kind": "run.collected", "ticket_id": "58", "run_id": "6afa136ed99e712a", "tokens": 1811900, "cost_usd": 1.04}
+{"event_id": "6afa136ed99e712a:review-58-1:proposed", "kind": "handoff.proposed", "ticket_id": "58", "run_id": "6afa136ed99e712a", "detail": "Review date filter implementation against spec acceptance criteria"}
+{"event_id": "ff5d019243f0e71a:queued", "kind": "run.queued", "ticket_id": "58", "run_id": "ff5d019243f0e71a", "task_id": "review", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
+{"event_id": "6afa136ed99e712a:review-58-1:accepted", "kind": "handoff.accepted", "ticket_id": "58", "run_id": "6afa136ed99e712a", "detail": "Review date filter implementation against spec acceptance criteria"}
+{"event_id": "6afa136ed99e712a:succeeded", "kind": "run.succeeded", "ticket_id": "58", "run_id": "6afa136ed99e712a", "state": "SUCCEEDED", "artifacts": ["specs/58/qa-plan.md"]}
