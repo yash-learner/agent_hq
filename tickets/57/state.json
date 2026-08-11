@@ -1,7 +1,7 @@
 {
   "ticket_id": "57",
   "pinned_comment_id": 5253831432,
-  "status": "ACTIVE",
+  "status": "BLOCKED",
   "runs": [
     {
       "run_id": "d779bf86c343852f",
@@ -241,7 +241,7 @@
       "task_id": "review",
       "task_version": 1,
       "ticket_id": "57",
-      "state": "RUNNING",
+      "state": "BLOCKED",
       "attempt": 0,
       "bindings": {
         "tracker": "github-issues",
@@ -268,9 +268,9 @@
       "input_from_run_id": "56ca23307dbd9124"
     }
   ],
-  "block_reason": null,
-  "block_source": null,
-  "interrupted_run_id": null,
+  "block_reason": "Round 3 cap reached with unresolved blocker: SupplyDeliveryTable.tsx:286-299 only reads batch/expiry from supplied_inventory_item.product (internal-only path); external deliveries (AC4) will always show '-' instead of actual data from supplied_item.",
+  "block_source": "task",
+  "interrupted_run_id": "64b1ca4c4d840993",
   "comments_polled_at": "2026-08-11T13:38:00Z",
   "work_repos": [
     {
