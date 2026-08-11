@@ -1,0 +1,18 @@
+[ac3] Starting AC3: Admin viewing patient with existing encounters
+[ac3] Step 1: Opening authenticated context as admin
+[ac3] At login page
+[ac3] Already authenticated
+[ac3] Shell ready
+[ac3] Cursor overlay enabled
+[ac3] Step 2: Navigating to /facility/6bb10676-1d20-4fc5-b730-0ff203c6e30d/patient/b4ac8f95-74a0-4bfe-948f-e2798eb5f347/encounters
+[ac3] Page loaded
+[ac3] Page title: Patient Details | Care
+[ac3] Found headings: ["Command Palette","Patient Details"]
+[ac3] Step 3: Verifying encounters are displayed
+[ac3] Empty state is not visible (correct)
+[ac3] Found 18 encounter-related elements
+[ac3] Found 0 list/table items
+[ac3] Found 0 'Create Encounter' button(s)
+[ac3] Step 4: Behavior unchanged - no empty state, encounters displayed
+[ac3] SUCCESS: Encounters displayed, no empty state
+[ac3] AC3 completed successfully

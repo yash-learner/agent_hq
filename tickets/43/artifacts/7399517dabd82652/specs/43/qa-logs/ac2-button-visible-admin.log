@@ -1,0 +1,26 @@
+[ac2] Starting AC2: Admin with can_create_encounter permission
+[ac2] Step 1: Creating test patient via API with admin auth
+[ac2] Fetching geo_organization...
+[ac2] geo_org fetch status: 200
+[ac2] Using geo_org ID: c74837a7-2679-460c-9035-f7bab0aeade9
+[ac2] Creating patient...
+[ac2] Patient creation status: 200
+[ac2] Created patient ID: 6c77b00c-9337-46cb-a168-be2b948f9742
+[ac2] Step 2: Opening authenticated context as admin
+[ac2] At login page
+[ac2] Already authenticated
+[ac2] Shell ready
+[ac2] Cursor overlay enabled
+[ac2] Step 3: Navigating to /facility/6bb10676-1d20-4fc5-b730-0ff203c6e30d/patient/6c77b00c-9337-46cb-a168-be2b948f9742/encounters
+[ac2] Page loaded
+[ac2] Page title: Patient Details | Care
+[ac2] Found headings: ["Command Palette","Patient Details","No active encounters found"]
+[ac2] Step 4: Verifying 'Create Encounter' button IS visible
+[ac2] 'Create Encounter' button is visible for admin
+[ac2] Step 5: Clicking 'Create Encounter' button
+[ac2] Dialog/form visible: true
+[ac2] Create encounter form opened successfully
+[ac2] Step 6: Closing dialog
+[ac2] Pressed Escape key
+[ac2] Dialog closed
+[ac2] SUCCESS: AC2 completed successfully

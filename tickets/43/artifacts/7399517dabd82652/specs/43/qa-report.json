@@ -1,0 +1,43 @@
+{
+  "criteria": [
+    {
+      "id": "ac1-no-button-nurse",
+      "title": "User without can_create_encounter sees no button in empty state",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3"],
+      "videos": ["specs/43/videos/ac1-no-button-nurse.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac2-button-visible-admin",
+      "title": "User with can_create_encounter sees button in empty state",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3", "4"],
+      "videos": ["specs/43/videos/ac2-button-visible-admin.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac3-existing-encounters",
+      "title": "User with can_create_encounter and existing encounters sees no change",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3"],
+      "videos": ["specs/43/videos/ac3-existing-encounters.webm"],
+      "screenshots": []
+    }
+  ],
+  "summary": {
+    "all_passed": true,
+    "pass": 3,
+    "fail": 0,
+    "not_exercised": 0
+  }
+}

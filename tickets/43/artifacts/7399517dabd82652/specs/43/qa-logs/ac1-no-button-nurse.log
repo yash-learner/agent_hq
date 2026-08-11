@@ -1,0 +1,23 @@
+[ac1] Starting AC1: Nurse without can_create_encounter permission
+[ac1] Step 1: Creating test patient via API with nurse auth
+[ac1] Fetching geo_organization...
+[ac1] geo_org fetch status: 200
+[ac1] Using geo_org ID: c74837a7-2679-460c-9035-f7bab0aeade9
+[ac1] Creating patient...
+[ac1] Patient creation status: 200
+[ac1] Created patient ID: 7881bc89-418d-48c1-8a4a-1e45baef77cf
+[ac1] Step 2: Opening authenticated context as nurse
+[ac1] At login page
+[ac1] Already authenticated
+[ac1] Shell ready
+[ac1] Cursor overlay enabled
+[ac1] Step 3: Navigating to /facility/6bb10676-1d20-4fc5-b730-0ff203c6e30d/patient/7881bc89-418d-48c1-8a4a-1e45baef77cf/encounters
+[ac1] Page loaded
+[ac1] Page title: CARE
+[ac1] Found headings: ["Command Palette"]
+[ac1] Waiting for empty state...
+[ac1] Empty state heading not visible, checking for 'Create Encounter' text anywhere
+[ac1] Found 'create encounter' text: null
+[ac1] Step 4: Verifying 'Create Encounter' button is NOT visible
+[ac1] SUCCESS: 'Create Encounter' button is not visible for nurse
+[ac1] AC1 completed successfully
