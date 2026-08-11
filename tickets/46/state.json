@@ -180,7 +180,9 @@
         "specs/46/plan.md"
       ],
       "deadline": "2026-08-11T13:19:17Z",
-      "attempt_started_at": "2026-08-11T12:49:17Z"
+      "attempt_started_at": "2026-08-11T12:49:17Z",
+      "base_commit": "dea49853619eaf2e5b7c18d6f89a1c1bf67567a0",
+      "input_from_run_id": "ce75c71ac410d69e"
     }
   ],
   "block_reason": null,
