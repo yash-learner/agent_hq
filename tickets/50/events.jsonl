@@ -27,3 +27,4 @@
 {"event_id": "48956820b219691e:rework", "kind": "run.rework", "ticket_id": "50", "run_id": "48956820b219691e", "detail": "Previous attempt rejected: qa-report.json: criterion 'ac5-patient-no-badge': missing-test-data requires non-empty plan_steps_run", "actor": "engine", "source": "6c0f513c79af58a5:artifact_rejected"}
 {"event_id": "48956820b219691e:collected", "kind": "run.collected", "ticket_id": "50", "run_id": "48956820b219691e", "tokens": 4633300, "cost_usd": 2.35}
 {"event_id": "48956820b219691e:failed", "kind": "run.failed", "ticket_id": "50", "run_id": "48956820b219691e", "state": "FAILED"}
+{"event_id": "48956820b219691e:artifact_rejected", "kind": "run.artifact_rejected", "ticket_id": "50", "run_id": "48956820b219691e", "detail": "qa-report.json: criterion 'ac2-administrator-badge': missing-test-data requires non-empty plan_steps_run"}
