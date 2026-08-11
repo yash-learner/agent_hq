@@ -18,3 +18,7 @@
 {"event_id": "ed0cabbd28ca13a3:runner_lost", "kind": "run.runner_lost", "ticket_id": "51", "run_id": "ed0cabbd28ca13a3", "state": "FAILED"}
 {"event_id": "b5596200892ed12a:queued", "kind": "run.queued", "ticket_id": "51", "run_id": "b5596200892ed12a", "task_id": "implement", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
 {"event_id": "b5596200892ed12a:collected", "kind": "run.collected", "ticket_id": "51", "run_id": "b5596200892ed12a", "tokens": 1712900, "cost_usd": 0.862}
+{"event_id": "b5596200892ed12a:review-2:proposed", "kind": "handoff.proposed", "ticket_id": "51", "run_id": "b5596200892ed12a", "detail": "Review implementation against spec after addressing Round 1 blockers"}
+{"event_id": "81a5806592845617:queued", "kind": "run.queued", "ticket_id": "51", "run_id": "81a5806592845617", "task_id": "review", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
+{"event_id": "b5596200892ed12a:review-2:accepted", "kind": "handoff.accepted", "ticket_id": "51", "run_id": "b5596200892ed12a", "detail": "Review implementation against spec after addressing Round 1 blockers"}
+{"event_id": "b5596200892ed12a:succeeded", "kind": "run.succeeded", "ticket_id": "51", "run_id": "b5596200892ed12a", "state": "SUCCEEDED", "artifacts": ["specs/51/qa-plan.md"]}
