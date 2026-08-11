@@ -29,3 +29,4 @@
 {"event_id": "a2a0ba4accf10c8e:failed", "kind": "run.failed", "ticket_id": "59", "run_id": "a2a0ba4accf10c8e", "state": "FAILED"}
 {"event_id": "a2a0ba4accf10c8e:handoff_rejected", "kind": "handoff.rejected", "ticket_id": "59", "run_id": "a2a0ba4accf10c8e", "detail": "queue entry repo 'care_fe' is not a configured repo"}
 {"event_id": "59c81ad45f2edc14:queued", "kind": "run.queued", "ticket_id": "59", "run_id": "59c81ad45f2edc14", "task_id": "agent-qa", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
+{"event_id": "59c81ad45f2edc14:rework", "kind": "run.rework", "ticket_id": "59", "run_id": "59c81ad45f2edc14", "detail": "Previous attempt rejected: queue entry repo 'care_fe' is not a configured repo", "actor": "engine", "source": "a2a0ba4accf10c8e:handoff_rejected"}
