@@ -129,7 +129,11 @@
       "ticket_id": "46",
       "state": "RUNNING",
       "attempt": 0,
-      "bindings": {},
+      "bindings": {
+        "tracker": "github-issues",
+        "agent-session": "copilot-cli",
+        "messaging": "github-comment"
+      },
       "cost_usd": null,
       "tokens": null,
       "usage_known": false,
@@ -139,7 +143,12 @@
       "enqueue_index": 0,
       "queue_seq": 3,
       "deadline": "2026-08-11T13:13:23Z",
-      "attempt_started_at": "2026-08-11T12:43:23Z"
+      "attempt_started_at": "2026-08-11T12:43:23Z",
+      "base_commit": "dea49853619eaf2e5b7c18d6f89a1c1bf67567a0",
+      "input_from_run_id": "7b8922309b5a29e7",
+      "input_artifacts": [
+        "specs/46/spec.md"
+      ]
     }
   ],
   "block_reason": null,
