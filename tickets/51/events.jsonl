@@ -15,3 +15,4 @@
 {"event_id": "ed0cabbd28ca13a3:queued", "kind": "run.queued", "ticket_id": "51", "run_id": "ed0cabbd28ca13a3", "task_id": "implement", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
 {"event_id": "f355d2d2118d45e0:implement-51-round2:accepted", "kind": "handoff.accepted", "ticket_id": "51", "run_id": "f355d2d2118d45e0", "detail": "Fix PLAYWRIGHT_GUIDE.md formatting corruption, add missing test file tests/facility/patient/patientSearch.spec.ts, and provide concrete fixture provenance in qa-plan.md Data setup sections (AC1, AC4)"}
 {"event_id": "f355d2d2118d45e0:succeeded", "kind": "run.succeeded", "ticket_id": "51", "run_id": "f355d2d2118d45e0", "state": "SUCCEEDED", "artifacts": ["specs/51/review.md"]}
+{"event_id": "ed0cabbd28ca13a3:runner_lost", "kind": "run.runner_lost", "ticket_id": "51", "run_id": "ed0cabbd28ca13a3", "state": "FAILED"}
