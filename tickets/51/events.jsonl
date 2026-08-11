@@ -35,3 +35,4 @@
 {"event_id": "5110312381732afc:collected", "kind": "run.collected", "ticket_id": "51", "run_id": "5110312381732afc", "tokens": 3933300, "cost_usd": 2.05}
 {"event_id": "5110312381732afc:failed", "kind": "run.failed", "ticket_id": "51", "run_id": "5110312381732afc", "state": "FAILED"}
 {"event_id": "5110312381732afc:artifact_rejected", "kind": "run.artifact_rejected", "ticket_id": "51", "run_id": "5110312381732afc", "detail": "qa-report.json: criterion 'ac2-identifier-empty': missing-test-data requires driver specs/51/qa-drivers/ac2-identifier-empty.mjs in the ledger"}
+{"event_id": "5110312381732afc:blocked", "kind": "ticket.blocked", "ticket_id": "51", "run_id": "5110312381732afc", "detail": "retries exhausted"}
