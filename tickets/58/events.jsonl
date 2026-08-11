@@ -39,3 +39,4 @@
 {"event_id": "a88ff4a5de65eec3:queued", "kind": "run.queued", "ticket_id": "58", "run_id": "a88ff4a5de65eec3", "task_id": "review", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
 {"event_id": "466edc5a89795ec5:review-round-4:accepted", "kind": "handoff.accepted", "ticket_id": "58", "run_id": "466edc5a89795ec5", "detail": "Fixed Round 3 blocker: restored proper line breaks for navigation URL paths in tests/PLAYWRIGHT_GUIDE.md"}
 {"event_id": "466edc5a89795ec5:succeeded", "kind": "run.succeeded", "ticket_id": "58", "run_id": "466edc5a89795ec5", "state": "SUCCEEDED", "artifacts": ["specs/58/qa-plan.md"]}
+{"event_id": "a88ff4a5de65eec3:collected", "kind": "run.collected", "ticket_id": "58", "run_id": "a88ff4a5de65eec3", "tokens": 625900, "cost_usd": 0.371}
