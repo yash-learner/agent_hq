@@ -39,3 +39,5 @@
 {"event_id": "d34c62f3723434f7:failed", "kind": "run.failed", "ticket_id": "40", "run_id": "d34c62f3723434f7", "state": "FAILED"}
 {"event_id": "d34c62f3723434f7:artifact_rejected", "kind": "run.artifact_rejected", "ticket_id": "40", "run_id": "d34c62f3723434f7", "detail": "qa-report.json: criterion 'ac6-plugin-links': missing-test-data seed_attempt.method must be ui, api, or both (got 'none'; none means no seed was attempted)"}
 {"event_id": "d34c62f3723434f7:blocked", "kind": "ticket.blocked", "ticket_id": "40", "run_id": "d34c62f3723434f7", "detail": "retries exhausted"}
+{"event_id": "d9cd0676db73f88e:queued", "kind": "run.queued", "ticket_id": "40", "run_id": "d9cd0676db73f88e", "task_id": "qa", "task_version": 1, "state": "QUEUED", "bindings": {}}
+{"event_id": "d9cd0676db73f88e:rework", "kind": "run.rework", "ticket_id": "40", "run_id": "d9cd0676db73f88e", "detail": "(ticket was blocked: retries exhausted)", "actor": "yash-learner", "source": "issue-comment:5251871473"}
