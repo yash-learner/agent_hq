@@ -1,0 +1,4 @@
+{
+  "classification": "crud",
+  "reasoning": "This change only modifies how existing data is fetched and displayed in the UI. No new data models, migrations, services, API endpoints, authorization changes, or clinical-safety-relevant behavior. It is a pure UI enhancement to fetch all pages of an existing paginated API response instead of only the first page. The API contract remains unchanged, and the change is limited to replacing useQuery with useInfiniteQuery in a single frontend component."
+}
