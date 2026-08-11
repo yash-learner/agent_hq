@@ -1,2 +1,7 @@
 {"event_id": "1bf1a4a87edd122f:queued", "kind": "run.queued", "ticket_id": "49", "run_id": "1bf1a4a87edd122f", "task_id": "spec", "task_version": 1, "state": "QUEUED", "bindings": {}}
 {"event_id": "1bf1a4a87edd122f:collected", "kind": "run.collected", "ticket_id": "49", "run_id": "1bf1a4a87edd122f", "tokens": 647800, "cost_usd": 0.426}
+{"event_id": "1bf1a4a87edd122f:auto_approval", "kind": "gate.decided", "ticket_id": "49", "run_id": "1bf1a4a87edd122f", "detail": "auto-approved by task config (would have asked product-owners)", "actor": "engine"}
+{"event_id": "1bf1a4a87edd122f:implement-49-frontend:proposed", "kind": "handoff.proposed", "ticket_id": "49", "run_id": "1bf1a4a87edd122f", "detail": "Add version display to login page footer using existing build metadata"}
+{"event_id": "f7d64904775704fa:queued", "kind": "run.queued", "ticket_id": "49", "run_id": "f7d64904775704fa", "task_id": "implement", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment", "gate": "github-issue-comment"}}
+{"event_id": "1bf1a4a87edd122f:implement-49-frontend:accepted", "kind": "handoff.accepted", "ticket_id": "49", "run_id": "1bf1a4a87edd122f", "detail": "Add version display to login page footer using existing build metadata"}
+{"event_id": "1bf1a4a87edd122f:succeeded", "kind": "run.succeeded", "ticket_id": "49", "run_id": "1bf1a4a87edd122f", "state": "SUCCEEDED", "artifacts": ["specs/49/spec.md"]}
