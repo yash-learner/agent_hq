@@ -1,0 +1,47 @@
+{
+  "criteria": [
+    {
+      "id": "ac1-nurse-no-button",
+      "title": "Users without can_create_encounter permission see no button in empty state",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Environment configuration prevented authenticated app shell from loading. Frontend .env pointed to remote API instead of localhost:9000. Created .env.local with localhost API, but preview server port conflicts (4000→4001→4002) and openAuthedContext helper failed to complete UI login despite login page being accessible.",
+      "blocker_category": "app-not-loading",
+      "plan_steps_run": ["1-api-create-patient", "2-nurse-login-attempt"],
+      "seed_attempt": {
+        "method": "api",
+        "summary": "Created test patient 4fbc82c6-0094-4194-b0b2-a2d6ab5cfa98 via POST /api/v1/patient/ with geo_organization b515e762-8c1a-4a18-8582-50469e792316. Patient confirmed with zero encounters. Auth attempt blocked by openAuthedContext timeout on username field despite manual verification that login page renders at localhost:4002/login."
+      },
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac2-admin-with-button",
+      "title": "Users with can_create_encounter permission see the button in empty state",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Same environment blocker as AC1 - authenticated app shell did not load after 45 minutes of environment troubleshooting. Time budget exhausted.",
+      "blocker_category": "app-not-loading",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac3-no-behavioral-change",
+      "title": "Users with can_create_encounter viewing existing encounters see no behavioral change",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Same environment blocker as AC1 - authenticated app shell did not load. Time budget exhausted on environment setup.",
+      "blocker_category": "app-not-loading",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    }
+  ],
+  "summary": {
+    "all_passed": false,
+    "pass": 0,
+    "fail": 0,
+    "not_exercised": 3
+  }
+}

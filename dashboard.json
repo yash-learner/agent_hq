@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-11T13:03:46Z",
+  "generated_at": "2026-08-11T13:03:54Z",
   "tickets": [
     {
       "ticket_id": "1",
@@ -9328,7 +9328,7 @@
           "task_id": "agent-qa",
           "task_version": 1,
           "ticket_id": "43",
-          "state": "RUNNING",
+          "state": "SUCCEEDED",
           "attempt": 0,
           "bindings": {
             "tracker": "github-issues",
@@ -9338,7 +9338,12 @@
           "cost_usd": 1.8,
           "tokens": 3321100,
           "usage_known": true,
-          "artifacts": [],
+          "artifacts": [
+            "specs/43/qa.md",
+            "specs/43/qa-report.json",
+            "specs/43/qa-drivers/ac1-nurse-no-button.mjs",
+            "specs/43/qa-logs/ac1-nurse-no-button.log"
+          ],
           "chain_depth": 0,
           "source_event_id": "issue-comment:5253280148",
           "enqueue_index": 0,
@@ -9349,6 +9354,35 @@
           "input_from_run_id": "d36a34c0d13fff4f",
           "input_artifacts": [
             "specs/43/summary.md"
+          ],
+          "output_commit": "c28599c90435f405ee539be727ad85808e17607e",
+          "pr_ref": "yash-learner/care_fe_agent_hq#32"
+        },
+        {
+          "run_id": "79186b63a0b5818e",
+          "task_id": "finalize",
+          "task_version": 1,
+          "ticket_id": "43",
+          "state": "QUEUED",
+          "attempt": 0,
+          "bindings": {
+            "tracker": "github-issues",
+            "agent-session": "copilot-cli",
+            "messaging": "github-comment"
+          },
+          "cost_usd": null,
+          "tokens": null,
+          "usage_known": false,
+          "artifacts": [],
+          "chain_depth": 1,
+          "parent_run_id": "ddd56936b4cce02e",
+          "queue_seq": 8,
+          "handoff_key": "finalize-43",
+          "repo": "yash-learner/care_fe_agent_hq",
+          "input_artifacts": [
+            "specs/43/summary.md",
+            "specs/43/qa.md",
+            "specs/43/qa-report.json"
           ]
         }
       ],

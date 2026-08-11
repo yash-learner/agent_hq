@@ -1,0 +1,35 @@
+[AC1] Testing: Users without can_create_encounter permission see no button in empty state
+
+Step 1: Fetching government organization for geo_organization field
+Organization fetched: b515e762-8c1a-4a18-8582-50469e792316 (Kerala)
+
+Step 2: Creating test patient via API
+POST /api/v1/patient/
+Status: 200
+Patient ID: 4fbc82c6-0094-4194-b0b2-a2d6ab5cfa98
+Patient Name: QA Test Patient AC1 Zero Encounters
+
+Step 3: Starting MCP browser session as nurse (care-nurse)
+Auth file: tests/.auth/nurse.json
+Expected: Nurse lacks can_create_encounter permission
+
+Step 4: Attempted MCP browser automation
+Browser: Chromium headless
+Auth file: tests/.auth/nurse.json
+Base URL: http://localhost:4002 (port 4000 and 4001 were in use)
+
+Step 5: Environment issues encountered
+- openAuthedContext attempted JWT refresh: status 200 (success)
+- Shell readiness check failed - login UI not visible at facility route
+- Attempted UI login recovery
+- Timeout waiting for username field (30s) despite field being present
+- Manual verification confirmed login page renders with Staff tab and username/password fields
+- Auth helper from .agent-hq/qa-auth.mjs incompatible with current app version
+
+Step 6: Verification blocked
+Cannot proceed to verify empty-state button visibility without authenticated shell.
+
+Blocker: app-not-loading
+Category: Environment configuration (frontend .env misconfiguration, port conflicts, auth helper incompatibility)
+
+Result: not-exercised
