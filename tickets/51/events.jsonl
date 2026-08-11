@@ -30,3 +30,4 @@
 {"event_id": "2c9b6edafd6c5712:collected", "kind": "run.collected", "ticket_id": "51", "run_id": "2c9b6edafd6c5712", "tokens": 3126900, "cost_usd": 1.72}
 {"event_id": "2c9b6edafd6c5712:failed", "kind": "run.failed", "ticket_id": "51", "run_id": "2c9b6edafd6c5712", "state": "FAILED"}
 {"event_id": "2c9b6edafd6c5712:artifact_rejected", "kind": "run.artifact_rejected", "ticket_id": "51", "run_id": "2c9b6edafd6c5712", "detail": "qa-report.json: criterion 'ac2-identifier-empty': missing-test-data requires driver specs/51/qa-drivers/ac2-identifier-empty.mjs in the ledger"}
+{"event_id": "5110312381732afc:queued", "kind": "run.queued", "ticket_id": "51", "run_id": "5110312381732afc", "task_id": "qa", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
