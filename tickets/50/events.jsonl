@@ -6,3 +6,7 @@
 {"event_id": "9ede71775167611f:implement-50-care-fe:accepted", "kind": "handoff.accepted", "ticket_id": "50", "run_id": "9ede71775167611f", "detail": "Add role badge to FacilityNavUser dropdown menu per spec.md acceptance criteria"}
 {"event_id": "9ede71775167611f:succeeded", "kind": "run.succeeded", "ticket_id": "50", "run_id": "9ede71775167611f", "state": "SUCCEEDED", "artifacts": ["specs/50/spec.md"]}
 {"event_id": "7150b5d3578fd2f8:collected", "kind": "run.collected", "ticket_id": "50", "run_id": "7150b5d3578fd2f8", "tokens": 1410900, "cost_usd": 0.742}
+{"event_id": "7150b5d3578fd2f8:review-50-implement:proposed", "kind": "handoff.proposed", "ticket_id": "50", "run_id": "7150b5d3578fd2f8", "detail": "Review implementation against spec acceptance criteria and verify qa-plan completeness"}
+{"event_id": "ff346cc703fb2cf6:queued", "kind": "run.queued", "ticket_id": "50", "run_id": "ff346cc703fb2cf6", "task_id": "review", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
+{"event_id": "7150b5d3578fd2f8:review-50-implement:accepted", "kind": "handoff.accepted", "ticket_id": "50", "run_id": "7150b5d3578fd2f8", "detail": "Review implementation against spec acceptance criteria and verify qa-plan completeness"}
+{"event_id": "7150b5d3578fd2f8:succeeded", "kind": "run.succeeded", "ticket_id": "50", "run_id": "7150b5d3578fd2f8", "state": "SUCCEEDED", "artifacts": ["specs/50/qa-plan.md"]}
