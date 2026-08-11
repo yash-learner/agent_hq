@@ -1,0 +1,13 @@
+=== AC2: Administrator badge for care-fac-admin ===
+
+Blocker: missing-test-data
+Backend fixtures return user_type as null. The backend API uses role_orgs array instead of the legacy user_type field.
+
+API investigation:
+- Attempted: PATCH /api/v1/users/care-fac-admin/ with user_type: "administrator"
+- Result: Backend accepts the PATCH but continues to return user_type: null
+- Root cause: Backend no longer supports top-level user_type field; uses role_orgs array
+- Implementation expects: user.user_type (nav-user.tsx line 96)
+- Fixtures provide: role_orgs array with role.name instead
+
+Cannot exercise AC2 without user_type data in backend fixtures.

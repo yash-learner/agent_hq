@@ -1,0 +1,85 @@
+{
+  "criteria": [
+    {
+      "id": "ac1-doctor-badge",
+      "title": "Role badge displays for facility user with doctor role",
+      "verdict": "not-exercised",
+      "evidence_kind": "live-flow",
+      "blocker": "Backend fixtures return user_type as null. Implementation expects user.user_type (nav-user.tsx line 96) but backend uses role_orgs array instead. Attempted API PATCH to set user_type='doctor' but field remains null after successful update. TypeScript UserBase interface defines user_type as required but runtime data doesn't provide it.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": ["1", "2"],
+      "videos": ["specs/50/videos/ac1-doctor-badge.webm"],
+      "screenshots": ["specs/50/screenshots/ac1-sidebar-footer.png", "specs/50/screenshots/ac1-dropdown-open.png"],
+      "seed_attempt": {
+        "method": "api",
+        "summary": "Attempted PATCH /api/v1/users/care-doctor/ with user_type='doctor' plus required fields (first_name, last_name, phone_number, gender). Backend accepted PATCH (200 OK) but response shows user_type: null. Queried /api/v1/users/getcurrentuser/ for admin and care-doctor users - both return user_type: null. Backend uses role_orgs array with nested role.name='Doctor' but no top-level user_type field."
+      }
+    },
+    {
+      "id": "ac2-administrator-badge",
+      "title": "Role badge shows Administrator for care-fac-admin",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Same data model issue as AC1. Backend returns user_type: null for care-fac-admin. Cannot test administrator badge when user_type field is unavailable.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": [],
+      "seed_attempt": {
+        "method": "api",
+        "summary": "Reviewed backend user API responses for care-fac-admin and other fixture users. All return user_type: null with role information only in role_orgs array. Same blocker as AC1."
+      }
+    },
+    {
+      "id": "ac3-profile-navigation",
+      "title": "Profile navigation works with role badge visible (nurse)",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Cannot verify badge remains visible on profile page when badge doesn't render due to null user_type. Dependent on AC1 data availability.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": [],
+      "seed_attempt": {
+        "method": "api",
+        "summary": "Same backend data issue as AC1 and AC2. care-nurse fixture also returns user_type: null."
+      }
+    },
+    {
+      "id": "ac4-logout",
+      "title": "Logout works with role badge present (staff)",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Cannot verify badge doesn't interfere with logout when badge doesn't render due to null user_type. Dependent on AC1 data availability.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": [],
+      "seed_attempt": {
+        "method": "api",
+        "summary": "Same backend data issue. care-staff fixture returns user_type: null."
+      }
+    },
+    {
+      "id": "ac5-patient-no-badge",
+      "title": "Patient nav menu has no role badge",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Cannot meaningfully test badge absence for patients when facility users don't show badges either due to missing user_type data. Testing absence when the feature doesn't work for any user would not validate the patient-specific behavior. Dependent on AC1-4 data availability.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": ["1"],
+      "videos": [],
+      "screenshots": [],
+      "seed_attempt": {
+        "method": "api",
+        "summary": "Attempted to verify patient data model via backend API. Patient accounts use OTP-based authentication (PatientNavUser component) and don't have user_type by design. However, cannot test badge absence when facility badges also don't render due to missing user_type in facility user fixtures. Facility user data dependency blocks patient criterion exercise."
+      }
+    }
+  ],
+  "summary": {
+    "all_passed": false,
+    "pass": 0,
+    "fail": 0,
+    "not_exercised": 5
+  }
+}

@@ -1,0 +1,3 @@
+=== ac5-patient-no-badge: Blocked by missing user_type data ===
+Same blocker as AC1 and AC2: Backend fixtures return user_type as null.
+Implementation expects user.user_type but backend uses role_orgs array.
