@@ -26,3 +26,7 @@
 {"event_id": "d2c4e858a5ff9117:implement-3:accepted", "kind": "handoff.accepted", "ticket_id": "53", "run_id": "d2c4e858a5ff9117", "detail": "Fix blocker: tests/PLAYWRIGHT_GUIDE.md:90-94 formatting corruption persists - URL examples must be on separate lines within the code block"}
 {"event_id": "d2c4e858a5ff9117:succeeded", "kind": "run.succeeded", "ticket_id": "53", "run_id": "d2c4e858a5ff9117", "state": "SUCCEEDED", "artifacts": ["specs/53/review.md"]}
 {"event_id": "293eb4aa42c74a0c:collected", "kind": "run.collected", "ticket_id": "53", "run_id": "293eb4aa42c74a0c", "tokens": 1514800, "cost_usd": 0.864}
+{"event_id": "293eb4aa42c74a0c:review-round-3:proposed", "kind": "handoff.proposed", "ticket_id": "53", "run_id": "293eb4aa42c74a0c", "detail": "Review implementation against spec after fixing Round 2 blockers"}
+{"event_id": "da70e6290053ef57:queued", "kind": "run.queued", "ticket_id": "53", "run_id": "da70e6290053ef57", "task_id": "review", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
+{"event_id": "293eb4aa42c74a0c:review-round-3:accepted", "kind": "handoff.accepted", "ticket_id": "53", "run_id": "293eb4aa42c74a0c", "detail": "Review implementation against spec after fixing Round 2 blockers"}
+{"event_id": "293eb4aa42c74a0c:succeeded", "kind": "run.succeeded", "ticket_id": "53", "run_id": "293eb4aa42c74a0c", "state": "SUCCEEDED", "artifacts": ["specs/53/qa-plan.md"]}
