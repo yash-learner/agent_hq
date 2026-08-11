@@ -289,6 +289,27 @@
         "specs/40/review.md",
         "specs/40/spec.md"
       ]
+    },
+    {
+      "run_id": "4e562f131df2b06a",
+      "task_id": "qa",
+      "task_version": 1,
+      "ticket_id": "40",
+      "state": "QUEUED",
+      "attempt": 1,
+      "bindings": {
+        "tracker": "github-issues",
+        "agent-session": "copilot-cli",
+        "messaging": "github-comment"
+      },
+      "cost_usd": null,
+      "tokens": null,
+      "usage_known": false,
+      "artifacts": [],
+      "chain_depth": 0,
+      "source_event_id": "issue-comment:5251871473",
+      "enqueue_index": 0,
+      "queue_seq": 6
     }
   ],
   "block_reason": null,
