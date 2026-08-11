@@ -5,3 +5,4 @@
 {"event_id": "40dcb879cf90cabb:queued", "kind": "run.queued", "ticket_id": "59", "run_id": "40dcb879cf90cabb", "task_id": "implement", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment", "gate": "github-issue-comment"}}
 {"event_id": "0936467f0360d37e:implement-59-frontend:accepted", "kind": "handoff.accepted", "ticket_id": "59", "run_id": "0936467f0360d37e", "detail": "Frontend code changes required to enable multiple diagnostic report creation per Service Request"}
 {"event_id": "0936467f0360d37e:succeeded", "kind": "run.succeeded", "ticket_id": "59", "run_id": "0936467f0360d37e", "state": "SUCCEEDED", "artifacts": ["specs/59/spec.md"]}
+{"event_id": "40dcb879cf90cabb:collected", "kind": "run.collected", "ticket_id": "59", "run_id": "40dcb879cf90cabb", "tokens": 1917500, "cost_usd": 1.16}
