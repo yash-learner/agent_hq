@@ -16,3 +16,7 @@
 {"event_id": "ff5d019243f0e71a:implement-round-2:accepted", "kind": "handoff.accepted", "ticket_id": "58", "run_id": "ff5d019243f0e71a", "detail": "Fix blocker: PLAYWRIGHT_GUIDE.md formatting corrupted with concatenated paths"}
 {"event_id": "ff5d019243f0e71a:succeeded", "kind": "run.succeeded", "ticket_id": "58", "run_id": "ff5d019243f0e71a", "state": "SUCCEEDED", "artifacts": ["specs/58/review.md"]}
 {"event_id": "80e1acfe2014ed0d:collected", "kind": "run.collected", "ticket_id": "58", "run_id": "80e1acfe2014ed0d", "tokens": 1212200, "cost_usd": 0.692}
+{"event_id": "80e1acfe2014ed0d:review-58-round2:proposed", "kind": "handoff.proposed", "ticket_id": "58", "run_id": "80e1acfe2014ed0d", "detail": "Review the PLAYWRIGHT_GUIDE formatting fix and confirm date filter implementation is complete"}
+{"event_id": "9bf2f481a7072d2d:queued", "kind": "run.queued", "ticket_id": "58", "run_id": "9bf2f481a7072d2d", "task_id": "review", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
+{"event_id": "80e1acfe2014ed0d:review-58-round2:accepted", "kind": "handoff.accepted", "ticket_id": "58", "run_id": "80e1acfe2014ed0d", "detail": "Review the PLAYWRIGHT_GUIDE formatting fix and confirm date filter implementation is complete"}
+{"event_id": "80e1acfe2014ed0d:succeeded", "kind": "run.succeeded", "ticket_id": "58", "run_id": "80e1acfe2014ed0d", "state": "SUCCEEDED", "artifacts": ["specs/58/qa-plan.md"]}
