@@ -2,3 +2,8 @@
 {"event_id": "7df6cc556d45c238:runner_lost", "kind": "run.runner_lost", "ticket_id": "52", "run_id": "7df6cc556d45c238", "state": "FAILED"}
 {"event_id": "509240ca6181a7e7:queued", "kind": "run.queued", "ticket_id": "52", "run_id": "509240ca6181a7e7", "task_id": "spec", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment", "gate": "github-issue-comment"}}
 {"event_id": "509240ca6181a7e7:collected", "kind": "run.collected", "ticket_id": "52", "run_id": "509240ca6181a7e7", "tokens": 985000, "cost_usd": 0.629}
+{"event_id": "509240ca6181a7e7:auto_approval", "kind": "gate.decided", "ticket_id": "52", "run_id": "509240ca6181a7e7", "detail": "auto-approved by task config (would have asked product-owners)", "actor": "engine"}
+{"event_id": "509240ca6181a7e7:implement-52-care-fe:proposed", "kind": "handoff.proposed", "ticket_id": "52", "run_id": "509240ca6181a7e7", "detail": "Implement facility search on User Dashboard per spec"}
+{"event_id": "15e2b8c60785fe76:queued", "kind": "run.queued", "ticket_id": "52", "run_id": "15e2b8c60785fe76", "task_id": "implement", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment", "gate": "github-issue-comment"}}
+{"event_id": "509240ca6181a7e7:implement-52-care-fe:accepted", "kind": "handoff.accepted", "ticket_id": "52", "run_id": "509240ca6181a7e7", "detail": "Implement facility search on User Dashboard per spec"}
+{"event_id": "509240ca6181a7e7:succeeded", "kind": "run.succeeded", "ticket_id": "52", "run_id": "509240ca6181a7e7", "state": "SUCCEEDED", "artifacts": ["specs/52/spec.md"]}
