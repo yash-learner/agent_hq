@@ -24,3 +24,4 @@
 {"event_id": "6c0f513c79af58a5:failed", "kind": "run.failed", "ticket_id": "50", "run_id": "6c0f513c79af58a5", "state": "FAILED"}
 {"event_id": "6c0f513c79af58a5:artifact_rejected", "kind": "run.artifact_rejected", "ticket_id": "50", "run_id": "6c0f513c79af58a5", "detail": "qa-report.json: criterion 'ac5-patient-no-badge': missing-test-data requires non-empty plan_steps_run"}
 {"event_id": "48956820b219691e:queued", "kind": "run.queued", "ticket_id": "50", "run_id": "48956820b219691e", "task_id": "agent-qa", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
+{"event_id": "48956820b219691e:rework", "kind": "run.rework", "ticket_id": "50", "run_id": "48956820b219691e", "detail": "Previous attempt rejected: qa-report.json: criterion 'ac5-patient-no-badge': missing-test-data requires non-empty plan_steps_run", "actor": "engine", "source": "6c0f513c79af58a5:artifact_rejected"}
