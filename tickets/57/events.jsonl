@@ -27,3 +27,4 @@
 {"event_id": "56ca23307dbd9124:queued", "kind": "run.queued", "ticket_id": "57", "run_id": "56ca23307dbd9124", "task_id": "implement", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
 {"event_id": "77972b8fc568f863:implement-round-3:accepted", "kind": "handoff.accepted", "ticket_id": "57", "run_id": "77972b8fc568f863", "detail": "Fix blocker: PrintDeliveryOrder.tsx lines 88-94 extract batch/expiry only for internal mode; external deliveries need delivery.supplied_item?.batch?.lot_number and delivery.supplied_item?.expiration_date"}
 {"event_id": "77972b8fc568f863:succeeded", "kind": "run.succeeded", "ticket_id": "57", "run_id": "77972b8fc568f863", "state": "SUCCEEDED", "artifacts": ["specs/57/review.md"]}
+{"event_id": "56ca23307dbd9124:collected", "kind": "run.collected", "ticket_id": "57", "run_id": "56ca23307dbd9124", "tokens": 1313600, "cost_usd": 0.819}
