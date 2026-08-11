@@ -1,2 +1,7 @@
 {"event_id": "9ed2da444cee4db3:queued", "kind": "run.queued", "ticket_id": "58", "run_id": "9ed2da444cee4db3", "task_id": "spec", "task_version": 1, "state": "QUEUED", "bindings": {}}
 {"event_id": "9ed2da444cee4db3:collected", "kind": "run.collected", "ticket_id": "58", "run_id": "9ed2da444cee4db3", "tokens": 818300, "cost_usd": 0.517}
+{"event_id": "9ed2da444cee4db3:auto_approval", "kind": "gate.decided", "ticket_id": "58", "run_id": "9ed2da444cee4db3", "detail": "auto-approved by task config (would have asked product-owners)", "actor": "engine"}
+{"event_id": "9ed2da444cee4db3:implement-58:proposed", "kind": "handoff.proposed", "ticket_id": "58", "run_id": "9ed2da444cee4db3", "detail": "Spec approved; add date filter to invoice list matching accounts implementation pattern"}
+{"event_id": "6afa136ed99e712a:queued", "kind": "run.queued", "ticket_id": "58", "run_id": "6afa136ed99e712a", "task_id": "implement", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment", "gate": "github-issue-comment"}}
+{"event_id": "9ed2da444cee4db3:implement-58:accepted", "kind": "handoff.accepted", "ticket_id": "58", "run_id": "9ed2da444cee4db3", "detail": "Spec approved; add date filter to invoice list matching accounts implementation pattern"}
+{"event_id": "9ed2da444cee4db3:succeeded", "kind": "run.succeeded", "ticket_id": "58", "run_id": "9ed2da444cee4db3", "state": "SUCCEEDED", "artifacts": ["specs/58/spec.md"]}
