@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://agent-hq.dev/schemas/mcp-servers.schema.json",
+  "title": "MCP servers config",
+  "type": "object",
+  "description": "Map of MCP server name to the entry the executor adapter writes into the run worktree's project-level .mcp.json. A task opts in by listing server names under its `mcp` field; a name with no entry here is a validation error.",
+  "additionalProperties": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["type", "command", "args"],
+    "properties": {
+      "type": {
+        "type": "string",
+        "enum": ["local"],
+        "description": "Only local (spawned-by-the-CLI) servers for now; a remote entry needs a credential story first"
+      },
+      "command": { "type": "string" },
+      "args": {
+        "type": "array",
+        "items": { "type": "string" }
+      },
+      "tools": {
+        "type": "array",
+        "description": "MCP tool allowlist for this server as the CLI understands it; [\"*\"] enables everything the server exposes",
+        "items": { "type": "string" }
+      }
+    }
+  }
+}

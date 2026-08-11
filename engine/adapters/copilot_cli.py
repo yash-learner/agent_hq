@@ -14,6 +14,12 @@ differ from the parent.
 Claude's `Read`/`Grep`/`Glob`/`Write`/`Bash` names map to Copilot CLI's
 `read`/`write`/`shell` tool kinds when an allowlist is present.
 
+**MCP:** a taskdef `mcp` list arrives in the bundle as resolved
+config/mcp-servers.yml entries; `run` writes them to a project-level
+`.mcp.json` in the worktree (runtime precedence over user config) before
+spawning, and additionally `--allow-tool`s each server name when a `tools`
+allowlist is present. No `mcp` -> no file -> behavior unchanged.
+
 **PD-5 deviation:** unlike the Anthropic-key child, this child process
 necessarily holds a GitHub credential (`COPILOT_GITHUB_TOKEN`). Blast radius
 is that account's GitHub access; the dedicated bot seat (no repo write
@@ -147,6 +153,19 @@ class CopilotCli(ClaudeCodeHeadless):
     def run(self, bundle: dict, tools: list[str], deadline_iso: str) -> dict:
         prompt = bundle["prompt"]
         worktree = Path(bundle["worktree"])
+        # MCP: a project-level `.mcp.json` in the child's CWD takes runtime
+        # precedence in Copilot CLI, so writing it here scopes the servers to
+        # this run's worktree -- no user/global config is touched, and a task
+        # with no `mcp` writes no file (current behavior for every other
+        # task). Entries arrive pre-resolved from config/mcp-servers.yml via
+        # the bundle (prepare resolves; execute holds no config).
+        # `materialize_work_patch` excludes the file, so it can never reach a
+        # work patch even for a writes_code task.
+        mcp_servers = bundle.get("mcp_servers") or {}
+        if mcp_servers:
+            (worktree / ".mcp.json").write_text(
+                json.dumps({"mcpServers": mcp_servers}, indent=2) + "\n"
+            )
         # No `-s`: silent mode suppresses the session trailer `_parse_usage`
         # reads the run's spend out of. It only ever wrote to stderr, which
         # nothing else here consumes.
@@ -163,6 +182,11 @@ class CopilotCli(ClaudeCodeHeadless):
         else:
             for tool in dict.fromkeys(_TOOL_MAP[name] for name in tools if name in _TOOL_MAP):
                 argv.append(f"--allow-tool={tool}")
+            # A `tools` allowlist would otherwise silence every MCP tool the
+            # task just declared it needs (`--allow-all-tools` covers them
+            # only in the no-allowlist branch above).
+            for server in mcp_servers:
+                argv.append(f"--allow-tool={server}")
 
         timeout = max(1, _seconds_until(deadline_iso))
         proc = subprocess.Popen(

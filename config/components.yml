@@ -23,3 +23,7 @@ gate:
     spec-approval: github-issue-comment
 label_overrides:
   - "hq:executor="
+  # Substitutes the queued QA task per ticket: hq:qa=agent-qa reroutes an
+  # accepted `qa` queue entry to the MCP-driven agent-qa task
+  # (engine.config.resolve_task_substitution) -- review keeps queueing `qa`.
+  - "hq:qa="

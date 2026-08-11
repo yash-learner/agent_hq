@@ -1,13 +1,14 @@
 """Config registry loader (§6).
 
-Reads the five YAML registries (components, repos, projects, approvers,
-budgets), schema-validates each, and resolves per-port adapter bindings.
+Reads the six YAML registries (components, repos, projects, approvers,
+budgets, mcp-servers), schema-validates each, and resolves per-port adapter
+bindings.
 """
 
 from __future__ import annotations
 
 import json
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from pathlib import Path
 
 import yaml
@@ -15,7 +16,7 @@ from jsonschema import Draft202012Validator
 
 from engine.qa_report import validate_qa_media_combo
 
-REGISTRIES = ("components", "repos", "projects", "approvers", "budgets")
+REGISTRIES = ("components", "repos", "projects", "approvers", "budgets", "mcp-servers")
 
 
 class ConfigError(Exception):
@@ -33,6 +34,9 @@ class Config:
     projects: dict
     approvers: dict
     budgets: dict
+    # Defaulted so the many hand-built Configs in tests stay valid; the loader
+    # always supplies it (mcp-servers.yml is required like every registry).
+    mcp_servers: dict = field(default_factory=dict)
 
 
 def load_config(config_dir: str | Path, schemas_dir: str | Path) -> Config:
@@ -56,7 +60,8 @@ def load_config(config_dir: str | Path, schemas_dir: str | Path) -> Config:
         for error in validator.iter_errors(instance):
             json_path = "/".join(str(p) for p in error.path) or "<root>"
             errors.append(f"{yml_path.name}: {json_path}: {error.message}")
-        loaded[name] = instance
+        # File names use dashes (mcp-servers.yml); dataclass fields cannot.
+        loaded[name.replace("-", "_")] = instance
 
     # Media-policy defaults apply when keys are omitted; reject a combo that
     # leaves every evidence mode off (schema alone cannot see defaults).
@@ -101,13 +106,38 @@ def resolve_binding(
     return binding["adapter"]
 
 
+def resolve_task_substitution(config: Config, ticket_labels: list[str], task_id: str) -> str:
+    """Resolve a per-ticket queued-task substitution for `task_id`.
+
+    Mirror of `resolve_binding`'s label override, for queue entries instead of
+    ports: an allowlisted `hq:<task-id>=<other-task-id>` ticket label swaps a
+    queued task (e.g. `hq:qa=agent-qa` reroutes QA to the MCP-driven agent-qa
+    task) without any prompt change -- review keeps queueing `qa`. Like the
+    port override, the allowlist gates only the PREFIX, not the value; the
+    caller must check the substituted id against the loaded taskdefs, which
+    backstops a bogus label. Returns `task_id` unchanged when the prefix is
+    not allowlisted or no matching label is present.
+    """
+    label_prefix = f"hq:{task_id}="
+    if label_prefix not in config.components.get("label_overrides", []):
+        return task_id
+    for label in ticket_labels:
+        if label.startswith(label_prefix):
+            return label[len(label_prefix) :]
+    return task_id
+
+
 def validate_task_bindings(taskdefs: dict, config: Config) -> list[str]:
     """Reject a task-declared `components` port with no configured binding,
-    and a `projects.initial_task` that doesn't resolve to a loaded task.
+    a task-declared `mcp` server with no catalog entry, and a
+    `projects.initial_task` that doesn't resolve to a loaded task.
 
     A task's `components` map (port -> logical binding name) only makes
     sense for a port components.yml actually configures. A task that
     declares no `components` (e.g. qa) stays registered-but-unwired.
+    Same shape for `mcp`: names are only meaningful against the
+    mcp-servers.yml catalog, and a typo should fail `tasks validate`, not a
+    live run at prepare time.
     """
     errors: list[str] = []
     for task_id, taskdef in taskdefs.items():
@@ -116,7 +146,27 @@ def validate_task_bindings(taskdefs: dict, config: Config) -> list[str]:
                 errors.append(
                     f"{task_id}: components.{port}: no binding configured in components.yml"
                 )
+        for server in taskdef.get("mcp", []):
+            if server not in config.mcp_servers:
+                errors.append(f"{task_id}: mcp: no server named '{server}' in mcp-servers.yml")
     initial_task = config.projects.get("initial_task")
     if initial_task not in taskdefs:
         errors.append(f"projects.yml: initial_task: '{initial_task}' is not a loaded task")
     return errors
+
+
+def resolve_mcp_servers(config: Config, taskdef: dict) -> dict:
+    """The catalog entries for a task's declared `mcp` server names, keyed by
+    name -- what the executor adapter writes into the run worktree's
+    `.mcp.json`. Empty for a task with no `mcp` field. An unknown name raises
+    rather than silently dropping the server: `validate_task_bindings` should
+    have caught it, but prepare must not hand the agent a session quietly
+    missing a capability its prompt assumes."""
+    servers = {}
+    for name in taskdef.get("mcp", []):
+        if name not in config.mcp_servers:
+            raise ConfigError(
+                [f"{taskdef.get('id')}: mcp: no server named '{name}' in mcp-servers.yml"]
+            )
+        servers[name] = config.mcp_servers[name]
+    return servers
