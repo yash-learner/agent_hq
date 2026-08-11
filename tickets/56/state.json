@@ -132,7 +132,9 @@
         "specs/56/tasks.md"
       ],
       "deadline": "2026-08-11T19:44:51Z",
-      "attempt_started_at": "2026-08-11T18:14:51Z"
+      "attempt_started_at": "2026-08-11T18:14:51Z",
+      "base_commit": "dea49853619eaf2e5b7c18d6f89a1c1bf67567a0",
+      "input_from_run_id": "b2145f3f304bb4fe"
     }
   ],
   "block_reason": null,
