@@ -29,3 +29,7 @@
 {"event_id": "6bc0d60ee0dbfdb5:implement-care-fe:accepted", "kind": "handoff.accepted", "ticket_id": "46", "run_id": "6bc0d60ee0dbfdb5", "detail": "Implement infinite scroll for user departments tab to display all linked departments"}
 {"event_id": "6bc0d60ee0dbfdb5:succeeded", "kind": "run.succeeded", "ticket_id": "46", "run_id": "6bc0d60ee0dbfdb5", "state": "SUCCEEDED", "artifacts": ["specs/46/tasks.md"]}
 {"event_id": "5c02dcd901c4c9e0:collected", "kind": "run.collected", "ticket_id": "46", "run_id": "5c02dcd901c4c9e0", "tokens": 2918800, "cost_usd": 1.66}
+{"event_id": "5c02dcd901c4c9e0:review-46:proposed", "kind": "handoff.proposed", "ticket_id": "46", "run_id": "5c02dcd901c4c9e0", "detail": "Review implementation against spec"}
+{"event_id": "e501b3ee5a0499c0:queued", "kind": "run.queued", "ticket_id": "46", "run_id": "e501b3ee5a0499c0", "task_id": "review", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
+{"event_id": "5c02dcd901c4c9e0:review-46:accepted", "kind": "handoff.accepted", "ticket_id": "46", "run_id": "5c02dcd901c4c9e0", "detail": "Review implementation against spec"}
+{"event_id": "5c02dcd901c4c9e0:succeeded", "kind": "run.succeeded", "ticket_id": "46", "run_id": "5c02dcd901c4c9e0", "state": "SUCCEEDED", "artifacts": ["specs/46/qa-plan.md"]}
