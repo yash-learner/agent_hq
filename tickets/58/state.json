@@ -1,7 +1,7 @@
 {
   "ticket_id": "58",
   "pinned_comment_id": 5253859165,
-  "status": "ACTIVE",
+  "status": "BLOCKED",
   "runs": [
     {
       "run_id": "9ed2da444cee4db3",
@@ -275,7 +275,7 @@
       "task_id": "review",
       "task_version": 1,
       "ticket_id": "58",
-      "state": "RUNNING",
+      "state": "BLOCKED",
       "attempt": 0,
       "bindings": {
         "tracker": "github-issues",
@@ -302,9 +302,9 @@
       "input_from_run_id": "466edc5a89795ec5"
     }
   ],
-  "block_reason": null,
-  "block_source": null,
-  "interrupted_run_id": null,
+  "block_reason": "Round 3 blocker: tests/PLAYWRIGHT_GUIDE.md:90-94 still has concatenated navigation paths without newlines. Three implement rounds failed to fix the formatting issue where paths like `/facility/${facilityId}/overview``/facility/${facilityId}/settings/locations` remain on the same line instead of being properly separated with newlines in the markdown code block.",
+  "block_source": "task",
+  "interrupted_run_id": "a88ff4a5de65eec3",
   "comments_polled_at": "2026-08-11T15:16:29Z",
   "work_repos": [
     {
