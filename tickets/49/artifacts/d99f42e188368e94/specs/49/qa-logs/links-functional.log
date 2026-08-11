@@ -1,0 +1,39 @@
+QA Log for criterion: links-functional
+Started: $(date -u +"%Y-%m-%dT%H:%M:%SZ")
+
+AC3: Given the footer with the version added, when a user clicks the existing GitHub and licenses links, then they still navigate as before.
+
+Steps:
+1. Navigate to http://localhost:4000/login
+2. Wait for page to load
+3. Verify GitHub link has correct href and target
+4. Verify Licenses link has correct href and target
+5. Click licenses link and verify navigation
+[2026-08-11T14:04:02.253Z] Starting browser...
+[2026-08-11T14:04:02.411Z] Navigating to http://localhost:4000/login
+[2026-08-11T14:04:03.916Z] Waiting for page to load...
+[2026-08-11T14:04:06.927Z] Testing GitHub link...
+[2026-08-11T14:04:07.059Z] GitHub link href: https://github.com/ohcnetwork, target: _blank
+[2026-08-11T14:04:07.060Z] ✓ GitHub link has correct href
+[2026-08-11T14:04:07.060Z] Testing Licenses link...
+[2026-08-11T14:04:07.073Z] Licenses link href: /licenses, target: _blank
+[2026-08-11T14:04:07.073Z] ✓ Licenses link has correct href
+[2026-08-11T14:04:07.073Z] Clicking licenses link...
+[2026-08-11T14:04:09.836Z] Current URL after clicking licenses: http://localhost:4000/login
+[2026-08-11T14:04:09.837Z] ✗ Licenses link did not navigate
+[2026-08-11T14:04:10.061Z] Closing browser...
+[2026-08-11T14:04:10.736Z] Done!
+[2026-08-11T14:04:38.521Z] Starting browser...
+[2026-08-11T14:04:38.675Z] Navigating to http://localhost:4000/login
+[2026-08-11T14:04:40.040Z] Waiting for page to load...
+[2026-08-11T14:04:43.051Z] Testing GitHub link...
+[2026-08-11T14:04:43.130Z] GitHub link href: https://github.com/ohcnetwork, target: _blank
+[2026-08-11T14:04:43.130Z] ✓ GitHub link has correct href
+[2026-08-11T14:04:43.130Z] Testing Licenses link...
+[2026-08-11T14:04:43.146Z] Licenses link href: /licenses, target: _blank
+[2026-08-11T14:04:43.146Z] ✓ Licenses link has correct href
+[2026-08-11T14:04:43.146Z] Testing licenses link navigation (opens in new tab)...
+[2026-08-11T14:04:45.951Z] New tab URL: http://localhost:4000/licenses
+[2026-08-11T14:04:45.952Z] ✓ Licenses link opened new tab correctly
+[2026-08-11T14:04:46.723Z] Closing browser...
+[2026-08-11T14:04:47.256Z] Done!

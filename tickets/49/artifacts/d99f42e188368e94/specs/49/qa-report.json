@@ -1,0 +1,43 @@
+{
+  "criteria": [
+    {
+      "id": "version-visible",
+      "title": "Version visible without authentication",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3"],
+      "videos": ["specs/49/videos/version-visible.webm"],
+      "screenshots": ["specs/49/screenshots/version-visible.png"]
+    },
+    {
+      "id": "no-layout-break",
+      "title": "Version does not wrap or overlap on desktop",
+      "verdict": "fail",
+      "evidence_kind": "live-flow",
+      "blocker": "Version text wrapped to new line instead of staying inline with GitHub and Licenses links. Bounding box shows version span starts at x=64 (left edge) instead of after the second pipe separator at x=416.",
+      "blocker_category": "other",
+      "plan_steps_run": ["1", "2", "3", "4"],
+      "videos": ["specs/49/videos/no-layout-break.webm"],
+      "screenshots": ["specs/49/screenshots/no-layout-break.png", "specs/49/screenshots/footer-layout.png"]
+    },
+    {
+      "id": "links-functional",
+      "title": "GitHub and Licenses links still work",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3", "4", "5"],
+      "videos": ["specs/49/videos/links-functional.webm"],
+      "screenshots": ["specs/49/screenshots/links-functional.png"]
+    }
+  ],
+  "summary": {
+    "all_passed": false,
+    "pass": 2,
+    "fail": 1,
+    "not_exercised": 0
+  }
+}

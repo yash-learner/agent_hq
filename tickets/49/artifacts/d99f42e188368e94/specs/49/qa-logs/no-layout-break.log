@@ -1,0 +1,40 @@
+QA Log for criterion: no-layout-break
+Started: $(date -u +"%Y-%m-%dT%H:%M:%SZ")
+
+AC2: Given a desktop viewport, when the footer renders, then the version text does not wrap or overlap the existing GitHub and licenses links.
+
+Steps:
+1. Navigate to http://localhost:4000/login with 1440x900 viewport
+2. Wait for page to load
+3. Measure bounding boxes of GitHub link, licenses link, and version text
+4. Verify they are on the same line and don't overlap
+[2026-08-11T13:58:29.288Z] Starting browser...
+[2026-08-11T13:58:29.482Z] Navigating to http://localhost:4000/login
+[2026-08-11T13:58:30.809Z] Waiting for page to load...
+[2026-08-11T13:58:33.817Z] Checking footer layout...
+[2026-08-11T13:58:34.079Z] GitHub link at: x=64, y=837, width=133, height=17
+[2026-08-11T13:58:34.079Z] Licenses link at: x=217, y=837, width=187, height=17
+[2026-08-11T13:58:34.079Z] Version text at: x=64, y=839, width=484, height=34
+[2026-08-11T13:58:34.079Z] ✗ Layout issue detected: sameLine=true, versionAfterLicenses=false, noOverlap=false
+[2026-08-11T13:58:34.336Z] Closing browser...
+[2026-08-11T13:58:34.907Z] Done!
+[2026-08-11T13:58:53.544Z] Starting browser...
+[2026-08-11T13:58:53.710Z] Navigating to http://localhost:4000/login
+[2026-08-11T13:58:55.058Z] Waiting for page to load...
+[2026-08-11T13:58:58.063Z] Checking footer layout...
+[2026-08-11T13:58:58.219Z] GitHub link at: x=64, y=837, width=133, height=17
+[2026-08-11T13:58:58.219Z] Licenses link at: x=217, y=837, width=187, height=17
+[2026-08-11T13:58:58.220Z] Version text at: x=64, y=839, width=484, height=34
+[2026-08-11T13:58:58.220Z] ✗ Layout issue detected: sameLine=true, versionAfterLicenses=false, noOverlap=false
+[2026-08-11T13:58:58.504Z] Closing browser...
+[2026-08-11T13:58:59.196Z] Done!
+[2026-08-11T14:00:10.281Z] Starting browser...
+[2026-08-11T14:00:10.480Z] Navigating to http://localhost:4000/login
+[2026-08-11T14:00:11.796Z] Waiting for page to load...
+[2026-08-11T14:00:14.804Z] Checking footer layout...
+[2026-08-11T14:00:15.012Z] GitHub link at: x=64, y=837, width=133, height=17
+[2026-08-11T14:00:15.012Z] Licenses link at: x=217, y=837, width=187, height=17
+[2026-08-11T14:00:15.012Z] Version text at: x=64, y=839, width=484, height=34
+[2026-08-11T14:00:15.012Z] ✗ Layout issue detected: sameLine=true, versionAfterLicenses=false, noOverlap=false
+[2026-08-11T14:00:15.227Z] Closing browser...
+[2026-08-11T14:00:15.801Z] Done!
