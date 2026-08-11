@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-11T17:49:02Z",
+  "generated_at": "2026-08-11T17:50:06Z",
   "tickets": [
     {
       "ticket_id": "1",
@@ -12638,7 +12638,7 @@
           "task_id": "review",
           "task_version": 1,
           "ticket_id": "58",
-          "state": "QUEUED",
+          "state": "RUNNING",
           "attempt": 0,
           "bindings": {
             "tracker": "github-issues",
@@ -12658,7 +12658,9 @@
             "specs/58/spec.md",
             "specs/58/qa-plan.md",
             "specs/58/review.md"
-          ]
+          ],
+          "deadline": "2026-08-11T18:20:05Z",
+          "attempt_started_at": "2026-08-11T17:50:05Z"
         }
       ],
       "block_reason": null,
