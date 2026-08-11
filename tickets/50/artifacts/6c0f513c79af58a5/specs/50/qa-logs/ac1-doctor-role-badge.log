@@ -1,0 +1,192 @@
+=== AC1: Role badge displays for facility user with doctor role ===
+Timestamp: $(date -u +"%Y-%m-%dT%H:%M:%SZ")
+
+Fixtures used:
+- User: care-doctor / Ohcn@123 (from backend load_fixtures)
+- Expected role: doctor
+- Auth state: tests/.auth/user.json (will use admin/admin as backup)
+
+Steps:
+1. Navigate to http://localhost:4000
+2. Login with fixture credentials
+3. Wait for authenticated shell (facility context)
+4. Open sidebar user dropdown
+5. Verify role badge shows "Doctor"
+
+Test failed: browserType.launch: Target page, context or browser has been closed
+Browser logs:
+
+╔════════════════════════════════════════════════════════════════════════════════════════════════╗
+║ Looks like you launched a headed browser without having a XServer running.                     ║
+║ Set either 'headless: true' or use 'xvfb-run <your-playwright-app>' before running Playwright. ║
+║                                                                                                ║
+║ <3 Playwright Team                                                                             ║
+╚════════════════════════════════════════════════════════════════════════════════════════════════╝
+Call log:
+[2m  - <launching> /home/vscode/.cache/ms-playwright/chromium-1228/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-swkQ5R --remote-debugging-pipe --no-startup-window[22m
+[2m  - <launched> pid=11734[22m
+[2m  - [pid=11734][err] [11734:11748:0811/124408.889081:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory[22m
+[2m  - [pid=11734][err] [11734:11734:0811/124408.890605:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:257] Missing X server or $DISPLAY[22m
+[2m  - [pid=11734][err] [11734:11734:0811/124408.890614:ERROR:ui/aura/env.cc:246] The platform failed to initialize.  Exiting.[22m
+[2m  - [pid=11734] <gracefully close start>[22m
+[2m  - [pid=11734] <kill>[22m
+[2m  - [pid=11734] <will force kill>[22m
+[2m  - [pid=11734] <process did exit: exitCode=1, signal=null>[22m
+[2m  - [pid=11734] starting temporary directories cleanup[22m
+[2m  - [pid=11734] finished temporary directories cleanup[22m
+[2m  - [pid=11734] <gracefully close end>[22m
+
+    at main (/workspaces/agent_hq/_target/6c0f513c79af58a5/specs/50/qa-drivers/ac1-doctor-role-badge.mjs:13:34)
+    at /workspaces/agent_hq/_target/6c0f513c79af58a5/specs/50/qa-drivers/ac1-doctor-role-badge.mjs:79:1 {
+  log: [
+    '  - <launching> /home/vscode/.cache/ms-playwright/chromium-1228/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-swkQ5R --remote-debugging-pipe --no-startup-window',
+    '  - <launched> pid=11734',
+    '  - [pid=11734][err] [11734:11748:0811/124408.889081:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory',
+    '  - [pid=11734][err] [11734:11734:0811/124408.890605:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:257] Missing X server or $DISPLAY',
+    '  - [pid=11734][err] [11734:11734:0811/124408.890614:ERROR:ui/aura/env.cc:246] The platform failed to initialize.  Exiting.',
+    '  - [pid=11734] <gracefully close start>',
+    '  - [pid=11734] <kill>',
+    '  - [pid=11734] <will force kill>',
+    '  - [pid=11734] <process did exit: exitCode=1, signal=null>',
+    '  - [pid=11734] starting temporary directories cleanup',
+    '  - [pid=11734] finished temporary directories cleanup',
+    '  - [pid=11734] <gracefully close end>'
+  ]
+}
+[AC1] Starting: Role badge for doctor user
+[qa-auth] refreshJwt: status 200
+[qa-auth] openAuthedContext: refresh ok=true status=200
+[qa-auth] openAuthedContext: shell not ready — attempting uiLogin
+[qa-auth] uiLogin: starting UI login
+[AC1] ✗ FAIL: locator.fill: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('textbox', { name: /username/i })[22m
+
+Test failed: locator.fill: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('textbox', { name: /username/i })[22m
+
+    at uiLogin (/workspaces/agent_hq/_target/6c0f513c79af58a5/.agent-hq/qa-auth.mjs:88:58)
+    at async openAuthedContext (/workspaces/agent_hq/_target/6c0f513c79af58a5/.agent-hq/qa-auth.mjs:223:7)
+    at async main (/workspaces/agent_hq/_target/6c0f513c79af58a5/specs/50/qa-drivers/ac1-doctor-role-badge.mjs:20:37) {
+  log: [ "  - waiting for getByRole('textbox', { name: /username/i })" ],
+  name: 'TimeoutError'
+}
+[AC1] Starting: Role badge for doctor user
+[AC1] Navigating to login page
+[AC1] Filling login credentials
+[AC1] Clicking login button
+[AC1] Login successful, navigated to: http://localhost:4000/
+[AC1] Authenticated shell ready
+[AC1] ✗ FAIL: locator.waitFor: Timeout 15000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-sidebar="sidebar"]') to be visible[22m
+
+Test failed: locator.waitFor: Timeout 15000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-sidebar="sidebar"]') to be visible[22m
+
+    at main (/workspaces/agent_hq/_target/6c0f513c79af58a5/specs/50/qa-drivers/ac1-doctor-role-badge.mjs:54:19) {
+  log: [
+    `  - waiting for locator('[data-sidebar="sidebar"]') to be visible`
+  ],
+  name: 'TimeoutError'
+}
+[AC1] Starting: Role badge for doctor user
+[AC1] Navigating to login page
+[AC1] Filling login credentials
+[AC1] Clicking login button
+[AC1] Login successful, navigated to: http://localhost:4000/
+[AC1] Navigating to facility page
+[AC1] On facility page: http://localhost:4000/facility/181a32f1-8844-4d68-bc33-6ccaf273e5d3/overview
+[AC1] Authenticated shell ready
+[AC1] Sidebar visible
+[AC1] ✗ FAIL: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-sidebar="sidebar"]').locator('button').filter({ hasText: /(care-doctor|admin)/i }).first() to be visible[22m
+
+Test failed: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-sidebar="sidebar"]').locator('button').filter({ hasText: /(care-doctor|admin)/i }).first() to be visible[22m
+
+    at main (/workspaces/agent_hq/_target/6c0f513c79af58a5/specs/50/qa-drivers/ac1-doctor-role-badge.mjs:66:23) {
+  log: [
+    `  - waiting for locator('[data-sidebar="sidebar"]').locator('button').filter({ hasText: /(care-doctor|admin)/i }).first() to be visible`
+  ],
+  name: 'TimeoutError'
+}
+[AC1] Starting: Role badge for doctor user
+[AC1] Navigating to login page
+[AC1] Filling login credentials
+[AC1] Clicking login button
+[AC1] Login successful, navigated to: http://localhost:4000/
+[AC1] Navigating to facility page
+[AC1] On facility page: http://localhost:4000/facility/181a32f1-8844-4d68-bc33-6ccaf273e5d3/overview
+[AC1] Authenticated shell ready
+[AC1] Sidebar visible
+[AC1] User trigger found
+[AC1] Clicked user dropdown trigger
+[AC1] ✗ FAIL: locator.waitFor: Timeout 5000ms exceeded.
+Call log:
+[2m  - waiting for getByText(/Doctor|Administrator|Nurse|Staff|Volunteer/i) to be visible[22m
+
+Test failed: locator.waitFor: Timeout 5000ms exceeded.
+Call log:
+[2m  - waiting for getByText(/Doctor|Administrator|Nurse|Staff|Volunteer/i) to be visible[22m
+
+    at main (/workspaces/agent_hq/_target/6c0f513c79af58a5/specs/50/qa-drivers/ac1-doctor-role-badge.mjs:78:21) {
+  log: [
+    '  - waiting for getByText(/Doctor|Administrator|Nurse|Staff|Volunteer/i) to be visible'
+  ],
+  name: 'TimeoutError'
+}
+[AC1] Starting: Role badge for doctor user
+[AC1] Navigating to login page
+[AC1] Filling login credentials
+[AC1] Clicking login button
+[AC1] Login successful, navigated to: http://localhost:4000/
+[AC1] Navigating to facility page
+[AC1] On facility page: http://localhost:4000/facility/181a32f1-8844-4d68-bc33-6ccaf273e5d3/overview
+[AC1] Authenticated shell ready
+[AC1] Sidebar visible
+[AC1] User trigger found
+[AC1] Clicked user dropdown trigger
+[AC1] ✗ FAIL: locator.waitFor: Timeout 5000ms exceeded.
+Call log:
+[2m  - waiting for getByText(/Doctor|Administrator|Nurse|Staff|Volunteer/i) to be visible[22m
+
+Test failed: locator.waitFor: Timeout 5000ms exceeded.
+Call log:
+[2m  - waiting for getByText(/Doctor|Administrator|Nurse|Staff|Volunteer/i) to be visible[22m
+
+    at main (/workspaces/agent_hq/_target/6c0f513c79af58a5/specs/50/qa-drivers/ac1-doctor-role-badge.mjs:78:21) {
+  log: [
+    '  - waiting for getByText(/Doctor|Administrator|Nurse|Staff|Volunteer/i) to be visible'
+  ],
+  name: 'TimeoutError'
+}
+[AC1] Starting: Role badge for doctor user
+[AC1] Navigating to login page
+[AC1] Filling login credentials
+[AC1] Clicking login button
+[AC1] Login successful, navigated to: http://localhost:4000/
+[AC1] Navigating to facility page
+[AC1] On facility page: http://localhost:4000/facility/181a32f1-8844-4d68-bc33-6ccaf273e5d3/overview
+[AC1] Authenticated shell ready
+[AC1] Sidebar visible
+[AC1] User trigger found
+[AC1] Clicked user dropdown trigger
+[AC1] Badge element exists: true
+[AC1] Badge text content: ""
+[AC1] ✗ FAIL: Role badge element exists but is empty - user.user_type is likely undefined in API response
+Test failed: Error: Role badge element exists but is empty - user.user_type is likely undefined in API response
+    at main (file:///workspaces/agent_hq/_target/6c0f513c79af58a5/specs/50/qa-drivers/ac1-doctor-role-badge.mjs:90:15)
+
+Video evidence saved: specs/50/videos/ac1-doctor-role-badge.webm
+Showing: Login → Navigate to facility → Open user dropdown → Badge element exists but empty
+
+Root cause: Backend API does not return user_type field in user object
+- API returns role_orgs array instead
+- Frontend types expect user.user_type: UserType
+- Implementation displays {t(user.user_type)} which evaluates to empty string
+

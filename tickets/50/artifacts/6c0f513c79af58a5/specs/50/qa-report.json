@@ -1,0 +1,69 @@
+{
+  "criteria": [
+    {
+      "id": "ac1-doctor-role-badge",
+      "title": "Role badge displays for facility user with doctor role",
+      "verdict": "fail",
+      "evidence_kind": "live-flow",
+      "blocker": "Backend API does not return user_type field - all users have undefined user_type causing empty badge. API returns role_orgs array but implementation expects user.user_type (UserType). Badge element renders but {t(user.user_type)} evaluates to empty string.",
+      "blocker_category": "validation-error",
+      "plan_steps_run": ["1", "2"],
+      "videos": ["specs/50/videos/ac1-doctor-role-badge.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac2-fac-admin-badge",
+      "title": "Role badge shows Administrator for care-fac-admin",
+      "verdict": "fail",
+      "evidence_kind": "live-flow",
+      "blocker": "Same root cause as AC1 - user.user_type undefined in API response. Tested with care-fac-admin credentials, dropdown opens correctly showing name and username, but badge element is empty. API returns role_orgs with Facility Admin role but no user_type field.",
+      "blocker_category": "validation-error",
+      "plan_steps_run": ["1", "2"],
+      "videos": ["specs/50/videos/ac2-fac-admin-badge.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac3-profile-navigation",
+      "title": "Profile navigation works with role badge visible",
+      "verdict": "fail",
+      "evidence_kind": "live-flow",
+      "blocker": "Badge empty before and after Profile navigation due to missing user_type field. Profile navigation itself works correctly (navigates to /facility/{id}/users/admin), but acceptance criterion requires badge to be visible which it is not. Badge remains empty throughout the flow.",
+      "blocker_category": "validation-error",
+      "plan_steps_run": ["1", "2", "3", "4"],
+      "videos": ["specs/50/videos/ac3-profile-navigation.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac4-logout-functionality",
+      "title": "Logout works with role badge present",
+      "verdict": "fail",
+      "evidence_kind": "live-flow",
+      "blocker": "Logout functionality works (redirects to /login, clears session) but badge is not present with content as criterion requires. Badge element exists but is empty due to undefined user_type. Core logout flow not broken, but badge requirement not met.",
+      "blocker_category": "validation-error",
+      "plan_steps_run": ["1", "2", "3"],
+      "videos": ["specs/50/videos/ac4-logout-functionality.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac5-patient-no-badge",
+      "title": "Patient nav menu has no role badge",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Patient OTP login not available in fixture data. Requires phone number + OTP generation + backend SMS infrastructure. No test patient credentials in setup-notes or tests/.auth/patient.json. Code inspection shows PatientNavUser correctly does not render Badge component.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": [],
+      "seed_attempt": {
+        "method": "ui",
+        "summary": "Reviewed qa-plan Data setup - patient login requires OTP flow with phone number. No fixture patient credentials available. Backend load_fixtures provides facility users (care-doctor, care-fac-admin, etc.) but not OTP-enabled patient accounts. Skipped UI attempt as login form requires valid OTP."
+      }
+    }
+  ],
+  "summary": {
+    "all_passed": false,
+    "pass": 0,
+    "fail": 4,
+    "not_exercised": 1
+  }
+}

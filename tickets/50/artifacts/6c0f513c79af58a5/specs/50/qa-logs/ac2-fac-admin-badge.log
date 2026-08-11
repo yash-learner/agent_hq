@@ -1,0 +1,7 @@
+=== AC2: care-fac-admin shows Administrator badge ===
+[AC2] Login as care-fac-admin
+[AC2] Open user dropdown
+[AC2] Check for Administrator badge
+[AC2] Badge visible: false
+[AC2] Badge text: ""
+[AC2] ✗ FAIL: Administrator badge not showing - user.user_type undefined

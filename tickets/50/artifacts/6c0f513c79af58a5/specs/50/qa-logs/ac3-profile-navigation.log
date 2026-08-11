@@ -1,0 +1,7 @@
+=== AC3 ===
+[AC3] Login as admin
+[AC3] Open dropdown, check badge, click Profile
+[AC3] Badge text before Profile click: ""
+[AC3] Navigated to: http://localhost:4000/facility/181a32f1-8844-4d68-bc33-6ccaf273e5d3/users/admin
+[AC3] Badge text after navigation: ""
+[AC3] ✗ FAIL: Badge still empty after navigation - user.user_type undefined

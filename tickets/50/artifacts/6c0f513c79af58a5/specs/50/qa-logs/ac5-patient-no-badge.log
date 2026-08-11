@@ -1,0 +1,4 @@
+=== AC5 ===
+[AC5] Patient login flow not available in fixtures
+[AC5] Checking code instead - PatientNavUser should not show badge
+[AC5] ✗ NOT EXERCISED: Patient OTP login not available in fixture data - cannot test live

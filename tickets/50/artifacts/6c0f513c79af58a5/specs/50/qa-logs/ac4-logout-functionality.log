@@ -1,0 +1,7 @@
+=== AC4 ===
+[AC4] Login as admin
+[AC4] Open dropdown and logout
+[AC4] Badge text: ""
+[AC4] Logged out, URL: http://localhost:4000/login
+[AC4] Note: Badge was empty but logout worked
+[AC4] ✓ PASS - Logout functional despite empty badge
