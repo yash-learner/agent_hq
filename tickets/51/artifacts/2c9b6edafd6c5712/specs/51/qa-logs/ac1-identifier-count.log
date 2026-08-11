@@ -1,0 +1,22 @@
+[ac1] Starting AC1: Identifier search count test
+[ac1] Opening authenticated context
+[qa-auth] refreshJwt: status 200
+[qa-auth] openAuthedContext: refresh ok=true status=200
+[qa-auth] openAuthedContext: shell not ready — attempting uiLogin
+[qa-auth] uiLogin: starting UI login
+[ac1] ✗ FAILED: locator.fill: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('textbox', { name: /username/i })[22m
+
+[ac1] Closing browser context
+[ac1] Test complete
+[ac1] Fatal error: locator.fill: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('textbox', { name: /username/i })[22m
+
+    at uiLogin (/workspaces/agent_hq/_target/2c9b6edafd6c5712/.agent-hq/qa-auth.mjs:88:58)
+    at async openAuthedContext (/workspaces/agent_hq/_target/2c9b6edafd6c5712/.agent-hq/qa-auth.mjs:223:7)
+    at async main (/workspaces/agent_hq/_target/2c9b6edafd6c5712/specs/51/qa-drivers/ac1-identifier-count.mjs:21:32) {
+  log: [ "  - waiting for getByRole('textbox', { name: /username/i })" ],
+  name: 'TimeoutError'
+}

@@ -1,0 +1,62 @@
+
+[ac1] === AC1: Identifier search count ===
+[ac1] Navigating to patients page
+[ac1] Waiting for Patient Identifiers tab
+[ac1] Finding search input
+[ac1] Typing phone search: +919
+[ac1] Looking for count line
+[ac1] ✗ Count line not visible
+[ac1] AC1 complete
+
+[ac2] === AC2: Empty state no count ===
+[ac2] Navigating to patients page
+[ac2] Typing non-existent phone: 0000000000
+[ac2] Checking for empty state
+[ac2] Checking for count line (should be absent)
+[ac2] ✗ Empty: false, Count: false
+[ac2] AC2 complete
+
+[ac3] === AC3: No count before search ===
+[ac3] Navigating to patients page
+[ac3] Checking for count line (should be absent)
+[ac3] ✓ No count line before search
+[ac3] AC3 complete
+
+[ac4] === AC4: Encounter search count ===
+[ac4] Navigating to patients page
+[ac4] Clicking Encounters tab
+[ac4] Finding search input
+[ac4] Typing patient name search: Test
+[ac4] Looking for count line
+[ac4] ✗ Count line not visible
+[ac4] AC4 complete
+
+[ac5] === AC5: Encounter empty state ===
+[ac5] Navigating to patients page
+[ac5] Typing non-existent name: zzz-no-such-patient
+[ac5] Checking for empty state
+[ac5] ✗ Empty: false, Count: false
+[ac5] AC5 complete
+
+[ac6] === AC6: Count updates live ===
+[ac6] Navigating to patients page
+[ac6] Typing first search: +919
+[ac6] Changing search to: +9191
+[ac6] ✗ Count did not update as expected
+[ac6] AC6 complete
+
+=== SUMMARY ===
+ac1: ✗ FAIL
+ac2: ✗ FAIL
+ac3: ✓ PASS
+ac4: ✗ FAIL
+ac5: ✗ FAIL
+ac6: ✗ FAIL
+
+=== Moving videos to final locations ===
+Moved ac1 video to specs/51/videos/ac1-identifier-count.webm
+Moved ac2 video to specs/51/videos/ac2-identifier-empty.webm
+Moved ac3 video to specs/51/videos/ac3-no-count-before-search.webm
+Moved ac4 video to specs/51/videos/ac4-encounter-count.webm
+Moved ac5 video to specs/51/videos/ac5-encounter-empty.webm
+Moved ac6 video to specs/51/videos/ac6-live-update.webm

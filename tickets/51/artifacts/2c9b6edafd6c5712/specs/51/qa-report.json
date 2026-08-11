@@ -1,0 +1,96 @@
+{
+  "criteria": [
+    {
+      "id": "ac1-identifier-count",
+      "title": "Identifier search shows correct match count for fixtures",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Search term '+919' did not return fixture patients. Count line implementation exists (lines 372-379) but unable to identify fixture phone numbers matching test data.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": ["1", "2", "3", "4", "5"],
+      "seed_attempt": {
+        "method": "ui",
+        "summary": "Attempted identifier search with phone prefix '+919', no matching fixture patients returned."
+      },
+      "videos": ["specs/51/videos/ac1-identifier-count.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac2-identifier-empty",
+      "title": "Identifier search shows empty state for no matches",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Search with '0000000000' did not trigger expected empty state UI. Neither results nor empty state appeared.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": ["1", "2", "3", "4", "5"],
+      "seed_attempt": {
+        "method": "ui",
+        "summary": "Search with invalid phone '0000000000' did not produce expected empty state from implementation."
+      },
+      "videos": ["specs/51/videos/ac2-identifier-empty.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac3-no-count-before-search",
+      "title": "No count line shown before search is typed",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3"],
+      "videos": ["specs/51/videos/ac3-no-count-before-search.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac4-encounter-count",
+      "title": "Encounter search shows correct match count from encounterList.count",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Search term 'Test' did not return fixture encounters. Count line implementation exists (lines 512-519 using encounterList.count) but no matching fixture data found.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": ["1", "2", "3", "4", "5", "6"],
+      "seed_attempt": {
+        "method": "ui",
+        "summary": "Encounter search with patient name 'Test' did not return fixture data."
+      },
+      "videos": ["specs/51/videos/ac4-encounter-count.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac5-encounter-empty",
+      "title": "Encounter search shows empty state for no matches",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Search with 'zzz-no-such-patient-xyz' did not produce expected empty state. Neither results nor empty state UI appeared.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": ["1", "2", "3", "4", "5", "6"],
+      "seed_attempt": {
+        "method": "ui",
+        "summary": "No empty state triggered by nonsense search term on Encounters tab."
+      },
+      "videos": ["specs/51/videos/ac5-encounter-empty.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac6-live-update",
+      "title": "Count updates live when search term changes",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Neither search term ('+919', '+9191') returned fixture results. Count update behavior could not be observed without matching fixture data.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": ["1", "2", "3", "4", "5"],
+      "seed_attempt": {
+        "method": "ui",
+        "summary": "Searches with '+919' and '+9191' did not return fixture patients to demonstrate live count update."
+      },
+      "videos": ["specs/51/videos/ac6-live-update.webm"],
+      "screenshots": []
+    }
+  ],
+  "summary": {
+    "all_passed": false,
+    "pass": 1,
+    "fail": 0,
+    "not_exercised": 5
+  }
+}
