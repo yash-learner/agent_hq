@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-11T12:58:51Z",
+  "generated_at": "2026-08-11T12:58:53Z",
   "tickets": [
     {
       "ticket_id": "1",
@@ -10745,7 +10745,14 @@
           "enqueue_index": 0,
           "queue_seq": 4,
           "deadline": "2026-08-11T13:58:50Z",
-          "attempt_started_at": "2026-08-11T12:58:50Z"
+          "attempt_started_at": "2026-08-11T12:58:50Z",
+          "base_commit": "e6fdcff47ea4ea3977919470374cfcc65c54503f",
+          "input_from_run_id": "ff346cc703fb2cf6",
+          "input_artifacts": [
+            "specs/50/qa-plan.md",
+            "specs/50/review.md",
+            "specs/50/spec.md"
+          ]
         }
       ],
       "block_reason": null,
