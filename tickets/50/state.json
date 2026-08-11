@@ -40,7 +40,7 @@
       "task_id": "implement",
       "task_version": 1,
       "ticket_id": "50",
-      "state": "QUEUED",
+      "state": "RUNNING",
       "attempt": 0,
       "bindings": {
         "tracker": "github-issues",
@@ -59,7 +59,9 @@
       "repo": "yash-learner/care_fe_agent_hq",
       "input_artifacts": [
         "specs/50/spec.md"
-      ]
+      ],
+      "deadline": "2026-08-11T12:17:05Z",
+      "attempt_started_at": "2026-08-11T10:47:05Z"
     }
   ],
   "block_reason": null,
