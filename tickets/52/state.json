@@ -36,7 +36,7 @@
       "task_id": "spec",
       "task_version": 1,
       "ticket_id": "52",
-      "state": "QUEUED",
+      "state": "RUNNING",
       "attempt": 1,
       "bindings": {
         "tracker": "github-issues",
@@ -51,7 +51,9 @@
       "chain_depth": 0,
       "source_event_id": "52:opened:2026-08-11T11:19:47Z",
       "enqueue_index": 0,
-      "queue_seq": 0
+      "queue_seq": 0,
+      "deadline": "2026-08-11T16:13:14Z",
+      "attempt_started_at": "2026-08-11T15:43:14Z"
     }
   ],
   "block_reason": null,
