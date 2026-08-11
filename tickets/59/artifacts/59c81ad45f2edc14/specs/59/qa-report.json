@@ -1,0 +1,91 @@
+{
+  "criteria": [
+    {
+      "id": "dropdown-filter",
+      "title": "Filter codes dropdown to show only remaining codes",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Unable to complete data setup. Activity Definition created successfully with 3 codes, Service Request form submitted, but could not navigate to SR detail page. After submission redirect to /encounter/{id}/updates, service requests list page showed 0 SR links in expected format.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": ["data-setup-1", "data-setup-2", "data-setup-3", "data-setup-4", "data-setup-5", "data-setup-6", "data-setup-7", "data-setup-8", "data-setup-9", "data-setup-10", "data-setup-11", "data-setup-12"],
+      "videos": ["specs/59/videos/dropdown-filter.webm"],
+      "screenshots": [],
+      "seed_attempt": {
+        "method": "ui",
+        "summary": "Created Activity Definition via UI with 3 diagnostic report codes (Acyclovir, Amdinocillin, Cefoperazone). AD creation succeeded. Created Service Request form filled and submitted, but post-submission navigation did not lead to accessible SR detail page. Service requests list page locator a[href*='/service_requests/'] found 0 links."
+      }
+    },
+    {
+      "id": "show-all-codes",
+      "title": "Show all codes when no reports exist yet",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Dependent on AC1 data setup. Could not reach service request detail page.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "create-second-report",
+      "title": "Create second report without reload",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Dependent on completing AC1 and AC2. Could not reach service request detail page or create first report.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "hide-button-all-codes-used",
+      "title": "Hide Create Report button when all codes used",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Dependent on completing AC1, AC2, and AC3. Could not reach service request detail page or create any reports.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "persist-after-reload",
+      "title": "Persist available codes after page reload",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Dependent on completing AC1, AC2, and AC3. Could not reach service request detail page or create any reports to test reload behavior.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "no-codes-defined",
+      "title": "Allow report creation when AD has no codes",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Requires separate data setup to create AD with no diagnostic report codes. Not attempted due to AC1 data setup issues and time constraints.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "final-report-check",
+      "title": "Allow creating additional reports if final report does not exist",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Dependent on completing AC1. Tests same flow but verifies preliminary/registered status reports don't block additional creation.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    }
+  ],
+  "summary": {
+    "all_passed": false,
+    "pass": 0,
+    "fail": 0,
+    "not_exercised": 7
+  }
+}
