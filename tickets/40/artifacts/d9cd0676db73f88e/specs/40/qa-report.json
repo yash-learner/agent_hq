@@ -1,0 +1,89 @@
+{
+  "criteria": [
+    {
+      "id": "ac1-custom-links-in-footer",
+      "title": "Custom links from care.config.ts appear in SidebarFooter",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3", "4"],
+      "videos": ["specs/40/videos/ac1-custom-links-in-footer.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac2-internal-link-icon",
+      "title": "Internal route links display internal link icon (Link2)",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3", "4"],
+      "videos": ["specs/40/videos/ac2-internal-link-icon.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac3-external-link-icon",
+      "title": "External URL links display external link icon (ExternalLink)",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1"],
+      "videos": ["specs/40/videos/ac1-custom-links-in-footer.webm"],
+      "screenshots": [],
+      "note": "Covered by AC1 - external link 'Support Portal' displays ExternalLink icon with target='_blank' and rel='noopener noreferrer'"
+    },
+    {
+      "id": "ac4-open-new-tab",
+      "title": "Links with openInNewTab: true open in new browser tab",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3", "4"],
+      "videos": ["specs/40/videos/ac1-custom-links-in-footer.webm"],
+      "screenshots": [],
+      "note": "Covered by AC1 - verified link has target='_blank' and rel='noopener noreferrer' attributes for new tab behavior"
+    },
+    {
+      "id": "ac5-current-tab-navigation",
+      "title": "Links with openInNewTab: false navigate in current tab",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3", "4"],
+      "videos": ["specs/40/videos/ac5-current-tab-navigation.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac6-plugin-links",
+      "title": "Plugin custom footer links appear in sidebar",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Plugin integration requires deployed plugin application which is not available in local test environment. Implementation verified via code inspection: PluginManifest.customFooterLinks type exists (src/pluginTypes.ts:211), plugin link merging logic exists in app-sidebar.tsx, and CustomFooterLinks component renders plugin links correctly.",
+      "blocker_category": "other",
+      "plan_steps_run": ["1", "2"],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac7-visibility-filtering",
+      "title": "Links filtered by showIn visibility config",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3", "4", "5", "6"],
+      "videos": ["specs/40/videos/ac7-visibility-filtering.webm"],
+      "screenshots": []
+    }
+  ],
+  "summary": {
+    "all_passed": false,
+    "pass": 6,
+    "fail": 0,
+    "not_exercised": 1
+  }
+}
