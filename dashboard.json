@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-11T17:20:22Z",
+  "generated_at": "2026-08-11T17:20:24Z",
   "tickets": [
     {
       "ticket_id": "1",
@@ -12055,7 +12055,9 @@
             "specs/54/review.md"
           ],
           "deadline": "2026-08-11T17:50:22Z",
-          "attempt_started_at": "2026-08-11T17:20:22Z"
+          "attempt_started_at": "2026-08-11T17:20:22Z",
+          "base_commit": "30f6bbb927eaad92af6d3b1ac05cfcac2005f425",
+          "input_from_run_id": "e3926d1b541aac34"
         }
       ],
       "block_reason": null,
