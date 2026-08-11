@@ -1,7 +1,7 @@
 {
   "ticket_id": "47",
   "pinned_comment_id": 5240085113,
-  "status": "BLOCKED",
+  "status": "ACTIVE",
   "runs": [
     {
       "run_id": "c89bde9d9bde2dcc",
@@ -236,12 +236,29 @@
       "attempt_started_at": "2026-08-10T18:17:23Z",
       "base_commit": "d875ac2413bcf68554ff62d28f3d76fce22db601",
       "input_from_run_id": "ed945dfedc62161c"
+    },
+    {
+      "run_id": "0a08d77fb590b2fc",
+      "task_id": "implement",
+      "task_version": 1,
+      "ticket_id": "47",
+      "state": "QUEUED",
+      "attempt": 0,
+      "bindings": {},
+      "cost_usd": null,
+      "tokens": null,
+      "usage_known": false,
+      "artifacts": [],
+      "chain_depth": 0,
+      "source_event_id": "issue-comment:5252108563",
+      "enqueue_index": 0,
+      "queue_seq": 7
     }
   ],
-  "block_reason": "Round 3 blockers remain: (1) Multi-report creation is architecturally blocked \u2014 DiagnosticReportForm shows only one report at a time (diagnosticReports[0]) and cannot render the creation dropdown when hasReport is true, preventing AC3 (create second report with remaining codes). The component needs restructuring to show all reports AND creation UI simultaneously. (2) QA plan data setup blockers from Round 2 unaddressed \u2014 LOINC codes and specimen slug lack provenance from fixtures or proven test seeds.",
-  "block_source": "task",
-  "interrupted_run_id": "8be923dd61b4e61a",
-  "comments_polled_at": "2026-08-10T18:27:38Z",
+  "block_reason": null,
+  "block_source": null,
+  "interrupted_run_id": null,
+  "comments_polled_at": "2026-08-11T10:43:49Z",
   "work_repos": [
     {
       "repo": "yash-learner/care_fe_agent_hq",
