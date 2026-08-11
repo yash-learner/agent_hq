@@ -44,3 +44,4 @@
 {"event_id": "6f561bc6d1db5dbb:review-round-2:accepted", "kind": "handoff.accepted", "ticket_id": "46", "run_id": "6f561bc6d1db5dbb", "detail": "Review blocker fixes and verify implementation meets all acceptance criteria"}
 {"event_id": "6f561bc6d1db5dbb:succeeded", "kind": "run.succeeded", "ticket_id": "46", "run_id": "6f561bc6d1db5dbb", "state": "SUCCEEDED", "artifacts": ["specs/46/qa-plan.md"]}
 {"event_id": "ad326c39ff8eba24:runner_lost", "kind": "run.runner_lost", "ticket_id": "46", "run_id": "ad326c39ff8eba24", "state": "FAILED"}
+{"event_id": "294b0344b7f2e73c:queued", "kind": "run.queued", "ticket_id": "46", "run_id": "294b0344b7f2e73c", "task_id": "review", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
