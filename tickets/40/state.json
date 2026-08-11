@@ -295,7 +295,7 @@
       "task_id": "qa",
       "task_version": 1,
       "ticket_id": "40",
-      "state": "QUEUED",
+      "state": "RUNNING",
       "attempt": 1,
       "bindings": {
         "tracker": "github-issues",
@@ -309,7 +309,9 @@
       "chain_depth": 0,
       "source_event_id": "issue-comment:5251871473",
       "enqueue_index": 0,
-      "queue_seq": 6
+      "queue_seq": 6,
+      "deadline": "2026-08-11T12:26:07Z",
+      "attempt_started_at": "2026-08-11T11:26:07Z"
     }
   ],
   "block_reason": null,
