@@ -176,7 +176,7 @@
       "task_id": "implement",
       "task_version": 1,
       "ticket_id": "58",
-      "state": "QUEUED",
+      "state": "RUNNING",
       "attempt": 0,
       "bindings": {
         "tracker": "github-issues",
@@ -195,7 +195,9 @@
       "input_artifacts": [
         "specs/58/spec.md",
         "specs/58/review.md"
-      ]
+      ],
+      "deadline": "2026-08-11T15:52:11Z",
+      "attempt_started_at": "2026-08-11T14:22:11Z"
     }
   ],
   "block_reason": null,
