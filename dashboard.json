@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-11T12:17:16Z",
+  "generated_at": "2026-08-11T12:17:24Z",
   "tickets": [
     {
       "ticket_id": "1",
@@ -10165,7 +10165,7 @@
           "task_id": "review",
           "task_version": 1,
           "ticket_id": "49",
-          "state": "RUNNING",
+          "state": "SUCCEEDED",
           "attempt": 0,
           "bindings": {
             "tracker": "github-issues",
@@ -10175,7 +10175,9 @@
           "cost_usd": 0.19,
           "tokens": 239100,
           "usage_known": true,
-          "artifacts": [],
+          "artifacts": [
+            "specs/49/review.md"
+          ],
           "chain_depth": 2,
           "parent_run_id": "f7d64904775704fa",
           "queue_seq": 2,
@@ -10188,7 +10190,36 @@
           "deadline": "2026-08-11T12:43:10Z",
           "attempt_started_at": "2026-08-11T12:13:10Z",
           "base_commit": "5d619b29ed893416abbf608f546e40184c4824a9",
-          "input_from_run_id": "f7d64904775704fa"
+          "input_from_run_id": "f7d64904775704fa",
+          "output_commit": "5d619b29ed893416abbf608f546e40184c4824a9",
+          "pr_ref": "yash-learner/care_fe_agent_hq#35"
+        },
+        {
+          "run_id": "ca03c33a309cdfda",
+          "task_id": "qa",
+          "task_version": 1,
+          "ticket_id": "49",
+          "state": "QUEUED",
+          "attempt": 0,
+          "bindings": {
+            "tracker": "github-issues",
+            "agent-session": "copilot-cli",
+            "messaging": "github-comment"
+          },
+          "cost_usd": null,
+          "tokens": null,
+          "usage_known": false,
+          "artifacts": [],
+          "chain_depth": 3,
+          "parent_run_id": "4c6d6d8e91b62a60",
+          "queue_seq": 3,
+          "handoff_key": "qa-49",
+          "repo": "yash-learner/care_fe_agent_hq",
+          "input_artifacts": [
+            "specs/49/spec.md",
+            "specs/49/review.md",
+            "specs/49/qa-plan.md"
+          ]
         }
       ],
       "block_reason": null,
