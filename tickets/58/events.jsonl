@@ -11,3 +11,7 @@
 {"event_id": "6afa136ed99e712a:review-58-1:accepted", "kind": "handoff.accepted", "ticket_id": "58", "run_id": "6afa136ed99e712a", "detail": "Review date filter implementation against spec acceptance criteria"}
 {"event_id": "6afa136ed99e712a:succeeded", "kind": "run.succeeded", "ticket_id": "58", "run_id": "6afa136ed99e712a", "state": "SUCCEEDED", "artifacts": ["specs/58/qa-plan.md"]}
 {"event_id": "ff5d019243f0e71a:collected", "kind": "run.collected", "ticket_id": "58", "run_id": "ff5d019243f0e71a", "tokens": 199900, "cost_usd": 0.193}
+{"event_id": "ff5d019243f0e71a:implement-round-2:proposed", "kind": "handoff.proposed", "ticket_id": "58", "run_id": "ff5d019243f0e71a", "detail": "Fix blocker: PLAYWRIGHT_GUIDE.md formatting corrupted with concatenated paths"}
+{"event_id": "80e1acfe2014ed0d:queued", "kind": "run.queued", "ticket_id": "58", "run_id": "80e1acfe2014ed0d", "task_id": "implement", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
+{"event_id": "ff5d019243f0e71a:implement-round-2:accepted", "kind": "handoff.accepted", "ticket_id": "58", "run_id": "ff5d019243f0e71a", "detail": "Fix blocker: PLAYWRIGHT_GUIDE.md formatting corrupted with concatenated paths"}
+{"event_id": "ff5d019243f0e71a:succeeded", "kind": "run.succeeded", "ticket_id": "58", "run_id": "ff5d019243f0e71a", "state": "SUCCEEDED", "artifacts": ["specs/58/review.md"]}
