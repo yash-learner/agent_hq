@@ -20,3 +20,4 @@
 {"event_id": "30eb409755f3ebf3:queued", "kind": "run.queued", "ticket_id": "50", "run_id": "30eb409755f3ebf3", "task_id": "qa", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
 {"event_id": "6c0f513c79af58a5:queued", "kind": "run.queued", "ticket_id": "50", "run_id": "6c0f513c79af58a5", "task_id": "agent-qa", "task_version": 1, "state": "QUEUED", "bindings": {}}
 {"event_id": "6c0f513c79af58a5:rework", "kind": "run.rework", "ticket_id": "50", "run_id": "6c0f513c79af58a5", "detail": "@yash-learner: re-verify with MCP-driven QA", "actor": "yash-learner", "source": "issue-comment:5253177417"}
+{"event_id": "6c0f513c79af58a5:collected", "kind": "run.collected", "ticket_id": "50", "run_id": "6c0f513c79af58a5", "tokens": 4035600, "cost_usd": 2.15}
