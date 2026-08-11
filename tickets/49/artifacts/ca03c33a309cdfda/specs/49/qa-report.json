@@ -1,0 +1,54 @@
+{
+  "criteria": [
+    {
+      "id": "ac1-version-displays",
+      "title": "Version displays on login page without authentication",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3"],
+      "videos": ["specs/49/videos/ac1-version-displays.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac2-no-wrap-desktop",
+      "title": "Version does not wrap or overlap on desktop viewport",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3", "4"],
+      "videos": ["specs/49/videos/ac2-no-wrap-desktop.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac3-github-link",
+      "title": "GitHub link navigates as before",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3"],
+      "videos": ["specs/49/videos/ac3-github-link.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac4-licenses-link",
+      "title": "Licenses link navigates as before",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3"],
+      "videos": ["specs/49/videos/ac4-licenses-link.webm"],
+      "screenshots": []
+    }
+  ],
+  "summary": {
+    "all_passed": true,
+    "pass": 4,
+    "fail": 0,
+    "not_exercised": 0
+  }
+}

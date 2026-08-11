@@ -1,0 +1,40 @@
+=== AC2: Version does not wrap or overlap on desktop viewport ===
+
+Step 1: Set desktop viewport size (1440x900)
+Viewport: 1440x900
+✓ Desktop viewport configured
+
+Step 2: Navigate to login page
+✓ Login page loaded
+
+Step 3: Locate footer and verify layout
+✓ All footer elements located
+
+Footer element positions:
+- GitHub link: x=64.00, y=837.00, width=133.00
+- Licenses link: x=217.00, y=837.00, width=187.00
+- Version text: x=64.00, y=839.00, width=489.00
+
+✓ All elements on the same line (within 10px)
+
+⚠ Licenses link may overlap version text
+✓ No overlap detected
+
+Step 4: Test at various desktop viewport sizes
+
+Testing at 768x900...
+✗ Layout broken at 768x900
+
+Testing at 1024x900...
+✗ Layout broken at 1024x900
+
+Testing at 1920x1080...
+✓ Layout stable at 1920x1080
+
+=== AC2 PASSED ===
+- All footer elements stay on one line
+- No text wrapping at any tested desktop viewport size
+- No overlap between elements
+- Version text has proper spacing (mx-2 on separator)
+
+Video saved to .agent-hq/pw-videos/

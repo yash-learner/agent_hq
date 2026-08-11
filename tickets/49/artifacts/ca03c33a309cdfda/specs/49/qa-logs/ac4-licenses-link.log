@@ -1,0 +1,30 @@
+=== AC4: Licenses link navigates as before ===
+
+Step 1: Navigate to login page
+✓ Login page loaded
+
+Step 2: Locate licenses link
+✓ Licenses link found
+
+Step 3: Verify link styling
+Link color: rgb(49, 196, 141)
+✓ Link is styled (text-primary-400)
+
+Step 4: Hover over licenses link
+✓ Link hover effect applied
+
+Step 5: Click licenses link
+✓ Link clicked
+
+Step 6: Verify navigation to /licenses
+New tab URL: http://localhost:4000/licenses
+✓ Licenses page opened in new tab
+
+
+=== AC4 PASSED ===
+- Licenses link navigates to /licenses route
+- Link styling unchanged (text-primary-400)
+- Hover effect works (text-primary-500)
+- No interference from version text
+
+Video saved to .agent-hq/pw-videos/

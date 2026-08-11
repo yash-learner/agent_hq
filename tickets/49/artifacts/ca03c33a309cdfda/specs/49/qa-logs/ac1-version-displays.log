@@ -1,0 +1,29 @@
+=== AC1: Version displays on login page without authentication ===
+
+Reading build metadata from: /workspaces/agent_hq/_target/ca03c33a309cdfda/public/build-meta.json
+Expected version: 48c144e9-896d-427d-a482-33df89d40f55
+
+Step 1: Navigate to login page
+✓ Login page loaded
+
+✓ Page content rendered
+
+Step 2: Locate footer and verify version text
+✓ Footer located via GitHub link
+
+Found version text: v48c144e9-896d-427d-a482-33df89d40f55
+✓ Version text matches expected format
+
+Step 3: Verify version text styling
+Version text classes: text-xs text-secondary-500
+✓ Version text has correct styling (text-xs text-secondary-500)
+
+Capturing footer with version...
+
+=== AC1 PASSED ===
+- Version text is visible in the footer
+- Format: v{uuid} (v48c144e9-896d-427d-a482-33df89d40f55)
+- No authentication required
+- Text is small and muted (text-xs, text-secondary-500)
+
+Video saved to .agent-hq/pw-videos/

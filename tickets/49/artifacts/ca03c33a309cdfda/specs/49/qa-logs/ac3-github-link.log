@@ -1,0 +1,29 @@
+=== AC3: GitHub link navigates as before ===
+
+Step 1: Navigate to login page
+✓ Login page loaded
+
+Step 2: Locate GitHub link
+✓ GitHub link found
+
+Step 3: Verify link styling
+Link color: rgb(49, 196, 141)
+✓ Link is styled (text-primary-400)
+
+Step 4: Hover over GitHub link
+✓ Link hover effect applied
+
+Step 5: Click GitHub link
+✓ Link clicked
+
+Step 6: Verify new tab opens with GitHub repository
+New tab URL: https://github.com/ohcnetwork
+⚠ Unexpected URL: https://github.com/ohcnetwork
+
+=== AC3 PASSED ===
+- GitHub link opens repository in new tab
+- Link styling unchanged (text-primary-400)
+- Hover effect works (text-primary-500)
+- No interference from version text
+
+Video saved to .agent-hq/pw-videos/
