@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-11T11:07:44Z",
+  "generated_at": "2026-08-11T11:07:45Z",
   "tickets": [
     {
       "ticket_id": "1",
@@ -9998,13 +9998,13 @@
           "chain_depth": 0,
           "source_event_id": "issue-comment:5252108563",
           "enqueue_index": 0,
-          "queue_seq": 7
+          "queue_seq": 8
         }
       ],
       "block_reason": null,
       "block_source": null,
       "interrupted_run_id": null,
-      "comments_polled_at": "2026-08-11T10:43:49Z",
+      "comments_polled_at": "2026-08-11T10:59:54Z",
       "work_repos": [
         {
           "repo": "yash-learner/care_fe_agent_hq",
