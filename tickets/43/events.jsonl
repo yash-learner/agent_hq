@@ -10,3 +10,4 @@
 {"event_id": "f42088c54fab2660:queued", "kind": "run.queued", "ticket_id": "43", "run_id": "f42088c54fab2660", "task_id": "review", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
 {"event_id": "1bec98e86801697b:review-43:accepted", "kind": "handoff.accepted", "ticket_id": "43", "run_id": "1bec98e86801697b", "detail": "Permission gate implemented; verify against spec acceptance criteria"}
 {"event_id": "1bec98e86801697b:succeeded", "kind": "run.succeeded", "ticket_id": "43", "run_id": "1bec98e86801697b", "state": "SUCCEEDED", "artifacts": ["specs/43/qa-plan.md"]}
+{"event_id": "f42088c54fab2660:collected", "kind": "run.collected", "ticket_id": "43", "run_id": "f42088c54fab2660", "tokens": 389400, "cost_usd": 0.255}
