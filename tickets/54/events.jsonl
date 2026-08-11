@@ -5,3 +5,4 @@
 {"event_id": "eb99b4fa2e663e42:queued", "kind": "run.queued", "ticket_id": "54", "run_id": "eb99b4fa2e663e42", "task_id": "implement", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment", "gate": "github-issue-comment"}}
 {"event_id": "3a831dad692e33c2:implement-54-care-fe:accepted", "kind": "handoff.accepted", "ticket_id": "54", "run_id": "3a831dad692e33c2", "detail": "Implement keyboard shortcut changes for Purchase Delivery form to use Shift+Enter for save"}
 {"event_id": "3a831dad692e33c2:succeeded", "kind": "run.succeeded", "ticket_id": "54", "run_id": "3a831dad692e33c2", "state": "SUCCEEDED", "artifacts": ["specs/54/spec.md"]}
+{"event_id": "eb99b4fa2e663e42:collected", "kind": "run.collected", "ticket_id": "54", "run_id": "eb99b4fa2e663e42", "tokens": 2014800, "cost_usd": 1.03}
