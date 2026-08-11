@@ -1,0 +1,16 @@
+[AC1-SIMPLE] Creating browser context with auth...
+[AC1-SIMPLE] Enabling cursor overlay...
+[AC1-SIMPLE] Navigating to login page...
+[AC1-SIMPLE] Filling in login form...
+[AC1-SIMPLE] ERROR: page.waitForSelector: Timeout 15000ms exceeded.
+Call log:
+[2m  - waiting for locator('input[name="username"]') to be visible[22m
+
+AC1 test failed: page.waitForSelector: Timeout 15000ms exceeded.
+Call log:
+[2m  - waiting for locator('input[name="username"]') to be visible[22m
+
+    at testAC1Simple (/workspaces/agent_hq/_target/4e562f131df2b06a/specs/40/qa-drivers/ac1-simple.mjs:28:16) {
+  log: [ `  - waiting for locator('input[name="username"]') to be visible` ],
+  name: 'TimeoutError'
+}

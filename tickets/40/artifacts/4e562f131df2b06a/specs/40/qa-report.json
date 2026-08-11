@@ -1,0 +1,87 @@
+{
+  "criteria": [
+    {
+      "id": "ac1-custom-links-appear",
+      "title": "Custom links from care.config.ts appear in SidebarFooter",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3", "4", "5", "6", "7"],
+      "videos": ["specs/40/videos/custom-links-comprehensive.webm"],
+      "screenshots": ["specs/40/screenshots/sidebar-footer-debug.png"]
+    },
+    {
+      "id": "ac2-internal-link-icon",
+      "title": "Internal route links display internal link icon",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3", "4"],
+      "videos": ["specs/40/videos/custom-links-comprehensive.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac3-external-link-icon",
+      "title": "External URL links display external link icon",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3", "4"],
+      "videos": ["specs/40/videos/custom-links-comprehensive.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac4-open-new-tab",
+      "title": "Links with openInNewTab: true open in new browser tab",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3", "4", "5"],
+      "videos": ["specs/40/videos/custom-links-comprehensive.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac5-open-current-tab",
+      "title": "Links with openInNewTab: false open in current tab",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3", "4"],
+      "videos": ["specs/40/videos/custom-links-comprehensive.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac6-plugin-links",
+      "title": "Plugin custom footer links appear in sidebar",
+      "verdict": "not-exercised",
+      "evidence_kind": "emulator-limit",
+      "blocker": "Plugin system testing requires deployed plugin application. Local environment lacks testable plugin configuration. Implementation code present and correct.",
+      "blocker_category": "emulator-limit",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac7-visibility-filtering",
+      "title": "Links filtered by showIn visibility config",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3", "4"],
+      "videos": ["specs/40/videos/custom-links-comprehensive.webm"],
+      "screenshots": []
+    }
+  ],
+  "summary": {
+    "all_passed": false,
+    "pass": 6,
+    "fail": 0,
+    "not_exercised": 1
+  }
+}

@@ -1,0 +1,19 @@
+[AC1] Launching browser and opening authenticated context...
+[qa-auth] refreshJwt: status 200
+[qa-auth] openAuthedContext: refresh ok=true status=200
+[qa-auth] openAuthedContext: shell not ready — attempting uiLogin
+[qa-auth] uiLogin: starting UI login
+[AC1] ERROR: locator.fill: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('textbox', { name: /username/i })[22m
+
+AC1 test failed: locator.fill: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('textbox', { name: /username/i })[22m
+
+    at uiLogin (/workspaces/agent_hq/_target/4e562f131df2b06a/.agent-hq/qa-auth.mjs:88:58)
+    at async openAuthedContext (/workspaces/agent_hq/_target/4e562f131df2b06a/.agent-hq/qa-auth.mjs:223:7)
+    at async testAC1 (/workspaces/agent_hq/_target/4e562f131df2b06a/specs/40/qa-drivers/ac1-custom-links-in-footer.mjs:14:31) {
+  log: [ "  - waiting for getByRole('textbox', { name: /username/i })" ],
+  name: 'TimeoutError'
+}

@@ -1,0 +1,21 @@
+[QA-COMPREHENSIVE] === Step 1: Login ===
+[QA-COMPREHENSIVE] ✓ Login successful
+[QA-COMPREHENSIVE] === Step 2: Navigate to facility ===
+[QA-COMPREHENSIVE] ✓ Facility page loaded
+[QA-COMPREHENSIVE] === AC1 & AC3: Scroll to sidebar footer and find custom links ===
+[QA-COMPREHENSIVE] Found Support Portal link
+[QA-COMPREHENSIVE] Found Dashboard link
+[QA-COMPREHENSIVE] ✓ AC1: Support Portal link exists in sidebar footer
+[QA-COMPREHENSIVE] External link icon count: 1
+[QA-COMPREHENSIVE] ✓ AC3: External link icon present
+[QA-COMPREHENSIVE] === AC2: Check internal link (Dashboard) ===
+[QA-COMPREHENSIVE] ✓ AC2: Internal link with icon appears
+[QA-COMPREHENSIVE] === AC4: Check external link with openInNewTab ===
+[QA-COMPREHENSIVE] Documentation link target: _blank, rel: noopener noreferrer
+[QA-COMPREHENSIVE] ✓ AC4: Link has target="_blank" and rel="noopener noreferrer"
+[QA-COMPREHENSIVE] === AC7: Check visibility filtering ===
+[QA-COMPREHENSIVE] Custom links in facility sidebar: 2
+[QA-COMPREHENSIVE] Navigating to admin section...
+[QA-COMPREHENSIVE] Sidebar trigger not needed
+[QA-COMPREHENSIVE] Admin Link visible in admin sidebar: false
+[QA-COMPREHENSIVE] === All tests completed successfully ===
