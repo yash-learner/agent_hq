@@ -1,7 +1,7 @@
 {
   "ticket_id": "58",
   "pinned_comment_id": 5253859165,
-  "status": "BLOCKED",
+  "status": "ACTIVE",
   "runs": [
     {
       "run_id": "9ed2da444cee4db3",
@@ -235,12 +235,29 @@
       "attempt_started_at": "2026-08-11T14:32:57Z",
       "base_commit": "efbed76d96d51771beb397cf635c4ec39286496c",
       "input_from_run_id": "93a707f54b4a4b61"
+    },
+    {
+      "run_id": "466edc5a89795ec5",
+      "task_id": "implement",
+      "task_version": 1,
+      "ticket_id": "58",
+      "state": "QUEUED",
+      "attempt": 0,
+      "bindings": {},
+      "cost_usd": null,
+      "tokens": null,
+      "usage_known": false,
+      "artifacts": [],
+      "chain_depth": 0,
+      "source_event_id": "issue-comment:5255088376",
+      "enqueue_index": 0,
+      "queue_seq": 7
     }
   ],
-  "block_reason": "Round 3 blocker: tests/PLAYWRIGHT_GUIDE.md:90-94 \u2014 Navigation URL paths were accidentally collapsed into concatenated strings without line breaks during this ticket's implementation (commit 19f5b8e9c). Each path must be on its own line with proper formatting, not `path1``path2` on the same line.",
-  "block_source": "task",
-  "interrupted_run_id": "9566c94fbe57c785",
-  "comments_polled_at": "2026-08-11T14:41:53Z",
+  "block_reason": null,
+  "block_source": null,
+  "interrupted_run_id": null,
+  "comments_polled_at": "2026-08-11T15:16:06Z",
   "work_repos": [
     {
       "repo": "yash-learner/care_fe_agent_hq",
