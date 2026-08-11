@@ -16,3 +16,4 @@
 {"event_id": "ff346cc703fb2cf6:qa-50:accepted", "kind": "handoff.accepted", "ticket_id": "50", "run_id": "ff346cc703fb2cf6", "detail": "Clean round 1 review \u2014 no blockers found. Role badge implementation matches spec: added Badge component to FacilityNavUser displaying translated user_type, PatientNavUser unchanged. All i18n keys exist. Ready for live-flow verification."}
 {"event_id": "ff346cc703fb2cf6:succeeded", "kind": "run.succeeded", "ticket_id": "50", "run_id": "ff346cc703fb2cf6", "state": "SUCCEEDED", "artifacts": ["specs/50/review.md"]}
 {"event_id": "8e23edc666584a37:collected", "kind": "run.collected", "ticket_id": "50", "run_id": "8e23edc666584a37", "tokens": 4628500, "cost_usd": 2.11}
+{"event_id": "8e23edc666584a37:runner_lost", "kind": "run.runner_lost", "ticket_id": "50", "run_id": "8e23edc666584a37", "state": "FAILED"}
