@@ -1,0 +1,84 @@
+{
+  "criteria": [
+    {
+      "id": "ac1-identifier-matches",
+      "title": "Identifier search shows correct match count for fixtures",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Phone identifier search requires exact match (not partial search). Fixture patients have unique phone numbers, so cannot demonstrate plural count ('N results' where N > 1). Partial searches like '+91', '+916', '918' return 0 results. Only full exact phone (e.g. '+916186172164') returns 1 match. Name identifier supports partial search and could demonstrate feature (e.g. 'ma' → 5 results), but changes identifier type tested.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": ["Fixture discovery", "UI navigation to patients page", "API phone search tests with various patterns", "Confirmed name search works with partial matching"],
+      "seed_attempt": {
+        "method": "both",
+        "summary": "UI: Navigated to /facility/{facilityId}/patients, located search input. API: Tested patient search endpoint /api/v1/patient/search/ with phone config a6289f9e-e631-4e9d-87e4-4707b012f5b2. Tried partial searches ('+91', '+916', '918') - all returned 0 results due to exact-match requirement. Full phone '+916186172164' returned 1 result. Name config 5f8cf71b-e53e-4565-951e-e9bb0fda2224 with 'ma' returned 5 results (supports partial search)."
+      },
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac2-identifier-empty",
+      "title": "Identifier search shows empty state for no matches",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Could not reliably trigger and verify empty state due to search timing and selector issues. Empty state code exists in implementation (lines 345-368) but driver timed out waiting for either results or empty state rendering after typing non-matching search term.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": ["Confirmed empty state implementation exists", "Attempted to trigger via UI search with non-matching value"],
+      "seed_attempt": {
+        "method": "ui",
+        "summary": "Attempted to type non-matching search value (e.g. 'zzz-no-such-patient') to trigger empty state, but driver timed out waiting for empty state elements to render due to debounced search timing."
+      },
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac3-no-count-initial",
+      "title": "No count line shown before search is typed",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Criterion is trivial (verifying absence of count line on initial load). Observed during AC1 investigation that no count line shows until search completes. Did not create separate driver given higher-priority blockers.",
+      "blocker_category": "no-qa-plan",
+      "plan_steps_run": ["Observed behavior during AC1 attempts"],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac4-encounter-matches",
+      "title": "Encounter search shows correct match count from encounterList.count",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Not attempted after identifier search blockers. Encounter search requires querying backend for patient names or external_identifiers linked to encounters, then crafting partial name search matching multiple encounters. Time budget prioritized investigating identifier search issues first.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": ["Verified encounter tab exists in UI", "Confirmed implementation uses encounterList.count (lines 512-519)", "Identified API endpoint GET /api/v1/encounter/ with name/external_identifier params"],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac5-encounter-empty",
+      "title": "Encounter search shows empty state for no matches",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Encounter search not exercised after identifier search blockers (AC1/AC2). Same test data setup issues apply.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": ["Same as AC4"],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac6-count-updates-live",
+      "title": "Count updates live when search term changes",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Depends on AC1 or AC4 working first (requires demonstrating initial count, then modifying search term and verifying count updates). Blocked by inability to demonstrate initial search with count.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": ["Confirmed React Query debounced search implementation auto-updates UI"],
+      "videos": [],
+      "screenshots": []
+    }
+  ],
+  "summary": {
+    "all_passed": false,
+    "pass": 0,
+    "fail": 0,
+    "not_exercised": 6
+  }
+}
