@@ -25,3 +25,4 @@
 {"event_id": "a2a0ba4accf10c8e:queued", "kind": "run.queued", "ticket_id": "59", "run_id": "a2a0ba4accf10c8e", "task_id": "agent-qa", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
 {"event_id": "620adace699cb12a:qa-59:accepted", "kind": "handoff.accepted", "ticket_id": "59", "run_id": "620adace699cb12a", "detail": "Implementation clean with no blockers; QA plan has detailed UI recipes with complete data setup; ready for live verification [task 'qa' substituted with 'agent-qa' via ticket label]"}
 {"event_id": "620adace699cb12a:succeeded", "kind": "run.succeeded", "ticket_id": "59", "run_id": "620adace699cb12a", "state": "SUCCEEDED", "artifacts": ["specs/59/review.md"]}
+{"event_id": "a2a0ba4accf10c8e:collected", "kind": "run.collected", "ticket_id": "59", "run_id": "a2a0ba4accf10c8e", "tokens": 3028300, "cost_usd": 1.62}
