@@ -15,3 +15,4 @@
 {"event_id": "aea8d7b401c85bb0:queued", "kind": "run.queued", "ticket_id": "43", "run_id": "aea8d7b401c85bb0", "task_id": "implement", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
 {"event_id": "f42088c54fab2660:implement-fix-qa-plan:accepted", "kind": "handoff.accepted", "ticket_id": "43", "run_id": "f42088c54fab2660", "detail": "Fix QA plan AC1/AC2 data setup: provide concrete provenance-backed approach for patient with zero encounters (fixture ID, proven API payload with field citations, or numbered UI recipe with form field names)"}
 {"event_id": "f42088c54fab2660:succeeded", "kind": "run.succeeded", "ticket_id": "43", "run_id": "f42088c54fab2660", "state": "SUCCEEDED", "artifacts": ["specs/43/review.md"]}
+{"event_id": "aea8d7b401c85bb0:collected", "kind": "run.collected", "ticket_id": "43", "run_id": "aea8d7b401c85bb0", "tokens": 1410800, "cost_usd": 0.787}
