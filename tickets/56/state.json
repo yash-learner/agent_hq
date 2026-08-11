@@ -45,8 +45,7 @@
       "bindings": {
         "tracker": "github-issues",
         "agent-session": "copilot-cli",
-        "messaging": "github-comment",
-        "gate": "github-issue-comment"
+        "messaging": "github-comment"
       },
       "cost_usd": null,
       "tokens": null,
@@ -61,7 +60,9 @@
         "specs/56/spec.md"
       ],
       "deadline": "2026-08-11T18:21:29Z",
-      "attempt_started_at": "2026-08-11T17:51:29Z"
+      "attempt_started_at": "2026-08-11T17:51:29Z",
+      "base_commit": "dea49853619eaf2e5b7c18d6f89a1c1bf67567a0",
+      "input_from_run_id": "f8b3c643f94101f4"
     }
   ],
   "block_reason": null,
