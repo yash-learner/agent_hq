@@ -16,3 +16,7 @@
 {"event_id": "b2145f3f304bb4fe:implement-frontend:accepted", "kind": "handoff.accepted", "ticket_id": "56", "run_id": "b2145f3f304bb4fe", "detail": "Implement custom footer links feature in care_fe according to tasks.md breakdown"}
 {"event_id": "b2145f3f304bb4fe:succeeded", "kind": "run.succeeded", "ticket_id": "56", "run_id": "b2145f3f304bb4fe", "state": "SUCCEEDED", "artifacts": ["specs/56/tasks.md"]}
 {"event_id": "7c457769f00dc727:collected", "kind": "run.collected", "ticket_id": "56", "run_id": "7c457769f00dc727", "tokens": 1516000, "cost_usd": 1.12}
+{"event_id": "7c457769f00dc727:review-56:proposed", "kind": "handoff.proposed", "ticket_id": "56", "run_id": "7c457769f00dc727", "detail": "Review implementation against spec"}
+{"event_id": "ff0f67c8133ef759:queued", "kind": "run.queued", "ticket_id": "56", "run_id": "ff0f67c8133ef759", "task_id": "review", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
+{"event_id": "7c457769f00dc727:review-56:accepted", "kind": "handoff.accepted", "ticket_id": "56", "run_id": "7c457769f00dc727", "detail": "Review implementation against spec"}
+{"event_id": "7c457769f00dc727:succeeded", "kind": "run.succeeded", "ticket_id": "56", "run_id": "7c457769f00dc727", "state": "SUCCEEDED", "artifacts": ["specs/56/qa-plan.md"]}
