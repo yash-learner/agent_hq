@@ -22,3 +22,4 @@
 {"event_id": "6c0f513c79af58a5:rework", "kind": "run.rework", "ticket_id": "50", "run_id": "6c0f513c79af58a5", "detail": "@yash-learner: re-verify with MCP-driven QA", "actor": "yash-learner", "source": "issue-comment:5253177417"}
 {"event_id": "6c0f513c79af58a5:collected", "kind": "run.collected", "ticket_id": "50", "run_id": "6c0f513c79af58a5", "tokens": 4035600, "cost_usd": 2.15}
 {"event_id": "6c0f513c79af58a5:failed", "kind": "run.failed", "ticket_id": "50", "run_id": "6c0f513c79af58a5", "state": "FAILED"}
+{"event_id": "6c0f513c79af58a5:artifact_rejected", "kind": "run.artifact_rejected", "ticket_id": "50", "run_id": "6c0f513c79af58a5", "detail": "qa-report.json: criterion 'ac5-patient-no-badge': missing-test-data requires non-empty plan_steps_run"}
