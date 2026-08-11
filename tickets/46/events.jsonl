@@ -34,3 +34,7 @@
 {"event_id": "5c02dcd901c4c9e0:review-46:accepted", "kind": "handoff.accepted", "ticket_id": "46", "run_id": "5c02dcd901c4c9e0", "detail": "Review implementation against spec"}
 {"event_id": "5c02dcd901c4c9e0:succeeded", "kind": "run.succeeded", "ticket_id": "46", "run_id": "5c02dcd901c4c9e0", "state": "SUCCEEDED", "artifacts": ["specs/46/qa-plan.md"]}
 {"event_id": "e501b3ee5a0499c0:collected", "kind": "run.collected", "ticket_id": "46", "run_id": "e501b3ee5a0499c0", "tokens": 402300, "cost_usd": 0.27}
+{"event_id": "e501b3ee5a0499c0:implement-round2:proposed", "kind": "handoff.proposed", "ticket_id": "46", "run_id": "e501b3ee5a0499c0", "detail": "Fix blocker in tests/PLAYWRIGHT_GUIDE.md:124-134 where URL examples are concatenated without line breaks"}
+{"event_id": "6f561bc6d1db5dbb:queued", "kind": "run.queued", "ticket_id": "46", "run_id": "6f561bc6d1db5dbb", "task_id": "implement", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
+{"event_id": "e501b3ee5a0499c0:implement-round2:accepted", "kind": "handoff.accepted", "ticket_id": "46", "run_id": "e501b3ee5a0499c0", "detail": "Fix blocker in tests/PLAYWRIGHT_GUIDE.md:124-134 where URL examples are concatenated without line breaks"}
+{"event_id": "e501b3ee5a0499c0:succeeded", "kind": "run.succeeded", "ticket_id": "46", "run_id": "e501b3ee5a0499c0", "state": "SUCCEEDED", "artifacts": ["specs/46/review.md"]}
