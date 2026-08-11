@@ -1,0 +1,65 @@
+{
+  "criteria": [
+    {
+      "id": "ac1-nurse-no-button",
+      "title": "User without can_create_encounter sees no button in empty state",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Could not create a patient with zero encounters viewable in facility context. Fixture patient has 1 encounter; API-created patients return 404 on facility-scoped GET.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": [
+        "Data setup: Fetch geo_organization",
+        "Data setup: Create patient via POST /api/v1/patient/",
+        "Live step 1: Login as nurse",
+        "Live step 2 (attempted): Navigate to patient encounters - 404 on patient GET"
+      ],
+      "seed_attempt": {
+        "method": "api",
+        "summary": "Created multiple patients via proven API payload from QA plan (geo_organization, name, gender, phone_number, date_of_birth, identifiers). All creation requests returned 200 with patient IDs (e.g., 8ae54542-a704-4014-bdfb-ec68a18a50b6, b351a73e-ab69-4359-bc2e-12d72d3eee87). Subsequent facility-scoped GET requests to /api/v1/patient/{id}/?facility={facilityId} returned 404, preventing access to patient pages. Fixture patient (9b01eaea-8140-49bc-9e10-d33ca35e9b4b) has 1 encounter; DELETE returned 403. UI create not attempted after API approach failed to produce viewable patients."
+      },
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac2-admin-sees-button",
+      "title": "User with can_create_encounter sees button in empty state",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Same test data limitation as AC1. Could not create a patient with zero encounters viewable in facility context.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": [
+        "Data setup: Fetch geo_organization",
+        "Data setup: Create patient via POST /api/v1/patient/",
+        "Live step 1 (attempted): Login as admin - successful",
+        "Live step 2 (attempted): Navigate to patient encounters - 404 on patient GET"
+      ],
+      "seed_attempt": {
+        "method": "api",
+        "summary": "Same as AC1. Created patients via API successfully but they return 404 on facility-scoped GET, preventing navigation to the empty-state page."
+      },
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac3-existing-encounters",
+      "title": "User with can_create_encounter and existing encounters sees no change",
+      "verdict": "pass",
+      "evidence_kind": "code-inspection",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": [
+        "Code review: Verified EncounterHistory.tsx lines 82-96",
+        "Code review: Confirmed canCreateEncounter permission extraction lines 38-41",
+        "Code review: Compared with reference implementation PatientHome.tsx:156"
+      },
+      "videos": [],
+      "screenshots": []
+    }
+  ],
+  "summary": {
+    "all_passed": false,
+    "pass": 1,
+    "fail": 0,
+    "not_exercised": 2
+  }
+}

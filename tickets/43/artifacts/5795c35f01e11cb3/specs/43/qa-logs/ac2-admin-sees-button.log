@@ -1,0 +1,27 @@
+=== AC2: Admin user sees Create Encounter button in empty state ===
+
+--- Data setup: Creating patient without encounters ---
+Fetching geo_organization...
+Organization API status: 200
+Using geo_organization: 8539ccdd-f2ca-41c7-8623-493055987f50
+Creating patient...
+Patient creation status: 200
+Created patient with ID: b351a73e-ab69-4359-bc2e-12d72d3eee87
+
+--- Opening browser and logging in as admin user ---
+Navigating to login page...
+Filling login form with admin credentials...
+Clicking login button...
+Waiting for login to complete...
+Login successful, authenticated shell verified
+
+--- Navigating to patient encounters page ---
+Target URL: http://localhost:4000/facility/7bffb9f5-b1b6-4133-9555-ea7cb2c54836/patient/b351a73e-ab69-4359-bc2e-12d72d3eee87/encounters
+
+--- Issue encountered ---
+Backend returned 404 for GET /api/v1/patient/b351a73e-ab69-4359-bc2e-12d72d3eee87/?facility=7bffb9f5-b1b6-4133-9555-ea7cb2c54836
+Patient was created successfully via POST but is not accessible via facility-scoped GET.
+Patient page did not load - cannot reach empty state to verify button visibility.
+
+=== AC2 NOT EXERCISED - missing-test-data ===
+Blocker: API-created patients return 404 on facility-scoped GET, preventing access to patient pages.

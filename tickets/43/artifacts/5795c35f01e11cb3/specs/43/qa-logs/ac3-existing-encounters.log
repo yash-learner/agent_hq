@@ -1,0 +1,57 @@
+=== AC3: Existing encounters scenario - no regression ===
+
+--- Code inspection approach ---
+This criterion verifies that the fix does not affect users viewing patients with existing encounters.
+Since the empty state only renders when encounterData?.results?.length === 0, and this patient
+has encounters, the empty state and its "Create Encounter" button are not relevant.
+
+--- Implementation review ---
+File: src/components/Patient/PatientDetailsTab/EncounterHistory.tsx
+
+Lines 38-41: Permission extraction
+```
+const { canViewPatients, canCreateEncounter } = getPermissions(
+  hasPermission,
+  patientData.permissions,
+);
+```
+✓ canCreateEncounter is correctly extracted from patient permissions
+
+Lines 74-98: Render logic
+```
+{encounterData?.results?.length === 0 ? (
+  facilityId ? (
+    <div className="p-2">
+      <EmptyState
+        title={t("no_active_encounters_found")}
+        description={t("create_a_new_encounter_to_get_started")}
+        icon={<CaptionsOff className="size-5 text-primary m-1" />}
+        action={
+          canCreateEncounter && (  // ← Permission gate added here
+            <CreateEncounterForm ... />
+          )
+        }
+      />
+    </div>
+  ) : (
+    <div className="p-2">
+```
+✓ Empty state only renders when no encounters exist
+✓ When encounters exist (length > 0), the encounter list is rendered instead
+✓ The fix only affects the empty state, so existing encounter views are unchanged
+
+--- Reference implementation comparison ---
+File: src/pages/Patient/PatientHome.tsx line 156
+Pattern: `{canCreateEncounter && <button>...}`
+✓ EncounterHistory now uses the same permission-gating pattern
+
+--- Verification with fixture data ---
+Fixture patient: 9b01eaea-8140-49bc-9e10-d33ca35e9b4b
+Encounter count: 1 (encounter ID: d6af180e-c0d2-45a6-a536-d9139ea78c80)
+Since encounterData.results.length === 1, the empty state condition is false.
+The component renders the encounter list, and the permission-gated button is not relevant.
+No behavior change for this flow.
+
+=== AC3 PASSED (code inspection) ===
+The implementation is correct and surgical. Users viewing patients with existing encounters
+will see no change in behavior, as required.
