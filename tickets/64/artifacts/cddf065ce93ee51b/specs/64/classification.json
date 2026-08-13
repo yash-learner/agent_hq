@@ -1,0 +1,4 @@
+{
+  "classification": "crud",
+  "reasoning": "This ticket adds custom footer links to the sidebar UI. It does not involve: new data models or migrations, changes to existing model fields, new services or infrastructure, new external integrations, authorization/access-control changes, FHIR/EMR model changes, non-CRUD endpoints, or clinical-safety-relevant behavior. It is a purely frontend UI enhancement using configuration-driven rendering with no backend changes."
+}
