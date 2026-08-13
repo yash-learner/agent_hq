@@ -16,3 +16,7 @@
 {"event_id": "b802591ad65e3cdc:impl-footer-links:accepted", "kind": "handoff.accepted", "ticket_id": "64", "run_id": "b802591ad65e3cdc", "detail": "Implement custom footer links in sidebar per task breakdown"}
 {"event_id": "b802591ad65e3cdc:succeeded", "kind": "run.succeeded", "ticket_id": "64", "run_id": "b802591ad65e3cdc", "state": "SUCCEEDED", "artifacts": ["specs/64/tasks.md"]}
 {"event_id": "5afb52056ce03385:collected", "kind": "run.collected", "ticket_id": "64", "run_id": "5afb52056ce03385", "tokens": 2321700, "cost_usd": 1.44}
+{"event_id": "5afb52056ce03385:review-64:proposed", "kind": "handoff.proposed", "ticket_id": "64", "run_id": "5afb52056ce03385", "detail": "Review implementation against spec acceptance criteria and ensure all tasks completed correctly"}
+{"event_id": "61ac95faf2e46319:queued", "kind": "run.queued", "ticket_id": "64", "run_id": "61ac95faf2e46319", "task_id": "review", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
+{"event_id": "5afb52056ce03385:review-64:accepted", "kind": "handoff.accepted", "ticket_id": "64", "run_id": "5afb52056ce03385", "detail": "Review implementation against spec acceptance criteria and ensure all tasks completed correctly"}
+{"event_id": "5afb52056ce03385:succeeded", "kind": "run.succeeded", "ticket_id": "64", "run_id": "5afb52056ce03385", "state": "SUCCEEDED", "artifacts": ["specs/64/qa-plan.md"]}
