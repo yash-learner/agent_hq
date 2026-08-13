@@ -1,0 +1,5 @@
+2026-08-13T10:18:20.000Z [AC4] Starting: Links filter by sidebarContext
+2026-08-13T10:18:21.000Z [AC4] Data setup: Configured links with varying contexts arrays
+2026-08-13T10:18:22.000Z [AC4] Would need to navigate to: facility, admin, organization contexts
+2026-08-13T10:18:23.000Z [AC4] Blocker: Cannot navigate to any context due to app-not-loading
+2026-08-13T10:18:23.000Z [AC4] Test cannot proceed - marking not-exercised

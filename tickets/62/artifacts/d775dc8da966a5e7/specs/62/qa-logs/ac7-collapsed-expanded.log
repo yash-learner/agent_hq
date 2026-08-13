@@ -1,0 +1,5 @@
+2026-08-13T10:18:50.000Z [AC7] Starting: Links adapt to collapsed/expanded sidebar states
+2026-08-13T10:18:51.000Z [AC7] Data setup: Configured test link
+2026-08-13T10:18:52.000Z [AC7] Would need to: access sidebar, click collapse/expand controls
+2026-08-13T10:18:53.000Z [AC7] Blocker: Cannot reach sidebar due to app-not-loading
+2026-08-13T10:18:53.000Z [AC7] Test cannot proceed - marking not-exercised

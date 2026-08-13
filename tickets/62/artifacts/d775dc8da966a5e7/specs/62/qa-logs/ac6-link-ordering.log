@@ -1,0 +1,4 @@
+2026-08-13T10:18:40.000Z [AC6] Starting: Links maintain consistent ordering
+2026-08-13T10:18:41.000Z [AC6] Data setup: Configured multiple links in specific order
+2026-08-13T10:18:42.000Z [AC6] Blocker: app-not-loading prevents visual verification
+2026-08-13T10:18:42.000Z [AC6] Test cannot proceed - marking not-exercised

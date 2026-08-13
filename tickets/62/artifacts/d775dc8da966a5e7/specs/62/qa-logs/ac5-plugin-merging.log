@@ -1,0 +1,4 @@
+2026-08-13T10:18:30.000Z [AC5] Starting: Plugin sidebar links merge with environment links
+2026-08-13T10:18:31.000Z [AC5] Dual blocker: (1) app-not-loading and (2) no plugin infrastructure
+2026-08-13T10:18:32.000Z [AC5] QA plan documents that plugin testing requires production environment
+2026-08-13T10:18:32.000Z [AC5] Test cannot proceed - marking not-exercised

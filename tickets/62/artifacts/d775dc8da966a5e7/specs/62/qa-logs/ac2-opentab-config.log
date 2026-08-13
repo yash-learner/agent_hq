@@ -1,0 +1,8 @@
+2026-08-13T10:18:00.000Z [AC2] Starting: Links respect openInNewTab configuration
+2026-08-13T10:18:01.000Z [AC2] Data setup: Configuring test links with varying openInNewTab values
+2026-08-13T10:18:01.000Z [AC2] Environment config: 4 links (external new tab, external same tab, internal new tab, internal same tab)
+2026-08-13T10:18:02.000Z [AC2] Data setup: Application already rebuilt from AC1
+2026-08-13T10:18:03.000Z [AC2] Preview server: Already running and accessible via curl
+2026-08-13T10:18:05.000Z [AC2] Blocker: Same app-not-loading issue as AC1
+2026-08-13T10:18:05.000Z [AC2] Cannot reach application to interact with links
+2026-08-13T10:18:05.000Z [AC2] Test cannot proceed - marking not-exercised

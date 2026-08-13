@@ -1,0 +1,118 @@
+{
+  "criteria": [
+    {
+      "id": "ac1-links-appear",
+      "title": "Custom links appear in sidebar footer via environment config",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Cannot load application in browser - Playwright Chromium repeatedly fails with ERR_CONNECTION_REFUSED when attempting to navigate to the preview server at http://localhost:4000, http://127.0.0.1:4000, and http://172.17.0.2:4000, despite server being accessible via curl and JWT token refresh succeeding. Attempted multiple browser configurations including --no-sandbox and --disable-setuid-sandbox without success. This is a container networking issue preventing all live application testing.",
+      "blocker_category": "app-not-loading",
+      "plan_steps_run": [
+        "Data setup: Configured REACT_CUSTOM_SIDEBAR_LINKS environment variable",
+        "Data setup: Rebuilt application with npm run build",
+        "Data setup: Started preview server (confirmed accessible via curl)",
+        "Step 1: Attempted to navigate browser to http://localhost:4000 - failed with ERR_CONNECTION_REFUSED",
+        "Step 1: Attempted alternate URLs (127.0.0.1, 172.17.0.2) - all failed with same error"
+      ],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac2-opentab-config",
+      "title": "Links respect openInNewTab configuration",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Cannot load application in browser - same networking blocker as AC1. Unable to interact with links to verify target behavior (_blank vs current window). Chromium cannot establish connection to preview server.",
+      "blocker_category": "app-not-loading",
+      "plan_steps_run": [
+        "Data setup: Configured test links with openInNewTab: true and false",
+        "Data setup: Rebuilt application",
+        "Data setup: Preview server running and accessible via curl",
+        "Browser navigation failed before links could be accessed"
+      ],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac3-icon-display",
+      "title": "External and internal links display correct icons",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Cannot load application in browser to observe icon rendering (ExternalLink vs Link2). Same Chromium connectivity issue prevents reaching the application.",
+      "blocker_category": "app-not-loading",
+      "plan_steps_run": [
+        "Data setup: Configured links with type: external and type: internal",
+        "Data setup: Rebuilt application",
+        "Data setup: Preview server running",
+        "Browser navigation blocked by ERR_CONNECTION_REFUSED"
+      ],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac4-context-filtering",
+      "title": "Links filter by sidebarContext",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Cannot navigate to different sidebar contexts (facility, admin, organization) to verify filtering behavior. Application unreachable due to browser connectivity issue.",
+      "blocker_category": "app-not-loading",
+      "plan_steps_run": [
+        "Data setup: Configured links with varying contexts arrays",
+        "Data setup: Rebuilt application",
+        "Data setup: Preview server confirmed running",
+        "Unable to navigate to any context path due to connection failure"
+      ],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac5-plugin-merging",
+      "title": "Plugin sidebar links merge with environment links",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Dual blocker: (1) app-not-loading prevents any live testing, and (2) no plugin infrastructure exists in test environment as documented in QA plan. Plugin testing requires production environment with REACT_ENABLED_APPS and external plugin applications.",
+      "blocker_category": "app-not-loading",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac6-link-ordering",
+      "title": "Links maintain consistent ordering",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Cannot load application to verify visual link ordering (environment links before plugin links, above NavUser component). Browser cannot connect to preview server.",
+      "blocker_category": "app-not-loading",
+      "plan_steps_run": [
+        "Data setup: Configured multiple links in specific order",
+        "Data setup: Rebuilt application",
+        "Data setup: Preview server running",
+        "Browser navigation failed before sidebar could be accessed"
+      ],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac7-collapsed-expanded",
+      "title": "Links adapt to collapsed/expanded sidebar states",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Cannot interact with sidebar collapse/expand controls to verify icon-only vs icon+label rendering. Application unreachable.",
+      "blocker_category": "app-not-loading",
+      "plan_steps_run": [
+        "Data setup: Configured test link",
+        "Data setup: Rebuilt application",
+        "Data setup: Preview server running",
+        "Unable to reach sidebar to test collapse/expand behavior"
+      ],
+      "videos": [],
+      "screenshots": []
+    }
+  ],
+  "summary": {
+    "all_passed": false,
+    "pass": 0,
+    "fail": 0,
+    "not_exercised": 7
+  }
+}

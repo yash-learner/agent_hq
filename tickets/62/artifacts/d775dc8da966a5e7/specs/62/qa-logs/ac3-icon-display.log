@@ -1,0 +1,5 @@
+2026-08-13T10:18:10.000Z [AC3] Starting: External and internal links display correct icons
+2026-08-13T10:18:11.000Z [AC3] Data setup: Configuring links with type: external and type: internal
+2026-08-13T10:18:12.000Z [AC3] Preview server: Running (same environment as AC1)
+2026-08-13T10:18:13.000Z [AC3] Blocker: app-not-loading prevents observing icon rendering
+2026-08-13T10:18:13.000Z [AC3] Test cannot proceed - marking not-exercised
