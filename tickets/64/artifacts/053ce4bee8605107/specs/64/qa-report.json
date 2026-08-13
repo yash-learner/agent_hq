@@ -1,0 +1,87 @@
+{
+  "criteria": [
+    {
+      "id": "ac1-footer-links-all-contexts",
+      "title": "Custom footer links appear above NavUser in all sidebar contexts",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Authentication failure prevented accessing facility or admin pages. Attempted JWT refresh (success), UI login (failed - stayed on login page), and manual token injection (failed - sidebar did not render). All recovery paths exhausted without establishing authenticated shell.",
+      "blocker_category": "auth-failure",
+      "plan_steps_run": ["Environment setup", "JWT refresh", "UI login attempt", "Token injection attempt"],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac2-external-links",
+      "title": "External links open in new tab with external link icon",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Authentication failure blocked access to facility page where external links would be displayed. Same authentication recovery attempts as AC1 all failed.",
+      "blocker_category": "auth-failure",
+      "plan_steps_run": ["JWT refresh", "UI login attempt"],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac3-internal-links",
+      "title": "Internal links navigate in current tab with internal route icon",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Authentication failure blocked access to facility page where internal links would be displayed. Same authentication recovery attempts as AC1 all failed.",
+      "blocker_category": "auth-failure",
+      "plan_steps_run": ["JWT refresh", "UI login attempt"],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac4-context-filtering",
+      "title": "Links filtered by visibleIn sidebar context",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Authentication failure prevented navigation between facility and admin contexts to verify visibleIn filtering. Same authentication recovery attempts as AC1 all failed.",
+      "blocker_category": "auth-failure",
+      "plan_steps_run": ["JWT refresh", "UI login attempt"],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac5-plugin-footer-links",
+      "title": "Plugin footer links appear alongside config links",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Plugin testing out of scope per QA plan (requires plugin dev environment). Additionally, authentication failure would have blocked verification. Implementation confirmed via code review: pluginTypes.ts adds footerNavItems to PluginManifest, nav-footer-links.tsx merges plugin and config links.",
+      "blocker_category": "no-qa-plan",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac6-tooltip-collapsed",
+      "title": "Tooltip displays link name when sidebar is collapsed",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Authentication failure blocked access to facility page where sidebar collapse and tooltip behavior would be tested. Same authentication recovery attempts as AC1 all failed.",
+      "blocker_category": "auth-failure",
+      "plan_steps_run": ["JWT refresh", "UI login attempt"],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac7-ordering-layout",
+      "title": "Links appear in configuration order, stacked vertically",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Authentication failure blocked access to facility page where link ordering and layout would be verified. Same authentication recovery attempts as AC1 all failed.",
+      "blocker_category": "auth-failure",
+      "plan_steps_run": ["JWT refresh", "UI login attempt"],
+      "videos": [],
+      "screenshots": []
+    }
+  ],
+  "summary": {
+    "all_passed": false,
+    "pass": 0,
+    "fail": 0,
+    "not_exercised": 7
+  }
+}
