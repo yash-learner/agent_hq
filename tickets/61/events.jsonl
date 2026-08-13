@@ -1,2 +1,7 @@
 {"event_id": "ba7a45670b2644da:queued", "kind": "run.queued", "ticket_id": "61", "run_id": "ba7a45670b2644da", "task_id": "spec", "task_version": 1, "state": "QUEUED", "bindings": {}}
 {"event_id": "ba7a45670b2644da:collected", "kind": "run.collected", "ticket_id": "61", "run_id": "ba7a45670b2644da", "tokens": 894500, "cost_usd": 0.611}
+{"event_id": "ba7a45670b2644da:auto_approval", "kind": "gate.decided", "ticket_id": "61", "run_id": "ba7a45670b2644da", "detail": "auto-approved by task config (would have asked product-owners)", "actor": "engine"}
+{"event_id": "ba7a45670b2644da:implement-61-care-fe:proposed", "kind": "handoff.proposed", "ticket_id": "61", "run_id": "ba7a45670b2644da", "detail": "Add expiry date column to purchase delivery table per spec"}
+{"event_id": "c43a51a9f4b21a37:queued", "kind": "run.queued", "ticket_id": "61", "run_id": "c43a51a9f4b21a37", "task_id": "implement", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment", "gate": "github-issue-comment"}}
+{"event_id": "ba7a45670b2644da:implement-61-care-fe:accepted", "kind": "handoff.accepted", "ticket_id": "61", "run_id": "ba7a45670b2644da", "detail": "Add expiry date column to purchase delivery table per spec"}
+{"event_id": "ba7a45670b2644da:succeeded", "kind": "run.succeeded", "ticket_id": "61", "run_id": "ba7a45670b2644da", "state": "SUCCEEDED", "artifacts": ["specs/61/spec.md"]}
