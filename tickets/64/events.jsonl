@@ -52,3 +52,4 @@
 {"event_id": "cc252915ee8eb624:rework", "kind": "run.rework", "ticket_id": "64", "run_id": "cc252915ee8eb624", "detail": "Previous attempt rejected: qa-report.json: criterion 'ac2-external-links': log specs/64/qa-logs/ac2-external-links.log must be non-empty", "actor": "engine", "source": "053ce4bee8605107:artifact_rejected"}
 {"event_id": "cc252915ee8eb624:collected", "kind": "run.collected", "ticket_id": "64", "run_id": "cc252915ee8eb624", "tokens": 5427300, "cost_usd": 2.56}
 {"event_id": "cc252915ee8eb624:failed", "kind": "run.failed", "ticket_id": "64", "run_id": "cc252915ee8eb624", "state": "FAILED"}
+{"event_id": "cc252915ee8eb624:artifact_rejected", "kind": "run.artifact_rejected", "ticket_id": "64", "run_id": "cc252915ee8eb624", "detail": "qa-report.json: criterion 'ac5-plugin-links': not-exercised with missing-test-data requires seed_attempt (method ui|api|both plus a non-empty summary of what was tried)"}
