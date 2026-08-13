@@ -13,6 +13,15 @@
     "usage_known": { "type": "boolean" },
     "cost_usd": { "type": ["number", "null"] },
     "tokens": { "type": ["integer", "null"] },
-    "detail": { "type": "string" }
+    "detail": { "type": "string" },
+    "mcp_loaded": {
+      "type": "boolean",
+      "description": "True when this execute wrote project MCP config and opted the child into loading it (Copilot -p force-load). Absent when the task had no mcp_servers."
+    },
+    "mcp_servers": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "description": "Server names that were force-loaded for this execute, when mcp_loaded is true."
+    }
   }
 }

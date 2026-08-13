@@ -798,6 +798,7 @@ def _prepare(config, taskdefs, store, adapter_fn, now_iso, ticket_id, run, taskd
         if not inherited:
             inherited = list(parent.get("artifacts") or [])
 
+    mcp_offered = sorted(resolve_mcp_servers(config, taskdef))
     store.write(
         lambda txn: txn.update_run(
             ticket_id,
@@ -806,9 +807,15 @@ def _prepare(config, taskdefs, store, adapter_fn, now_iso, ticket_id, run, taskd
             base_commit=base_commit,
             input_from_run_id=input_from,
             input_artifacts=list(inherited),
+            **({"mcp_servers": mcp_offered} if mcp_offered else {}),
         )
     )
-    run = {**run, "input_from_run_id": input_from, "input_artifacts": list(inherited)}
+    run = {
+        **run,
+        "input_from_run_id": input_from,
+        "input_artifacts": list(inherited),
+        **({"mcp_servers": mcp_offered} if mcp_offered else {}),
+    }
 
     rework = _rework_comments(store, ticket_id, run_id)
     declared = [subst(a, ticket_id) for a in taskdef.get("outputs", {}).get("artifacts", [])]
@@ -1052,14 +1059,22 @@ def _collect(
     result["ticket_id"] = ticket_id
 
     # FIRST unconditionally record spend + health, whatever the outcome.
+    # MCP load receipt (from the executor) is ledgered here too so operators
+    # can see offered vs loaded without reading Actions logs.
+    mcp_loaded = result.get("mcp_loaded")
+    mcp_servers_loaded = result.get("mcp_servers")
+
     def record(txn) -> None:
-        txn.update_run(
-            ticket_id,
-            run_id,
-            cost_usd=result.get("cost_usd"),
-            tokens=result.get("tokens"),
-            usage_known=usage_known,
-        )
+        fields: dict = {
+            "cost_usd": result.get("cost_usd"),
+            "tokens": result.get("tokens"),
+            "usage_known": usage_known,
+        }
+        if isinstance(mcp_loaded, bool):
+            fields["mcp_loaded"] = mcp_loaded
+        if isinstance(mcp_servers_loaded, list) and mcp_servers_loaded:
+            fields["mcp_servers"] = list(mcp_servers_loaded)
+        txn.update_run(ticket_id, run_id, **fields)
         txn.append_event(
             ticket_id,
             Event(
@@ -1074,7 +1089,12 @@ def _collect(
         txn.record_health("agent-session", agent_binding, outcome == "success", "collect")
 
     store.write(record)
-    run = {**run, "usage_known": usage_known, "cost_usd": result.get("cost_usd")}
+    run = {
+        **run,
+        "usage_known": usage_known,
+        "cost_usd": result.get("cost_usd"),
+        **({"mcp_loaded": mcp_loaded} if isinstance(mcp_loaded, bool) else {}),
+    }
 
     if outcome != "success":
         eng._mark_failed(store, ticket_id, run_id, "run.failed", "failed")
@@ -1346,6 +1366,7 @@ def _collect_success(
             media=media,
             ticket_id=ticket_id,
             contents=artifact_contents,
+            require_mcp_live=bool(run.get("mcp_servers")),
         )
         if bad_report is not None:
             # Retain evidence + announce on the PR before failing: a near-miss

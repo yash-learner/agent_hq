@@ -227,6 +227,11 @@ class CopilotCli(ClaudeCodeHeadless):
             "tokens": tokens,
             "usage_known": True,
         }
+        if mcp_servers:
+            # Ledger proof that this execute force-loaded workspace MCP for
+            # -p (offered servers ≠ used tools; collect checks qa-logs for that).
+            result["mcp_loaded"] = True
+            result["mcp_servers"] = sorted(mcp_servers)
         if outcome == "timeout":
             result["detail"] = "execution timed out before the deadline"
         elif outcome == "failure":
@@ -239,8 +244,12 @@ class CopilotCli(ClaudeCodeHeadless):
     def healthcheck(self) -> bool:
         try:
             result = subprocess.run(
-                [self.copilot_bin, "version"], capture_output=True, text=True, timeout=10, check=False
-)
+                [self.copilot_bin, "version"],
+                capture_output=True,
+                text=True,
+                timeout=10,
+                check=False,
+            )
             return result.returncode == 0
         except (OSError, subprocess.TimeoutExpired):
             return False

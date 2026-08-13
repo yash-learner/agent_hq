@@ -279,6 +279,34 @@ def test_run_without_mcp_does_not_force_workspace_mcp_load(monkeypatch, tmp_path
     assert "GITHUB_COPILOT_PROMPT_MODE_WORKSPACE_MCP" not in env
 
 
+def test_run_execute_result_reports_mcp_loaded(monkeypatch, tmp_path):
+    _install_fake_popen(monkeypatch)
+    executor = CopilotCli({})
+
+    result = executor.run(
+        {
+            "prompt": "hi",
+            "worktree": str(tmp_path),
+            "mcp_servers": {"playwright": PLAYWRIGHT_ENTRY},
+        },
+        [],
+        FUTURE_DEADLINE,
+    )
+
+    assert result["mcp_loaded"] is True
+    assert result["mcp_servers"] == ["playwright"]
+
+
+def test_run_execute_result_omits_mcp_when_absent(monkeypatch, tmp_path):
+    _install_fake_popen(monkeypatch)
+    executor = CopilotCli({})
+
+    result = executor.run({"prompt": "hi", "worktree": str(tmp_path)}, [], FUTURE_DEADLINE)
+
+    assert "mcp_loaded" not in result
+    assert "mcp_servers" not in result
+
+
 # -- work patch: .mcp.json never reaches the target repo -------------------------
 
 

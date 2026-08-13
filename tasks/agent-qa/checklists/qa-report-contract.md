@@ -41,6 +41,12 @@ before finishing.
       under two ids rejects the report, whichever order they appear.
 - [ ] Matching `specs/{ticket}/qa-drivers/{id}.mjs` exists, and
       `specs/{ticket}/qa-logs/{id}.log` exists **and is non-empty**.
+- [ ] **MCP live transcript (agent-qa / any run with `mcp_servers`):** the
+      log must name MCP browser tools (`browser_start_video`,
+      `browser_navigate`, `browser_click`, `browser_snapshot`, …). A log that
+      only shows `chromium.launch` / `page.goto` / `openAuthedContext` is
+      rejected — that is script-driven live QA, not MCP. Drivers may still
+      be Playwright scripts (codify-after); the **log** is the live proof.
 - [ ] Screenshots-only mode applies **only** when the repo's media policy has
       `video: false, screenshots: true` — then ≥1 existing screenshot
       replaces the video requirement.
