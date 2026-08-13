@@ -1,0 +1,65 @@
+{
+  "criteria": [
+    {
+      "id": "ac1-expiry-in-table",
+      "title": "Display expiry date in saved delivery table",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Standalone Chromium cannot connect to preview server (net::ERR_CONNECTION_REFUSED) despite server running and accessible to repository's Playwright test suite. Attempted --no-sandbox, tried localhost and 127.0.0.1, verified server responsive via curl. Container networking isolation prevents browser automation required for video evidence.",
+      "blocker_category": "app-not-loading",
+      "plan_steps_run": ["1"],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac2-date-format",
+      "title": "Expiry date column with dd/MM/yyyy format",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Same as AC1 - cannot reach application to verify date formatting due to browser connectivity issue",
+      "blocker_category": "app-not-loading",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac3-missing-expiry",
+      "title": "Display \"-\" for missing expiry date",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Same as AC1 - cannot reach application to test null handling due to browser connectivity issue",
+      "blocker_category": "app-not-loading",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac4-expired-styling",
+      "title": "Visual distinction for expired items",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Same as AC1 - cannot reach application to verify conditional styling due to browser connectivity issue",
+      "blocker_category": "app-not-loading",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac5-responsive",
+      "title": "Mobile/responsive table behavior",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Same as AC1 - cannot reach application to test responsive behavior due to browser connectivity issue",
+      "blocker_category": "app-not-loading",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    }
+  ],
+  "summary": {
+    "all_passed": false,
+    "pass": 0,
+    "fail": 0,
+    "not_exercised": 5
+  }
+}

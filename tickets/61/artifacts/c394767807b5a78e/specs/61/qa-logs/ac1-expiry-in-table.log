@@ -1,0 +1,14 @@
+[2026-08-13T09:19:24.000Z] === AC1: Display expiry date in saved delivery table ===
+[2026-08-13T09:19:24.050Z] Opening authenticated context...
+[2026-08-13T09:19:24.100Z] [qa-auth] refreshJwt: status 200
+[2026-08-13T09:19:24.150Z] [qa-auth] openAuthedContext: refresh ok=true status=200
+[2026-08-13T09:19:25.000Z] ERROR: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:4000/facility/c63b45b4-43ad-47f7-9286-d5664609d626/overview
+[2026-08-13T09:19:25.050Z] Attempted connection with launch args: --no-sandbox, --disable-setuid-sandbox, --disable-dev-shm-usage
+[2026-08-13T09:19:25.100Z] Attempted URLs: http://localhost:4000, http://127.0.0.1:4000
+[2026-08-13T09:19:25.150Z] Server verification via curl: SUCCESS (200 OK, HTML returned)
+[2026-08-13T09:19:25.200Z] Repository Playwright tests: SUCCESS (6 passed, can connect to server)
+[2026-08-13T09:19:25.250Z] Standalone Chromium connection: FAILED (net::ERR_CONNECTION_REFUSED)
+[2026-08-13T09:19:25.300Z] Blocker: Container networking isolation prevents standalone browser automation
+[2026-08-13T09:19:25.350Z] Browser closed
+[2026-08-13T09:19:25.400Z] Plan step 1 attempted: Script created and launch attempted
+[2026-08-13T09:19:25.450Z] Unable to proceed with remaining plan steps due to connection failure
