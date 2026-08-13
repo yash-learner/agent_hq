@@ -5,3 +5,4 @@
 {"event_id": "ecdb6dd8ede4fc16:queued", "kind": "run.queued", "ticket_id": "65", "run_id": "ecdb6dd8ede4fc16", "task_id": "implement", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment", "gate": "github-issue-comment"}}
 {"event_id": "08ab13659b8dafbd:implement-care-fe:accepted", "kind": "handoff.accepted", "ticket_id": "65", "run_id": "08ab13659b8dafbd", "detail": "Add expiry date column to SupplyDeliveryTable component"}
 {"event_id": "08ab13659b8dafbd:succeeded", "kind": "run.succeeded", "ticket_id": "65", "run_id": "08ab13659b8dafbd", "state": "SUCCEEDED", "artifacts": ["specs/65/spec.md"]}
+{"event_id": "ecdb6dd8ede4fc16:collected", "kind": "run.collected", "ticket_id": "65", "run_id": "ecdb6dd8ede4fc16", "tokens": 1411300, "cost_usd": 0.843}
