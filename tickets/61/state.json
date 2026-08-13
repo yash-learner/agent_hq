@@ -145,7 +145,7 @@
       "task_id": "finalize",
       "task_version": 1,
       "ticket_id": "61",
-      "state": "QUEUED",
+      "state": "RUNNING",
       "attempt": 0,
       "bindings": {
         "tracker": "github-issues",
@@ -165,7 +165,9 @@
         "specs/61/spec.md",
         "specs/61/review.md",
         "specs/61/qa.md"
-      ]
+      ],
+      "deadline": "2026-08-13T09:42:03Z",
+      "attempt_started_at": "2026-08-13T09:27:03Z"
     }
   ],
   "block_reason": null,
