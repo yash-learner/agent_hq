@@ -5,3 +5,4 @@
 {"event_id": "c43a51a9f4b21a37:queued", "kind": "run.queued", "ticket_id": "61", "run_id": "c43a51a9f4b21a37", "task_id": "implement", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment", "gate": "github-issue-comment"}}
 {"event_id": "ba7a45670b2644da:implement-61-care-fe:accepted", "kind": "handoff.accepted", "ticket_id": "61", "run_id": "ba7a45670b2644da", "detail": "Add expiry date column to purchase delivery table per spec"}
 {"event_id": "ba7a45670b2644da:succeeded", "kind": "run.succeeded", "ticket_id": "61", "run_id": "ba7a45670b2644da", "state": "SUCCEEDED", "artifacts": ["specs/61/spec.md"]}
+{"event_id": "c43a51a9f4b21a37:collected", "kind": "run.collected", "ticket_id": "61", "run_id": "c43a51a9f4b21a37", "tokens": 1611900, "cost_usd": 0.862}
