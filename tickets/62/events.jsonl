@@ -16,3 +16,7 @@
 {"event_id": "5bbd46ae724b7720:impl-1:accepted", "kind": "handoff.accepted", "ticket_id": "62", "run_id": "5bbd46ae724b7720", "detail": "Implement custom sidebar links feature in care_fe frontend"}
 {"event_id": "5bbd46ae724b7720:succeeded", "kind": "run.succeeded", "ticket_id": "62", "run_id": "5bbd46ae724b7720", "state": "SUCCEEDED", "artifacts": ["specs/62/tasks.md"]}
 {"event_id": "13cb33d9f21a27f9:collected", "kind": "run.collected", "ticket_id": "62", "run_id": "13cb33d9f21a27f9", "tokens": 1919000, "cost_usd": 1.06}
+{"event_id": "13cb33d9f21a27f9:review-62-1:proposed", "kind": "handoff.proposed", "ticket_id": "62", "run_id": "13cb33d9f21a27f9", "detail": "Review implementation against spec before QA"}
+{"event_id": "c41016b51834ba51:queued", "kind": "run.queued", "ticket_id": "62", "run_id": "c41016b51834ba51", "task_id": "review", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
+{"event_id": "13cb33d9f21a27f9:review-62-1:accepted", "kind": "handoff.accepted", "ticket_id": "62", "run_id": "13cb33d9f21a27f9", "detail": "Review implementation against spec before QA"}
+{"event_id": "13cb33d9f21a27f9:succeeded", "kind": "run.succeeded", "ticket_id": "62", "run_id": "13cb33d9f21a27f9", "state": "SUCCEEDED", "artifacts": ["specs/62/qa-plan.md"]}
