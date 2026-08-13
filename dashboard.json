@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-13T10:32:02Z",
+  "generated_at": "2026-08-13T10:32:42Z",
   "tickets": [
     {
       "ticket_id": "1",
@@ -14338,7 +14338,7 @@
           "task_id": "agent-qa",
           "task_version": 1,
           "ticket_id": "62",
-          "state": "QUEUED",
+          "state": "RUNNING",
           "attempt": 0,
           "bindings": {},
           "cost_usd": null,
@@ -14348,7 +14348,9 @@
           "chain_depth": 0,
           "source_event_id": "issue-comment:5279161167",
           "enqueue_index": 0,
-          "queue_seq": 9
+          "queue_seq": 9,
+          "deadline": "2026-08-13T11:32:42Z",
+          "attempt_started_at": "2026-08-13T10:32:42Z"
         }
       ],
       "block_reason": null,
