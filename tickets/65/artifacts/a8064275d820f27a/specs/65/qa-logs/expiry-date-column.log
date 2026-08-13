@@ -1,0 +1,14 @@
+[qa-auth] refreshJwt: status 200
+[qa-auth] openAuthedContext: refresh ok=true status=200
+[qa-auth] openAuthedContext: shell not ready — attempting uiLogin
+[qa-auth] uiLogin: starting UI login
+locator.fill: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('textbox', { name: /username/i })[22m
+
+    at uiLogin (/workspaces/agent_hq/_target/a8064275d820f27a/.agent-hq/qa-auth.mjs:88:58)
+    at async openAuthedContext (/workspaces/agent_hq/_target/a8064275d820f27a/.agent-hq/qa-auth.mjs:223:7)
+    at async main (/workspaces/agent_hq/_target/a8064275d820f27a/specs/65/qa-drivers/expiry-date-column.mjs:10:31) {
+  log: [ "  - waiting for getByRole('textbox', { name: /username/i })" ],
+  name: 'TimeoutError'
+}

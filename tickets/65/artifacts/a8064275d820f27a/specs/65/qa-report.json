@@ -1,0 +1,58 @@
+{
+  "criteria": [
+    {
+      "id": "ac1-expiry-column",
+      "title": "Expiry date displays in dedicated column after batch",
+      "verdict": "not-exercised",
+      "evidence_kind": "code-inspection",
+      "blocker": "Dialog/form interaction in headless browser prevented full UI flow - Raise Stock Request button visible but dialog did not open after click",
+      "blocker_category": "navigation-mismatch",
+      "plan_steps_run": ["1", "2", "3", "4", "5", "6"],
+      "videos": [],
+      "screenshots": [],
+      "seed_attempt": {
+        "method": "ui",
+        "summary": "Navigated to Bio-Chemistry Internal Receive page, located Raise Stock Request button, clicked button but dialog form did not appear in headless Chromium environment"
+      }
+    },
+    {
+      "id": "ac2-empty-expiry",
+      "title": "Empty expiry date shows dash",
+      "verdict": "not-exercised",
+      "evidence_kind": "code-inspection",
+      "blocker": "Blocked by AC1 - could not create delivery items to verify empty expiry date handling",
+      "blocker_category": "navigation-mismatch",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac3-date-format",
+      "title": "Expiry dates display in dd/MM/yyyy format",
+      "verdict": "not-exercised",
+      "evidence_kind": "code-inspection",
+      "blocker": "Blocked by AC1 - could not create delivery items with expiry dates to verify format",
+      "blocker_category": "navigation-mismatch",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac4-print-view",
+      "title": "Expiry date column appears in print view",
+      "verdict": "not-exercised",
+      "evidence_kind": "code-inspection",
+      "blocker": "Blocked by AC1 - could not create delivery order to access print view",
+      "blocker_category": "navigation-mismatch",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    }
+  ],
+  "summary": {
+    "all_passed": false,
+    "pass": 0,
+    "fail": 0,
+    "not_exercised": 4
+  }
+}

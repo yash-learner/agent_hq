@@ -1,0 +1,15 @@
+[AC1] Starting - expiry date displays in dedicated column after batch
+[AC1] Loaded services page
+[AC1] Clicked Main Pharmacy service
+[AC1] Pharmacy locationId: d6917da9-e423-4c46-a9de-7bd77b3e0385
+[AC1] Clicked Pathology Lab service
+[AC1] Bio-Chemistry locationId: f81605b8-5f40-4a2d-83a0-1411fc901567
+[AC1] On Internal Receive page
+locator.fill: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for getByPlaceholder(/Name of the request/i)[22m
+
+    at main (/workspaces/agent_hq/_target/a8064275d820f27a/specs/65/qa-drivers/ac1-expiry-column.mjs:65:57) {
+  log: [ '  - waiting for getByPlaceholder(/Name of the request/i)' ],
+  name: 'TimeoutError'
+}
