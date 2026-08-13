@@ -38,3 +38,4 @@
 {"event_id": "0fc5b1f99f3f2c49:collected", "kind": "run.collected", "ticket_id": "62", "run_id": "0fc5b1f99f3f2c49", "tokens": 7235800, "cost_usd": 3.28}
 {"event_id": "0fc5b1f99f3f2c49:failed", "kind": "run.failed", "ticket_id": "62", "run_id": "0fc5b1f99f3f2c49", "state": "FAILED"}
 {"event_id": "0fc5b1f99f3f2c49:artifact_rejected", "kind": "run.artifact_rejected", "ticket_id": "62", "run_id": "0fc5b1f99f3f2c49", "detail": "qa-report.json: criterion 'ac2-opentab-config': pass requires \u22651 video when qa.video is true"}
+{"event_id": "d775dc8da966a5e7:queued", "kind": "run.queued", "ticket_id": "62", "run_id": "d775dc8da966a5e7", "task_id": "agent-qa", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
