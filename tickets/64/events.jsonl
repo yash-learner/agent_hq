@@ -53,3 +53,4 @@
 {"event_id": "cc252915ee8eb624:collected", "kind": "run.collected", "ticket_id": "64", "run_id": "cc252915ee8eb624", "tokens": 5427300, "cost_usd": 2.56}
 {"event_id": "cc252915ee8eb624:failed", "kind": "run.failed", "ticket_id": "64", "run_id": "cc252915ee8eb624", "state": "FAILED"}
 {"event_id": "cc252915ee8eb624:artifact_rejected", "kind": "run.artifact_rejected", "ticket_id": "64", "run_id": "cc252915ee8eb624", "detail": "qa-report.json: criterion 'ac5-plugin-links': not-exercised with missing-test-data requires seed_attempt (method ui|api|both plus a non-empty summary of what was tried)"}
+{"event_id": "cc252915ee8eb624:blocked", "kind": "ticket.blocked", "ticket_id": "64", "run_id": "cc252915ee8eb624", "detail": "retries exhausted"}
