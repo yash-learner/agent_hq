@@ -45,3 +45,4 @@
 {"event_id": "053ce4bee8605107:queued", "kind": "run.queued", "ticket_id": "64", "run_id": "053ce4bee8605107", "task_id": "agent-qa", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
 {"event_id": "51c5ae4ccf222f6e:qa-64:accepted", "kind": "handoff.accepted", "ticket_id": "64", "run_id": "51c5ae4ccf222f6e", "detail": "No blockers remain. Implementation matches spec with complete Data setup for all acceptance criteria. Ready for live video QA verification of custom footer links in sidebar."}
 {"event_id": "51c5ae4ccf222f6e:succeeded", "kind": "run.succeeded", "ticket_id": "64", "run_id": "51c5ae4ccf222f6e", "state": "SUCCEEDED", "artifacts": ["specs/64/review.md"]}
+{"event_id": "053ce4bee8605107:collected", "kind": "run.collected", "ticket_id": "64", "run_id": "053ce4bee8605107", "tokens": 4330100, "cost_usd": 2.12}

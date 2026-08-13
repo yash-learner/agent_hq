@@ -324,9 +324,9 @@
         "agent-session": "copilot-cli",
         "messaging": "github-comment"
       },
-      "cost_usd": null,
-      "tokens": null,
-      "usage_known": false,
+      "cost_usd": 2.12,
+      "tokens": 4330100,
+      "usage_known": true,
       "artifacts": [],
       "chain_depth": 9,
       "parent_run_id": "51c5ae4ccf222f6e",
@@ -344,7 +344,8 @@
       "input_from_run_id": "51c5ae4ccf222f6e",
       "mcp_servers": [
         "playwright"
-      ]
+      ],
+      "mcp_loaded": true
     }
   ],
   "block_reason": null,
