@@ -1,0 +1,91 @@
+{
+  "criteria": [
+    {
+      "id": "ac1-links-in-footer",
+      "title": "Custom links appear in sidebar footer via environment config",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3", "4"],
+      "videos": ["specs/62/videos/ac1-links-in-footer.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac2-opentab-config",
+      "title": "Links respect openInNewTab configuration",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3"],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac3-icons",
+      "title": "External and internal links display correct icons",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3"],
+      "videos": ["specs/62/videos/ac3-icons.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac4-context-filtering",
+      "title": "Links filter by sidebarContext",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3"],
+      "videos": ["specs/62/videos/ac4-context-filtering.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac5-plugin-links",
+      "title": "Plugin sidebar links merge with environment links",
+      "verdict": "not-exercised",
+      "evidence_kind": "code-inspection",
+      "blocker": "Plugin infrastructure not available in test environment; no test plugins configured; cannot seed via UI or API; structural verification complete via code inspection",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": [],
+      "seed_attempt": {
+        "method": "none",
+        "summary": "No plugin infrastructure available in test environment; plugins require REACT_ENABLED_APPS configuration and separate micro-frontend builds; cannot seed plugins via fixture, UI, or API"
+      }
+    },
+    {
+      "id": "ac6-ordering",
+      "title": "Links maintain consistent ordering",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2"],
+      "videos": ["specs/62/videos/ac6-ordering.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac7-collapsed-expanded",
+      "title": "Links adapt to collapsed/expanded sidebar states",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3", "4", "5", "6"],
+      "videos": ["specs/62/videos/ac7-collapsed-expanded.webm"],
+      "screenshots": []
+    }
+  ],
+  "summary": {
+    "all_passed": false,
+    "pass": 6,
+    "fail": 0,
+    "not_exercised": 1
+  }
+}

@@ -1,0 +1,47 @@
+=== AC6: Links maintain consistent ordering ===
+Timestamp: 2026-08-13T09:58:30Z
+
+FIXTURE/CONFIG LOOKUP:
+- Configuration defines link order in array:
+  1. Test Link
+  2. External New Tab
+  3. External Same Tab
+  4. Internal New Tab
+  5. Internal Same Tab
+  6. Facility Only
+  7. All Contexts
+  8. First Link
+  9. Second Link
+  10. Third Link
+  11. Test Custom Link
+
+TEST PLAN:
+1. Navigate to facility context
+2. Verify links appear in configured order
+3. Verify order maintained in both collapsed and expanded states
+
+ACTIONS TAKEN (RECORDED):
+1. Navigated to facility overview page
+2. Expanded sidebar (already expanded)
+3. JavaScript evaluation to extract link order from DOM
+4. Verified link positions 1-11
+
+VERIFICATION SUCCESSFUL:
+✓ Links appear in the exact order defined in configuration:
+  1. Test Link
+  2. External New Tab
+  3. External Same Tab
+  4. Internal New Tab
+  5. Internal Same Tab
+  6. Facility Only
+  7. All Contexts
+  8. First Link
+  9. Second Link
+  10. Third Link
+  11. Test Custom Link
+
+✓ Order is consistent with environment variable array order
+✓ Links appear above NavUser component (verified in earlier ACs)
+✓ Environment links appear first (no plugin links to test)
+
+VERDICT: PASS

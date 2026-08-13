@@ -1,0 +1,53 @@
+=== AC1: Custom links appear in sidebar footer via environment config ===
+Timestamp: 2026-08-13T09:52:00Z
+
+FIXTURE/CONFIG LOOKUP:
+- Facility ID: e4fdf2a3-833d-4305-ae4b-c2f394bcff22
+- Auth: admin/admin (from setup-notes)
+- Environment variable: REACT_CUSTOM_SIDEBAR_LINKS configured in .env.local
+- Build: npm run build completed successfully, env var baked into build
+
+UI NAVIGATION:
+1. Navigate to http://localhost:4000
+2. Click "Log in as Staff"
+3. Enter username: admin, password: admin
+4. Click Login → authenticated shell with "Hey Admin 👋"
+5. Navigate to facility/e4fdf2a3-833d-4305-ae4b-c2f394bcff22/overview
+
+DISCOVERY:
+- Sidebar present with data-sidebar="sidebar"
+- Sidebar footer present with data-sidebar="footer"
+- CustomSidebarLinks component rendered with 11 link items
+- Sidebar initially collapsed (icon-only mode)
+- Icons visible: ExternalLink and Link2 components from lucide-react
+
+VERIFICATION PENDING:
+- Need to expand sidebar to see link labels
+- Need to verify links are above NavUser component
+- Need to verify specific link "Test Link" is visible
+
+ACTIONS TAKEN (RECORDED):
+1. Clicked "Toggle Sidebar" button to expand sidebar
+2. Scrolled sidebar to bottom to show footer area
+3. Verified custom links visible with labels in expanded state:
+   - Test Link
+   - External New Tab
+   - External Same Tab
+   - Internal New Tab
+   - Internal Same Tab
+   - Facility Only
+   - All Contexts
+   - First Link
+   - Second Link
+   - Third Link
+   - Test Custom Link
+
+VERIFICATION SUCCESSFUL:
+✓ Custom links appear in sidebar footer (11 links total)
+✓ Links are positioned above NavUser component ("Admin User admin" with AU avatar)
+✓ External link icon (ExternalLink from lucide-react) visible on external links
+✓ Internal link icon (Link2 from lucide-react) visible on internal links
+✓ Link labels visible when sidebar expanded
+✓ Sidebar footer structure: CustomSidebarLinks component (first UL) → NavUser component (second UL)
+
+VERDICT: PASS

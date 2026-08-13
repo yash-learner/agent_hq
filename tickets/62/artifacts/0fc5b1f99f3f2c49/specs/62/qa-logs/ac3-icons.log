@@ -1,0 +1,36 @@
+=== AC3: External and internal links display correct icons ===
+Timestamp: 2026-08-13T09:55:00Z
+
+FIXTURE/CONFIG LOOKUP:
+- Same facility and auth as AC1
+- Configuration includes both external and internal link types
+- External links: Test Link, External New Tab, External Same Tab, Facility Only, etc.
+- Internal links: Internal New Tab, Internal Same Tab
+
+PREVIOUS OBSERVATION:
+- From AC1 snapshot, saw lucide-external-link icons on external links
+- From AC1 snapshot, saw lucide-link-2 icons on internal links
+- Sidebar already expanded from AC1
+
+UI NAVIGATION:
+1. Continue from AC1 state with expanded sidebar
+2. Locate both external and internal link examples in footer
+
+ACTIONS TAKEN (RECORDED):
+1. JavaScript evaluation to inspect icon classes on first 5 custom links
+2. Verified external links have lucide-external-link class
+3. Verified internal links have lucide-link2 / lucide-link-2 class
+4. Hovered over "External New Tab" to show external icon
+5. Hovered over "Internal New Tab" to show internal icon
+
+VERIFICATION SUCCESSFUL:
+✓ External links display ExternalLink icon (arrow pointing out of box)
+✓ Internal links display Link2 icon (chain link symbol)
+✓ Icons are clearly distinguishable:
+  - "Test Link" (external): lucide-external-link
+  - "External New Tab" (external): lucide-external-link
+  - "External Same Tab" (external): lucide-external-link
+  - "Internal New Tab" (internal): lucide-link2 lucide-link-2
+  - "Internal Same Tab" (internal): lucide-link2 lucide-link-2
+
+VERDICT: PASS

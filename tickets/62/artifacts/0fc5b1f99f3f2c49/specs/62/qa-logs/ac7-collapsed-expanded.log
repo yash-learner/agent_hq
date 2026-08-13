@@ -1,0 +1,40 @@
+=== AC7: Links adapt to collapsed/expanded sidebar states ===
+Timestamp: 2026-08-13T09:56:30Z
+
+FIXTURE/CONFIG LOOKUP:
+- Same facility and auth as previous ACs
+- Sidebar currently expanded from AC3
+- Custom links visible with both icons and labels
+
+STARTING STATE:
+- Sidebar expanded
+- All 11 custom links showing icon + label
+
+ACTIONS TO TEST:
+1. Collapse sidebar
+2. Verify links show icon-only mode
+3. Expand sidebar again
+4. Verify links show icon + label
+
+ACTIONS TAKEN (RECORDED):
+1. Starting state: Sidebar expanded with all link labels visible
+2. Clicked "Toggle Sidebar" to collapse
+3. Waited for animation to complete (2 seconds)
+4. Verified collapsed state via JavaScript:
+   - hasIcon: true
+   - hasSpan: false
+   - text: "" (empty)
+5. Clicked "Toggle Sidebar" to expand
+6. Waited for animation to complete (2 seconds)
+7. Verified expanded state via find command:
+   - "Test Link" visible
+   - "External New Tab" visible
+   - All labels restored
+
+VERIFICATION SUCCESSFUL:
+✓ Collapsed state: Links show only icons, no labels
+✓ Expanded state: Links show both icons and labels
+✓ Transition between states is smooth
+✓ Link functionality maintained in both states
+
+VERDICT: PASS

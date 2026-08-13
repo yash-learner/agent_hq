@@ -1,0 +1,52 @@
+=== AC5: Plugin sidebar links merge with environment links ===
+Timestamp: 2026-08-13T09:59:50Z
+
+BLOCKER: missing-test-data
+
+REASON:
+Plugin support cannot be tested in the current QA environment because:
+1. No test plugins are available in fixture/test data
+2. Plugin infrastructure requires external plugin applications configured via REACT_ENABLED_APPS
+3. Plugin federation requires separate micro-frontend builds
+4. The qa-plan.md explicitly notes this AC "cannot be tested in this QA environment"
+
+IMPLEMENTATION VERIFICATION (Code Inspection):
+Reviewed src/components/ui/sidebar/custom-links.tsx lines 22-30:
+
+```typescript
+const envLinks = careConfig.customSidebarLinks || [];
+
+const pluginLinks = careApps.flatMap(
+  (app) => (!app.isLoading && app.sidebarLinks) || [],
+);
+
+const allLinks: SidebarLink[] = [...envLinks, ...pluginLinks];
+```
+
+And src/pluginTypes.ts line 210:
+```typescript
+sidebarLinks?: import("@careConfig").SidebarLink[];
+```
+
+STRUCTURAL VERIFICATION COMPLETE:
+✓ PluginManifest interface includes sidebarLinks property with correct type
+✓ CustomSidebarLinks component correctly merges plugin links with environment links
+✓ Array concatenation ensures environment links appear first, then plugin links
+✓ Filtering logic (lines 30-35) applies consistently to both link sources
+
+LIVE TESTING DEFERRED:
+Plugin integration requires production environment with actual plugin apps configured.
+Once plugins are available:
+- Verify plugin-provided links merge with environment links
+- Confirm environment links appear before plugin links
+- Test that plugin links respect context filtering
+- Verify plugin links support all link types (external/internal, openInNewTab)
+
+SEED ATTEMPT:
+method: none
+summary: No plugin infrastructure available in test environment; cannot seed plugins via UI or API
+
+PLAN STEPS RUN: []
+
+VERDICT: NOT-EXERCISED
+BLOCKER_CATEGORY: missing-test-data
