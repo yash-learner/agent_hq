@@ -346,6 +346,33 @@
         "playwright"
       ],
       "mcp_loaded": true
+    },
+    {
+      "run_id": "cc252915ee8eb624",
+      "task_id": "agent-qa",
+      "task_version": 1,
+      "ticket_id": "64",
+      "state": "QUEUED",
+      "attempt": 1,
+      "bindings": {
+        "tracker": "github-issues",
+        "agent-session": "copilot-cli",
+        "messaging": "github-comment"
+      },
+      "cost_usd": null,
+      "tokens": null,
+      "usage_known": false,
+      "artifacts": [],
+      "chain_depth": 9,
+      "parent_run_id": "51c5ae4ccf222f6e",
+      "queue_seq": 9,
+      "handoff_key": "qa-64",
+      "repo": "yash-learner/care_fe_agent_hq",
+      "input_artifacts": [
+        "specs/64/spec.md",
+        "specs/64/review.md",
+        "specs/64/qa-plan.md"
+      ]
     }
   ],
   "block_reason": null,

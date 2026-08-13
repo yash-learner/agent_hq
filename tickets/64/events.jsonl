@@ -48,3 +48,4 @@
 {"event_id": "053ce4bee8605107:collected", "kind": "run.collected", "ticket_id": "64", "run_id": "053ce4bee8605107", "tokens": 4330100, "cost_usd": 2.12}
 {"event_id": "053ce4bee8605107:failed", "kind": "run.failed", "ticket_id": "64", "run_id": "053ce4bee8605107", "state": "FAILED"}
 {"event_id": "053ce4bee8605107:artifact_rejected", "kind": "run.artifact_rejected", "ticket_id": "64", "run_id": "053ce4bee8605107", "detail": "qa-report.json: criterion 'ac2-external-links': log specs/64/qa-logs/ac2-external-links.log must be non-empty"}
+{"event_id": "cc252915ee8eb624:queued", "kind": "run.queued", "ticket_id": "64", "run_id": "cc252915ee8eb624", "task_id": "agent-qa", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
