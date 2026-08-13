@@ -11,3 +11,7 @@
 {"event_id": "cddf065ce93ee51b:breakdown-64:accepted", "kind": "handoff.accepted", "ticket_id": "64", "run_id": "cddf065ce93ee51b", "detail": "Ticket classified as CRUD. Ready for implementation breakdown."}
 {"event_id": "cddf065ce93ee51b:succeeded", "kind": "run.succeeded", "ticket_id": "64", "run_id": "cddf065ce93ee51b", "state": "SUCCEEDED", "artifacts": ["specs/64/plan.md", "specs/64/classification.json"]}
 {"event_id": "b802591ad65e3cdc:collected", "kind": "run.collected", "ticket_id": "64", "run_id": "b802591ad65e3cdc", "tokens": 224800, "cost_usd": 0.252}
+{"event_id": "b802591ad65e3cdc:impl-footer-links:proposed", "kind": "handoff.proposed", "ticket_id": "64", "run_id": "b802591ad65e3cdc", "detail": "Implement custom footer links in sidebar per task breakdown"}
+{"event_id": "5afb52056ce03385:queued", "kind": "run.queued", "ticket_id": "64", "run_id": "5afb52056ce03385", "task_id": "implement", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
+{"event_id": "b802591ad65e3cdc:impl-footer-links:accepted", "kind": "handoff.accepted", "ticket_id": "64", "run_id": "b802591ad65e3cdc", "detail": "Implement custom footer links in sidebar per task breakdown"}
+{"event_id": "b802591ad65e3cdc:succeeded", "kind": "run.succeeded", "ticket_id": "64", "run_id": "b802591ad65e3cdc", "state": "SUCCEEDED", "artifacts": ["specs/64/tasks.md"]}
