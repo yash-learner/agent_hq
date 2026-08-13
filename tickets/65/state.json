@@ -107,7 +107,7 @@
       "task_id": "agent-qa",
       "task_version": 1,
       "ticket_id": "65",
-      "state": "QUEUED",
+      "state": "RUNNING",
       "attempt": 0,
       "bindings": {
         "tracker": "github-issues",
@@ -127,7 +127,9 @@
         "specs/65/spec.md",
         "specs/65/review.md",
         "specs/65/qa-plan.md"
-      ]
+      ],
+      "deadline": "2026-08-13T23:49:03Z",
+      "attempt_started_at": "2026-08-13T22:49:03Z"
     }
   ],
   "block_reason": null,
