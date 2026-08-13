@@ -16,9 +16,13 @@ Claude's `Read`/`Grep`/`Glob`/`Write`/`Bash` names map to Copilot CLI's
 
 **MCP:** a taskdef `mcp` list arrives in the bundle as resolved
 config/mcp-servers.yml entries; `run` writes them to a project-level
-`.mcp.json` in the worktree (runtime precedence over user config) before
-spawning, and additionally `--allow-tool`s each server name when a `tools`
-allowlist is present. No `mcp` -> no file -> behavior unchanged.
+`.mcp.json` in the worktree before spawning, passes
+`--additional-mcp-config @./.mcp.json`, and sets
+`GITHUB_COPILOT_PROMPT_MODE_WORKSPACE_MCP=true` so Copilot CLI's
+non-interactive `-p` mode actually loads workspace servers (fresh GHA
+worktrees are untrusted and would otherwise silently skip `.mcp.json`).
+When a `tools` allowlist is present, each server name is also
+`--allow-tool`'d. No `mcp` -> no file / no flag / no env -> unchanged.
 
 **PD-5 deviation:** unlike the Anthropic-key child, this child process
 necessarily holds a GitHub credential (`COPILOT_GITHUB_TOKEN`). Blast radius
@@ -153,14 +157,11 @@ class CopilotCli(ClaudeCodeHeadless):
     def run(self, bundle: dict, tools: list[str], deadline_iso: str) -> dict:
         prompt = bundle["prompt"]
         worktree = Path(bundle["worktree"])
-        # MCP: a project-level `.mcp.json` in the child's CWD takes runtime
-        # precedence in Copilot CLI, so writing it here scopes the servers to
-        # this run's worktree -- no user/global config is touched, and a task
-        # with no `mcp` writes no file (current behavior for every other
-        # task). Entries arrive pre-resolved from config/mcp-servers.yml via
-        # the bundle (prepare resolves; execute holds no config).
-        # `materialize_work_patch` excludes the file, so it can never reach a
-        # work patch even for a writes_code task.
+        # MCP: write project-level `.mcp.json`, then force-load it in `-p`
+        # (untrusted GHA worktrees silently skip workspace MCP otherwise —
+        # see --additional-mcp-config + GITHUB_COPILOT_PROMPT_MODE_WORKSPACE_MCP
+        # below). Entries arrive pre-resolved from config/mcp-servers.yml.
+        # `materialize_work_patch` excludes the file from work patches.
         mcp_servers = bundle.get("mcp_servers") or {}
         if mcp_servers:
             (worktree / ".mcp.json").write_text(
@@ -177,6 +178,11 @@ class CopilotCli(ClaudeCodeHeadless):
             "--model",
             self.model,
         ]
+        if mcp_servers:
+            # Workspace `.mcp.json` is silently skipped in `-p` when the
+            # directory is untrusted (every fresh GHA worktree). Force-load
+            # via explicit config path + the documented prompt-mode opt-in.
+            argv.extend(["--additional-mcp-config", "@./.mcp.json"])
         if not tools:
             argv.append("--allow-all-tools")
         else:
@@ -189,10 +195,13 @@ class CopilotCli(ClaudeCodeHeadless):
                 argv.append(f"--allow-tool={server}")
 
         timeout = max(1, _seconds_until(deadline_iso))
+        child_env = _child_env()
+        if mcp_servers:
+            child_env["GITHUB_COPILOT_PROMPT_MODE_WORKSPACE_MCP"] = "true"
         proc = subprocess.Popen(
             argv,
             cwd=worktree,
-            env=_child_env(),
+            env=child_env,
             stdin=subprocess.PIPE,
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE,
