@@ -15,3 +15,4 @@
 {"event_id": "c394767807b5a78e:queued", "kind": "run.queued", "ticket_id": "61", "run_id": "c394767807b5a78e", "task_id": "agent-qa", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
 {"event_id": "6c43cab8169f8c63:qa-61:accepted", "kind": "handoff.accepted", "ticket_id": "61", "run_id": "6c43cab8169f8c63", "detail": "Implementation is clean with no blockers. Ready for live QA verification of expiry date column display, formatting, and visual distinction for expired items. [task 'qa' substituted with 'agent-qa' via ticket label]"}
 {"event_id": "6c43cab8169f8c63:succeeded", "kind": "run.succeeded", "ticket_id": "61", "run_id": "6c43cab8169f8c63", "state": "SUCCEEDED", "artifacts": ["specs/61/review.md"]}
+{"event_id": "c394767807b5a78e:collected", "kind": "run.collected", "ticket_id": "61", "run_id": "c394767807b5a78e", "tokens": 2316500, "cost_usd": 1.34}
