@@ -248,7 +248,7 @@
       "task_id": "agent-qa",
       "task_version": 1,
       "ticket_id": "62",
-      "state": "RUNNING",
+      "state": "FAILED",
       "attempt": 0,
       "bindings": {
         "tracker": "github-issues",

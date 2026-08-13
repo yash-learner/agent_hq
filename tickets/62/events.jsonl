@@ -36,3 +36,4 @@
 {"event_id": "e48531c8335f0ed2:qa-62:accepted", "kind": "handoff.accepted", "ticket_id": "62", "run_id": "e48531c8335f0ed2", "detail": "All blockers resolved; implementation satisfies all acceptance criteria. Ready for live QA verification with video evidence."}
 {"event_id": "e48531c8335f0ed2:succeeded", "kind": "run.succeeded", "ticket_id": "62", "run_id": "e48531c8335f0ed2", "state": "SUCCEEDED", "artifacts": ["specs/62/review.md"]}
 {"event_id": "0fc5b1f99f3f2c49:collected", "kind": "run.collected", "ticket_id": "62", "run_id": "0fc5b1f99f3f2c49", "tokens": 7235800, "cost_usd": 3.28}
+{"event_id": "0fc5b1f99f3f2c49:failed", "kind": "run.failed", "ticket_id": "62", "run_id": "0fc5b1f99f3f2c49", "state": "FAILED"}
