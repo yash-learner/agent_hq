@@ -1,0 +1,9 @@
+[2026-08-13T17:47:41.310Z] === Links filtered by visibleIn sidebar context ===
+[2026-08-13T17:47:41.310Z] Blocked: Cannot proceed - sidebar not rendering in headless browser
+[2026-08-13T17:47:41.310Z] Blocker category: app-not-loading
+[2026-08-13T17:47:41.310Z] Reason: Facility sidebar with data-sidebar='sidebar' does not render
+[2026-08-13T17:47:41.310Z] Evidence: See AC1 log and screenshots showing sidebar components not visible
+[2026-08-13T17:47:41.310Z] Attempted: Created authenticated context with storageState and viewport 1440×900
+[2026-08-13T17:47:41.310Z] Attempted: Navigated to facility overview and admin pages
+[2026-08-13T17:47:41.310Z] Result: Pages load to correct URLs but sidebar components do not render
+[2026-08-13T17:47:41.310Z] This blocks all visual verification of custom footer links feature

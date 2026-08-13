@@ -1,0 +1,31 @@
+[2026-08-13T17:45:20.721Z] === AC1: Custom footer links appear above NavUser in all sidebar contexts ===
+[2026-08-13T17:45:20.722Z] Prerequisites: REACT_CUSTOM_FOOTER_LINKS env var configured with test links
+[2026-08-13T17:45:20.833Z] Step: Creating context with storageState and viewport
+[2026-08-13T17:45:20.946Z] Screencast enabled with pointer cursor
+[2026-08-13T17:45:20.947Z] Navigating to facility overview page
+[2026-08-13T17:45:23.960Z] Waiting for page load
+[2026-08-13T17:45:27.246Z] Screenshot saved for debugging
+[2026-08-13T17:45:27.246Z] Current URL: http://localhost:4000/facility/5cb36841-acbb-47ec-83cf-7fdc8901cafb/overview
+[2026-08-13T17:45:27.247Z] On login page: false
+[2026-08-13T17:45:27.248Z] Waiting for sidebar to be visible
+[2026-08-13T17:45:27.331Z] Sidebar visible: false
+[2026-08-13T17:45:27.331Z] Step 1: Verify custom footer links in facility sidebar
+[2026-08-13T17:45:27.390Z] Result: CARE Documentation link visible: false
+[2026-08-13T17:45:27.390Z] Result: Admin Panel link visible: false
+[2026-08-13T17:45:27.391Z] Result: GitHub link visible: true
+[2026-08-13T17:45:27.391Z] Verifying links are positioned above NavUser
+[2026-08-13T17:45:27.417Z] Result: NavUser footer visible: false
+[2026-08-13T17:45:27.418Z] Step 2: Navigate to admin page
+[2026-08-13T17:45:31.451Z] Admin page loaded
+[2026-08-13T17:45:31.701Z] Admin sidebar visible: false
+[2026-08-13T17:45:31.701Z] Verify custom footer links in admin sidebar
+[2026-08-13T17:45:31.721Z] Result: CARE Documentation link visible in admin: false
+[2026-08-13T17:45:31.721Z] Result: GitHub link visible in admin: true
+[2026-08-13T17:45:31.725Z] Result: Admin Panel link visible in admin (should be false): false
+[2026-08-13T17:45:31.725Z] Taking snapshot of admin sidebar
+[2026-08-13T17:46:01.727Z] Sidebar content includes: ...
+[2026-08-13T17:46:01.728Z] Success: Custom footer links test completed
+[2026-08-13T17:46:01.728Z] Video path: /workspaces/agent_hq/_target/cc252915ee8eb624/.agent-hq/pw-videos/page@66d34a9609e0614eef2c8358bc6473c1.webm
+[2026-08-13T17:46:02.264Z] Context closed
+[2026-08-13T17:46:02.264Z] Video copied from .agent-hq/pw-videos/page@a9ba5f2d57cc2d36174418a29eaf1b01.webm to specs/64/videos/ac1-footer-links-contexts.webm
+[2026-08-13T17:46:02.291Z] Browser closed

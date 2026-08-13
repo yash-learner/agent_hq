@@ -1,0 +1,10 @@
+[2026-08-13T17:47:25.045Z] === AC2: External links open in new tab with external link icon ===
+[2026-08-13T17:47:25.046Z] Prerequisites: REACT_CUSTOM_FOOTER_LINKS configured with external link
+[2026-08-13T17:47:25.046Z] Blocked: Cannot proceed - sidebar not rendering in headless browser
+[2026-08-13T17:47:25.046Z] Blocker category: app-not-loading
+[2026-08-13T17:47:25.046Z] Reason: Facility sidebar with data-sidebar='sidebar' does not render
+[2026-08-13T17:47:25.046Z] Evidence: See AC1 log and screenshots showing sidebar not visible
+[2026-08-13T17:47:25.046Z] Attempted: Created authenticated context with storageState
+[2026-08-13T17:47:25.046Z] Attempted: Navigated to facility overview at correct URL
+[2026-08-13T17:47:25.046Z] Result: Page loads but sidebar components do not render
+[2026-08-13T17:47:25.046Z] This blocks verification of custom footer links feature

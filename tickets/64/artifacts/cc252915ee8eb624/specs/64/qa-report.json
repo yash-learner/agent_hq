@@ -1,0 +1,87 @@
+{
+  "criteria": [
+    {
+      "id": "ac1-footer-links-contexts",
+      "title": "Custom footer links appear above NavUser in all sidebar contexts",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Sidebar components do not render in headless browser environment. Authenticated to facility overview page successfully but [data-sidebar='sidebar'] not visible. This prevents verification of custom footer links display, positioning, and context-specific rendering.",
+      "blocker_category": "app-not-loading",
+      "plan_steps_run": ["1", "2", "3"],
+      "videos": ["specs/64/videos/ac1-footer-links-contexts.webm"],
+      "screenshots": []
+    },
+    {
+      "id": "ac2-external-links",
+      "title": "External links open in new tab with external link icon",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Sidebar components do not render - same blocker as AC1. Cannot verify external link icon display or target='_blank' behavior without visible sidebar footer",
+      "blocker_category": "app-not-loading",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac3-internal-links",
+      "title": "Internal links navigate in current tab with internal route icon",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Sidebar components do not render - same blocker as AC1. Cannot verify internal link icon display or raviger Link navigation without visible sidebar footer",
+      "blocker_category": "app-not-loading",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac4-context-filtering",
+      "title": "Links filtered by visibleIn sidebar context",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Sidebar components do not render - same blocker as AC1. Cannot verify context-based filtering (visibleIn property) without visible sidebar in facility and admin contexts",
+      "blocker_category": "app-not-loading",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac5-plugin-links",
+      "title": "Plugin footer links appear alongside config links",
+      "verdict": "not-exercised",
+      "evidence_kind": "code-inspection",
+      "blocker": "Cannot test plugin integration without test plugin setup. QA plan explicitly notes this AC cannot be verified in live QA without plugin dev environment",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac6-tooltip-collapsed",
+      "title": "Tooltip displays link name when sidebar is collapsed",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Sidebar components do not render - same blocker as AC1. Cannot verify tooltip display on hover without visible sidebar to collapse",
+      "blocker_category": "app-not-loading",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    },
+    {
+      "id": "ac7-link-ordering",
+      "title": "Links appear in configuration order, stacked vertically",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "Sidebar components do not render - same blocker as AC1. Cannot verify link ordering and stacking without visible sidebar footer links",
+      "blocker_category": "app-not-loading",
+      "plan_steps_run": [],
+      "videos": [],
+      "screenshots": []
+    }
+  ],
+  "summary": {
+    "all_passed": false,
+    "pass": 0,
+    "fail": 0,
+    "not_exercised": 7
+  }
+}
