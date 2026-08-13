@@ -329,7 +329,7 @@
       "task_id": "finalize",
       "task_version": 1,
       "ticket_id": "62",
-      "state": "QUEUED",
+      "state": "RUNNING",
       "attempt": 0,
       "bindings": {
         "tracker": "github-issues",
@@ -351,7 +351,9 @@
         "specs/62/qa-plan.md",
         "specs/62/qa.md",
         "specs/62/qa-report.json"
-      ]
+      ],
+      "deadline": "2026-08-13T10:40:43Z",
+      "attempt_started_at": "2026-08-13T10:25:43Z"
     }
   ],
   "block_reason": null,
