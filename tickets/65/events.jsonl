@@ -21,3 +21,4 @@
 {"event_id": "a8064275d820f27a:finalize-65:accepted", "kind": "handoff.accepted", "ticket_id": "65", "run_id": "a8064275d820f27a", "detail": "QA completed - all criteria not-exercised due to headless browser dialog interaction limitations, but code inspection confirms correct implementation per review"}
 {"event_id": "a8064275d820f27a:succeeded", "kind": "run.succeeded", "ticket_id": "65", "run_id": "a8064275d820f27a", "state": "SUCCEEDED", "artifacts": ["specs/65/qa.md", "specs/65/qa-report.json", "specs/65/qa-drivers/ac1-expiry-column.mjs", "specs/65/qa-logs/ac1-expiry-column.log", "specs/65/qa-logs/expiry-date-column.log"]}
 {"event_id": "17cb4cb550b26b07:collected", "kind": "run.collected", "ticket_id": "65", "run_id": "17cb4cb550b26b07", "tokens": 106900, "cost_usd": 0.19}
+{"event_id": "17cb4cb550b26b07:succeeded", "kind": "run.succeeded", "ticket_id": "65", "run_id": "17cb4cb550b26b07", "state": "SUCCEEDED", "artifacts": ["specs/65/summary.md"]}
