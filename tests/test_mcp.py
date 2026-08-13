@@ -243,6 +243,42 @@ def test_run_without_tools_allowlist_keeps_allow_all_and_no_server_flag(monkeypa
     assert "--allow-tool=playwright" not in argv
 
 
+def test_run_forces_workspace_mcp_load_in_prompt_mode(monkeypatch, tmp_path):
+    """Fresh GHA worktrees are untrusted; Copilot `-p` silently skips
+    workspace `.mcp.json` unless we opt in (env) and/or pass the file
+    explicitly (`--additional-mcp-config`). Ticket 56 agent-qa hit this."""
+    calls = _install_fake_popen(monkeypatch)
+    executor = CopilotCli({})
+
+    executor.run(
+        {
+            "prompt": "hi",
+            "worktree": str(tmp_path),
+            "mcp_servers": {"playwright": PLAYWRIGHT_ENTRY},
+        },
+        [],
+        FUTURE_DEADLINE,
+    )
+
+    argv = calls[0]["argv"]
+    env = calls[0]["env"]
+    assert "--additional-mcp-config" in argv
+    assert argv[argv.index("--additional-mcp-config") + 1] == "@./.mcp.json"
+    assert env.get("GITHUB_COPILOT_PROMPT_MODE_WORKSPACE_MCP") == "true"
+
+
+def test_run_without_mcp_does_not_force_workspace_mcp_load(monkeypatch, tmp_path):
+    calls = _install_fake_popen(monkeypatch)
+    executor = CopilotCli({})
+
+    executor.run({"prompt": "hi", "worktree": str(tmp_path)}, [], FUTURE_DEADLINE)
+
+    argv = calls[0]["argv"]
+    env = calls[0]["env"]
+    assert "--additional-mcp-config" not in argv
+    assert "GITHUB_COPILOT_PROMPT_MODE_WORKSPACE_MCP" not in env
+
+
 # -- work patch: .mcp.json never reaches the target repo -------------------------
 
 
