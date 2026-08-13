@@ -74,7 +74,7 @@
       "task_id": "breakdown",
       "task_version": 1,
       "ticket_id": "62",
-      "state": "QUEUED",
+      "state": "RUNNING",
       "attempt": 0,
       "bindings": {
         "tracker": "github-issues",
@@ -94,7 +94,9 @@
         "specs/62/spec.md",
         "specs/62/plan.md",
         "specs/62/classification.json"
-      ]
+      ],
+      "deadline": "2026-08-13T09:23:56Z",
+      "attempt_started_at": "2026-08-13T08:53:56Z"
     }
   ],
   "block_reason": null,
