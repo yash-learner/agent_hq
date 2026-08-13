@@ -1,0 +1,4 @@
+{
+  "classification": "crud",
+  "reasoning": "This ticket involves adding a new UI feature (custom sidebar links) using existing infrastructure. It does not introduce new data models, migrations, model field changes, new services/workers, external integrations, authorization changes, FHIR/EMR model changes, or non-CRUD endpoints. The changes are limited to: (1) adding configuration parsing in care.config.ts, (2) extending the PluginManifest TypeScript interface, (3) creating a new UI component to render links, and (4) integrating that component into the existing sidebar layout. All changes are frontend-only with no backend API modifications or database schema changes. None of the beyond-crud criteria apply."
+}
