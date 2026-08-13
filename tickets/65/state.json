@@ -129,7 +129,12 @@
         "specs/65/qa-plan.md"
       ],
       "deadline": "2026-08-13T23:49:03Z",
-      "attempt_started_at": "2026-08-13T22:49:03Z"
+      "attempt_started_at": "2026-08-13T22:49:03Z",
+      "base_commit": "fd29b0b543090edb6f754a17b1cfcb666269704a",
+      "input_from_run_id": "c8d9630fc54591f0",
+      "mcp_servers": [
+        "playwright"
+      ]
     }
   ],
   "block_reason": null,
