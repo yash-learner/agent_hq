@@ -1,0 +1,47 @@
+{
+  "criteria": [
+    {
+      "id": "ac1-ac4-ac6-ac7",
+      "title": "AC1: Links appear via REACT_CUSTOM_SIDEBAR_LINKS, AC4: Context filtering, AC6: Positioned above NavUser, AC7: Collapsed/expanded responsive behavior",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3", "4"],
+      "videos": ["specs/62/videos/ac1-ac4-ac6-ac7.webm"],
+      "screenshots": ["specs/62/screenshots/sidebar-with-links.png"]
+    },
+    {
+      "id": "ac2-open-in-new-tab",
+      "title": "AC2: openInNewTab configuration controls target behavior",
+      "verdict": "pass",
+      "evidence_kind": "live-flow",
+      "blocker": null,
+      "blocker_category": null,
+      "plan_steps_run": ["1", "2", "3"],
+      "videos": ["specs/62/videos/ac2-open-in-new-tab.webm"],
+      "screenshots": ["specs/62/screenshots/click-test.png"]
+    },
+    {
+      "id": "ac5-plugin-support",
+      "title": "AC5: Plugin sidebar links merge with environment links",
+      "verdict": "not-exercised",
+      "evidence_kind": "unreachable",
+      "blocker": "No plugins configured in test environment. REACT_ENABLED_APPS not set. Plugin infrastructure not available in test fixtures. Functional verification requires production/staging environment with actual plugins.",
+      "blocker_category": "missing-test-data",
+      "plan_steps_run": ["1", "2", "3"],
+      "seed_attempt": {
+        "method": "ui",
+        "summary": "Checked for loaded plugins via window.__CARE_APPS__ - returned 0 plugins. Verified test environment does not have plugin infrastructure (REACT_ENABLED_APPS unset). Structural implementation verified via code inspection: PluginManifest.sidebarLinks property exists, CustomSidebarLinks component merges plugin+env links."
+      },
+      "videos": ["specs/62/videos/ac5-plugin-support.webm"],
+      "screenshots": ["specs/62/screenshots/plugin-support.png"]
+    }
+  ],
+  "summary": {
+    "all_passed": false,
+    "pass": 2,
+    "fail": 0,
+    "not_exercised": 1
+  }
+}

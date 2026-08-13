@@ -1,0 +1,27 @@
+=== AC5: Plugin Sidebar Links Support ===
+
+1. Navigating to facility overview...
+2. Waiting for sidebar...
+
+3. Plugin Environment Check:
+   - Plugins loaded: No
+   - Plugin count: 0
+
+4. Code Verification:
+   ✓ PluginManifest interface extended with sidebarLinks property
+   ✓ CustomSidebarLinks component merges plugin + env links
+   ✓ Plugin links would appear after environment links
+
+5. Testing Limitation:
+   ⚠ No plugins configured in test environment
+   ⚠ REACT_ENABLED_APPS not set for this test
+   → Functional verification requires production/staging with plugins
+
+Structural Implementation:
+   - src/pluginTypes.ts: PluginManifest.sidebarLinks property added
+   - src/components/ui/sidebar/custom-links.tsx: Plugin link merging
+   - Ordering: environment links → plugin links → NavUser
+
+6. Video saved to specs/62/videos/ac5-plugin-support.webm
+
+⚠ AC5: Structural implementation verified, functional test not exercised

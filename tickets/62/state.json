@@ -366,7 +366,7 @@
       "task_id": "agent-qa",
       "task_version": 1,
       "ticket_id": "62",
-      "state": "RUNNING",
+      "state": "SUCCEEDED",
       "attempt": 0,
       "bindings": {
         "tracker": "github-issues",
@@ -376,7 +376,28 @@
       "cost_usd": 2.9,
       "tokens": 5827000,
       "usage_known": true,
-      "artifacts": [],
+      "artifacts": [
+        "specs/62/qa.md",
+        "specs/62/qa-report.json",
+        "specs/62/videos/ac1-ac4-ac6-ac7.webm",
+        "specs/62/videos/ac1-links-appear.webm",
+        "specs/62/videos/ac2-open-in-new-tab.webm",
+        "specs/62/videos/ac5-plugin-support.webm",
+        "specs/62/screenshots/click-test.png",
+        "specs/62/screenshots/plugin-support.png",
+        "specs/62/screenshots/sidebar-with-links.png",
+        "specs/62/qa-drivers/ac1-ac4-ac6-ac7.mjs",
+        "specs/62/qa-drivers/ac2-open-in-new-tab.mjs",
+        "specs/62/qa-drivers/ac5-plugin-support.mjs",
+        "specs/62/qa-logs/ac1-ac4-ac6-ac7.log",
+        "specs/62/qa-logs/ac1-links-appear.log",
+        "specs/62/qa-logs/ac2-open-in-new-tab.log",
+        "specs/62/qa-logs/ac5-plugin-support.log",
+        "specs/62/videos/ac1-links-appear.gif",
+        "specs/62/videos/ac1-ac4-ac6-ac7.gif",
+        "specs/62/videos/ac5-plugin-support.gif",
+        "specs/62/videos/ac2-open-in-new-tab.gif"
+      ],
       "chain_depth": 0,
       "source_event_id": "issue-comment:5279161167",
       "enqueue_index": 0,
@@ -387,6 +408,35 @@
       "input_from_run_id": "9a52779ed2350195",
       "input_artifacts": [
         "specs/62/summary.md"
+      ],
+      "output_commit": "24bfa8b01088d54c7bdec9e2747af06c6408127f",
+      "pr_ref": "yash-learner/care_fe_agent_hq#45"
+    },
+    {
+      "run_id": "77a4d5e93b210504",
+      "task_id": "finalize",
+      "task_version": 1,
+      "ticket_id": "62",
+      "state": "QUEUED",
+      "attempt": 0,
+      "bindings": {
+        "tracker": "github-issues",
+        "agent-session": "copilot-cli",
+        "messaging": "github-comment"
+      },
+      "cost_usd": null,
+      "tokens": null,
+      "usage_known": false,
+      "artifacts": [],
+      "chain_depth": 1,
+      "parent_run_id": "fe108e2e9b56f329",
+      "queue_seq": 10,
+      "handoff_key": "finalize-62",
+      "repo": "yash-learner/care_fe_agent_hq",
+      "input_artifacts": [
+        "specs/62/summary.md",
+        "specs/62/qa.md",
+        "specs/62/qa-report.json"
       ]
     }
   ],

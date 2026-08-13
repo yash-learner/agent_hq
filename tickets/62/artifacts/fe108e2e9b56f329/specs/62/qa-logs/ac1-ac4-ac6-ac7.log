@@ -1,0 +1,21 @@
+=== AC1-AC4, AC6-AC7: Custom Sidebar Links ===
+
+1. Navigating to facility overview...
+2. Waiting for sidebar...
+
+3. Verification Results:
+   - Custom link buttons found: 5
+   - External link icons: 3
+   - Internal link icons: 2
+   - NavUser positioned below: Yes
+
+✓ AC1: Links configured via REACT_CUSTOM_SIDEBAR_LINKS appear in footer
+✓ AC3: External links show ExternalLink icon, internal show Link2 icon
+✓ AC4: Links filtered by context (facility context shows 5 links)
+✓ AC6: Custom links positioned above NavUser in footer
+✓ AC7: Icons visible in collapsed sidebar (labels hidden)
+
+4. Screenshot saved
+5. Video saved to specs/62/videos/ac1-ac4-ac6-ac7.webm
+
+✓✓✓ Test completed successfully ✓✓✓

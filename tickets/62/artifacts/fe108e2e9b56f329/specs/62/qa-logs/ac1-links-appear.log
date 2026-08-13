@@ -1,0 +1,20 @@
+AC1: Verify custom links appear in sidebar footer
+Collapsed sidebar:
+  - Custom link buttons: 5
+  - External link icons: 3
+  - Internal link icons: 2
+  ✓ AC7: Icons visible in collapsed state
+node:internal/process/promises:394
+    triggerUncaughtException(err, true /* fromPromise */);
+    ^
+
+locator.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-sidebar="sidebar-toggle"]')[22m
+
+    at /workspaces/agent_hq/_target/fe108e2e9b56f329/specs/62/qa-drivers/ac1-links-appear.mjs:57:16 {
+  log: [ `  - waiting for locator('[data-sidebar="sidebar-toggle"]')` ],
+  name: 'TimeoutError'
+}
+
+Node.js v22.23.2
