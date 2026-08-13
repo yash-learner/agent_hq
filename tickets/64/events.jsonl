@@ -10,3 +10,4 @@
 {"event_id": "b802591ad65e3cdc:queued", "kind": "run.queued", "ticket_id": "64", "run_id": "b802591ad65e3cdc", "task_id": "breakdown", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment"}}
 {"event_id": "cddf065ce93ee51b:breakdown-64:accepted", "kind": "handoff.accepted", "ticket_id": "64", "run_id": "cddf065ce93ee51b", "detail": "Ticket classified as CRUD. Ready for implementation breakdown."}
 {"event_id": "cddf065ce93ee51b:succeeded", "kind": "run.succeeded", "ticket_id": "64", "run_id": "cddf065ce93ee51b", "state": "SUCCEEDED", "artifacts": ["specs/64/plan.md", "specs/64/classification.json"]}
+{"event_id": "b802591ad65e3cdc:collected", "kind": "run.collected", "ticket_id": "64", "run_id": "b802591ad65e3cdc", "tokens": 224800, "cost_usd": 0.252}
