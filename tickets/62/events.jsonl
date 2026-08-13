@@ -5,3 +5,4 @@
 {"event_id": "3acae8254b5599cb:queued", "kind": "run.queued", "ticket_id": "62", "run_id": "3acae8254b5599cb", "task_id": "arch-plan", "task_version": 1, "state": "QUEUED", "bindings": {"tracker": "github-issues", "agent-session": "copilot-cli", "messaging": "github-comment", "gate": "github-issue-comment"}}
 {"event_id": "c92aef7fd2fe6ef3:arch-plan-62:accepted", "kind": "handoff.accepted", "ticket_id": "62", "run_id": "c92aef7fd2fe6ef3", "detail": "Custom sidebar links require architecture planning for environment config schema, plugin integration, and sidebar context filtering"}
 {"event_id": "c92aef7fd2fe6ef3:succeeded", "kind": "run.succeeded", "ticket_id": "62", "run_id": "c92aef7fd2fe6ef3", "state": "SUCCEEDED", "artifacts": ["specs/62/spec.md"]}
+{"event_id": "3acae8254b5599cb:collected", "kind": "run.collected", "ticket_id": "62", "run_id": "3acae8254b5599cb", "tokens": 243700, "cost_usd": 0.231}
