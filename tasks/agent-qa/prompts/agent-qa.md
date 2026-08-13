@@ -251,7 +251,11 @@ including ones that end `not-exercised`:
    (URL, control, result), form submission/result, API method/path/status plus
    redacted response/error, auth refresh/re-login status codes, and the final
    verification checkpoint. A transcript excerpt of the MCP tool calls for
-   that criterion is exactly right. Non-empty for any attempted non-pass.
+   that criterion is exactly right — collect **requires** MCP tool names
+   (`browser_start_video`, `browser_navigate`, `browser_click`,
+   `browser_snapshot`, …) in this log for every `pass`. A log that only
+   mentions `chromium.launch` / `page.goto` / `openAuthedContext` is rejected
+   as script-driven live QA. Non-empty for any attempted non-pass.
    Keep secrets and patient data out. Start it **before** seeding; references
    to discarded `.agent-hq/` scratch do **not** count as evidence.
 2. **Codify what worked**: after the live session, write the working

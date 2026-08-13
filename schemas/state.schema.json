@@ -117,7 +117,16 @@
         "tokens": { "type": ["integer", "null"] },
         "usage_known": { "type": "boolean" },
         "artifacts": { "type": "array", "items": { "type": "string" } },
-        "chain_depth": { "type": "integer", "minimum": 0 }
+        "chain_depth": { "type": "integer", "minimum": 0 },
+        "mcp_servers": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "description": "MCP server names from the taskdef catalog that prepare resolved into the execute bundle. Absent or empty means no MCP for this run (script-based qa and every non-MCP task). Distinct from mcp_loaded: this is intent/offer, not proof the child used the tools."
+        },
+        "mcp_loaded": {
+          "type": "boolean",
+          "description": "True when the executor reported it force-loaded the run's MCP servers into the agent session (e.g. wrote .mcp.json and passed Copilot -p workspace-MCP opts). Recorded at collect from execute-result.json. False/absent does not prove tools were unused — only that load was not confirmed."
+        }
       }
     }
   }

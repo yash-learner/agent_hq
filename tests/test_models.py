@@ -44,6 +44,8 @@ FULL_RUN_KWARGS = {
     "repo": "org/work-repo",
     "input_artifacts": ["spec.md"],
     "pending_handoffs": [FULL_HANDOFF],
+    "mcp_servers": ["playwright"],
+    "mcp_loaded": True,
 }
 
 MINIMAL_RUN_KWARGS = {
@@ -90,7 +92,15 @@ def test_taskrun_to_dict_validates_against_run_subschema():
 
 def test_taskrun_field_set_includes_handoff_and_repo_fields():
     names = {f.name for f in fields(TaskRun)}
-    assert {"handoff_key", "repo", "input_artifacts", "pending_handoffs", "enqueue_index"} <= names
+    assert {
+        "handoff_key",
+        "repo",
+        "input_artifacts",
+        "pending_handoffs",
+        "enqueue_index",
+        "mcp_servers",
+        "mcp_loaded",
+    } <= names
 
 
 def test_handoff_full_round_trip():

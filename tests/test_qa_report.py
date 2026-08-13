@@ -77,13 +77,14 @@ def _pass_contents(**over: bytes) -> dict[str, bytes]:
     return base
 
 
-def _validate(doc, *, ledger=None, media=None, contents=None):
+def _validate(doc, *, ledger=None, media=None, contents=None, require_mcp_live=False):
     return validate_qa_report(
         _raw(doc),
         ledger=ledger if ledger is not None else _pass_ledger(),
         media=media,
         ticket_id=TICKET,
         contents=contents if contents is not None else _pass_contents(),
+        require_mcp_live=require_mcp_live,
     )
 
 
@@ -198,6 +199,58 @@ def test_pass_requires_driver_and_nonempty_log():
     assert "non-empty" in _validate(
         doc,
         contents={f"specs/{TICKET}/qa-logs/dropdown.log": b"   \n"},
+    )
+
+
+def test_mcp_qa_pass_rejects_script_only_live_log():
+    """agent-qa (require_mcp_live): script Playwright in the log is not a pass."""
+    doc = _report([_criterion()])
+    err = _validate(
+        doc,
+        contents={
+            f"specs/{TICKET}/qa-logs/dropdown.log": (
+                b"openAuthedContext ok\npage.goto http://localhost:4000\n"
+            ),
+        },
+        require_mcp_live=True,
+    )
+    assert err is not None
+    assert "MCP browser" in err
+    assert "script-driven" in err
+
+
+def test_mcp_qa_pass_accepts_mcp_tool_transcript_in_log():
+    doc = _report([_criterion()])
+    assert (
+        _validate(
+            doc,
+            contents={
+                f"specs/{TICKET}/qa-logs/dropdown.log": (
+                    b"browser_start_video ac1.webm\n"
+                    b"browser_navigate http://localhost:4000/facility/1/overview\n"
+                    b"browser_click Toggle Sidebar\n"
+                    b"browser_snapshot sidebar footer links visible\n"
+                    b"browser_stop_video\n"
+                ),
+            },
+            require_mcp_live=True,
+        )
+        is None
+    )
+
+
+def test_script_qa_pass_unchanged_without_require_mcp_live():
+    """Default qa task: script-shaped logs still pass (no MCP requirement)."""
+    doc = _report([_criterion()])
+    assert (
+        _validate(
+            doc,
+            contents={
+                f"specs/{TICKET}/qa-logs/dropdown.log": b"chromium.launch\npage.goto ok\n",
+            },
+            require_mcp_live=False,
+        )
+        is None
     )
 
 

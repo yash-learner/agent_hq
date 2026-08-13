@@ -3,11 +3,17 @@
 Filename convention only — the engine does not special-case the `qa` task id.
 When that path is among a run's ledger artifacts, collect validates schema +
 media policy and refuses a dishonest report (retry via ordinary failure path).
+
+When `require_mcp_live` is true (MCP-driven QA: the run's `mcp_servers` is
+non-empty), a `pass` additionally needs MCP browser tool names in the
+criterion's `qa-logs/{id}.log` — drivers alone are codify-after receipts and
+do not prove the live session used MCP.
 """
 
 from __future__ import annotations
 
 import json
+import re
 from collections.abc import Mapping
 from pathlib import Path
 from typing import Any
@@ -15,6 +21,20 @@ from typing import Any
 from jsonschema import Draft202012Validator
 
 _SCHEMA_PATH = Path(__file__).resolve().parent.parent / "schemas" / "qa-report.schema.json"
+
+# Live MCP session markers (Playwright MCP / agent-qa prompt). Codified
+# qa-drivers/*.mjs may still use chromium.launch — that is allowed; the LOG
+# for a pass under MCP QA must show the interactive tools were used.
+_MCP_LIVE_MARKERS = re.compile(
+    r"browser_start_video|browser_stop_video|browser_navigate|browser_click|"
+    r"browser_snapshot|browser_type|browser_fill|browser_press_key|browser_tabs|"
+    r"browser_select_option|browser_hover|browser_drag",
+    re.IGNORECASE,
+)
+_SCRIPT_LIVE_MARKERS = re.compile(
+    r"chromium\.launch|openAuthedContext|page\.goto|npx\s+playwright\s+test",
+    re.IGNORECASE,
+)
 
 _DEFAULT_MEDIA = {
     "video": True,
@@ -88,6 +108,39 @@ def _require_driver_and_log(
     return None
 
 
+def _require_mcp_live_log(
+    cid: str,
+    ticket_id: str,
+    contents: Mapping[str, bytes] | None,
+) -> str | None:
+    """MCP-driven QA pass: the live log must name MCP browser tools.
+
+    Script-shaped live logs (chromium.launch / page.goto / openAuthedContext)
+    without MCP markers are rejected — ticket-62 failure mode (agent-qa with
+    script Playwright driving). Drivers may still be Playwright scripts; this
+    check is log-only.
+    """
+    log = _log_path(ticket_id, cid)
+    if contents is None or log not in contents:
+        return f"qa-report.json: criterion '{cid}': MCP QA pass requires readable log {log}"
+    text = contents[log].decode("utf-8", errors="replace")
+    if not _MCP_LIVE_MARKERS.search(text):
+        scriptish = bool(_SCRIPT_LIVE_MARKERS.search(text))
+        hint = (
+            " (log looks script-driven: chromium.launch/page.goto/openAuthedContext "
+            "without MCP tools — drive live via browser_start_video / "
+            "browser_navigate / browser_click / browser_snapshot, then codify drivers)"
+            if scriptish
+            else " (expected browser_start_video / browser_navigate / browser_click / "
+            "browser_snapshot in the live transcript)"
+        )
+        return (
+            f"qa-report.json: criterion '{cid}': MCP QA pass requires MCP browser "
+            f"tool names in {log}{hint}"
+        )
+    return None
+
+
 def validate_qa_report(
     raw: bytes | str,
     *,
@@ -95,6 +148,7 @@ def validate_qa_report(
     media: dict | None = None,
     ticket_id: str,
     contents: Mapping[str, bytes] | None = None,
+    require_mcp_live: bool = False,
 ) -> str | None:
     """None if the report is honest and consistent; else a rejection reason.
 
@@ -109,6 +163,9 @@ def validate_qa_report(
     canonical driver and non-empty log. `missing-test-data` additionally
     requires a valid `seed_attempt` and non-empty `plan_steps_run`. Genuine
     pre-execution blockers (empty `plan_steps_run`) remain log-free.
+
+    `require_mcp_live`: when True (run offered MCP servers), each `pass` must
+    also show MCP browser tool names in its log — not script-only live driving.
     """
     media = media or dict(_DEFAULT_MEDIA)
     try:
@@ -203,6 +260,10 @@ def validate_qa_report(
                 )
                 if receipt_err is not None:
                     return receipt_err
+                if require_mcp_live:
+                    mcp_err = _require_mcp_live_log(cid, ticket_id, contents)
+                    if mcp_err is not None:
+                        return mcp_err
             else:
                 # Escape hatch: screenshots-only mode.
                 shots = c.get("screenshots") or []
@@ -217,6 +278,15 @@ def validate_qa_report(
                         f"qa-report.json: criterion '{cid}': screenshot not in ledger: "
                         + ", ".join(missing)
                     )
+                if require_mcp_live:
+                    receipt_err = _require_driver_and_log(
+                        cid, ticket_id, ledger, contents, context="pass"
+                    )
+                    if receipt_err is not None:
+                        return receipt_err
+                    mcp_err = _require_mcp_live_log(cid, ticket_id, contents)
+                    if mcp_err is not None:
+                        return mcp_err
         else:
             # not-exercised, or fail (including a live-flow assertion failure).
             if not (c.get("blocker") or "").strip():

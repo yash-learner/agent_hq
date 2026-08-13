@@ -39,6 +39,7 @@ Inspect one ticket (or all tickets) from the `agent-hq-state` branch, read-only,
 4. Report:
    - **Ticket status**: `ACTIVE` / `BLOCKED` / `DONE`; if `BLOCKED`, include `block_reason` and `block_source`.
    - **Current run**: `task_id`, `attempt`, `deadline`, and gate fields (`gate_requested_at`, `gate_request_id`). Also `input_from_run_id` when set — the run whose output this one read, which is NOT `parent_run_id` (who enqueued it) whenever one run declared several entries.
+   - **MCP (when present)**: `mcp_servers` (catalog names prepare offered, e.g. `["playwright"]`) and `mcp_loaded` (executor reported force-loading them into the Copilot `-p` session). `task_id: agent-qa` without `mcp_servers` on an old run predates this field. Offered/loaded ≠ tools used — for live proof, `qa-logs/{id}.log` must name MCP browser tools (`browser_navigate`, …); collect rejects `pass` otherwise.
    - **If `WAITING_GATE`**: list the run's `pending_handoffs` (each `key`, `target_task`, `reason`), then give the exact unblock comment to post on the engine-repo issue:
      - `/agent-hq approve <run-id>`
      - `/agent-hq request-changes <run-id> <reason>`

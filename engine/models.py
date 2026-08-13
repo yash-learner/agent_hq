@@ -198,6 +198,10 @@ class TaskRun:
     repo: str | None = None
     input_artifacts: list[str] | None = None
     pending_handoffs: list[Handoff] | None = None
+    # MCP catalog names prepare resolved for this run (intent). Empty/absent =
+    # no MCP session. mcp_loaded is set at collect from the executor receipt.
+    mcp_servers: list[str] | None = None
+    mcp_loaded: bool | None = None
 
     def to_dict(self) -> dict:
         d = _to_dict_omit_none_optionals(self)
